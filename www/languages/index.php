@@ -10,7 +10,7 @@ include("../../include/header.php");
 number of rules per language to give a very rough indication of how well a
 language is supported.</p>
 
-<!--  TODO: link rules link java dir  -->
+<!--  TODO: link rules link java dir ... -->
 
 <!-- Output of RuleOverview.java: -->
 
