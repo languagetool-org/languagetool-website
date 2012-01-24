@@ -31,7 +31,7 @@ function show_link($title, $url, $show_alt, $title_attr="") {
 	if( $title_attr ) {
 		$title_attr = 'title="'.$title_attr.'"';
 	}
-	if( strpos($url, "http:") === false ) {
+	if( strpos($url, "http:") === false && strpos($url, "https:") === false ) {
 		$html .= '<a '.$title_attr.' href="'.$url.'"><img src="'.$img_path.'/link.png" border="0" hspace="2" width="8" height="9" alt="'.$alt.'" />';
 	} else {
 		$html .= '<a '.$title_attr.' href="'.$url.'"><img src="'.$img_path.'/link_extern.png" border="0" hspace="2" width="7" height="9" alt="'.$alt.'" />';
