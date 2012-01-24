@@ -48,13 +48,13 @@ LanguageTool не предназначен для проверки орфогр�
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <?php
-    $demoText = "Вставте ваш текст сюда... или проверте этот текст. ";
+    $demoText = "Вставьте ваш текст сюда .. или проверьте этот текст.";
     ?>
     <textarea onfocus="javascript: if(document.checkform.text.value == '<?php print $demoText ?>') { document.checkform.text.value='' } " 
         style="width:100%; max-width:800px;height:100px" name="text"><?php print $demoText ?></textarea>
     <div style="margin-top:4px">
         <input type="submit" name="_action_checkText" value="Проверить текст"/>
-        Language: <select name="lang" id="lang" >
+        Язык: <select name="lang" id="lang" >
         
             <option value="auto">автоматически определить</option>
             <option value="ast" >Астурийский</option>
@@ -133,6 +133,11 @@ LanguageTool не предназначен для проверки орфогр�
     <li>Запустить программу командой java -jar LanguageTool.jar -l ru Example.txt</li>
 </ul>
 
+<h2>Другие варианты использования</h2>
+<ul>
+    <li> <a href="../usage">примеры использования</a></li>
+    <li> <a href="../links">готовые решения</a></li>
+</ul>
 
 
 <h2>Контакты</h2>
