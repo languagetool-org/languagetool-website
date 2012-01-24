@@ -24,7 +24,7 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
     <li>Groß-/Kleinschreibung
         <ul>
             <li>Die <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.</li>
-            <li>Prüfung der Großschreibung am Satzanfang</li>
+            <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">prüfung</span> der Großschreibung am Satzanfang</li>
         </ul>
     </li>
     <li>Zusammen-/Getrenntschreibung
