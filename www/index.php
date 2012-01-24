@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-01-22 17:20:00 CET";
+$lastmod = "2012-01-24 17:20:00 CET";
 include("../include/header.php");
 ?>
 		
@@ -74,7 +74,7 @@ language-specific configuration files. Rules for detecting more complicated erro
 			<a href="http://languagetool.wikidot.com/removing-languagetool-0-9-5-from-openoffice-3-0-1">this
 			page</a> if you forgot to do so).</li>
 		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 1)?>
-			or send an email to naber <i>at</i> danielnaber.de.</li>
+			or <?=show_link("post to our forum", "/forum", 1)?>.</li>
 	</ul>
 </div>
 
