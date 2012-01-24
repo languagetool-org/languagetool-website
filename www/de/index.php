@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-01-15 23:05:00 CET";
+$lastmod = "2012-01-24 23:05:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -24,7 +24,7 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
     <li>Groß-/Kleinschreibung
         <ul>
             <li>Die <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.</li>
-            <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">prüfung</span> der Großschreibung am Satzanfang</li>
+            <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">prüfung</span> der Großschreibung am Satzanfang.</li>
         </ul>
     </li>
     <li>Zusammen-/Getrenntschreibung
@@ -64,7 +64,19 @@ Aber bitte beachten Sie: LanguageTool selbst beinhaltet keine Rechtschreibprüfu
 
 <h2>LanguageTool ausprobieren</h2>
 
-Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a>. <a href="http://community.languagetool.org/?lang=de"/>Hier<a> können Sie LanguageTool auch direkt im Browser ausprobieren.
+Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder 
+direkt hier im Browser ausprobieren:
+
+<?php
+$checkSubmitButtonValue = "Text Prüfen";
+$showLanguageBox = 0;
+$checkDefaultLang = "de";
+$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler , ".
+    "die LanguageTool erkennen kann. Was ist zum Beispiel ein ökonomischer Gottesdienst? ".
+    "Eine Rectschreibprüfunk findet findet übrigens nicht statt.";
+include("../../include/checkform.php");
+?>
+
 
 <h2>Download</h2>
 

@@ -44,6 +44,8 @@ function printLangOption($langCode, $lang) {
             <?php printLangOption("tl", "Tagalog") ?>
             <?php printLangOption("uk", "Ukrainian") ?>
         </select>
+        <?php } else { ?>
+            <input type="hidden" name="lang" value="<?php print $checkDefaultLang ?>"/> 
         <?php } ?>
     </div>
 </form>
