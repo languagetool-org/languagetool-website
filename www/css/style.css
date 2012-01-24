@@ -35,6 +35,11 @@ h1 {
 	color: #ef8701;
 }
 
+h2 {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
 .xmlcode {
 	font-family: monospace;
 	margin-left: 15px;

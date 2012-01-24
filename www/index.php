@@ -17,55 +17,22 @@ language-specific configuration files. Rules for detecting more complicated erro
 
 <h2>Try it online</h2>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
-    <?php
-    $demoText = "Paste your own text here... or check this text too see a few of the problems that that LanguageTool can detect. Did you notice that their is no spelcheckin included?";
-    ?>
-    <textarea onfocus="javascript: if(document.checkform.text.value == '<?php print $demoText ?>') { document.checkform.text.value='' } " 
-        style="width:100%; max-width:800px;height:100px" name="text"><?php print $demoText ?></textarea>
-    <div style="margin-top:4px">
-        <input type="submit" name="_action_checkText" value="Check Text"/>
-        Language: <select name="lang" id="lang" >
-        
-            <option value="auto">try to auto-detect</option>
-            <option value="ast" >Asturian</option>
-            <option value="be" >Belarusian</option>
-            <option value="br" >Breton</option>
-            <option value="ca" >Catalan</option>
-            <option value="zh" >Chinese</option>
-            <option value="da" >Danish</option>
-            <option value="nl" >Dutch</option>
-            <option value="en" >English</option>
-            
-            <option value="eo" >Esperanto</option>
-            <option value="fr" >French</option>
-            <option value="gl" >Galician</option>
-            <option value="de" >German</option>
-            <option value="is" >Icelandic</option>
-            <option value="it" >Italian</option>
-            <option value="km" >Khmer</option>
-            <option value="lt" >Lithuanian</option>
-            <option value="ml" >Malayalam</option>
-            
-            <option value="pl" >Polish</option>
-            <option value="ro" >Romanian</option>
-            <option value="ru" >Russian</option>
-            <option value="sk" >Slovak</option>
-            <option value="sl" >Slovenian</option>
-            <option value="es" >Spanish</option>
-            <option value="sv" >Swedish</option>
-            <option value="tl" >Tagalog</option>
-            <option value="uk" >Ukrainian</option>
-        
-        </select>
-    </div>
-</form>
+<?php
+$checkSubmitButtonValue = "Check Text";
+$showLanguageBox = 1;
+$checkDefaultLang = "auto";
+$checkDefaultText = "Paste your own text here... or check this text too see a few of the problems that ".
+  "that LanguageTool can detect. Did you notice that their is no spelcheckin included?";
+include("../include/checkform.php");
+?>
 
 
 <h2>Download</h2>
 
 <div class="downloadSection">
-	<h2><?=show_link("Download LanguageTool 1.6 (29&nbsp;MB)", "download/LanguageTool-1.6.oxt", 0) ?></h2>
+	<div style="font-size: x-large; font-weight: bold">
+	    <?=show_link("Download LanguageTool 1.6 (29&nbsp;MB)", "download/LanguageTool-1.6.oxt", 0) ?>
+	</div>
 	<ul>
 		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 1)?>&nbsp;6.0
 			or later. You need to <strong>restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
