@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-01-05 16:30:00 CET";
+$lastmod = "2012-01-24 23:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -78,8 +78,8 @@ include("../../include/header.php");
 
 <h2>Still need Help?</h2>
 
-<p>If LanguageTool still doesn't properly work for you, please email <strong>naber at danielnaber de</strong> describing the problem
-and letting me know which version of LanguageTool, LibreOffice/OpenOffice.org and which operating system you are using.</p>
+<p>If LanguageTool still doesn't work properly for you, please <?=show_link("post to the forum", "/forum", 0)?> describing the problem
+and letting us know which version of LanguageTool, LibreOffice/OpenOffice.org and which operating system you are using.</p>
 
 <?php
 include("../../include/footer.php");
