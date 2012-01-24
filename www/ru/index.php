@@ -146,6 +146,19 @@ LanguageTool не предназначен для проверки орфогр�
 <p><a href="../forum">Форум</a> или  <a href="http://myooo.ru/content/view/83/43/">домашняя страничка расширения для OpenOffice.org/LibreOffice</a></p>
 
 
+<h2>Нужна помощь?</h2>
+
+<p><?=show_link("Список известных проблем", "issues", 0)?>.</p>
+
+<h2>Лицензия и исходный код</h2>
+
+<p>LanguageTool свободно распространятся по лицензии <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
+Исходный код доступен <?=show_link("на Sourceforge", "http://sourceforge.net/projects/languagetool/", 1) ?> через SVN.
+Содержимое этой домашней страницы доступно по лицензии <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 1) ?>.</p>
+
+<div style="height:50px"></div>
+
+
 <?php
 include("../../include/footer.php");
 ?>
