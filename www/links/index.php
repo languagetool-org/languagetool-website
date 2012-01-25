@@ -71,7 +71,8 @@ include("../../include/header.php");
 <ul style="list-style:none">
 	<li><?=show_link("Source code (Subversion)", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool", 0)?></li>
 	<li>Subversion commit messages mailing list: <?=show_link("Subscribe/Unsubscribe", "http://lists.sourceforge.net/mailman/listinfo/languagetool-cvs", 0) ?>,
- 		<?=show_link("Archive", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-cvs", 0)?></li>
+		<?=show_link("Archive", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-cvs", 0)?></li>
+	<li><?=show_link("API documentation (Javadoc)", "/development/api/", 0)?></li>
 </ul>
 
 <p><strong>Development Tools:</strong></p>
