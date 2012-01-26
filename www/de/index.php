@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-01-24 23:05:00 CET";
+$lastmod = "2012-01-26 17:57:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -65,7 +65,7 @@ Aber bitte beachten Sie: LanguageTool selbst beinhaltet keine Rechtschreibprüfu
 <h2>LanguageTool ausprobieren</h2>
 
 Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder 
-direkt hier im Browser ausprobieren:<br/>
+direkt hier im Browser ausprobieren:<br/><br/>
 
 <?php
 $checkSubmitButtonValue = "Text Prüfen";
