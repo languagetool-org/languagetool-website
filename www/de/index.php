@@ -6,7 +6,7 @@ $lastmod = "2012-01-24 23:05:00 CET";
 include("../../include/header.php");
 ?>
 
-<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung.
+<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.
 
 <h2>Funktionen</h2>
 
@@ -65,7 +65,7 @@ Aber bitte beachten Sie: LanguageTool selbst beinhaltet keine Rechtschreibprüfu
 <h2>LanguageTool ausprobieren</h2>
 
 Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder 
-direkt hier im Browser ausprobieren:
+direkt hier im Browser ausprobieren:<br/>
 
 <?php
 $checkSubmitButtonValue = "Text Prüfen";
@@ -82,7 +82,18 @@ include("../../include/checkform.php");
 
 <p>LanguageTool kann auf der <a href="../">Startseite</a> heruntergeladen werden.</p>
 
-<!-- TODO: Installationsanleitung für LibO/OOo -->
+<h2>LanguageTool in LibreOffice/OpenOffice.org nutzen</h2>
+LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">OpenOffice.org</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
+
+<ol>
+    <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier</a> kostenlos herunter und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
+    <li>Laden Sie sich die aktuelle Version von LanguageTool von der <a href="../">Startseite</a> herunter.</li>
+    <li>Öffnen Sie LibreOffice bzw. OpenOffice.org und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
+    <li>Klicken Sie nun auf <i>Hinzufügen&hellip;</i>, wählen Sie die in Schritt 2 heruntergeladene Datei aus und klicken Sie auf <i>Öffnen</i>.</li>
+    <li>Starten Sie nach der Installation LibreOffice bzw. OpenOffice.org neu.</li>
+</ol>
+
+Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von LanguageTool gefundenen Probleme im Text blau markiert. Die Einstellungen von LanguageTool können Sie über <i>Extras &rarr; LanguageTool &rarr; Konfiguration&hellip;</i> ändern.
 
 
 <h2>Kontakt</h2>
