@@ -2,11 +2,11 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-01-26 17:57:00 CET";
+$lastmod = "2012-01-26 18:07:00 CET";
 include("../../include/header.php");
 ?>
 
-<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.
+<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.</p>
 
 <h2>Funktionen</h2>
 
@@ -18,7 +18,7 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
     <li>Grammatik
         <ul>
             <li><span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.</li>
-            <li>Ich bin <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.</span></li>
+            <li>Ich bin <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.</li>
         </ul>
     </li>
     <li>Groß-/Kleinschreibung
@@ -40,9 +40,9 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
     </li>
     <li>Mögliche Tippfehler
         <ul>
-            <li>Er verzieht keine <span class="errorMarker" title="Meinten Sie 'Miene'? (Mine = unterirdischer Gang, Sprengkörper, Kugelschreibermine)">Mine</span>.</span></li>
-            <li>Ich werde dir eine <span class="errorMarker" title="Meinten Sie 'E-Mail' (elektronische Post) statt 'Email' (Schmelzüberzug)?">Email</span> schicken.</span></li>
-            <li>Geht es<span class="errorMarker" title="Möglicher Tippfehler: mehr als ein Leerzeichen hintereinander">&nbsp;&nbsp;</span>dir gut?
+            <li>Er verzieht keine <span class="errorMarker" title="Meinten Sie 'Miene'? (Mine = unterirdischer Gang, Sprengkörper, Kugelschreibermine)">Mine</span>.</li>
+            <li>Ich werde dir eine <span class="errorMarker" title="Meinten Sie 'E-Mail' (elektronische Post) statt 'Email' (Schmelzüberzug)?">Email</span> schicken.</li>
+            <li>Geht es<span class="errorMarker" title="Möglicher Tippfehler: mehr als ein Leerzeichen hintereinander">&nbsp;&nbsp;</span>dir gut?</li>
         </ul>
     </li>
     <li>Umgangssprache
