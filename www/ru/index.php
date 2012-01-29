@@ -132,11 +132,23 @@ LanguageTool не предназначен для проверки орфогр�
     <li>Подготовить файл Example.txt с текстом для проверки.</li>
     <li>Запустить программу командой java -jar LanguageTool.jar -l ru Example.txt</li>
 </ul>
+<a href="http://languagetool.wikidot.com/command-line-options">Ключи командной строки консольного приложения</a>
 
-<h2>Другие варианты использования</h2>
+
+<h2>Варианты использования</h2><a href="http://languagetool.wikidot.com/command-line-options">Ключи командной строки консольного приложения</li>
 <ul>
-    <li> <a href="../usage">примеры использования</a></li>
-    <li> <a href="../links">готовые решения</a></li>
+    <li> <a href="../usage">Примеры программного кода для интеграции с другими программами</a></li>
+</ul>
+
+<p class="firstpara"><strong>Интеграция LanguageTool с приложениями</strong>:</p>
+
+<ul style="list-style:none"><a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">
+	<li><?=show_link("LanguageTool для vim", "http://www.vim.org/scripts/script.php?script_id=3223", 1) ?></li>
+	<li><?=show_link("LanguageTool для LyX", "http://wiki.lyx.org/Tools/LyX-GrammarChecker", 1) ?></li>
+	<li><?=show_link("LanguageTool плагин для OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/", 1)?>
+		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами.</li>
+	<li><?=show_link("LanguageTool и CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 1)?> используется как сервер для расширения возможностей контроля качества переводов.</li>
+	<li><?=show_link("LanguageTool для Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781", 1)?></li>
 </ul>
 
 
@@ -150,7 +162,7 @@ LanguageTool не предназначен для проверки орфогр�
  -->
 <!--
 <p><?=show_link("Список известных проблем", "issues", 0)?>.</p>
- -->
+ --><a href="http://languagetool.wikidot.com/command-line-options">Ключи командной строки консольного приложения</li>
 <h2>Лицензия и исходный код</h2>
 
 <p>LanguageTool свободно распространятся по лицензии <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
