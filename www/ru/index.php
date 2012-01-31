@@ -68,7 +68,7 @@ LanguageTool не предназначен для проверки орфогр�
             
             <option value="eo" >Эсперанто</option>
             <option value="fr" >Французский</option>
-            <option value="gl" >Галисийский/option>
+            <option value="gl" >Галисийский</option>
             <option value="de" >Немецкий</option>
             <option value="is" >Исландский</option>
             <option value="it" >Итальянский</option>
@@ -94,10 +94,12 @@ LanguageTool не предназначен для проверки орфогр�
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
-<a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно проверить  LanguageTool непосредственно в браузере.
+<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно проверить  LanguageTool непосредственно в браузере.
+</p>
 
+<p>Запустить LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">через Java WebStart (30 Mb)!</a>
+</p>
 
-Запустить LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">через Java WebStart (30 Mb)!</a>
 
 <h2>Скачать</h2>
 
