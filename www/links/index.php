@@ -2,7 +2,7 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-01-24 22:35:00 CET";
+$lastmod = "2012-02-02 22:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -92,6 +92,13 @@ include("../../include/header.php");
 	<li><?=show_link("German error collection", 
 		"http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/de/errors.txt?view=markup", 0) ?></li>
 </ul>
+
+<p><strong>Corpora:</strong></p>
+
+<ul style="list-style:none">
+	<li><?=show_link("COCA - Corpus of Contemporary American English", "http://corpus.byu.edu/coca/", 0) ?></li>
+</ul>
+
 
 <br /><br /><br />
 
