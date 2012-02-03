@@ -30,16 +30,6 @@ include("../../include/header.php");
 <tr><td>&nbsp;</td></tr>
 <tr>
 <td>
-	<a href="art/screenshot_ooo.png"><img border="0" width="300" height="258" 
-		src="art/screenshot_ooo_small.png" alt="LanguageTool in OpenOffice.org" /></a><br />
-		<a href="art/screenshot_ooo.png"><span style="font-size:10px">LanguageTool installed
-		as an add-on<br/>in OpenOffice.org 2.x (click to enlarge)</span></a>
-</td>
-</tr>
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr>
-<td>
 	<a href="art/screenshot.png"><img border="0" width="250" height="264" 
 		src="art/screenshot_small.png" alt="stand-alone version of LanguageTool" /></a><br />
 		<a href="art/screenshot.png"><span style="font-size:10px">The simple stand-alone
