@@ -30,7 +30,7 @@ include("../../include/header.php");
 <tr><td>&nbsp;</td></tr>
 <tr>
 <td>
-	<a href="art/screenshot.png"><img border="0" width="250" height="264" 
+	<a href="art/screenshot.png"><img border="0" width="250" height="257"
 		src="art/screenshot_small.png" alt="stand-alone version of LanguageTool" /></a><br />
 		<a href="art/screenshot.png"><span style="font-size:10px">The simple stand-alone
 		user interface which lets<br/>you type in or paste text and check it (click to enlarge)</span></a>
