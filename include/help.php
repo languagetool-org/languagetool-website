@@ -11,6 +11,11 @@ function hljava($code, $class="xmlcode") {
 	print "<div class='".$class."'>".$geshi->parse_code()."</div>";
 }
 
+function show_simple_link($title, $url) {
+    $html = "<a href='".$url."'>".$title."</a>";
+    return $html;
+}
+        
 function show_link($title, $url, $show_alt, $title_attr="") {
 	global $homepage;
 	$html = "";

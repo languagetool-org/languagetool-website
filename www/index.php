@@ -37,8 +37,8 @@ include("../include/checkform.php");
 	    <?=show_link("Download LanguageTool 1.6 (29&nbsp;MB)", "download/LanguageTool-1.6.oxt", 0) ?>
 	</div>
 	<ul>
-		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 1)?>&nbsp;6.0
-			or later. You need to <strong>restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
+		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 1)?>&nbsp;6.0 or later.</li>
+        <li>You need to <strong>restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
 		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 1)?>
 			or <?=show_link("post to our forum", "/forum", 1)?>.</li>
 	</ul>

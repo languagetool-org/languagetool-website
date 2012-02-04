@@ -9,7 +9,7 @@ include('../../include/geshi/geshi.php');
 		
 <p><strong>Installation and Usage outside OpenOffice.org</strong></p>
 
-<p>See <?=show_link("Overview", "/", 0)?> for a description of how to use LanguageTool
+<p>See the <?=show_link("homepage", "/", 0)?> for a description of how to use LanguageTool
 with OpenOffice.org.</p>
 
 <ul class="largelist">
