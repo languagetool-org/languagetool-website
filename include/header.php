@@ -3,7 +3,27 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><?php print $title." ".$title2 ?></title>
-  <link href="/css/style.css?2" rel="stylesheet" type="text/css" />
+  <?php
+  //online:
+  $rootUrl = "";
+  //local:
+  //$rootUrl = "/languagetool";
+  ?>
+  <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />
+  <?php if ($enable_fancybox) { ?>
+    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" href="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+    <!--
+      $(document).ready(function() {
+        $("a.fancyboxImage").fancybox({
+          'hideOnContentClick': true
+        });
+      });
+    // -->
+    </script>
+  <?php } ?>
 </head>
 <body>
 
