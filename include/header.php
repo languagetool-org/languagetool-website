@@ -18,7 +18,8 @@
     <!--
       $(document).ready(function() {
         $("a.fancyboxImage").fancybox({
-          'hideOnContentClick': true
+          'hideOnContentClick': true,
+          'titlePosition': 'inside'
         });
       });
     // -->
