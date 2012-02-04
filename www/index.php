@@ -11,7 +11,7 @@ include("../include/header.php");
    href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool is a style and grammar proofreading software for English, French, German, Polish, 
+<p class="firstpara"><strong>LanguageTool is an Open Source style and grammar proofreading software for English, French, German, Polish,
 Dutch, Romanian, and a lot of <?=show_link("other languages", "languages/", 0) ?>.</strong>
 You can think of LanguageTool as a software to detect errors that a simple spell checker cannot detect, e.g. mixing
 up <em>there/their</em>, <em>no/now</em> etc. It can also detect some grammar mistakes. It does not include spell checking.</p>
@@ -37,13 +37,18 @@ include("../include/checkform.php");
 <h2>Download</h2>
 
 <div class="downloadSection">
-	<div style="font-size: x-large; font-weight: bold">
-	    <?=show_link("Download LanguageTool 1.6 (29&nbsp;MB)", "download/LanguageTool-1.6.oxt", 0) ?>
+	<div id="downloadButton">
+        <a href="download/LanguageTool-1.6.oxt"><span
+           class="languagetool">LanguageTool</span><br/><span class="download">Download<br/>
+        </span><span class="version">Version 1.6 (29&nbsp;MB)</span></a>
 	</div>
 	<ul>
-		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 1)?>&nbsp;6.0 or later.</li>
-        <li>You need to <strong>restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
-		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 1)?>
+		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 0)?>&nbsp;6.0 or later.</li>
+        <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install it
+          or see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
+        <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
+        <li>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</li>
+		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>
 			or <?=show_link("post to our forum", "/forum", 1)?>.</li>
 	</ul>
 </div>
@@ -62,36 +67,7 @@ include("../include/checkform.php");
 
 <p><strong>2011-11-18:</strong> We now offer <?=show_link("Wikicheck, a new service to check Wikipedia pages with LanguageTool", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
 
-<p><strong>2011-09-25:</strong> Released LanguageTool 1.5. Changes include:
-<ul>
-    <li>Support for new languages: Chinese, Asturian, Breton, and Tagalog</li>
-    <li>Automatic language detection (not relevant for OpenOffice.org/LibreOffice)</li>
-    <li>Many rule updates for several languages</li>
-    <li>For a more detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
-</ul>
-
-<p><strong>2011-08-28:</strong> Our <?=show_link("Google Summer of Code students", "gsoc2011", 0)?> have 
-successfully finished their projects and the results will be part of LanguageTool 1.5, to be released in about one month.</p>
-
-
-<h2>Installation and Usage</h2>
-
-<ul>
-	<li><strong>In OpenOffice.org/LibreOffice</strong>:
-	Double click <tt>LanguageTool-1.6.oxt</tt> to install it.
-	If that doesn't work, call <em>Tools -&gt; Extension Manager -&gt; Add...</em>
-	to install it. Close OpenOffice.org and re-start it. Type some text
-	with an error (e.g. "This is an test." &ndash; make sure the text language is set
-	to English) and you should see a blue underline.</li>
-
-	<li>Also see <?=show_link("Usage", "usage/", 0)?> for using LanguageTool outside of OpenOffice.org.</li>
-</ul>
-
-
-<h2>Need Help?</h2>
-
-<p>Please see the <?=show_link("list of common problems", "issues", 0)?>.</p>
-
+<a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news
 
 <h2>License &amp; Source Code</h2>
 

@@ -6,29 +6,9 @@ $lastmod = "2012-02-04 14:35:00 CET";
 include("../../include/header.php");
 ?>
 
-<h2>Links for Users</h2>
+<h2 style="margin-top: 2px">Links for Users</h2>
 
-<p><strong>Contact:</strong><br />
-
-<ul>
-    <li>LanguageTool was originally written by <?=show_link("Daniel Naber", "http://www.danielnaber.de", 0)?></a>
-    (<strong>naber <span>a&#116;</span> danielnaber<span>.</span>de</strong>) and is now maintained by 
-    Daniel Naber and Marcin Miłkowski (<?=show_link("contact form", "http://marcinmilkowski.pl/en/Contact/", 0)?>)</li>
-    <li>Contact us via email or <?=show_link("post to the forum", "/forum", 0)?></li>
-	<li>Mailing list for development and user discussion:<br/>
- 		<?=show_simple_link("Subscribe/Unsubscribe",  "http://lists.sourceforge.net/mailman/listinfo/languagetool-devel") ?>,
- 		<?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/")?>,
- 		<?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel")?></li>
-</ul>
-
-<p><strong>Issue tracking:</strong></p>
-
-<ul>
-	<li><?=show_simple_link("Bug Reports", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
-	<li><?=show_simple_link("Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
-</ul>
-
-<p class="firstpara"><strong>LanguageTool integration</strong>:</p>
+<p><strong>LanguageTool integration</strong>:</p>
 
 <ul>
 	<li><?=show_simple_link("LanguageTool for vim", "http://www.vim.org/scripts/script.php?script_id=3223") ?></li>
@@ -38,8 +18,28 @@ include("../../include/header.php");
 	<li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
 	<li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781")?></li>
 </ul>
-		
-<p class="firstpara"><strong>Other Open Source language tools:</strong></p>
+
+<p><strong>Issue tracking:</strong></p>
+
+<ul>
+	<li><?=show_simple_link("Bug Reports", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
+	<li><?=show_simple_link("Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
+</ul>
+
+<p><strong>Contact:</strong><br />
+
+<ul>
+    <li>LanguageTool was originally written by <?=show_link("Daniel Naber", "http://www.danielnaber.de", 0)?></a>
+    (<strong>naber <span>a&#116;</span> danielnaber<span>.</span>de</strong>) and is now maintained by
+    Daniel Naber and Marcin Miłkowski (<?=show_link("contact form", "http://marcinmilkowski.pl/en/Contact/", 0)?>)</li>
+    <li>Contact us via email or <?=show_link("post to the forum", "/forum", 0)?></li>
+	<li>Mailing list for development and user discussion:<br/>
+ 		<?=show_simple_link("Subscribe/Unsubscribe",  "http://lists.sourceforge.net/mailman/listinfo/languagetool-devel") ?>,
+ 		<?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/")?>,
+ 		<?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel")?></li>
+</ul>
+
+<p><strong>Other Open Source language tools:</strong></p>
 
 <ul>
 	<li><?=show_simple_link("After the Deadline", "http://open.afterthedeadline.com/")?>,
@@ -52,12 +52,12 @@ include("../../include/header.php");
 	<li><?=show_simple_link("CoGrOO", "http://cogroo.sourceforge.net/")?>
 		a Grammar Checker for Portuguese</li>
 	<li><?=show_simple_link("Grammalecte", "http://www.dicollecte.org/grammalecte/")?>
-		a Grammar Checker for French written in Python, based on Lightproof.</li>
+		a Grammar Checker for French written in Python, based on Lightproof</li>
 	<li><?=show_simple_link("GRAC", "http://grac.sourceforge.net/")?>
 		corpus-based grammar checker written in Python</li>
 	<li><?=show_simple_link("Queequeg", "http://queequeg.sourceforge.net/index-e.html")?>
 		agreement checker written in Python</li>
-	<li><?=show_simple_link("LanguageTool in Python", "http://tkltrans.sourceforge.net/#r03") ?>, a much older
+	<li><?=show_simple_link("Old version of LanguageTool in Python", "http://tkltrans.sourceforge.net/#r03") ?>, a much older
 		and less powerful version without OpenOffice.org integration but support for Hungarian</li>
 </ul>
 
@@ -67,7 +67,7 @@ include("../../include/header.php");
 
 <a href="http://www.cloudbees.com"><img border="0" src="../images/cloudbees-logo.png" alt="CloudBees Logo" align="right"/></a>
 
-<p><strong>Source Code:</strong></p>
+<p><strong>Source Code and Development Versions:</strong></p>
 
 <ul>
 	<li><?=show_simple_link("Source code (Subversion)", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool")?></li>
@@ -75,6 +75,8 @@ include("../../include/header.php");
 		<?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-cvs@lists.sourceforge.net/")?>,
 		<?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-cvs")?></li>
 	<li><?=show_simple_link("API documentation (Javadoc)", "/development/api/")?></li>
+    <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/") ?>
+      (<?=show_simple_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt") ?>)</li>
 </ul>
 
 <p><strong>Development Tools:</strong></p>

@@ -220,3 +220,48 @@ TABLE TBODY TR TD.content FORM TEXTAREA {
     border: 1px solid #464646;
 }
 /* end: check form on the homepage */
+
+/* download button on the homepage */
+
+#downloadButton {
+    background-image: url("../images/languagetool-download.png");
+    width: 200px;
+    height: 70px;
+}
+
+#downloadButton SPAN.languagetool {
+    font-family: georgia, "Bitstream Charter", serif;
+    color: #FFFFFF;
+    font-size: 12.1pt;
+    padding-left: 66px;
+    font-weight: bold;
+    /*+placement:shift 7px 8px;*/
+    position: relative;
+    left: 7px;
+    top: 8px;
+}
+#downloadButton SPAN.download {
+    font-family: georgia, "Bitstream Charter", serif;
+    color: #FFFFFF;
+    font-size: 11.9pt;
+    padding-left: 66px;
+    font-style: italic;
+    font-weight: normal;
+    /*+placement:shift 8px 8px;*/
+    position: relative;
+    left: 8px;
+    top: 8px;
+}
+#downloadButton SPAN.version {
+    font-family: georgia, "Bitstream Charter", serif;
+    color: #FFFFFF;
+    font-size: 7pt;
+    padding-left: 66px;
+    font-weight: normal;
+    font-style: italic;
+    /*+placement:shift 8px 10px;*/
+    position: relative;
+    left: 8px;
+    top: 10px;
+}
+/* end: download button on the homepage */
