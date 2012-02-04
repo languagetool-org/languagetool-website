@@ -70,7 +70,9 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p><strong>2011-11-18:</strong> We now offer <?=show_link("Wikicheck, a new service to check Wikipedia pages with LanguageTool", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
 
-<a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news
+<?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> for the latest news. See
+<?=show_link("the news archive", "news/", 0) ?> for old news.
+
 
 <h2>License &amp; Source Code</h2>
 
