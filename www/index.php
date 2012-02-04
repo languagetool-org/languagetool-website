@@ -30,7 +30,8 @@ $checkDefaultText = "Paste your own text here... or check this text too see a fe
 include("../include/checkform.php");
 ?>
 
-<p><strong>Try LanguageTool without installation, using Java WebStart.</strong> Requires Java 1.6_04 or later:<br />
+<p><strong>Try LanguageTool without installation, using Java WebStart.</strong>
+Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later:<br />
 <strong><?=show_link("Start LanguageTool (29&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 
@@ -43,17 +44,17 @@ include("../include/checkform.php");
         </span><span class="version">Version 1.6 (29&nbsp;MB)</span></a>
 	</div>
 	<ul>
-		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 0)?>&nbsp;6.0 or later.</li>
+		<li>Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.</li>
         <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install it
           or see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
         <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
         <li>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</li>
 		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>
-			or <?=show_link("post to our forum", "/forum", 1)?>.</li>
+			or <?=show_link("post to our forum", "/forum", 0)?>.</li>
 	</ul>
 </div>
 
-<p>Untested daily snapshots of the current development version are available at
+<p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/", 0) ?> (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
 
 <h2>News</h2>
@@ -74,8 +75,8 @@ include("../include/checkform.php");
 <h2>License &amp; Source Code</h2>
 
 <p>LanguageTool is freely available under the <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-The source is available <?=show_link("at Sourceforge", "http://sourceforge.net/projects/languagetool/", 1) ?> via SVN.
-The contents of this homepage is available under <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 1) ?>.</p>
+The source is available <?=show_link("at Sourceforge", "http://sourceforge.net/projects/languagetool/", 0) ?> via SVN.
+The contents of this homepage is available under <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <div style="height:50px"></div>
 
