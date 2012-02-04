@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php print $title." ".$title2 ?></title>
-<link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title><?php print $title." ".$title2 ?></title>
+  <link href="/css/style.css?2" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -16,7 +16,7 @@ function makeEntry($name, $visName) {
 	global $page;
 	if ($page == $name || ($name == "." && $page == "homepage")) {
 		?>
-		<p class="activeMenuitem"><? print $visName ?></p>
+		<div class="menuitem activeMenuitem"><? print $visName ?></div>
 		<?php
 	} else {
 		$url = $name;
@@ -30,7 +30,7 @@ function makeEntry($name, $visName) {
 			}
 		}
 		?>
-		<p class="menuitem"><a href="<?php print $url ?>"><? print $visName ?></a></p>
+        <a href="<?php print $url ?>"><div class="menuitem"><? print $visName ?></div></a>
 		<?php
 	}
 }
@@ -61,8 +61,9 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("links", "Links &amp; Resources"); ?>
 			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
 			
-			<br/><br/><br/>
-			<a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-right:5px" src="/images/twitter_link16x16.png"/>Follow us on twitter</a>
+			<div style="margin-top:70px;font-size:12px">
+			  <a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-left:10px;margin-right:5px" src="/images/twitter_link16x16.png"/>Follow us on twitter</a>
+            </div>
 		</div>
 	</td>
 	<td class="content">

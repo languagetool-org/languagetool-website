@@ -132,58 +132,33 @@ pre {
 /* ------------------------------------------------- */
 
 #menu {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: verdana, sans-serif;
+    font-size: 16px;
+}
+
+.menuitem {
+    color: #464646;
+   	padding-left: 10px;
+   	padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+   	margin-bottom: 10px;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+   	background: #ef8701;
 }
 
 .activeMenuitem {
-	color: #ffffff !important;
-	text-decoration: none;
-	font-weight: bold;
-	background: #ef8701;
-}
-
-#menu p {
-	border-bottom: 5px solid #464646;
-	color: #ef8701;
-	font-family: verdana, sans-serif;
-	font-size: 12px;
-	padding: 0px;
-	margin: 0px;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-#menu a:link {
-	color: #464646;
-	font-family: verdana, sans-serif;
-	font-size: 12px;
-	padding-left: 10px;
-	margin-left: 0px;
-	padding-right: 10px;
-	margin-right: 0px;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-#menu a:visited {
-	color: #464646;
-	font-family: verdana, sans-serif;
-	font-size: 12px;
-	padding-left: 10px;
-	margin-left: 0px;
-	padding-right: 10px;
-	margin-right: 0px;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-#menu a:hover {
 	color: #ffffff;
-	font-family: verdana, sans-serif;
-	font-size: 12px;
-	text-decoration: none;
-	font-weight: bold;
 	background: #ef8701;
 }
+
 
 .warning {
 	border-color: #ffb251;
