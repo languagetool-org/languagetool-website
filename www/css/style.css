@@ -40,6 +40,13 @@ h2 {
 	margin-bottom: 5px;
 }
 
+code {
+    background-color: #eeeeee;
+}
+tt {
+    background-color: #eeeeee;
+}
+
 .xmlcode {
 	font-family: monospace;
 	margin-left: 15px;
