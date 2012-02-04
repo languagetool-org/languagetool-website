@@ -55,7 +55,6 @@ function makeEntry($name, $visName) {
 			<?php makeEntry(".", "Homepage"); ?>
 			<?php makeEntry("screenshots", "Screenshots"); ?>
 			<?php makeEntry("forum", "Forum"); ?>
-			<?php makeEntry("demo", "Demo"); ?>
 			<?php makeEntry("languages", "Supported Languages"); ?>
 			<?php makeEntry("usage", "Usage"); ?>
 			<?php makeEntry("development", "Development"); ?>
