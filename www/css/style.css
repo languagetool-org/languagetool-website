@@ -88,7 +88,7 @@ pre {
 }
 
 .lastmod {
-	text-align: right;
+    margin-top: 40px;
 	font-size: 9px;
 	color: #888888;
 	font-family: verdana, sans-serif;

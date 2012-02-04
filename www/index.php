@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-01-24 17:20:00 CET";
+$lastmod = "2012-02-04 17:20:00 CET";
 include("../include/header.php");
 ?>
 		
@@ -26,6 +26,9 @@ $checkDefaultText = "Paste your own text here... or check this text too see a fe
 include("../include/checkform.php");
 ?>
 
+<p><strong>Try LanguageTool without installation, using Java WebStart.</strong> Requires Java 1.6_04 or later:<br />
+<strong><?=show_link("Start LanguageTool (29&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+
 
 <h2>Download</h2>
 
@@ -36,19 +39,10 @@ include("../include/checkform.php");
 	<ul>
 		<li>Requires <?=show_link("Java", "http://www.java.com/en/download/manual.jsp", 1)?>&nbsp;6.0
 			or later. You need to <strong>restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
-		<li>If you're upgrading from LanguageTool 0.9.5, you must de-install
-			it <strong>before</strong> upgrading to a later version (check
-			<a href="http://languagetool.wikidot.com/removing-languagetool-0-9-5-from-openoffice-3-0-1">this
-			page</a> if you forgot to do so).</li>
 		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 1)?>
 			or <?=show_link("post to our forum", "/forum", 1)?>.</li>
 	</ul>
 </div>
-
-<!-- -->
-<p><strong>Try LanguageTool 1.6 without installation, using Java WebStart.</strong> Requires Java 1.6_04 or later.<br />
-<strong><?=show_link("Start LanguageTool (29&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
-<!-- -->
 
 <p>Untested daily snapshots of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/", 0) ?> (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
