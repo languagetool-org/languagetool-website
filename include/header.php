@@ -49,7 +49,7 @@ function makeEntry($name, $visName) {
 	<td><h1 style="text-align:left"><?php print $title2 ?></h1></td>
 </tr>
 <tr>
-	<td width="88"></td>
+	<td width="43"></td>
 	<td width="201" valign="top">
 		<div id="menu">
 			<?php makeEntry(".", "Homepage"); ?>
