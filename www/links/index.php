@@ -6,7 +6,7 @@ $lastmod = "2012-02-04 14:35:00 CET";
 include("../../include/header.php");
 ?>
 
-<h2 style="margin-top: 2px">Links for Users</h2>
+<h2 class="firstpara">Links for Users</h2>
 
 <p><strong>LanguageTool integration</strong>:</p>
 

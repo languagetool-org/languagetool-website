@@ -6,7 +6,7 @@ $lastmod = "2012-01-24 23:30:00 CET";
 include("../../include/header.php");
 ?>
 
-<h2><a name="commonproblems">Checklist in Case of Problems</a></h2>
+<h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
 
 <ul class="largelist">
 <li>Did you restart OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,

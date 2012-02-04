@@ -58,6 +58,8 @@ include("../include/checkform.php");
 
 <h2>News</h2>
 
+<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/") ?>, <?=show_link("Russian", "ru/") ?>, and <?=show_link("Esperanto", "eo/") ?>
+
 <p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:
 <ul>
     <li>Rule updates for several languages (Chinese, French, Breton, and others)</li>
