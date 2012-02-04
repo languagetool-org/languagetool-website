@@ -11,7 +11,7 @@ function printLangOption($langCode, $lang) {
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <textarea onfocus="javascript: if(document.checkform.text.value == '<?php print $checkDefaultText ?>') { document.checkform.text.value='' } " 
-        style="width:100%; max-width:800px;height:100px" name="text"><?php print $checkDefaultText ?></textarea>
+        style="width:100%; height:100px" name="text"><?php print $checkDefaultText ?></textarea>
     <div style="margin-top:4px">
         <input type="submit" name="_action_checkText" value="<?php print $checkSubmitButtonValue ?>"/>
         <?php if ($showLanguageBox) { ?>

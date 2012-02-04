@@ -2,10 +2,15 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-02-04 17:20:00 CET";
+$lastmod = "2012-02-04 17:21:00 CET";
+$enable_fancybox = 1;
 include("../include/header.php");
 ?>
-		
+
+<a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage"
+   href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
+
 <p class="firstpara"><strong>LanguageTool is a style and grammar proofreading software for English, French, German, Polish, 
 Dutch, Romanian, and a lot of <?=show_link("other languages", "languages/", 0) ?>.</strong>
 You can think of LanguageTool as a software to detect errors that a simple spell checker cannot detect, e.g. mixing
@@ -14,8 +19,7 @@ up <em>there/their</em>, <em>no/now</em> etc. It can also detect some grammar mi
 <p>LanguageTool will find errors for which a rule is defined in its 
 language-specific configuration files. Rules for detecting more complicated errors can be written in Java.</p>
 
-
-<h2>Try it online</h2>
+<h2 style="margin-top: 40px">Try it online</h2>
 
 <?php
 $checkSubmitButtonValue = "Check Text";
