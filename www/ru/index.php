@@ -3,6 +3,7 @@ $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
 $lastmod = "2012-02-05 11:30:00 CET";
+$enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
