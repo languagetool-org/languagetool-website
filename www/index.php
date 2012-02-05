@@ -39,7 +39,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <div class="downloadSection">
 	<div id="downloadButton">
-        <a href="download/LanguageTool-1.6.oxt"><span
+        <a style="display: block" href="download/LanguageTool-1.6.oxt"><span
            class="languagetool">LanguageTool</span><br/><span class="download">Download<br/>
         </span><span class="version">Version 1.6 (29&nbsp;MB)</span></a>
 	</div>
@@ -59,9 +59,9 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <h2>News</h2>
 
-<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?>
+<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?></p>
 
-<p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:
+<p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
 <ul>
     <li>Rule updates for several languages (Chinese, French, Breton, and others)</li>
     <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>

@@ -229,6 +229,10 @@ TABLE TBODY TR TD.content FORM TEXTAREA {
     height: 70px;
 }
 
+#downloadButton a:hover {
+    text-decoration: none;
+}
+
 #downloadButton SPAN.languagetool {
     font-family: georgia, "Bitstream Charter", serif;
     color: #FFFFFF;

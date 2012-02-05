@@ -83,7 +83,8 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
 			
 			<div style="margin-top:70px;font-size:12px">
-			  <a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-left:10px;margin-right:5px" src="/images/twitter_link16x16.png"/>Follow us on twitter</a>
+			  <a href="http://twitter.com/languagetoolorg"><img border="0"
+                style="margin-left:10px;margin-right:5px" src="/images/twitter_link16x16.png" alt="twitter logo"/>Follow us on twitter</a>
             </div>
 		</div>
 	</td>
