@@ -62,7 +62,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
   <a href="../download/LanguageTool-1.6.oxt"><span
   class="languagetool">LanguageTool</span><br/><span class="download">Pellgargit<br/>
   </span><span class="version">Handelv 1.6 (29&nbsp;MB)</span></a>
-  </div>
+</div>
 
 Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 
@@ -74,9 +74,9 @@ Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 <p>
 Ho skoazell hon eus ezhomm evit gwelaat LanguageTool e brezhonek.
 Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe koudennoù
-bennak ho peus kavet gant LanguageTool brezhonek? Skrivit d’an
-<a href="mailto:dominique.pelle@gmail.com">aozer</a>, pe skrivit
-er <a href="http://www.languagetool.org/forum/">forum</a>.
+bennak ho peus kavet gant LanguageTool brezhonek? Skrivit da
+<a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
+pe skrivit er <a href="http://www.languagetool.org/forum/">forum</a>.
 </p>
 <h2>Aotre-implijout</h2>
 <p>
