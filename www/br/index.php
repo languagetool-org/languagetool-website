@@ -78,15 +78,16 @@ bennak ho peus kavet gant LanguageTool brezhonek? Skrivit da
 <a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
 pe skrivit er <a href="http://www.languagetool.org/forum/">forum</a>.
 </p>
+<p>
+Trugarez d’ar re ho peus sikouret evit LanguageTool e vrezhoneg: 
+Fulup Jakez, Joseph Monfort ha Denis Arnaud.
+</p>
 <h2>Aotre-implijout</h2>
 <p>
 Gallout a rit implijañ LanguageTool gant an aotre
 <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 </p>
 <div style="height:30px"></div>
-
-Trugarez d’ar re ho peus sikouret evit LanguageTool e vrezhoneg: 
-Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 
 <?php
 include("../../include/footer.php");
