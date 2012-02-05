@@ -10,14 +10,14 @@ include("../../include/header.php");
 programo por kontroli stilon kaj gramatikon en Esperanto sed ankaŭ en 
 <a href="../languages/">multaj aliaj lingvoj</a>.</strong>
 Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.
-Ĝi ne atentigas pri misliterumoj, sed eblas uzi Lingvoilon samtempe kune
+Ĝi ne atentigas pri misliterumoj, sed eblas uzi Lingvoilon kune
 kun literuma kontrolilo.</p>
 
 <h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Alglui vian kontrolendan tekston ĉi tie...') { document.checkform.text.value='' } " 
-        style="width:100%; max-width:800px;height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie...</textarea>
+        style="width:100%; max-width:700px;height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi rimarkis, ke estas gramatikaj eraro en tio frazo? Notu ankaŭ, ke Lingvoiilo ne atentigas pri literrumaj erraroj kiel tiuj.</textarea>
     <br />
     <input type="submit" name="_action_checkText" value="Kontroli tekston"/>
     Lingvo: <select name="lang" id="lang" >
