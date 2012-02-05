@@ -1,17 +1,19 @@
 <?php
 $page = "Pajenn degemer";
 $title = "LanguageTool";
-$title2 = "Difazier yezhadurel frank";
+$title2 = "An difazier yezhadurel frank evit ar brezhoneg";
 $lastmod = "2012-02-05 11:24 CET";
 include("../../include/header.php");
 ?>
 		
-<p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.
-Barrek eo da gwiriañ testennoù brezhonek.
+<p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
+Barrek eo da gwiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
 Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. 
-
-LanguageTool a gav fazioù evel kemadurioù direizh (ar paotred → ar baotred) hag all na
+</p>
+<p>
+LanguageTool a gav fazioù evel kemadurioù direizh (ar paotred → ar baotred) hag all ha na
 vez ket kavet gant un difazier skrivadurel.
+</p>
 
 <h2>LanguageTool enlinenn</h2>
 
@@ -67,18 +69,18 @@ Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 <img src="images/languagetool-brezhoneg.png" alt="LanguageTool"/>
 
 <h2>Ho skoazell</h2>
-
+<p>
 Ho skoazell hon eus ezhomm evit gwelaat LanguageTool e brezhonek.
 Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe koudennoù
-ho peus kavet gant LanguageTool brezhonek? Skrivit d’an
-<a href="mailto:dominique.pelle@gmail.com">aozer</a>, pe
+bennak ho peus kavet gant LanguageTool brezhonek? Skrivit d’an
+<a href="mailto:dominique.pelle@gmail.com">aozer</a>, pe skrivit
 er <a href="http://www.languagetool.org/forum/">forum</a>.
-
+</p>
 <h2>Aotre-implijout</h2>
-
+<p>
 Gallout a rit implijañ LanguageTool gant an aotre
 <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
-
+</p>
 <div style="height:30px"></div>
 
 <?php
