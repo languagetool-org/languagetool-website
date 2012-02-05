@@ -7,12 +7,12 @@ include("../../include/header.php");
 ?>
 		
 <p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
-Barrek eo da gwiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
+Barrek eo da wiriañ testennoù e vrezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
 Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. 
 </p>
 <p>
 LanguageTool a gav fazioù evel kemadurioù direizh (ar paotred → ar baotred) hag all ha na
-vezont ket kavet gant un difazier skrivadurel. Ne gav ket fazioù skrivadurel. Met possubl
+vezont ket kavet gant un difazier skrivadurel. Ne gav ket fazioù skrivadurel. Met posupl
 eo implijañ ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
 geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
@@ -20,8 +20,8 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 <h2>LanguageTool enlinenn</h2>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn brezhonek da vezañ gwiriaet…') { document.checkform.text.value='' } " 
-        style="width:100%; max-width:700px;height:100px" name="text">Lakait amañ ho testenn brezhonek da vezañ gwiriaet…</textarea>
+    <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn vrezhonek da vezañ gwiriaet…') { document.checkform.text.value='' } " 
+        style="width:100%; max-width:700px;height:100px" name="text">Lakait amañ ho testenn vrezhonek da vezañ gwiriaet…</textarea>
     <br />
     <input type="submit" name="_action_checkText" value="Gwiriañ an testenn"/>
     Yezh: <select name="lang" id="lang" >
@@ -72,7 +72,7 @@ Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 
 <h2>Ho skoazell</h2>
 <p>
-Ho skoazell hon eus ezhomm evit gwelaat LanguageTool e brezhonek.
+Ho skoazell hon eus ezhomm evit gwellaat LanguageTool e vrezhonek.
 Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe koudennoù
 bennak ho peus kavet gant LanguageTool brezhonek? Skrivit da
 <a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
@@ -84,6 +84,9 @@ Gallout a rit implijañ LanguageTool gant an aotre
 <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 </p>
 <div style="height:30px"></div>
+
+Trugarez d’ar re ho peus sikouret evit LanguageTool e vrezhoneg: 
+Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 
 <?php
 include("../../include/footer.php");
