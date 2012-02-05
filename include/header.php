@@ -51,7 +51,7 @@ function makeEntry($name, $visName) {
 			}
 		}
 		?>
-        <a href="<?php print $url ?>"><div class="menuitem"><? print $visName ?></div></a>
+        <div class="menuitem"><a href="<?php print $url ?>" style="display: block;"><? print $visName ?></a></div>
 		<?php
 	}
 }
