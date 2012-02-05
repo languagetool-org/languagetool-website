@@ -23,7 +23,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn vrezhonek da vezañ gwiriaet…') { document.checkform.text.value='' } " 
         style="width:100%; max-width:700px;height:100px" name="text">Lakait amañ ho testenn vrezhonek da vezañ gwiriaet…</textarea>
     <br />
-    <input type="submit" name="_action_checkText" value="Gwiriañ an testenn"/>
+    <input type="submit" name="_action_checkText" value="Gwiriañ an destenn"/>
     Yezh: <select name="lang" id="lang" >
     
         <option value="de" >alamaneg</option>
