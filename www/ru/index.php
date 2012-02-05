@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-01-24 19:30:00 CET";
+$lastmod = "2012-02-05 11:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -109,7 +109,7 @@ LanguageTool не предназначен для проверки орфогр�
 <h2>Скачать</h2>
 <div class="downloadSection">
 	<div id="downloadButton">
-        <a style="display: block" href="download/LanguageTool-1.6.oxt"><span
+        <a style="display: block" href="../download/LanguageTool-1.6.oxt"><span
            class="languagetool">LanguageTool</span><br/><span class="download">Скачать!<br/>
         </span><span class="version">Версия 1.6 (29&nbsp;MB)</span></a>
 	</div>
