@@ -12,7 +12,8 @@ Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
 </p>
 <p>
 LanguageTool a gav fazioù evel kemadurioù direizh (ar paotred → ar baotred) hag all ha na
-vezont ket kavet gant un difazier skrivadurel. Ne gav ket fazioù skrivadurel. Met posupl
+vezont ket kavet gant un difazier skrivadurel. Displegañ a ra ar fazioù ha kinnig a ra
+reizhadennoù. Ne gav ket fazioù skrivadurel avat. Met posupl
 eo implijañ ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
 geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
