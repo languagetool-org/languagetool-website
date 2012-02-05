@@ -61,8 +61,9 @@ kun literuma kontrolilo.</p>
   </span><span class="version">Versio 1.6 (29&nbsp;MB)</span></a>
   </div>
 <ul>
-<li>Elŝuti <a href="../download/LanguageTool-1.6.oxt">Lingvoilon-1.6</a> (29&nbsp;MB).</li>
-<li>Pli freŝaj sed ne testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
+<li><a href="http://www.java.com/en/download/manual.jsp">Java 6 aŭ pli nova estas bezonata.</li>
+
+<li>Pli freŝaj sed malpli testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
 <a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
 </ul>
 </div>
