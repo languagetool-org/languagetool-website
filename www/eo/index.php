@@ -54,11 +54,17 @@ kun literuma kontrolilo.</p>
 
 <h2>Elŝutado</h2>
 
+<div class="downloadSection">
+  <div id="downloadButton">
+  <a href="../download/LanguageTool-1.6.oxt"><span
+  class="languagetool">Lingvoilo</span><br/><span class="download">Elŝuti<br/>
+  </span><span class="version">Versio 1.6 (29&nbsp;MB)</span></a>
 <ul>
 <li>Elŝuti <a href="../download/LanguageTool-1.6.oxt">Lingvoilon-1.6</a> (29&nbsp;MB).</li>
 <li>Pli freŝaj sed ne testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
 <a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
 </ul>
+</div>
 
 <h2>Instalo kaj uzado</h2>
 
