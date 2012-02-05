@@ -61,7 +61,7 @@ kun literuma kontrolilo.</p>
   </span><span class="version">Versio 1.6 (29&nbsp;MB)</span></a>
   </div>
 <ul>
-<li><a href="http://www.java.com/en/download/manual.jsp">Java 6 aŭ pli nova estas bezonata.</li>
+<li><a href="http://www.java.com/en/download/manual.jsp">Java 6</a> aŭ pli nova estas bezonata.</li>
 
 <li>Pli freŝaj sed malpli testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
 <a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
