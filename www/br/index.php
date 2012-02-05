@@ -7,7 +7,7 @@ include("../../include/header.php");
 ?>
 		
 <p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
-Barrek eo da wiriañ testennoù e vrezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
+Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
 Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. 
 </p>
 <p>
@@ -73,14 +73,14 @@ Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 
 <h2>Ho skoazell</h2>
 <p>
-Ho skoazell hon eus ezhomm evit gwellaat LanguageTool e vrezhonek.
+Ho skoazell hon eus ezhomm evit gwellaat LanguageTool e brezhonek.
 Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe koudennoù
 bennak ho peus kavet gant LanguageTool brezhonek? Skrivit da
 <a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
 pe skrivit er <a href="http://www.languagetool.org/forum/">forum</a>.
 </p>
 <p>
-Trugarez d’ar re ho peus sikouret evit LanguageTool e vrezhoneg: 
+Trugarez d’ar re ho peus sikouret evit LanguageTool e brezhoneg: 
 Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 </p>
 <h2>Aotre-implijout</h2>
