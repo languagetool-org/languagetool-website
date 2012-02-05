@@ -107,8 +107,14 @@ LanguageTool не предназначен для проверки орфогр�
 
 
 <h2>Скачать</h2>
+<div class="downloadSection">
+	<div id="downloadButton">
+        <a style="display: block" href="download/LanguageTool-1.6.oxt"><span
+           class="languagetool">LanguageTool</span><br/><span class="download">Скачать!<br/>
+        </span><span class="version">Версия 1.6 (29&nbsp;MB)</span></a>
+	</div>
 
-<p>LanguageTool можно скачать <a href="../">с главной страницы</a> сайта.</p>
+<p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
 
 <h2>Установка для LibreOffice/OpenOffice.org</h2>
