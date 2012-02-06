@@ -83,8 +83,14 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
 			
 			<div style="margin-top:70px;font-size:12px">
-			  <a href="http://twitter.com/languagetoolorg"><img border="0"
-                style="margin-left:10px;margin-right:5px" src="/images/twitter_link16x16.png" alt="twitter logo"/>Follow us on twitter</a>
+              <table>
+                <tr>
+                  <td valign="top"><a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-left:10px;margin-right:5px" src="http://www.languagetool.org/images/twitter_link16x16.png" alt="twitter logo"/></a></td>
+                  <td><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a><br/>
+                    <span style="color:#777777">(also <a href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg">via RSS</a>)</span>
+                  </td>
+                </tr>
+              </table>
             </div>
 		</div>
 	</td>
