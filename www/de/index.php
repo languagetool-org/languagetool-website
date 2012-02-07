@@ -2,7 +2,8 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-01-26 18:07:00 CET";
+$lastmod = "2012-02-07 23:07:00 CET";
+$enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
@@ -13,6 +14,8 @@ include("../../include/header.php");
 LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 600</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
 <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
+
+<a class="fancyboxImage" title="LanguageTool als Extension in OpenOffice.org" href="images/screenshot.png"><img style="margin: 15px" align="right" src="images/screenshot_small.png" alt="Screenshot"/></a>
 
 <ul>
     <li>Grammatik
