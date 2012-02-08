@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2011-08-14 13:05:00 CET";
+$lastmod = "2012-02-08 21:05:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -16,48 +16,48 @@ Software developers might also be interested in LanguageTool's
 
 <ul>
 	<li><a href="#helpwanted">Help wanted!</a></li>
-    <li><a href="#checkout">Checkout (Java developers only)</a></li>
+    <li><a href="#checkout">Source code Checkout (Java developers only)</a></li>
 	<li><a href="#installation">Installation and usage</a></li>
 	<li><a href="#process">Language checking process</a></li>
 	<li><a href="#xmlrules">Adding new XML rules</a></li>
 	<li><a href="#javarules">Adding new Java rules</a></li>
 	<li><a href="#translation">Translating the user interface</a></li>
 	<li><a href="#newlanguage">Adding support for a new language</a></li>
-	<li><a href="#background">Background</a></li>
+	<li><a href="#background">Background information</a></li>
 </ul>
 
-<p><a name="helpwanted"><strong>Help wanted!</strong></a><br />
+<h3><a name="helpwanted">Help wanted!</a></h3>
 We're looking for people who support us writing new rules so LanguageTool can
-detect more errors. Also see <?=show_link("the list of supported languages", "../languages/", 0)?>.</p>
+detect more errors. Also see <?=show_link("the list of supported languages", "../languages/", 0)?>.
 
 <p>How can you help?</p>
 
 <ol>
 	<li>Read this page</li>
 	<li>Subscribe to the <?=show_link("mailing list",
-		"http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 1)?></li>
+		"http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?></li>
 	<li>Try writing rules. For English and German, see the lists of errors
-		on the <?=show_link("Links page", "/links/", 0)?>. Many of those
+		on the <?=show_link("Links &amp; Resources page", "/links/", 0)?>. Many of those
 		errors are not yet detected.</li>
     <li><?=show_link("See the wiki", "http://languagetool.wikidot.com/", 0)?> for 
         more tips and tricks</li>
 </ol>
 
-<p><a name="checkout"><strong>Checkout (Java developers only)</strong></a><br />
+<h3><a name="checkout">Source code Checkout (Java developers only)</a></h3>
 If you are a Java developer and you want to extend LanguageTool or if you
-want to use the latest development version, check out LanguageTool from subversion:</p>
+want to use the latest development version, check out LanguageTool from subversion:
 
-<code>
+<code style="display: block;">
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
 </code>
 
 <p>You can then run the test with <tt>ant test</tt> or build the code with <tt>ant</tt>.</p>
 
-<p><a name="installation"><strong>Installation and usage</strong></a><br />
+<h3><a name="installation">Installation and usage</a></h3>
 Please see the README file that comes with LanguageTool and the 
-<?=show_link("Usage page", "/usage/", 0) ?>.</p>
+<?=show_link("Usage page", "/usage/", 0) ?>.
 
-<p><a name="process"><strong>Language checking process</strong></a><br />
+<h3><a name="process">Language checking process</a></h3>
 <ol>
 	<li>The text to be checked is split into sentences</li>
 	<li>Each sentence is split into words</li>
@@ -67,12 +67,12 @@ Please see the README file that comes with LanguageTool and the
 		the rules loaded from the grammar.xml file</li>
 </ol>
 
-<p><a name="xmlrules"><strong>Adding new XML rules</strong></a><br />
+<h3><a name="xmlrules">Adding new XML rules</a></h3>
 Many rules are contained in <tt>rules/xx/grammar.xml</tt>, whereas <tt>xx</tt> is
 a language code like <tt>en</tt> or <tt>de</tt>. A rule is basically a pattern
 which shows an error message to the user if the pattern matches. A pattern can
 address words or part-of-speech tags.
-Here are some examples of patterns that can be used in that file:</p>
+Here are some examples of patterns that can be used in that file:
 
 <ul class="largelist">
 	<li><?php hl('<token bla="x">think</token>', "xmlcodeNoIndent"); ?>
@@ -146,7 +146,7 @@ etc as an error:</p>
 	in two situations:
 	
 	<br /><br />
-	<p><strong>1. Simulate a simple chunker</strong> for languages with flexible word order, 
+	<p><strong>1. Simulate a simple chunker</strong> for languages with flexible word order,
 	e.g., for matching errors of rection; we could for example skip possible 
 	adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
 
@@ -281,30 +281,27 @@ etc as an error:</p>
 	</li>
 </ul>
 
-<p><a name="javarules"><strong>Adding new Java rules</strong></a><br />
+<h3><a name="javarules">Adding new Java rules</a></h3>
 Rules that cannot be expressed with a simple pattern in <tt>grammar.xml</tt>
 can be developed as a Java class. See 
 <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
-add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.</p>
+add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
 
-<p><a name="translation"><strong>Translating the user interface</strong></a><br />
-To translate the user interface, just copy <tt>MessagesBundle_en.properties</tt>
-to <tt>MessagesBundle_xx.properties</tt> (whereas <tt>xx</tt> is the code of your
-language) and translate the text. Note that hot keys for menu items are specified
-with the <tt>&amp;</tt> character (for example, <tt>&amp;File</tt>).
-The next time you start LanguageTool, it should show your translation (assuming your computer is configured to use your 
-language -- if
-that's not the case, start LanguageTool with <tt>java -Duser.language=xx -jar LanguageToolGUI.jar</tt>).
-</p>
 
-<p><a name="newlanguage"><strong>Adding support for a new language</strong></a><br />
+<h3><a name="translation">Translating the user interface</a></h3>
+We use <a href="https://www.transifex.net/projects/p/languagetool/">Transifex</a> to translate our property
+files. Updated translations are only copied to the LanguageTool source before a release, so
+if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.
+
+
+<h3><a name="newlanguage">Adding support for a new language</a></h3>
 Adding a new language requires some changes to the Java source files. You should check out
 the "JLanguageTool" module from subversion (see <a href="#checkout">above</a> or the <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=110216">sourceforge 
 help</a>). You may then call <tt><a href="http://ant.apache.org/">ant</a></tt> to
 build LanguageTool (this is optional, it's okay to work only inside Eclipse). Ant should compile
-a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.</p>
+a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.
 
 <ul>
 
@@ -350,13 +347,15 @@ on the right of the "=" sign).</li>
 
 </ul>
 
-<p><a name="background"><strong>Background</strong></a><br />
-For background information, my diploma thesis 
-about LanguageTool is available (note that this refers to an earlier version of LanguageTool
+<h3><a name="background">Background information</a></h3>
+For some background information, Daniel Naber's diploma thesis
+about the original version of LanguageTool is available - please note that this refers to an earlier version of LanguageTool
 which was written in Python):<br />
 <?=show_link("PDF, 650 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.pdf", 0) ?>
 <br /><?=show_link("Postscript (.ps.gz), 630 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.ps.gz", 0) ?>
-</p>
+
+<!-- -->
+<div style="height: 400px"></div>
 
 <?php
 include("../../include/footer.php");
