@@ -194,7 +194,7 @@ etc as an error:</p>
 	before "tak". Note that it's very hard to make such an exclusion otherwise.	
 	</p>
 
-	<p><strong>3. Using variables in rules</strong>
+	<p><strong>3. Using variables in rules</strong></p>
 	
 	<p>In XML rules, you can refer to previously matched tokens in the pattern. For example:</p>
 	
@@ -206,9 +206,9 @@ etc as an error:</p>
 	<p>This rule matches sequences like <b>ani... ani, ni... ni, i... i</b> but you don't have to 
 	write all these cases explicitly. The first match (matches are numbered from zero, so it's 
 	&lt;match no="0"/&gt;) is automatically inserted into the second token. Note 
-	that this rule will match sentences like:
+	that this rule will match sentences like:</p>
 	
-	<tt>Nie	kupiłem ani gruszek ani jabłek. Kupię to lub to lub tamto.</tt></p>
+	<tt>Nie	kupiłem ani gruszek ani jabłek. Kupię to lub to lub tamto.</tt>
 	
 	<p>A similar mechanism could be used in suggestions, however there are more features, and tokens are
 	numbered from 1 (for compatibility with the older notation \1 for the first matched token). For example:</p>
