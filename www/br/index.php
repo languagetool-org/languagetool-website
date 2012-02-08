@@ -11,7 +11,7 @@ Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetoo
 Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. 
 </p>
 <p>
-LanguageTool a gav fazioù evel kemadurioù direizh (ar paotred → ar baotred) hag all ha na
+LanguageTool a gav fazioù evel kemmadurioù direizh (ar paotred → ar baotred) hag all ha na
 vezont ket kavet gant un difazier skrivadurel. Displegañ a ra ar fazioù ha kinnig a ra
 reizhadennoù. Ne gav ket fazioù skrivadurel avat. Met posupl
 eo implijañ ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
@@ -74,7 +74,7 @@ Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
 <h2>Ho skoazell</h2>
 <p>
 Ho skoazell hon eus ezhomm evit gwellaat LanguageTool e brezhonek.
-Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe koudennoù
+Ijinoù evit kavout muioc’h a fazioù ho peus marteze? Pe kudennoù
 bennak ho peus kavet gant LanguageTool brezhonek? Skrivit da
 <a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
 pe skrivit er <a href="http://www.languagetool.org/forum/">forum</a>.
