@@ -2,24 +2,22 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-02-06 20:20:00 CET";
+$lastmod = "2012-02-08 20:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 		
 <p>LanguageTool can be used in a different number of ways:</p>
 
-<ul class="largelist">
-
-    <li><strong>As a LibreOffice/OpenOffice.org extension</strong>:
+<h3>As a LibreOffice/OpenOffice.org extension</h3>
     Double click the downloaded <tt>LanguageTool-1.x.oxt</tt> to install it.
   	If that doesn't work, call <em>Tools -&gt; Extension Manager -&gt; Add...</em>.
     Close LibreOffice/OpenOffice.org and re-start it. Type some text
   	with an error that LanguageTool can detect and you should see a blue underline.
     You might want to use "This is an test." as en example &ndash; make sure the text language is set
-    to English for this example.</li>
+    to English for this example.
 
-	<li><strong>As a stand-alone application</strong>:
+<h3>As a stand-alone application</h3>
 	Rename the *.oxt file so it ends with ".zip" and unzip it.
 	Then start <tt>LanguageToolGUI.jar</tt> by double clicking on it. If your computer isn't
 	configured to start jar archives, start it from the command line using<br />
@@ -28,14 +26,14 @@ include('../../include/geshi/geshi.php');
 	After you copy any text to the clipboard, clicking LanguageTool in the system tray will
 	cause the application to open and check the contents of the clipboard automatically. This way
 	you can use LanguageTool for applications that do not support direct integration of the checker.
-	</li>
 
-	<li><strong>As a stand-alone application on the command line</strong>:
-	see above, but start LanguageTool.jar using<br />
+<h3>As a stand-alone application on the command line</h3>
+	See above, but start LanguageTool.jar using<br />
 	<tt>java -jar LanguageTool.jar &lt;filename></tt><br />
-	LanguageTool only supports plain text files.</li>
+	LanguageTool only supports plain text files.
 
-	<li><strong>Embedding LanguageTool in Java applications:</strong> See
+<h3>Embedding LanguageTool in Java applications</h3>
+See
 	<?=show_link("the API documentation", "/development/api/", 0) ?>. You just need to create a 
     <tt>JLanguageTool</tt> object and use that
 	to check your text. For example:
@@ -55,7 +53,9 @@ for (RuleMatch match : matches) {
 	<br />		
 	</li>
 
-	<li><strong>Using LanguageTool from other applications:</strong> Start the stand-alone
+<h3>Using LanguageTool from other applications</h3>
+
+Start the stand-alone
 	application and configure it to listen on a port that is not used yet (the default
 	port, 8081, should often be okay). This way LanguageTool will run in server mode
 	until you stop it. <br />
@@ -83,10 +83,6 @@ for (RuleMatch match : matches) {
 
 	<p>The server can also be started on the command line using this command:<br />
 	<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt>
-
-	</li>
-
-</ul>
 
 <?php
 include("../../include/footer.php");
