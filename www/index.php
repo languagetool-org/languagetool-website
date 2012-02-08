@@ -21,6 +21,9 @@ language-specific configuration files. Rules for detecting more complicated erro
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
+<p>Use LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, as a stand-alone application, or embedded in other applications", "usage/", 0)?>
+  or try it out here:</p>
+
 <?php
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 1;
