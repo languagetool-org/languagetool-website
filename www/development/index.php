@@ -250,7 +250,7 @@ etc as an error:</p>
 	
 	<p>Sometimes the rule should change the case of the matched word. For this purpose, 
 	you can use <tt>case_conversion</tt> attribute values: <tt>startlower</tt>, <tt>startupper</tt>,
-	<tt>allupper</tt> and <tt>alllower</tt>.
+	<tt>allupper</tt> and <tt>alllower</tt>.</p>
 	
 	<p>Another useful thing is that &lt;match&gt; can refer to a token, but apply its POS 
 	to another word. This is useful for suggesting another word with the same part 
