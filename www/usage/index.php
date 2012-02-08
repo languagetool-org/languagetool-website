@@ -51,7 +51,6 @@ for (RuleMatch match : matches) {
       match.getSuggestedReplacements());
 }'); ?>
 	<br />		
-	</li>
 
 <h3>Using LanguageTool from other applications</h3>
 
@@ -82,7 +81,7 @@ Start the stand-alone
 </matches>'); ?>
 
 	<p>The server can also be started on the command line using this command:<br />
-	<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt>
+	<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt></p>
 
 <?php
 include("../../include/footer.php");
