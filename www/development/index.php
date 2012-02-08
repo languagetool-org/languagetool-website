@@ -92,7 +92,7 @@ Here are some examples of patterns that can be used in that file:
 </ul>
 
 <p>Pattern's terms are matched case-insensitively by default, this can be changed
-by setting the <tt>case_sensitive</tt> attribute to <tt>yes</tt>.
+by setting the <tt>case_sensitive</tt> attribute to <tt>yes</tt>.</p>
 
 <p>Here's an example of a complete rule that marks "bed English", "bat attitude"
 etc as an error:</p>
