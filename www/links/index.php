@@ -26,10 +26,10 @@ include("../../include/header.php");
 	<li><?=show_simple_link("Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
 </ul>
 
-<p><strong>Contact:</strong><br />
+<p><strong>Contact:</strong></p>
 
 <ul>
-    <li>LanguageTool was originally written by <?=show_link("Daniel Naber", "http://www.danielnaber.de", 0)?></a>
+    <li>LanguageTool was originally written by <?=show_link("Daniel Naber", "http://www.danielnaber.de", 0)?>
     (<strong>naber <span>a&#116;</span> danielnaber<span>.</span>de</strong>) and is now maintained by
     Daniel Naber and Marcin Miłkowski (<?=show_link("contact form", "http://marcinmilkowski.pl/en/Contact/", 0)?>)</li>
     <li>Contact us via email or <?=show_link("post to the forum", "/forum", 0)?></li>
