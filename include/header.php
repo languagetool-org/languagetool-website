@@ -25,6 +25,25 @@
     // -->
     </script>
   <?php } ?>
+  <?php if ($enable_tablesorter) { ?>
+    <link href="<?php print $rootUrl ?>/css/tablesorter-style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="<?php print $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
+    <script type="text/javascript">
+    <!--
+      $(document).ready(function() {
+          $(".sortable").tablesorter({
+            headers: {
+              2: {
+                sorter: false
+              }
+            }
+          });
+      }
+    );
+    // -->
+    </script>
+  <?php } ?>
 </head>
 <body>
 
