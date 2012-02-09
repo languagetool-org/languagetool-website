@@ -42,9 +42,10 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <div class="downloadSection">
 	<div id="downloadButton">
-        <a style="display: block" href="download/LanguageTool-1.6.oxt"><span
-           class="languagetool">LanguageTool</span><br/><span class="download">Download<br/>
-        </span><span class="version">Version 1.6 (29&nbsp;MB)</span></a>
+        <?php
+        $downloadPath = "download";
+        include("../include/download.php");
+        ?>
 	</div>
 	<ul>
 		<li>Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.</li>

@@ -6,9 +6,9 @@ if( !isset($downloadLabel) ) $downloadLabel = "Download";
 ?>
 
 <div id="downloadButton">
-   <?php print "<a style=\"display: block\" href=\"$downloadPath/LanguageTool-$version.oxt\">"; ?>
+   <a style="display: block" href="<?php print $downloadPath ?>/LanguageTool-<?php print $version ?>.oxt">
      <span class="languagetool">LanguageTool</span><br/>
-     <?php print "<span class=\"download\">$downloadLabel<br/></span>"; ?>
-     <?php print "<span class=\"version\">Version $version ($filesize&nbsp;MB)</span>"; ?>
+     <span class="download"><?php print $downloadLabel ?><br/></span>
+     <span class="version">Version <?php print $version ?> (<?php print $filesize ?>&nbsp;MB)</span>
    </a>
 </div> 
