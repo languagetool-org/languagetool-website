@@ -1,8 +1,8 @@
 <?php
 $version= "1.6";
 $filesize = "29";
-if( !isset($downloadPath) $downloadPath = "download" )
-if( !isset($downloadLabel) $downloadLabel = "Download" )
+if( !isset($downloadPath) ) $downloadPath = "download";
+if( !isset($downloadLabel) ) $downloadLabel = "Download";
 ?>
 
 <div id="downloadButton">

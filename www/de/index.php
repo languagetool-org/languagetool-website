@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-02-07 23:07:00 CET";
+$lastmod = "2012-02-09 06:52:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
