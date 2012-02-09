@@ -36,7 +36,7 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
     <li>Groß-/Kleinschreibung
         <ul>
             <li>Die <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.</li>
-            <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">prüfung</span> der Großschreibung am Satzanfang.</li>
+            <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.</li>
         </ul>
     </li>
     <li>Zusammen-/Getrenntschreibung
@@ -83,9 +83,7 @@ direkt hier im Browser ausprobieren:<br/><br/>
 $checkSubmitButtonValue = "Text Prüfen";
 $showLanguageBox = 0;
 $checkDefaultLang = "de";
-$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler , ".
-    "die LanguageTool erkennen kann. Was ist zum Beispiel ein ökonomischer Gottesdienst? ".
-    "Eine Rectschreibprüfunk findet findet übrigens nicht statt.";
+$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens nicht statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
 include("../../include/checkform.php");
 ?>
 
@@ -94,7 +92,7 @@ LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http
 
 <ol>
     <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier</a> kostenlos herunter und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
-    <li>Laden Sie sich die aktuelle Version von LanguageTool von der <a href="../">Startseite</a> herunter.</li>
+    <li>Laden Sie sich die aktuelle Version von LanguageTool herunter. (Der Downloadbutton befindet sich oben auf dieser Seite.)</li>
     <li>Öffnen Sie LibreOffice bzw. OpenOffice.org und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
     <li>Klicken Sie nun auf <i>Hinzufügen&hellip;</i>, wählen Sie die in Schritt 2 heruntergeladene Datei aus und klicken Sie auf <i>Öffnen</i>.</li>
     <li>Starten Sie nach der Installation LibreOffice bzw. OpenOffice.org neu.</li>
