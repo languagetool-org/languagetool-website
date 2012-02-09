@@ -14,7 +14,7 @@ Mont a ra mat dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
 LanguageTool a gav fazioù evel kemmadurioù direizh (ar paotred → ar baotred) hag all ha na
 vezont ket kavet gant un difazier skrivadurel. Displegañ a ra ar fazioù ha kinnig a ra
 reizhadennoù. Ne gav ket fazioù skrivadurel avat. Met posupl
-eo implijañ ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
+eo implijout ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
 geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
 
@@ -85,7 +85,7 @@ Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 </p>
 <h2>Aotre-implijout</h2>
 <p>
-Gallout a rit implijañ LanguageTool gant an aotre
+Gallout a rit implijout LanguageTool gant an aotre
 <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 </p>
 <div style="height:30px"></div>
