@@ -9,6 +9,14 @@ include("../../include/header.php");
 
 <p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.</p>
 
+<?php
+$downloadPath = "../download";
+include("../../include/download.php");
+?>
+<div style="color:grey;font-size:smaller">
+   <a href="#liboinstall" style="color:grey;">In LibreOffice/OpenOffice.org installieren</a> &dash; <a href="../usage/"  style="color:grey;">andere Verwendungsmöglichkeiten (Englisch)</a>
+</div> 
+
 <h2>Funktionen</h2>
 
 LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 600</a> Fehler in deutschsprachigen Texten:<br/><br/>
@@ -80,12 +88,7 @@ $checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text
 include("../../include/checkform.php");
 ?>
 
-
-<h2>Download</h2>
-
-<p>LanguageTool kann auf der <a href="../">Startseite</a> heruntergeladen werden.</p>
-
-<h2>LanguageTool in LibreOffice/OpenOffice.org nutzen</h2>
+<h2 id="#liboinstall">LanguageTool in LibreOffice/OpenOffice.org nutzen</h2>
 LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">OpenOffice.org</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
 
 <ol>
