@@ -65,7 +65,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
   </span><span class="version">Stumm 1.6 (29&nbsp;MB)</span></a>
 </div>
 
-Ar restr da bellgargañ a zo evit brezhoneg hag an holl yezhoù all.
+Ar restr da bellgargañ a zo evit brezhoneg hag holl an yezhoù all.
 
 <h2>Skramm skouer</h2>
 
@@ -80,7 +80,7 @@ kavet ur gudenn bennak gant LanguageTool brezhoneg? Skrivit da
 pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.
 </p>
 <p>
-Trugarez d’ar re o deus sikouret evit sevel LanguageTool e brezhoneg: 
+Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg: 
 Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 </p>
 <h2>Aotre-implijout</h2>
