@@ -11,6 +11,7 @@ include("../../include/header.php");
 <ul class="largelist">
 <li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
 	even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
+<li>LibreOffice 3.5 comes with its own integrated grammar checker (LightProof) which seems to disable LanguageTool for English. We're still looking for a solution to this.</li>
 <li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 6.0 or later from Oracle/Sun</a>
 	is installed on your system. Java versions which are not from Oracle/Sun may not work.</li>
 <li>Make sure this version of Java is selected in OpenOffice.org
