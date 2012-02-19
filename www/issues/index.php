@@ -2,15 +2,15 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-01-24 23:30:00 CET";
+$lastmod = "2012-02-19 13:30:00 CET";
 include("../../include/header.php");
 ?>
 
 <h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
 
 <ul class="largelist">
-<li>Did you restart OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
-	even if OpenOffice.org doesn't say so. (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">Issue 88692</a>)</li>
+<li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
+	even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
 <li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 6.0 or later from Oracle/Sun</a>
 	is installed on your system. Java versions which are not from Oracle/Sun may not work.</li>
 <li>Make sure this version of Java is selected in OpenOffice.org
@@ -49,9 +49,9 @@ include("../../include/header.php");
     <ul>
         <li>LanguageTool installation fails if the name of your user account contains
             special characters. The only workaround so far seems to be to use a different
-            user account. (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=95162">Issue 95162</a>)</li>
+            user account. (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=95162">#95162</a>)</li>
         <li>If you get a message "Can not activate the factory for com.sun.star.help.HelpIndexer because java.lang.NoClassDefFoundError: org/apache/lucene/analysis/cjk/CJKAnalyzer":
-            this was a bug In OpenOffice.org 3.1, it was fixed in version 3.2 (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=98680">Issue 98680</a>)</li>
+            this was a bug In OpenOffice.org 3.1, it was fixed in version 3.2 (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=98680">#98680</a>)</li>
         <li>If you get "Failed to load rules for language English" when opening the configuration dialog, try the latest version of LanguageTool, as this should be fixed in 1.3
             (problem occurred on openSUSE 11.3 with LanguageTool 1.2 pre-installed)
             <!-- 2011-03-18 --></li>
@@ -71,8 +71,7 @@ include("../../include/header.php");
         three sentences start with the same word.</li>
     <li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>
     <li>LanguageTool doesn't work correctly with documents that contain revisions
-        (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">Issue 92013</a>,
-        <a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice issue 36540</a>)
+        (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">#92013</a>)
     </li>
 </ul>
 
