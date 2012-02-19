@@ -2,7 +2,7 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-02-04 14:35:00 CET";
+$lastmod = "2012-02-19 14:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -79,12 +79,13 @@ include("../../include/header.php");
       (<?=show_simple_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt") ?>)</li>
 </ul>
 
-<p><strong>Development Tools:</strong></p>
+<p><strong>Development Tools and Resources:</strong></p>
 
 <ul>
 	<li><?=show_simple_link("User interface translation (i18n) at Transifex", "http://www.transifex.net/projects/p/languagetool/resource/messagesbundleproperties/")?></li>
 	<li><?=show_simple_link("Continuous integration at CloudBees", "http://languagetool.ci.cloudbees.com")?></li>
 	<li><?=show_simple_link("This website's usage statistics", "http://www.languagetool.org/stats")?></li>
+	<li><?=show_simple_link("LibreOffice bug reports related to LanguageTool", "https://bugs.freedesktop.org/buglist.cgi?quicksearch=%22language%20tool%22%20OR%20languagetool&amp;list_id=43548")?></li>
 </ul>
 
 <p><strong>Grammar Error Collection:</strong></p>
