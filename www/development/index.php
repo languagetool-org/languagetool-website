@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-02-08 21:05:00 CET";
+$lastmod = "2012-02-20 21:05:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -105,6 +105,7 @@ etc as an error:</p>
     <message>Did you mean
       <suggestion>bad</suggestion>?
     </message>
+    <url>http://some-server.org/the-bed-bad-error</url>
     <example type="correct">
       Sorry for my <marker>bad</marker> English.
     </example>
@@ -128,6 +129,8 @@ etc as an error:</p>
 		as a regular expression</li>
 	<li>element <tt>message</tt>: The text displayed to the user if this rule matches.
 		Use sub-element <tt>suggestion</tt> to suggest a possible replacement that corrects the error.</li>
+    <li>element <tt>url</tt> (optional, since LanguageTool 1.7): An URL to a page that explains the rule leading to the error in more
+        detail. <!--Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
 	<li>element <tt>example</tt>: At least two examples that with one correct and one incorrect sentence.
 		The incorrect sentence is supposed to be matched by this rule. The position of the error
 		must be marked up with the sub-element <tt>marker</tt>. This is used by the 
