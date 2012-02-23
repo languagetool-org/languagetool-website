@@ -17,6 +17,7 @@ include("../../include/header.php");
 		a plugin that enables grammar-checking in computer-aided translation tool OmegaT (open source)</li>
 	<li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
 	<li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781")?></li>
+        <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
 </ul>
 
 <p><strong>Issue tracking:</strong></p>
