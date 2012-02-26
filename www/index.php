@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-02-04 17:21:00 CET";
+$lastmod = "2012-02-26 17:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -53,14 +53,15 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
           or see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
         <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
         <li>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</li>
-		<li>Please report bugs to the <?=show_link("Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>
-			or <?=show_link("post to our forum", "/forum", 0)?>.</li>
+		<li>Please report bugs <?=show_link("in our forum", "/forum", 0)?> or
+          <?=show_link("in the Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>.</li>
 	</ul>
 </div>
 
 <p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).</p>
+ (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
+ Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 <h2>News</h2>
 
