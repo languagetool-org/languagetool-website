@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-02-26 17:21:00 CET";
+$lastmod = "2012-02-29 17:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -52,6 +52,8 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
         <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install it
           or see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
         <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
+        <li>If you are using LibreOffice 3.5 and you want to check English texts:
+          Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> to disable LightProof and enable LanguageTool for English</li>
         <li>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</li>
 		<li>Please report bugs <?=show_link("in our forum", "/forum", 0)?> or
           <?=show_link("in the Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>.</li>
