@@ -2,14 +2,14 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-02-05 11:30:00 CET";
+$lastmod = "2012-03-07 17:15:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
 <a title="LanguageTool работает в качестве расширения LibreOffice 3.3" class="fancyboxImage"
-   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
+   href="/screenshots/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="/screenshots/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 
 <p class="firstpara">LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики и стиля.
@@ -101,9 +101,6 @@ LanguageTool не предназначен для проверки орфогр�
 <h2>Демонстрация возможностей LanguageTool</h2>
 
 <p><a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно проверить  LanguageTool непосредственно в браузере.
-</p>
-
-<p>Запустить LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">через Java WebStart (30 Mb)!</a>
 </p>
 
 
