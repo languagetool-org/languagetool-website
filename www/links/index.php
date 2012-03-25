@@ -8,6 +8,14 @@ include("../../include/header.php");
 
 <h2 class="firstpara">Links for Users</h2>
 
+<p><strong>Issue tracking:</strong></p>
+
+<ul>
+	<li><?=show_simple_link("Open Bug Reports", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
+	<li><?=show_simple_link("Open Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
+	<li><?=show_simple_link("Create a new Issue", "http://sourceforge.net/tracker/?func=add&amp;group_id=110216&amp;atid=655717")?></li>
+</ul>
+
 <p><strong>LanguageTool integration</strong>:</p>
 
 <ul>
@@ -18,13 +26,6 @@ include("../../include/header.php");
 	<li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
 	<li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781")?></li>
         <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
-</ul>
-
-<p><strong>Issue tracking:</strong></p>
-
-<ul>
-	<li><?=show_simple_link("Bug Reports", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
-	<li><?=show_simple_link("Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
 </ul>
 
 <p><strong>Contact:</strong></p>
