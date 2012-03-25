@@ -2,7 +2,7 @@
 $page = "languages";
 $title = "LanguageTool";
 $title2 = "Supported Languages";
-$lastmod = "2012-02-13 16:30:00 CET";
+$lastmod = "2012-03-25 16:30:00 CET";
 $enable_tablesorter = 1;
 include("../../include/header.php");
 ?>
