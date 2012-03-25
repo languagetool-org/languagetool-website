@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-02-29 17:21:00 CET";
+$lastmod = "2012-03-25 20:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -66,6 +66,13 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 <h2>News</h2>
+
+<p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
+<ul>
+    <li>Rule updates for several languages (French, English, Breton, Russian, Esperanto, German)</li>
+    <li>Several small bug fixes</li>
+    <li>For a detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
+</ul>
 
 <p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?></p>
 

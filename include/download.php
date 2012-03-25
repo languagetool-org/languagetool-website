@@ -1,5 +1,5 @@
 <?php
-$version= "1.6";
+$version= "1.7";
 $filesize = "29";
 if( !isset($downloadPath) ) $downloadPath = "download";
 if( !isset($downloadLabel) ) $downloadLabel = "Download";
