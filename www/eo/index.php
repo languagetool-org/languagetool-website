@@ -56,9 +56,9 @@ kun literuma kontrolilo.</p>
 
 <div class="downloadSection">
   <div id="downloadButton">
-  <a href="../download/LanguageTool-1.6.oxt"><span
+  <a href="../download/LanguageTool-1.7.oxt"><span
   class="languagetool">Lingvoilo</span><br/><span class="download">Elŝuti<br/>
-  </span><span class="version">Versio 1.6 (29&nbsp;MB)</span></a>
+  </span><span class="version">Versio 1.7 (29&nbsp;MB)</span></a>
   </div>
 <ul>
 <li><a href="http://www.java.com/en/download/manual.jsp">Java 6</a> aŭ pli nova estas bezonata.</li>
@@ -72,12 +72,12 @@ kun literuma kontrolilo.</p>
 
 <ul>
   <li><strong>En OpenOffice.org/LibreOffice</strong>:
-  Duoble klaku sur <tt>LanguageTool-1.6.oxt</tt> por instali ĝin.
+  Duoble klaku sur <tt>LanguageTool-1.7.oxt</tt> por instali ĝin.
   Se tio ne funkcias, alvoku «<em>Iloj → Aldonaĵa mastrumilo</em>» ekde
   la ĉefa menuo de LibreOffice, kaj poste restartigu LibreOffice.
   </p>
   <li><strong>En komanda linio</strong>: 
-<pre>$ unzip <a href="../download/LanguageTool-1.6.oxt">LanguageTool-1.6.oxt</a>
+<pre>$ unzip <a href="../download/LanguageTool-1.7.oxt">LanguageTool-1.7.oxt</a>
 $ echo "Tio frazo enhavas eraron." | java -jar LanguageTool.jar -c utf-8 -l eo
 Expected text language: Esperanto
 Working on STDIN...

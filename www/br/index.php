@@ -60,9 +60,9 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 
 <div class="downloadSection">
   <div id="downloadButton">
-  <a href="../download/LanguageTool-1.6.oxt"><span
+  <a href="../download/LanguageTool-1.7.oxt"><span
   class="languagetool">LanguageTool</span><br/><span class="download">Pellgargit<br/>
-  </span><span class="version">Stumm 1.6 (29&nbsp;MB)</span></a>
+  </span><span class="version">Stumm 1.7 (29&nbsp;MB)</span></a>
 </div>
 
 Ar restr da bellgargañ a zo evit brezhoneg hag holl an yezhoù all.
