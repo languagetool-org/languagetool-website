@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-03-23 20:08:00 CET";
+$lastmod = "2012-03-25 22:41:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -16,7 +16,9 @@ include("../../include/header.php");
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru">около 150 правил</a> для проверки русскоязычных текстов:<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru">около 150 правил</a> для проверки русскоязычных текстов.<br/><br/>
+Правила разделены на группы:
+<br/>
 <!--
 <small>(Наведите курсор мыши на ошибки для отображения сообщения программы.)</small>
 -->
@@ -109,9 +111,9 @@ include("../../include/header.php");
 <h2>Скачать</h2>
 <div class="downloadSection">
 	<div id="downloadButton">
-        <a style="display: block" href="../download/LanguageTool-1.6.oxt"><span
+        <a style="display: block" href="../download/LanguageTool-1.7.oxt"><span
            class="languagetool">LanguageTool</span><br/><span class="download">Скачать!<br/>
-        </span><span class="version">Версия 1.6 (29&nbsp;MB)</span></a>
+        </span><span class="version">Версия 1.7 (29&nbsp;MB)</span></a>
 	</div>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
