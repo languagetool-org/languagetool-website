@@ -65,7 +65,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
   </span><span class="version">Stumm 1.7 (29&nbsp;MB)</span></a>
 </div>
 
-Ar restr da bellgargañ a zo evit brezhoneg hag holl an yezhoù all.
+Ar restr da bellgargañ a dalvez evit ar brezhoneg hag an holl yezhoù all.
 
 <h2>Skramm skouer</h2>
 
