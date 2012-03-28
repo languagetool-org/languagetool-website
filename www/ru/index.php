@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-03-25 22:41:00 CET";
+$lastmod = "2012-03-28 20:41:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -104,7 +104,7 @@ include("../../include/header.php");
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
-<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно проверить  LanguageTool непосредственно в браузере.
+<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно запустить  LanguageTool непосредственно в браузере.
 </p>
 
 
@@ -117,6 +117,11 @@ include("../../include/header.php");
 	</div>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
+
+<p>Доступны 
+<?=show_link("ежедневные нетестированные сборки", "../download/snapshots/", 0) ?>
+ (<?=show_link("Список изменений", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
+</p>
 
 
 <h2>Установка для LibreOffice/OpenOffice.org</h2>
