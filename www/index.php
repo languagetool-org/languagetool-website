@@ -69,7 +69,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
 <ul>
-    <li>Rule updates for several languages (French, English, Breton, Russian, Esperanto, German)</li>
+    <li><?=show_link("Rule updates", "changes/", 0) ?> for several languages (French, English, Breton, Russian, Esperanto, German)</li>
     <li>Several small bug fixes</li>
     <li>For a detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
 </ul>
