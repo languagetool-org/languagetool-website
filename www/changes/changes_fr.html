@@ -10,20 +10,31 @@
   The following changes have been done in the latest version of LanguageTool (xml-based rules only):
   <table>
     <tr class="nothing_new" style="display:none"><td>No new rules have been added and no rules have been removed.</td><td></td></tr>
-<tr class="new"><td>NEW RULE</td><td>Comment + verb ppa</td></tr>
-<tr class="new"><td>NEW RULE</td><td>En train de + infinitif</td></tr>
-<tr class="new"><td>NEW RULE</td><td>Forcément, Forcement</td></tr>
-<tr class="new"><td>NEW RULE</td><td>L’Église</td></tr>
-<tr class="new"><td>NEW RULE</td><td>comme même → quand même</td></tr>
-<tr class="new"><td>NEW RULE</td><td>de tous temps → de tout temps</td></tr>
-<tr class="new"><td>NEW RULE</td><td>de toutes façons → de toute façon</td></tr>
-<tr class="new"><td>NEW RULE</td><td>en tous cas → en tout cas</td></tr>
-<tr class="new"><td>NEW RULE</td><td>ensembles ou ensemble</td></tr>
-<tr class="new"><td>NEW RULE</td><td>imminent et éminent</td></tr>
-<tr class="new"><td>NEW RULE</td><td>langue d’hoc → langue d’oc</td></tr>
-<tr class="new"><td>NEW RULE</td><td>se rappeler de → se rappeller</td></tr>
-<tr class="new"><td>NEW RULE</td><td>toute de suite → tout de suite</td></tr>
-<tr class="new"><td>NEW RULE</td><td>à tous prix → à tout prix</td></tr>
+<tr class="new"><td>NEW RULE</td><td>En train de + infinitif<div><span>finds error in:</span>Il est en train de <b>joué</b>.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>Forcément, Forcement<div><span>finds error in:</span>Le <b>forcément</b> d’un coffre.<br/><span>finds error in:</span>Vous avez <b>forcement</b> raison.<br/><span>finds error in:</span>La notation a un aspect <b>forcement</b> aléatoire.<br/><span>finds error in:</span>Vous n’avez pas <b>forcement</b> raison.<br/><span>finds error in:</span>Est-ce <b>forcement</b> grave ?</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>L’Église<div><span>finds error in:</span>L’<b>église</b> catholique<br/><span>finds error in:</span>L’<b>église</b> grèque orthodoxe<br/><span>finds error in:</span>Les sacrements de l’<b>église</b> catholique<br/><span>finds error in:</span>Un homme d’<b>église</b>.<br/><span>finds error in:</span>L’<b>Église</b> gothique va être rénovée.<br/><span>finds error in:</span>L’<b>Église</b> Saint-Paul<br/><span>finds error in:</span>Je vais à l’<b>Église</b> dimanche.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>comme même → quand même<div><span>finds error in:</span>Tu viendras <b>comme même</b>.<br/><span>finds error in:</span>Tu viendras <b>comme même</b> ?</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>de tous temps → de tout temps<div><span>finds error in:</span><b>De tous temps</b></div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>de toutes façons → de toute façon<div><span>finds error in:</span><b>De toutes façons</b></div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>en tous cas → en tout cas<div><span>finds error in:</span>En <b>tous</b> cas, je vous donnerai des nouvelles.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>ensembles ou ensemble<div><span>finds error in:</span>Ils partent <b>ensembles</b> à la montagne.<br/><span>finds error in:</span>Ils partent toujours <b>ensembles</b> à la montagne.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>imminent et éminent<div><span>finds error in:</span>Mon <b>imminent</b> collègue.<br/><span>finds error in:</span>Des scientifiques les plus <b>imminents</b>.<br/><span>finds error in:</span>Un paléontologue <b>imminent</b>.<br/><span>finds error in:</span>L’orage est <b>éminent</b>.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>langue d’hoc → langue d’oc<div><span>finds error in:</span>La langue d’<b>hoc</b>.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>se rappeler de → se rappeller<div><span>finds error in:</span>Je me <b>rappelle de</b> ce moment.<br/><span>finds error in:</span>Je me <b>rappelle d’</b>Anne.<br/><span>finds error in:</span>Je ne me <b>rappelle pas de</b> ce moment.<br/><span>finds error in:</span>Je me <b>rappelle bien d’</b>Anne.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>toute de suite → tout de suite<div><span>finds error in:</span>J’arrive <b>tous</b> de suite.</div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>toutes azimuts → tous azimuts<div><span>finds error in:</span>Une répression <b>tout azimut</b></div></td></tr>
+<tr class="new"><td>NEW RULE</td><td>à tous prix → à tout prix<div><span>finds error in:</span><b>À tous prix</b></div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Accord avec adjectifs tout/tous/toute/toutes<div><span>does not find error in:</span>Ils n’utilisent pas du tout les pieds.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Auxiliaire suivi d’un verbe conjugué<div><span>does not find error in:</span>Les Allemandes sont toutes des délurées.<br/><span>does not find error in:</span>Ce serait attaquer les droits de l’homme.<br/><span>does not find error in:</span>Il faut soit partir, soit attendre.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Impératif + pronom<div><span>finds error in:</span><b>Trouve t‘en</b> toi-même !<br/><span>does not find error in:</span>Trouve-t’en toi-même !<br/><span>does not find error in:</span>Montez le son.<br/><span>does not find error in:</span>Monte le son.<br/><span>does not find error in:</span>Croyez-vous en Dieu ?</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Quelque soit<div><span>finds error in:</span><b>Quelque soient</b> vos raisons<br/><span>finds error in:</span><b>Quelque puisse</b> être sa raison<br/><span>does not find error in:</span><b>Quelles que soient</b> vos raisons<br/><span>does not find error in:</span><b>Quelle que puisse</b> être sa raison</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>SE au lieu de CE<div><span>finds error in:</span><b>Se</b> sont des histoires.<br/><span>finds error in:</span><b>Se</b> sont de grands enfants.<br/><span>finds error in:</span><b>Se</b> sera une fille.<br/><span>does not find error in:</span>Ce sont des histoires.<br/><span>does not find error in:</span>Ce sont de grands enfants.<br/><span>does not find error in:</span>Ils se sont tous inscrits.<br/><span>does not find error in:</span>Ils se sont aimés.<br/><span>does not find error in:</span>Ce sera une fille.<br/><span>does not find error in:</span>Il se sera d’abord lavé.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Trait d’union dans l’inversion verbe-pronom sujet<div><span>does not find error in:</span>Ce sont elles qui parlent.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>gentilés<div><span>finds error in:</span>Je travaille en anglais avec des <b>anglaises</b>.<br/><span>finds error in:</span>Les <b>américaines</b> aiment venir ici.<br/><span>does not find error in:</span>Je travaille en anglais avec des Anglaises.<br/><span>does not find error in:</span>Les <b>Américaines</b> aiment venir ici.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>Élision de le, la…<div><span>does not find error in:</span>Le IIe siècle.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>à l’intention de<div><span>does not find error in:</span>Un cadeau à l’intention de ma femme.</div></td></tr>
+<tr class="modified"><td>IMPROVED RULE</td><td>être gré<div><span>does not find error in:</span>Le contrat est négocié de gré à gré.</div></td></tr>
+<tr class="removed"><td>REMOVED RULE</td><td>tout azimut (tous azimut)</td></tr>
   </table>
   </div>
 </body>
