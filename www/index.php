@@ -69,7 +69,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
 <ul>
-    <li><?=show_link("Rule updates", "changes/", 0) ?> for several languages (French, English, Breton, Russian, Esperanto, German)</li>
+    <li><?=show_link("Rule updates", "changes/V_1_6_to_V_1_7/", 0) ?> for several languages (French, English, Breton, Russian, Esperanto, German)</li>
     <li>Several small bug fixes</li>
     <li>For a detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
 </ul>
@@ -78,7 +78,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
 <ul>
-    <li>Rule updates for several languages (Chinese, French, Breton, and others)</li>
+    <li><?=show_link("Rule updates", "changes/V_1_5_to_V_1_6/", 0) ?> for several languages (Chinese, French, Breton, and others)</li>
     <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>
     <li>For a more detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
 </ul>
