@@ -65,6 +65,11 @@ Date: 2012-04-21<br /><br />
 to that language. There are some rules that deal with punctuation
 and that apply to almost all languages.</p>
 
+<p>False friend rules:
+<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/rules/false-friends.xml">Show</a>,
+<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/rules/false-friends.xml?content-type=text%2Fplain">View plain XML</a>
+</p>
+        
 <!--
 <p>Auto-detected means that a language can be detected by LanguageTool without the user needing to select the language.</p>
 -->
