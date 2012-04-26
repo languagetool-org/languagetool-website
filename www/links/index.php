@@ -59,6 +59,8 @@ include("../../include/header.php");
 		corpus-based grammar checker written in Python</li>
 	<li><?=show_simple_link("Queequeg", "http://queequeg.sourceforge.net/index-e.html")?>
 		agreement checker written in Python</li>
+	<li><?=show_simple_link("Virastyar", "https://sourceforge.net/projects/virastyar/")?>
+		spelling and punctuation checker for Persian for MS Word, written in C#</li>		
 	<li><?=show_simple_link("Old version of LanguageTool in Python", "http://tkltrans.sourceforge.net/#r03") ?>, a much older
 		and less powerful version without OpenOffice.org integration but support for Hungarian</li>
 </ul>
@@ -98,6 +100,9 @@ include("../../include/header.php");
 		"http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/en/errors.txt?view=markup") ?></li>
 	<li><?=show_simple_link("German error collection", 
 		"http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/de/errors.txt?view=markup") ?></li>
+	<li><?=show_simple_link("HOO: Helping Our Own", 
+		"http://clt.mq.edu.au/research/projects/hoo/") ?></li>
+	
 </ul>
 
 <p><strong>Corpora:</strong></p>
