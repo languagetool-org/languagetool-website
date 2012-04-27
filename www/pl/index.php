@@ -99,7 +99,7 @@ include("../../include/checkform.php");
 ?>
 
 <h2 id="liboinstall">Użycie korektora LanguageTool w pakiecie LibreOffice/OpenOffice.org</h2>
-LanguageTool to tak zwane rozszerzenie <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępngo</a> pakietu biurowego <a href="http://pl.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://pl.openoffice.org/" target="_blank">OpenOffice.org</a> zur Verfügung. Aby używać korektora LanguageTool w pakiecie, wykonaj następujące czynności:
+LanguageTool to tak zwane rozszerzenie <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępnego</a> pakietu biurowego <a href="http://pl.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://pl.openoffice.org/" target="_blank">OpenOffice.org</a>. Aby używać korektora LanguageTool w pakiecie, wykonaj następujące czynności:
 
 <ol>
     <li>Jeśli na komputerze nie jest zainstalowana Java, pobierz ją <a href="http://www.java.com/de/download/manual.jsp" target="_blank">tutaj</a> bezpłatnie i zainstaluj. 
