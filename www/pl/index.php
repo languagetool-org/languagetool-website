@@ -46,7 +46,7 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
     </li>
     <li>Błędy leksykalne
         <ul>
-            <li>Ależ to <span class="errorMarker" title="Błąd leksykalny (bajońskie mogą być tylko sumy). Poprawnie: ogromne ceny.">bajońskie ceny</span>!.</li>
+            <li>Ależ to <span class="errorMarker" title="Błąd leksykalny (bajońskie mogą być tylko sumy). Poprawnie: ogromne ceny.">bajońskie ceny</span>!</li>
         </ul>
     </li>
     <li>Błędy odmiany
@@ -56,7 +56,7 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
     </li>   
     <li>Błędy ortograficzne
     	<ul>
-    	<li>Próbujmy wiele razy, bo a <span class="errorMarker" title="Prawdopodobny błąd ortograficzny, powinno być: nuż.">nóż</span się uda.</li>
+    	<li>Próbujmy wiele razy, bo a <span class="errorMarker" title="Prawdopodobny błąd ortograficzny, powinno być: nuż.">nóż</span> się uda.</li>
     	</ul>
     <li>Błędy rodzaju gramatycznego
     	<ul>
