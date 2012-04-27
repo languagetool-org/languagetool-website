@@ -2,9 +2,9 @@
 $page = "zh";
 $title = "LanguageTool";
 $title2 = "文体和语法检测器";
-$lastmod = "2012-03-25 20:21:00 CET";
+$lastmod = "2012-04-27 20:21:00 CET";
 $enable_fancybox = 1;
-include("../include/header.php");
+include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>LanguageTool是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <?=show_link("其他语言", "languages/", 0) ?>的支持。</strong>
