@@ -110,13 +110,15 @@ LanguageTool to tak zwane rozszerzenie <a href="http://pl.wikipedia.org/wiki/Wol
     <li>Uruchom ponownie pakiet LibreOffice lub OpenOffice.org (należy wyłączyć funkcję szybkiego uruchamiania).</li>
 </ol>
 
-Po włączeniu funkcji automatycznego sprawdzania pisowni, problemy znalezione przez korektor LanguageTool zostaną oznaczone niebieskim podkreśleniem. Ustawienia korektora LanguageTool można zmienić w menu <i>Dodatki &rarr; LanguageTool &rarr; Konfiguracja</i>.
+Po włączeniu funkcji automatycznego sprawdzania pisowni problemy znalezione przez korektor LanguageTool zostaną oznaczone niebieskim podkreśleniem. Ustawienia korektora LanguageTool można zmienić w menu <i>Dodatki &rarr; LanguageTool &rarr; Konfiguracja</i>.
 
 
 <h2>Kontakt</h2>
 <!-- TODO: link do mojego formularza kontaktowego? -->
 
-<p>Na pytania odpowiadamy na <a href="../forum">forum</a>, gdzie można także pisać po polsku. Można tam też proponować nowe reguły lub zgłaszać fałszywe alarmy generowane w trakcie korekty przez LanguageTool.</p>
+<p>Na pytania odpowiadamy na <a href="../forum">forum</a>, gdzie można także pisać po polsku. Można tam też proponować nowe reguły lub zgłaszać fałszywe alarmy generowane w trakcie korekty przez LanguageTool.
+Informacje na temat rozwoju projektu podajemy też na polskim blogu <a href="http://morfologik.blogspot.com">Morfologik</a>.
+</p>
 
 
 <?php
