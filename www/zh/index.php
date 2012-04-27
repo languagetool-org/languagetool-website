@@ -2,7 +2,7 @@
 $page = "zh";
 $title = "LanguageTool";
 $title2 = "文体和语法检测器";
-$lastmod = "2012-04-27 20:21:00 CET";
+$lastmod = "2012-04-27 20:00:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -85,9 +85,9 @@ include("../../include/checkform.php");
 源代码可<?=show_link("在Sourceforge上", "http://sourceforge.net/projects/languagetool/", 0) ?>通过SVN获取。
 本网页提供内容遵从<?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>许可证。</p>
 
-<h2>北京师范大学珠海分校管理学院LanguageTool中文支持研究组</h2>
-<p>研究组负责人：<?=show_link("姜赢", "mailto:jpz6311whu@bnuz.edu.cn") ?>博士</p>
-<p>本网页由研究组成员<em>林耿锐</em>、<em>吕洋</em>、<em>刘轩伟</em>、<em>闫洪滔</em>和<em>程文婷</em>更新和翻译。</p>
+<h2>LanguageTool中文支持研究组</h2>
+<p>研究组负责人：<?=show_link("姜赢", "mailto:jpz6311whu@bnuz.edu.cn") ?>（博士），北京师范大学珠海分校管理学院讲师</p>
+<p>本网页由研究组成员（信息管理与信息系统专业学生）<b>林耿锐</b>、<b>吕洋</b>、<b>刘轩伟</b>、<b>闫洪滔</b>和<b>程文婷</b>更新和翻译。</p>
 
 <div style="height:50px"></div>
 
