@@ -35,8 +35,8 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
     </li>
     <li>Błędy frazeologiczne
         <ul>
-            <li><span class="errorMarker" title="Poprawnie: Odwrotna strona medalu|Druga strona medalu">Inna strona medalu</span jest taka, że nie chce być wyśmiana przez innych.</li>
-            <li><span class="errorMarker" title="To wyrażenie jest niepoprawne. Poprawnie: Bogiem a prawdą">Między Bogiem a prawdą</span jedynymi osobami, które mogą mieć niekłamaną satysfakcję ze zdobycia Everestu, są Hilary i Tenzing.</li>
+            <li><span class="errorMarker" title="Poprawnie: Odwrotna strona medalu|Druga strona medalu">Inna strona medalu</span> jest taka, że nie chce być wyśmiana przez innych.</li>
+            <li><span class="errorMarker" title="To wyrażenie jest niepoprawne. Poprawnie: Bogiem a prawdą">Między Bogiem a prawdą</span> jedynymi osobami, które mogą mieć niekłamaną satysfakcję ze zdobycia Everestu, są Hilary i Tenzing.</li>
         </ul>
     </li>
     <li>Błędy interpunkcyjne
