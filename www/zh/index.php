@@ -17,7 +17,7 @@ include("../../include/header.php");
 <p><?=show_link("在LibreOffice/OpenOffice.org中使用，或者作为独立应用程序使用，或者嵌入到其他系统中使用", "../usage/", 0)?>，或者在这里使用：</p>
 
 <?php
-$checkSubmitButtonValue = "Check Text";
+$checkSubmitButtonValue = "检测文本";
 $showLanguageBox = 1;
 $checkDefaultLang = "zh";
 $checkDefaultText = "将文本粘贴在此，或者检测以下文本：我和她去看了二部电影。";
@@ -34,13 +34,13 @@ include("../../include/checkform.php");
 <div class="downloadSection">
 	<div id="downloadButton">
         <?php
-        $downloadPath = "download";
+        $downloadPath = "../download";
         include("../../include/download.php");
         ?>
 	</div>
 	<ul>
 		<li>需要 <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?>及以上版本。</li>
-        <li>在LibreOffice/OpenOffice.org中安装方法：<em>Tools -&gt; Extension Manager -&gt; Add...</em>或者查看 <?=show_link("其他的方法来使用anguageTool", "../usage/", 0)?>。</li>
+        <li>在LibreOffice/OpenOffice.org中安装方法：<em>Tools -&gt; Extension Manager -&gt; Add...</em>或者查看 <?=show_link("其他的方法来使用LanguageTool", "../usage/", 0)?>。</li>
         <li>在安装这个插件之后<strong>重启OpenOffice.org/LibreOffice</strong>。</li>
         <li>如果你正在使用LibreOffice 3.5并且你想检测中文文本:
   			使用<em>Options -> Language Settings -> Writing Aids -> Edit...</em>来关闭LightProof并启动LanguageTool的中文检测功能。</li>
@@ -85,9 +85,9 @@ include("../../include/checkform.php");
 源代码可<?=show_link("在Sourceforge上", "http://sourceforge.net/projects/languagetool/", 0) ?>通过SVN获取。
 本网页提供内容遵从<?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>许可证。</p>
 
-<h2>LanguageTool中文支持研究组</h2>
-<p>研究组负责人：<?=show_link("姜赢", "mailto:jpz6311whu@bnuz.edu.cn") ?>博士（北京师范大学珠海分校管理学院讲师）</p>
-<p>本网页由研究组成员林耿锐、吕洋、刘轩伟、闫洪滔和程文婷更新和翻译。</p>
+<h2>北京师范大学珠海分校管理学院LanguageTool中文支持研究组</h2>
+<p>研究组负责人：<?=show_link("姜赢", "mailto:jpz6311whu@bnuz.edu.cn") ?>博士</p>
+<p>本网页由研究组成员<em>林耿锐</em>、<em>吕洋</em>、<em>刘轩伟</em>、<em>闫洪滔</em>和<em>程文婷</em>更新和翻译。</p>
 
 <div style="height:50px"></div>
 
