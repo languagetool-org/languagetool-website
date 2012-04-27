@@ -65,7 +65,7 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
     </li>
     <li>Błędy składniowe
         <ul>
-            <li>To jest <span class="errorMarker" title="bardziej najważniejsze</span>.</li>
+            <li>To jest <span class="errorMarker" title="Prosty stopień najwyższy przymiotnika nie powinien być używany z wyrazem „bardziej”. Wystarczy powiedzieć: najważniejsze.">bardziej najważniejsze</span>.</li>
         </ul>
     </li>
     <li>Błędy typograficzne
