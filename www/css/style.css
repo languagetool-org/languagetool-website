@@ -150,6 +150,14 @@ pre {
 }
 
 .menuitem {
+    margin-bottom: 10px;
+}
+
+.submenuitem {
+    margin-top: -8px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 .menuitem a {
@@ -178,7 +186,6 @@ pre {
     padding-bottom: 3px;
     margin-left: 0px;
     margin-right: 0px;
-   	margin-bottom: 10px;
 }
 
 
