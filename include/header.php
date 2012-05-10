@@ -94,13 +94,13 @@ function makeEntry($name, $visName) {
 		<div id="menu">
 			<?php makeEntry(".", "Homepage"); ?>
 			<?php makeEntry("screenshots", "Screenshots"); ?>
-			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("languages", "Supported Languages"); ?>
 			<?php makeEntry("usage", "Usage"); ?>
+			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("development", "Development"); ?>
-			<?php makeEntry("links", "Links &amp; Resources"); ?>
 			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
-			
+			<?php makeEntry("links", "Links &amp; Resources"); ?>
+
 			<div style="margin-top:70px;font-size:12px">
               <table>
                 <tr>
