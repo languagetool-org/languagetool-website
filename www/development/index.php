@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-02-20 21:05:00 CET";
+$lastmod = "2012-05-11 21:05:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -33,19 +33,19 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <p>How can you help?</p>
 
 <ol>
-	<li>Read this page</li>
+	<li>Read this page (some features described here are quite advanced, so you won't need everything)</li>
 	<li>Subscribe to the <?=show_link("mailing list",
 		"http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?></li>
-	<li>Try writing rules. For English and German, see the lists of errors
-		on the <?=show_link("Links &amp; Resources page", "/links/", 0)?>. Many of those
-		errors are not yet detected.</li>
+	<li>Start writing rules for the error you'd like LanguageTool to detect</li>
     <li><?=show_link("See the wiki", "http://languagetool.wikidot.com/", 0)?> for 
         more tips and tricks</li>
+    <li>Post your rules to the mailing list so we can include them in LanguageTool</li>
 </ol>
 
 <h3><a name="checkout">Source code Checkout (Java developers only)</a></h3>
-If you are a Java developer and you want to extend LanguageTool or if you
-want to use the latest development version, check out LanguageTool from subversion:
+
+<p>If you are a Java developer and you want to extend LanguageTool or if you
+want to use the latest development version, check out LanguageTool from subversion:</p>
 
 <code style="display: block;">
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
@@ -54,7 +54,7 @@ svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLang
 <p>You can then run the test with <tt>ant test</tt> or build the code with <tt>ant</tt>.</p>
 
 <h3><a name="installation">Installation and usage</a></h3>
-Please see the README file that comes with LanguageTool and the 
+Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/README.txt", 0) ?> file that comes with LanguageTool and the
 <?=show_link("Usage page", "/usage/", 0) ?>.
 
 <h3><a name="process">Language checking process</a></h3>
@@ -68,21 +68,22 @@ Please see the README file that comes with LanguageTool and the
 </ol>
 
 <h3><a name="xmlrules">Adding new XML rules</a></h3>
-Many rules are contained in <tt>rules/xx/grammar.xml</tt>, whereas <tt>xx</tt> is
+Most rules are contained in <tt>rules/xx/grammar.xml</tt>, whereas <tt>xx</tt> is
 a language code like <tt>en</tt> or <tt>de</tt>. A rule is basically a pattern
 which shows an error message to the user if the pattern matches. A pattern can
 address words or part-of-speech tags.
 Here are some examples of patterns that can be used in that file:
 
 <ul class="largelist">
-	<li><?php hl('<token bla="x">think</token>', "xmlcodeNoIndent"); ?>
+	<li><?php hl('<token>think</token>', "xmlcodeNoIndent"); ?>
 		matches the word <em>think</em></li>
 	<li><?php hl('<token regexp="yes">think|say</token>', "xmlcodeNoIndent"); ?>
 		matches the regular expression
 		<tt>think|say</tt>, i.e. the word <em>think</em> or <em>say</em></li>
 	<li><?php hl('<token postag="VB" /> <token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
-		See resource/en/tagset.txt for a list of possible part-of-speech tags (these are specific to English).</li>
+		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/en/tagset.txt", 0) ?>
+        for a list of possible English part-of-speech tags.</li>
 	<li><?php hl('<token>cause</token> <token regexp="yes" negate="yes">and|to</token>', "xmlcodeNoIndent"); ?>
 		matches the word <em>cause</em> followed
 		by any word that is not <em>and</em> or <em>to</em></li>
@@ -91,8 +92,8 @@ Here are some examples of patterns that can be used in that file:
 		at the beginning of a sentence</li>
 </ul>
 
-<p>Pattern's terms are matched case-insensitively by default, this can be changed
-by setting the <tt>case_sensitive</tt> attribute to <tt>yes</tt>.</p>
+<p>A pattern's terms are matched case-insensitively by default. This can be changed
+by setting the pattern's <tt>case_sensitive</tt> attribute to <tt>yes</tt>.</p>
 
 <p>Here's an example of a complete rule that marks "bed English", "bat attitude"
 etc as an error:</p>
@@ -102,16 +103,10 @@ etc as an error:</p>
       <token regexp="yes">bed|bat</token>
       <token regexp="yes">English|attitude</token>
     </pattern>
-    <message>Did you mean
-      <suggestion>bad</suggestion>?
-    </message>
+    <message>Did you mean<suggestion>bad</suggestion>?</message>
     <url>http://some-server.org/the-bed-bad-error</url>
-    <example type="correct">
-      Sorry for my <marker>bad</marker> English.
-    </example>
-    <example type="incorrect">
-      Sorry for my <marker>bed</marker> English.
-    </example>
+    <example type="correct">Sorry for my <marker>bad</marker> English.</example>
+    <example type="incorrect">Sorry for my <marker>bed</marker> English.</example>
 </rule>'); ?>
 
 <p>A short description of the elements and their attributes:</p>
@@ -131,7 +126,7 @@ etc as an error:</p>
 		Use sub-element <tt>suggestion</tt> to suggest a possible replacement that corrects the error.</li>
     <li>element <tt>url</tt> (optional, since LanguageTool 1.7): An URL to a page that explains the rule leading to the error in more
         detail. <!--Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
-	<li>element <tt>example</tt>: At least two examples that with one correct and one incorrect sentence.
+	<li>element <tt>example</tt>: At least two examples with one correct and one incorrect sentence.
 		The incorrect sentence is supposed to be matched by this rule. The position of the error
 		must be marked up with the sub-element <tt>marker</tt>. This is used by the 
 		automatic test cases that can be run using <tt>ant test</tt>.</li>
