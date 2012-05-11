@@ -34,12 +34,11 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 
 <ol>
 	<li>Read this page (some features described here are quite advanced, so you won't need everything)</li>
-	<li>Subscribe to the <?=show_link("mailing list",
-		"http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?></li>
 	<li>Start writing rules for the error you'd like LanguageTool to detect</li>
-    <li><?=show_link("See the wiki", "http://languagetool.wikidot.com/", 0)?> for 
-        more tips and tricks</li>
-    <li>Post your rules to the mailing list so we can include them in LanguageTool</li>
+	<li>See <?=show_link("our wiki", "http://languagetool.wikidot.com/", 0)?> for more tips and tricks</li>
+	<li>Post your rules to our <?=show_link("mailing list",
+      "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?>
+      so we can include them in LanguageTool</li>
 </ol>
 
 <h3><a name="checkout">Source code Checkout (Java developers only)</a></h3>
@@ -314,7 +313,7 @@ if you need an early preview, say so on the LanguageTool mailing list and we'll 
 Adding a new language requires some changes to the Java source files. You should check out
 the "JLanguageTool" module from subversion (see <a href="#checkout">above</a> or the <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=110216">sourceforge 
 help</a>). You may then call <tt><a href="http://ant.apache.org/">ant</a></tt> to
-build LanguageTool (this is optional, it's okay to work only inside Eclipse). Ant should compile
+build LanguageTool. Ant should compile
 a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.
 
 <ul>
@@ -353,11 +352,8 @@ interface of LanguageTool into your language when used in OpenOffice.org.</li>
 <li>Adapt <tt>build.xml</tt>. Just search for "/en/"
 in that file and copy those lines, adapting them to your language.</li>
 
-<li>Add a two-letter code of your language to <tt>MessageBundle.properties</tt>.</li>
-
-<li>Copy <tt>MessagesBundle.properties</tt> to <tt>MessagesBundle_xx.properties</tt>,
-whereas <tt>xx</tt> is the code of your new language and translate all values (i.e. the strings
-on the right of the "=" sign).</li>
+<li>Add the two-letter code of your language to <tt>i18n_update.sh</tt> and create a translation on
+<?=show_link("Transifex", "https://www.transifex.net/projects/p/languagetool/", 0) ?>.</li>
 
 </ul>
 
