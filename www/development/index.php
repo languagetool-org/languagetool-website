@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-05-11 21:05:00 CET";
+$lastmod = "2012-05-11 21:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -60,7 +60,7 @@ Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/v
 <h3><a name="process">Language checking process</a></h3>
 <ol>
 	<li>The text to be checked is split into sentences</li>
-	<li>Each sentence is split into words</li>
+	<li>Each sentence is split into words, so called <em>tokens</em></li>
 	<li>Each word is assigned its part-of-speech tag(s) (e.g. <em>cars</em>
 		= plural noun, <em>talked</em> = simple past verb)</li>
 	<li>The analyzed text is then matched against the built-in rules and against
@@ -76,20 +76,36 @@ Here are some examples of patterns that can be used in that file:
 
 <ul class="largelist">
 	<li><?php hl('<token>think</token>', "xmlcodeNoIndent"); ?>
-		matches the word <em>think</em></li>
+		matches the word <em>think</em>
+	</li>
+	<li><?php hl('<token>think</token>
+<token>about</token>', "xmlcodeNoIndent"); ?>
+ 		Matches the phrase <em>think about</em> - as the text is split into words, you need to list
+      each word separately as a token. This will not work: <span style="text-decoration: line-through"><?php hl('<token>think about</token>', "xmlcodeNoIndent"); ?></span>
+	</li>
 	<li><?php hl('<token regexp="yes">think|say</token>', "xmlcodeNoIndent"); ?>
 		matches the regular expression
-		<tt>think|say</tt>, i.e. the word <em>think</em> or <em>say</em></li>
-	<li><?php hl('<token postag="VB" /> <token>house</token>', "xmlcodeNoIndent"); ?>
+		<tt>think|say</tt>, i.e. the word <em>think</em> or <em>say</em>. You can write simple rules without
+        knowing regular expressions, but if you want to learn more about them you can try
+        <?=show_link("this tutorial", "http://www.regular-expressions.info/tutorialcnt.html")?>.
+    </li>
+	<li><?php hl('<token postag="VB" />
+<token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
 		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/en/tagset.txt", 0) ?>
-        for a list of possible English part-of-speech tags.</li>
-	<li><?php hl('<token>cause</token> <token regexp="yes" negate="yes">and|to</token>', "xmlcodeNoIndent"); ?>
+        for a list of possible English part-of-speech tags.
+    </li>
+	<li><?php hl('<token>cause</token>
+<token regexp="yes" negate="yes">and|to</token>', "xmlcodeNoIndent"); ?>
 		matches the word <em>cause</em> followed
-		by any word that is not <em>and</em> or <em>to</em></li>
-	<li><?php hl('<token postag="SENT_START" /> <token>foobar</token>', "xmlcodeNoIndent"); ?>
+		by any word that is not <em>and</em> or <em>to</em>
+    </li>
+	<li><?php hl('<token postag="SENT_START" />
+<token>foobar</token>', "xmlcodeNoIndent"); ?>
 		matches the word <em>foobar</em> only
-		at the beginning of a sentence</li>
+		at the beginning of a sentence. The corresponding postag for the end of a sentence
+		is <tt>SENT_END</tt>.
+    </li>
 </ul>
 
 <p>A pattern's terms are matched case-insensitively by default. This can be changed
@@ -112,9 +128,9 @@ etc as an error:</p>
 <p>A short description of the elements and their attributes:</p>
 
 <ul class="largelist">
-	<li>element <tt>rule</tt>, attribute <tt>id</tt>: an internal identifier used to address this rule</li>
-	<li>element <tt>rule</tt>, attribute <tt>name</tt>: the text displayed in the configuration</li>
-	<li>element <tt>pattern</tt>, attributes <tt>mark_from</tt> and <tt>mark_to</tt>: what part of the original 
+	<li>element <tt>rule</tt>, attribute <tt>id</tt>: An internal identifier used to address this rule. This must be unique.</li>
+	<li>element <tt>rule</tt>, attribute <tt>name</tt>: The text displayed in the configuration.</li>
+	<li>element <tt>pattern</tt>, attributes <tt>mark_from</tt> and <tt>mark_to</tt>: What part of the original
 		text should be marked. The default, <tt>mark_from="0"</tt> and <tt>mark_to="0"</tt>, means to mark
 		the complete matching token. For example, if the pattern contains three token
 		elements that match the input text, those three matching words will be marked in the text.
