@@ -244,7 +244,7 @@ etc as an error:</p>
 	match replaces the match using Java regular expression notation. Basically, the regular expression 
 	only shows two parts and inserts a hyphen between them.</p>
 	
-	<p>For some languages (currently Polish and English), element &lt;match/&gt; can be used to 
+	<p>For some languages (currently Polish, English, Catalan, Spanish, Galician, Dutch, Romanian, Slovak and Russian), element &lt;match/&gt; can be used to 
 	insert an inflected matched token (or another word with a specified part of speech 
 	tag). For example:</p>
 	
