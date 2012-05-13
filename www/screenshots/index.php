@@ -40,8 +40,8 @@ include("../../include/header.php");
             plugin in OmegaT<br/>that helps to check your translation on the go</span></a>
     </td>
 </tr>
+<tr><td>&nbsp;</td></tr>
 <tr>
-
 <td valign="top" align="middle">
         <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png"><img border="0" width="320" height="186"
             src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI" /></a><br />
