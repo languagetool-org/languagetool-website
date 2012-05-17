@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-05-11 21:06:00 CET";
+$lastmod = "2012-05-17 21:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -26,7 +26,7 @@ Software developers might also be interested in LanguageTool's
 	<li><a href="#background">Background information</a></li>
 </ul>
 
-<h3><a name="helpwanted">Help wanted!</a></h3>
+<h2><a name="helpwanted">Help wanted!</a></h2>
 We're looking for people who support us writing new rules so LanguageTool can
 detect more errors. Also see <?=show_link("the list of supported languages", "../languages/", 0)?>.
 
@@ -41,7 +41,7 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
       so we can include them in LanguageTool</li>
 </ol>
 
-<h3><a name="checkout">Source code Checkout (Java developers only)</a></h3>
+<h2><a name="checkout">Source code Checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
 want to use the latest development version, check out LanguageTool from subversion:</p>
@@ -56,7 +56,7 @@ svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLang
 Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/README.txt", 0) ?> file that comes with LanguageTool and the
 <?=show_link("Usage page", "/usage/", 0) ?>.
 
-<h3><a name="process">Language checking process</a></h3>
+<h2><a name="process">Language checking process</a></h2>
 <ol>
 	<li>The text to be checked is split into sentences</li>
 	<li>Each sentence is split into words, so called <em>tokens</em></li>
@@ -66,7 +66,7 @@ Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/v
 		the rules loaded from the grammar.xml file</li>
 </ol>
 
-<h3><a name="xmlrules">Adding new XML rules</a></h3>
+<h2><a name="xmlrules">Adding new XML rules</a></h2>
 Most rules are contained in <tt>rules/xx/grammar.xml</tt>, whereas <tt>xx</tt> is
 a language code like <tt>en</tt> or <tt>de</tt>. A rule is basically a pattern
 which shows an error message to the user if the pattern matches. A pattern can
@@ -107,7 +107,7 @@ Here are some examples of patterns that can be used in that file:
     </li>
 </ul>
 
-<p>A pattern's terms are matched case-insensitively by default. This can be changed
+<p>A pattern's tokens are matched case-insensitively by default. This can be changed
 by setting the pattern's <tt>case_sensitive</tt> attribute to <tt>yes</tt>.</p>
 
 <p>Here's an example of a complete rule that marks "bed English", "bat attitude"
@@ -285,31 +285,45 @@ etc as an error:</p>
 	the POS could be converted appropriately. This can be useful for creating rules specifying grammatical 
 	agreement. Currently, such rules must be quite wordy, somewhat more terse syntax is in 
 	development.</p>
-	<p><strong>4. Turning the rule off</strong></p>
-	<p>Some rules can be optional, useful only in specific registers,
-	or very sensitive. You can turn them off by default by using an 
-	attribute <tt>default="off"</tt>. The user can turn the rule in the
-	Options dialog box, and this setting is being saved in the configuration
-	file.</p>
+
+	<p><strong>4. Grouping rules</strong></p>
+	<p>Sometimes it requires more than one <tt>rule</tt> to find all occurrences of an error.
+    You can put all those <tt>rule</tt>s in one <tt>rulegroup</tt> element. The <tt>rulegroup</tt>'s
+    <tt>id</tt> and <tt>name</tt> attribute will be use for all the rules of that group.
+    Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
+    to avoid duplicate matches for the same error.</p>
+
+    <p><strong>5. Turning the rule off</strong></p>
+    <p>Some rules can be optional, useful only in specific registers,
+      or very sensitive. You can turn them off by default by using an
+      attribute <tt>default="off"</tt>. The user can turn the rule in the
+      Options dialog box, and this setting is being saved in the configuration
+      file.</p>
+
 	</li>
 </ul>
 
-<h3><a name="javarules">Adding new Java rules</a></h3>
-Rules that cannot be expressed with a simple pattern in <tt>grammar.xml</tt>
-can be developed as a Java class. See 
-<tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
+<h2><a name="javarules">Adding new Java rules</a></h2>
+
+<p>Rules that cannot be expressed with a simple pattern in <tt>grammar.xml</tt>
+can be developed as a Java class. As a developer, extend LanguageTool's
+<a href="api/org/languagetool/rules/Rule.html">Rule</a> class and implement the
+<tt><a href="api/org/languagetool/rules/Rule.html#match(org.languagetool.AnalyzedSentence)">match(AnalyzedSentence text)</a></tt>
+method.</p>
+
+<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
 add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
 
 
-<h3><a name="translation">Translating the user interface</a></h3>
+<h2><a name="translation">Translating the user interface</a></h2>
 We use <a href="https://www.transifex.net/projects/p/languagetool/">Transifex</a> to translate our property
 files. Updated translations are only copied to the LanguageTool source before a release, so
 if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.
 
 
-<h3><a name="newlanguage">Adding support for a new language</a></h3>
+<h2><a name="newlanguage">Adding support for a new language</a></h2>
 Adding a new language requires some changes to the Java source files. You should check out
 the "JLanguageTool" module from subversion (see <a href="#checkout">above</a> or the <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=110216">sourceforge 
 help</a>). You may then call <tt><a href="http://ant.apache.org/">ant</a></tt> to
