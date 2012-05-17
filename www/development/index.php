@@ -115,7 +115,9 @@ etc as an error:</p>
 
 <?php hl('<rule id="BED_ENGLISH" name="Possible typo &apos;bed/bat(bad) English/...&apos;">
     <pattern mark_from="0" mark_to="-1">
-      <token regexp="yes">bed|bat</token>
+      <marker>
+        <token regexp="yes">bed|bat</token>
+      </marker>
       <token regexp="yes">English|attitude</token>
     </pattern>
     <message>Did you mean<suggestion>bad</suggestion>?</message>
@@ -129,12 +131,14 @@ etc as an error:</p>
 <ul class="largelist">
 	<li>element <tt>rule</tt>, attribute <tt>id</tt>: An internal identifier used to address this rule. This must be unique.</li>
 	<li>element <tt>rule</tt>, attribute <tt>name</tt>: The text displayed in the configuration.</li>
-	<li>element <tt>pattern</tt>, attributes <tt>mark_from</tt> and <tt>mark_to</tt>: What part of the original
-		text should be marked. The default, <tt>mark_from="0"</tt> and <tt>mark_to="0"</tt>, means to mark
+	<li>element <tt>pattern</tt>, attributes <tt>mark_from</tt> and <tt>mark_to</tt> (LanguageTool &lt;= 1.7): What part of the original
+		text should be marked as an error. The default, <tt>mark_from="0"</tt> and <tt>mark_to="0"</tt>, means to mark
 		the complete matching token. For example, if the pattern contains three token
 		elements that match the input text, those three matching words will be marked in the text.
 		<tt>mark_to="-1"</tt> in the example above means that the last token of the match will not
 		be marked.</li>
+    <li>element <tt>pattern</tt>, sub element <tt>marker</tt> (LanguageTool &gt;= 1.8): What part of the original
+		text should be marked as an error. If all tokens are part of the error you can omit this element.</li>
 	<li>element <tt>token</tt>, attribute <tt>regexp</tt>: interpret the given token
 		as a regular expression</li>
 	<li>element <tt>message</tt>: The text displayed to the user if this rule matches.
@@ -211,7 +215,7 @@ etc as an error:</p>
 	
 	<p>In XML rules, you can refer to previously matched tokens in the pattern. For example:</p>
 	
-	<?php hl('<pattern mark_from="2">
+	<?php hl('<pattern>
  <token regexp="yes" skip="-1">ani|ni|i|lub|albo|czy|oraz<exception scope="next">,</exception></token>
  <token><match no="0"/></token>
 </pattern>'); ?>
@@ -247,13 +251,20 @@ etc as an error:</p>
 	<p>For some languages (currently Polish, English, Catalan, Spanish, Galician, Dutch, Romanian, Slovak and Russian), element &lt;match/&gt; can be used to 
 	insert an inflected matched token (or another word with a specified part of speech 
 	tag). For example:</p>
-	
-	<?php hl('<pattern mark_from="1" mark_to="-1">
+
+	<?php hl('<pattern>
  <token regexp="yes">has|have</token>
- <token postag="VBD|VBP|VB" postag_regexp="yes"><exception postag="VBN|NN:U.*|JJ.*|RB" postag_regexp="yes"/></token>
+ <marker>
+   <token postag="VBD|VBP|VB" postag_regexp="yes">
+     <exception postag="VBN|NN:U.*|JJ.*|RB" postag_regexp="yes"/>
+   </token>
+ </marker>
  <token><exception postag="VBG"/></token>
 </pattern>
-<message>Possible agreement error -- use past participle here: <suggestion><match no="2" postag="VBN"/></suggestion>.</message>'); ?>
+<message>
+  Possible agreement error -- use past participle here:
+  <suggestion><match no="2" postag="VBN"/></suggestion>.
+</message>'); ?>
 		
 	<p>The above rule takes the second verb with a POS tag "VBN", "VBP" or "VB" and displays its 
 	form with a POS tag "VBN" in the suggestion. You can also specify POS tags using 
