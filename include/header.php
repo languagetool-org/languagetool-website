@@ -103,6 +103,7 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("languages", "Supported Languages"); ?>
 			<?php makeEntry("usage", "Usage"); ?>
 			<?php makeEntry("forum", "Forum"); ?>
+			<?php makeEntry("wikicheck", "WikiCheck"); ?>
 			<?php makeEntry("development", "Development"); ?>
 			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
 			<?php makeEntry("links", "Links &amp; Resources"); ?>
