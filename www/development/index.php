@@ -20,6 +20,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
     <ul>
       <li><a href="#simpleexample">A simple example</a></li>
       <li><a href="#basicelements">The basic elements of a rule</a></li>
+      <li><a href="#testing">Testing rules</a></li>
       <li><a href="#inflection">Inflection</a></li>
       <li><a href="#skip">Skip</a></li>
       <li><a href="#variables">Variables</a></li>
@@ -194,20 +195,34 @@ etc as an error:</p>
 	<li>element <tt>message</tt>: The text displayed to the user if this rule matches.
 		Use sub-element <tt>suggestion</tt> to suggest a possible replacement that corrects the error.</li>
     <li>element <tt>url</tt> (optional, since LanguageTool 1.7): An URL to a page that explains the rule leading to the error in more
-        detail. <!--Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
+        detail. <!--LT 1.8: Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
 	<li>element <tt>example</tt>: At least two examples with one correct and one incorrect sentence.
 		The incorrect sentence is supposed to be matched by this rule. The position of the error
 		must be marked up with the sub-element <tt>marker</tt>. This is used by the 
 		automatic test cases that can be run using <tt>ant test</tt>.</li>
 </ul>
 
-<p>There are more features not used in the example above:</p>
+
+<h3><a name="testing">Testing rules</a></h3>
+
+<p>The LanguageTool user interface (LanguageToolGUI.jar) needs to be restarted if you have changed the <tt>grammar.xml</tt> file.
+Testing rules is faster with our embedded test case feature: just call
+<tt>sh testrules.sh en</tt> on Linux or <tt>testrules.bat en</tt> on Windows, using your language code instead of <tt>en</tt>.
+
+<p>This will test your rule with its <tt>example</tt> sentences: the incorrect sentence is supposed to be
+detected by your rule, while the correct sentence is not supposed to give an error. If that is not the case
+you will get a message. In that case, either your rule or your example sentences are not quite right yet.</p>
+
+<p>Using <tt>testrules.sh/bat</tt> is not only much faster than manually starting the user interface over and over again,
+it will always test all rules, so we recommend you use that during rule development.</p>
+
 
 <h3><a name="inflection">Inflection</a></h3>
 
     <p>The element <tt>token</tt>, attribute <tt>inflected</tt> is used to match not only the given form but
     also all of its inflected forms. For example <tt>&lt;token inflected="yes"&gt;bicycle&lt;/token&gt;</tt> will
     match <em>bicycle</em>, <em>bicycles</em>, <em>bicycling</em> etc.</p>
+
 
 <h3><a name="skip">Skip</a></h3>
 
@@ -347,6 +362,7 @@ etc as an error:</p>
 	agreement. Currently, such rules must be quite wordy, somewhat more terse syntax is in 
 	development.</p>
 
+
 <h3><a name="grouping">Grouping rules</a></h3>
 
 	<p>Sometimes it requires more than one <tt>rule</tt> to find all occurrences of an error.
@@ -355,6 +371,7 @@ etc as an error:</p>
     Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
     to avoid duplicate matches for the same error.</p>
 
+
 <h3><a name="turningoff">Turning rules off by default</a></h3>
 
     <p>Some rules can be optional, useful only in specific registers,
@@ -362,6 +379,7 @@ etc as an error:</p>
       attribute <tt>default="off"</tt>. The user can turn the rule in the
       Options dialog box, and this setting is being saved in the configuration
       file.</p>
+
 
 <h2><a name="javarules">Adding new Java rules</a></h2>
 
@@ -378,17 +396,19 @@ add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
 
 
 <h2><a name="translation">Translating the user interface</a></h2>
-We use <a href="https://www.transifex.net/projects/p/languagetool/">Transifex</a> to translate our property
+
+<p>We use <a href="https://www.transifex.net/projects/p/languagetool/">Transifex</a> to translate our property
 files. Updated translations are only copied to the LanguageTool source before a release, so
-if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.
+if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.</p>
 
 
 <h2><a name="newlanguage">Adding support for a new language</a></h2>
-Adding a new language requires some changes to the Java source files. You should check out
+
+<p>Adding a new language requires some changes to the Java source files. You should check out
 the "JLanguageTool" module from subversion (see <a href="#checkout">above</a> or the <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=110216">sourceforge 
 help</a>). You may then call <tt><a href="http://ant.apache.org/">ant</a></tt> to
 build LanguageTool. Ant should compile
-a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.
+a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.</p>
 
 <ul>
 
@@ -431,12 +451,18 @@ in that file and copy those lines, adapting them to your language.</li>
 
 </ul>
 
+
 <h2><a name="background">Background information</a></h2>
-For some background information, Daniel Naber's diploma thesis
+
+<p>For some background information, Daniel Naber's diploma thesis
 about the original version of LanguageTool is available - please note that this refers to an earlier version of LanguageTool
-which was written in Python):<br />
-<?=show_link("PDF, 650 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.pdf", 0) ?>
-<br /><?=show_link("Postscript (.ps.gz), 630 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.ps.gz", 0) ?>
+which was written in Python:</p>
+
+<ul>
+  <li><?=show_link("PDF, 650 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.pdf", 0) ?></li>
+  <li><?=show_link("Postscript (.ps.gz), 630 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.ps.gz", 0) ?></li>
+</ul>
+
 
 <!-- -->
 <div style="height: 400px"></div>
