@@ -2,7 +2,7 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-02-19 14:35:00 CET";
+$lastmod = "2012-05-26 10:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -57,6 +57,10 @@ include("../../include/header.php");
 		a Grammar Checker for French written in Python, based on Lightproof</li>
 	<li><?=show_simple_link("GRAC", "http://grac.sourceforge.net/")?>
 		corpus-based grammar checker written in Python</li>
+    <li><?=show_simple_link("Lightproof", "http://numbertext.org/lightproof/")?>,
+   		a Python-based grammar checker embedded in LibreOffice since 3.5,
+        <?=show_simple_link("Lightproof editor", "http://extensions.libreoffice.org/extension-center/lightproof-editor")?>
+    </li>
 	<li><?=show_simple_link("Queequeg", "http://queequeg.sourceforge.net/index-e.html")?>
 		agreement checker written in Python</li>
 	<li><?=show_simple_link("Virastyar", "https://sourceforge.net/projects/virastyar/")?>
