@@ -50,6 +50,11 @@ code {
 tt {
     background-color: #eeeeee;
 }
+.xmlrule {
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
 
 .xmlcode {
 	font-family: monospace;

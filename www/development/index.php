@@ -2,29 +2,68 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-05-17 21:06:00 CET";
+$lastmod = "2012-05-26 21:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
 
-<p class="firstpara">This is a collection of the developer documentation available for LanguageTool.
-It's intended for people who want to understand LanguageTool so
-they can write their own rules or even add support for a new language.
-Software developers might also be interested in LanguageTool's
-<?=show_link("API", "api/", 0)?>.</p>
+<p class="firstpara">This page has everything you need to know to teach LanguageTool
+new error detection rules, plus more. You don't even have to be a programmer for that.</p>
 
 <ul>
-	<li><a href="#helpwanted">Help wanted!</a></li>
-    <li><a href="#checkout">Source code Checkout (Java developers only)</a></li>
-	<li><a href="#installation">Installation and usage</a></li>
-	<li><a href="#process">Language checking process</a></li>
-	<li><a href="#xmlrules">Adding new XML rules</a></li>
-	<li><a href="#javarules">Adding new Java rules</a></li>
-	<li><a href="#translation">Translating the user interface</a></li>
-	<li><a href="#newlanguage">Adding support for a new language</a></li>
-	<li><a href="#background">Background information</a></li>
+    <li><a href="#intro">The three minute introduction</a></li>
+    <li><a href="#helpwanted">Help wanted!</a></li>
+    <li><a href="#checkout">Source code checkout (Java developers only)</a></li>
+    <li><a href="#process">Language checking process</a></li>
+    <li><a href="#xmlrules">Adding new XML rules</a>
+    <ul>
+      <li><a href="#simpleexample">A simple example</a></li>
+      <li><a href="#basicelements">The basic elements of a rule</a></li>
+      <li><a href="#inflection">Inflection</a></li>
+      <li><a href="#skip">Skip</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#grouping">Grouping rules</a></li>
+      <li><a href="#turningoff">Turning rules off by default</a></li>
+    </ul>
+    </li>
+    <li><a href="#javarules">Adding new Java rules</a></li>
+    <li><a href="#translation">Translating the user interface</a></li>
+    <li><a href="#newlanguage">Adding support for a new language</a></li>
+    <li><a href="#background">Background information</a></li>
 </ul>
+
+<h2><a name="intro">The three minute introduction</a></h2>
+
+<p>This section tells you in a nutshell how to write your own LanguageTool rules for detecting errors:</p>
+
+<ol>
+  <li>Download LanguageTool <?=show_link("from the homepage", "../", 0)?>.</li>
+  <li>Rename <tt>LanguageTool-stable.oxt</tt> to <tt>LanguageTool-stable.zip</tt> and unzip it to a new directory.</li>
+  <li>Open <tt>rules/en/grammar.xml</tt> in your preferred text editor or in an XML editor.</li>
+  <li>Search for <tt>&lt;category name="Possible Typos"&gt;</tt> (it's quite at the top) and copy and paste this snippet just after
+    that category element:
+    <div class="xmlrule" style="margin-top:5px">
+    <?php hl('<rule id="EXAMPLE_RULE" name="My example rule">
+    <pattern>
+      <token>foo</token>
+      <token>bar</token>
+    </pattern>
+    <message>Did you mean <suggestion>bicycle</suggestion>?</message>
+    <example type="incorrect">My <marker>foo bar</marker> is broken.</example>
+    <example type="correct">My bicycle is broken.</example>
+</rule>'); ?>
+    </div>
+  </li>
+  <li>Run <tt>LanguageToolGUI.jar</tt> by clicking it or by calling <tt>java -jar LanguageToolGUI.jar</tt> in your command line.</li>
+  <li>Select English as the text language and type something like "A foo bar tour in London", then start text checking.</li>
+  <li>LanguageTool will now check your text and suggest "bicycle" as a replacement for "foo bar", because that's
+    what the rule which we just added says.</li>
+</ol>
+
+<p>That's it! You have just added a new rule. Keep on reading to get a grasp on what the elements of a rule mean
+and how to build more complex rules.</p>
+
 
 <h2><a name="helpwanted">Help wanted!</a></h2>
 We're looking for people who support us writing new rules so LanguageTool can
@@ -41,7 +80,7 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
       so we can include them in LanguageTool</li>
 </ol>
 
-<h2><a name="checkout">Source code Checkout (Java developers only)</a></h2>
+<h2><a name="checkout">Source code checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
 want to use the latest development version, check out LanguageTool from subversion:</p>
@@ -50,21 +89,26 @@ want to use the latest development version, check out LanguageTool from subversi
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
 </code>
 
-<p>You can then run the test with <tt>ant test</tt> or build the code with <tt>ant</tt>.</p>
-
-<h3><a name="installation">Installation and usage</a></h3>
+<p>You can then run the tests with <tt>ant test</tt> or build the code with <tt>ant</tt>.
 Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/README.txt", 0) ?> file that comes with LanguageTool and the
-<?=show_link("Usage page", "/usage/", 0) ?>.
+<?=show_link("Usage page", "/usage/", 0) ?>.</p>
 
 <h2><a name="process">Language checking process</a></h2>
+
+<p>This is what LanguageTool does when it analyzes a text for errors:</p>
+
 <ol>
-	<li>The text to be checked is split into sentences</li>
+	<li>The text is split into sentences</li>
 	<li>Each sentence is split into words, so called <em>tokens</em></li>
 	<li>Each word is assigned its part-of-speech tag(s) (e.g. <em>cars</em>
 		= plural noun, <em>talked</em> = simple past verb)</li>
 	<li>The analyzed text is then matched against the built-in rules and against
 		the rules loaded from the grammar.xml file</li>
 </ol>
+
+<p>The most important thing you need to keep in mind that LanguageTool's rules describe what errors
+look like, not what correct sentences look like (this is the opposite of how you learn a new
+language).</p>
 
 <h2><a name="xmlrules">Adding new XML rules</a></h2>
 Most rules are contained in <tt>rules/xx/grammar.xml</tt>, whereas <tt>xx</tt> is
@@ -110,9 +154,12 @@ Here are some examples of patterns that can be used in that file:
 <p>A pattern's tokens are matched case-insensitively by default. This can be changed
 by setting the pattern's <tt>case_sensitive</tt> attribute to <tt>yes</tt>.</p>
 
+<h3><a name="simpleexample">A simple example</a></h3>
+
 <p>Here's an example of a complete rule that marks "bed English", "bat attitude"
 etc as an error:</p>
 
+<div class="xmlrule">
 <?php hl('<rule id="BED_ENGLISH" name="Possible typo &apos;bed/bat(bad) English/...&apos;">
     <pattern mark_from="0" mark_to="-1">
       <marker>
@@ -120,11 +167,14 @@ etc as an error:</p>
       </marker>
       <token regexp="yes">English|attitude</token>
     </pattern>
-    <message>Did you mean<suggestion>bad</suggestion>?</message>
+    <message>Did you mean <suggestion>bad</suggestion>?</message>
     <url>http://some-server.org/the-bed-bad-error</url>
     <example type="correct">Sorry for my <marker>bad</marker> English.</example>
     <example type="incorrect">Sorry for my <marker>bed</marker> English.</example>
 </rule>'); ?>
+</div>
+
+<h3><a name="basicelements">The basic elements of a rule</a></h3>
 
 <p>A short description of the elements and their attributes:</p>
 
@@ -153,19 +203,20 @@ etc as an error:</p>
 
 <p>There are more features not used in the example above:</p>
 
-<ul class="largelist">
-    
-    <li>element <tt>token</tt>, attribute <tt>inflected</tt> is used to match not only the given form but 
+<h3><a name="inflection">Inflection</a></h3>
+
+    <p>The element <tt>token</tt>, attribute <tt>inflected</tt> is used to match not only the given form but
     also all of its inflected forms. For example <tt>&lt;token inflected="yes"&gt;bicycle&lt;/token&gt;</tt> will
-    match <em>bicycle</em>, <em>bicycles</em>, <em>bicycling</em> etc.</li>
-    
-	<li>element <tt>token</tt>, attribute <tt>skip</tt> is used
-	in two situations:
-	
-	<br /><br />
-	<p><strong>1. Simulate a simple chunker</strong> for languages with flexible word order,
-	e.g., for matching errors of rection; we could for example skip possible 
-	adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
+    match <em>bicycle</em>, <em>bicycles</em>, <em>bicycling</em> etc.</p>
+
+<h3><a name="skip">Skip</a></h3>
+
+    <p>The element <tt>token</tt>, attribute <tt>skip</tt> is used
+        in two situations:</p>
+
+    <p><strong>1. Simulate a simple chunker</strong> for languages with flexible word order,
+    e.g., for matching errors of rection; we could for example skip possible
+    adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
 
 	<?php hl('<token skip="1">A</token>
 <token>B</token>'); ?>
@@ -183,7 +234,6 @@ etc as an error:</p>
 	many tokens are skipped. This cannot be easily encoded using empty 
 	tokens as above because the sentence could be of any length.</p>
 
-	<br />
 	<p><strong>2. Match coordinated words</strong>, for example to match
 	"both... as well" we could write:</p>
 	
@@ -211,8 +261,8 @@ etc as an error:</p>
 	before "tak". Note that it's very hard to make such an exclusion otherwise.	
 	</p>
 
-	<p><strong>3. Using variables in rules</strong></p>
-	
+<h3><a name="variables">Variables</a></h3>
+
 	<p>In XML rules, you can refer to previously matched tokens in the pattern. For example:</p>
 	
 	<?php hl('<pattern>
@@ -297,22 +347,21 @@ etc as an error:</p>
 	agreement. Currently, such rules must be quite wordy, somewhat more terse syntax is in 
 	development.</p>
 
-	<p><strong>4. Grouping rules</strong></p>
+<h3><a name="grouping">Grouping rules</a></h3>
+
 	<p>Sometimes it requires more than one <tt>rule</tt> to find all occurrences of an error.
     You can put all those <tt>rule</tt>s in one <tt>rulegroup</tt> element. The <tt>rulegroup</tt>'s
     <tt>id</tt> and <tt>name</tt> attribute will be use for all the rules of that group.
     Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
     to avoid duplicate matches for the same error.</p>
 
-    <p><strong>5. Turning the rule off</strong></p>
+<h3><a name="turningoff">Turning rules off by default</a></h3>
+
     <p>Some rules can be optional, useful only in specific registers,
       or very sensitive. You can turn them off by default by using an
       attribute <tt>default="off"</tt>. The user can turn the rule in the
       Options dialog box, and this setting is being saved in the configuration
       file.</p>
-
-	</li>
-</ul>
 
 <h2><a name="javarules">Adding new Java rules</a></h2>
 
@@ -382,7 +431,7 @@ in that file and copy those lines, adapting them to your language.</li>
 
 </ul>
 
-<h3><a name="background">Background information</a></h3>
+<h2><a name="background">Background information</a></h2>
 For some background information, Daniel Naber's diploma thesis
 about the original version of LanguageTool is available - please note that this refers to an earlier version of LanguageTool
 which was written in Python):<br />
