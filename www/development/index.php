@@ -22,10 +22,10 @@ new error detection rules, plus more. You don't even have to be a programmer for
       <li><a href="#basicelements">The basic elements of a rule</a></li>
       <li><a href="#testing">Testing rules</a></li>
       <li><a href="#inflection">Inflection</a></li>
-      <li><a href="#skip">Skip</a></li>
-      <li><a href="#variables">Variables</a></li>
       <li><a href="#grouping">Grouping rules</a></li>
       <li><a href="#turningoff">Turning rules off by default</a></li>
+      <li><a href="#skip">Skip</a></li>
+      <li><a href="#variables">Variables</a></li>
     </ul>
     </li>
     <li><a href="#javarules">Adding new Java rules</a></li>
@@ -219,62 +219,87 @@ it will always test all rules, so we recommend you use that during rule developm
 
 <h3><a name="inflection">Inflection</a></h3>
 
-    <p>The element <tt>token</tt>, attribute <tt>inflected</tt> is used to match not only the given form but
+    <p>The <tt>inflected</tt> attribute of the <tt>token</tt> element is used to match not only the given form but
     also all of its inflected forms. For example <tt>&lt;token inflected="yes"&gt;bicycle&lt;/token&gt;</tt> will
     match <em>bicycle</em>, <em>bicycles</em>, <em>bicycling</em> etc.</p>
 
 
+<h3><a name="grouping">Grouping rules</a></h3>
+
+	<p>Sometimes it requires more than one <tt>rule</tt> to find all occurrences of an error.
+    You can put all those <tt>rule</tt>s in one <tt>rulegroup</tt> element. The <tt>rulegroup</tt>'s
+    <tt>id</tt> and <tt>name</tt> attribute will be use for all the rules of that group.
+    Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
+    to avoid duplicate matches for the same error.</p>
+
+
+<h3><a name="turningoff">Turning rules off by default</a></h3>
+
+    <p>Some rules can be optional, useful only in specific registers,
+      or very sensitive. You can turn them off by default by using an
+      attribute <tt>default="off"</tt>. The user can turn the rule on/off in the
+      Options dialog box, and this setting is being saved in the configuration
+      file.</p>
+
+
 <h3><a name="skip">Skip</a></h3>
 
-    <p>The element <tt>token</tt>, attribute <tt>skip</tt> is used
-        in two situations:</p>
+    <p>The <tt>skip</tt> attribute of the <tt>token</tt> element is used in two situations:</p>
 
-    <p><strong>1. Simulate a simple chunker</strong> for languages with flexible word order,
-    e.g., for matching errors of rection; we could for example skip possible
-    adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
+    <ol>
+      <li>
+        <p><strong>Simulate a simple chunker</strong> for languages with flexible word order,
+        e.g., for matching errors of rection; we could for example skip possible
+        adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
 
-	<?php hl('<token skip="1">A</token>
+    	<?php hl('<token skip="1">A</token>
 <token>B</token>'); ?>
 
-	<p>is equivalent to the pair of rules:</p>
-	
-	<?php hl('<token>A</token>
+    	<p>is equivalent to the pair of rules:</p>
+
+    	<?php hl('<token>A</token>
 <token/>
 <token>B</token>
 
 <token>A</token>
 <token>B</token>'); ?>
 
-	<p>Using negative value, we can match until the B is found, no matter how 
-	many tokens are skipped. This cannot be easily encoded using empty 
-	tokens as above because the sentence could be of any length.</p>
+    	<p>Using negative value, we can match until the B is found, no matter how
+    	many tokens are skipped. This cannot be easily encoded using empty
+    	tokens as above because the sentence could be of any length.</p>
+      </li>
 
-	<p><strong>2. Match coordinated words</strong>, for example to match
-	"both... as well" we could write:</p>
-	
-	<?php hl('<token skip="-1">both<exception scope="next">and</exception></token>
+      <li>
+        <p><strong>Match coordinated words</strong>, for example to match
+       	"both... as well" we could write:</p>
+
+       	<?php hl('<token skip="-1">both<exception scope="next">and</exception></token>
 <token>as</token>
 <token>well</token>'); ?>
 
-	<p>Here the exception is applied only to the skipped tokens.</p>
-	
-	<p>The scope attribute of the exception is used to make exception valid 
-	only for the token the exception is specified (scope="current") or for 
-	skipped tokens (scope="next"). Default behavior is scope="current". 
-	Using scopes is useful where several different exceptions should be 
-	applied to avoid false alarms. In some cases, it's useful to use 
-	<tt>scope="previous"</tt> in rules that already have <tt>skip="-1"</tt>.
-	This way, you can set an exception against a single token that immediately
-	precedes the matched token. For example, we want to match "tak" after "jak"
-	which is not preceded by a comma:</p>
-	
-	<? hl('<token>tak</token>
+       	<p>Here the exception is applied only to the skipped tokens.</p>
+
+       	<p>The scope attribute of the exception is used to make exception valid
+       	only for the token the exception is specified (scope="current") or for
+       	skipped tokens (scope="next"). Default behavior is scope="current".
+       	Using scopes is useful where several different exceptions should be
+       	applied to avoid false alarms. In some cases, it's useful to use
+       	<tt>scope="previous"</tt> in rules that already have <tt>skip="-1"</tt>.
+       	This way, you can set an exception against a single token that immediately
+       	precedes the matched token. For example, we want to match "tak" after "jak"
+       	which is not preceded by a comma:</p>
+
+       	<? hl('<token>tak</token>
 <token skip="-1">jak</token>
 <token>tak<exception scope="previous">,</exception></token>'); ?>
-	
-	<p>In this case, the rule excludes all sentences, where there is a comma 
-	before "tak". Note that it's very hard to make such an exclusion otherwise.	
-	</p>
+
+       	<p>In this case, the rule excludes all sentences, where there is a comma
+       	before "tak". Note that it's very hard to make such an exclusion otherwise.
+       	</p>
+
+      </li>
+    </ol>
+
 
 <h3><a name="variables">Variables</a></h3>
 
@@ -361,24 +386,6 @@ it will always test all rules, so we recommend you use that during rule developm
 	the POS could be converted appropriately. This can be useful for creating rules specifying grammatical 
 	agreement. Currently, such rules must be quite wordy, somewhat more terse syntax is in 
 	development.</p>
-
-
-<h3><a name="grouping">Grouping rules</a></h3>
-
-	<p>Sometimes it requires more than one <tt>rule</tt> to find all occurrences of an error.
-    You can put all those <tt>rule</tt>s in one <tt>rulegroup</tt> element. The <tt>rulegroup</tt>'s
-    <tt>id</tt> and <tt>name</tt> attribute will be use for all the rules of that group.
-    Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
-    to avoid duplicate matches for the same error.</p>
-
-
-<h3><a name="turningoff">Turning rules off by default</a></h3>
-
-    <p>Some rules can be optional, useful only in specific registers,
-      or very sensitive. You can turn them off by default by using an
-      attribute <tt>default="off"</tt>. The user can turn the rule in the
-      Options dialog box, and this setting is being saved in the configuration
-      file.</p>
 
 
 <h2><a name="javarules">Adding new Java rules</a></h2>
