@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-05-16 20:21:00 CET";
+$lastmod = "2012-05-27 10:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -67,6 +67,8 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 <h2>News</h2>
+
+<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three minute introduction", "development/#intro") ?>!
 
 <p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
 <ul>
