@@ -68,7 +68,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <h2>News</h2>
 
-<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three minute introduction", "development/#intro") ?>!
+<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "development/#intro") ?>!
 
 <p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
 <ul>

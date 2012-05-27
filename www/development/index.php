@@ -12,7 +12,7 @@ include('../../include/geshi/geshi.php');
 new error detection rules, plus more. You don't even have to be a programmer for that.</p>
 
 <ul>
-    <li><a href="#intro">The three minute introduction</a></li>
+    <li><a href="#intro">The three-minute introduction</a></li>
     <li><a href="#helpwanted">Help wanted!</a></li>
     <li><a href="#checkout">Source code checkout (Java developers only)</a></li>
     <li><a href="#process">Language checking process</a></li>
@@ -34,7 +34,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
     <li><a href="#background">Background information</a></li>
 </ul>
 
-<h2><a name="intro">The three minute introduction</a></h2>
+<h2><a name="intro">The three-minute introduction</a></h2>
 
 <p>This section tells you in a nutshell how to write your own LanguageTool rules for detecting errors:</p>
 
@@ -249,8 +249,8 @@ it will always test all rules, so we recommend you use that during rule developm
     <ol>
       <li>
         <p><strong>Simulate a simple chunker</strong> for languages with flexible word order,
-        e.g., for matching errors of rection; we could for example skip possible
-        adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
+        e.g., for matching errors of <?=show_link("rection", "http://en.wikipedia.org/wiki/Case_government")?>;
+        we could for example skip possible adverbs in some rule. <tt>skip="1"</tt> works exactly as two rules, i.e.</p>
 
     	<?php hl('<token skip="1">A</token>
 <token>B</token>'); ?>
