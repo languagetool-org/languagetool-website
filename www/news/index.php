@@ -1,13 +1,22 @@
 <?php
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-02-04 23:35:00 CET";
+$lastmod = "2012-05-27 23:35:00 CET";
 include("../../include/header.php");
 ?>
 
 <h2 class="firstpara">News Archive</h2>
         
 <p>See <a href="/">the homepage</a> for the latest news.</p>
+
+<p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
+<ul>
+    <li><?=show_link("Rule updates", "changes/V_1_5_to_V_1_6/", 0) ?> for several languages (Chinese, French, Breton, and others)</li>
+    <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>
+    <li>For a more detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
+</ul>
+
+<p><strong>2011-11-18:</strong> We now offer <?=show_link("Wikicheck, a new service to check Wikipedia pages with LanguageTool", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
 
 <p><strong>2011-09-25:</strong> Released LanguageTool 1.5. Changes include:
 <ul>

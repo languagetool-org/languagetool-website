@@ -79,15 +79,6 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?></p>
 
-<p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
-<ul>
-    <li><?=show_link("Rule updates", "changes/V_1_5_to_V_1_6/", 0) ?> for several languages (Chinese, French, Breton, and others)</li>
-    <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>
-    <li>For a more detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
-</ul>
-
-<p><strong>2011-11-18:</strong> We now offer <?=show_link("Wikicheck, a new service to check Wikipedia pages with LanguageTool", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
-
 <?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.
 See <?=show_link("the news archive", "news/", 0) ?> for old news.
 
