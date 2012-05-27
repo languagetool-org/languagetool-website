@@ -157,7 +157,8 @@ for the whole pattern by setting the pattern's <tt>case_sensitive</tt> attribute
 to <tt>yes</tt>.</p> Alternatively, case-sensitive matching can be turned on for
 single tokens by using
 <tt><a href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html">(?-i)</a></tt>
-in regular expressions (ex: <tt>regexp="(?-i)Bill"</tt> will match "Bill" but not "bill").
+in regular expressions (ex: <tt>&lt;token regexp="yes"&gt;(?-i)Bill&lt;/token&gt;</tt> will match
+"Bill" but not "bill").
 
 <h3><a name="simpleexample">A simple example</a></h3>
 
