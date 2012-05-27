@@ -171,7 +171,7 @@ etc as an error:</p>
     <message>Did you mean <suggestion>bad</suggestion>?</message>
     <url>http://some-server.org/the-bed-bad-error</url>
     <example type="correct">Sorry for my <marker>bad</marker> English.</example>
-    <example type="incorrect">Sorry for my <marker>bed</marker> English.</example>
+    <example correction="bad" type="incorrect">Sorry for my <marker>bed</marker> English.</example>
 </rule>'); ?>
 </div>
 
@@ -197,9 +197,12 @@ etc as an error:</p>
     <li>element <tt>url</tt> (optional, since LanguageTool 1.7): An URL to a page that explains the rule leading to the error in more
         detail. <!--LT 1.8: Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
 	<li>element <tt>example</tt>: At least two examples with one correct and one incorrect sentence.
-		The incorrect sentence is supposed to be matched by this rule. The position of the error
-		must be marked up with the sub-element <tt>marker</tt>. This is used by the 
-		automatic test cases that can be run using <tt>ant test</tt>.</li>
+		The sentence with the attribute <tt>type="incorrect"</tt> is supposed to be matched by this rule. The position of the error
+		must be marked up with the sub-element <tt>marker</tt>. You can use the optional <tt>correction</tt> attribute
+        to make the test also check whether the correction suggested by LanguageTool is what you expect.
+        These sentences are used by the
+		automatic test cases that can be run using <tt>sh testrules.sh</tt> (on Linux), <tt>testrules.bat</tt> (on Windows),
+        or <tt>ant test</tt> (for Java developers).</li>
 </ul>
 
 
