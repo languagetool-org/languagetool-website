@@ -71,6 +71,22 @@ for (RuleMatch match : matches) {
 	source and translation), simply specify also the <tt>srctext</tt> parameter. This way bitext mode will be
 	activated automatically. You can use both POST and GET to send your requests to the LanguageTool server.</p>
 
+	<!--  for 1.8 
+	<p>The server may be configured to enable or disable some rules by adding <tt>enabled</tt> and 
+	<tt>disabled</tt> as parameters and listing rule identifiers delimited with commas, for example:</p>
+	
+	<tt>http://localhost:8081/?language=xx&amp;disabled=STRANGE_RULE,ANOTHER_RULE&amp;text=my+text</tt><br />
+	
+	<p>In this example, two rules will be disabled: <tt>STRANGE_RULE</tt> and <tt>ANOTHER_RULE</tt>. Note that there
+	should be no space after the comma.</p>
+	
+	<p>Note that for a server started from a GUI, a user may configure it in the configuration dialog box to disable
+	some unwanted rules. This may be beneficial if the calling program does not allow configuration of the call to the
+	LanguageTool server, and the user wants to enable or disable some checks. However, if the program does disable or
+	enable any rules, then the configuration set by the user will be silently ignored.</p>
+	
+	 -->
+	
     <p>For the input "this is a test" the LanguageTool server will reply with this
 	XML response:</p>
 	
@@ -83,7 +99,12 @@ for (RuleMatch match : matches) {
   contextoffset="0"
   errorlength="4"/>
 </matches>'); ?>
-        
+    
+    <!-- for 1.8 
+    <p>Note: some rules may contain additional information contained as a link to a webpage. The link
+    will be available as the contents of the <tt>url</tt> attribute of <tt>error</tt> element.</p>    
+     -->
+           
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 
 	<p>The server can also be started in a server-only mode (no GUI) on the command line using this command:</p>
@@ -92,7 +113,10 @@ for (RuleMatch match : matches) {
     no port number is specified, the default (8081) is used. For security reasons, the server will
     not be accessible from other hosts. If you want to run a server for remote users you will
     need to write a small Java program that creates an instance of
-    <tt><a href="http://www.languagetool.org/development/api/index.html?org/languagetool/server/HTTPServer.html">org.languagetool.server.HTTPServer</a></tt>.</p>
+    <tt><a href="http://www.languagetool.org/development/api/index.html?org/languagetool/server/HTTPServer.html">org.languagetool.server.HTTPServer</a></tt>.
+    
+    
+    </p>
 
 <?php
 include("../../include/footer.php");
