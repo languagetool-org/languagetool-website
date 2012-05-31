@@ -53,8 +53,8 @@ $start_time = ((float)$usec + (float)$sec);
 include("help.php");
 
 function makeEntry($name, $visName) {
-	global $page;
-	if ($page == $name || ($name == "." && $page == "homepage")) {
+	global $page, $sub_page, $rootUrl;
+	if (($page == $name && !$sub_page) || ($name == "." && $page == "homepage")) {
 		?>
 		<div class="menuitem activeMenuitem"><? print $visName ?></div>
 		<?php
@@ -74,8 +74,17 @@ function makeEntry($name, $visName) {
 		<?php
 	}
 	if ($name == "development") {
+	    if ($sub_page == "ruleeditor") {
+	      ?>
+          <div class="submenuitem activeMenuitem">Rule Creator</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/ruleeditor">Rule Creator</a></div>
+          <?php
+	    }
 		?>
-		<div class="submenuitem"><a href="http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter">Bug Reports</a></div>
+        <div class="submenuitem"><a href="http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter">Bug Reports</a></div>
 		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Java API</a></div>
 		<?php
 	}
