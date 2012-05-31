@@ -7,7 +7,9 @@
   //online:
   $rootUrl = "";
   //local:
-  //$rootUrl = "/languagetool";
+  if (gethostname() == 'lisa') {   // Daniel's local server for testing
+    $rootUrl = "/languagetool";
+  }
   ?>
   <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />
   <?php if ($enable_fancybox) { ?>
