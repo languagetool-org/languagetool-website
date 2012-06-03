@@ -183,16 +183,21 @@ pre {
 }
 
 .activeMenuitem {
-	color: #ffffff;
-	background: #ef8701;
+    color: #ffffff;
+    background: #ef8701;
     padding-left: 10px;
-   	padding-right: 10px;
+    padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
+.submenuitem.activeMenuitem {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+}
 
 .warning {
 	border-color: #ffb251;
