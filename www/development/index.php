@@ -198,7 +198,13 @@ etc as an error:</p>
 	<li>element <tt>token</tt>, attribute <tt>regexp</tt>: interpret the given token
 		as a regular expression</li>
 	<li>element <tt>message</tt>: The text displayed to the user if this rule matches.
-		Use sub-element <tt>suggestion</tt> to suggest a possible replacement that corrects the error.</li>
+		Use sub-element <tt>suggestion</tt> to suggest a possible replacement that corrects the error.		
+		Since version 1.8, it is possible to conditionally suppress parts of suggestions if they are misspelled
+		(for this, you need to use element <tt>match</tt> with attribute <tt>suppress_misspelled</tt> set to 
+		<tt>yes</tt>). You can even suppress the whole rule from being matched if you use the same attribute for
+		any <tt>suggestion</tt> element. Note: the tagger of the given language is used to make it work, so if
+		you don't have a tagger yet, you cannot use this feature.		 	
+		</li>
     <li>element <tt>url</tt> (optional, since LanguageTool 1.7): An URL to a page that explains the rule leading to the error in more
         detail. <!--LT 1.8: Will be displayed in LibreOffice 3.5 or later when the user clicks the "More..." button.--></li>
 	<li>element <tt>example</tt>: At least two examples with one correct and one incorrect sentence.
