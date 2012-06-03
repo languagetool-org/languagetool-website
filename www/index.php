@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-06-01 10:21:00 CET";
+$lastmod = "2012-06-03 14:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -41,12 +41,21 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 <h2>Download</h2>
 
 <div class="downloadSection">
-	<div id="downloadButton">
-        <?php
-        $downloadPath = "download";
-        include("../include/download.php");
-        ?>
-	</div>
+    <table>
+      <tr>
+        <td>
+          <div id="downloadButton">
+                 <?php
+                 $downloadPath = "download";
+                 include("../include/download.php");
+                 ?>
+         	</div>
+        </td>
+        <td valign="top" style="color:#666666">If you plan on using LanguageTool with LibreOffice/OpenOffice, we recommend
+          <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a>, as older versions of both LibreOffice and OpenOffice have a bug
+          that causes a freeze on startup.</td>
+      </tr>
+    </table>
 	<ul>
 		<li>Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later -<strong> we recommend Java 6 for now,
           as many users have performance problems when using LanguageTool with Java 7</strong></li>

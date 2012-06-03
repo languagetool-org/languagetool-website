@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-05-16 13:30:00 CET";
+$lastmod = "2012-06-03 13:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -28,8 +28,9 @@ include("../../include/header.php");
 
 <ul class="largelist">
 <li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
- We have found the cause in LibreOffice/OpenOffice.org and are working on a fix now (May 2012). <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
- The freeze is worse with Java 7, so we recommend Java 6 for now.
+ This bug has been fixed in <strong>LibreOffice 3.5.4</strong> - all older versions and all versions of Apache OpenOffice are still affected
+ by this (as of June 2012), so we strongly recommend you use LibreOffice 3.5.4. If you cannot update, we recommend you use Java 6 for now,
+ as the freeze is worse with Java 7. <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
 </li>
 <li>When you get a long <strong>error message with "NoClassDefFoundError" during installation on Ubuntu <a href="../images/class_not_found.png">like this</a></strong>, you might need to
 	install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package. See
