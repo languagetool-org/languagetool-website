@@ -43,7 +43,10 @@ include("../../include/header.php");
     Got to <em>Tools -> Options -> Java</em>, uncheck "Use a Java runtime environment", exit OpenOffice.org and start it again,
     check "Use a Java runtime environment" again and try to install/activate the LanguageTool extension
     (<a href="http://sourceforge.net/projects/opencards/forums/forum/707158/topic/1886832">source</a>) - please
-    let us know if this worked for you</li>
+    let us know if this worked for you. <strong>Note: </strong> if you are getting this problem on 64-bit Windows,
+    it may be caused by a 64-bit version of Java. LibreOffice and Apache OpenOffice are only built as 32-bit applications
+    and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.</li>
+    
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
     For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
     in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
