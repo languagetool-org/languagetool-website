@@ -301,3 +301,11 @@ FORM TEXTAREA {
     top: 10px;
 }
 /* end: download button on the homepage */
+
+.longPage h2 {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.longPage h3 {
+    border-bottom: 1px solid #CCCCCC;
+}

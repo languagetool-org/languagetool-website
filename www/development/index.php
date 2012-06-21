@@ -7,6 +7,7 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
+<div class="longPage">
 
 <p class="firstpara">This page has everything you need to know to teach LanguageTool
 new error detection rules, plus more. You don't even have to be a programmer for that.</p>
@@ -484,6 +485,7 @@ which was written in Python:</p>
   <li><?=show_link("Postscript (.ps.gz), 630 KB", "http://www.danielnaber.de/languagetool/download/style_and_grammar_checker.ps.gz", 0) ?></li>
 </ul>
 
+</div>
 
 <!-- -->
 <div style="height: 400px"></div>
