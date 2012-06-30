@@ -59,7 +59,7 @@ kun literuma kontrolilo.</p>
       <tr>
         <td>
           <div class="downloadButton">
-            <a class='piwik_download' style="display: block" href="download/LanguageTool-stable.oxt?1.8">
+            <a class='piwik_download' style="display: block" href="/download/LanguageTool-stable.oxt?1.8">
               <span class="languagetool">Elŝuti Lingvoilon</span><br/>
               <span class="download">por LibreOffice/OpenOffice<br/></span>
               <span class="version">Versio 1.8 (24MB)</span>
@@ -68,7 +68,7 @@ kun literuma kontrolilo.</p>
         </td>
         <td>
           <div class="downloadButton">
-            <a class='piwik_download' style="display: block" href="download/LanguageTool-stable.zip?1.8">
+            <a class='piwik_download' style="display: block" href="/download/LanguageTool-stable.zip?1.8">
               <span class="languagetool">Elŝuti Lingvoilon</span><br/>
               <span class="download">memstara<br/></span>
               <span class="version">Versio 1.8 (48MB)</span>
