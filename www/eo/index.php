@@ -2,12 +2,12 @@
 $page = "hejmpaĝo";
 $title = "LanguageTool";
 $title2 = "Stila kaj gramatika kontrolilo";
-$lastmod = "2012-01-22 16:08 CET";
+$lastmod = "2012-06-30 20:00 CET";
 include("../../include/header.php");
 ?>
-		
-<p class="firstpara"><strong>Lingvoilo (LanguageTool) estas libera plurlingva 
-programo por kontroli stilon kaj gramatikon en Esperanto sed ankaŭ en 
+
+<p class="firstpara"><strong>Lingvoilo (LanguageTool) estas libera plurlingva
+programo por kontroli stilon kaj gramatikon en Esperanto sed ankaŭ en
 <a href="../languages/">multaj aliaj lingvoj</a>.</strong>
 Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.
 Ĝi ne atentigas pri misliterumoj, sed eblas uzi Lingvoilon kune
@@ -16,12 +16,12 @@ kun literuma kontrolilo.</p>
 <h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ne atentigas pri literumaj erraroj kiel tiu.') { document.checkform.text.value='' } " 
+    <textarea onfocus="javascript: if(document.checkform.text.value == 'Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ne atentigas pri literumaj erraroj kiel tiu.') { document.checkform.text.value='' } "
         style="width:100%; max-width:700px;height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ne atentigas pri literumaj erraroj kiel tiu.</textarea>
     <br />
     <input type="submit" name="_action_checkText" value="Kontroli tekston"/>
     Lingvo: <select name="lang" id="lang" >
-    
+
         <option value="auto">aŭtomate detekti</option>
         <option value="en" >angla</option>
         <option value="ast" >asturia</option>
@@ -54,12 +54,32 @@ kun literuma kontrolilo.</p>
 
 <h2>Elŝutado</h2>
 
-<div class="downloadSection">
-  <div id="downloadButton">
-  <a href="../download/LanguageTool-1.7.oxt"><span
-  class="languagetool">Lingvoilo</span><br/><span class="download">Elŝuti<br/>
-  </span><span class="version">Versio 1.7 (29&nbsp;MB)</span></a>
+  <div class="downloadSection">
+    <table width="100%">
+      <tr>
+        <td>
+          <div class="downloadButton">
+            <a class='piwik_download' style="display: block" href="download/LanguageTool-stable.oxt?1.8">
+              <span class="languagetool">Elŝuti Lingvoilon</span><br/>
+              <span class="download">por LibreOffice/OpenOffice<br/></span>
+              <span class="version">Versio 1.8 (24MB)</span>
+            </a>
+          </div> 
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+          <div class="downloadButton">
+            <a class='piwik_download' style="display: block" href="download/LanguageTool-stable.zip?1.8">
+              <span class="languagetool">Elŝuti Lingvoilon</span><br/>
+              <span class="download">memstara<br/></span>
+              <span class="version">Versio 1.8 (48MB)</span>
+            </a>
+          </div>
+        <td>
+        </td>
+      </tr>
+    </table>
   </div>
+
 <ul>
 <li><a href="http://www.java.com/en/download/manual.jsp">Java 6</a> aŭ pli nova estas bezonata.</li>
 
@@ -67,29 +87,6 @@ kun literuma kontrolilo.</p>
 <a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
 </ul>
 </div>
-
-<h2>Instalo kaj uzado</h2>
-
-<ul>
-  <li><strong>En OpenOffice.org/LibreOffice</strong>:
-  Duoble klaku sur <tt>LanguageTool-1.7.oxt</tt> por instali ĝin.
-  Se tio ne funkcias, alvoku «<em>Iloj → Aldonaĵa mastrumilo</em>» ekde
-  la ĉefa menuo de LibreOffice, kaj poste restartigu LibreOffice.
-  </p>
-  <li><strong>En komanda linio</strong>: 
-<pre>$ unzip <a href="../download/LanguageTool-1.7.oxt">LanguageTool-1.7.oxt</a>
-$ echo "Tio frazo enhavas eraron." | java -jar LanguageTool.jar -c utf-8 -l eo
-Expected text language: Esperanto
-Working on STDIN...
-1.) Line 1, column 1, Rule ID: IO_O[1]
-Message: Ne povas esti «Tio» antaŭ o-vorto «frazo». Ĉu vi intencis «Tiu frazo»?
-Tio frazo enhavas eraron. 
-^^^^^^^^^                 
-</pre>
-  <li>Eblas ankaŭ uzi Lingvoilon <a href="http://www.vim.org/scripts/script.php?script_id=3223">en Vim</a>, <a href="http://wiki.lyx.org/Tools/LyX-GrammarChecker">en Lyx</a>, <a href="http://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">en OmegaT</a>, <a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">en CheckMate</a> kaj <a href="https://addons.mozilla.org/en-US/thunderbird/addon/grammar-checker/">en Thundirbird</a>.</li>
-  </li>
-  <li>Legu plie pri <a href="../usage/">uzadoj</a> de Lingvoilo.</li>
-</ul>
 
 <h2>Ekrankopio en LibreOffice</h2>
 
