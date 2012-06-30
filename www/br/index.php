@@ -2,7 +2,7 @@
 $page = "Pajenn degemer";
 $title = "LanguageTool";
 $title2 = "An difazier yezhadurel frank evit ar brezhoneg";
-$lastmod = "2012-02-11 21:45 CET";
+$lastmod = "2012-06-30 21:15 CET";
 include("../../include/header.php");
 ?>
 
@@ -64,16 +64,16 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
       <td>
         <?php
           $downloadTitle = "Pellgargit LanguageTool";
-          $downloadLabel = "Stumm evit LibreOffice/OpenOffice";
+          $downloadLabel = "evit LibreOffice/OpenOffice";
           $downloadPath  = "/download";
           include("../../include/download.php");
         ?>
       </td>
       <td>
         <?php
-          $downloadTitle = "Pellgargit LanguageTool";
-          $downloadLabel = "Stumm evit LibreOffice/OpenOffice";
-          $downloadPath  = "/download";
+          $downloadTitleStandAlone = "Pellgargit LanguageTool";
+          $downloadLabelStandAlone = "da implijout hep LibreOffice/OpenOffice";
+          $downloadPathStandAlone  = "/download";
           include("../../include/downloadStandAlone.php");
         ?>
       </td>
