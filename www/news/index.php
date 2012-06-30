@@ -94,7 +94,7 @@ This means that you can now use LanguageTool for these languages via the
 	<li>Initial support for Icelandic</li>
 	<li>More English, Dutch, Polish and Romanian grammar rules</li>
 	<li>Fixed some bugs with pairing brackets</li>
-	<li>Added sentence tokenizer that uses <a href="http://www.lisa.org/fileadmin/standards/srx20.html">SRX</a> format for
+	<li>Added sentence tokenizer that uses SRX format for
   specifying end-of-sentence breaks</li>
 </ul>
 
