@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-06-03 14:21:00 CET";
+$lastmod = "2012-06-30 14:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -105,9 +105,9 @@ Having problems? Please see the <?=show_link("list of common problems", "issues"
 <p><strong>2012-06-30:</strong> Released LanguageTool 1.8. Changes include:</p>
 <ul>
   <li>Spell checking is now included (not used in LibreOffice/OpenOffice)</li>
+  <li>Many <?=show_link("updates for the error detection rules", "changes/V_1_7_to_V_1_8/", 0) ?> for German, English, Catalan, Italian, French, Breton, Polish, Esperanto</li>
   <li>Initial support for Greek and Portuguese with a few rules</li>
   <li>Support for language variants like British English, American English, Swiss German, ...</li>
-  <li>Many updates for the error detection rules for German, English, Catalan, Russian, Italian, French, Breton, Polish, Esperanto</li>
   <li>Several bug fixes</li>
 </ul>
 
