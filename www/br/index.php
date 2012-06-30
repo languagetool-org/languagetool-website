@@ -64,7 +64,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
       <td>
         <?php
           $downloadTitle = "Pellgargit LanguageTool";
-          $downloadLabel = "Stumm evit LibreOffice/OpenOffice"
+          $downloadLabel = "Stumm evit LibreOffice/OpenOffice";
           $downloadPath  = "/download";
           include("../../include/download.php");
         ?>
@@ -72,7 +72,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
       <td>
         <?php
           $downloadTitle = "Pellgargit LanguageTool";
-          $downloadLabel = "Stumm evit LibreOffice/OpenOffice"
+          $downloadLabel = "Stumm evit LibreOffice/OpenOffice";
           $downloadPath  = "/download";
           include("../../include/downloadStandAlone.php");
         ?>
