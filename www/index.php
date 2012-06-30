@@ -33,10 +33,11 @@ $checkDefaultText = "Paste your own text here... or check this text too see a fe
 include("../include/checkform.php");
 ?>
 
+<!--
 <p><strong>Try LanguageTool without installation, using Java WebStart.</strong>
 Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later:<br />
 <strong><?=show_link("Start LanguageTool (29&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
-
+-->
 
 <h2>Download</h2>
 
