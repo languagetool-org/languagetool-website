@@ -61,6 +61,7 @@ kun literuma kontrolilo.</p>
         <?php
           $downloadTitle = "Elŝuti Lingvoilon";
           $downloadLabel = "por LibreOffice/OpenOffice";
+          $downloadVersionLabel = "versio";
           $downloadPath  = "/download";
           include("../../include/download.php");
         ?>
@@ -69,6 +70,7 @@ kun literuma kontrolilo.</p>
         <?php
           $downloadTitleStandAlone = "Elŝuti Lingvoilon";
           $downloadLabelStandAlone = "memstara";
+          $downloadVersionLabelStandAlone = "versio";
           $downloadPathStandAlone  = "/download";
           include("../../include/downloadStandAlone.php");
         ?>
