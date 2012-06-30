@@ -1,7 +1,7 @@
 <?php
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-05-27 23:35:00 CET";
+$lastmod = "2012-06-30 15:37:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -9,11 +9,20 @@ include("../../include/header.php");
         
 <p>See <a href="/">the homepage</a> for the latest news.</p>
 
+<p><strong>2012-03-25:</strong> Released LanguageTool 1.7. Changes include:</p>
+<ul>
+    <li><?=show_link("Rule updates", "../changes/V_1_6_to_V_1_7/", 0) ?> for several languages (French, English, Breton, Russian, Esperanto, German)</li>
+    <li>Several small bug fixes</li>
+    <li>For a detailed list of changes, see the <?=show_link("Changelog", "../download/CHANGES.txt", 0) ?></li>
+</ul>
+
+<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?></p>
+
 <p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
 <ul>
-    <li><?=show_link("Rule updates", "changes/V_1_5_to_V_1_6/", 0) ?> for several languages (Chinese, French, Breton, and others)</li>
+    <li><?=show_link("Rule updates", "../changes/V_1_5_to_V_1_6/", 0) ?> for several languages (Chinese, French, Breton, and others)</li>
     <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>
-    <li>For a more detailed list of changes, see the <?=show_link("Changelog", "download/CHANGES.txt", 0) ?></li>
+    <li>For a more detailed list of changes, see the <?=show_link("Changelog", "../download/CHANGES.txt", 0) ?></li>
 </ul>
 
 <p><strong>2011-11-18:</strong> We now offer <?=show_link("Wikicheck, a new service to check Wikipedia pages with LanguageTool", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
