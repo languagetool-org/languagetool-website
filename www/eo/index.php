@@ -66,7 +66,7 @@ kun literuma kontrolilo.</p>
             </a>
           </div> 
         </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
           <div class="downloadButton">
             <a class='piwik_download' style="display: block" href="download/LanguageTool-stable.zip?1.8">
               <span class="languagetool">Elŝuti Lingvoilon</span><br/>
@@ -74,7 +74,6 @@ kun literuma kontrolilo.</p>
               <span class="version">Versio 1.8 (48MB)</span>
             </a>
           </div>
-        <td>
         </td>
       </tr>
     </table>
