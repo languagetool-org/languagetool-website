@@ -1,10 +1,10 @@
 <?php
 $version= "1.8";
 $filesize = "49";
-if( !isset($downloadTitleStandAlone) )       $downloadTitleStandAlone = "Download LanguageTool";
-if( !isset($downloadLabelStandAlone) )       $downloadLabelStandAlone = "for stand-alone use";
-if( !isset($downloadVersionLabelStandAlone ) $downloadVersionLabel = "Version";
-if( !isset($downloadPathStandAlone) )        $downloadPathStandAlone = "download";
+if( !isset($downloadTitleStandAlone) )        $downloadTitleStandAlone = "Download LanguageTool";
+if( !isset($downloadLabelStandAlone) )        $downloadLabelStandAlone = "for stand-alone use";
+if( !isset($downloadVersionLabelStandAlone) ) $downloadVersionLabel = "Version";
+if( !isset($downloadPathStandAlone) )         $downloadPathStandAlone = "download";
 ?>
 
 <table>

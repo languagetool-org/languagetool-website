@@ -1,10 +1,10 @@
 <?php
 $version= "1.8";
 $filesize = "24";
-if( !isset($downloadTitle) )       $downloadTitle = "Download LanguageTool";
-if( !isset($downloadLabel) )       $downloadLabel = "for LibreOffice/OpenOffice";
-if( !isset($downloadVersionLabel ) $downloadVersionLabel = "Version";
-if( !isset($downloadPath) )        $downloadPath = "download";
+if( !isset($downloadTitle) )        $downloadTitle = "Download LanguageTool";
+if( !isset($downloadLabel) )        $downloadLabel = "for LibreOffice/OpenOffice";
+if( !isset($downloadVersionLabel) ) $downloadVersionLabel = "Version";
+if( !isset($downloadPath) )         $downloadPath = "download";
 ?>
 
 <div class="downloadButton">
