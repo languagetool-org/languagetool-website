@@ -1,13 +1,14 @@
 <?php
-$version= "1.7";
-$filesize = "29";
+$version= "1.8";
+$filesize = "24";
+if( !isset($downloadTitle) ) $downloadTitle = "Download LanguageTool";
+if( !isset($downloadLabel) ) $downloadLabel = "for LibreOffice/OpenOffice";
 if( !isset($downloadPath) ) $downloadPath = "download";
-if( !isset($downloadLabel) ) $downloadLabel = "Download";
 ?>
 
-<div id="downloadButton">
+<div class="downloadButton">
    <a class='piwik_download' style="display: block" href="<?php print $downloadPath ?>/LanguageTool-stable.oxt?<?php print $version ?>">
-     <span class="languagetool">LanguageTool</span><br/>
+     <span class="languagetool"><?php print $downloadTitle ?></span><br/>
      <span class="download"><?php print $downloadLabel ?><br/></span>
      <span class="version">Version <?php print $version ?> (<?php print $filesize ?>&nbsp;MB)</span>
    </a>

@@ -14,7 +14,7 @@ include("../include/header.php");
 <p class="firstpara"><strong>LanguageTool is an Open Source style and grammar proofreading software for English, French, German, Polish,
 Dutch, Romanian, and a lot of <?=show_link("other languages", "languages/", 0) ?>.</strong>
 You can think of LanguageTool as a software to detect errors that a simple spell checker cannot detect, e.g. mixing
-up <em>there/their</em>, <em>no/now</em> etc. It can also detect some grammar mistakes. It does not include spell checking.</p>
+up <em>there/their</em>, <em>no/now</em> etc. It can also detect some grammar mistakes.</p>
 
 <p>LanguageTool will find errors for which a rule is defined in its 
 language-specific configuration files. Rules for detecting more complicated errors can be written in Java.</p>
@@ -40,35 +40,59 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <h2>Download</h2>
 
+<p>LanguageTool requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later - we recommend Java 6 for now,
+as some users have performance problems when using LanguageTool with Java 7.
+Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</p>
+
 <div class="downloadSection">
-    <table>
+    <table width="100%">
       <tr>
         <td>
-          <div id="downloadButton">
-                 <?php
-                 $downloadPath = "download";
-                 include("../include/download.php");
-                 ?>
-         	</div>
+           <?php
+           $downloadPath = "download";
+           include("../include/download.php");
+           ?>
         </td>
-        <td valign="top" style="color:#666666">If you plan on using LanguageTool with LibreOffice/OpenOffice, we recommend
-          <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a>, as older versions of both LibreOffice and OpenOffice have a bug
-          that causes a freeze on startup.</td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+           <?php
+           $downloadPath = "download";
+           include("../include/downloadStandAlone.php");
+           ?>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+
+          <ul style="padding-left: 20px">
+            <li><strong>We strongly recommend using
+              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong>, as older versions of both LibreOffice and OpenOffice have a bug
+              that causes a freeze on startup</li>
+            <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install this file</li>
+            <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
+            <li>If you are using LibreOffice 3.5 and you want to check English texts:
+              Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> to disable LightProof and enable LanguageTool for English</li>
+          </ul>
+
+        </td>
+
+        <td></td>
+
+        <td valign="top">
+
+          <ul style="padding-left: 20px">
+            <li>Unzip the file and start LanguageToolGUI.jar by double clicking it.
+              Also see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
+          </ul>
+
+        </td>
+
       </tr>
     </table>
-	<ul>
-		<li>Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later -<strong> we recommend Java 6 for now,
-          as many users have performance problems when using LanguageTool with Java 7</strong></li>
-        <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install it
-          or see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
-        <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of this extension.</li>
-        <li>If you are using LibreOffice 3.5 and you want to check English texts:
-          Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> to disable LightProof and enable LanguageTool for English</li>
-        <li>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</li>
-		<li>Please report bugs <?=show_link("in our forum", "/forum", 0)?> or
-          <?=show_link("in the Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>.</li>
-	</ul>
 </div>
+
+<p>Please report bugs <?=show_link("in our forum", "/forum", 0)?> or
+  <?=show_link("in the Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>.</p>
 
 <p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/", 0) ?>
@@ -76,6 +100,15 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 <h2>News</h2>
+
+<p><strong>2012-06-30:</strong> Released LanguageTool 1.8. Changes include:</p>
+<ul>
+  <li>Spell checking is now included (not used in LibreOffice/OpenOffice)</li>
+  <li>Initial support for Greek and Portuguese with a few rules</li>
+  <li>Support for language variants like British English, American English, Swiss German, ...</li>
+  <li>Many updates for the error detection rules for German, English, Catalan, Russian, Italian, French, Breton, Polish, Esperanto</li>
+  <li>Several bug fixes</li>
+</ul>
 
 <p><strong>2012-06-01:</strong> Use our new <?=show_link("rule creator", "ruleeditor/") ?> to easily create XML error detection rules for LanguageTool.</p>
 

@@ -255,19 +255,19 @@ FORM TEXTAREA {
 
 /* download button on the homepage */
 
-#downloadButton {
-    background-image: url("../images/languagetool-download.png");
-    width: 200px;
+.downloadButton {
+    background-image: url("../images/languagetool-download-320.png");
+    width: 320px;
     height: 70px;
 }
 
-#downloadButton a:hover {
+.downloadButton a:hover {
     text-decoration: none;
 }
 
-#downloadButton SPAN.languagetool {
+.downloadButton .languagetool {
     font-family: georgia, "Bitstream Charter", serif;
-    color: #FFFFFF;
+    color: black;
     font-size: 12.1pt;
     padding-left: 66px;
     font-weight: bold;
@@ -276,25 +276,23 @@ FORM TEXTAREA {
     left: 7px;
     top: 8px;
 }
-#downloadButton SPAN.download {
+.downloadButton .download {
     font-family: georgia, "Bitstream Charter", serif;
-    color: #FFFFFF;
+    color: black;
     font-size: 11.9pt;
     padding-left: 66px;
-    font-style: italic;
     font-weight: normal;
     /*+placement:shift 8px 8px;*/
     position: relative;
     left: 8px;
     top: 8px;
 }
-#downloadButton SPAN.version {
+.downloadButton .version {
     font-family: georgia, "Bitstream Charter", serif;
-    color: #FFFFFF;
-    font-size: 7pt;
+    color: black;
+    font-size: 9pt;
     padding-left: 66px;
     font-weight: normal;
-    font-style: italic;
     /*+placement:shift 8px 10px;*/
     position: relative;
     left: 8px;
