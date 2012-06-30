@@ -5,10 +5,10 @@ $title2 = "An difazier yezhadurel frank evit ar brezhoneg";
 $lastmod = "2012-02-11 21:45 CET";
 include("../../include/header.php");
 ?>
-		
+
 <p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
 Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
-Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. 
+Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
 </p>
 <p>
 LanguageTool a gav fazioù evel ar c’hemmadurioù direizh (ar paotred → ar baotred) hag all, fazioù na
@@ -21,12 +21,12 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 <h2>LanguageTool enlinenn</h2>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn vrezhonek da vezañ gwiriet…') { document.checkform.text.value='' } " 
+    <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn vrezhonek da vezañ gwiriet…') { document.checkform.text.value='' } "
         style="width:100%; max-width:700px;height:100px" name="text">Lakait amañ ho testenn vrezhonek da vezañ gwiriet…</textarea>
     <br />
     <input type="submit" name="_action_checkText" value="Gwiriañ an destenn"/>
     Yezh: <select name="lang" id="lang" >
-    
+
         <option value="de" >alamaneg</option>
         <option value="ast" >astureg</option>
         <option value="be" >belaruseg</option>
@@ -59,10 +59,26 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 <h2>Pellgargañ</h2>
 
 <div class="downloadSection">
-  <div id="downloadButton">
-  <a href="../download/LanguageTool-1.7.oxt"><span
-  class="languagetool">LanguageTool</span><br/><span class="download">Pellgargit<br/>
-  </span><span class="version">Stumm 1.7 (29&nbsp;MB)</span></a>
+  <table width="100%">
+    <tr>
+      <td>
+        <?php
+          $downloadTitle = "Pellgargit LanguageTool";
+          $downloadLabel = "Stumm evit LibreOffice/OpenOffice"
+          $downloadPath  = "/download";
+          include("../../include/download.php");
+        ?>
+      </td>
+      <td>
+        <?php
+          $downloadTitle = "Pellgargit LanguageTool";
+          $downloadLabel = "Stumm evit LibreOffice/OpenOffice"
+          $downloadPath  = "/download";
+          include("../../include/downloadStandAlone.php");
+        ?>
+      </td>
+    </tr>
+  </table>
 </div>
 
 Ar restr da bellgargañ a dalvez evit ar brezhoneg hag an holl yezhoù all.
@@ -80,7 +96,7 @@ kavet ur gudenn bennak gant LanguageTool brezhoneg? Skrivit da
 pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.
 </p>
 <p>
-Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg: 
+Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
 Fulup Jakez, Joseph Monfort ha Denis Arnaud.
 </p>
 <h2>Aotre-implijout</h2>
