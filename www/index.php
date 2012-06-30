@@ -111,9 +111,9 @@ Having problems? Please see the <?=show_link("list of common problems", "issues"
   <li>Several bug fixes</li>
 </ul>
 
-<p><strong>2012-06-01:</strong> Use our new <?=show_link("rule creator", "ruleeditor/") ?> to easily create XML error detection rules for LanguageTool.</p>
+<p><strong>2012-06-01:</strong> Use our new <?=show_link("rule creator", "ruleeditor/", 0) ?> to easily create XML error detection rules for LanguageTool.</p>
 
-<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "development/#intro") ?>!</p>
+<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "development/#intro", 0) ?>!</p>
 
 <?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.
 See <?=show_link("the news archive", "news/", 0) ?> for old news.
