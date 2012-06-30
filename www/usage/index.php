@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-03-04 20:20:00 CET";
+$lastmod = "2012-06-30 15:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -20,19 +20,23 @@ include('../../include/geshi/geshi.php');
 
 
 <h2>As a stand-alone application</h2>
-	<p>Rename the *.oxt file so it ends with ".zip" and unzip it.
-	Then start <tt>LanguageToolGUI.jar</tt> by double clicking on it. If your computer isn't
-	configured to start jar archives, start it from the command line using:</p>
-	<tt>java -jar LanguageToolGUI.jar</tt>
+	<p>Download the *.zip version (not the *.oxt one) and unzip it.
+	Then start <tt>LanguageToolGUI.jar</tt> by double clicking on it.
+    If your computer isn't
+	configured to start jar archives, start it from the command line using:
+	<tt>java -jar LanguageToolGUI.jar</tt></p>
 	
     <p>You can use the <tt>--tray</tt> option to start LanguageTool inside the system tray.
 	After you copy any text to the clipboard, clicking LanguageTool in the system tray will
 	cause the application to open and check the contents of the clipboard automatically. This way
 	you can use LanguageTool for applications that do not support direct integration of the checker.</p>
 
+    <p>The file size of the stand-alone version is so much larger than that of the LibreOffice/OpenOffice
+    extension because it contains spell checking and thus dictionaries for most languages.</p>
+
 
 <h2>As a stand-alone application on the command line</h2>
-	<p>See above, but start LanguageTool.jar using:</p>
+	<p>See "as a stand-alone application" above, but start LanguageTool.jar using:</p>
 	<tt>java -jar LanguageTool.jar &lt;filename></tt>
 	<p>LanguageTool only supports plain text files.</p>
 
