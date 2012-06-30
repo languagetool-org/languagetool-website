@@ -72,7 +72,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
       <td>
         <?php
           $downloadTitleStandAlone = "Pellgargit LanguageTool";
-          $downloadLabelStandAlone = "da implijout hep LibreOffice/OpenOffice";
+          $downloadLabelStandAlone = "hep LibreOffice/OpenOffice";
           $downloadPathStandAlone  = "/download";
           include("../../include/downloadStandAlone.php");
         ?>

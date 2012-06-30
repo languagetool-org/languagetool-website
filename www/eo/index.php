@@ -54,30 +54,28 @@ kun literuma kontrolilo.</p>
 
 <h2>Elŝutado</h2>
 
-  <div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-          <div class="downloadButton">
-            <a class='piwik_download' style="display: block" href="/download/LanguageTool-stable.oxt?1.8">
-              <span class="languagetool">Elŝuti Lingvoilon</span><br/>
-              <span class="download">por LibreOffice/OpenOffice<br/></span>
-              <span class="version">Versio 1.8 (24MB)</span>
-            </a>
-          </div> 
-        </td>
-        <td>
-          <div class="downloadButton">
-            <a class='piwik_download' style="display: block" href="/download/LanguageTool-stable.zip?1.8">
-              <span class="languagetool">Elŝuti Lingvoilon</span><br/>
-              <span class="download">memstara<br/></span>
-              <span class="version">Versio 1.8 (48MB)</span>
-            </a>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
+<div class="downloadSection">
+  <table width="100%">
+    <tr>
+      <td>
+        <?php
+          $downloadTitle = "Elŝuti Lingvoilon";
+          $downloadLabel = "por LibreOffice/OpenOffice";
+          $downloadPath  = "/download";
+          include("../../include/download.php");
+        ?>
+      </td>
+      <td>
+        <?php
+          $downloadTitleStandAlone = "Elŝuti Lingvoilon";
+          $downloadLabelStandAlone = "memstara";
+          $downloadPathStandAlone  = "/download";
+          include("../../include/downloadStandAlone.php");
+        ?>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <ul>
 <li><a href="http://www.java.com/en/download/manual.jsp">Java 6</a> aŭ pli nova estas bezonata.</li>
