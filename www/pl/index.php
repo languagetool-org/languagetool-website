@@ -103,8 +103,6 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
 
 Poza tym w tekstach obcojęzycznych LanguageTool wykrywa <a href="http://pl.wikipedia.org/wiki/Fa%C5%82szywy_przyjaciel" target="_blank">fałszywych przyjaciół tłumacza</a>.<br/><br/>
 
-LanguageTool nie zawiera jednak zwykłego korektora pisowni!
-
 <h2>Wypróbuj narzędzie LanguageTool</h2>
 
 LanguageTool można wypróbować <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
@@ -114,7 +112,7 @@ bezpośrednio w przeglądarce:<br/><br/>
 $checkSubmitButtonValue = "Sprawdź tekst";
 $showLanguageBox = 0;
 $checkDefaultLang = "pl";
-$checkDefaultText = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool nie zawiera jadnak korektora psowni.";
+$checkDefaultText = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma korektor pisowni, ale działa on tylko w wersji samodzielnej lub uruchamianej przez przez Java Web Start.";
 include("../../include/checkform.php");
 ?>
 
