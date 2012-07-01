@@ -167,7 +167,7 @@ etc as an error:</p>
 
 <div class="xmlrule">
 <?php hl('<rule id="BED_ENGLISH" name="Possible typo &apos;bed/bat(bad) English/...&apos;">
-    <pattern mark_from="0" mark_to="-1">
+    <pattern>
       <marker>
         <token regexp="yes">bed|bat</token>
       </marker>
