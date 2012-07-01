@@ -15,7 +15,7 @@ include("../../include/header.php");
       <td>
         <?php
           $downloadTitle = "Pobierz LanguageTool";
-          $downloadLabel = "rozszerzenie LibreOffice/OpenOffice";
+          $downloadLabel = "dla LibreOffice/OpenOffice";
           $downloadVersionLabel = "wersja";
           $downloadPath  = "/download";
           include("../../include/download.php");
