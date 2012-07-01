@@ -20,7 +20,7 @@ include("../../include/download.php");
 
 <h2>Funktionen</h2>
 
-LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 600</a> Fehler in deutschsprachigen Texten:<br/><br/>
+LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1400</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
 <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
@@ -72,8 +72,6 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
 
 Außerdem weist LanguageTool in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin.<br/><br/>
 
-Aber bitte beachten Sie: LanguageTool selbst beinhaltet keine Rechtschreibprüfung!
-
 <h2>LanguageTool ausprobieren</h2>
 
 Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder 
@@ -87,8 +85,8 @@ $checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text
 include("../../include/checkform.php");
 ?>
 
-<h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice.org nutzen</h2>
-LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">OpenOffice.org</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
+<h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice nutzen</h2>
+LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
 
 <ol>
     <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier</a> kostenlos herunter und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
