@@ -117,17 +117,17 @@ include("../../include/header.php");
 
            $downloadTitle = "Скачать LanguageTool";
            $downloadLabel = "для LibreOffice/OpenOffice";
-+          $downloadVersionLabel = "1.8";
+           $downloadVersionLabel = "1.8";
            ?>
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
-           $downloadPath = "/download";
+           $downloadPathStandAlone  = "/download";
            include("../../include/downloadStandAlone.php");
            $downloadTitleStandAlone = "Скачать  LanguageTool";
            $downloadLabelStandAlone = "независимая версия (приложение)";
-+          $downloadVersionLabelStandAlone = "1.8";
+           $downloadVersionLabelStandAlone = "1.8";
            $downloadPathStandAlone  = "/download";
            ?>
         </td>
