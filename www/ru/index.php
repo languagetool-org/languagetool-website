@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-06-30 19:40:00 CET";
+$lastmod = "2012-07-01 19:56:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -111,24 +111,22 @@ include("../../include/header.php");
     <table width="100%">
       <tr>
         <td>
-           <?php
-           $downloadPath = "/download";
-           include("../../include/download.php");
-
+           <?php     
            $downloadTitle = "Скачать LanguageTool";
            $downloadLabel = "для LibreOffice/OpenOffice";
            $downloadVersionLabel = "1.8";
+           $downloadPath = "/download"; 
+           include("../../include/download.php");
            ?>
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
-           <?php
-           $downloadPathStandAlone  = "/download";
-           include("../../include/downloadStandAlone.php");
+           <?php         
            $downloadTitleStandAlone = "Скачать  LanguageTool";
            $downloadLabelStandAlone = "независимая версия (приложение)";
-           $downloadVersionLabelStandAlone = "1.8";
+           $downloadVersionLabelStandAlone = "1.8";                
            $downloadPathStandAlone  = "/download";
+           include("../../include/downloadStandAlone.php");
            ?>
         </td>
       </tr>
@@ -151,7 +149,7 @@ include("../../include/header.php");
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
-<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или LibreOffice), Java 1.6.0_04 или новее. 
+<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a>. 
 </p>
 <p>LibreOffice 3.5 уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
