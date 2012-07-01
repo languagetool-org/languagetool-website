@@ -9,10 +9,30 @@ include("../../include/header.php");
 
 <p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="http://www.languagetool.org/languages/">25 innych języków</a>.</p>
 
-<?php
-$downloadPath = "../download";
-include("../../include/download.php");
-?>
+<div class="downloadSection">
+  <table width="100%">
+    <tr>
+      <td>
+        <?php
+          $downloadTitle = "Pobierz LanguageTool";
+          $downloadLabel = "rozszerzenie LibreOffice/OpenOffice";
+          $downloadVersionLabel = "wersja";
+          $downloadPath  = "/download";
+          include("../../include/download.php");
+        ?>
+      </td>
+      <td>
+        <?php
+          $downloadTitleStandAlone = "Pobierz LanguageTool";
+          $downloadLabelStandAlone = "pakiet samodzielny";
+          $downloadVersionLabelStandAlone = "wersja";
+          $downloadPathStandAlone  = "/download";
+          include("../../include/downloadStandAlone.php");
+        ?>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <div style="color:grey;font-size:smaller">
    <a href="#liboinstall" style="color:grey;">Instalacja w pakiecie LibreOffice/OpenOffice.org</a> – <a href="../usage/"  style="color:grey;">inne możliwości zastosowania (opis w języku angielskim)</a>
