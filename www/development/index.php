@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-06-01 11:06:00 CET";
+$lastmod = "2012-07-01 11:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -40,8 +40,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
 <p>This section tells you in a nutshell how to write your own LanguageTool rules for detecting errors:</p>
 
 <ol>
-  <li>Download LanguageTool <?=show_link("from the homepage", "../", 0)?>.</li>
-  <li>Rename <tt>LanguageTool-stable.oxt</tt> to <tt>LanguageTool-stable.zip</tt> and unzip it to a new directory.</li>
+  <li>Download the stand-alone version of LanguageTool <?=show_link("from the homepage", "../", 0)?> and unzip it.</li>
   <li>Open <tt>rules/en/grammar.xml</tt> in your preferred text editor or in an XML editor.</li>
   <li>Search for <tt>&lt;category name="Possible Typos"&gt;</tt> (it's quite at the top) and copy and paste this snippet just after
     that category element:
