@@ -75,7 +75,6 @@ for (RuleMatch match : matches) {
 	source and translation), simply specify also the <tt>srctext</tt> parameter. This way bitext mode will be
 	activated automatically. You can use both POST and GET to send your requests to the LanguageTool server.</p>
 
-	<!--  for 1.8 
 	<p>The server may be configured to enable or disable some rules by adding <tt>enabled</tt> and 
 	<tt>disabled</tt> as parameters and listing rule identifiers delimited with commas, for example:</p>
 	
@@ -89,8 +88,6 @@ for (RuleMatch match : matches) {
 	LanguageTool server, and the user wants to enable or disable some checks. However, if the program does disable or
 	enable any rules, then the configuration set by the user will be silently ignored.</p>
 	
-	 -->
-	
     <p>For the input "this is a test" the LanguageTool server will reply with this
 	XML response:</p>
 	
@@ -103,11 +100,9 @@ for (RuleMatch match : matches) {
   contextoffset="0"
   errorlength="4"/>
 </matches>'); ?>
-    
-    <!-- for 1.8 
+         
     <p>Note: some rules may contain additional information contained as a link to a webpage. The link
-    will be available as the contents of the <tt>url</tt> attribute of <tt>error</tt> element.</p>    
-     -->
+    will be available as the contents of the <tt>url</tt> attribute of <tt>error</tt> element.</p>        
            
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 
