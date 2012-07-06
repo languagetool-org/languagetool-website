@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-06-13 13:30:00 CET";
+$lastmod = "2012-07-06 20:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -45,7 +45,9 @@ include("../../include/header.php");
     (<a href="http://sourceforge.net/projects/opencards/forums/forum/707158/topic/1886832">source</a>) - please
     let us know if this worked for you. <strong>Note: </strong> if you are getting this problem on 64-bit Windows,
     it may be caused by a 64-bit version of Java. LibreOffice and Apache OpenOffice are only built as 32-bit applications
-    and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.</li>
+    and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.
+    (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
+    </li>
     
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
     For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
