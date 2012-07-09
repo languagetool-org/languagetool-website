@@ -2,21 +2,39 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-02-09 06:52:00 CET";
+$lastmod = "2012-07-09 10:40:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
 <p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.</p>
 
-<?php
-$downloadPath = "../download";
-include("../../include/download.php");
-?>
-
-<div style="color:grey;font-size:smaller">
-   <a href="#liboinstall" style="color:grey;">In LibreOffice/OpenOffice.org installieren</a> – <a href="../usage/"  style="color:grey;">andere Verwendungsmöglichkeiten (Englisch)</a>
-</div> 
+<div class="downloadSection">
+    <table width="100%">
+      <tr>
+        <td>
+           <?php
+           $downloadTitle = "LanguageTool herunterladen";
+           $downloadLabel = "für LibreOffice/OpenOffice";
+           $downloadPath = "../download";
+           include("../../include/download.php");
+           ?>
+        </td>
+        <td>
+           <?php
+           $downloadTitleStandAlone = "LanguageTool herunterladen";
+           $downloadLabelStandAlone = "als eigenständiges Programm";
+           $downloadPath = "../download";
+           include("../../include/downloadStandAlone.php");
+           ?>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="#liboinstall">Installationsanleitung für LibreOffice/OpenOffice</a></td>
+        <td><a href="#standalone">LanguageTool als Stand-Alone-Anwendung verwenden</a></td>
+      </tr>
+    </table>
+</div>
 
 <h2>Funktionen</h2>
 
@@ -98,6 +116,14 @@ LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http
 
 Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von LanguageTool gefundenen Probleme im Text blau markiert. Die Einstellungen von LanguageTool können Sie über <i>Extras &rarr; LanguageTool &rarr; Konfiguration&hellip;</i> ändern.
 
+<h2 id="standalone">LanguageTool als eigenständiges Programm benutzen</h2>
+
+<ol>
+    <li>Entpacken Sie die heruntergeladene zip-Datei (z.&nbsp;B. durch Rechtklick &rarr; Entpacken &rarr; Hier o.&nbsp;ä.).</li>
+    <li>Führen Sie die Datei LanguageToolGUI.jar mit Java aus (i.&nbsp;d.&nbsp;R. durch Doppelklick möglich).</li>
+</ol>
+
+<?=show_link("weitere Verwendungsmöglichkeiten", "../usage/", 0)?>
 
 <h2>Kontakt</h2>
 <!-- TODO: direkter Kontakt? -->
