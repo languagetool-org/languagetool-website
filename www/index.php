@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-06-30 14:21:00 CET";
+$lastmod = "2012-07-11 18:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -65,11 +65,11 @@ Having problems? Please see the <?=show_link("list of common problems", "issues"
 
           <ul style="padding-left: 20px">
             <li><strong>We strongly recommend using
-              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong>, as older versions of both LibreOffice and OpenOffice have a bug
+              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a> or later</strong>, as older versions of both LibreOffice and OpenOffice have a bug
               that causes a freeze on startup</li>
             <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install this file</li>
             <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
-            <li>If you are using LibreOffice 3.5 and you want to check English texts:
+            <li>If you are using LibreOffice 3.5.x and you want to check English texts:
               Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> to disable LightProof and enable LanguageTool for English</li>
           </ul>
 
