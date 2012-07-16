@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-07-01 19:56:00 CET";
+$lastmod = "2012-07-16 17:42:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -162,8 +162,8 @@ include("../../include/header.php");
 <h2>Использование в качестве независимого приложения</h2>
 Системные требования:   <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a> от Sun или Oracle.
 <a title="LanguageTool работает как независимое графическое приложение" class="fancyboxImage"
-   href="/ru/screenshots/LT-GUI-ru-1.8-dev.png"><img style="margin-left: 15px" width="200" height="156" align="right"
-   src="/ru/screenshots/LT-GUI-ru-1.8-dev-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
+   href="/ru/screenshots/LT-GUI-ru-1.9-dev.png"><img style="margin-left: 15px" width="200" height="211" align="right"
+   src="/ru/screenshots/LT-GUI-ru-1.9-dev-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
 
 <ul>
     <li>Скачать программу.</li>
