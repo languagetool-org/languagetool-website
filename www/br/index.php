@@ -30,7 +30,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
         <option value="de" >alamaneg</option>
         <option value="ast" >astureg</option>
         <option value="be" >belaruseg</option>
-        <option selected value="br" value="br" >brezhoneg</option>
+        <option selected value="br" >brezhoneg</option>
         <option value="da" >daneg</option>
         <option value="eo" >esperanteg</option>
         <option value="gl" >galizeg</option>

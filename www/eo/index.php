@@ -85,7 +85,6 @@ kun literuma kontrolilo.</p>
 <li>Pli freŝaj sed malpli testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
 <a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
 </ul>
-</div>
 
 <h2>Ekrankopio en LibreOffice</h2>
 
