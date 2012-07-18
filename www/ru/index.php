@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-07-16 17:42:00 CET";
+$lastmod = "2012-07-18 19:15:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -104,7 +104,7 @@ include("../../include/header.php");
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
-<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь<a> можно запустить  LanguageTool непосредственно в браузере.
+<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь</a> можно запустить  LanguageTool непосредственно в браузере.
 </p>
 
 
