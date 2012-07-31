@@ -94,7 +94,7 @@ Having problems? Please see the <?=show_link("list of common problems", "issues"
   <?=show_link("in the Sourceforge bug tracker", "http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717", 0)?>.</p>
 
 <p>Untested daily builds of the current development version are available at
-<?=show_link("the snapshot directory", "download/snapshots/", 0) ?>
+<?=show_link("the snapshot directory", "download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
