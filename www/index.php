@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-07-11 18:21:00 CET";
+$lastmod = "2012-08-13 18:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -11,13 +11,13 @@ include("../include/header.php");
    href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool is an Open Source style and grammar proofreading software for English, French, German, Polish,
-Dutch, Romanian, and a lot of <?=show_link("other languages", "languages/", 0) ?>.</strong>
-You can think of LanguageTool as a software to detect errors that a simple spell checker cannot detect, e.g. mixing
-up <em>there/their</em>, <em>no/now</em> etc. It can also detect some grammar mistakes.</p>
+<p class="firstpara"><strong>LanguageTool is an Open Source proofreading software for English, French, German, Polish,
+Romanian, and <?=show_link("more than 20 other languages", "languages/", 0) ?>. It finds many errors that a simple
+spell checker cannot detect like mixing up <em>there/their</em> and it detects some grammar problems.</strong></p>
 
-<p>LanguageTool will find errors for which a rule is defined in its 
-language-specific configuration files. Rules for detecting more complicated errors can be written in Java.</p>
+<p>LanguageTool finds errors by looking for text patterns defined in an XML file. Alternatively, error detection
+rules can be written in Java.</p>
+
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
