@@ -75,6 +75,35 @@ function makeEntry($name, $visName) {
         <div class="menuitem"><a href="<?php print $url ?>" style="display: block;"><? print $visName ?></a></div>
 		<?php
 	}
+	if ($name == ".") {
+	    if ($page == "screenshots") {
+	      ?>
+          <div class="submenuitem activeMenuitem">Screenshots</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/screenshots">Screenshots</a></div>
+          <?php
+	    }
+	    if ($page == "languages") {
+	      ?>
+          <div class="submenuitem activeMenuitem">Supported Languages</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/languages">Supported Languages</a></div>
+          <?php
+	    }
+	    if ($page == "usage") {
+	      ?>
+          <div class="submenuitem activeMenuitem">Usage</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/usage">Usage</a></div>
+          <?php
+	    }
+	}
 	if ($name == "development") {
 	    if ($sub_page == "ruleeditor") {
 	      ?>
@@ -111,9 +140,6 @@ function makeEntry($name, $visName) {
 	<td width="201" valign="top">
 		<div id="menu">
 			<?php makeEntry(".", "Homepage"); ?>
-			<?php makeEntry("screenshots", "Screenshots"); ?>
-			<?php makeEntry("languages", "Supported Languages"); ?>
-			<?php makeEntry("usage", "Usage"); ?>
 			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("wikicheck", "WikiCheck"); ?>
 			<?php makeEntry("development", "Development"); ?>
