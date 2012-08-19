@@ -76,6 +76,16 @@ function makeEntry($name, $visName) {
 		<?php
 	}
 	if ($name == ".") {
+	    if ($page == "news") {
+	      ?>
+          <div class="submenuitem activeMenuitem">News</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/news">News</a></div>
+          <?php
+	    }
+
 	    if ($page == "screenshots") {
 	      ?>
           <div class="submenuitem activeMenuitem">Screenshots</div>
@@ -85,6 +95,7 @@ function makeEntry($name, $visName) {
           <div class="submenuitem"><a href="<?php print $rootUrl ?>/screenshots">Screenshots</a></div>
           <?php
 	    }
+
 	    if ($page == "languages") {
 	      ?>
           <div class="submenuitem activeMenuitem">Supported Languages</div>
@@ -94,6 +105,7 @@ function makeEntry($name, $visName) {
           <div class="submenuitem"><a href="<?php print $rootUrl ?>/languages">Supported Languages</a></div>
           <?php
 	    }
+
 	    if ($page == "usage") {
 	      ?>
           <div class="submenuitem activeMenuitem">Usage</div>
@@ -103,6 +115,7 @@ function makeEntry($name, $visName) {
           <div class="submenuitem"><a href="<?php print $rootUrl ?>/usage">Usage</a></div>
           <?php
 	    }
+
 	    if ($page == "links") {
 	      ?>
           <div class="submenuitem activeMenuitem">Links</div>

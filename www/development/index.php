@@ -90,7 +90,7 @@ want to use the latest development version, check out LanguageTool from subversi
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
 </code>
 
-<p>You can then run the tests with <tt>ant test</tt> or build the code with <tt>ant</tt>.
+<p>You can then run the tests with <tt>ant test</tt> or build the code with <tt>ant</tt> or <tt>ant dist-standalone</tt>.
 Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/README.txt", 0) ?> file that comes with LanguageTool and the
 <?=show_link("Usage page", "/usage/", 0) ?>.</p>
 
