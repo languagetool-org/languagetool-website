@@ -162,6 +162,7 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("wikicheck", "WikiCheck"); ?>
 			<?php makeEntry("development", "Development"); ?>
+			<?php makeEntry("contact", "Contact"); ?>
 
 			<div style="margin-top:70px;font-size:12px">
               <table>

@@ -26,19 +26,6 @@ include("../../include/header.php");
         <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
 </ul>
 
-<h3>Contact</h3>
-
-<ul>
-    <li>LanguageTool was originally written by <?=show_link("Daniel Naber", "http://www.danielnaber.de", 0)?>
-    (<strong>naber <span>a&#116;</span> danielnaber<span>.</span>de</strong>) and is now maintained by
-    Daniel Naber and Marcin Miłkowski (<?=show_link("contact form", "http://marcinmilkowski.pl/en/Contact/", 0)?>)</li>
-    <li>Contact us via email or <?=show_link("post to the forum", "/forum", 0)?></li>
-	<li>Mailing list for development and user discussion:<br/>
- 		<?=show_simple_link("Subscribe/Unsubscribe",  "http://lists.sourceforge.net/mailman/listinfo/languagetool-devel") ?>,
- 		<?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/")?>,
- 		<?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel")?></li>
-</ul>
-
 <h3>Other Open Source Language Tools</h3>
 
 <ul>
