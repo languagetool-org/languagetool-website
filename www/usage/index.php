@@ -7,7 +7,7 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 		
-<p>LanguageTool can be used in a different number of ways:</p>
+<p class="firstpara">LanguageTool can be used in a different number of ways:</p>
 
 
 <h2>As a LibreOffice/OpenOffice.org extension</h2>

@@ -103,6 +103,15 @@ function makeEntry($name, $visName) {
           <div class="submenuitem"><a href="<?php print $rootUrl ?>/usage">Usage</a></div>
           <?php
 	    }
+	    if ($page == "links") {
+	      ?>
+          <div class="submenuitem activeMenuitem">Links</div>
+          <?php
+	    } else {
+	      ?>
+          <div class="submenuitem"><a href="<?php print $rootUrl ?>/links">Links</a></div>
+          <?php
+	    }
 	}
 	if ($name == "development") {
 	    if ($sub_page == "ruleeditor") {
@@ -118,10 +127,20 @@ function makeEntry($name, $visName) {
         <div class="submenuitem"><a href="http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter">Bug Reports</a></div>
 		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Java API</a></div>
 		<div class="submenuitem"><a href="http://languagetool.wikidot.com/">Wiki</a></div>
-		<?php
-	}
+        <?php
+        if ($page == "developer-links") {
+          ?>
+             <div class="submenuitem activeMenuitem">Links</div>
+             <?php
+        } else {
+          ?>
+             <div class="submenuitem"><a href="<?php print $rootUrl ?>/developer-links">Links</a></div>
+             <?php
+        }
+    }
 }
 ?>
+
 
 <table border="0" width="100%">
 <tr>
@@ -143,7 +162,6 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("wikicheck", "WikiCheck"); ?>
 			<?php makeEntry("development", "Development"); ?>
-			<?php makeEntry("links", "Links &amp; Resources"); ?>
 
 			<div style="margin-top:70px;font-size:12px">
               <table>
