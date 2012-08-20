@@ -12,5 +12,6 @@ include("../../include/header.php");
 <!--<iframe style="width:100%;height: 800px;border:0px" src="http://localhost:8080/ltcommunity/ruleEditor"></iframe>-->
 
 <?php
+$show_date = 0;
 include("../../include/footer.php");
 ?>

@@ -1,11 +1,13 @@
 		<!-- /MAIN TEXT -->
 
-        <p class="lastmod">Page last modified:
-        	<?php
-        	list($date, $time, $cet) = split(" ", $lastmod);
-        	print $date;
-        	?>
-        </p>
+        <?php if (!isset($show_date) || $show_date != 0) { ?>
+          <p class="lastmod">Page last modified:
+              <?php
+                list($date, $time, $cet) = split(" ", $lastmod);
+                print $date;
+              ?>
+          </p>
+        <?php } ?>
 
 	</td>
 </tr>
