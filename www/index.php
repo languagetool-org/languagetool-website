@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-08-13 18:21:00 CET";
+$lastmod = "2012-08-21 18:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 ?>
@@ -28,7 +28,7 @@ rules can be written in Java.</p>
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 0;
 $checkDefaultLang = "auto";
-$checkDefaultText = "Paste your own text here... or check this text too see a few of the problems that ".
+$checkDefaultText = "Paste your own text here... or check this text too see a few of of the problems ".
   "that LanguageTool can detect.";
 include("../include/checkform.php");
 ?>
