@@ -28,8 +28,7 @@ rules can be written in Java.</p>
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 0;
 $checkDefaultLang = "auto";
-$checkDefaultText = "Paste your own text here... or check this text too see a few of of the problems ".
-  "that LanguageTool can detect.";
+$checkDefaultText = "Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.";
 include("../include/checkform.php");
 ?>
 
