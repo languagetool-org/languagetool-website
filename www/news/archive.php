@@ -15,7 +15,7 @@ include("../../include/header.php");
     <li>For a detailed list of changes, see the <?=show_link("Changelog", "../download/CHANGES.txt", 0) ?></li>
 </ul>
 
-<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "de/", 0) ?>, <?=show_link("Russian", "ru/", 0) ?>, and <?=show_link("Esperanto", "eo/", 0) ?></p>
+<p><strong>2012-02-04:</strong> See our new language-specific pages for <?=show_link("German", "../de/", 0) ?>, <?=show_link("Russian", "../ru/", 0) ?>, and <?=show_link("Esperanto", "../eo/", 0) ?></p>
 
 <p><strong>2011-12-31:</strong> Released LanguageTool 1.6. Changes include:</p>
 <ul>
