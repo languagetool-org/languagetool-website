@@ -1,18 +1,27 @@
-.hiddenSpellError
-{
-   border-bottom: 2px solid red;
-   cursor: default;
+.hiddenSpellError {
+    padding-bottom: 2px;
+    background-image: url("../../../../../images/squiggle_red.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    vertical-align: text-top;
+    cursor: default;
 }
 
-.hiddenGrammarError
-{
-   border-bottom: 2px solid blue;
-   cursor: default;
+.hiddenGrammarError {
+    padding-bottom: 2px;
+    background-image: url("../../../../../images/squiggle.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    vertical-align: text-top;
+    cursor: default;
 }
 
-.hiddenSuggestion
-{
-   border-bottom: 2px solid blue;
-   cursor: default;
+.hiddenSuggestion {
+    padding-bottom: 2px;
+   	background-image: url("../../../../../images/squiggle.png");
+   	background-repeat: repeat-x;
+   	background-position: left bottom;
+   	vertical-align: text-top;
+    cursor: default;
 }
 
