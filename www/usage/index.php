@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-08-13 15:20:00 CET";
+$lastmod = "2012-09-09 15:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -64,21 +64,26 @@ for (RuleMatch match : matches) {
     <p>Start the stand-alone
 	application and configure it (<em>File -&gt; Options...</em>) to listen on a port that is not used yet (the default
 	port, 8081, should often be okay). This way LanguageTool will also be available in server mode
-	until you stop it. The client that wants to use LanguageTool can now send its text to an URL like this:</p>
+	until you stop it. You can test this by calling this URL in your browser:</p>
 	
-    <tt>http://localhost:8081/?language=xx&amp;text=my+text</tt><br />
+    <tt>http://localhost:8081/?language=en&amp;text=my+text</tt><br />
 
-    <p>The <tt>language</tt> parameter must specify the two-character language code
-	of the text to be checked. You can also specify <tt>motherTongue</tt>
+    <p>If you're not just testing you should use HTTP POST to transfer your data. You
+    can test it like this:</p>
+
+    <tt>curl --data "language=en-US&text=a simple test" http://localhost:8081</tt>
+
+    <p>The <tt>language</tt> parameter must specify the language code
+	of the text to be checked (e.g. <tt>en</tt> or <tt>en-US</tt>). You can also specify <tt>motherTongue</tt>
 	parameter to specify your mother tongue (for false friend checks). The <tt>text</tt> parameter is the
-	text itself - you may need to encode it for URLs. If you want to test bilingual text (containing
+	text itself. If you want to test bilingual text (containing
 	source and translation), simply specify also the <tt>srctext</tt> parameter. This way bitext mode will be
-	activated automatically. You can use both POST and GET to send your requests to the LanguageTool server.</p>
+	activated automatically.</p>
 
 	<p>The server may be configured to enable or disable some rules by adding <tt>enabled</tt> and 
 	<tt>disabled</tt> as parameters and listing rule identifiers delimited with commas, for example:</p>
 	
-	<tt>http://localhost:8081/?language=xx&amp;disabled=STRANGE_RULE,ANOTHER_RULE&amp;text=my+text</tt><br />
+	<tt>http://localhost:8081/?language=en&amp;disabled=STRANGE_RULE,ANOTHER_RULE&amp;text=my+text</tt><br />
 	
 	<p>In this example, two rules will be disabled: <tt>STRANGE_RULE</tt> and <tt>ANOTHER_RULE</tt>. Note that there
 	should be no space after the comma.</p>
@@ -101,8 +106,8 @@ for (RuleMatch match : matches) {
   errorlength="4"/>
 </matches>'); ?>
          
-    <p>Note: some rules may contain additional information contained as a link to a webpage. The link
-    will be available as the contents of the <tt>url</tt> attribute of <tt>error</tt> element.</p>        
+    <p>Some rules contain a link to a webpage. The link
+    will be available as the contents of the <tt>url</tt> attribute of the <tt>error</tt> element.</p>
            
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 
