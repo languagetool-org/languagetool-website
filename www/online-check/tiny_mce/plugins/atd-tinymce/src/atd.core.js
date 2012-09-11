@@ -188,7 +188,10 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["string"]      = errorString;
        suggestion["context"]     = "";
        suggestion["type"]        = errors[i].getAttribute("category");
-       // TODO: suggestion["moreinfo"]
+       var url = errors[i].getAttribute("url");
+       if (url) {
+           suggestion["moreinfo"] = url;
+       }
        this.suggestions.push(suggestion);
        var ruleId = errors[i].getAttribute("ruleId");
        if (ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE" || ruleId.indexOf("MORFOLOGIK_RULE") == 0) {
