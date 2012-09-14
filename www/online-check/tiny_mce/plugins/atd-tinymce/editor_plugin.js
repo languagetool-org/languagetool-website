@@ -169,7 +169,8 @@ AtDCore.prototype.processXML = function(responseXML) {
     var errors = responseXML.getElementsByTagName('error');
    	for (var i = 0; i < errors.length; i++) {
        var suggestion = {};
-       suggestion["description"] = errors[i].getAttribute("msg");
+       // I didn't manage to make the CSS break the text, so we add breaks with Javascript:
+       suggestion["description"] = this._wordwrap(errors[i].getAttribute("msg"), 50, "<br/>");
        suggestion["suggestions"] = [];
        var suggestionsStr = errors[i].getAttribute("replacements");
        if (suggestionsStr) {
@@ -188,7 +189,10 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["string"]      = errorString;
        suggestion["context"]     = "";
        suggestion["type"]        = errors[i].getAttribute("category");
-       // TODO: suggestion["moreinfo"]
+       var url = errors[i].getAttribute("url");
+       if (url) {
+           suggestion["moreinfo"] = url;
+       }
        this.suggestions.push(suggestion);
        var ruleId = errors[i].getAttribute("ruleId");
        if (ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE" || ruleId.indexOf("MORFOLOGIK_RULE") == 0) {
@@ -210,6 +214,23 @@ AtDCore.prototype.processXML = function(responseXML) {
 
     return { errors: errorStruct, count: ecount, suggestions: this.suggestions };
 }
+
+// Wrapper code by James Padolsey
+// Source: http://james.padolsey.com/javascript/wordwrap-for-javascript/
+// License: "This is free and unencumbered software released into the public domain.",
+// see http://james.padolsey.com/terms-conditions/
+AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
+    brk = brk || '\n';
+    width = width || 75;
+    cut = cut || false;
+
+    if (!str) { return str; }
+
+    var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
+
+    return str.match( RegExp(regex, 'g') ).join( brk );
+}
+// End of wrapper code by James Padolsey
 
 // TODO: remove once processXML works fine:
 AtDCore.prototype.processXMLOriginal = function(responseXML) {
