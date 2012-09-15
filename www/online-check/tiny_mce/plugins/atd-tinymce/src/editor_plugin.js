@@ -314,15 +314,7 @@
                 {
                    m.add({
                      title : plugin.editor.getLang('AtD.menu_option_explain', 'Explain...'),
-                     onclick : function() 
-                     {
-                        ed.windowManager.open({
-                           url : url,
-                           width : 480,
-                           height : 380,
-                           inline : true
-                        }, { theme_url : this.url });
-	             }
+                     onclick : function() { window.open(url, '_errorExplain'); }
                   });
                })(errorDescription["moreinfo"]);
 
