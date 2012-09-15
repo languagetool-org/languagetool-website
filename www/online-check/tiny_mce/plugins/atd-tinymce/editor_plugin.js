@@ -732,6 +732,7 @@ AtDCore.prototype.isIE = function() {
          /* add a command to request a document check and process the results. */
          editor.addCommand('mceWritingImprovementTool', function(languageCode)
          {
+
             /* checks if a global var for click stats exists and increments it if it does... */
             if (typeof AtD_proofread_click_count != "undefined")
                AtD_proofread_click_count++;

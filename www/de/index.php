@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-07-09 10:40:00 CET";
+$lastmod = "2012-09-15 10:40:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -99,7 +99,7 @@ direkt hier im Browser ausprobieren:<br/><br/>
 $checkSubmitButtonValue = "Text Prüfen";
 $showLanguageBox = 0;
 $checkDefaultLang = "de";
-$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens nicht statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
 include("../../include/checkform.php");
 ?>
 
