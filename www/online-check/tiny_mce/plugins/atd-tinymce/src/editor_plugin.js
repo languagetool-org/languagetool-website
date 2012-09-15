@@ -115,8 +115,9 @@
          }
 
          /* add a command to request a document check and process the results. */
-         editor.addCommand('mceWritingImprovementTool', function(callback) 
+         editor.addCommand('mceWritingImprovementTool', function(languageCode)
          {
+
             /* checks if a global var for click stats exists and increments it if it does... */
             if (typeof AtD_proofread_click_count != "undefined")
                AtD_proofread_click_count++;
@@ -130,7 +131,7 @@
             /* send request to our service */
             //plugin.sendRequest('checkDocument', ed.getContent({ format: 'raw' }), function(data, request, someObject)
             var textContent = ed.getContent().replace(/<.*?>/g, "");
-            plugin.sendRequest('checkDocument', textContent, function(data, request, someObject)
+            plugin.sendRequest('checkDocument', textContent, languageCode, function(data, request, someObject)
             {
                /* turn off the spinning thingie */
                plugin.editor.setProgressState(0);
@@ -158,10 +159,10 @@
                   ed.suggestions = results.suggestions; 
                }
 
-               if (ecount == 0 && (!callback || callback == undefined))
+               /*if (ecount == 0 && (!callback || callback == undefined))
                   ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No writing errors were found.'));
                else if (callback)
-                  callback(ecount);
+                  callback(ecount);*/
             });
          });
           
@@ -444,7 +445,7 @@
          plugin.editor.nodeChanged();
       },
 
-      sendRequest : function(file, data, success)
+      sendRequest : function(file, data, languageCode, success)
       {
          var id  = this.editor.getParam("atd_rpc_id",  "12345678");
          var url = this.editor.getParam("atd_rpc_url", "{backend}");
@@ -462,7 +463,7 @@
             content_type : 'text/xml',
             type         : "POST",
             data         : "text=" + encodeURI(data).replace(/&/g, '%26')
-                           + "&language=" + "en-US",   // TODO: take language from select box
+                           + "&language=" + encodeURI(languageCode),
             async        : true,
             success      : success,
             error        : function( type, req, o )
