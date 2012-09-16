@@ -2,7 +2,7 @@
 $page = "developer-links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources for Developers";
-$lastmod = "2012-08-19 12:35:00 CET";
+$lastmod = "2012-09-16 14:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -20,9 +20,15 @@ include("../../include/header.php");
     </li>
 	<li>Subversion commit messages:
         <ul>
-          <li><?=show_simple_link("Subscribe/Unsubscribe", "http://lists.sourceforge.net/mailman/listinfo/languagetool-cvs") ?></li>
-          <li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-cvs@lists.sourceforge.net/")?></li>
-          <li><?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-cvs")?></li>
+          <li><?=show_simple_link("Subscribe/Unsubscribe", "http://lists.sourceforge.net/mailman/listinfo/languagetool-commits") ?></li>
+          <!--<li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-cvs@lists.sourceforge.net/")?></li>-->
+          <li><?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-commits")?></li>
+          <li>Old archives (up to September 2012):
+            <ul>
+              <li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-cvs@lists.sourceforge.net/")?></li>
+              <li><?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-cvs")?></li>
+            </ul>
+          </li>
         </ul>
     </li>
 </ul>
