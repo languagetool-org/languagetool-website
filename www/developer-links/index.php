@@ -21,7 +21,7 @@ include("../../include/header.php");
 	<li>Subversion commit messages:
         <ul>
           <li><?=show_simple_link("Subscribe/Unsubscribe", "http://lists.sourceforge.net/mailman/listinfo/languagetool-commits") ?></li>
-          <!--<li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-cvs@lists.sourceforge.net/")?></li>-->
+          <li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-commits@lists.sourceforge.net/")?></li>
           <li><?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-commits")?></li>
           <li>Old archives (up to September 2012):
             <ul>
