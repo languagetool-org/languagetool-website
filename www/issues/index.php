@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-07-11 18:30:00 CET";
+$lastmod = "2012-09-17 18:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -28,8 +28,8 @@ include("../../include/header.php");
 
 <ul class="largelist">
 <li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
- This bug has been fixed in <strong>LibreOffice 3.5.4</strong> - all older versions and all versions of Apache OpenOffice are still affected
- by this (as of June 2012), so we strongly recommend you use LibreOffice 3.5.4 or later. The bugfix for Apache OpenOffice is planned for 3.4.1.
+ This bug has been fixed in <strong>LibreOffice 3.5.4</strong> and <strong>Apache OpenOffice 3.4.1</strong> - all older versions are affected
+ by this, so we strongly recommend to use at least these releases.
  If you cannot update, we recommend you use Java 6 for now,
  as the freeze is worse with Java 7. <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
 </li>
