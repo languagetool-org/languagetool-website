@@ -12,6 +12,7 @@
   }
   ?>
   <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="<?php print $rootUrl ?>/favicon.ico?20120923" />
   <?php if ($enable_fancybox) { ?>
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
