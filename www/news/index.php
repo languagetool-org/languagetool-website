@@ -2,9 +2,16 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2012-08-19 12:37:00 CET";
+$lastmod = "2012-09-30 12:37:00 CET";
 include("../../include/header.php");
 ?>
+
+<p class="firstpara"><strong>2012-09-30:</strong> Released LanguageTool 1.9. Changes include:</p>
+<ul>
+  <li>Initial support for Japanese with about 20 rules</li>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/V_1_8_to_V_1_9/", 0) ?> for Danish, German, English, Catalan, Russian, Chinese, French, Breton, Portuguese, Esperanto</li>
+  <li>Several bug fixes</li>
+</ul>
 
 <p class="firstpara"><strong>2012-06-30:</strong> Released LanguageTool 1.8. Changes include:</p>
 <ul>
