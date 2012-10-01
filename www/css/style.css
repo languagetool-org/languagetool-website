@@ -256,8 +256,8 @@ FORM TEXTAREA {
 
 .downloadButton {
     background-image: url("../images/languagetool-download-320.png");
-    width: 320px;
-    height: 70px;
+    width: 325px;
+    height: 75px;
 }
 
 .downloadButton a:hover {
