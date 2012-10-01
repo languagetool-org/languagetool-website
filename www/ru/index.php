@@ -52,7 +52,7 @@ include("../../include/header.php");
 
 <p>Программа для большинства найденных грамматических ошибок предлагает варианты их исправления.
 </p>
-<p>В независимую версию программы дополнительно включена проверка орфографии.
+<p>В независимую версию программы дополнительно включена проверка орфографии с коррекцией ошибок.
 </p>
 <h2>Проверить текст</h2>
 
@@ -125,7 +125,7 @@ include("../../include/header.php");
         <td>
            <?php         
            $downloadTitleStandAlone = "Скачать  LanguageTool";
-           $downloadLabelStandAlone = "независимая версия (приложение)";
+           $downloadLabelStandAlone = "независимая версия";
            $downloadVersionLabelStandAlone = "Версия";                
            $downloadPathStandAlone  = "/download";
            include("../../include/downloadStandAlone.php");
@@ -153,7 +153,7 @@ include("../../include/header.php");
 </ul>
 <p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a>. 
 </p>
-<p>LibreOffice 3.5 уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
+<p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
 Необходимо поставить галочку для LanguageTool и убрать для LightProof. 
 </p>
