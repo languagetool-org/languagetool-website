@@ -84,7 +84,7 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <h2><a name="checkout">Source code checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
-want to use the latest development version, check out LanguageTool from subversion:</p>
+want to use the latest development version, check out LanguageTool from <a href="http://subversion.apache.org/">subversion</a>:</p>
 
 <code style="display: block;">
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
