@@ -17,6 +17,12 @@ if (strcmp($API_KEY, "") != 0)
    $postText .= '&key=' . $API_KEY;
 }
 
+$postText = str_replace("%26", "&", $postText);
+$postText = str_replace("%20", " ", $postText);
+$postText = str_replace("&nbsp;", " ", $postText);
+$postText = html_entity_decode($postText);
+//print "##".$postText;
+
 // I am a vampire
 // I have lost my fangs
 

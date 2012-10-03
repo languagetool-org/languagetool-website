@@ -86,12 +86,14 @@ AtDCore.prototype.showTypes = function(string) {
  * Error Parsing Code
  */
 
-AtDCore.prototype.makeError = function(error_s, tokens, type, seps, pre) {        
+AtDCore.prototype.makeError = function(error_s, tokens, type, seps, pre) {
+    error_s = RegExp.escape(error_s);
 	var struct = new Object();
 	struct.type = type;
 	struct.string = error_s;
 	struct.tokens = tokens;
 
+    console.log("~~" + error_s + "~~");
 	if (new RegExp("\\b" + error_s + "\\b").test(error_s)) {
 		struct.regexp = new RegExp("(?!"+error_s+"<)\\b" + error_s.replace(/\s+/g, seps) + "\\b");
 	}
@@ -116,6 +118,7 @@ AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
 	this.map(list, function(error) {
 		var tokens = error["word"].split(/\s+/);
 		var pre    = error["pre"];
+        // TODO: this creates an empty string for errors like " ," (space comma)
 		var first  = tokens[0];
 
 		if (errors['__' + first] == undefined) {      
@@ -124,7 +127,8 @@ AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
 			errors['__' + first].defaults = new Array();
 		}
 
-		if (pre == "") {               
+		if (pre == "") {
+            //console.log("LL " + tokens);
 			errors['__' + first].defaults.push(parent.makeError(error["word"], tokens, type, seps, pre));
 		} else {
 			if (errors['__' + first].pretoks['__' + pre] == undefined)
@@ -137,6 +141,8 @@ AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
 
 AtDCore.prototype.buildErrorStructure = function(spellingList, enrichmentList, grammarList) {
 	var seps   = this._getSeparators();
+    // TODO: this doesn't work if the incorrect character is itself a separator (e.g. comma)
+	//var seps   = new Array();
 	var errors = {};
 
 	this.addToErrorStructure(errors, spellingList, "hiddenSpellError", seps);            
@@ -155,6 +161,11 @@ AtDCore.prototype._getSeparators = function() {
 
 	return "(?:(?:[\xa0" + re  + "])|(?:\\-\\-))+";
 };        
+
+// source: http://simonwillison.net/2006/Jan/20/escape/ (modified to not escape \s)
+RegExp.escape = function(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
+}
 
 AtDCore.prototype.processXML = function(responseXML) {
 
@@ -177,17 +188,21 @@ AtDCore.prototype.processXML = function(responseXML) {
            suggestion["suggestions"] = suggestionsStr.split("#");
        }
        var context = errors[i].getAttribute("context");
+       var errorOffset = errors[i].getAttribute("offset");
        var errorLength = errors[i].getAttribute("errorlength");
        var startInContext = errors[i].getAttribute("contextoffset");
        var errorString = context.substr(startInContext, errorLength);
        var errorContext = "";
 
-       console.log(">>>" + context);
-       console.log(">>>" + startInContext + " -> " + errorString);
+       console.log("1>>>errorString: '" + errorString + "'");
 
-       suggestion["matcher"]     = new RegExp('^' + errorString.replace(/\s+/, this._getSeparators()) + '$');
+       var replaceString = errorString.replace(/\s+/, this._getSeparators());
+       replaceString = RegExp.escape(replaceString);
+       suggestion["matcher"]     = new RegExp('^' + replaceString + '$');
        suggestion["string"]      = errorString;
-       suggestion["context"]     = "";
+       suggestion["offset"]      = errorOffset;
+       suggestion["errorlength"] = errorLength;
+       suggestion["context"]     = "";    // TODO: word before wrong word!?
        suggestion["type"]        = errors[i].getAttribute("category");
        var url = errors[i].getAttribute("url");
        if (url) {
@@ -337,7 +352,25 @@ AtDCore.prototype.processXMLOriginal = function(responseXML) {
 
 AtDCore.prototype.findSuggestion = function(element) {
         var text = element.innerHTML;
-        var context = ( this.getAttrib(element, 'pre') + "" ).replace(/[\\,!\\?\\."\s]/g, '');
+    console.log("##findSuggestion text: " + text);
+    //console.log("##findSuggestion att: " + element.getAttribute("suggestions"));
+    console.log("##findSuggestion desc: " + element.getAttribute("desc"));
+
+    var errorDescription = {};
+    errorDescription["description"] = element.getAttribute("desc");
+    var suggestions =  element.getAttribute("suggestions");
+    if (suggestions) {
+        errorDescription["suggestions"] = suggestions.split("#");
+    } else {
+        errorDescription["suggestions"] = "";
+    }
+    var infoUrl =  element.getAttribute("url");
+    if (infoUrl) {
+        errorDescription["moreinfo"] = infoUrl;
+    }
+    return errorDescription;
+
+/*        var context = ( this.getAttrib(element, 'pre') + "" ).replace(/[\\,!\\?\\."\s]/g, '');
         if (this.getAttrib(element, 'pre') == undefined)
         {
            alert(element.innerHTML);
@@ -348,13 +381,13 @@ AtDCore.prototype.findSuggestion = function(element) {
    
 	for (var i = 0; i < len; i++) {
 		var key = this.suggestions[i]["string"];
-   
+
 		if ((context == "" || context == this.suggestions[i]["context"]) && this.suggestions[i]["matcher"].test(text)) {
 			errorDescription = this.suggestions[i];
 			break;
 		}
 	}
-	return errorDescription;
+	return errorDescription;*/
 };
 
 /*
@@ -425,7 +458,9 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
 
 	/* Collect all text nodes */
 	/* Our goal--ignore nodes that are already wrapped */
-   
+
+    console.log("========== MARK My WORDS =================");
+
 	this._walk(container_nodes, function(n) {
 		if (n.nodeType == 3 && !parent.isMarkedNode(n))
 			nl.push(n);
@@ -434,116 +469,94 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
 	/* walk through the relevant nodes */  
    
 	var iterator;
-      
-	this.map(nl, function(n) {
-		var v;
+    var pos = 0;
 
-		if (n.nodeType == 3) {
-			v = n.nodeValue; /* we don't want to mangle the HTML so use the actual encoded string */
-			var tokens = n.nodeValue.split(seps); /* split on the unencoded string so we get access to quotes as " */
-			var previous = "";
+    this.map(nl, function(n) {
+        if (n.nodeType == 3) {
+            //var newNode = parent.create(node.nodeValue.replace(regexp, result), false);
+            //var newNode = parent.create(node.nodeValue.replace(new RegExp("Sie"), result), false);
+            // TODO
+            var nodeValue = n.nodeValue;
+            console.log("##------------------------------");
+            console.log("##nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ", type: " + n.nodeType + ")");
 
-			var doReplaces = [];
+            var i;
+            var cleanNodeValue = "";
+            for (i = 0; i < nodeValue.length; i++) {
+                if (nodeValue.charCodeAt(i) != 65279) {
+                    cleanNodeValue += nodeValue.charAt(i);
+                }
+            }
+            console.log("#>nodeValue: '" + cleanNodeValue + "' (len: " + cleanNodeValue.length + ")");
 
-			iterator = new TokenIterator(tokens);
+            if (nodeValue.length == 1 && nodeValue.charCodeAt(0) == 65279) {
+                //console.log("##==> " + nodeValue.charCodeAt(0));
+                //nodeValue = "";
+            }
+            //console.log("##nodeValue: " + nodeValue + ", pos=" + pos + ", result " + result);
+            //console.log("##suggestions.length: " + parent.suggestions.length);
+            //console.log("##errors.length: " + errors.length);
 
-			while (iterator.hasNext()) {
-				var token = iterator.next();
-				var current  = errors['__' + token];
+            //var newNode;
+            var newString = cleanNodeValue;
+            for (var suggestionIndex = parent.suggestions.length-1; suggestionIndex >= 0; suggestionIndex--) {
+                var suggestion = parent.suggestions[suggestionIndex];
+                if (!suggestion.used) {
+                    var currentNodeStart = pos;
+                    var currentNodeEnd = pos + nodeValue.length;
+                    var suggestionStart = parseInt(suggestion.offset);
+                    var suggestionEnd = suggestionStart + parseInt(suggestion.errorlength);
+                    //console.log("##suggestion desc: " + suggestion.description);
+                    //console.log("##suggestion offset: " + suggestion.offset + ", len: " + suggestion.errorlength);
+                    //console.log("##currentNodeStart/currentNodeEnd: " + currentNodeStart + ", " + currentNodeEnd);
+                    //console.log("##: " + suggestion.offset + ">=" + currentNodeStart + " ... " + suggestionEnd +"<="+ currentNodeEnd);
+                    if (suggestionStart >= currentNodeStart && suggestionEnd <= currentNodeEnd) {
+                        var spanStart = suggestionStart - currentNodeStart;
+                        console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
+                        var spanEnd = suggestionEnd - currentNodeStart;
+                        //console.log("##spanStart/end: " + spanStart + ", " + spanEnd);
+                        /*if (newNode) {
+                            console.log("##newNode: " + newNode.nodeValue);
+                        }*/
+                        //console.log("#################: " + suggestion.moreinfo);
+                        var urlAttribute = "";
+                        if (suggestion.moreinfo) {
+                            urlAttribute = ' url="' + suggestion.moreinfo + '"';
+                        }
 
-				var defaults;
+                        newString = newString.substring(0, spanStart)
+                                + '<span class="hiddenGrammarError" desc="' + suggestion.description
+                                + '" suggestions="' + suggestion.suggestions + '"'
+                                + urlAttribute
+                                + '>'
+                                + newString.substring(spanStart, spanEnd)
+                                + '</span>'
+                                + newString.substring(spanEnd);
+                        suggestion.used = true;
+                    }
+                }
+            }
+            var newNode = parent.create(newString, false);
+            console.log("##newString: '" + newString + "'");
+            parent.replaceWith(n, newNode);
 
-				if (current != undefined && current.pretoks != undefined) {
-					defaults = current.defaults;
-					current = current.pretoks['__' + previous];
+            /*for (var key in errors) {
+                var error = errors[key];
+                if (!error.used) {
+                    error.used = true;
+                    console.log("##error: " + error.offset + ", l: " + error.errorlength);
+                }
+            }*/
+            //console.log("##nodeValue: " + nodeValue + ", pos=" + pos);
+            //pos += nodeValue.length;
+            pos += cleanNodeValue.length;
+            //console.log("##POS: " + pos + " len " + nodeValue.length + " for '" + nodeValue + "' w/ code " + nodeValue.charCodeAt());
+            //var newNode = parent.create(nodeValue.replace(regExp, '<span class="hiddenGrammarError">$&</span>'), false);
+        } else {
+            console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
 
-					var done = false;
-					var prev, curr;
-
-					prev = v.substr(0, iterator.getCount());
-					curr = v.substr(prev.length, v.length);
-
-					var checkErrors = function(error) {
-						if (error != undefined && !error.used && foundStrings['__' + error.string] == undefined && error.regexp.test(curr)) {
-							var oldlen = curr.length;
-
-							foundStrings['__' + error.string] = 1;
-							doReplaces.push([error.regexp, '<span class="'+error.type+'" pre="'+previous+'">$&</span>']);
-
-							error.used = true;
-							done = true;
-						}
-					};
-
-					var foundStrings = {};
-
-					if (current != undefined) {
-						previous = previous + ' ';
-						parent.map(current, checkErrors);
-					}
-
-					if (!done) {
-						previous = '';
-						parent.map(defaults, checkErrors);
-					}
-				}
-
-				previous = token;
-			} // end while
-
-			/* do the actual replacements on this span */
-			if (doReplaces.length > 0) {
-				newNode = n;
-
-				for (var x = 0; x < doReplaces.length; x++) {
-					var regexp = doReplaces[x][0], result = doReplaces[x][1];
-
-					/* it's assumed that this function is only being called on text nodes (nodeType == 3), the iterating is necessary
-					   because eventually the whole thing gets wrapped in an mceItemHidden span and from there it's necessary to
-					   handle each node individually. */
-					var bringTheHurt = function(node) {
-						if (node.nodeType == 3) {
-							ecount++;
-
-							/* sometimes IE likes to ignore the space between two spans, solution is to insert a placeholder span with
-							   a non-breaking space.  The markup removal code substitutes this span for a space later */
-							if (parent.isIE() && node.nodeValue.length > 0 && node.nodeValue.substr(0, 1) == ' ')
-								return parent.create('<span class="mceItemHidden">&nbsp;</span>' + node.nodeValue.substr(1, node.nodeValue.length - 1).replace(regexp, result), false);
-							else
-								return parent.create(node.nodeValue.replace(regexp, result), false);
-						} 
-						else {
-							var contents = parent.contents(node);
-
-							for (var y = 0; y < contents.length; y++) {
-								if (contents[y].nodeType == 3 && regexp.test(contents[y].nodeValue)) {
-									var nnode;
-
-									if (parent.isIE() && contents[y].nodeValue.length > 0 && contents[y].nodeValue.substr(0, 1) == ' ')
-										nnode = parent.create('<span class="mceItemHidden">&nbsp;</span>' + contents[y].nodeValue.substr(1, contents[y].nodeValue.length - 1).replace(regexp, result), true);
-									else
-										nnode = parent.create(contents[y].nodeValue.replace(regexp, result), true);
-
-									parent.replaceWith(contents[y], nnode);
-									parent.removeParent(nnode);
-
-									ecount++;
-
-									return node; /* we did a replacement so we can call it quits, errors only get used once */
-								}
-							}
-
-							return node;
-						}
-					};
-
-					newNode = bringTheHurt(newNode);
-				}
-
-				parent.replaceWith(n, newNode);
-			}
-		} 
-	}); 
+        }
+    });
 
 	return ecount;
 };
