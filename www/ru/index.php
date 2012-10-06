@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-09-30 21:05:00 CET";
+$lastmod = "2012-10-06 21:05:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -153,6 +153,8 @@ include("../../include/header.php");
 </ul>
 <p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a>. 
 </p>
+<p>Рекомендуется как минимум Apache OpenOffice 3.4.1 (или LibreOffice 3.5.4). 
+</p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
 Необходимо поставить галочку для LanguageTool и убрать для LightProof. 
@@ -161,9 +163,9 @@ include("../../include/header.php");
 
 <h2>Использование в качестве независимого приложения</h2>
 Системные требования:   <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a> от Sun или Oracle.
-<a title="LanguageTool работает как независимое графическое приложение" class="fancyboxImage"
-   href="/ru/screenshots/LT-GUI-ru-1.9-dev.png"><img style="margin-left: 15px" width="200" height="211" align="right"
-   src="/ru/screenshots/LT-GUI-ru-1.9-dev-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
+<a title="LanguageTool 1.9 работает как независимое графическое приложение" class="fancyboxImage"
+   href="/ru/screenshots/LT-GUI-ru-1.9.png"><img style="margin-left: 15px" width="200" height="208" align="right"
+   src="/ru/screenshots/LT-GUI-ru-1.9-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
 
 <ul>
     <li>Скачать программу.</li>
