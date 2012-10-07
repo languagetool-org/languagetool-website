@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2012-09-15 10:40:00 CET";
+$lastmod = "2012-10-07 10:43:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -42,7 +42,7 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
 
 <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
-<a class="fancyboxImage" title="LanguageTool als Extension in OpenOffice.org" href="images/screenshot.png"><img style="margin: 15px" align="right" src="images/screenshot_small.png" alt="Screenshot"/></a>
+<a class="fancyboxImage" title="LanguageTool als Erweiterung in LibreOffice" href="images/screenshot.png"><img style="margin: 15px" align="right" src="images/screenshot_small.png" alt="Bilschirmfoto von LanguageTool in LibreOffice"/></a>
 
 <ul>
     <li>Grammatik
@@ -123,7 +123,13 @@ Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von Langu
     <li>Führen Sie die Datei LanguageToolGUI.jar mit Java aus (i.&nbsp;d.&nbsp;R. durch Doppelklick möglich).</li>
 </ol>
 
+<p>
 <?=show_link("weitere Verwendungsmöglichkeiten", "../usage/", 0)?>
+</p>
+
+<p>
+In <a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1">freiesMagazin 08/2012</a> ist ein ausführlicher Artikel, in dem die Verwendungsmöglichkeiten und die Funktionsweise von LanguageTool beschrieben werden, erschienen.
+</p>
 
 <h2>Kontakt</h2>
 <!-- TODO: direkter Kontakt? -->
