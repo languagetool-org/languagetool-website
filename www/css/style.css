@@ -253,49 +253,69 @@ FORM TEXTAREA {
 /* end: check form on the homepage */
 
 /* download button on the homepage */
-
 .downloadButton {
-    background-image: url("../images/languagetool-download-320.png");
-    width: 325px;
-    height: 75px;
+    /* blue: #5397FF; #75ACFF, #3083FF */
+    background-color: #F4B028;
+    background-image: url("../images/downloadArrow.png");
+    background-image: url("../images/downloadArrow.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBDB2D), color-stop(100%,#EC8622));
+    background-image: url("../images/downloadArrow.png"), -moz-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
+    background-image: url("../images/downloadArrow.png"), -ms-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
+    background-image: url("../images/downloadArrow.png"), -o-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
+    background-image: url("../images/downloadArrow.png"), linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    min-height: 74px;
+    border-radius: 10px;
+    display: table-cell;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1), inset 0 -4px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.downloadButtonLogo {
+    height: 52px;
+    width: 52px;
+    float: left;
+    padding: 11px;
+    border: none;
+}
+
+.downloadButton a {
+    display: block;
+    min-height: 74px;
+    padding-right: 30px;
+    white-space: nowrap;
 }
 
 .downloadButton a:hover {
     text-decoration: none;
 }
 
-.downloadButton .languagetool {
+.downloadButton span {
     font-family: georgia, "Bitstream Charter", serif;
+    position: relative;
+    top: 8px;
+}
+
+.downloadButton .languagetool {
     color: black;
     font-size: 12.1pt;
-    padding-left: 66px;
     font-weight: bold;
-    /*+placement:shift 7px 8px;*/
-    position: relative;
-    left: 7px;
-    top: 8px;
 }
+
 .downloadButton .download {
-    font-family: georgia, "Bitstream Charter", serif;
     color: black;
     font-size: 11.9pt;
-    padding-left: 66px;
     font-weight: normal;
-    /*+placement:shift 8px 8px;*/
-    position: relative;
-    left: 8px;
-    top: 8px;
 }
+
 .downloadButton .version {
-    font-family: georgia, "Bitstream Charter", serif;
     color: black;
     font-size: 9pt;
-    padding-left: 66px;
     font-weight: normal;
-    /*+placement:shift 8px 10px;*/
-    position: relative;
-    left: 8px;
-    top: 10px;
 }
 /* end: download button on the homepage */
 

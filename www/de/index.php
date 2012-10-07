@@ -16,7 +16,6 @@ include("../../include/header.php");
            <?php
            $downloadTitle = "LanguageTool herunterladen";
            $downloadLabel = "für LibreOffice/OpenOffice";
-           $downloadPath = "../download";
            include("../../include/download.php");
            ?>
         </td>
@@ -24,7 +23,6 @@ include("../../include/header.php");
            <?php
            $downloadTitleStandAlone = "LanguageTool herunterladen";
            $downloadLabelStandAlone = "als eigenständiges Programm";
-           $downloadPathStandAlone = "../download";
            include("../../include/downloadStandAlone.php");
            ?>
         </td>
@@ -128,7 +126,7 @@ Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von Langu
 </p>
 
 <p>
-In <a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1">freiesMagazin 08/2012</a> ist ein ausführlicher Artikel, in dem die Verwendungsmöglichkeiten und die Funktionsweise von LanguageTool beschrieben werden, erschienen.
+In <a src="_blank" href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1">freiesMagazin 08/2012</a> ist ein ausführlicher Artikel, in dem die Verwendungsmöglichkeiten und die Funktionsweise von LanguageTool beschrieben werden, erschienen.
 </p>
 
 <h2>Kontakt</h2>
