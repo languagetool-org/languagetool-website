@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-09-09 15:20:00 CET";
+$lastmod = "2012-10-10 19:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -42,7 +42,23 @@ include('../../include/geshi/geshi.php');
 
 
 <h2>Embedding LanguageTool in Java applications</h2>
-    <p>You just need to create a <tt>JLanguageTool</tt> object and use that
+
+    <p>Get LanguageTool by downloading the *.zip package or by adding this dependency to your Maven pom.xml:</p>
+
+<div class="xmlrule" style="margin-top:5px">
+<?php hl('<dependency>
+  <groupId>org.languagetool</groupId>
+  <artifactId>languagetool</artifactId>
+  <version>1.9</version>
+</dependency>'); ?>
+</div>
+
+    <p>The Maven artifact contains both code and resources for all languages and is thus quite large (46MB).
+    If you download the ZIP instead, you will need most JARs, org/languagetool/rules and org/languagetool/resources
+    in your classpath. You can skip the following JARs as they are not needed at runtime:
+    lucene-*.jar, junit.jar, bliki-3.0.3.jar, RuleConverterGUI.jar, RuleConverter.jar</p>
+
+    <p>To use LanguageTool, you just need to create a <tt>JLanguageTool</tt> object and use that
 	to check your text. Also see <?=show_link("the API documentation", "/development/api/", 0) ?>. For example:</p>
 	
 	<?php hljava('JLanguageTool langTool = new JLanguageTool(Language.ENGLISH);
