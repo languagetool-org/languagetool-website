@@ -10,5 +10,6 @@ include("../../include/header.php");
 <script src="http://languagetool.2306527.n4.nabble.com/embed/f3993201"></script>
 
 <?php
+$show_date = 0;
 include("../../include/footer.php");
 ?>
