@@ -78,7 +78,7 @@ include('../../include/geshi/geshi.php');
     <p>Some rules contain a link to a webpage. The link
     will be available as the contents of the <tt>url</tt> attribute of the <tt>error</tt> element.</p>
 
-    <p>Here' a <?=show_link("a DTD with short descriptions of the elements", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
+    <p>Here's <?=show_link("a DTD with short descriptions of the elements", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
 
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 
