@@ -139,8 +139,30 @@ function makeEntry($name, $visName) {
 	    }
 		?>
         <div class="submenuitem"><a href="http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter">Bug Reports</a></div>
-		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Java API</a></div>
-		<div class="submenuitem"><a href="http://languagetool.wikidot.com/">Wiki</a></div>
+        <?php
+        if ($sub_page == "java-api") {
+          ?>
+           <div class="submenuitem activeMenuitem">Java API</div>
+           <?php
+        } else {
+          ?>
+           <div class="submenuitem"><a href="<?php print $rootUrl ?>/java-api/">Java API</a></div>
+           <?php
+        }
+        ?>
+		<div class="submenuitem"><a href="<?php print $rootUrl ?>/api/">Javadoc</a></div>
+        <?php
+        if ($sub_page == "http-api") {
+          ?>
+           <div class="submenuitem activeMenuitem">HTTP API</div>
+           <?php
+        } else {
+          ?>
+           <div class="submenuitem"><a href="<?php print $rootUrl ?>/http-api/">HTTP API</a></div>
+           <?php
+        }
+        ?>
+        <div class="submenuitem"><a href="http://languagetool.wikidot.com/">Wiki</a></div>
         <?php
         if ($page == "developer-links") {
           ?>
