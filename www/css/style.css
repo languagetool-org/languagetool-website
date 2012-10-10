@@ -261,7 +261,7 @@ FORM TEXTAREA {
     background-image: url("../images/downloadArrow.png"), -moz-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
     background-image: url("../images/downloadArrow.png"), -ms-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
     background-image: url("../images/downloadArrow.png"), -o-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
-    background-image: url("../images/downloadArrow.png"), linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
+    background-image: url("../images/downloadArrow.png"), linear-gradient(to bottom, #FBDB2D 0%, #EC8622 100%);
     background-repeat: no-repeat;
     background-position: bottom right;
     min-height: 74px;
