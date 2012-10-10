@@ -61,22 +61,24 @@ include('../../include/geshi/geshi.php');
 	LanguageTool server, and the user wants to enable or disable some checks. However, if the program does disable or
 	enable any rules, then the configuration set by the user will be silently ignored.</p>
 
-    <p>For the input "this is a test" the LanguageTool server will reply with this
-	XML response:</p>
+    <p>For the input "this is a test" the LanguageTool server will reply with
+	an XML response like this:</p>
 
 <div class="xmlrule" style="margin-top:5px"><?php hl('<?xml version="1.0" encoding="UTF-8"?>
-<matches>
+<matches software="LanguageTool" version="1.9" buildDate="2012-09-29">
 <error fromy="0" fromx="0" toy="0" tox="5"
   ruleId="UPPERCASE_SENTENCE_START"
   msg="This sentence does not start with an uppercase letter"
   replacements="This" context="this is a test."
-  contextoffset="0"
-  errorlength="4"/>
+  contextoffset="0" offset="0"
+  errorlength="4" category="Capitalization"/>
 </matches>'); ?>
 </div>
 
     <p>Some rules contain a link to a webpage. The link
     will be available as the contents of the <tt>url</tt> attribute of the <tt>error</tt> element.</p>
+
+    <p>Here' a <?=show_link("a DTD with short descriptions of the elements", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
 
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 
