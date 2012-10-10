@@ -2,9 +2,12 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2012-09-30 12:37:00 CET";
+$lastmod = "2012-10-10 19:37:00 CET";
 include("../../include/header.php");
 ?>
+
+<p class="firstpara"><strong>2012-10-10:</strong> LanguageTool 1.9 is now available
+  <?=show_link("on Maven Central", "http://search.maven.org/#search|ga|1|languagetool", 0) ?> for Java developers</p>
 
 <p class="firstpara"><strong>2012-09-30:</strong> Released LanguageTool 1.9. Changes include:</p>
 <ul>
@@ -27,8 +30,10 @@ include("../../include/header.php");
 <p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "../development/#intro", 0) ?>!</p>
 
 <p style="margin-top: 25px">
-<?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.<br/>
-See <?=show_link("the news archive", "archive.php", 0) ?> for old news.</p>
+<?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
+  (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
+
+<p>See <?=show_link("the news archive", "archive.php", 0) ?> for old news.</p>
 
 <div style="height: 400px"></div>
 
