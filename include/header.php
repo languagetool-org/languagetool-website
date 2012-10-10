@@ -150,7 +150,7 @@ function makeEntry($name, $visName) {
            <?php
         }
         ?>
-		<div class="submenuitem"><a href="<?php print $rootUrl ?>/api/">Javadoc</a></div>
+		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Javadoc</a></div>
         <?php
         if ($sub_page == "http-api") {
           ?>
