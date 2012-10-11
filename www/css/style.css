@@ -286,7 +286,7 @@ FORM TEXTAREA {
 .downloadButton a {
     display: block;
     min-height: 74px;
-    padding-right: 30px;
+    padding-right: 50px;
     white-space: nowrap;
 }
 
