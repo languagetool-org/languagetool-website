@@ -40,7 +40,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p>LanguageTool requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later - we recommend Java 6 for now,
 as some users have performance problems when using LanguageTool with Java 7.
-Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</p>
+<strong>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">

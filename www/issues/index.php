@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-09-17 18:30:00 CET";
+$lastmod = "2012-10-15 18:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -39,11 +39,9 @@ include("../../include/header.php");
 	for details.</li>
 <li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
     <a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
-<li>If you get <strong>"Could not create Java implementation loader"</strong>, try this:
-    Got to <em>Tools -> Options -> Java</em>, uncheck "Use a Java runtime environment", exit OpenOffice.org and start it again,
-    check "Use a Java runtime environment" again and try to install/activate the LanguageTool extension
-    (<a href="http://sourceforge.net/projects/opencards/forums/forum/707158/topic/1886832">source</a>) - please
-    let us know if this worked for you. <strong>Note: </strong> if you are getting this problem on 64-bit Windows,
+<li>If you get <strong>"Could not create Java implementation loader"</strong>, please work through
+    <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">these suggestions</a>.
+    <strong>Note: </strong> if you have this problem on 64-bit Windows,
     it may be caused by a 64-bit version of Java. LibreOffice and Apache OpenOffice are only built as 32-bit applications
     and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.
     (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
