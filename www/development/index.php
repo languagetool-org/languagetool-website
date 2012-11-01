@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-07-01 11:06:00 CET";
+$lastmod = "2012-11-01 16:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -136,7 +136,7 @@ Here are some examples of patterns that can be used in that file:
 	<li><?php hl('<token postag="VB" />
 <token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
-		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/resource/en/tagset.txt", 0) ?>
+		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
         for a list of possible English part-of-speech tags.
     </li>
 	<li><?php hl('<token>cause</token>
@@ -410,7 +410,7 @@ can be developed as a Java class. As a developer, extend LanguageTool's
 <tt><a href="api/org/languagetool/rules/Rule.html#match(org.languagetool.AnalyzedSentence)">match(AnalyzedSentence text)</a></tt>
 method.</p>
 
-<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
+<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/main/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
 add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
