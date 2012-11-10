@@ -31,7 +31,7 @@ include("../../include/header.php");
       </tr>
       <tr>
         <td><a href="#liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</a></td>
-        <td><a href="#standalone">Usa LanguageTool com a aplicació independent</a></td>
+        <td><a href="#standalone">Com s'usa LanguageTool com a aplicació independent</a></td>
       </tr>
     </table>
 </div>
@@ -51,7 +51,8 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
             <li>La prova consistia <span class="errorMarker" title="Cal canviar la preposició: 'a'.">en</span> saltar més lluny que els altres.</li>
             <li>Si hagués vingut, tot <span class="errorMarker" title="Falta un verb en condicional: 'haguera', 'hauria'.">hagués</span> anat bé.</li>
             <li>És un fet d'allò més <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «interessants».">interessants</span>.</li>
-            <li>L'home <span class="errorMarker" title="Reviseu la construcció de relatiu. Potser cal escriure: 'amb el qual', 'amb què'.">amb el que</span> vaig parlar. 
+            <li>L'home <span class="errorMarker" title="Reviseu la construcció de relatiu. Potser cal escriure: 'amb el qual', 'amb què'.">amb el que</span> vaig parlar.
+            <li>Va entrar a <span class="errorMarker" title="Cal escriure: 'la universitat'.">l'universitat</span>.</li> 
         </ul>
     </li>
     <li>Majúscules i minúscules
@@ -63,8 +64,9 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
     <li>Confusions i errors de picatge
         <ul>
             <li>Viu <span class="errorMarker" title="¿Volíeu dir 'a la'?">ala</span> ciutat de Manchester.</li>
-            <li>Va entrar per la porta de <span class="errorMarker" title="Cal escriure 'darrere'?">darrera</span>.</li>
+            <li>Va entrar per la porta de <span class="errorMarker" title="Cal escriure 'darrere'.">darrera</span>.</li>
             <li>Havia <span class="errorMarker" title="Possible confusió: ¿Volíeu dir 'infringit' (= transgredir) en lloc de 'infligit' (= aplicar)?">infligit</span> moltes lleis.</li>
+            <li>No hauria pogut <span class="errorMarker" title="¿Volíeu dir 'aprovar'?">aprovat</span> els pressupostos.</li>
         </ul>
     </li>
     <li>Errors de puntuació
@@ -76,19 +78,17 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
     <li>Paraules errònies segons el context
         <ul>
             <li>en les zones <span class="errorMarker" title="¿Volíeu dir 'costaneres' (= relatiu a la costa)?">costeres</span></li>
-            <li>Va ser una mesura <span class="errorMarker" title="¿Volíeu dir 'disciplinària'?">disciplianr</span>.</li>
+            <li>Va ser una mesura <span class="errorMarker" title="¿Volíeu dir 'disciplinària'?">disciplinar</span>.</li>
         </ul>
     </li>
     <li>Variants regionals (opcionals i configurables)
         <ul>
-            <li>Jo no <span class="Forma verbal pròpia del valencià">parle</span> mai de futbol.</li>
+            <li>Jo no <span class="errorMarker" class="Forma verbal pròpia del valencià">parle</span> mai de futbol.</li>
             <li>Se sent <span class="errorMarker" title="Accentuació no valenciana. Substituïu per 'sotmés'.">sotmès</span> a pressions.</li>
         </ul>
     </li>
     <li>I moltes coses més.</li>
 </ul>
-
-
 
 <h2>Proveu LanguageTool</h2>
 
@@ -103,7 +103,15 @@ $checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts c
 include("../../include/checkform.php");
 ?>
 
-<h2 id="liboinstall">Usa LanguageTool en LibreOffice/OpenOffice</h2>
+<h2>Limitacions conegudes</h2>
+La versió de LanguageTool en català es troba en ple desenvolupament. Ha avançat molt, però encara resta molt de camí per recórrer. 
+Cada tres mesos publiquem una versió nova i actualitzada del corrector. Entre les limitacions conegudes del programa, hi ha les següents:
+
+	<li>La interacció amb paraules no catalanes i amb noms propis no registrats en el diccionari de l'aplicació pot provocar comportaments inesperats.</li>
+	<li>Els adjectius posposats i desplaçats poden provocar falses alarmes, però la regla que detecta aquest error és útil en molts altres casos.
+	Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.<li>
+
+<h2 id="liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</h2>
 LanguageTool funciona com una extensió per als paquets ofimàtics <a href="http://ca.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://ca.openoffice.org/" target="_blank">Apache OpenOffice</a> de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a>. Per a usar LanguageTool, seguiu els següents passos:
 
 <ol>
@@ -116,12 +124,13 @@ LanguageTool funciona com una extensió per als paquets ofimàtics <a href="http
 
 Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes detectats per LanguageTool en el text apareixeran marcats en blau. Podeu canviar les opcions de LanguageTool en <i>Eines &rarr; LanguageTool &rarr; Configuració&hellip;</i>.
 
-<h2 id="standalone">Useu LanguageTool com a programa independent</h2>
+<h2 id="standalone">Com s'usa LanguageTool com a aplicació independent</h2>
 
 <ol>
     <li>Descarregueu i descomprimiu l'arxiu zip. (Per exemple, fent clic amb el botó dret del ratolí &rarr; Descomprimeix &rarr; Aquí o en un altre lloc.).</li>
     <li>Executeu l'arxiu LanguageToolGUI.jar amb Java (potser fent-hi doble-clic).</li>
 </ol>
+
 
 <?=show_link("altres possibilitats d'ús", "../usage/", 0)?>
 
