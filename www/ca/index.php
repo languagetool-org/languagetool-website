@@ -81,10 +81,12 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
             <li>Va ser una mesura <span class="errorMarker" title="¿Volíeu dir 'disciplinària'?">disciplinar</span>.</li>
         </ul>
     </li>
-    <li>Variants regionals (opcionals i configurables)
+    
+    <li>Variants regionals i preferències estilístiques i editorials (opcionals i configurables)
         <ul>
-            <li>Jo no <span class="errorMarker" class="Forma verbal pròpia del valencià">parle</span> mai de futbol.</li>
+            <li>Jo no <span class="errorMarker" title="Forma verbal pròpia del valencià">parle</span> mai de futbol.</li>
             <li>Se sent <span class="errorMarker" title="Accentuació no valenciana. Substituïu per 'sotmés'.">sotmès</span> a pressions.</li>
+            <li>Per què no vas venir<span class="errorMarker" title="Interrogant sense parella.">?</span></li>
         </ul>
     </li>
     <li>I moltes coses més.</li>
@@ -99,18 +101,18 @@ ací en el navegador:<br/><br/>
 $checkSubmitButtonValue = "Comprova el text";
 $showLanguageBox = 0;
 $checkDefaultLang = "ca";
-$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a exemple per a algunes errors que LanguageTool pot reconèixer.";
+$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool pot reconèixer.";
 include("../../include/checkform.php");
 ?>
 
 <h2>Limitacions conegudes</h2>
 La versió de LanguageTool en català es troba en ple desenvolupament. Ha avançat molt, però encara resta molt de camí per recórrer. 
-Cada tres mesos publiquem una versió nova i actualitzada del corrector. Entre les limitacions conegudes del programa, hi ha les següents:
-
-	<li>La interacció amb paraules no catalanes i amb noms propis no registrats en el diccionari de l'aplicació pot provocar comportaments inesperats.</li>
-	<li>Els adjectius posposats i desplaçats poden provocar falses alarmes, però la regla que detecta aquest error és útil en molts altres casos.
-	Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.<li>
-
+Cada tres mesos publiquem una versió nova i actualitzada del corrector. Entre les limitacions conegudes del programa hi ha les següents:
+	<ul>
+		<li>La interacció amb paraules no catalanes i amb noms propis no registrats en el diccionari de l'aplicació pot provocar comportaments inesperats.</li>
+		<li>Els adjectius posposats i desplaçats poden provocar falses alarmes, però la regla que detecta aquest error és útil en molts altres casos.
+		Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.<li>
+	</ul>
 <h2 id="liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</h2>
 LanguageTool funciona com una extensió per als paquets ofimàtics <a href="http://ca.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://ca.openoffice.org/" target="_blank">Apache OpenOffice</a> de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a>. Per a usar LanguageTool, seguiu els següents passos:
 
