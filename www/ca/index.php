@@ -111,15 +111,15 @@ Cada tres mesos publiquem una versió nova i actualitzada del corrector. Entre l
 	<ul>
 		<li>La interacció amb paraules no catalanes i amb noms propis no registrats en el diccionari de l'aplicació pot provocar comportaments inesperats.</li>
 		<li>Els adjectius posposats i desplaçats poden provocar falses alarmes, però la regla que detecta aquest error és útil en molts altres casos.
-		Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.<li>
+		Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.</li>
 	</ul>
 <h2 id="liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</h2>
 LanguageTool funciona com una extensió per als paquets ofimàtics <a href="http://ca.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://ca.openoffice.org/" target="_blank">Apache OpenOffice</a> de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a>. Per a usar LanguageTool, seguiu els següents passos:
 
 <ol>
     <li>En cas que no tingueu instal·lat Java en el vostre ordinador, descarregueu-lo gratuïtament <a href="http://www.java.com/de/download/manual.jsp" target="_blank">ací</a> i instal·leu-lo. Els usuaris d'Ubuntu han d'instal·lar el paquet <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
-    <li>Descarregueu la darrera versió de LanguageTool. (El botó de descàrrega es troba al principi d'aquesta pàgina.)</li>
-    <li>Obriu LibreOffice o OpenOffice i aneu al menú d'<i>Eines</i> i seleccionaeu el <i>Gestor d'extensions</i>.</li>
+    <li>Descarregueu la darrera versió de LanguageTool. El botó de descàrrega es troba al principi d'aquesta pàgina.</li>
+    <li>Obriu LibreOffice o OpenOffice i aneu al menú d'<i>Eines</i> i seleccioneu el <i>Gestor d'extensions</i>.</li>
     <li>Feu clic en <i>Afegeix&hellip;</i>, seleccioneu l'arxiu descarregat en el pas 2 i feu clic en <i>Obre</i>.</li>
     <li>Després de la instal·lació, reinicieu LibreOffice o OpenOffice.</li>
 </ol>
@@ -129,7 +129,7 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 <h2 id="standalone">Com s'usa LanguageTool com a aplicació independent</h2>
 
 <ol>
-    <li>Descarregueu i descomprimiu l'arxiu zip. (Per exemple, fent clic amb el botó dret del ratolí &rarr; Descomprimeix &rarr; Aquí o en un altre lloc.).</li>
+    <li>Descarregueu i descomprimiu l'arxiu zip (per exemple, fent clic amb el botó dret del ratolí &rarr; <i>descomprimeix</i> &rarr; <i>aquí o en un altre lloc</i>).</li>
     <li>Executeu l'arxiu LanguageToolGUI.jar amb Java (potser fent-hi doble-clic).</li>
 </ol>
 
@@ -139,7 +139,7 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 <h2>Contacte</h2>
 <!-- TODO: direkter Kontakt? -->
 
-<p>Podeu fer preguntes en el nostre <a href="../forum">fòrum</a>. Aquí també podeu informar de falses alarmes de LanguageTool o fer propostes de noves regles.</p>
+<p>Podeu fer consultes en el nostre <a href="../forum">fòrum</a>. També podeu informar de falses alarmes o fer propostes de noves regles.</p>
 
 
 <?php
