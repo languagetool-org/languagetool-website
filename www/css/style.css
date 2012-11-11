@@ -56,6 +56,12 @@ tt {
     padding-bottom: 10px
 }
 
+.command {
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
 .xmlcode {
 	font-family: monospace;
 	margin-left: 15px;

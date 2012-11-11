@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-api";
 $title = "LanguageTool";
 $title2 = "HTTP API";
-$lastmod = "2012-10-10 19:20:00 CET";
+$lastmod = "2012-11-11 19:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -81,6 +81,31 @@ include('../../include/geshi/geshi.php');
     <p>Here's <?=show_link("a DTD with short descriptions of the elements", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
 
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
+
+<h3>Using SSL</h3>
+
+<p>Starting with version 2.0, LanguageTool offers an embedded HTTPS server. It works just like the HTTP server
+described above, but it only supports <tt>https</tt>. It can be started like this:</p>
+
+<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPSServer --keystore keystore.kjs --password mypassword</tt>
+
+<p>To run the server you need your own SSL certificate, just like when you protect your
+webserver using SSL. Assuming you have the required files in PEM format, which looks like this:</p>
+
+<pre>
+-----BEGIN RSA PRIVATE KEY-----
+(lots of random characters here)
+-----END RSA PRIVATE KEY-----
+</pre>
+
+<p>You can convert this format to the Java keystore format which LanguageTool needs with openssl and with
+the <tt>keytool</tt> command that comes with Java:</p>
+
+<pre class="command">
+cat key crt ca.crt >server.pem
+openssl pkcs12 -export -out server.p12 -in server.pem
+keytool -importkeystore -srckeystore server.p12 -srcstoretype pkcs12 -destkeystore keystore.kjs -deststoretype jks
+</pre>
 
 <?php
 include("../../include/footer.php");
