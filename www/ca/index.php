@@ -2,7 +2,7 @@
 $page = "ca";
 $title = "LanguageTool";
 $title2 = "Correcció gramatical i d'estil";
-$lastmod = "2012-09-15 10:40:00 CET";
+$lastmod = "2012-11-10 00:00:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -101,7 +101,7 @@ ací en el navegador:<br/><br/>
 $checkSubmitButtonValue = "Comprova el text";
 $showLanguageBox = 0;
 $checkDefaultLang = "ca";
-$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool pot reconèixer.";
+$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool hi pot detectat.";
 include("../../include/checkform.php");
 ?>
 
@@ -109,9 +109,11 @@ include("../../include/checkform.php");
 La versió de LanguageTool en català es troba en ple desenvolupament. Ha avançat molt, però encara resta molt de camí per recórrer. 
 Cada tres mesos publiquem una versió nova i actualitzada del corrector. Entre les limitacions conegudes del programa hi ha les següents:
 	<ul>
-		<li>La interacció amb paraules no catalanes i amb noms propis no registrats en el diccionari de l'aplicació pot provocar comportaments inesperats.</li>
-		<li>Els adjectius posposats i desplaçats poden provocar falses alarmes, però la regla que detecta aquest error és útil en molts altres casos.
-		Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.</li>
+		<li>Els adjectius col·locats darrere d'un grup nominal però separats del nom al qual realment modifiquen poden provocar falses alarmes. 
+			Això no obstant, la regla que detecta aquest error és útil en molts casos.
+			Ex.: Vivien a la casa paterna <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «confosos».">confosos</span> entre els criats.</li>
+		<li>Les paraules no catalanes i els noms propis que casualment coincideixen amb paraules comunes catalanes poden causar falses alarmes.
+			Ex.: Llavors <span class="errorMarker" title="Falta algun element entre verbs: coma, conjunció, pronom relatiu, etc.">aparegué du</span> Pré.</li>
 	</ul>
 <h2 id="liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</h2>
 LanguageTool funciona com una extensió per als paquets ofimàtics <a href="http://ca.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://ca.openoffice.org/" target="_blank">Apache OpenOffice</a> de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a>. Per a usar LanguageTool, seguiu els següents passos:
