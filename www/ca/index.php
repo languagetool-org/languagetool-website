@@ -25,7 +25,7 @@ include("../../include/header.php");
            <?php
            $downloadTitleStandAlone = "Descarrega LanguageTool";
            $downloadLabelStandAlone = "com a programa independent";
-           $downloadVersionLabel = "versió";
+           $downloadVersionLabelStandAlone = "versió";
            $downloadPathStandAlone = "../download";
            include("../../include/downloadStandAlone.php");
            ?>
