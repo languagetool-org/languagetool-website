@@ -16,6 +16,7 @@ include("../../include/header.php");
            <?php
            $downloadTitle = "Descarrega LanguageTool";
            $downloadLabel = "per a LibreOffice/OpenOffice";
+           $downloadVersionLabel = "versió";
            $downloadPath = "../download";
            include("../../include/download.php");
            ?>
@@ -24,6 +25,7 @@ include("../../include/header.php");
            <?php
            $downloadTitleStandAlone = "Descarrega LanguageTool";
            $downloadLabelStandAlone = "com a programa independent";
+           $downloadVersionLabel = "versió";
            $downloadPathStandAlone = "../download";
            include("../../include/downloadStandAlone.php");
            ?>
