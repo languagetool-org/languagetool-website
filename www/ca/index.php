@@ -52,7 +52,7 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
             <li>Si hagués vingut, tot <span class="errorMarker" title="Falta un verb en condicional: 'haguera', 'hauria'.">hagués</span> anat bé.</li>
             <li>És un fet d'allò més <span class="errorMarker" title="Reviseu la concordança de l'adjectiu «interessants».">interessants</span>.</li>
             <li>L'home <span class="errorMarker" title="Reviseu la construcció de relatiu. Potser cal escriure: 'amb el qual', 'amb què'.">amb el que</span> vaig parlar.
-            <li>Va entrar a <span class="errorMarker" title="Cal escriure: 'la universitat'.">l'universitat</span>.</li> 
+            <li>L'intel·lectual americà i <span class="errorMarker" title="Cal escriure: 'la intel·lectual'.">l'intel·lectual</span> francesa.</li> 
         </ul>
     </li>
     <li>Majúscules i minúscules
