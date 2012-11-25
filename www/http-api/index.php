@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-api";
 $title = "LanguageTool";
 $title2 = "HTTP API";
-$lastmod = "2012-11-13 19:20:00 CET";
+$lastmod = "2012-11-25 19:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -115,7 +115,8 @@ the <tt>keytool</tt> command that comes with Java:</p>
 <pre class="command">
 cat key crt ca.crt >server.pem
 openssl pkcs12 -export -out server.p12 -in server.pem
-keytool -importkeystore -srckeystore server.p12 -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype jks
+keytool -importkeystore -srckeystore server.p12
+    -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype jks
 </pre>
 
 <?php
