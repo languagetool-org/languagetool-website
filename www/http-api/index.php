@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-api";
 $title = "LanguageTool";
 $title2 = "HTTP API";
-$lastmod = "2012-11-25 19:20:00 CET";
+$lastmod = "2012-11-29 19:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -42,11 +42,15 @@ include('../../include/geshi/geshi.php');
     <tt>curl --data "language=en-US&text=a simple test" http://localhost:8081</tt>
 
     <p>The <tt>language</tt> parameter must specify the language code
-	of the text to be checked (e.g. <tt>en</tt> or <tt>en-US</tt>). You can also specify <tt>motherTongue</tt>
-	parameter to specify your mother tongue (for false friend checks). The <tt>text</tt> parameter is the
-	text itself. If you want to test bilingual text (containing
-	source and translation), simply specify also the <tt>srctext</tt> parameter. This way bitext mode will be
-	activated automatically.</p>
+    of the text to be checked, e.g. <tt>en</tt> (English) or <tt>en-US</tt> (American English).
+    If the language has country variants and you want spell checking, you need to use the language code that
+    includes the variant (e.g. <tt>en-US</tt> instead of just <tt>en</tt>).</p>
+
+    <p>You can also specify <tt>motherTongue</tt>
+    parameter to specify your mother tongue (for false friend checks). The <tt>text</tt> parameter is the
+    text itself. If you want to test bilingual text (containing
+    source and translation), simply specify also the <tt>srctext</tt> parameter. This way
+    <a href="http://languagetool.wikidot.com/checking-translations-bilingual-texts">bitext mode</a> will be activated automatically.</p>
 
 	<p>The server may be configured to enable or disable some rules by adding <tt>enabled</tt> and
 	<tt>disabled</tt> as parameters and listing rule identifiers delimited with commas, for example:</p>
