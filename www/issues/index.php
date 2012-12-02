@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-10-15 18:30:00 CET";
+$lastmod = "2012-12-02 13:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -33,8 +33,9 @@ include("../../include/header.php");
  If you cannot update, we recommend you use Java 6 for now,
  as the freeze is worse with Java 7. <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
 </li>
-<li>When you get a long <strong>error message with "NoClassDefFoundError" during installation on Ubuntu <a href="../images/class_not_found.png">like this</a></strong>, you might need to
-	install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package. See
+<li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
+    One problem solved by this is getting <a href="../images/class_not_found.png">a long error message with "NoClassDefFoundError"</a> during installation.
+    See
 	<a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
 	for details.</li>
 <li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
