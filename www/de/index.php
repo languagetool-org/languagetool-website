@@ -117,7 +117,7 @@ Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von Langu
 <h2 id="standalone">LanguageTool als eigenständiges Programm benutzen</h2>
 
 <ol>
-    <li>Entpacken Sie die heruntergeladene zip-Datei (z.&nbsp;B. durch Rechtklick &rarr; Entpacken &rarr; Hier o.&nbsp;ä.).</li>
+    <li>Entpacken Sie die heruntergeladene zip-Datei (z.&nbsp;B. durch Rechtsklick &rarr; Entpacken &rarr; Hier o.&nbsp;ä.).</li>
     <li>Führen Sie die Datei LanguageToolGUI.jar mit Java aus (i.&nbsp;d.&nbsp;R. durch Doppelklick möglich).</li>
 </ol>
 
