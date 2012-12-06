@@ -2,7 +2,7 @@
 $page = "developer-links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources for Developers";
-$lastmod = "2012-09-16 14:35:00 CET";
+$lastmod = "2012-12-06 04:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -45,7 +45,7 @@ include("../../include/header.php");
 <h3>Development Tools and Resources</h3>
 
 <ul>
-	<li><?=show_simple_link("User interface translation (i18n) at Transifex", "http://www.transifex.net/projects/p/languagetool/resource/messagesbundleproperties/")?></li>
+	<li><?=show_simple_link("User interface translation (i18n) at Transifex", "http://www.transifex.net/projects/p/languagetool/")?></li>
 	<li><?=show_simple_link("Continuous integration at CloudBees", "http://languagetool.ci.cloudbees.com")?></li>
 	<li><?=show_simple_link("This website's usage statistics", "http://www.languagetool.org/stats")?></li>
 	<li><?=show_simple_link("LibreOffice bug reports related to LanguageTool", "https://bugs.freedesktop.org/buglist.cgi?quicksearch=%22language%20tool%22%20OR%20languagetool&amp;list_id=43548")?></li>
