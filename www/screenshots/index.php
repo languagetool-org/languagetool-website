@@ -5,7 +5,6 @@ $title2 = "Screenshots";
 $lastmod = "2012-12-15 22:25:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
-?>
 
 <div class="imgboxcontainer">
     <p class="imgbox">
@@ -54,7 +53,6 @@ include("../../include/header.php");
         <?=show_link("Download CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 0) ?>
     </p>
 </div>
-<div class="clearfloat"></div>
 
 <?php
 include("../../include/footer.php");

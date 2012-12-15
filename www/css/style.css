@@ -342,7 +342,7 @@ FORM TEXTAREA {
     margin: 0px 10px 0px 7px;
 }
 
-.imgbox img {
+.imgbox > a:first-child > img {
     width: 320px;
     height: auto;
     border: 0px;
@@ -352,6 +352,6 @@ FORM TEXTAREA {
     line-height:21px;
 }
 
-.imgboxcontainer ~ div {
+.imgboxcontainer ~ * {
     clear: both;
 }
