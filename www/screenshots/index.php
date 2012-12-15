@@ -5,6 +5,7 @@ $title2 = "Screenshots";
 $lastmod = "2012-12-15 22:25:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
+?>
 
 <div class="imgboxcontainer">
     <p class="imgbox">
