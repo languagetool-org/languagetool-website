@@ -13,7 +13,7 @@ include("../../include/header.php");
         <img src="art/screenshot_lo3_small.png" alt="LanguageTool in LibreOffice 3.3"/>
         </a>
         <br/>
-        <a href="art/screenshot_lo3.png">LanguageTool installed as an add-on in LibreOffice 3.3</a>
+        LanguageTool installed as an add-on in LibreOffice&nbsp;3.3
         <br/>
         <?=show_link("Download LibreOffice", "http://libreoffice.org/", 0) ?>
     </p>
@@ -22,7 +22,7 @@ include("../../include/header.php");
         <img src="art/screenshot_ooo3_pl_small.png" alt="LanguageTool in Polish OpenOffice.org 3.0"/>
         </a>
         <br/>
-        <a href="art/screenshot_ooo3_pl.png">LanguageTool installed as an add-on in Polish OpenOffice.org 3.0.1</a>
+        LanguageTool installed as an add-on in Polish OpenOffice.org&nbsp;3.0.1
         <br/>
         <?=show_link("Download Apache OpenOffice", "http://openoffice.org/", 0) ?>
     </p>
@@ -31,7 +31,7 @@ include("../../include/header.php");
         <img src="art/screenshot_small.png" alt="stand-alone version of LanguageTool"/>
         </a>
         <br/>
-        <a href="art/screenshot.png">The simple stand-alone user interface which lets you type in or paste text and check it</a>
+        The simple stand-alone user interface which lets you type in or paste text and check it
         <br/>
         <?=show_link("Download LanguageTool for stand-alone use", "http://languagetool.org/", 0) ?>
     </p>
@@ -40,7 +40,7 @@ include("../../include/header.php");
         <img src="art/lt-omegat_small.png" alt="LanguageTool plugin in OmegaT"/>
         </a>
         <br/>
-        <a href="art/lt-omegat.png">The simple LanguageTool plugin in OmegaT that helps to check your translation on the go</a>
+        The simple LanguageTool plugin in OmegaT that helps to check your translation on the go
         <br/>
         <?=show_link("Download OmegaT", "http://omegat.org/", 0) ?>
     </p>
@@ -49,7 +49,7 @@ include("../../include/header.php");
         <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
         </a>
         <br/>
-        <a href="art/lt-checkmate.png">LanguageTool in the server mode is used in CheckMate to check translations using a comfortable GUI</a>
+        LanguageTool in the server mode is used in CheckMate to check translations using a comfortable GUI
         <br/>
         <?=show_link("Download CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 0) ?>
     </p>
