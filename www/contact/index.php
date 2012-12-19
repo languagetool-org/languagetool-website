@@ -1,8 +1,8 @@
 <?php
 $page = "contact";
 $title = "LanguageTool";
-$title2 = "contact";
-$lastmod = "2012-08-19 12:39:00 CET";
+$title2 = "Contact";
+$lastmod = "2012-12-19 12:39:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -31,6 +31,7 @@ include("../../include/header.php");
     </ul>
 </ul>
 
+
 <h3>Imprint</h3>
 
 <p>This page is run by:</p>
@@ -39,10 +40,20 @@ include("../../include/header.php");
 Daniel Naber<br/>
 Friesenstr. 3<br/>
 14482 Potsdam<br/>
+email: <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span>
 </div>
 
-<div style="height:400px"></div>
+
+<h3>Privacy</h3>
+
+<p>This website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
+IP address (to a form like 192.168.xxx.xxx) to protect your privacy. If you don't want your
+visit to be recorded at all by Piwik, you can opt out here:</p>
+
+<iframe frameborder="no" width="600px" height="200px" src="http://openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+<div style="height:300px"></div>
