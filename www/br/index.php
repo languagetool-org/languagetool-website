@@ -99,7 +99,7 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.
 </p>
 <p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
-Fulup Jakez, Joseph Monfort ha Denis Arnaud.
+Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.
 </p>
 <h2>Aotre-implijout</h2>
 <p>
