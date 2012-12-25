@@ -22,7 +22,8 @@ include("../../include/header.php");
 	<li><?=show_simple_link("LanguageTool plugin for OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/")?>
 		a plugin that enables grammar-checking in computer-aided translation tool OmegaT (open source)</li>
 	<li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
-	<li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781")?></li>
+	<li><?=show_simple_link("LanguageToolFX for FireFox", "https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/")?></li>
+        <li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781")?></li>
         <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
 </ul>
 
