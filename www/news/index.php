@@ -2,9 +2,17 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2012-10-10 19:37:00 CET";
+$lastmod = "2012-12-30 17:37:00 CET";
 include("../../include/header.php");
 ?>
+
+<p class="firstpara"><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
+<ul>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/V_1_9_to_V_2_0/", 0) ?> for English, Spanish, French, German, Portuguese, Russian, Breton, Catalan, Esperanto, and Ukrainian</li>
+  <li>The embedded HTTP server can now be started from the context menu if LanguageTool is running in the system tray</li>
+  <li>Small bug fixes</li>
+  <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
+</ul>
 
 <p class="firstpara"><strong>2012-10-10:</strong> LanguageTool 1.9 is now available
   <?=show_link("on Maven Central", "http://search.maven.org/#search|ga|1|languagetool", 0) ?> for Java developers</p>

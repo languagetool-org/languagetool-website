@@ -1,5 +1,5 @@
 <?php
-$version= "1.9";
+$version= "2.0";
 $filesize = "57";   //MB
 if( !isset($downloadTitleStandAlone) )        $downloadTitleStandAlone = "Download LanguageTool";
 if( !isset($downloadLabelStandAlone) )        $downloadLabelStandAlone = "for stand-alone use";
