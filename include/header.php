@@ -162,7 +162,7 @@ function makeEntry($name, $visName) {
            <?php
         }
         ?>
-        <div class="submenuitem"><a href="http://languagetool.wikidot.com/">Wiki</a></div>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org">Wiki</a></div>
         <?php
         if ($page == "developer-links") {
           ?>

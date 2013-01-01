@@ -60,7 +60,7 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("../usage", "Uzo"); ?>
 			<?php makeEntry("../development", "Programado"); ?>
 			<?php makeEntry("../links", "Ligiloj &amp; Rimedoj"); ?>
-			<?php makeEntry("http://languagetool.wikidot.com/", "Wiki"); ?>
+			<?php makeEntry("http://wiki.languagetool.org", "Wiki"); ?>
 			
 			<br/><br/><br/>
 			<a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-right:5px" src="/images/twitter_link16x16.png"/>Sekvu nin ĉe Twitter</a>
