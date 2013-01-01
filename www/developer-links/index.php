@@ -70,7 +70,7 @@ include("../../include/header.php");
     
 <ul>
     <li><?=show_simple_link("Building a regex engine — online resources", "http://stackoverflow.com/questions/1084069/building-a-regex-engine-online-resources")?></li>
-    <li><?=show_simple_link("OpenRegex", "https://github.com/knowitall/openregex")?> - an efficient and flexible token-based regular expression language and engine (GPLv3)</li>
+    <li><?=show_simple_link("OpenRegex", "https://github.com/knowitall/openregex")?> - an efficient and flexible token-based regular expression language and engine (LGPL v3)</li>
     <li><?=show_simple_link("GExp graph-expression", "http://code.google.com/p/graph-expression/")?> - high level automaton library for information extraction (Apache License)</li>
 </ul>
 
