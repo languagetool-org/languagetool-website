@@ -11,7 +11,7 @@ include("../../include/header.php");
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot di LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi in scritti in <?=show_link("più di 20 lingue", "languages/", 0) ?>. Tra i linguaggi supportati abbiamo: Italiano, Inglese, Francese e Tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</strong></p>
+<p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi in scritti in <?=show_link("più di 20 lingue", "../languages/", 0) ?>. Tra i linguaggi supportati abbiamo: Italiano, Inglese, Francese e Tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</strong></p>
 
 <p>LanguageTool, infatti, è uno strumento molto potente che trova errori ricercando, all'interno del testo, delle combinazioni definite in regole di tipo XML ovvero codificate in Java.</p>
 
