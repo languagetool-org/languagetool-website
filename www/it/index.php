@@ -109,5 +109,5 @@ Il codice sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://
 I contenuti di questa homepage sono disponibili sotto licenza <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <?php
-include("../include/footer.php");
+include("../../include/footer.php");
 ?>
