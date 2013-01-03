@@ -43,10 +43,11 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
     <table width="100%">
       <tr>
         <td>
-          Versione per LibreOffice/OpenOffice
+          <strong>Versione per LibreOffice/OpenOffice</strong>
         </td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
-          Applicazione java
+          <strong>Applicazione java</strong>
         </td>
       </tr>        
       <tr>
