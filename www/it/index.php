@@ -18,7 +18,7 @@ include("../../include/header.php");
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
-<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante, oppure inclusa in altre applicazioni", "usage/", 0)?>
+<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante, oppure inclusa in altre applicazioni", "../usage/", 0)?>
   oppure provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
 <?php
