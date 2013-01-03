@@ -104,9 +104,9 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
 <h3>Licenza e Codice Sorgente</h3>
 
-<p>LanguageTool è aperto al contributo di tutti.</p>
-<p>LanguageTool è disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.</p>
-Il codice sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.</p>
+<p>LanguageTool è aperto al contributo di tutti.
+<p>LanguageTool è disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
+Il codice sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
 I contenuti di questa homepage sono disponibili sotto licenza <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <?php
