@@ -2,7 +2,7 @@
 $page = "screenshots";
 $title = "LanguageTool";
 $title2 = "Screenshots";
-$lastmod = "2012-12-15 22:25:00 CET";
+$lastmod = "2013-01-03 21:45:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -36,15 +36,6 @@ include("../../include/header.php");
         <?=show_link("Download LanguageTool for stand-alone use", "http://languagetool.org/", 0) ?>
     </p>
     <p class="imgbox">
-        <a title="The simple LanguageTool plugin in OmegaT that helps to check your translation on the go" class="fancyboxImage" href="art/lt-omegat.png">
-        <img src="art/lt-omegat_small.png" alt="LanguageTool plugin in OmegaT"/>
-        </a>
-        <br/>
-        The simple LanguageTool plugin in OmegaT that helps to check your translation on the go
-        <br/>
-        <?=show_link("Download OmegaT", "http://omegat.org/", 0) ?>
-    </p>
-    <p class="imgbox">
         <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png">
         <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
         </a>
@@ -52,6 +43,33 @@ include("../../include/header.php");
         LanguageTool in the server mode is used in CheckMate to check translations using a comfortable GUI
         <br/>
         <?=show_link("Download CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 0) ?>
+    </p>
+    <p class="imgbox">
+        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/lt-thunderbird.png">
+        <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
+        </a>
+        <br/>
+        Check text in emails with the Grammar Checker extension for <a href="http://mozilla.org/thunderbird/" target="_blank">Mozilla&nbsp;Thunderbird</a>
+        <br/>
+        <?=show_link("Download Grammar Checker", "https://addons.mozilla.org/thunderbird/addon/grammar-checker/", 0) ?>
+    </p>
+    <p class="imgbox">
+        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/languagetoolfx.png">
+        <img src="art/languagetoolfx_small.png" alt="LanguageToolFx Firefox extension"/>
+        </a>
+        <br/>
+        Check text on websites with the extension for <a href="http://mozilla.org/firefox/" target="_blank">Mozilla&nbsp;Firefox</a>
+        <br/>
+        <?=show_link("Download LanguageToolFx", "https://addons.mozilla.org/firefox/addon/languagetoolfx/", 0) ?>
+    </p>
+    <p class="imgbox">
+        <a title="The simple LanguageTool plugin in OmegaT that helps to check your translation on the go" class="fancyboxImage" href="art/lt-omegat.png">
+        <img src="art/lt-omegat_small.png" alt="LanguageTool plugin in OmegaT"/>
+        </a>
+        <br/>
+        The simple LanguageTool plugin in <a href="http://omegat.org/" target="_blank"/>OmegaT</a> that helps to check your translation on the go
+        <br/>
+        <?=show_link("Download plugin for OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/", 0) ?>
     </p>
 </div>
 

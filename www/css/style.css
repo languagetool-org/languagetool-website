@@ -323,6 +323,44 @@ FORM TEXTAREA {
     font-size: 9pt;
     font-weight: normal;
 }
+
+.downloadButtonSmallContainer {
+    display: table-cell;
+}
+
+.downloadButtonSmall {
+    display: block;
+    background-image: linear-gradient(to bottom, #FBDB2D 0%, #EC8622 100%) !important;
+    margin-left: 22px;
+}
+
+.downloadButtonSmall, .downloadButtonSmall > a {
+    min-height: 42px !important;
+}
+
+.downloadButtonSmall img, .downloadButtonSmall span {
+    position: relative;
+    left: -22px;
+}
+
+.downloadButtonSmall img {
+    top: -1px;
+}
+
+.downloadButtonSmall span {
+    top: 1px !important;
+}
+
+.downloadButtonSmall > a {
+    padding-right: 0px;
+}
+
+.downloadButtonSmall .downloadButtonLogo {
+    height: 45px !important;
+    width: 45px !important;
+    padding: 0px 5px 0px 0px;
+}
+
 /* end: download button on the homepage */
 
 .longPage h2 {
@@ -348,7 +386,7 @@ FORM TEXTAREA {
     border: 0px;
 }
 
-.imgbox > a:nth-of-type(3) {
+.imgbox > a:last-of-type {
     line-height:21px;
 }
 
