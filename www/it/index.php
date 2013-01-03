@@ -11,21 +11,21 @@ include("../../include/header.php");
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot di LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi in scritti in <?=show_link("più di 20 lingue", "languages/", 0) ?>. Tra i linguaggi supportati abbiamo: Italiano, Inglese, Francese e Tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</p>
+<p class="firstpara"><strong>LanguageTool √® uno strumento Open Source che permette la correzione di testi in scritti in <?=show_link("pi√π di 20 lingue", "languages/", 0) ?>. Tra i linguaggi supportati abbiamo: Italiano, Inglese, Francese e Tedesco. Permette di identificare errori che un semplice correttore ortografico non pu√≤ riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</p>
 
-<p>LanguageTool, infatti, è uno sturmento molto potente che trova errori ricercando, all'interno del testo, delle combinazioni definite in regole di tipo XML ovvero codificate in Java.</p>
+<p>LanguageTool, infatti, √® uno strumento molto potente che trova errori ricercando, all'interno del testo, delle combinazioni definite in regole di tipo XML ovvero codificate in Java.</p>
 
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
-<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante, oppure inclusa in altre applicazioni", "usage/", 0)?>
+<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a s√© stante, oppure inclusa in altre applicazioni", "usage/", 0)?>
   oppure provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
 <?php
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 0;
 $checkDefaultLang = "auto";
-$checkDefaultText = "Incollate quì il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
+$checkDefaultText = "Incollate qu√¨ il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
 include("../../include/checkform.php");
 ?>
 
@@ -60,9 +60,9 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li><strong>Raccomandiamo di utilizzare le più recenti versioni di
+            <li><strong>Raccomandiamo di utilizzare le pi√π recenti versioni di
               <a href="http://www.libreoffice.org/download">LibreOffice</a></strong> o di 
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice</a></strong> in quanto le versioni più vecchie 
+              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice</a></strong> in quanto le versioni pi√π vecchie 
               hanno un problema che causa uno stallo in partenza</li>
             <li>Utilizzate poi il menu <em>Tools -&gt; Extension Manager -&gt; Add...</em> per installare il fole che scaricate</li>
             <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
@@ -78,7 +78,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
           <ul style="padding-left: 20px">
             <li>Scompattate lo zip scaricato file e fate doppio click sul file LanguageToolGUI.jar.
-              Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
+              Per ulteriori informazioni fate riferimento a <?=show_link("altre modalit√† di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
           </ul>
 
         </td>
@@ -95,8 +95,8 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
 <h3>License &amp; Source Code</h3>
 
-<p>LanguageTool è disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-Il codice sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
+<p>LanguageTool √® disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
+Il codice sorgente √® disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
 I contenuti di questa homepage sono disponibili sotto licenza <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <?php
