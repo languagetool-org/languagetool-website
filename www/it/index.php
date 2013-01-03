@@ -16,16 +16,16 @@ include("../../include/header.php");
 <p>LanguageTool, infatti, è uno strumento molto potente che trova errori ricercando, all'interno del testo, delle combinazioni definite in regole di tipo XML ovvero codificate in Java.</p>
 
 
-<h2 style="margin-top: 40px">Try it online</h2>
+<h2 style="margin-top: 40px">Provatelo ora</h2>
 
-<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante, oppure inclusa in altre applicazioni", "../usage/", 0)?>
-  oppure provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
+<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante o inclusa in altre applicazioni", "../usage/", 0)?>.</p>
+<p>In alternativa, potete provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
 <?php
-$checkSubmitButtonValue = "Check Text";
+$checkSubmitButtonValue = "Controlla";
 $showLanguageBox = 0;
 $checkDefaultLang = "auto";
-$checkDefaultText = "Incollate quì il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
+$checkDefaultText = "Incollate qui il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
 include("../../include/checkform.php");
 ?>
 
@@ -33,7 +33,7 @@ include("../../include/checkform.php");
 Richiede <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive:<br />
 <strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
-<h2>Download</h2>
+<h2>Scaricatelo</h2>
 
 <p>LanguageTool richiede <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive - al momento, raccomandiamo di utilizzare Java 6 
 in quanto alcuni utenti hanno riportato problemi di performance utilizzando LanguageTool con Java 7.
@@ -41,6 +41,14 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
 <div class="downloadSection">
     <table width="100%">
+      <tr>
+        <td>
+          Versione per LibreOffice/OpenOffice
+        </td>
+        <td>
+          Applicazione java
+        </td>
+      </tr>        
       <tr>
         <td>
            <?php
@@ -93,8 +101,9 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
  Rilasci precedenti sono disponibili al link <?=show_link("download directory", "../download/", 0) ?>.</p>
 
 
-<h3>License &amp; Source Code</h3>
+<h3>Licenza e Codice Sorgente</h3>
 
+<p>LanguageTool è aperto al contributo di tutti.<p>
 <p>LanguageTool è disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
 Il codice sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
 I contenuti di questa homepage sono disponibili sotto licenza <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
