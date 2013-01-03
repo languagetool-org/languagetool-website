@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2012-12-30 16:00:00 CET";
+$lastmod = "2013-01-030 07:15:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -205,6 +205,7 @@ LanguageTool можно использовать для проверки гра�
 		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами.</li>
 	<li><?=show_link("LanguageTool и CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 1)?> используется как сервер для расширения возможностей контроля качества переводов.</li>
 	<li><?=show_link("LanguageTool для Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781", 1)?></li>
+        <li><?=show_link("LanguageToolFx для Firefox", "https://addons.mozilla.org/firefox/addon/languagetoolfx/", 1)?></li>
 </ul>
 
 
