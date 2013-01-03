@@ -8,8 +8,8 @@ include("../../include/header.php");
 ?>
 
 <a title="LanguageTool installato come add-on in LibreOffice 3.3" class="fancyboxImage"
-   href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot di LanguageTool"/></a>
+   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot di LanguageTool"/></a>
 
 <p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi in scritti in <?=show_link("più di 20 lingue", "languages/", 0) ?>. Tra i linguaggi supportati abbiamo: Italiano, Inglese, Francese e Tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</p>
 
@@ -26,18 +26,18 @@ $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 0;
 $checkDefaultLang = "auto";
 $checkDefaultText = "Incollate quì il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
-include("../include/checkform.php");
+include("../../include/checkform.php");
 ?>
 
 <p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
 Richiede <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive:<br />
-<strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+<strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Download</h2>
 
 <p>LanguageTool richiede <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive - al momento, raccomandiamo di utilizzare Java 6 
 in quanto alcuni utenti hanno riportato problemi di performance utilizzando LanguageTool con Java 7.
-<strong>State riscontrando dei problemi? Controllate la <?=show_link("lista dei problemi noti", "issues", 0)?>.</strong></p>
+<strong>State riscontrando dei problemi? Controllate la <?=show_link("lista dei problemi noti", "../issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
@@ -45,14 +45,14 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
         <td>
            <?php
            $downloadPath = "download";
-           include("../include/download.php");
+           include("../../include/download.php");
            ?>
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
            $downloadPath = "download";
-           include("../include/downloadStandAlone.php");
+           include("../../include/downloadStandAlone.php");
            ?>
         </td>
       </tr>
@@ -78,7 +78,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
           <ul style="padding-left: 20px">
             <li>Scompattate lo zip scaricato file e fate doppio click sul file LanguageToolGUI.jar.
-              Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "usage/", 0)?>.</li>
+              Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
           </ul>
 
         </td>
