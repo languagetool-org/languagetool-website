@@ -13,7 +13,7 @@ function printLangOption($langCode, $lang) {
     <textarea 
             onfocus="javascript: if(document.checkform.text.value == '<?php print $checkDefaultText ?>') { document.checkform.text.value='' } " 
             onblur="javascript: if(document.checkform.text.value == '') { document.checkform.text.value='<?php print $checkDefaultText ?>' } " 
-        style="width:100%; height:70px" name="text"><?php print $checkDefaultText ?></textarea>
+        style="padding:5px;width:100%; height:70px" name="text"><?php print $checkDefaultText ?></textarea>
     <div style="margin-top:4px; text-align: right">
         <?php if ($showLanguageBox) { ?>
             Language: <select name="lang" id="lang" >

@@ -2,9 +2,10 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2012-12-30 17:21:00 CET";
+$lastmod = "2013-01-04 23:21:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
+include("../include/browser_language.php");
 ?>
 
 <a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage"
@@ -18,6 +19,20 @@ spell checker cannot detect like mixing up <em>there/their</em> and it detects s
 <p>LanguageTool finds errors by looking for text patterns defined in an XML file. Alternatively, error detection
 rules can be written in Java.</p>
 
+<?php
+// language codes of languages that have their own page:
+$languagesWithPage = array("br", "ca", "zh", "eo", "de", "it", "pl", "ru");
+// names of those languages:
+$languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "German", "Italian", "Polish", "Russian");
+$defaultLang = getDefaultLanguage();
+error_reporting(E_ALL);
+foreach ($languagesWithPage as $i => $value) {
+    if ($value == $defaultLang || substr($defaultLang, 0, 3) == $value."-") {
+      $langName = $languageNamesWithPage[$i];
+      print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Note: we also have a <a href='$value/'>page in $langName</a>.</p>";
+    }
+}
+?>
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
@@ -64,8 +79,8 @@ as some users have performance problems when using LanguageTool with Java 7.
 
           <ul style="padding-left: 20px">
             <li><strong>We strongly recommend using
-              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> or
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> or later as older versions
+              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (or later) or
+              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (or later) as older versions
               have a bug that causes a freeze on startup</li>
             <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install this file</li>
             <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
