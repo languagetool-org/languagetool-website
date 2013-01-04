@@ -97,9 +97,9 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 </div>
 
 <p>Versioni non testate e aggiornate giornalmente del tool sono disponibili al link
-<?=show_link("the snapshot directory", "../download/snapshots/?C=M;O=D", 0) ?>
+<?=show_link("versioni di sviluppo", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
- Rilasci precedenti sono disponibili al link <?=show_link("download directory", "../download/", 0) ?>.</p>
+ Rilasci precedenti sono disponibili al link <?=show_link("versioni scaricabili", "../download/", 0) ?>.</p>
 
 
 <h3>Licenza e Codice Sorgente</h3>
