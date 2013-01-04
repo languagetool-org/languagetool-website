@@ -23,8 +23,8 @@ include("../../include/header.php");
 
 <?php
 $checkSubmitButtonValue = "Controlla";
-$showLanguageBox = 0;
-$checkDefaultLang = "auto";
+$showLanguageBox = 1;
+$checkDefaultLang = "it";
 $checkDefaultText = "Incollate qui il vostro testo... oppure provate a scrivere direttamente per provare quali problemi errori possono essere identificati con LanguageTool.";
 include("../../include/checkform.php");
 ?>
