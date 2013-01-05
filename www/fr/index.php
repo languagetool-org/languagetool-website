@@ -59,7 +59,7 @@ Il est aussi possible de définir des règles en Java.</p>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
 L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou plus récent :<br />
-<strong><?=show_link("Démarrer LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+<strong><?=show_link("Démarrer LanguageTool (&gt;30&nbsp;Mo)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Télécharger</h2>
 
@@ -97,10 +97,10 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
               <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou plus récent) ou
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou plus récent),
               car les versions plus anciennes ont un bug qui cause un long délai au démarrage</li>
-            <li>Utilisez <em>Outils -&gt; Gestionnaire des extensions… -&gt; Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
+            <li>Utilisez <em>Outils… → Gestionnaire des extensions… → Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
             <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extension</li>
             <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais :
-              Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
+              Use <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
           </ul>
         </td>
         <td></td>
