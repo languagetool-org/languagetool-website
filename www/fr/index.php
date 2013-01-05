@@ -7,7 +7,7 @@ include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
-français, l’anglais, l’allemand, le polonais, le breton, l’espéranto, et <?=show_link("plus de 20 autres langues.", "languages/", 0) ?>.
+français, l’anglais, l’allemand, le polonais, le breton, l’espéranto, et <?=show_link("plus de 20 autres langues", "languages/", 0) ?>.
 Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simple correcteur orthographique
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
 accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
@@ -97,7 +97,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
               <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou plus récent) ou
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou plus récent),
               car les versions plus anciennes ont un bug qui cause un long délai au démarrage</li>
-            <li>Utilisez <em>Outils -&gt; Extension Manager -&gt; Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
+            <li>Utilisez <em>Outils -&gt; Gestionnaire des extensions… -&gt; Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
             <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extention</li>
             <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais :
               Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
@@ -118,13 +118,17 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 <p>Des versions mises à jours quotidiennement depuis la dernière version dans le dépôt SVN sont aussi disponibles dans le
 <?=show_link("répertoire snapshot", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
- Mais attentions : ces version sont moins testées que les versions officielles. Toutefois, LanguageTool comprends de 
- nombreux tests unitaires est les versions quotidienne sont donc stables en général.
+ Mais attentions : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprends de 
+ nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.
  Les anciennes versions sont toujours disponibles dans le <?=show_link("répertoire de téléchargement", "../download/", 0) ?>.</p>
 
 <h2>Copie d’écran dans LibreOffice</h2>
 
 <img src="images/LanguageTool-LibreOffice.png" alt="LanguageTool (fr)"/>
+
+Les fautes de grammaire trouvées par LanguageTool sous soulignées en bleu. Les fautes d’orthographe trouvées par le dictionnaire français de LibreOffice sont soulignées en rouge.
+
+Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical fonctionne correctement.
 
 <h3>License &amp; code source</h3>
 
