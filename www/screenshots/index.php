@@ -71,6 +71,15 @@ include("../../include/header.php");
         <br/>
         <?=show_link("Download plugin for OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/", 0) ?>
     </p>
+    <p class="imgbox">
+        <a title="Check text in Vim" class="fancyboxImage" href="art/lt-vim.png">
+        <img src="art/lt-vim.png" alt="Grammar Checker plugin for Vim"/>
+        </a>
+        <br/>
+        Check text within the <a href="http://www.vim.org" target="_blank">Vim text editor</a>
+        <br/>
+        <?=show_link("Download the Vim LanguageTool plugin", "http://www.vim.org/scripts/script.php?script_id=3223", 0) ?>
+    </p>
 </div>
 
 <?php
