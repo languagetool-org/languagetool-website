@@ -144,7 +144,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 <?=show_link("répertoire snapshot", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
 
- Mais attentions : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprends de 
+ Mais attention : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprend de 
  nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.
  Les anciennes versions sont toujours disponibles dans le <?=show_link("répertoire de téléchargement", "../download/", 0) ?>.</p>
 
