@@ -21,9 +21,9 @@ rules can be written in Java.</p>
 
 <?php
 // language codes of languages that have their own page:
-$languagesWithPage = array("br", "ca", "zh", "eo", "de", "it", "pl", "ru");
+$languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru");
 // names of those languages:
-$languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "German", "Italian", "Polish", "Russian");
+$languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian");
 $defaultLang = getDefaultLanguage();
 error_reporting(E_ALL);
 foreach ($languagesWithPage as $i => $value) {
@@ -31,6 +31,15 @@ foreach ($languagesWithPage as $i => $value) {
       $langName = $languageNamesWithPage[$i];
       print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>";
       switch ($langName) {
+        case "Breton":
+          print "Remerk: ur <a href='$value/'>bajenn vrezhonek</a> hon eus ivez.";
+        break;
+        case "Esperanto":
+          print "Rimarko: ni ankaŭ havas <a href='$value/'>hejmpaĝon en Esperanto</a>.";
+        break;
+        case "French":
+          print "Remarque : nous avons aussi une <a href='$value/'>page en français</a>.";
+        break;
         case "German":
           print "Hinweis: Es gibt auch eine <a href='$value/'>Seite auf Deutsch</a>.";
         break;
