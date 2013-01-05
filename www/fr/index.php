@@ -125,10 +125,8 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 <h2>Copie d’écran dans LibreOffice</h2>
 
 <img src="images/LanguageTool-LibreOffice.png" alt="LanguageTool (fr)"/>
-
-Les fautes de grammaire trouvées par LanguageTool sous soulignées en bleu. Les fautes d’orthographe trouvées par le dictionnaire français de LibreOffice sont soulignées en rouge.
-
-Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical fonctionne correctement.
+<p>Les fautes de grammaire trouvées par LanguageTool sous soulignées en bleu. Les fautes d’orthographe trouvées par le dictionnaire français de LibreOffice sont soulignées en rouge.</p>
+<p>Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical fonctionne correctement.</p>
 
 <h3>License &amp; code source</h3>
 
