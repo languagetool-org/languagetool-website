@@ -7,7 +7,7 @@ include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
-français, l’anglais, l’allemand, le polonais, le breton, l’espéranto, et <?=show_link("plus de 20 autres langues", "languages/", 0) ?>.
+français, l’anglais, l’allemand, le polonais, le breton, l’espéranto, et <?=show_link("plus de 20 autres langues", "../languages/", 0) ?>.
 Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simple correcteur orthographique
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
 accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
