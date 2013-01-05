@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-01-04 23:21:00 CET";
+$lastmod = "2013-01-05 15:00:00 CET";
 $enable_fancybox = 1;
 include("../include/header.php");
 include("../include/browser_language.php");
@@ -29,7 +29,13 @@ error_reporting(E_ALL);
 foreach ($languagesWithPage as $i => $value) {
     if ($value == $defaultLang || substr($defaultLang, 0, 3) == $value."-") {
       $langName = $languageNamesWithPage[$i];
-      print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Note: we also have a <a href='$value/'>page in $langName</a>.</p>";
+      switch ($langName) {
+        case "Italian":
+          print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Nota: abbiamo anche una <a href='$value/'>pagina in Italiano</a>.</p>";
+        break;
+        default;
+          print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Note: we also have a <a href='$value/'>page in $langName</a>.</p>";
+      }
     }
 }
 ?>
