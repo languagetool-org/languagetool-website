@@ -41,7 +41,7 @@ Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p>O LanguageTool requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima - recomendamos de momento o Java 6, visto 
 alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7.
-<strong>Tens problemas? Por favor lê o <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
+<strong>Tens problemas? Por favor lê o <?=show_link("list of common problems", "../issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
@@ -100,7 +100,7 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
 disponíveis em
 <?=show_link("the snapshot directory", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
- Versões antigas continuam disponíveis no <?=show_link("download directory", "download/", 0) ?>.</p>
+ Versões antigas continuam disponíveis no <?=show_link("download directory", "../download/", 0) ?>.</p>
 
 
 <h3>Licença &amp; Código Fonte</h3>
