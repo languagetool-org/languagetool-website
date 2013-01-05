@@ -71,10 +71,11 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
       <tr>
         <td>
            <?php
-           $downloadTitle = "Télécharger LanguageTool";
-           $downloadLabel = "pour LibreOffice/OpenOffice";
+           $downloadTitle        = "Télécharger LanguageTool";
+           $downloadLabel        = "pour LibreOffice/OpenOffice";
            $downloadVersionLabel = "version";
-           $downloadPath = "/download";
+           $downloadPath         = "/download";
+           $downloadLabelMB      = "Mo";
            include("../../include/download.php");
            ?>
         </td>
@@ -85,6 +86,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
             $downloadLabelStandAlone = "autonome";
             $downloadVersionLabelStandAlone = "version";
             $downloadPathStandAlone  = "/download";
+            $downloadLabelMB         = "Mo";
             include("../../include/downloadStandAlone.php");
            ?>
         </td>
