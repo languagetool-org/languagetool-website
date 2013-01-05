@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-10-10 19:20:00 CET";
+$lastmod = "2012-01-05 17:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -11,7 +11,7 @@ include('../../include/geshi/geshi.php');
 
 
 <h2>As a LibreOffice/OpenOffice.org extension</h2>
-    <p>Double click the downloaded <tt>LanguageTool-1.x.oxt</tt> to install it.
+    <p>Double click the downloaded <tt>LanguageTool-2.x.oxt</tt> to install it.
   	If that doesn't work, call <em>Tools -&gt; Extension Manager -&gt; Add...</em>.
     Close LibreOffice/OpenOffice.org and re-start it. Type some text
   	with an error that LanguageTool can detect and you should see a blue underline.
