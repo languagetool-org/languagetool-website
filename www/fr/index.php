@@ -125,7 +125,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
                 l’interface graphique Java de LanguageTool, ou en ligne
                 de commande, ou comme serveur, ou intégrée à d’autres
                 applications telles que
-                l’<a href="http://www.vim.org/scripts/script.php?script_id=3223">éditeur de text Vim</a>.
+                l’<a href="http://www.vim.org/scripts/script.php?script_id=3223">éditeur de texte Vim</a>.
                 Cette version signale non seulement les fautes de grammaire
                 mais aussi les fautes d’orthographe grâce à des dictionnaires
                 intégrés à LanguageTool.</li>
