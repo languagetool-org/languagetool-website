@@ -18,7 +18,7 @@ Il est aussi possible de définir des règles en Java.</p>
 <h2 style="margin-top: 40px">Essayer LanguageTool en-ligne</h2>
 
 <p>Utilisez LanguageTool <?=show_link("dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications", "../usage/", 0)?>
-  ou esseyez le ici sur cette page ::</p>
+  ou essayez le ici sur cette page :</p>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
