@@ -112,7 +112,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
                 l’installation de l’extension.</li>
             <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler
                 des textes en anglais, choisissez :
-                <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em>
+                <em>Outils… → Options… → Paramètres linguistiques → Linguistique</em>
                 pour désactiver LightProof et activer LanguageTool pour l’anglais.</li>
           </ul>
         </td>
