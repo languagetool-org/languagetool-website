@@ -1,5 +1,5 @@
 <?php
-$page = "homepage";
+$page = "fr";
 $title = "LanguageTool";
 $title2 = "Correcteur grammatical";
 $lastmod = "2013-01-05 14:00:00 CET";
