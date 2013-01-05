@@ -1,8 +1,8 @@
 <?php
 $page = "hejmpaĝo";
-$title = "LanguageTool";
+$title = "Lingvoilo";
 $title2 = "Stila kaj gramatika kontrolilo";
-$lastmod = "2012-06-30 20:00 CET";
+$lastmod = "2013-01-05 20:20 CET";
 include("../../include/header.php");
 ?>
 
