@@ -49,7 +49,7 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
         <option value="sk" >slovaka</option>
         <option value="sl" >slovena</option>
         <option value="sv" >sveda</option>
-        <option value="tl" >togaloga</option>
+        <option value="tl" >tagaloga</option>
         <option value="uk" >ukraina</option>
     </select>
 </form>
