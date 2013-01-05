@@ -68,6 +68,7 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
           include("../../include/download.php");
         ?>
       </td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
       <td>
         <?php
           $downloadTitleStandAlone = "Elŝuti Lingvoilon";
