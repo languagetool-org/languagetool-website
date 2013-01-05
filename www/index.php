@@ -29,13 +29,18 @@ error_reporting(E_ALL);
 foreach ($languagesWithPage as $i => $value) {
     if ($value == $defaultLang || substr($defaultLang, 0, 3) == $value."-") {
       $langName = $languageNamesWithPage[$i];
+      print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>";
       switch ($langName) {
+        case "German":
+          print "Hinweis: Es gibt auch eine <a href='$value/'>Seite auf Deutsch</a>.";
+        break;
         case "Italian":
-          print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Nota: abbiamo anche una <a href='$value/'>pagina in Italiano</a>.</p>";
+          print "Nota: abbiamo anche una <a href='$value/'>pagina in Italiano</a>.";
         break;
         default;
-          print "<p style='width:50%;padding:10px;background-color:#f1ffa9'>Note: we also have a <a href='$value/'>page in $langName</a>.</p>";
+          print "Note: we also have a <a href='$value/'>page in $langName</a>.";
       }
+      print "</p>";
     }
 }
 ?>
