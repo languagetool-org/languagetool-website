@@ -19,11 +19,10 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.') { document.checkform.text.value='' } "
-        style="width:100%; max-width:700px;height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.</textarea>
+        style="width:100%; height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.</textarea>
     <br />
-    <input type="submit" name="_action_checkText" value="Kontroli tekston"/>
+    <div style="margin-top:4px; text-align: right">
     Lingvo: <select name="lang" id="lang" >
-
         <option value="auto">aŭtomate detekti</option>
         <option value="en" >angla</option>
         <option value="ast" >asturia</option>
@@ -52,6 +51,8 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
         <option value="tl" >tagaloga</option>
         <option value="uk" >ukraina</option>
     </select>
+    <input type="submit" name="_action_checkText" value="Kontroli tekston"/>
+    </div>
 </form>
 
 <h2>Elŝutado</h2>
