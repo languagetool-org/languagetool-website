@@ -93,22 +93,43 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
         <td valign="top">
 
           <ul style="padding-left: 20px">
+            <li>Cette version est une extension pour LibreOffice/OpenOffice.
+                 Elle signale les erreurs de grammaire mais pas les fautes
+                 d’orthographe puisque LibreOffice/OpenOffice peut déjà
+                 signaler les fautes d’orthographe en téléchargeant un
+                 <a href="http://extensions.services.openoffice.org/fr/dictionaries?">dictionnaire
+                 pour LibreOffice/OpenOffice</a>.</li>
             <li><strong>Nous recommandons fortement d’utiliser
-              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou plus récent) ou
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou plus récent),
-              car les versions plus anciennes ont un bug qui cause un long délai au démarrage</li>
-            <li>Utilisez <em>Outils… → Gestionnaire des extensions… → Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
-            <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extension</li>
-            <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais, choisissez :
-              <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
+                <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong>
+                (ou plus récent) ou <strong><a href="http://www.openoffice.org/download/">Apache
+                OpenOffice 3.4.1</a></strong> (ou plus récent), car les versions plus anciennes
+                ont un bug qui cause un long délai au démarrage.</li>
+            <li>Utilisez <em>Outils… → Gestionnaire des extensions… → Ajouter…</em> dans
+                LibreOffice/OpenOffice.org pour installer ce fichier.</li>
+            <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après
+                l’installation de l’extension.</li>
+            <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler
+                des textes en anglais, choisissez :
+                <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em>
+                pour désactiver LightProof et activer LanguageTool pour l’anglais.</li>
           </ul>
         </td>
         <td></td>
 
         <td valign="top">
           <ul style="padding-left: 20px">
-            <li>Dézippez le fichier et démarrez LanguageToolGUI.jar en double-cliquant dessus.
-              Voyez aussi les <?=show_link("autres manières d’utiliser LanguageTool", "../usage/", 0)?>.</li>
+            <li>Cette version est pour ceux qui désirent utiliser LanguageTool
+                en dehors de LibreOffice/OpenOffice en utilisant par exemple
+                l’interface graphique Java de LanguageTool, ou en ligne
+                de commande, ou comme serveur, ou intégrée à d’autres
+                applications telles que
+                l’<a href="http://www.vim.org/scripts/script.php?script_id=3223">éditeur de text Vim</a>.
+                Cette version signale non seulement les fautes de grammaire
+                mais aussi les fautes d’orthographe grâce à des dictionnaires
+                intégrés à LanguageTool.</li>
+            <li>Dézippez le fichier et démarrez LanguageToolGUI.jar en
+                double-cliquant dessus. Voyez aussi les
+                <?=show_link("autres manières d’utiliser LanguageTool", "../usage/", 0)?>.</li>
           </ul>
         </td>
       </tr>
