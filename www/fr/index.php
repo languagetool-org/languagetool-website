@@ -7,7 +7,7 @@ include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
-français, l’anglais, l’allemand, le polonais, le breton, l’espéranto, et <?=show_link("plus de 20 autres langues", "../languages/", 0) ?>.
+français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <?=show_link("plus de 20 autres langues", "../languages/", 0) ?>.
 Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simple correcteur orthographique
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
 accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
@@ -15,7 +15,7 @@ accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
 <p>LanguageTool trouve des erreurs en recherchant des motifs définis par des règles XML.
 Il est aussi possible de définir des règles en Java.</p>
 
-<h2 style="margin-top: 40px">Essayer LanguageTool en-ligne</h2>
+<h2 style="margin-top: 40px">Essayer LanguageTool en ligne</h2>
 
 <p>Utilisez LanguageTool <?=show_link("dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications", "../usage/", 0)?>
   ou essayez-le ici sur cette page :</p>
@@ -99,8 +99,8 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
               car les versions plus anciennes ont un bug qui cause un long délai au démarrage</li>
             <li>Utilisez <em>Outils… → Gestionnaire des extensions… → Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
             <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extension</li>
-            <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais :
-              Use <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
+            <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais, choisissez :
+              <em>Outils… → Options… → Paramètres linguistiques → Linquistique</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
           </ul>
         </td>
         <td></td>
@@ -127,7 +127,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 
 <img src="images/LanguageTool-LibreOffice.png" alt="LanguageTool (fr)"/>
 <p>Les fautes de grammaire trouvées par LanguageTool sous soulignées en bleu. Les fautes d’orthographe trouvées par le dictionnaire français de LibreOffice sont soulignées en rouge.</p>
-<p>Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical fonctionne correctement.</p>
+<p>Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical puisse fonctionner correctement en français.</p>
 
 <h3>License &amp; code source</h3>
 
