@@ -2,7 +2,7 @@
 $page = "pt";
 $title = "LanguageTool";
 $title2 = "Corrector Gramatical e de Estilo";
-$lastmod = "2013-01-05 11:27:00 CET";
+$lastmod = "2013-01-05 13:27:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 include("../../include/browser_language.php");
@@ -12,8 +12,8 @@ include("../../include/browser_language.php");
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
-<p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, Francês, Alemão, Polaco, Romeno, etc. Ele 
-descobre muitos erros que um simples corrector ortográfico não consegue detectar, 
+<p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc. Ele 
+encontra muitos erros que um simples corrector ortográfico não consegue detectar, 
 tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
 gramaticais.</strong></p>
 
@@ -34,14 +34,14 @@ include("../../include/checkform.php");
 ?>
 
 <p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.</strong> 
-Requer o ou acima:<br />
+Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima:<br />
 <strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Download</h2>
 
-<p>O LanguageTool requer o ou acima - recomendamos de momento o Java 6, visto 
+<p>O LanguageTool requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima - recomendamos de momento o Java 6, visto 
 alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7.
-<strong>Tens problemas? Por favor lê o .</strong></p>
+<strong>Tens problemas? Por favor lê o <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
@@ -86,7 +86,7 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Faz Unzip ao ficheiro e inicia o LanguageToolGUI.jar com um 
+            <li>Faz unzip ao ficheiro e inicia o LanguageToolGUI.jar com um 
 			duplo clique nele. Vê também <?=show_link("other ways to use LanguageTool", "../usage/", 0)?>.</li>
           </ul>
 
@@ -100,13 +100,14 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
 disponíveis em
 <?=show_link("the snapshot directory", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
- Versões antigas continuam disponíveis no .</p>
+ Versões antigas continuam disponíveis no <?=show_link("download directory", "download/", 0) ?>.</p>
 
 
 <h3>Licença &amp; Código Fonte</h3>
 
-<p>O LanguageTool está disponível gratuitamente sob o . O código-fonte está 
-disponível . O conteúdo desta homepage está disponível sob . </p>
+<p>O LanguageTool está disponível gratuitamente sob o <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
+O código-fonte está disponível <?=show_link("no SVN na Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
+O conteúdo desta homepage está disponível sob <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <?php
 include("../../include/footer.php");
