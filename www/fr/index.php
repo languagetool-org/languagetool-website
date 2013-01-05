@@ -24,37 +24,38 @@ Il est aussi possible de définir des règles en Java.</p>
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
         style="width:100%; max-width:700px;height:100px" name="text">Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.</textarea>
     <br />
-    <input type="submit" name="_action_checkText" value="Vérifier le texte"/>
-    Langue : <select name="lang" id="lang" >
-
-        <option value="auto">détection automatique</option>
-        <option value="en" >anglais</option>
-        <option value="ast" >asturien</option>
-        <option value="be" >biélorusse</option>
-        <option value="br" >breton</option>
-        <option value="zh" >chinois</option>
-        <option value="da" >danois</option>
-        <option value="eo" >espéranto</option>
-        <option selected value="fr" >français</option>
-        <option value="gl" >galicien</option>
-        <option value="de" >allemand</option>
-        <option value="es" >espagnol</option>
-        <option value="is" >islandais</option>
-        <option value="it" >italien</option>
-        <option value="ca" >catalan</option>
-        <option value="km" >khmer</option>
-        <option value="lt" >lituanien</option>
-        <option value="ml" >malayalam</option>
-        <option value="nl" >néerlandais</option>
-        <option value="pl" >polonais</option>
-        <option value="ro" >roumain</option>
-        <option value="ru" >russe</option>
-        <option value="sk" >slovaque</option>
-        <option value="sl" >slovène</option>
-        <option value="sv" >suédois</option>
-        <option value="tl" >tagalog</option>
-        <option value="uk" >ukrainien</option>
-    </select>
+    <div style="margin-top:4px; text-align: right">
+      Langue : <select name="lang" id="lang" >
+          <option value="auto">détection automatique</option>
+          <option value="en" >anglais</option>
+          <option value="ast" >asturien</option>
+          <option value="be" >biélorusse</option>
+          <option value="br" >breton</option>
+          <option value="zh" >chinois</option>
+          <option value="da" >danois</option>
+          <option value="eo" >espéranto</option>
+          <option selected value="fr" >français</option>
+          <option value="gl" >galicien</option>
+          <option value="de" >allemand</option>
+          <option value="es" >espagnol</option>
+          <option value="is" >islandais</option>
+          <option value="it" >italien</option>
+          <option value="ca" >catalan</option>
+          <option value="km" >khmer</option>
+          <option value="lt" >lituanien</option>
+          <option value="ml" >malayalam</option>
+          <option value="nl" >néerlandais</option>
+          <option value="pl" >polonais</option>
+          <option value="ro" >roumain</option>
+          <option value="ru" >russe</option>
+          <option value="sk" >slovaque</option>
+          <option value="sl" >slovène</option>
+          <option value="sv" >suédois</option>
+          <option value="tl" >tagalog</option>
+          <option value="uk" >ukrainien</option>
+      </select>
+      <input type="submit" name="_action_checkText" value="Vérifier le texte"/>
+    </div>
 </form>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
