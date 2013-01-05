@@ -21,8 +21,9 @@ Il est aussi possible de définir des règles en Java.</p>
   ou essayez-le ici sur cette page :</p>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
-        style="width:100%; max-width:700px;height:100px" name="text">Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.</textarea>
+    <textarea
+      onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
+        style="width:100%; height:100px" name="text">Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.</textarea>
     <br />
     <div style="margin-top:4px; text-align: right">
       Langue : <select name="lang" id="lang" >
