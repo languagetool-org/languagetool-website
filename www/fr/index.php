@@ -18,14 +18,14 @@ Il est aussi possible de définir des règles en Java.</p>
 <h2 style="margin-top: 40px">Essayer LanguageTool en-ligne</h2>
 
 <p>Utilisez LanguageTool <?=show_link("dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications", "../usage/", 0)?>
-  ou essayez le ici sur cette page :</p>
+  ou essayez-le ici sur cette page :</p>
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
     <textarea onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
         style="width:100%; max-width:700px;height:100px" name="text">Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.</textarea>
     <br />
     <input type="submit" name="_action_checkText" value="Vérifier le texte"/>
-    Lingvo: <select name="lang" id="lang" >
+    Langue : <select name="lang" id="lang" >
 
         <option value="auto">détection automatique</option>
         <option value="en" >anglais</option>
@@ -98,7 +98,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou plus récent),
               car les versions plus anciennes ont un bug qui cause un long délai au démarrage</li>
             <li>Utilisez <em>Outils -&gt; Gestionnaire des extensions… -&gt; Ajouter…</em> dans LibreOffice/OpenOffice.org pour installer ce fichier</li>
-            <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extention</li>
+            <li><strong>Redémarrer OpenOffice.org/LibreOffice</strong> après l’installation de l’extension</li>
             <li>Si vous utilisez LibreOffice 3.5.x et vous désirez contrôler des textes en anglais :
               Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> pour désactiver LightProof et activer LanguageTool pour l’anglais</li>
           </ul>
