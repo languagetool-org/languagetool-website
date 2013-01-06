@@ -106,7 +106,7 @@ disponíveis na
 <h3>Licença &amp; Código Fonte</h3>
 
 <p>O LanguageTool está disponível gratuitamente sob o <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-O código-fonte está disponível <?=show_link("no SVN na Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
+O código-fonte está disponível em <?=show_link("SVN na Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
 O conteúdo desta homepage está disponível sob o <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <?php
