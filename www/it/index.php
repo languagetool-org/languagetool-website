@@ -2,7 +2,7 @@
 $page = "it";
 $title = "LanguageTool";
 $title2 = "Correttore di Stile e Grammatica";
-$lastmod = "2013-01-05 17:48:00 CET";
+$lastmod = "2013-01-06 10:30:00 CET";
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
@@ -46,7 +46,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
            <?php
            $downloadTitle        = "Scarica LanguageTool";
            $downloadLabel        = "per LibreOffice/OpenOffice";
-           $downloadVersionLabel = "versione";
+           $downloadVersionLabel = "Versione";
            $downloadPath         = "/download";
            $downloadLabelMB      = "MB";
            include("../../include/download.php");
@@ -57,7 +57,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
            <?php
            $downloadTitleStandAlone = "Scarica LanguageTool";
            $downloadLabelStandAlone = "applicazione Java";
-           $downloadVersionLabelStandAlone = "versione";
+           $downloadVersionLabelStandAlone = "Versione";
            $downloadPathStandAlone  = "/download";
            $downloadLabelMB         = "MB";
            include("../../include/downloadStandAlone.php");
