@@ -35,7 +35,7 @@ include("../../include/checkform.php");
 
 <p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.</strong> 
 Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima:<br />
-<strong><?=show_link("Inicia o LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+<strong><?=show_link("Iniciar o LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Download</h2>
 
@@ -105,7 +105,7 @@ disponíveis na
 
 <h3>Licença &amp; Código Fonte</h3>
 
-<p>O LanguageTool está disponível gratuitamente sob o <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
+<p>O LanguageTool está disponível gratuitamente sob a <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
 O código-fonte está disponível em <?=show_link("SVN na Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
 O conteúdo desta homepage está disponível sob o <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
