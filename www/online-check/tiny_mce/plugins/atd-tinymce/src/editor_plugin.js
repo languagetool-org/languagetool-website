@@ -1,6 +1,7 @@
 /*
  * TinyMCE Writing Improvement Tool Plugin 
  * Author: Raphael Mudge (raffi@automattic.com)
+ * Modified by Daniel Naber for LanguageTool (http://www.languagetool.org)
  *
  * http://www.afterthedeadline.com
  *
@@ -26,7 +27,7 @@
          return 
          ({
 	    longname :  'After The Deadline',
-            author :    'Raphael Mudge',
+	    author :    'Raphael Mudge, Daniel Naber',
 	    authorurl : 'http://blog.afterthedeadline.com',
 	    infourl :   'http://www.afterthedeadline.com',
 	    version :   tinymce.majorVersion + "." + tinymce.minorVersion
@@ -104,6 +105,7 @@
 
          this.url    = url;
          this.editor = ed;
+         this.menuVisible = false;
          ed.core = core;
 
          /* look at the atd_ignore variable and put that stuff into a hash */
@@ -159,6 +161,9 @@
                   ed.suggestions = results.suggestions; 
                }
 
+               if (results.suggestions.length == 0) {
+                  ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No errors were found.'));
+               }
                /*if (ecount == 0 && (!callback || callback == undefined))
                   ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No writing errors were found.'));
                else if (callback)
@@ -269,6 +274,13 @@
 
             t._menu = m;
          }
+         
+         if (this.menuVisible) {
+             // second click: close popup again
+             m.hideMenu();
+             this.menuVisible = false;
+             return;
+         }
 
          if (ed.core.isMarkedNode(e.target))
          {
@@ -292,6 +304,9 @@
 
                for (var i = 0; i < errorDescription["suggestions"].length; i++)
                {
+                  if (i >= 5) {
+                      break;
+                  }
                   (function(sugg)
                    {
                       m.add({
@@ -394,12 +409,14 @@
             ed.selection.select(e.target);
             p1 = dom.getPos(e.target);
             m.showMenu(p1.x, p1.y + e.target.offsetHeight - vp.y);
+            this.menuVisible =  true;
 
             return tinymce.dom.Event.cancel(e);
          } 
          else
          {
             m.hideMenu();
+            this.menuVisible = false;
          }
       },
 
@@ -408,6 +425,8 @@
       {
          var t = this, ed = t.editor, dom = ed.dom, o;
 
+         this.menuVisible = false;
+          
          each(dom.select('span'), function(n) 
          {
             if (n && dom.hasClass(n, 'mceItemHidden'))
@@ -432,6 +451,7 @@
          if (plugin._menu)
          {
             plugin._menu.hideMenu();
+            this.menuVisible = false;
          }
 
          plugin.editor.nodeChanged();

@@ -185,7 +185,7 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["suggestions"] = [];
        var suggestionsStr = errors[i].getAttribute("replacements");
        if (suggestionsStr) {
-           suggestion["suggestions"] = suggestionsStr.split("#");
+           suggestion["suggestions"] = suggestionsStr;
        }
        var context = errors[i].getAttribute("context");
        var errorOffset = errors[i].getAttribute("offset");
