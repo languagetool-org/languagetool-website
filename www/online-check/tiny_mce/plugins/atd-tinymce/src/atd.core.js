@@ -118,7 +118,6 @@ AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
 	this.map(list, function(error) {
 		var tokens = error["word"].split(/\s+/);
 		var pre    = error["pre"];
-        // TODO: this creates an empty string for errors like " ," (space comma)
 		var first  = tokens[0];
 
 		if (errors['__' + first] == undefined) {      
@@ -141,8 +140,6 @@ AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
 
 AtDCore.prototype.buildErrorStructure = function(spellingList, enrichmentList, grammarList) {
 	var seps   = this._getSeparators();
-    // TODO: this doesn't work if the incorrect character is itself a separator (e.g. comma)
-	//var seps   = new Array();
 	var errors = {};
 
 	this.addToErrorStructure(errors, spellingList, "hiddenSpellError", seps);            
@@ -202,7 +199,7 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["string"]      = errorString;
        suggestion["offset"]      = errorOffset;
        suggestion["errorlength"] = errorLength;
-       suggestion["context"]     = "";    // TODO: word before wrong word!?
+       suggestion["context"]     = "";
        suggestion["type"]        = errors[i].getAttribute("category");
        var url = errors[i].getAttribute("url");
        if (url) {
@@ -247,114 +244,11 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 }
 // End of wrapper code by James Padolsey
 
-// TODO: remove once processXML works fine:
-AtDCore.prototype.processXMLOriginal = function(responseXML) {
-
-    //console.log(responseXML);
-
-	/* types of errors to ignore */
-	var types = {};
-
-	this.map(this.ignore_types, function(type) {
-		types[type] = 1;
-	});
-
-	/* save suggestions in the editor object */
-	this.suggestions = [];
-
-	/* process through the errors */
-	var errors = responseXML.getElementsByTagName('error');
-
-	/* words to mark */
-	var grammarErrors    = [];
-	var spellingErrors   = [];
-	var enrichment       = [];
-
-	for (var i = 0; i < errors.length; i++) {
-		if (errors[i].getElementsByTagName('string').item(0).firstChild != null) {
-			var errorString      = errors[i].getElementsByTagName('string').item(0).firstChild.data;
-			var errorType        = errors[i].getElementsByTagName('type').item(0).firstChild.data;
-			var errorDescription = errors[i].getElementsByTagName('description').item(0).firstChild.data;
-
-			var errorContext;
-
-			if (errors[i].getElementsByTagName('precontext').item(0).firstChild != null) 
-				errorContext = errors[i].getElementsByTagName('precontext').item(0).firstChild.data;   
-			else
-				errorContext = "";
-
-			/* create a hashtable with information about the error in the editor object, we will use this later
-			   to populate a popup menu with information and suggestions about the error */
-
-			if (this.ignore_strings[errorString] == undefined) {
-				var suggestion = {};
-				suggestion["description"] = errorDescription;
-				suggestion["suggestions"] = [];
-
-				/* used to find suggestions when a highlighted error is clicked on */
-				suggestion["matcher"]     = new RegExp('^' + errorString.replace(/\s+/, this._getSeparators()) + '$');
-
-				suggestion["context"]     = errorContext;
-				suggestion["string"]      = errorString;
-				suggestion["type"]        = errorType;
-
-				this.suggestions.push(suggestion);
-
-				if (errors[i].getElementsByTagName('suggestions').item(0) != undefined) {
-					var suggestions = errors[i].getElementsByTagName('suggestions').item(0).getElementsByTagName('option');
-					for (var j = 0; j < suggestions.length; j++)
-						suggestion["suggestions"].push(suggestions[j].firstChild.data);
-				}
-
-				/* setup the more info url */
-				if (errors[i].getElementsByTagName('url').item(0) != undefined) {
-					var errorUrl = errors[i].getElementsByTagName('url').item(0).firstChild.data;
-					suggestion["moreinfo"] = errorUrl + '&theme=tinymce';
-				}
-
-				if (types[errorDescription] == undefined) {
-					if (errorType == "suggestion")
-						enrichment.push({ word: errorString, pre: errorContext });
-
-					if (errorType == "grammar")
-						grammarErrors.push({ word: errorString, pre: errorContext });
-				}
-
-				if (errorType == "spelling" || errorDescription == "Homophone")
-					spellingErrors.push({ word: errorString, pre: errorContext });
-
-				if (errorDescription == 'Cliches')
-					suggestion["description"] = 'Clich&eacute;s'; /* done here for backwards compatability with current user settings */
-
-				if (errorDescription == "Spelling")
-					suggestion["description"] = this.getLang('menu_title_spelling', 'Spelling');
-
-				if (errorDescription == "Repeated Word")
-					suggestion["description"] = this.getLang('menu_title_repeated_word', 'Repeated Word');
-				
-				if (errorDescription == "Did you mean...")
-					suggestion["description"] = this.getLang('menu_title_confused_word', 'Did you mean...');
-			} // end if ignore[errorString] == undefined
-		} // end if 
-	} // end for loop
-
-	var errorStruct;
-        var ecount = spellingErrors.length + grammarErrors.length + enrichment.length;
-
-	if (ecount > 0)
-		errorStruct = this.buildErrorStructure(spellingErrors, enrichment, grammarErrors);
-	else
-		errorStruct = undefined;
-
-	/* save some state in this object, for retrieving suggestions later */
-	return { errors: errorStruct, count: ecount, suggestions: this.suggestions };
-};
-
 AtDCore.prototype.findSuggestion = function(element) {
         var text = element.innerHTML;
-    console.log("##findSuggestion text: " + text);
+    //console.log("##findSuggestion text: " + text);
     //console.log("##findSuggestion att: " + element.getAttribute("suggestions"));
-    console.log("##findSuggestion desc: " + element.getAttribute("desc"));
+    //console.log("##findSuggestion desc: " + element.getAttribute("desc"));
 
     var errorDescription = {};
     errorDescription["description"] = element.getAttribute("desc");
@@ -369,25 +263,6 @@ AtDCore.prototype.findSuggestion = function(element) {
         errorDescription["moreinfo"] = infoUrl;
     }
     return errorDescription;
-
-/*        var context = ( this.getAttrib(element, 'pre') + "" ).replace(/[\\,!\\?\\."\s]/g, '');
-        if (this.getAttrib(element, 'pre') == undefined)
-        {
-           alert(element.innerHTML);
-        }
-
-	var errorDescription = undefined;
-	var len = this.suggestions.length;
-   
-	for (var i = 0; i < len; i++) {
-		var key = this.suggestions[i]["string"];
-
-		if ((context == "" || context == this.suggestions[i]["context"]) && this.suggestions[i]["matcher"].test(text)) {
-			errorDescription = this.suggestions[i];
-			break;
-		}
-	}
-	return errorDescription;*/
 };
 
 /*
@@ -459,7 +334,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
 	/* Collect all text nodes */
 	/* Our goal--ignore nodes that are already wrapped */
 
-    console.log("========== MARK My WORDS =================");
+    //console.log("========== MARK My WORDS =================");
 
 	this._walk(container_nodes, function(n) {
 		if (n.nodeType == 3 && !parent.isMarkedNode(n))
@@ -473,12 +348,9 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
 
     this.map(nl, function(n) {
         if (n.nodeType == 3) {
-            //var newNode = parent.create(node.nodeValue.replace(regexp, result), false);
-            //var newNode = parent.create(node.nodeValue.replace(new RegExp("Sie"), result), false);
-            // TODO
             var nodeValue = n.nodeValue;
-            console.log("##------------------------------");
-            console.log("##nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ", type: " + n.nodeType + ")");
+            //console.log("##------------------------------");
+            //console.log("##nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ", type: " + n.nodeType + ")");
 
             var i;
             var cleanNodeValue = "";
@@ -487,12 +359,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                     cleanNodeValue += nodeValue.charAt(i);
                 }
             }
-            console.log("#>nodeValue: '" + cleanNodeValue + "' (len: " + cleanNodeValue.length + ")");
-
-            if (nodeValue.length == 1 && nodeValue.charCodeAt(0) == 65279) {
-                //console.log("##==> " + nodeValue.charCodeAt(0));
-                //nodeValue = "";
-            }
+            //console.log("#>nodeValue: '" + cleanNodeValue + "' (len: " + cleanNodeValue.length + ")");
             //console.log("##nodeValue: " + nodeValue + ", pos=" + pos + ", result " + result);
             //console.log("##suggestions.length: " + parent.suggestions.length);
             //console.log("##errors.length: " + errors.length);
@@ -512,7 +379,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                     //console.log("##: " + suggestion.offset + ">=" + currentNodeStart + " ... " + suggestionEnd +"<="+ currentNodeEnd);
                     if (suggestionStart >= currentNodeStart && suggestionEnd <= currentNodeEnd) {
                         var spanStart = suggestionStart - currentNodeStart;
-                        console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
+                        //console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
                         var spanEnd = suggestionEnd - currentNodeStart;
                         //console.log("##spanStart/end: " + spanStart + ", " + spanEnd);
                         /*if (newNode) {
@@ -537,7 +404,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                 }
             }
             var newNode = parent.create(newString, false);
-            console.log("##newString: '" + newString + "'");
+            //console.log("##newString: '" + newString + "'");
             parent.replaceWith(n, newNode);
 
             /*for (var key in errors) {
@@ -554,7 +421,6 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
             //var newNode = parent.create(nodeValue.replace(regExp, '<span class="hiddenGrammarError">$&</span>'), false);
         } else {
             console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
-
         }
     });
 
