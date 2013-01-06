@@ -765,7 +765,7 @@ AtDCore.prototype.isIE = function() {
                plugin.editor.setProgressState(0);
 
                /* if the server is not accepting requests, let the user know */
-               if (request.status != 200 || request.responseText.substr(1, 4) == 'html')
+               if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
                {
                   ed.windowManager.alert( plugin.editor.getLang('AtD.message_server_error', 'There was a problem communicating with the After the Deadline service. Try again in one minute.') );
                   return;
