@@ -26,10 +26,10 @@ Java.</p>
 <p>Usa o LanguageTool ou testa-o aqui:</p>
 
 <?php
-$checkSubmitButtonValue = "Check Text";
+$checkSubmitButtonValue = "Verificar Texto";
 $showLanguageBox = 1;
 $checkDefaultLang = "auto";
-$checkDefaultText = "Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.";
+$checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
 include("../../include/checkform.php");
 ?>
 
