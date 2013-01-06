@@ -88,68 +88,6 @@ AtDCore.prototype.showTypes = function(string) {
  * Error Parsing Code
  */
 
-AtDCore.prototype.makeError = function(error_s, tokens, type, seps, pre) {
-    error_s = RegExp.escape(error_s);
-	var struct = new Object();
-	struct.type = type;
-	struct.string = error_s;
-	struct.tokens = tokens;
-
-    console.log("~~" + error_s + "~~");
-	if (new RegExp("\\b" + error_s + "\\b").test(error_s)) {
-		struct.regexp = new RegExp("(?!"+error_s+"<)\\b" + error_s.replace(/\s+/g, seps) + "\\b");
-	}
-	else if (new RegExp(error_s + "\\b").test(error_s)) {
-		struct.regexp = new RegExp("(?!"+error_s+"<)" + error_s.replace(/\s+/g, seps) + "\\b");
-	}
-	else if (new RegExp("\\b" + error_s).test(error_s)) {
-		struct.regexp = new RegExp("(?!"+error_s+"<)\\b" + error_s.replace(/\s+/g, seps));
-	}
-	else {
-		struct.regexp = new RegExp("(?!"+error_s+"<)" + error_s.replace(/\s+/g, seps));
-	}
-
-	struct.used   = false; /* flag whether we've used this rule or not */
-
-	return struct;
-};
-
-AtDCore.prototype.addToErrorStructure = function(errors, list, type, seps) {
-	var parent = this;                  
-
-	this.map(list, function(error) {
-		var tokens = error["word"].split(/\s+/);
-		var pre    = error["pre"];
-		var first  = tokens[0];
-
-		if (errors['__' + first] == undefined) {      
-			errors['__' + first] = new Object();
-			errors['__' + first].pretoks  = {};
-			errors['__' + first].defaults = new Array();
-		}
-
-		if (pre == "") {
-            //console.log("LL " + tokens);
-			errors['__' + first].defaults.push(parent.makeError(error["word"], tokens, type, seps, pre));
-		} else {
-			if (errors['__' + first].pretoks['__' + pre] == undefined)
-				errors['__' + first].pretoks['__' + pre] = new Array();
-
-			errors['__' + first].pretoks['__' + pre].push(parent.makeError(error["word"], tokens, type, seps, pre));
-		}
-	});
-};
-
-AtDCore.prototype.buildErrorStructure = function(spellingList, enrichmentList, grammarList) {
-	var seps   = this._getSeparators();
-	var errors = {};
-
-	this.addToErrorStructure(errors, spellingList, "hiddenSpellError", seps);            
-	this.addToErrorStructure(errors, grammarList, "hiddenGrammarError", seps);
-	this.addToErrorStructure(errors, enrichmentList, "hiddenSuggestion", seps);
-	return errors;
-};
-
 AtDCore.prototype._getSeparators = function() {
 	var re = '', i;
 	var str = '"s!#$%&()*+,./:;<=>?@[\]^_{|}';
@@ -175,9 +113,8 @@ AtDCore.prototype.processXML = function(responseXML) {
    	var spellingErrors   = [];
    	var enrichment       = [];
 
-    var ecount = 0;
     var errors = responseXML.getElementsByTagName('error');
-   	for (var i = 0; i < errors.length; i++) {
+    for (var i = 0; i < errors.length; i++) {
        var suggestion = {};
        // I didn't manage to make the CSS break the text, so we add breaks with Javascript:
        suggestion["description"] = this._wordwrap(errors[i].getAttribute("msg"), 50, "<br/>");
@@ -193,8 +130,6 @@ AtDCore.prototype.processXML = function(responseXML) {
        var errorString = context.substr(startInContext, errorLength);
        var errorContext = "";
 
-       console.log("1>>>errorString: '" + errorString + "'");
-
        var replaceString = errorString.replace(/\s+/, this._getSeparators());
        replaceString = RegExp.escape(replaceString);
        suggestion["matcher"]     = new RegExp('^' + replaceString + '$');
@@ -203,30 +138,15 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["errorlength"] = errorLength;
        suggestion["context"]     = "";
        suggestion["type"]        = errors[i].getAttribute("category");
+       suggestion["ruleid"]        = errors[i].getAttribute("ruleId");
        var url = errors[i].getAttribute("url");
        if (url) {
            suggestion["moreinfo"] = url;
        }
        this.suggestions.push(suggestion);
-       var ruleId = errors[i].getAttribute("ruleId");
-       if (ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE" || ruleId.indexOf("MORFOLOGIK_RULE") == 0) {
-           spellingErrors.push({ word: errorString, pre: errorContext });
-       } else {
-           grammarErrors.push({ word: errorString, pre: errorContext });
-       }
-       ecount++;
     }
 
-    if (ecount > 0)
-   		errorStruct = this.buildErrorStructure(spellingErrors, enrichment, grammarErrors);
-   	else
-   		errorStruct = undefined;
-
-    //console.log("######" + errorStruct);
-    //console.log("######" + this.suggestions);
-    //console.log("######ecount: " + ecount);
-
-    return { errors: errorStruct, count: ecount, suggestions: this.suggestions };
+    return this.suggestions;
 };
 
 // Wrapper code by James Padolsey
@@ -242,16 +162,12 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 
     var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
 
-    return str.match( RegExp(regex, 'g') ).join( brk );
+    return str.match( new RegExp(regex, 'g') ).join( brk );
 };
 // End of wrapper code by James Padolsey
 
 AtDCore.prototype.findSuggestion = function(element) {
-        var text = element.innerHTML;
-    //console.log("##findSuggestion text: " + text);
-    //console.log("##findSuggestion att: " + element.getAttribute("suggestions"));
-    //console.log("##findSuggestion desc: " + element.getAttribute("desc"));
-
+    var text = element.innerHTML;
     var errorDescription = {};
     errorDescription["description"] = element.getAttribute("desc");
     var suggestions =  element.getAttribute("suggestions");
@@ -267,67 +183,10 @@ AtDCore.prototype.findSuggestion = function(element) {
     return errorDescription;
 };
 
-/*
- * TokenIterator class
- */
-
-function TokenIterator(tokens) {
-	this.tokens = tokens;
-	this.index  = 0;
-	this.count  = 0;
-	this.last   = 0;
-};
-
-TokenIterator.prototype.next = function() {
-	var current = this.tokens[this.index];
-	this.count = this.last;
-	this.last += current.length + 1;
-	this.index++;
-
-	/* strip single quotes from token, AtD does this when presenting errors */
-	if (current != "") {
-		if (current[0] == "'")
-			current = current.substring(1, current.length);
-
-		if (current[current.length - 1] == "'") 
-			current = current.substring(0, current.length - 1);
-	}
-
-	return current;
-};
-
-TokenIterator.prototype.hasNext = function() {
-	return this.index < this.tokens.length;
-};
-
-TokenIterator.prototype.hasNextN = function(n) {
-	return (this.index + n) < this.tokens.length;            
-};
-
-TokenIterator.prototype.skip = function(m, n) {
-	this.index += m;
-	this.last += n;
-
-	if (this.index < this.tokens.length)
-		this.count = this.last - this.tokens[this.index].length;
-};
-
-TokenIterator.prototype.getCount = function() {
-	return this.count;
-};
-
-TokenIterator.prototype.peek = function(n) {
-	var peepers = new Array();
-	var end = this.index + n;
-	for (var x = this.index; x < end; x++)
-		peepers.push(this.tokens[x]);
-	return peepers;
-};
-
 /* 
  *  code to manage highlighting of errors
  */
-AtDCore.prototype.markMyWords = function(container_nodes, errors) {           
+AtDCore.prototype.markMyWords = function(container_nodes) {
 	var seps  = new RegExp(this._getSeparators());
 	var nl = new Array();
 	var ecount = 0; /* track number of highlighted errors */
@@ -348,6 +207,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
 	var iterator;
     var pos = 0;
 
+    //var newText = "";
     this.map(nl, function(n) {
         if (n.nodeType == 3) {
             var nodeValue = n.nodeValue;
@@ -376,9 +236,18 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                         if (suggestion.moreinfo) {
                             urlAttribute = ' url="' + suggestion.moreinfo + '"';
                         }
+                        
+                        var ruleId = suggestion.ruleid;
+                        var cssName;
+                        if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
+                            cssName = "hiddenSpellError";
+                        }
+                        else {
+                            cssName = "hiddenGrammarError";
+                        }
 
                         newString = newString.substring(0, spanStart)
-                                + '<span class="hiddenGrammarError" desc="' + suggestion.description
+                                + '<span class="' + cssName + '" desc="' + suggestion.description
                                 + '" suggestions="' + suggestion.suggestions + '"'
                                 + urlAttribute
                                 + '>'
@@ -389,6 +258,7 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                     }
                 }
             }
+            //newText += newString;
             var newNode = parent.create(newString, false);
             //console.log("##newString: '" + newString + "'");
             parent.replaceWith(n, newNode);
@@ -397,6 +267,9 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
             //console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
         }
     });
+    
+    //tinyMCE.activeEditor.setContent('<span>' + newText + '</span>');
+    //console.log("========>"+newText);
 
 	return ecount;
 };
@@ -621,21 +494,14 @@ AtDCore.prototype.isIE = function() {
                }
 
                var results = core.processXML(request.responseXML);
-               var ecount  = 0;
 
-               if (results.count > 0)
-               {
-                  ecount = plugin.markMyWords(results.errors);
-                  ed.suggestions = results.suggestions; 
-               }
-
-               if (results.suggestions.length == 0) {
+               if (results.length == 0) {
                   ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No errors were found.'));
                }
-               /*if (ecount == 0 && (!callback || callback == undefined))
-                  ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No writing errors were found.'));
-               else if (callback)
-                  callback(ecount);*/
+               else {
+                  plugin.markMyWords();
+                  ed.suggestions = results; 
+               }
             });
          });
           
@@ -712,12 +578,12 @@ AtDCore.prototype.isIE = function() {
          se.moveToBookmark(b);
       },
 
-      markMyWords : function(errors)
+      markMyWords : function()
       {
          var ed  = this.editor;
          var se = ed.selection, b = se.getBookmark();
 
-         var ecount = ed.core.markMyWords(ed.core.contents(this.editor.getBody()), errors);
+         var ecount = ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
 
          se.moveToBookmark(b);
          return ecount;

@@ -1,5 +1,6 @@
 <?php
 // LanguageTool Proxy Script
+// requires curl for PHP - on Ubuntu, install with "sudo apt-get install php5-curl"
 error_reporting(E_ALL);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $postText = trim(file_get_contents('php://input'));

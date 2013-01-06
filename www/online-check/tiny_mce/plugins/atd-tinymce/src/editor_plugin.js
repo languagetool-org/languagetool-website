@@ -153,21 +153,14 @@
                }
 
                var results = core.processXML(request.responseXML);
-               var ecount  = 0;
 
-               if (results.count > 0)
-               {
-                  ecount = plugin.markMyWords(results.errors);
-                  ed.suggestions = results.suggestions; 
-               }
-
-               if (results.suggestions.length == 0) {
+               if (results.length == 0) {
                   ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No errors were found.'));
                }
-               /*if (ecount == 0 && (!callback || callback == undefined))
-                  ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No writing errors were found.'));
-               else if (callback)
-                  callback(ecount);*/
+               else {
+                  plugin.markMyWords();
+                  ed.suggestions = results; 
+               }
             });
          });
           
@@ -244,12 +237,12 @@
          se.moveToBookmark(b);
       },
 
-      markMyWords : function(errors)
+      markMyWords : function()
       {
          var ed  = this.editor;
          var se = ed.selection, b = se.getBookmark();
 
-         var ecount = ed.core.markMyWords(ed.core.contents(this.editor.getBody()), errors);
+         var ecount = ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
 
          se.moveToBookmark(b);
          return ecount;
