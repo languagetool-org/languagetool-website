@@ -43,24 +43,23 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
     <table width="100%">
       <tr>
         <td>
-          <strong>Versione per LibreOffice/OpenOffice</strong>
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
-        <td>
-          <strong>Applicazione java</strong>
-        </td>
-      </tr>        
-      <tr>
-        <td>
            <?php
-           $downloadPath = "download";
+           $downloadTitle        = "Scarica LanguageTool";
+           $downloadLabel        = "per LibreOffice/OpenOffice";
+           $downloadVersionLabel = "versione";
+           $downloadPath         = "/download";
+           $downloadLabelMB      = "MB";
            include("../../include/download.php");
            ?>
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
-           $downloadPath = "download";
+           $downloadTitleStandAlone = "Scarica LanguageTool";
+           $downloadLabelStandAlone = "applicazione Java";
+           $downloadVersionLabelStandAlone = "versione";
+           $downloadPathStandAlone  = "/download";
+           $downloadLabelMB         = "MB";
            include("../../include/downloadStandAlone.php");
            ?>
         </td>
