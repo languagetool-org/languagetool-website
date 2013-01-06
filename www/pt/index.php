@@ -97,8 +97,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
 </div>
 
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
-disponíveis em
-<?=show_link("a directoria de snapshots", "../download/snapshots/?C=M;O=D", 0) ?>
+disponíveis na
+<?=show_link("directoria de snapshots", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
  Versões antigas continuam disponíveis na <?=show_link("directoria de download", "../download/", 0) ?>.</p>
 
