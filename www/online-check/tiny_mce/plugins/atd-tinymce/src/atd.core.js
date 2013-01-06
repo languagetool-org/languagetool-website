@@ -1,9 +1,12 @@
 /*
  * atd.core.js - A building block to create a front-end for AtD
- * Author      : Raphael Mudge, Automattic
+ * Author      : Raphael Mudge, Automattic; Daniel Naber, LanguageTool.org
  * License     : LGPL
  * Project     : http://www.afterthedeadline.com/developers.slp
  * Contact     : raffi@automattic.com
+ *
+ * Note: this has been simplified for use with LanguageTool - it now assumes there's no markup 
+ * anymore in the text field (not even bold etc)!
  */
 
 /* EXPORTED_SYMBOLS is set so this file can be a JavaScript Module */
@@ -11,14 +14,13 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 
 function AtDCore() {
 	/* these are the categories of errors AtD should ignore */
-	this.ignore_types = ['Bias Language', 'Cliches', 'Complex Expression', 'Diacritical Marks', 'Double Negatives', 'Hidden Verbs', 'Jargon Language', 'Passive voice', 'Phrases to Avoid', 'Redundant Expression'];
+	this.ignore_types = [];
 
 	/* these are the phrases AtD should ignore */
 	this.ignore_strings = {};
 
 	/* Localized strings */
 	this.i18n = {};
-
 };
 
 /*
@@ -162,7 +164,7 @@ AtDCore.prototype._getSeparators = function() {
 // source: http://simonwillison.net/2006/Jan/20/escape/ (modified to not escape \s)
 RegExp.escape = function(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
-}
+};
 
 AtDCore.prototype.processXML = function(responseXML) {
 
@@ -220,12 +222,12 @@ AtDCore.prototype.processXML = function(responseXML) {
    	else
    		errorStruct = undefined;
 
-    console.log("######" + errorStruct);
-    console.log("######" + this.suggestions);
-    console.log("######ecount: " + ecount);
+    //console.log("######" + errorStruct);
+    //console.log("######" + this.suggestions);
+    //console.log("######ecount: " + ecount);
 
     return { errors: errorStruct, count: ecount, suggestions: this.suggestions };
-}
+};
 
 // Wrapper code by James Padolsey
 // Source: http://james.padolsey.com/javascript/wordwrap-for-javascript/
@@ -241,7 +243,7 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
     var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
 
     return str.match( RegExp(regex, 'g') ).join( brk );
-}
+};
 // End of wrapper code by James Padolsey
 
 AtDCore.prototype.findSuggestion = function(element) {
@@ -351,20 +353,13 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
             var nodeValue = n.nodeValue;
             //console.log("##------------------------------");
             //console.log("##nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ", type: " + n.nodeType + ")");
-
             var i;
             var cleanNodeValue = "";
             for (i = 0; i < nodeValue.length; i++) {
-                if (nodeValue.charCodeAt(i) != 65279) {
+                if (nodeValue.charCodeAt(i) != 65279) {   // cursor has its own node, ignore it
                     cleanNodeValue += nodeValue.charAt(i);
                 }
             }
-            //console.log("#>nodeValue: '" + cleanNodeValue + "' (len: " + cleanNodeValue.length + ")");
-            //console.log("##nodeValue: " + nodeValue + ", pos=" + pos + ", result " + result);
-            //console.log("##suggestions.length: " + parent.suggestions.length);
-            //console.log("##errors.length: " + errors.length);
-
-            //var newNode;
             var newString = cleanNodeValue;
             for (var suggestionIndex = parent.suggestions.length-1; suggestionIndex >= 0; suggestionIndex--) {
                 var suggestion = parent.suggestions[suggestionIndex];
@@ -373,19 +368,10 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
                     var currentNodeEnd = pos + nodeValue.length;
                     var suggestionStart = parseInt(suggestion.offset);
                     var suggestionEnd = suggestionStart + parseInt(suggestion.errorlength);
-                    //console.log("##suggestion desc: " + suggestion.description);
-                    //console.log("##suggestion offset: " + suggestion.offset + ", len: " + suggestion.errorlength);
-                    //console.log("##currentNodeStart/currentNodeEnd: " + currentNodeStart + ", " + currentNodeEnd);
-                    //console.log("##: " + suggestion.offset + ">=" + currentNodeStart + " ... " + suggestionEnd +"<="+ currentNodeEnd);
                     if (suggestionStart >= currentNodeStart && suggestionEnd <= currentNodeEnd) {
                         var spanStart = suggestionStart - currentNodeStart;
                         //console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
                         var spanEnd = suggestionEnd - currentNodeStart;
-                        //console.log("##spanStart/end: " + spanStart + ", " + spanEnd);
-                        /*if (newNode) {
-                            console.log("##newNode: " + newNode.nodeValue);
-                        }*/
-                        //console.log("#################: " + suggestion.moreinfo);
                         var urlAttribute = "";
                         if (suggestion.moreinfo) {
                             urlAttribute = ' url="' + suggestion.moreinfo + '"';
@@ -406,21 +392,9 @@ AtDCore.prototype.markMyWords = function(container_nodes, errors) {
             var newNode = parent.create(newString, false);
             //console.log("##newString: '" + newString + "'");
             parent.replaceWith(n, newNode);
-
-            /*for (var key in errors) {
-                var error = errors[key];
-                if (!error.used) {
-                    error.used = true;
-                    console.log("##error: " + error.offset + ", l: " + error.errorlength);
-                }
-            }*/
-            //console.log("##nodeValue: " + nodeValue + ", pos=" + pos);
-            //pos += nodeValue.length;
             pos += cleanNodeValue.length;
-            //console.log("##POS: " + pos + " len " + nodeValue.length + " for '" + nodeValue + "' w/ code " + nodeValue.charCodeAt());
-            //var newNode = parent.create(nodeValue.replace(regExp, '<span class="hiddenGrammarError">$&</span>'), false);
         } else {
-            console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
+            //console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
         }
     });
 
