@@ -221,6 +221,8 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
                 }
             }
             var newString = cleanNodeValue;
+            var previousSpanStart = -1;
+            // as we modify the string we work backwards so we don't mess with the positions:
             for (var suggestionIndex = parent.suggestions.length-1; suggestionIndex >= 0; suggestionIndex--) {
                 var suggestion = parent.suggestions[suggestionIndex];
                 if (!suggestion.used) {
@@ -232,6 +234,12 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
                         var spanStart = suggestionStart - currentNodeStart;
                         //console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
                         var spanEnd = suggestionEnd - currentNodeStart;
+                        if (previousSpanStart != -1 && spanEnd >= previousSpanStart) {
+                            // overlapping errors - these are not supported by our underline approach,
+                            // as we would need overlapping <span>s for that, so skip the error:
+                            continue;
+                        }
+                        previousSpanStart = spanStart;                        
                         var urlAttribute = "";
                         if (suggestion.moreinfo) {
                             urlAttribute = ' url="' + suggestion.moreinfo + '"';
@@ -245,7 +253,6 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
                         else {
                             cssName = "hiddenGrammarError";
                         }
-
                         newString = newString.substring(0, spanStart)
                                 + '<span class="' + cssName + '" desc="' + suggestion.description
                                 + '" suggestions="' + suggestion.suggestions + '"'
