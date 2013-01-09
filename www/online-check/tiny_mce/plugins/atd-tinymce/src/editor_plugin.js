@@ -242,6 +242,20 @@
          se.moveToBookmark(b);
       },
 
+      _removeWordsByRuleId : function(ruleId) 
+      {
+         var ed = this.editor, dom = ed.dom, se = ed.selection, b = se.getBookmark();
+
+         ed.core.removeWordsByRuleId(undefined, ruleId);
+
+         /* force a rebuild of the DOM... even though the right elements are stripped, the DOM is still organized
+            as if the span were there and this breaks my code */
+
+         dom.setHTML(dom.getRoot(), dom.getRoot().innerHTML);
+
+         se.moveToBookmark(b);
+      },
+
       markMyWords : function()
       {
          var ed  = this.editor;
@@ -398,10 +412,12 @@
             else
             {
                 m.add({
-                  title : plugin.editor.getLang('menu_option_ignore_all', 'Ignore all'),
+                  title : plugin.editor.getLang('menu_option_ignore_all', 'Ignore this kind of error'),
                   onclick : function() 
                   {
-                     t._removeWords(e.target.innerHTML);
+                     var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
+                     var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
+                     t._removeWordsByRuleId(ruleId);
                      t._checkDone();
                   }
                });

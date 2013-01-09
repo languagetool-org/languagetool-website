@@ -12,6 +12,16 @@
 /* EXPORTED_SYMBOLS is set so this file can be a JavaScript Module */
 var EXPORTED_SYMBOLS = ['AtDCore'];
 
+//
+// TODO:
+// 1. cursor position gets lost on check
+// 2. "ignore" and "ignore this kind of error" only works until the next check
+//
+// fixed: "ignore all" doesn't work
+// fixed: current cursor position is ignored when incorrect (it has its own node)
+// fixed: text with markup (even bold) messes up everything
+//
+
 function AtDCore() {
 	/* these are the categories of errors AtD should ignore */
 	this.ignore_types = [];
@@ -132,11 +142,8 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
     brk = brk || '\n';
     width = width || 75;
     cut = cut || false;
-
     if (!str) { return str; }
-
     var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
-
     return str.match( new RegExp(regex, 'g') ).join( brk );
 };
 // End of wrapper code by James Padolsey
@@ -144,17 +151,17 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 AtDCore.prototype.findSuggestion = function(element) {
     var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
-    var metaInfoElements = metaInfo.split(this.surrogateAttributeDelimiter);
     var errorDescription = {};
-    errorDescription["description"] = metaInfoElements[0];
-    var suggestions = metaInfoElements[1];
+    errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
+    var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
         errorDescription["suggestions"] = suggestions.split("#");
     } else {
         errorDescription["suggestions"] = "";
     }
-    if (metaInfoElements.length == 3) {
-        errorDescription["moreinfo"] = metaInfoElements[2];
+    var url = this.getSurrogatePart(metaInfo, 'url');
+    if (url) {
+        errorDescription["moreinfo"] = url;
     }
     return errorDescription;
 };
@@ -188,9 +195,10 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
                 cssName = "hiddenGrammarError";
             }
             // TODO: escape metaInfo!?
-            var metaInfo = suggestion.description + this.surrogateAttributeDelimiter + suggestion.suggestions;
+            var delim = this.surrogateAttributeDelimiter;
+            var metaInfo = ruleId + delim + suggestion.description + delim + suggestion.suggestions;
             if (suggestion.moreinfo) {
-                metaInfo += this.surrogateAttributeDelimiter + suggestion.moreinfo;
+                metaInfo += delim + suggestion.moreinfo;
             }
             newText = newText.substring(0, spanStart)
                     + '<span ' + this.surrogateAttribute + '="' + metaInfo + '" class="' + cssName + '">'
@@ -202,23 +210,27 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
     }
     
     tinyMCE.activeEditor.setContent(newText);
-    
-    //
-    // TODO??:
-    // 1. "ignore all" doesn't work
-    // 2. text with markup (even bold) messes up everything
-    // 3. cursor position gets lost on check
-    // 4. "ignore" only works until the next check
-    //
-    // fixed:. current cursor position is ignored when incorrect (it has its own node)
-    //
+};
+
+AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
+    var parts = surrogateString.split(this.surrogateAttributeDelimiter);
+    if (part == 'id') {
+        return parts[0];
+    } else if (part == 'description') {
+        return parts[1];
+    } else if (part == 'suggestions') {
+        return parts[2];
+    } else if (part == 'url' && parts.length >= 3) {
+        return parts[3];
+    }
+    return null;
 };
 
 AtDCore.prototype.getText = function() {
     return tinyMCE.activeEditor.getContent({ format: 'text' }).replace(/<.*?>/g, "").replace(/\ufeff/g, "");  // feff = 65279 = cursor code
 };
 
-AtDCore.prototype.removeWords = function(node, w) {   
+AtDCore.prototype.removeWords = function(node, w) {
 	var count = 0;
 	var parent = this;
 
@@ -232,6 +244,29 @@ AtDCore.prototype.removeWords = function(node, w) {
 				parent.removeParent(n);
 				count++;
 			}
+		}
+	});
+
+	return count;
+};
+
+AtDCore.prototype.removeWordsByRuleId = function(node, ruleId) {
+	var count = 0;
+	var parent = this;
+
+	this.map(this.findSpans(node).reverse(), function(n) {
+		if (n && (parent.isMarkedNode(n) || parent.hasClass(n, 'mceItemHidden') || parent.isEmptySpan(n)) ) {
+			if (n.innerHTML == '&nbsp;') {
+				var nnode = document.createTextNode(' '); /* hax0r */
+				parent.replaceWith(n, nnode);
+			}
+			else {
+        var surrogate = n.getAttribute(parent.surrogateAttribute);
+        if (!ruleId || (surrogate && parent.getSurrogatePart(surrogate, 'id') == ruleId)) {
+            parent.removeParent(n);
+            count++;
+        }
+      }
 		}
 	});
 
