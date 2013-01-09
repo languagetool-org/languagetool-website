@@ -135,8 +135,7 @@
             plugin._removeWords();
 
             /* send request to our service */
-            //plugin.sendRequest('checkDocument', ed.getContent({ format: 'raw' }), function(data, request, someObject)
-            var textContent = ed.getContent().replace(/<.*?>/g, "");
+            var textContent = plugin.editor.core.getText();
             plugin.sendRequest('checkDocument', textContent, languageCode, function(data, request, someObject)
             {
                /* turn off the spinning thingie */

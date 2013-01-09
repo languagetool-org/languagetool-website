@@ -27,8 +27,6 @@ function AtDCore() {
      */
     this.surrogateAttribute = "onkeypress";
     this.surrogateAttributeDelimiter = "---#---";
-    
-    this.newText = "";
 };
 
 /*
@@ -165,8 +163,7 @@ AtDCore.prototype.findSuggestion = function(element) {
  * code to manage highlighting of errors
  */
 AtDCore.prototype.markMyWords = function(container_nodes) {
-    this.newText = "";
-    this._walkNodesAndSetText(container_nodes);
+    var newText = this.getText();
     
     var previousSpanStart = -1;
     // iterate backwards as we change the text and thus modify positions:
@@ -195,16 +192,16 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
             if (suggestion.moreinfo) {
                 metaInfo += this.surrogateAttributeDelimiter + suggestion.moreinfo;
             }
-            this.newText = this.newText.substring(0, spanStart)
+            newText = newText.substring(0, spanStart)
                     + '<span ' + this.surrogateAttribute + '="' + metaInfo + '" class="' + cssName + '">'
-                    + this.newText.substring(spanStart, spanEnd)
+                    + newText.substring(spanStart, spanEnd)
                     + '</span>'
-                    + this.newText.substring(spanEnd);
+                    + newText.substring(spanEnd);
             suggestion.used = true;
         }
     }
     
-    tinyMCE.activeEditor.setContent(this.newText);
+    tinyMCE.activeEditor.setContent(newText);
     
     //
     // TODO??:
@@ -217,27 +214,8 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
     //
 };
 
-AtDCore.prototype._walk = function(elements, f) {
-	var i;
-	for (i = 0; i < elements.length; i++) {
-		f.call(f, elements[i]);
-		this._walk(this.contents(elements[i]), f);
-	}
-};
-
-AtDCore.prototype._walkNodesAndSetText = function(elements) {
-    var i;
-    for (i = 0; i < elements.length; i++) {
-        var node = elements[i];
-        if (node.nodeType == 1) {
-            this._walkNodesAndSetText(this.contents(node));
-        } else if (node.nodeType == 3) {
-            if (node.nodeValue.length == 1 && node.nodeValue.charCodeAt(0) == 65279) {   // cursor has its own node, ignore it
-                continue;
-            }
-            this.newText += node.nodeValue;
-        }
-    }
+AtDCore.prototype.getText = function() {
+    return tinyMCE.activeEditor.getContent({ format: 'text' }).replace(/<.*?>/g, "").replace(/\ufeff/g, "");  // feff = 65279 = cursor code
 };
 
 AtDCore.prototype.removeWords = function(node, w) {   
