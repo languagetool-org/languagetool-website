@@ -36,7 +36,7 @@ include("../../include/header.php");
 
 <h2>Funktionen</h2>
 
-LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1400</a> Fehler in deutschsprachigen Texten:<br/><br/>
+LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1700</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
 <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
