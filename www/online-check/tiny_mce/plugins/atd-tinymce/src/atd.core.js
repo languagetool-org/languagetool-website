@@ -92,21 +92,6 @@ AtDCore.prototype.showTypes = function(string) {
         this.ignore_types = ignore_types;
 };
 
-/* 
- * Error Parsing Code
- */
-
-AtDCore.prototype._getSeparators = function() {
-	var re = '', i;
-	var str = '"s!#$%&()*+,./:;<=>?@[\]^_{|}';
-
-	// Build word separator regexp
-	for (i=0; i<str.length; i++)
-		re += '\\' + str.charAt(i);
-
-	return "(?:(?:[\xa0" + re  + "])|(?:\\-\\-))+";
-};        
-
 // source: http://simonwillison.net/2006/Jan/20/escape/ (modified to not escape \s)
 RegExp.escape = function(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
@@ -115,12 +100,6 @@ RegExp.escape = function(text) {
 AtDCore.prototype.processXML = function(responseXML) {
 
     this.suggestions = [];
-
-   	/* words to mark */
-   	var grammarErrors    = [];
-   	var spellingErrors   = [];
-   	var enrichment       = [];
-
     var errors = responseXML.getElementsByTagName('error');
     for (var i = 0; i < errors.length; i++) {
        var suggestion = {};
@@ -131,22 +110,12 @@ AtDCore.prototype.processXML = function(responseXML) {
        if (suggestionsStr) {
            suggestion["suggestions"] = suggestionsStr;
        }
-       var context = errors[i].getAttribute("context");
        var errorOffset = parseInt(errors[i].getAttribute("offset"));
        var errorLength = parseInt(errors[i].getAttribute("errorlength"));
-       var startInContext = errors[i].getAttribute("contextoffset");
-       var errorString = context.substr(startInContext, errorLength);
-       var errorContext = "";
-
-       var replaceString = errorString.replace(/\s+/, this._getSeparators());  // TODO: delete???
-       replaceString = RegExp.escape(replaceString);
-       suggestion["matcher"]     = new RegExp('^' + replaceString + '$');
-       suggestion["string"]      = errorString;
        suggestion["offset"]      = errorOffset;
        suggestion["errorlength"] = errorLength;
-       suggestion["context"]     = "";
        suggestion["type"]        = errors[i].getAttribute("category");
-       suggestion["ruleid"]        = errors[i].getAttribute("ruleId");
+       suggestion["ruleid"]      = errors[i].getAttribute("ruleId");
        var url = errors[i].getAttribute("url");
        if (url) {
            suggestion["moreinfo"] = url;
@@ -177,7 +146,7 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 AtDCore.prototype.findSuggestion = function(element) {
     var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
-    var metaInfoElements = metaInfo.split(this.surrogateAttributeDelimiter)
+    var metaInfoElements = metaInfo.split(this.surrogateAttributeDelimiter);
     var errorDescription = {};
     errorDescription["description"] = metaInfoElements[0];
     var suggestions = metaInfoElements[1];
@@ -242,6 +211,8 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
     // 1. "ignore all" doesn't work
     // 2. text with markup (even bold) messes up everything
     // 3. cursor position gets lost on check
+    // 4. "ignore" only works until the next check
+    //
     // fixed:. current cursor position is ignored when incorrect (it has its own node)
     //
 };
