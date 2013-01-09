@@ -119,6 +119,10 @@
          /* add a command to request a document check and process the results. */
          editor.addCommand('mceWritingImprovementTool', function(languageCode)
          {
+             
+            if (plugin.menuVisible) {
+              plugin._menu.hideMenu();
+            }
 
             /* checks if a global var for click stats exists and increments it if it does... */
             if (typeof AtD_proofread_click_count != "undefined")
@@ -178,7 +182,9 @@
 	 editor.onClick.add(plugin._showMenu, plugin);
 
          /* we're showing some sort of menu, no idea what */
-	 editor.onContextMenu.add(plugin._showMenu, plugin);
+         //editor.onContextMenu.add(plugin._showMenu, plugin);
+         // without this, the context menu opens but nothing in it can be selected:
+         editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
 
          /* strip out the markup before the contents is serialized (and do it on a copy of the markup so we don't affect the user experience) */
          editor.onPreProcess.add(function(sender, object) 
@@ -242,12 +248,16 @@
          var ed  = this.editor;
          var se = ed.selection, b = se.getBookmark();
 
-         var ecount = ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
+         ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
 
          se.moveToBookmark(b);
-         return ecount;
       },
 
+      _doNotShowMenu : function(ed, e) 
+      {
+        return tinymce.dom.Event.cancel(e);
+      },
+       
       _showMenu : function(ed, e) 
       {
          var t = this, ed = t.editor, m = t._menu, p1, dom = ed.dom, vp = dom.getViewPort(ed.getWin());
@@ -439,7 +449,7 @@
       _done : function() 
       {
          var plugin    = this;
-         plugin._removeWords();
+         //plugin._removeWords();
 
          if (plugin._menu)
          {

@@ -21,6 +21,14 @@ function AtDCore() {
 
 	/* Localized strings */
 	this.i18n = {};
+    
+    /* We have to mis-use an existing valid HTML attribute to get our meta information
+     * about errors in the text:
+     */
+    this.surrogateAttribute = "onkeypress";
+    this.surrogateAttributeDelimiter = "---#---";
+    
+    this.newText = "";
 };
 
 /*
@@ -124,13 +132,13 @@ AtDCore.prototype.processXML = function(responseXML) {
            suggestion["suggestions"] = suggestionsStr;
        }
        var context = errors[i].getAttribute("context");
-       var errorOffset = errors[i].getAttribute("offset");
-       var errorLength = errors[i].getAttribute("errorlength");
+       var errorOffset = parseInt(errors[i].getAttribute("offset"));
+       var errorLength = parseInt(errors[i].getAttribute("errorlength"));
        var startInContext = errors[i].getAttribute("contextoffset");
        var errorString = context.substr(startInContext, errorLength);
        var errorContext = "";
 
-       var replaceString = errorString.replace(/\s+/, this._getSeparators());
+       var replaceString = errorString.replace(/\s+/, this._getSeparators());  // TODO: delete???
        replaceString = RegExp.escape(replaceString);
        suggestion["matcher"]     = new RegExp('^' + replaceString + '$');
        suggestion["string"]      = errorString;
@@ -168,117 +176,74 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 
 AtDCore.prototype.findSuggestion = function(element) {
     var text = element.innerHTML;
+    var metaInfo = element.getAttribute(this.surrogateAttribute);
+    var metaInfoElements = metaInfo.split(this.surrogateAttributeDelimiter)
     var errorDescription = {};
-    errorDescription["description"] = element.getAttribute("desc");
-    var suggestions =  element.getAttribute("suggestions");
+    errorDescription["description"] = metaInfoElements[0];
+    var suggestions = metaInfoElements[1];
     if (suggestions) {
         errorDescription["suggestions"] = suggestions.split("#");
     } else {
         errorDescription["suggestions"] = "";
     }
-    var infoUrl =  element.getAttribute("url");
-    if (infoUrl) {
-        errorDescription["moreinfo"] = infoUrl;
+    if (metaInfoElements.length == 3) {
+        errorDescription["moreinfo"] = metaInfoElements[2];
     }
     return errorDescription;
 };
 
 /* 
- *  code to manage highlighting of errors
+ * code to manage highlighting of errors
  */
 AtDCore.prototype.markMyWords = function(container_nodes) {
-	var seps  = new RegExp(this._getSeparators());
-	var nl = new Array();
-	var ecount = 0; /* track number of highlighted errors */
-	var parent = this;
-
-	/* Collect all text nodes */
-	/* Our goal--ignore nodes that are already wrapped */
-
-    //console.log("========== MARK My WORDS =================");
-
-	this._walk(container_nodes, function(n) {
-		if (n.nodeType == 3 && !parent.isMarkedNode(n))
-			nl.push(n);
-	});
- 
-	/* walk through the relevant nodes */  
-   
-	var iterator;
-    var pos = 0;
-
-    //var newText = "";
-    this.map(nl, function(n) {
-        if (n.nodeType == 3) {
-            var nodeValue = n.nodeValue;
-            //console.log("##------------------------------");
-            //console.log("##nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ", type: " + n.nodeType + ")");
-            var i;
-            var cleanNodeValue = "";
-            for (i = 0; i < nodeValue.length; i++) {
-                if (nodeValue.charCodeAt(i) != 65279) {   // cursor has its own node, ignore it
-                    cleanNodeValue += nodeValue.charAt(i);
-                }
-            }
-            var newString = cleanNodeValue;
-            var previousSpanStart = -1;
-            // as we modify the string we work backwards so we don't mess with the positions:
-            for (var suggestionIndex = parent.suggestions.length-1; suggestionIndex >= 0; suggestionIndex--) {
-                var suggestion = parent.suggestions[suggestionIndex];
-                if (!suggestion.used) {
-                    var currentNodeStart = pos;
-                    var currentNodeEnd = pos + nodeValue.length;
-                    var suggestionStart = parseInt(suggestion.offset);
-                    var suggestionEnd = suggestionStart + parseInt(suggestion.errorlength);
-                    if (suggestionStart >= currentNodeStart && suggestionEnd <= currentNodeEnd) {
-                        var spanStart = suggestionStart - currentNodeStart;
-                        //console.log("pos: " + pos + ", spanStart: " + suggestionStart + " - " + currentNodeStart +  " + 1 => " + spanStart);
-                        var spanEnd = suggestionEnd - currentNodeStart;
-                        if (previousSpanStart != -1 && spanEnd >= previousSpanStart) {
-                            // overlapping errors - these are not supported by our underline approach,
-                            // as we would need overlapping <span>s for that, so skip the error:
-                            continue;
-                        }
-                        previousSpanStart = spanStart;                        
-                        var urlAttribute = "";
-                        if (suggestion.moreinfo) {
-                            urlAttribute = ' url="' + suggestion.moreinfo + '"';
-                        }
-                        
-                        var ruleId = suggestion.ruleid;
-                        var cssName;
-                        if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
-                            cssName = "hiddenSpellError";
-                        }
-                        else {
-                            cssName = "hiddenGrammarError";
-                        }
-                        newString = newString.substring(0, spanStart)
-                                + '<span class="' + cssName + '" desc="' + suggestion.description
-                                + '" suggestions="' + suggestion.suggestions + '"'
-                                + urlAttribute
-                                + '>'
-                                + newString.substring(spanStart, spanEnd)
-                                + '</span>'
-                                + newString.substring(spanEnd);
-                        suggestion.used = true;
-                    }
-                }
-            }
-            //newText += newString;
-            var newNode = parent.create(newString, false);
-            //console.log("##newString: '" + newString + "'");
-            parent.replaceWith(n, newNode);
-            pos += cleanNodeValue.length;
-        } else {
-            //console.log("##IGNORED nodeValue: '" + nodeValue + "' (len: " + nodeValue.length + ")");
-        }
-    });
+    this.newText = "";
+    this._walkNodesAndSetText(container_nodes);
     
-    //tinyMCE.activeEditor.setContent('<span>' + newText + '</span>');
-    //console.log("========>"+newText);
-
-	return ecount;
+    var previousSpanStart = -1;
+    // iterate backwards as we change the text and thus modify positions:
+    for (var suggestionIndex = this.suggestions.length-1; suggestionIndex >= 0; suggestionIndex--) {
+        var suggestion = this.suggestions[suggestionIndex];
+        if (!suggestion.used) {
+            var spanStart = suggestion.offset;
+            var spanEnd = spanStart + suggestion.errorlength;
+            if (previousSpanStart != -1 && spanEnd >= previousSpanStart) {
+                // overlapping errors - these are not supported by our underline approach,
+                // as we would need overlapping <span>s for that, so skip the error:
+                continue;
+            }
+            previousSpanStart = spanStart;
+            
+            var ruleId = suggestion.ruleid;
+            var cssName;
+            if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
+                cssName = "hiddenSpellError";
+            }
+            else {
+                cssName = "hiddenGrammarError";
+            }
+            // TODO: escape metaInfo!?
+            var metaInfo = suggestion.description + this.surrogateAttributeDelimiter + suggestion.suggestions;
+            if (suggestion.moreinfo) {
+                metaInfo += this.surrogateAttributeDelimiter + suggestion.moreinfo;
+            }
+            this.newText = this.newText.substring(0, spanStart)
+                    + '<span ' + this.surrogateAttribute + '="' + metaInfo + '" class="' + cssName + '">'
+                    + this.newText.substring(spanStart, spanEnd)
+                    + '</span>'
+                    + this.newText.substring(spanEnd);
+            suggestion.used = true;
+        }
+    }
+    
+    tinyMCE.activeEditor.setContent(this.newText);
+    
+    //
+    // TODO??:
+    // 1. "ignore all" doesn't work
+    // 2. text with markup (even bold) messes up everything
+    // 3. cursor position gets lost on check
+    // fixed:. current cursor position is ignored when incorrect (it has its own node)
+    //
 };
 
 AtDCore.prototype._walk = function(elements, f) {
@@ -287,7 +252,22 @@ AtDCore.prototype._walk = function(elements, f) {
 		f.call(f, elements[i]);
 		this._walk(this.contents(elements[i]), f);
 	}
-};  
+};
+
+AtDCore.prototype._walkNodesAndSetText = function(elements) {
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        var node = elements[i];
+        if (node.nodeType == 1) {
+            this._walkNodesAndSetText(this.contents(node));
+        } else if (node.nodeType == 3) {
+            if (node.nodeValue.length == 1 && node.nodeValue.charCodeAt(0) == 65279) {   // cursor has its own node, ignore it
+                continue;
+            }
+            this.newText += node.nodeValue;
+        }
+    }
+};
 
 AtDCore.prototype.removeWords = function(node, w) {   
 	var count = 0;
