@@ -116,9 +116,16 @@
   <script language="javascript" type="text/javascript">
     var languageCode = window.navigator.userLanguage || window.navigator.language;
     if (document.checkform.lang.value) {
-      document.checkform.lang.value = languageCode;
+      for (var i = 0; i < document.checkform.lang.options.length; i++) {
+        if (document.checkform.lang.options[i].value == languageCode) {
+          document.checkform.lang.value = languageCode;
+          break;
+        }
+      }
       if (languageCode == 'de-DE') {
-        document.checkform.content.value = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Biespiel für ein Paar Fehler ,die LanguageTool erkennen kann: Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+        document.checkform.content.value = "Fügen Sie hier Ihren Text ein. oder nutzen Sie. diesen Text als Biespiel für ein Paar Fehler ,die LanguageTool erkennen kann: Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+        //document.checkform.content.value = "Fügen Sie hier Ihren Text<br/>nein. oder nutzen Sie. diesen Text als<br/>Biespiel.";
+        document.checkform.lang.value = "de-DE";
       }
     }
   </script>
