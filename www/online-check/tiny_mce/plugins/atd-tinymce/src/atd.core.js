@@ -155,12 +155,12 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
             else {
                 cssName = "hiddenGrammarError";
             }
-            // TODO: escape metaInfo!?
             var delim = this.surrogateAttributeDelimiter;
             var metaInfo = ruleId + delim + suggestion.description + delim + suggestion.suggestions;
             if (suggestion.moreinfo) {
                 metaInfo += delim + suggestion.moreinfo;
             }
+            metaInfo = metaInfo.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");  // escape HTML
             newText = newText.substring(0, spanStart)
                     + '<span ' + this.surrogateAttribute + '="' + metaInfo + '" class="' + cssName + '">'
                     + newText.substring(spanStart, spanEnd)
