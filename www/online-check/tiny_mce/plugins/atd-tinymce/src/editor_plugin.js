@@ -46,7 +46,7 @@
             return editor.dom.getAttrib(node, key); 
          };
 
-	 core.findSpans = function(parent) 
+         core.findSpans = function(parent) 
          {
             if (parent == undefined)
                return editor.dom.select('span');
@@ -76,7 +76,7 @@
 
          core.removeParent = function(node) 
          {
-	    editor.dom.remove(node, 1);
+            editor.dom.remove(node, 1);
             return node;
          };
 
@@ -90,8 +90,6 @@
              return editor.getLang("AtD." + key, defaultk);
          };
 
-         core.setIgnoreStrings(editor.getParam("atd_ignore_strings", ""));
-         core.showTypes(editor.getParam("atd_show_types", ""));
          return core;
       },
  
@@ -400,8 +398,6 @@
                              }
                          });
 
-                         /* update atd_ignore_strings with the new value */
-                         t.editor.core.setIgnoreStrings(e.target.innerHTML); /* this does an update */
                      }
 
                      t._removeWords(e.target.innerHTML);

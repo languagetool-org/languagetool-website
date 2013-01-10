@@ -34,9 +34,6 @@ function AtDCore() {
 	/* these are the categories of errors AtD should ignore */
 	this.ignore_types = [];
 
-	/* these are the phrases AtD should ignore */
-	this.ignore_strings = {};
-
 	/* Localized strings */
 	this.i18n = {};
     
@@ -65,53 +62,6 @@ AtDCore.prototype.addI18n = function(localizations) {
 /*
  * Setters
  */
-
-AtDCore.prototype.setIgnoreStrings = function(string) {
-	var parent = this;
-
-	this.map(string.split(/,\s*/g), function(string) {
-		parent.ignore_strings[string] = 1;
-	});
-};
-
-AtDCore.prototype.showTypes = function(string) {
-	var show_types = string.split(/,\s*/g);
-	var types = {};
-
-	/* set some default types that we want to make optional */
-
-		/* grammar checker options */
-	types["Double Negatives"]     = 1;
-	types["Hidden Verbs"]         = 1;
-	types["Passive voice"]        = 1;
-	types["Bias Language"]        = 1;
-
-		/* style checker options */
-	types["Cliches"]              = 1;
-	types["Complex Expression"]   = 1;
-	types["Diacritical Marks"]    = 1;
-	types["Jargon Language"]      = 1;
-	types["Phrases to Avoid"]     = 1;
-	types["Redundant Expression"] = 1;
-
-        var ignore_types = [];
-
-        this.map(show_types, function(string) {
-                types[string] = undefined;
-        });
-
-        this.map(this.ignore_types, function(string) {
-                if (types[string] != undefined) 
-                        ignore_types.push(string);
-        });
-
-        this.ignore_types = ignore_types;
-};
-
-// source: http://simonwillison.net/2006/Jan/20/escape/ (modified to not escape \s)
-RegExp.escape = function(text) {
-    return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
-};
 
 AtDCore.prototype.processXML = function(responseXML) {
 
