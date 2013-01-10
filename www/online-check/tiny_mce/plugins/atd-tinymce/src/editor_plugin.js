@@ -135,7 +135,7 @@
             plugin._removeWords();
 
             /* send request to our service */
-            var textContent = plugin.editor.core.getText();
+            var textContent = plugin.editor.core.getPlainText();
             plugin.sendRequest('checkDocument', textContent, languageCode, function(data, request, someObject)
             {
                /* turn off the spinning thingie */

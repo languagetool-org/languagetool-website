@@ -14,14 +14,21 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 
 //
 // TODO:
-// 1. cursor position gets lost on check
-// 2. "ignore" and "ignore this kind of error" only works until the next check
-// 3. Ctrl-Z (undo) make the error markers go away
+// 1. "ignore" and "ignore this kind of error" only works until the next check
+// 2. Ctrl-Z (undo) make the error markers go away
 //
+// fixed: cursor position gets lost on check
 // fixed: "ignore all" doesn't work
 // fixed: current cursor position is ignored when incorrect (it has its own node)
 // fixed: text with markup (even bold) messes up everything
 //
+
+String.prototype.insert = function (index, string) {
+  if (index > 0)
+    return this.substring(0, index) + string + this.substring(index, this.length);
+  else
+    return string + this;
+};
 
 function AtDCore() {
 	/* these are the categories of errors AtD should ignore */
@@ -171,7 +178,10 @@ AtDCore.prototype.findSuggestion = function(element) {
  * code to manage highlighting of errors
  */
 AtDCore.prototype.markMyWords = function(container_nodes) {
-    var newText = this.getText();
+    var ed = tinyMCE.activeEditor;
+    var textWithCursor = this.getPlainTextWithCursorMarker();
+    var cursorPos = textWithCursor.indexOf("\ufeff");
+    var newText = this.getPlainText();
     
     var previousSpanStart = -1;
     // iterate backwards as we change the text and thus modify positions:
@@ -210,11 +220,44 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
         }
     }
     
+    // now insert a span into the location of the original cursor position,
+    // only considering real text content of course:
+    newText = this._insertCursorSpan(newText, cursorPos);
+    
     newText = newText.replace(/^\n/, "");
     newText = newText.replace(/^\n/, "");
     newText = newText.replace(/\n/g, "<br/>");
-    tinyMCE.activeEditor.setContent(newText);
+    ed.setContent(newText);
+    // now place the cursor where it was:
+    ed.selection.select(ed.dom.select('span#caret_pos_holder')[0]);
+    ed.dom.remove(ed.dom.select('span#caret_pos_holder')[0]);
 };
+
+AtDCore.prototype._insertCursorSpan = function(text, cursorPos) {
+    var newTextParts = text.split(/([<>])/);
+    var inTag = 0;
+    var textPos = 0;
+    var stringPos = 0;
+    for (var i = 0; i < newTextParts.length; i++) {
+        if (newTextParts[i] == "<" || newTextParts[i] == ">") {
+            if (newTextParts[i] == "<") {
+                inTag++;
+            } else {
+                inTag--;
+            }
+        } else if (inTag == 0) {
+            var partLength = newTextParts[i].length;
+            if (cursorPos >= textPos && cursorPos <= textPos + partLength) {
+                var relativePos = cursorPos - textPos;
+                text = text.insert(stringPos + relativePos, "<span id='caret_pos_holder'></span>");
+                break;
+            }
+            textPos += partLength;
+        }
+        stringPos += newTextParts[i].length;
+    }
+    return text;
+}
 
 AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
     var parts = surrogateString.split(this.surrogateAttributeDelimiter);
@@ -230,14 +273,25 @@ AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
     return null;
 };
 
-AtDCore.prototype.getText = function() {
-    return tinyMCE.activeEditor.getContent({ format: 'raw' })
+AtDCore.prototype.getPlainTextWithCursorMarker = function() {
+    return this._getPlainText(false);
+};
+
+AtDCore.prototype.getPlainText = function() {
+    return this._getPlainText(true);
+};
+
+AtDCore.prototype._getPlainText = function(removeCursor) {
+    var plainText = tinyMCE.activeEditor.getContent({ format: 'raw' })
             .replace(/<p>/g, "\n\n")
             .replace(/<br>/g, "\n")
             .replace(/<br\s*\/>/g, "\n")
             .replace(/<.*?>/g, "")
-            .replace(/&nbsp;/g, " ")  // for Chrome - no idea where this comes from
-            .replace(/\ufeff/g, "");  // feff = 65279 = cursor code
+            .replace(/&nbsp;/g, " ");  // for Chrome - no idea where this comes from
+    if (removeCursor) {
+        plainText = plainText.replace(/\ufeff/g, "");  // feff = 65279 = cursor code
+    }
+    return plainText;
 };
 
 AtDCore.prototype.removeWords = function(node, w) {
