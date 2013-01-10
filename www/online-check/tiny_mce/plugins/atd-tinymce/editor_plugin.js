@@ -16,6 +16,7 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 // TODO:
 // 1. cursor position gets lost on check
 // 2. "ignore" and "ignore this kind of error" only works until the next check
+// 3. Ctrl-Z (undo) make the error markers go away
 //
 // fixed: "ignore all" doesn't work
 // fixed: current cursor position is ignored when incorrect (it has its own node)
@@ -209,6 +210,9 @@ AtDCore.prototype.markMyWords = function(container_nodes) {
         }
     }
     
+    newText = newText.replace(/^\n/, "");
+    newText = newText.replace(/^\n/, "");
+    newText = newText.replace(/\n/g, "<br/>");
     tinyMCE.activeEditor.setContent(newText);
 };
 
@@ -227,7 +231,12 @@ AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
 };
 
 AtDCore.prototype.getText = function() {
-    return tinyMCE.activeEditor.getContent({ format: 'text' }).replace(/<.*?>/g, "").replace(/\ufeff/g, "");  // feff = 65279 = cursor code
+    return tinyMCE.activeEditor.getContent({ format: 'raw' })
+            .replace(/<p>/g, "\n\n")
+            .replace(/<br>/g, "\n")
+            .replace(/<br\s*\/>/g, "\n")
+            .replace(/<.*?>/g, "")
+            .replace(/\ufeff/g, "");  // feff = 65279 = cursor code
 };
 
 AtDCore.prototype.removeWords = function(node, w) {

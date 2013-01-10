@@ -8,7 +8,17 @@
 
     tinyMCE.init({
         mode : "textareas",
-        plugins                     : "AtD",
+        plugins                     : "AtD,paste",
+      
+        //Keeps Paste Text feature active until user deselects the Paste as Text button
+        paste_text_sticky : true,
+        //select pasteAsPlainText on startup
+        setup : function(ed) {
+            ed.onInit.add(function(ed) {
+                ed.pasteAsPlainText = true;
+            });
+        },
+
         /* the URL to the button image to display */
         atd_button_url              : "atdbuttontr.gif",
         /* the URL of your proxy file */
@@ -100,7 +110,7 @@
         <option value="uk-UA">Ukrainian</option>
     </select>
 
-    <input type="button" value="Check" onClick="javascript:doit()">
+    <input type="button" value="Check" onClick="doit()">
   </form>
 
   <script language="javascript" type="text/javascript">
