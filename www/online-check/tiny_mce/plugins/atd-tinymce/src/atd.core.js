@@ -236,6 +236,7 @@ AtDCore.prototype.getText = function() {
             .replace(/<br>/g, "\n")
             .replace(/<br\s*\/>/g, "\n")
             .replace(/<.*?>/g, "")
+            .replace(/&nbsp;/g, " ")  // for Chrome - no idea where this comes from
             .replace(/\ufeff/g, "");  // feff = 65279 = cursor code
 };
 
