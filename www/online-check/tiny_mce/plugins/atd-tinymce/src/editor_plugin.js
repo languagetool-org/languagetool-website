@@ -171,7 +171,7 @@
             /* loading the content.css file, why? I have no clue */
             if (editor.settings.content_css !== false)
             {
-               editor.dom.loadCSS(editor.getParam("atd_css_url", url + '/css/content.css'));
+               editor.dom.loadCSS(editor.getParam("languagetool_css_url", url + '/css/content.css'));
             }
 	 });
 
@@ -213,17 +213,6 @@
 
       createControl : function(name, controlManager) 
       {
-         var control = this;
-
-         if (name == 'AtD') 
-         {
-            return controlManager.createButton(name, { 
-               title: this.editor.getLang('AtD.button_proofread_tooltip', 'Proofread Writing'),
-               image: this.editor.getParam('atd_button_url', this.url + '/atdbuttontr.gif'), 
-               cmd: 'mceWritingImprovementTool', 
-               scope: control 
-            });
-         }
       },
 
       _removeWords : function(w) 
@@ -359,65 +348,16 @@
 	       }
             });
 
-            if (String(this.editor.getParam("atd_ignore_enable",  "false")) == "true")
-            {
-                m.add({
-                  title : plugin.editor.getLang('AtD.menu_option_ignore_always', 'Ignore always'),
-                  onclick : function() 
-                  {
-                      var url = t.editor.getParam('atd_ignore_rpc_url', '{backend}');
-
-                      if (url == '{backend}')
-                      {
-                         /* Default scheme is to save ignore preferences in a cookie */
-
-                         var ignore = tinymce.util.Cookie.getHash('atd_ignore'); 
-                         if (ignore == undefined) { ignore = {}; }
-                         ignore[e.target.innerHTML] = 1;
-                  
-                         tinymce.util.Cookie.setHash('atd_ignore', ignore, new Date( (new Date().getTime()) + 157680000000) );
-                      }
-                      else
-                      {
-                         /* Plugin is configured to send ignore preferences to server, do that */
-
-                         var id  = t.editor.getParam("atd_rpc_id",  "12345678");
-
-                         tinymce.util.XHR.send({
-                             url          : url + encodeURI(e.target.innerHTML).replace(/&/g, '%26') + "&key=" + id,
-                             content_type : 'text/xml',
-                             async        : true,
-                             type         : 'GET',
-                             success      : function( type, req, o )
-                             {
-                                /* do nothing */
-                             },
-                             error        : function( type, req, o )
-                             {
-                                alert( "Ignore preference save failed\n" + type + "\n" + req.status + "\nAt: " + o.url ); 
-                             }
-                         });
-
-                     }
-
-                     t._removeWords(e.target.innerHTML);
-                     t._checkDone();
-                  }
-               });
-            }
-            else
-            {
-                m.add({
-                  title : plugin.editor.getLang('menu_option_ignore_all', 'Ignore this kind of error'),
-                  onclick : function() 
-                  {
-                     var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
-                     var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
-                     t._removeWordsByRuleId(ruleId);
-                     t._checkDone();
-                  }
-               });
-            }
+            m.add({
+              title : plugin.editor.getLang('menu_option_ignore_all', 'Ignore this kind of error'),
+              onclick : function() 
+              {
+                 var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
+                 var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
+                 t._removeWordsByRuleId(ruleId);
+                 t._checkDone();
+              }
+           });
 
             /* show the menu please */
             ed.selection.select(e.target);
@@ -473,14 +413,13 @@
 
       sendRequest : function(file, data, languageCode, success)
       {
-         var id  = this.editor.getParam("atd_rpc_id",  "12345678");
-         var url = this.editor.getParam("atd_rpc_url", "{backend}");
+         var url = this.editor.getParam("languagetool_rpc_url", "{backend}");
          var plugin = this;
 
-         if (url == '{backend}' || id == '12345678') 
+         if (url == '{backend}') 
          {
             this.editor.setProgressState(0);
-            alert('Please specify: atd_rpc_url and atd_rpc_id');
+            alert('Please specify: languagetool_rpc_url');
             return;
          }
    
