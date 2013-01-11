@@ -1,8 +1,9 @@
 /*
  * TinyMCE Writing Improvement Tool Plugin 
- * Author: Raphael Mudge (raffi@automattic.com)
- * Modified by Daniel Naber for LanguageTool (http://www.languagetool.org)
+ * Original Author: Raphael Mudge (raffi@automattic.com)
+ * Heavily modified by Daniel Naber for LanguageTool (http://www.languagetool.org)
  *
+ * http://www.languagetool.org
  * http://www.afterthedeadline.com
  *
  * Distributed under the LGPL
@@ -26,12 +27,12 @@
       {
          return 
          ({
-	    longname :  'After The Deadline / LanguageTool',
-	    author :    'Raphael Mudge, Daniel Naber',
-	    authorurl : 'http://blog.afterthedeadline.com',
-	    infourl :   'http://www.afterthedeadline.com',
-	    version :   tinymce.majorVersion + "." + tinymce.minorVersion
-	 });
+            longname :  'After The Deadline / LanguageTool',
+            author :    'Raphael Mudge, Daniel Naber',
+            authorurl : 'http://blog.afterthedeadline.com',
+            infourl :   'http://www.afterthedeadline.com',
+            version :   tinymce.majorVersion + "." + tinymce.minorVersion
+         });
       },
 
       /* initializes the functions used by the AtD Core UI Module */
@@ -166,17 +167,17 @@
          });
           
          /* load cascading style sheet for this plugin */
-     	 editor.onInit.add(function() 
+          editor.onInit.add(function() 
          {
             /* loading the content.css file, why? I have no clue */
             if (editor.settings.content_css !== false)
             {
                editor.dom.loadCSS(editor.getParam("languagetool_css_url", url + '/css/content.css'));
             }
-	 });
+         });
 
          /* again showing a menu, I have no clue what */
-	 editor.onClick.add(plugin._showMenu, plugin);
+         editor.onClick.add(plugin._showMenu, plugin);
 
          /* we're showing some sort of menu, no idea what */
          //editor.onContextMenu.add(plugin._showMenu, plugin);
@@ -198,7 +199,7 @@
          });
 
          /* cleanup the HTML before executing certain commands */
-	 editor.onBeforeExecCommand.add(function(editor, command) 
+         editor.onBeforeExecCommand.add(function(editor, command) 
          {
             if (command == 'mceCodeEditor')
             {
@@ -345,7 +346,7 @@
                {
                   dom.remove(e.target, 1);
                   t._checkDone();
-	       }
+               }
             });
 
             m.add({
@@ -433,7 +434,7 @@
             success      : success,
             error        : function( type, req, o )
             {
-	       plugin.editor.setProgressState(0);
+               plugin.editor.setProgressState(0);
                alert( type + "\n" + req.status + "\nAt: " + o.url ); 
             }
          });

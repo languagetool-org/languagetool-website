@@ -31,15 +31,10 @@ String.prototype.insert = function (index, string) {
 };
 
 function AtDCore() {
-	/* these are the categories of errors AtD should ignore */
-	this.ignore_types = [];
-
-	/* Localized strings */
-	this.i18n = {};
-    
+    /* Localized strings */
+    this.i18n = {};
     /* We have to mis-use an existing valid HTML attribute to get our meta information
-     * about errors in the text:
-     */
+     * about errors in the text: */
     this.surrogateAttribute = "onkeypress";
     this.surrogateAttributeDelimiter = "---#---";
 };
@@ -49,14 +44,14 @@ function AtDCore() {
  */
 
 AtDCore.prototype.getLang = function(key, defaultk) {
-	if (this.i18n[key] == undefined)
-		return defaultk;
+    if (this.i18n[key] == undefined)
+        return defaultk;
 
-	return this.i18n[key];
+    return this.i18n[key];
 };
 
 AtDCore.prototype.addI18n = function(localizations) {
-	this.i18n = localizations;
+    this.i18n = localizations;
 };
 
 /*
@@ -208,7 +203,7 @@ AtDCore.prototype._insertCursorSpan = function(text, cursorPos) {
         stringPos += newTextParts[i].length;
     }
     return text;
-}
+};
 
 AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
     var parts = surrogateString.split(this.surrogateAttributeDelimiter);
@@ -246,90 +241,89 @@ AtDCore.prototype._getPlainText = function(removeCursor) {
 };
 
 AtDCore.prototype.removeWords = function(node, w) {
-	var count = 0;
-	var parent = this;
+    var count = 0;
+    var parent = this;
 
-	this.map(this.findSpans(node).reverse(), function(n) {
-		if (n && (parent.isMarkedNode(n) || parent.hasClass(n, 'mceItemHidden') || parent.isEmptySpan(n)) ) {
-			if (n.innerHTML == '&nbsp;') {
-				var nnode = document.createTextNode(' '); /* hax0r */
-				parent.replaceWith(n, nnode);
-			}
-			else if (!w || n.innerHTML == w) {
-				parent.removeParent(n);
-				count++;
-			}
-		}
-	});
+    this.map(this.findSpans(node).reverse(), function(n) {
+        if (n && (parent.isMarkedNode(n) || parent.hasClass(n, 'mceItemHidden') || parent.isEmptySpan(n)) ) {
+            if (n.innerHTML == '&nbsp;') {
+                var nnode = document.createTextNode(' '); /* hax0r */
+                parent.replaceWith(n, nnode);
+            } else if (!w || n.innerHTML == w) {
+                parent.removeParent(n);
+                count++;
+            }
+        }
+    });
 
-	return count;
+    return count;
 };
 
 AtDCore.prototype.removeWordsByRuleId = function(node, ruleId) {
-	var count = 0;
-	var parent = this;
+    var count = 0;
+    var parent = this;
 
-	this.map(this.findSpans(node).reverse(), function(n) {
-		if (n && (parent.isMarkedNode(n) || parent.hasClass(n, 'mceItemHidden') || parent.isEmptySpan(n)) ) {
-			if (n.innerHTML == '&nbsp;') {
-				var nnode = document.createTextNode(' '); /* hax0r */
-				parent.replaceWith(n, nnode);
-			}
-			else {
-        var surrogate = n.getAttribute(parent.surrogateAttribute);
-        if (!ruleId || (surrogate && parent.getSurrogatePart(surrogate, 'id') == ruleId)) {
-            parent.removeParent(n);
-            count++;
+    this.map(this.findSpans(node).reverse(), function(n) {
+        if (n && (parent.isMarkedNode(n) || parent.hasClass(n, 'mceItemHidden') || parent.isEmptySpan(n)) ) {
+            if (n.innerHTML == '&nbsp;') {
+                var nnode = document.createTextNode(' '); /* hax0r */
+                parent.replaceWith(n, nnode);
+            } else {
+                var surrogate = n.getAttribute(parent.surrogateAttribute);
+                if (!ruleId || (surrogate && parent.getSurrogatePart(surrogate, 'id') == ruleId)) {
+                    parent.removeParent(n);
+                    count++;
+                }
+            }
         }
-      }
-		}
-	});
+    });
 
-	return count;
+    return count;
 };
 
 AtDCore.prototype.isEmptySpan = function(node) {
-	return (this.getAttrib(node, 'class') == "" && this.getAttrib(node, 'style') == "" && this.getAttrib(node, 'id') == "" && !this.hasClass(node, 'Apple-style-span') && this.getAttrib(node, 'mce_name') == "");
+    return (this.getAttrib(node, 'class') == "" && this.getAttrib(node, 'style') == "" && this.getAttrib(node, 'id') == "" && !this.hasClass(node, 'Apple-style-span') && this.getAttrib(node, 'mce_name') == "");
 };
 
 AtDCore.prototype.isMarkedNode = function(node) {
-	return (this.hasClass(node, 'hiddenGrammarError') || this.hasClass(node, 'hiddenSpellError') || this.hasClass(node, 'hiddenSuggestion'));
+    return (this.hasClass(node, 'hiddenGrammarError') || this.hasClass(node, 'hiddenSpellError') || this.hasClass(node, 'hiddenSuggestion'));
 };
 
 /*
  * Context Menu Helpers
  */
 AtDCore.prototype.applySuggestion = function(element, suggestion) {
-	if (suggestion == '(omit)') {
-		this.remove(element);
-	}
-	else {
-		var node = this.create(suggestion);
-		this.replaceWith(element, node);
-		this.removeParent(node);
-	}
+    if (suggestion == '(omit)') {
+        this.remove(element);
+    }
+    else {
+        var node = this.create(suggestion);
+        this.replaceWith(element, node);
+        this.removeParent(node);
+    }
 };
 
 /* 
  * Check for an error
  */
 AtDCore.prototype.hasErrorMessage = function(xmlr) {
-	return (xmlr != undefined && xmlr.getElementsByTagName('message').item(0) != null);
+    return (xmlr != undefined && xmlr.getElementsByTagName('message').item(0) != null);
 };
 
 AtDCore.prototype.getErrorMessage = function(xmlr) {
-	return xmlr.getElementsByTagName('message').item(0);
+    return xmlr.getElementsByTagName('message').item(0);
 };
 
 /* this should always be an error, alas... not practical */
 AtDCore.prototype.isIE = function() {
-	return navigator.appName == 'Microsoft Internet Explorer';
+    return navigator.appName == 'Microsoft Internet Explorer';
 };
 /*
  * TinyMCE Writing Improvement Tool Plugin 
- * Author: Raphael Mudge (raffi@automattic.com)
- * Modified by Daniel Naber for LanguageTool (http://www.languagetool.org)
+ * Original Author: Raphael Mudge (raffi@automattic.com)
+ * Heavily modified by Daniel Naber for LanguageTool (http://www.languagetool.org)
  *
+ * http://www.languagetool.org
  * http://www.afterthedeadline.com
  *
  * Distributed under the LGPL
@@ -353,12 +347,12 @@ AtDCore.prototype.isIE = function() {
       {
          return 
          ({
-	    longname :  'After The Deadline / LanguageTool',
-	    author :    'Raphael Mudge, Daniel Naber',
-	    authorurl : 'http://blog.afterthedeadline.com',
-	    infourl :   'http://www.afterthedeadline.com',
-	    version :   tinymce.majorVersion + "." + tinymce.minorVersion
-	 });
+            longname :  'After The Deadline / LanguageTool',
+            author :    'Raphael Mudge, Daniel Naber',
+            authorurl : 'http://blog.afterthedeadline.com',
+            infourl :   'http://www.afterthedeadline.com',
+            version :   tinymce.majorVersion + "." + tinymce.minorVersion
+         });
       },
 
       /* initializes the functions used by the AtD Core UI Module */
@@ -493,17 +487,17 @@ AtDCore.prototype.isIE = function() {
          });
           
          /* load cascading style sheet for this plugin */
-     	 editor.onInit.add(function() 
+          editor.onInit.add(function() 
          {
             /* loading the content.css file, why? I have no clue */
             if (editor.settings.content_css !== false)
             {
                editor.dom.loadCSS(editor.getParam("languagetool_css_url", url + '/css/content.css'));
             }
-	 });
+         });
 
          /* again showing a menu, I have no clue what */
-	 editor.onClick.add(plugin._showMenu, plugin);
+         editor.onClick.add(plugin._showMenu, plugin);
 
          /* we're showing some sort of menu, no idea what */
          //editor.onContextMenu.add(plugin._showMenu, plugin);
@@ -525,7 +519,7 @@ AtDCore.prototype.isIE = function() {
          });
 
          /* cleanup the HTML before executing certain commands */
-	 editor.onBeforeExecCommand.add(function(editor, command) 
+         editor.onBeforeExecCommand.add(function(editor, command) 
          {
             if (command == 'mceCodeEditor')
             {
@@ -672,7 +666,7 @@ AtDCore.prototype.isIE = function() {
                {
                   dom.remove(e.target, 1);
                   t._checkDone();
-	       }
+           }
             });
 
             m.add({
@@ -760,7 +754,7 @@ AtDCore.prototype.isIE = function() {
             success      : success,
             error        : function( type, req, o )
             {
-	       plugin.editor.setProgressState(0);
+               plugin.editor.setProgressState(0);
                alert( type + "\n" + req.status + "\nAt: " + o.url ); 
             }
          });
