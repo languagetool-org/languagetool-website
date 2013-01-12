@@ -48,7 +48,7 @@ ací en el navegador:<br/><br/>
 $checkSubmitButtonValue = "Comprova el text";
 $showLanguageBox = 0;
 $checkDefaultLang = "ca";
-$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool hi pot detectat.";
+$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a algunes errors que LanguageTool hi pot detectat.";
 include("../../include/checkform.php");
 ?>
 
