@@ -26,11 +26,11 @@ function printLangOption($langCode, $lang) {
           <?php printLangOption("zh", "Chinese") ?>
           <?php printLangOption("da", "Danish") ?>
           <?php printLangOption("nl", "Dutch") ?>
-          <?php printLangOption("en", "English") ?>
+          <?php printLangOption("en-US", "English") ?>
           <?php printLangOption("eo", "Esperanto") ?>
           <?php printLangOption("fr", "French") ?>
           <?php printLangOption("gl", "Galician") ?>
-          <?php printLangOption("de", "German") ?>
+          <?php printLangOption("de-DE", "German") ?>
           <?php printLangOption("is", "Icelandic") ?>
           <?php printLangOption("it", "Italian") ?>
           <?php printLangOption("km", "Khmer") ?>

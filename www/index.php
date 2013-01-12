@@ -63,7 +63,7 @@ foreach ($languagesWithPage as $i => $value) {
 <?php
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 1;
-$checkDefaultLang = "en";
+$checkDefaultLang = "en-US";
 $checkDefaultText = "Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.";
 include("../include/checkform.php");
 ?>
