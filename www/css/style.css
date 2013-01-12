@@ -236,7 +236,7 @@ FORM SELECT:HOVER {
 FORM SELECT {
     background-color: #F9F5F2;
     color: #464646;
-    border: 1px solid #464646;
+    border: 1px solid #cccccc;
     font-weight: bold;
     padding: 4px;
 }
@@ -247,14 +247,14 @@ FORM INPUT:HOVER {
 }
 FORM INPUT {
     background-color: #FBF7F4;
-    border: 1px solid #464646;
+    border: 1px solid #cccccc;
     color: #464646;
     font-weight: bold;
     padding: 4px;
 }
 FORM TEXTAREA {
     background-color: #EEEEEE;
-    border: 1px solid #464646;
+    border: 1px solid #cccccc;
 }
 /* end: check form on the homepage */
 
