@@ -17,7 +17,7 @@ function printLangOption($langCode, $lang) {
   <div style="margin-top:0px; text-align: right">
     <!-- always activate language selection box as we don't have feedback yet about which language was auto-detected -->
     <?php if (1 || $showLanguageBox) { ?>
-      Language: <select name="lang" id="lang" >
+      <select name="lang" id="lang" >
           <!--<option value="auto">try to auto-detect</option>-->
           <?php printLangOption("ast", "Asturian") ?>
           <?php printLangOption("be", "Belarusian") ?>
