@@ -39,6 +39,20 @@ include("../../include/header.php");
     </table>
 </div>
 
+<h2>Proveu LanguageTool</h2>
+
+Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
+ací en el navegador:<br/><br/>
+
+<?php
+$checkSubmitButtonValue = "Comprova el text";
+$showLanguageBox = 0;
+$checkDefaultLang = "ca";
+$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool hi pot detectat.";
+include("../../include/checkform.php");
+?>
+
+
 <h2>Funcions</h2>
 
 LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca">més de 1000</a> regles per a trobar errades en texts en català, més enllà de les que detecta un simple corrector ortogràfic.<br/><br/>
@@ -94,19 +108,6 @@ LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca
     </li>
     <li>I moltes coses més.</li>
 </ul>
-
-<h2>Proveu LanguageTool</h2>
-
-Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
-ací en el navegador:<br/><br/>
-
-<?php
-$checkSubmitButtonValue = "Comprova el text";
-$showLanguageBox = 0;
-$checkDefaultLang = "ca";
-$checkDefaultText = "Introduïu ací el vostre text. o feu servir aquest texts com a com a exemple per a algunes errors que LanguageTool hi pot detectat.";
-include("../../include/checkform.php");
-?>
 
 <h2>Limitacions conegudes</h2>
 La versió de LanguageTool en català es troba en ple desenvolupament. Ha avançat molt, però encara resta molt de camí per recórrer. 
