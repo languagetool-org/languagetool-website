@@ -56,51 +56,13 @@ include("../../include/header.php");
 </p>
 <h2>Проверить текст</h2>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
-    <?php
-    $demoText = "Вставьте ваш текст сюда .. или проверьте этот текст.";
-    ?>
-    <textarea onfocus="javascript: if(document.checkform.text.value == '<?php print $demoText ?>') { document.checkform.text.value='' } " 
-        style="width:100%; max-width:800px;height:100px" name="text"><?php print $demoText ?></textarea>
-    <div style="margin-top:4px">
-        <input type="submit" name="_action_checkText" value="Проверить текст"/>
-        Язык: <select name="lang" id="lang" >
-        
-            <option value="auto">автоматически определить</option>
-            <option value="ast" >Астурийский</option>
-            <option value="be" >Белорусский</option>
-            <option value="br" >Бретонский</option>
-            <option value="ca" >Каталонский</option>
-            <option value="zh" >Китайский</option>
-            <option value="da" >Датский</option>
-            <option value="nl" >Нидерландский</option>
-            <option value="en" >Английский</option>
-            
-            <option value="eo" >Эсперанто</option>
-            <option value="fr" >Французский</option>
-            <option value="gl" >Галисийский</option>
-            <option value="de" >Немецкий</option>
-            <option value="is" >Исландский</option>
-            <option value="it" >Итальянский</option>
-            <option value="km" >Кхмерский</option>
-            <option value="lt" >Литовский</option>
-            <option value="ml" >Малайский</option>
-            
-            <option value="pl" >Польский</option>
-            <option value="ro" >Румынский</option>
-            <option value="ru" >Русский</option>
-            <option value="sk" >Словацкий</option>
-            <option value="sl" >Словенский</option>
-            <option value="es" >Испанский</option>
-            <option value="sv" >Шведский</option>
-            <option value="tl" >Тагалог</option>
-            <option value="uk" >Украинский</option>
-        
-        </select>
-    </div>
-</form>
-
-
+<?php
+$checkSubmitButtonValue = "Проверить текст";
+$showLanguageBox = 0;
+$checkDefaultLang = "ru";
+$checkDefaultText = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
+include("../../include/checkform.php");
+?>
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
