@@ -2,7 +2,8 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-01-030 07:15:00 CET";
+$lastmod = "2013-01-12 19:05:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
