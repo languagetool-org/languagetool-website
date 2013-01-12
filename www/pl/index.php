@@ -3,6 +3,7 @@ $page = "pl";
 $title = "LanguageTool";
 $title2 = "Narzędzie korektorskie";
 $lastmod = "2012-02-09 06:52:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>

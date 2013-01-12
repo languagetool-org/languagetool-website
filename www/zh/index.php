@@ -3,6 +3,7 @@ $page = "zh";
 $title = "LanguageTool";
 $title2 = "文体和语法检测器";
 $lastmod = "2012-04-27 20:00:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>

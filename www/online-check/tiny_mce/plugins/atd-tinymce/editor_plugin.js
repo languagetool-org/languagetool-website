@@ -666,7 +666,7 @@ AtDCore.prototype.isIE = function() {
                {
                   dom.remove(e.target, 1);
                   t._checkDone();
-           }
+               }
             });
 
             m.add({

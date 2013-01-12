@@ -3,6 +3,7 @@ $page = "ca";
 $title = "LanguageTool";
 $title2 = "Correcció gramatical i d'estil";
 $lastmod = "2012-11-10 00:00:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>

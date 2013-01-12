@@ -3,6 +3,7 @@ $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
 $lastmod = "2012-10-07 10:43:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 ?>

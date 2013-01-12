@@ -18,10 +18,17 @@
 
 .hiddenSuggestion {
     padding-bottom: 2px;
-   	background-image: url("../../../../../images/squiggle.png");
-   	background-repeat: repeat-x;
-   	background-position: left bottom;
-   	vertical-align: text-top;
+    background-image: url("../../../../../images/squiggle.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    vertical-align: text-top;
     cursor: default;
 }
 
+body.mceContentBody { 
+    background: #f7f7f7;
+}
+
+body, td, pre {
+    font-size: 12px;
+}

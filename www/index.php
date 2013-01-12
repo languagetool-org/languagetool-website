@@ -4,6 +4,7 @@ $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
 $lastmod = "2013-01-05 15:00:00 CET";
 $enable_fancybox = 1;
+$enable_textcheck = 1;
 include("../include/header.php");
 include("../include/browser_language.php");
 ?>
@@ -62,7 +63,7 @@ foreach ($languagesWithPage as $i => $value) {
 <?php
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 1;
-$checkDefaultLang = "auto";
+$checkDefaultLang = "en";
 $checkDefaultText = "Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.";
 include("../include/checkform.php");
 ?>

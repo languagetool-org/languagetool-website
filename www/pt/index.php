@@ -3,6 +3,7 @@ $page = "pt";
 $title = "LanguageTool";
 $title2 = "Corrector Gramatical e de Estilo";
 $lastmod = "2013-01-05 13:27:00 CET";
+$enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
 include("../../include/browser_language.php");
@@ -28,7 +29,7 @@ Java.</p>
 <?php
 $checkSubmitButtonValue = "Verificar Texto";
 $showLanguageBox = 1;
-$checkDefaultLang = "auto";
+$checkDefaultLang = "pt";
 $checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
 include("../../include/checkform.php");
 ?>

@@ -47,6 +47,51 @@
     // -->
     </script>
   <?php } ?>
+  
+  <?php if ($enable_textcheck) { ?>
+    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
+    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
+    <script language="javascript" type="text/javascript">
+    
+     tinyMCE.init({
+         mode : "textareas",
+         plugins                     : "AtD,paste",
+       
+         //Keeps Paste Text feature active until user deselects the Paste as Text button
+         paste_text_sticky : true,
+         //select pasteAsPlainText on startup
+         setup : function(ed) {
+             ed.onInit.add(function(ed) {
+                 ed.pasteAsPlainText = true;
+             });
+         },
+    
+         /* the URL of your proxy file: */
+         languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
+         /* edit this file to customize how LanguageTool shows errors: */
+         languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css",
+         /* this stuff is a matter of preference: */
+         theme                              : "advanced",
+         theme_advanced_buttons1            : "",
+         theme_advanced_buttons2            : "",
+         theme_advanced_buttons3            : "",
+         theme_advanced_toolbar_location    : "none",
+         theme_advanced_toolbar_align       : "left",
+         theme_advanced_statusbar_location  : "bottom",  // activated so we have a resize button
+         theme_advanced_path                : false,     // don't display path in status bar
+         theme_advanced_resizing            : true,
+         theme_advanced_resizing_use_cookie : false,
+         /* disable the gecko spellcheck since AtD provides one */
+         gecko_spellcheck                   : false
+     });
+    
+     function doit() {
+         var langCode = document.checkform.lang.value;
+         tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
+     }
+     </script>
+  <?php } ?>
+
 </head>
 <body>
 
