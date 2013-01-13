@@ -99,7 +99,7 @@
              'de-DE': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs',
-             'ca': 'Ignora aquesta classe d'errors'
+             'ca': 'Ignora aquesta classe d\'errors'
             },
 
          languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
