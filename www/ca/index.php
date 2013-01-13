@@ -8,7 +8,49 @@ $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
-<p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">25 llengües més</a>.</p>
+<p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">moltes altres llengües</a>.</p>
+
+<h2>Proveu LanguageTool</h2>
+
+Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
+ací en el navegador:<br/><br/>
+
+<?php
+$checkSubmitButtonValue = "Comprova el text";
+$showLanguageBox = 0;
+$checkDefaultLang = "ca";
+
+$checkLanguage['auto']  = 'detecció automàtica';
+$checkLanguage['en-US'] = 'anglès';
+$checkLanguage['ast']   = 'asturià';
+$checkLanguage['be']    = 'bielorús';
+$checkLanguage['br']    = 'bretó';
+$checkLanguage['zh']    = 'xinès';
+$checkLanguage['da']    = 'danès';
+$checkLanguage['eo']    = 'esperanto';
+$checkLanguage['fr']    = 'francès';
+$checkLanguage['gl']    = 'gallec';
+$checkLanguage['de-DE'] = 'alemany';
+$checkLanguage['es']    = 'espanyol';
+$checkLanguage['is']    = 'islandès';
+$checkLanguage['it']    = 'italià';
+$checkLanguage['ca']    = 'català';
+$checkLanguage['km']    = 'khmer';
+$checkLanguage['lt']    = 'lituà';
+$checkLanguage['ml']    = 'malaiàlam';
+$checkLanguage['nl']    = 'nederlandès';
+$checkLanguage['pl']    = 'polonès';
+$checkLanguage['ro']    = 'romanès';
+$checkLanguage['ru']    = 'rus';
+$checkLanguage['sk']    = 'elovac';
+$checkLanguage['sl']    = 'eslovè';
+$checkLanguage['sv']    = 'suec';
+$checkLanguage['tl']    = 'tagàlog';
+$checkLanguage['uk']    = 'ucraïnès';
+
+$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a algunes errors que LanguageTool hi pot detectat.";
+include("../../include/checkform.php");
+?>
 
 <div class="downloadSection">
     <table width="100%">
@@ -38,20 +80,6 @@ include("../../include/header.php");
       </tr>
     </table>
 </div>
-
-<h2>Proveu LanguageTool</h2>
-
-Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
-ací en el navegador:<br/><br/>
-
-<?php
-$checkSubmitButtonValue = "Comprova el text";
-$showLanguageBox = 0;
-$checkDefaultLang = "ca";
-$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a algunes errors que LanguageTool hi pot detectat.";
-include("../../include/checkform.php");
-?>
-
 
 <h2>Funcions</h2>
 
