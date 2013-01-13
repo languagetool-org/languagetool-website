@@ -25,33 +25,33 @@ $showLanguageBox = 1;
 
 $checkDefaultLang = 'eo';
 
-$checkLanguage['auto'] = 'aŭtomate detekti';
-$checkLanguage['en']   = 'angla';
-$checkLanguage['ast']  = 'asturia';
-$checkLanguage['be']   = 'belarusa';
-$checkLanguage['br']   = 'bretona';
-$checkLanguage['zh']   = 'ĉina';
-$checkLanguage['da']   = 'dana';
-$checkLanguage['eo']   = 'Esperanto';
-$checkLanguage['fr']   = 'franca';
-$checkLanguage['gl']   = 'galega';
-$checkLanguage['de']   = 'germana';
-$checkLanguage['es']   = 'hispana';
-$checkLanguage['is']   = 'islanda';
-$checkLanguage['it']   = 'itala';
-$checkLanguage['ca']   = 'kataluna';
-$checkLanguage['km']   = 'kmera';
-$checkLanguage['lt']   = 'litova';
-$checkLanguage['ml']   = 'malajala';
-$checkLanguage['nl']   = 'nederlanda';
-$checkLanguage['pl']   = 'pola';
-$checkLanguage['ro']   = 'rumana';
-$checkLanguage['ru']   = 'rusa';
-$checkLanguage['sk']   = 'slovaka';
-$checkLanguage['sl']   = 'slovena';
-$checkLanguage['sv']   = 'sveda';
-$checkLanguage['tl']   = 'tagaloga';
-$checkLanguage['uk']   = 'ukraina';
+$checkLanguage['auto']  = 'aŭtomate detekti';
+$checkLanguage['en-US'] = 'angla';
+$checkLanguage['ast']   = 'asturia';
+$checkLanguage['be']    = 'belarusa';
+$checkLanguage['br']    = 'bretona';
+$checkLanguage['zh']    = 'ĉina';
+$checkLanguage['da']    = 'dana';
+$checkLanguage['eo']    = 'Esperanto';
+$checkLanguage['fr']    = 'franca';
+$checkLanguage['gl']    = 'galega';
+$checkLanguage['de-DE'] = 'germana';
+$checkLanguage['es']    = 'hispana';
+$checkLanguage['is']    = 'islanda';
+$checkLanguage['it']    = 'itala';
+$checkLanguage['ca']    = 'kataluna';
+$checkLanguage['km']    = 'kmera';
+$checkLanguage['lt']    = 'litova';
+$checkLanguage['ml']    = 'malajala';
+$checkLanguage['nl']    = 'nederlanda';
+$checkLanguage['pl']    = 'pola';
+$checkLanguage['ro']    = 'rumana';
+$checkLanguage['ru']    = 'rusa';
+$checkLanguage['sk']    = 'slovaka';
+$checkLanguage['sl']    = 'slovena';
+$checkLanguage['sv']    = 'sveda';
+$checkLanguage['tl']    = 'tagaloga';
+$checkLanguage['uk']    = 'ukraina';
 
 $checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.";
 include("../../include/checkform.php");
@@ -82,15 +82,62 @@ include("../../include/checkform.php");
         ?>
       </td>
     </tr>
-  </table>
+    <tr>
+      <td valig="top">
+          <ul style="padding-left: 20px">
+            <li>Tiu versio estas kromaĵo por LibreOffice/OpenOffice.
+                Ĝi atentigas pri gramatikaj eraroj, sed ne pri literumaj
+                eraroj, ĉar LibreOffice/OpenOffice jam faras tion
+                post alŝuto de
+                 <a href="http://extensions.services.openoffice.org/fr/dictionaries?">Esperanta vortaro
+                 por LibreOffice/OpenOffice</a>.</li>
+            <li><strong>Ni forte konsilas uzi
+                <a href="http://www.libreoffice.org/download">LibreOffice-3.5.4</a></strong>
+                (aŭ pli nova ) aŭ <strong><a href="http://www.openoffice.org/download/">Apache
+                OpenOffice-3.4.1</a></strong> (aŭ pli nova), ĉar pli malnovaj versioj
+                havas cimon, kiu kaŭzas longan paŭzon je la startigo de la programo.</li>
+            <li>Uzi <em>Iloj… → Aldonaĵa mastrumilo… → Aldoni…</em> en
+                LibreOffice/OpenOffice.org por instali tiun dosieron.</li>
+            <li><strong>Restartigi OpenOffice.org/LibreOffice</strong> post la
+                instalado de la kromaĵo.</li>
+            <li>Se vi uzas LibreOffice-3.5.x kaj deziras kontroli
+                tekstojn en la angla, elektu:
+                <em>Iloj… → Agodaĵoj… → Lingvaj agordoj→ Skribhelpoj</em>
+                por malŝalti LightProof kaj ŝalti Lingvoilon por la angla.</li>
+          </ul>
+        </td>
+        <td></td>
+
+        <td valign="top">
+          <ul style="padding-left: 20px">
+            <li>Tiu versio estas por tiuj, kiuj deziras uzi Lingvoilon
+                sen LibreOffice/OpenOffice, uzante ekzemple la
+                grafika Java-interfaco, aŭ en komanda linio,
+                aŭ kiel servilo, aŭ ene de aliaj programoj kiel
+                ene de la
+                <a href="http://www.vim.org/scripts/script.php?script_id=3223">tekstoredaktilo Vim</a>.
+                Tiu versio ne nur atentigas pri gramatikaj eraroj
+                sed ankaŭ pri literumaj eraroj dank’ al vortaroj
+                en Lingvoilo.</li>
+            <li>Duoble-klaku sur la dosieron kaj startigu LanguageToolGUI.jar.
+                Vidu ankaŭ la
+                <?=show_link("aliajn manierojn por uzi Lingvoilon", "../usage/", 0)?>.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
 </div>
 
-<ul>
-<li><a href="http://www.java.com/en/download/manual.jsp">Java 6</a> aŭ pli nova estas bezonata.</li>
-
-<li>Pli freŝaj sed malpli testitaj versioj de Lingvoilo ĝisdatigitaj ĉiutage
-<a href="../download/snapshots/">haveblas tie</a> (<a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt">CHANGES.txt</a>).</li>
-</ul>
+<p>Lingvoilo daŭre pliboniĝas. Reguloj estas ofte aldonitaj aŭ ŝanĝitaj.
+Por tiuj, kiuj deziras uzi la plej freŝan version,
+<?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?>
+el la lasta versio en la SVN-deponejo ankaŭ haveblas
+(<?=show_link("liston de ŝanĝon", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
+Sed atentu: tiuj versioj estas malpli testitaj ol la la oficiala versio.
+Tamen, Lingvoilo enhavas multajn aŭtomataj testoj, do la ĉiu-tagaj versioj
+estas ankaŭ sufiĉe sencimaj.
+Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
+<?=show_link("dosierujo de elŝuto", "../download/", 0) ?>.</p>
 
 <h2>Ekrankopio en LibreOffice</h2>
 
