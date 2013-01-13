@@ -149,7 +149,9 @@
                var results = core.processXML(request.responseXML);
 
                if (results.length == 0) {
-                  ed.windowManager.alert(plugin.editor.getLang('AtD.message_no_errors_found', 'No errors were found.'));
+                  var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
+                  var noErrorsText = plugin.editor.getParam('languagetool_i18n_no_errors')[lang] || "No errors were found.";
+                  ed.windowManager.alert(noErrorsText);
                }
                else {
                   plugin.markMyWords();
@@ -319,12 +321,17 @@
                m.addSeparator();
             }
              
+            var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
+            var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "No errors were found.";
+            var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore suggestion";
+            var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
+             
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
                (function(url)
                 {
                    m.add({
-                     title : plugin.editor.getLang('AtD.menu_option_explain', 'Explain...'),
+                     title : explainText,
                      onclick : function() { window.open(url, '_errorExplain'); }
                   });
                })(errorDescription["moreinfo"]);
@@ -333,7 +340,7 @@
             }
 
             m.add({
-               title : plugin.editor.getLang('AtD.menu_option_ignore_once', 'Ignore suggestion'),
+               title : ignoreThisText,
                onclick : function() 
                {
                   dom.remove(e.target, 1);
@@ -342,7 +349,7 @@
             });
 
             m.add({
-              title : plugin.editor.getLang('menu_option_ignore_all', 'Ignore this kind of error'),
+              title : ignoreThisKindOfErrorText,
               onclick : function() 
               {
                  var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);

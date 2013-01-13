@@ -66,6 +66,29 @@
              });
          },
     
+         /* translations: */
+         languagetool_i18n_no_errors : 
+            {
+             // "No errors were found.":
+             'de-DE': 'Keine Fehler gefunden.'
+            },
+         languagetool_i18n_explain : 
+            {
+             // "Explain..." - shown if there's an URL with a more detailed description:
+             'de-DE': 'Mehr Informationen...'
+            },
+         languagetool_i18n_ignore_once : 
+            {
+             // "Ignore suggestion":
+             'de-DE': 'Hier ignorieren'
+            },
+         languagetool_i18n_ignore_all : 
+            {
+             // "Ignore this kind of error":
+             'de-DE': 'Fehler dieses Typs ignorieren'
+            },
+            
+         languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
          /* the URL of your proxy file: */
          languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
          /* edit this file to customize how LanguageTool shows errors: */
