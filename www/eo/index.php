@@ -130,11 +130,11 @@ include("../../include/checkform.php");
 
 <p>Lingvoilo daŭre pliboniĝas. Reguloj estas ofte aldonitaj aŭ ŝanĝitaj.
 Por tiuj, kiuj deziras uzi la plej freŝan version,
-<?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?>
-el la lasta versio en la SVN-deponejo ankaŭ haveblas
+<?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?> el
+la lasta versio en la SVN-deponejo ankaŭ haveblas
 (<?=show_link("liston de ŝanĝon", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
 Sed atentu: tiuj versioj estas malpli testitaj ol la la oficiala versio.
-Tamen, Lingvoilo enhavas multajn aŭtomataj testoj, do la ĉiu-tagaj versioj
+Tamen, Lingvoilo enhavas multajn aŭtomatajn testojn, do la ĉiu-tagaj versioj
 estas ankaŭ sufiĉe sencimaj.
 Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
 <?=show_link("dosierujo de elŝuto", "../download/", 0) ?>.</p>
@@ -142,6 +142,8 @@ Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
 <h2>Ekrankopio en LibreOffice</h2>
 
 <img src="images/Lingvoilo-LibreOffice.png" alt="Lingvoilo"/>
+<p>Lingvoilo povas atentigi pri pli da eraroj ol tiuj en la ĉi-supra ekrankopio. Gramatikaj eraroj trovitaj per Lingvoilo estas blue emfazitaj. Literumaj eraroj trovitaj per la Esperanta vortaro de LibreOffice/OpenOffice estas ruĝe emfazitaj.</p>
+<p>Certigu, ke la elektita lingvo de la teksto en LibreOffice/OpenOffice estas Esperanto, por ke la korektilo povu atentigi pri Esperantaj eraroj.</p>
 
 <h2>Ĉu vi bezonas helpon?</h2>
 
