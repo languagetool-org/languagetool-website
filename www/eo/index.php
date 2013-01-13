@@ -9,13 +9,21 @@ include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>Lingvoilo (LanguageTool) estas libera plurlingva
-programo por kontroli stilon kaj gramatikon en Esperanto sed ankaŭ en
+programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en
 <a href="../languages/">multaj aliaj lingvoj</a>.</strong>
-Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.
+Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.</p>
 
-Lingvoilo povas ankaŭ atentigi pri literumaj eraroj, sed la versio por
-Libreoffice nur atentigas pri gramatikaj eraroj. Uzu Esperantan vortaron
-kune kun Lingvoilo por literumaj eraroj en Libreoffice.
+<p>Lingvoilo povas ankaŭ atentigi pri literumaj eraroj, sed la versio por
+Libreoffice/OpenOffice nur atentigas pri gramatikaj eraroj. Uzu Esperantan vortaron
+kune kun Lingvoilo por literumaj eraroj en Libreoffice/OpenOffice.</p>
+
+<p>Por iuj eraroj, Lingvoilo sugestas korektojn, kaj
+fojfoje havas ligilon al retaj gramatikoj 
+(<a href="http://bertilow.com/pmeg/">PMEG</a> de B. Wennergren,
+<a href="http://www.esperanto.mv.ru/Seppik/index.html">La tuta Esperanto</a> de H. Seppik)
+aŭ <a href="http://www.lernu.net">Lernu!</a>) aŭ al la
+<a href="http://www.reta-vortaro.de/revo/">Reta Vortaro</a>)
+por pliaj detalaj klarigoj pri la eraro.</p>
 
 <h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
 
