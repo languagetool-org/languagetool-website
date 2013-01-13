@@ -65,7 +65,7 @@ include("../../include/checkform.php");
     <tr>
       <td>
         <?php
-          $downloadTitle = "Elŝuti Lingvoilon      ";
+          $downloadTitle = "Elŝuti la kromaĵon Lingvoilo";
           $downloadLabel = "por LibreOffice/OpenOffice";
           $downloadVersionLabel = "versio";
           $downloadPath  = "/download";
