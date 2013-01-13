@@ -139,8 +139,8 @@ include("../../include/checkform.php");
 Por tiuj, kiuj deziras uzi la plej freŝan version,
 <?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?> el
 la lasta versio en la SVN-deponejo ankaŭ haveblas
-(<?=show_link("liston de ŝanĝon", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
-Sed atentu: tiuj versioj estas malpli testitaj ol la la oficiala versio.
+(<?=show_link("liston de ŝanĝoj", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
+Sed atentu: tiuj versioj estas malpli testitaj ol la oficiala versio.
 Tamen, Lingvoilo enhavas multajn aŭtomatajn testojn, do la ĉiu-tagaj versioj
 estas ankaŭ sufiĉe sencimaj.
 Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
