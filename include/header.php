@@ -79,7 +79,7 @@
          languagetool_i18n_explain :
             {
              // "Explain..." - shown if there's an URL with a more detailed description:
-             'br': 'Muioc’h a zitouroù…',
+             'br': 'Muioc’h a ditouroù…',
              'de-DE': 'Mehr Informationen...',
              'eo': 'Pliaj klarigoj…',
              'fr': 'Plus d’informations…',
@@ -97,7 +97,7 @@
          languagetool_i18n_ignore_all :
             {
              // "Ignore this kind of error":
-             'br': 'Na ober van ouzh ar seurt kinnig-mañ',
+             'br': 'Na ober van ouzh ar fazioù seurt-se',
              'de-DE': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs',
