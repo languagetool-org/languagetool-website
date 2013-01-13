@@ -40,6 +40,7 @@ $checkLanguage['lt']    = 'lituà';
 $checkLanguage['ml']    = 'malaiàlam';
 $checkLanguage['nl']    = 'nederlandès';
 $checkLanguage['pl']    = 'polonès';
+$checkLanguage['pt']    = 'portuguès';
 $checkLanguage['ro']    = 'romanès';
 $checkLanguage['ru']    = 'rus';
 $checkLanguage['sk']    = 'elovac';
@@ -51,6 +52,8 @@ $checkLanguage['uk']    = 'ucraïnès';
 $checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a algunes errors que LanguageTool hi pot detectat.";
 include("../../include/checkform.php");
 ?>
+
+<br/><br/>
 
 <div class="downloadSection">
     <table width="100%">

@@ -47,6 +47,9 @@ foreach ($languagesWithPage as $i => $value) {
         case "Italian":
           print "Nota: abbiamo anche una <a href='$value/'>pagina in italiano</a>.";
         break;
+        case "Catalan":
+          print "Nota: també tenim una <a href='$value/'>pàgina en català</a>.";
+        break;
         default;
           print "Note: we also have a <a href='$value/'>page in $langName</a>.";
       }
