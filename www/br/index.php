@@ -20,42 +20,42 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 
 <h2>LanguageTool enlinenn</h2>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Lakait amañ ho testenn vrezhonek da vezañ gwiriet…') { document.checkform.text.value='' } "
-        style="width:100%; height:100px" name="text">Lakait amañ ho testenn vrezhonek da vezañ gwiriet…</textarea>
-    <br />
-    <div style="margin-top:4px; text-align: right">
-    Yezh: <select name="lang" id="lang" >
-        <option value="de" >alamaneg</option>
-        <option value="ast" >astureg</option>
-        <option value="be" >belaruseg</option>
-        <option selected value="br" >brezhoneg</option>
-        <option value="da" >daneg</option>
-        <option value="eo" >esperanteg</option>
-        <option value="gl" >galizeg</option>
-        <option value="fr" >galleg</option>
-        <option value="is" >islandeg</option>
-        <option value="it" >italianeg</option>
-        <option value="ca" >katalaneg</option>
-        <option value="km" >khmer</option>
-        <option value="lt" >lituaneg</option>
-        <option value="ml" >malayalam</option>
-        <option value="nl" >nederlandeg</option>
-        <option value="pl" >poloneg</option>
-        <option value="ro" >roumaneg</option>
-        <option value="ru" >rusianeg</option>
-        <option value="en" >saozneg</option>
-        <option value="zh" >sinaeg</option>
-        <option value="sk" >slovakeg</option>
-        <option value="sl" >sloveneg</option>
-        <option value="es" >spagnoleg</option>
-        <option value="sv" >svedeg</option>
-        <option value="tl" >tagalog</option>
-        <option value="uk" >ukraineg</option>
-    </select>
-    <input type="submit" name="_action_checkText" value="Gwiriañ an destenn"/>
-    </div>
-</form>
+<?php
+$checkSubmitButtonValue = 'Gwiriañ an desten';
+$showLanguageBox = 1;
+
+$checkDefaultLang = 'br';
+
+$checkLanguage['ast']   = 'astureg';
+$checkLanguage['be']    = 'belaruseg';
+$checkLanguage['br']    = 'brezhoneg';
+$checkLanguage['ca']    = 'katalaneg';
+$checkLanguage['da']    = 'daneg';
+$checkLanguage['de-DE'] = 'alamaneg';
+$checkLanguage['en-US'] = 'saozneg';
+$checkLanguage['eo']    = 'esperanteg';
+$checkLanguage['es']    = 'spagnoleg';
+$checkLanguage['fr']    = 'galleg';
+$checkLanguage['gl']    = 'galizeg';
+$checkLanguage['is']    = 'islandeg';
+$checkLanguage['it']    = 'italianeg';
+$checkLanguage['km']    = 'khmer';
+$checkLanguage['lt']    = 'lituaneg';
+$checkLanguage['ml']    = 'malayalam';
+$checkLanguage['nl']    = 'nederlandeg';
+$checkLanguage['pl']    = 'poloneg';
+$checkLanguage['ro']    = 'roumaneg';
+$checkLanguage['ru']    = 'rusianeg';
+$checkLanguage['sk']    = 'slovakeg';
+$checkLanguage['sl']    = 'sloveneg';
+$checkLanguage['sv']    = 'svedeg';
+$checkLanguage['tl']    = 'tagalog';
+$checkLanguage['uk']    = 'ukraineg';
+$checkLanguage['zh']    = 'sinaeg';
+
+$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet…";
+include("../../include/checkform.php");
+?>
 
 <h2>Pellgargañ</h2>
 
