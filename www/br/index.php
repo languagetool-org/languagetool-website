@@ -55,7 +55,7 @@ $checkLanguage['tl']    = 'tagalog';
 $checkLanguage['uk']    = 'ukraineg';
 $checkLanguage['zh']    = 'sinaeg';
 
-$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezharel.";
+$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
 include("../../include/checkform.php");
 ?>
 
