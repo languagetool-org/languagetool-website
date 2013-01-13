@@ -22,9 +22,9 @@ rules can be written in Java.</p>
 
 <?php
 // language codes of languages that have their own page:
-$languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru");
+$languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
 // names of those languages:
-$languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian");
+$languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
 $defaultLang = getDefaultLanguage();
 error_reporting(E_ALL);
 foreach ($languagesWithPage as $i => $value) {
@@ -49,6 +49,9 @@ foreach ($languagesWithPage as $i => $value) {
         break;
         case "Catalan":
           print "Nota: també tenim una <a href='$value/'>pàgina en català</a>.";
+        break;
+        case "Portuguese":
+          print "Nota: também temos uma <a href='$value/'>página em Português</a>.";
         break;
         default;
           print "Note: we also have a <a href='$value/'>page in $langName</a>.";
