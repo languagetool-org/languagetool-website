@@ -70,7 +70,7 @@
          languagetool_i18n_no_errors :
             {
              // "No errors were found.":
-             'br': 'Fazioù ebet.',
+             'br': 'Fazi ebet.',
              'de-DE': 'Keine Fehler gefunden.',
              'eo': 'Neniuj eraroj trovitaj.',
              'fr': 'Aucune erreur trouvée.',
@@ -81,7 +81,7 @@
              // "Explain..." - shown if there's an URL with a more detailed description:
              'br': 'Muioc’h a zitouroù…',
              'de-DE': 'Mehr Informationen...',
-             'eo': 'Pliaj informoj…',
+             'eo': 'Pliaj klarigoj…',
              'fr': 'Plus d’informations…',
              'ca': 'Més informació…'
             },
