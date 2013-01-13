@@ -15,7 +15,7 @@ Sie können es hier ausprobieren:</p>
 $checkSubmitButtonValue = "Text Prüfen";
 $showLanguageBox = 0;
 $checkDefaultLang = "de-DE";
-$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rechtschreibprüfun findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
 $checkLanguage['auto']  = 'automatisch erkennen';
 $checkLanguage['en-US'] = 'Englisch';
 $checkLanguage['ast']   = 'Asturisch';
