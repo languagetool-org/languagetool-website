@@ -23,7 +23,7 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 <h2>LanguageTool enlinenn</h2>
 
 <?php
-$checkSubmitButtonValue = 'Gwiriañ an desten';
+$checkSubmitButtonValue = 'Gwiriañ an destenn';
 $showLanguageBox = 1;
 
 $checkDefaultLang = 'br';
