@@ -88,6 +88,7 @@
          languagetool_i18n_ignore_once :
             {
              // "Ignore suggestion":
+             'br': 'Na ober van ouzh ar c’hinnig',
              'de-DE': 'Hier ignorieren',
              'eo': 'Ignori sugeston',
              'fr': 'Ignorer la suggestion',
@@ -96,6 +97,7 @@
          languagetool_i18n_ignore_all :
             {
              // "Ignore this kind of error":
+             'br': 'Na ober van ouzh ar seurt kinnig-mañ',
              'de-DE': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs',
