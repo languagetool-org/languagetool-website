@@ -47,16 +47,16 @@
     // -->
     </script>
   <?php } ?>
-  
+
   <?php if ($enable_textcheck) { ?>
     <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
     <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
     <script language="javascript" type="text/javascript">
-    
+
      tinyMCE.init({
          mode : "textareas",
          plugins                     : "AtD,paste",
-       
+
          //Keeps Paste Text feature active until user deselects the Paste as Text button
          paste_text_sticky : true,
          //select pasteAsPlainText on startup
@@ -65,29 +65,39 @@
                  ed.pasteAsPlainText = true;
              });
          },
-    
+
          /* translations: */
-         languagetool_i18n_no_errors : 
+         languagetool_i18n_no_errors :
             {
              // "No errors were found.":
+             'br': 'Fazioù ebet.'
              'de-DE': 'Keine Fehler gefunden.'
+             'eo': 'Neniuj eraroj trovitaj.'
+             'fr': 'Aucune erreur trouvée.'
             },
-         languagetool_i18n_explain : 
+         languagetool_i18n_explain :
             {
              // "Explain..." - shown if there's an URL with a more detailed description:
+             'br': 'Muioc’h a zitouroù…'
              'de-DE': 'Mehr Informationen...'
+             'eo': 'Pliaj informoj…'
+             'fr': 'Plus d’informations…'
             },
-         languagetool_i18n_ignore_once : 
+         languagetool_i18n_ignore_once :
             {
              // "Ignore suggestion":
              'de-DE': 'Hier ignorieren'
+             'eo': 'Ignori sugeston'
+             'fr': 'Ignorer la suggestion'
             },
-         languagetool_i18n_ignore_all : 
+         languagetool_i18n_ignore_all :
             {
              // "Ignore this kind of error":
              'de-DE': 'Fehler dieses Typs ignorieren'
+             'eo': 'Ignori tiun specon de eraroj'
+             'fr': 'Ignorer ce type d’erreurs'
             },
-            
+
          languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
          /* the URL of your proxy file: */
          languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
@@ -107,7 +117,7 @@
          /* disable the gecko spellcheck since AtD provides one */
          gecko_spellcheck                   : false
      });
-    
+
      function doit() {
          var langCode = document.checkform.lang.value;
          tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
@@ -119,7 +129,7 @@
 <body>
 
 <?php
-list($usec, $sec) = explode(" ", microtime()); 
+list($usec, $sec) = explode(" ", microtime());
 $start_time = ((float)$usec + (float)$sec);
 include("help.php");
 
