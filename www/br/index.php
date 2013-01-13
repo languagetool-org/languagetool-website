@@ -3,6 +3,8 @@ $page = "fr";
 $title = "LanguageTool";
 $title2 = "An difazier yezhadurel frank evit ar brezhoneg";
 $lastmod = "2013-01-13 10:50 CET";
+$enable_textcheck = 1;
+$enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 

@@ -3,6 +3,8 @@ $page = "fr";
 $title = "LanguageTool";
 $title2 = "Correcteur grammatical";
 $lastmod = "2013-01-05 14:00:00 CET";
+$enable_textcheck = 1;
+$enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
