@@ -8,8 +8,19 @@ $enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
-<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch weitere <a href="http://www.languagetool.org/languages/">25 Sprachen</a> unterstützt.</p>
+<p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch <a href="http://www.languagetool.org/languages/">mehr als 20 weitere Sprachen</a> unterstützt.
+Sie können es hier ausprobieren:</p>
 
+<?php
+$checkSubmitButtonValue = "Text Prüfen";
+$showLanguageBox = 0;
+$checkDefaultLang = "de-DE";
+$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+include("../../include/checkform.php");
+?>
+
+<p>Sie können LanguageTool auch <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder herunterladen:</p>
+        
 <div class="downloadSection">
     <table width="100%">
       <tr>
@@ -89,18 +100,6 @@ LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=d
 
 Außerdem weist LanguageTool in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin.<br/><br/>
 
-<h2>LanguageTool ausprobieren</h2>
-
-Sie können LanguageTool <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder 
-direkt hier im Browser ausprobieren:<br/><br/>
-
-<?php
-$checkSubmitButtonValue = "Text Prüfen";
-$showLanguageBox = 0;
-$checkDefaultLang = "de-DE";
-$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rectschreibprüfunk findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
-include("../../include/checkform.php");
-?>
 
 <h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice nutzen</h2>
 LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
