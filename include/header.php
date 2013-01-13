@@ -70,31 +70,31 @@
          languagetool_i18n_no_errors :
             {
              // "No errors were found.":
-             'br': 'Fazioù ebet.'
-             'de-DE': 'Keine Fehler gefunden.'
-             'eo': 'Neniuj eraroj trovitaj.'
+             'br': 'Fazioù ebet.',
+             'de-DE': 'Keine Fehler gefunden.',
+             'eo': 'Neniuj eraroj trovitaj.',
              'fr': 'Aucune erreur trouvée.'
             },
          languagetool_i18n_explain :
             {
              // "Explain..." - shown if there's an URL with a more detailed description:
-             'br': 'Muioc’h a zitouroù…'
-             'de-DE': 'Mehr Informationen...'
-             'eo': 'Pliaj informoj…'
+             'br': 'Muioc’h a zitouroù…',
+             'de-DE': 'Mehr Informationen...',
+             'eo': 'Pliaj informoj…',
              'fr': 'Plus d’informations…'
             },
          languagetool_i18n_ignore_once :
             {
              // "Ignore suggestion":
-             'de-DE': 'Hier ignorieren'
-             'eo': 'Ignori sugeston'
+             'de-DE': 'Hier ignorieren',
+             'eo': 'Ignori sugeston',
              'fr': 'Ignorer la suggestion'
             },
          languagetool_i18n_ignore_all :
             {
              // "Ignore this kind of error":
-             'de-DE': 'Fehler dieses Typs ignorieren'
-             'eo': 'Ignori tiun specon de eraroj'
+             'de-DE': 'Fehler dieses Typs ignorieren',
+             'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs'
             },
 
