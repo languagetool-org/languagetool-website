@@ -19,7 +19,7 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice/OpenOffice.</p>
 
 <p>Por iuj eraroj, Lingvoilo sugestas korektojn, kaj
 fojfoje havas ligilon al retaj gramatikoj 
-(<a href="http://bertilow.com/pmeg/">PMEG</a> de B. Wennergren,
+(<a href="http://bertilow.com/pmeg/enhavo.html">PMEG</a> de B. Wennergren,
 <a href="http://www.esperanto.mv.ru/Seppik/index.html">La tuta Esperanto</a> de H. Seppik,
 aŭ <a href="http://www.lernu.net">Lernu!</a>) aŭ al la
 <a href="http://www.reta-vortaro.de/revo/">Reta Vortaro</a>
