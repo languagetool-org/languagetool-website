@@ -65,14 +65,13 @@ include("../../include/checkform.php");
     <tr>
       <td>
         <?php
-          $downloadTitle = "Elŝuti Lingvoilon    ";
+          $downloadTitle = "Elŝuti Lingvoilon      ";
           $downloadLabel = "por LibreOffice/OpenOffice";
           $downloadVersionLabel = "versio";
           $downloadPath  = "/download";
           include("../../include/download.php");
         ?>
       </td>
-      <td>&nbsp;&nbsp;&nbsp;</td>
       <td>
         <?php
           $downloadTitleStandAlone = "Elŝuti Lingvoilon";
@@ -107,7 +106,6 @@ include("../../include/checkform.php");
                 por malŝalti LightProof kaj ŝalti Lingvoilon por la angla.</li>
           </ul>
         </td>
-        <td></td>
 
         <td valign="top">
           <ul style="padding-left: 20px">
