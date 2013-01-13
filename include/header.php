@@ -88,10 +88,10 @@
          languagetool_i18n_ignore_once :
             {
              // "Ignore suggestion":
-             'br': 'Na ober van ouzh ar c’hinnig',
+             'br': 'Na ober van ouzh ar fazi-mañ',
              'de-DE': 'Hier ignorieren',
-             'eo': 'Ignori sugeston',
-             'fr': 'Ignorer la suggestion',
+             'eo': 'Ignori tiun eraron',
+             'fr': 'Ignorer cette erreur',
              'ca': 'Ignora el suggeriment'
             },
          languagetool_i18n_ignore_all :
