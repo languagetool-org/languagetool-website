@@ -1,6 +1,8 @@
 <?php
 function printLangOption($langCode) {
     global $checkDefaultLang;
+    global $checkLanguage;
+
     $checked = ($langCode == $checkDefaultLang) ? " selected='selected'" : "";
 
     if (isset($checkLanguage[$langCode])) {
