@@ -46,6 +46,7 @@ $checkLanguage['lt']    = 'lituaneg';
 $checkLanguage['ml']    = 'malayalam';
 $checkLanguage['nl']    = 'nederlandeg';
 $checkLanguage['pl']    = 'poloneg';
+$checkLanguage['pt']    = 'portugaleg';
 $checkLanguage['ro']    = 'roumaneg';
 $checkLanguage['ru']    = 'rusianeg';
 $checkLanguage['sk']    = 'slovakeg';
