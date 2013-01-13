@@ -89,12 +89,12 @@ include("../../include/checkform.php");
             <li>Tiu versio estas kromaĵo por LibreOffice/OpenOffice.
                 Ĝi atentigas pri gramatikaj eraroj, sed ne pri literumaj
                 eraroj, ĉar LibreOffice/OpenOffice jam faras tion
-                post alŝuto de
+                post elŝuto de
                  <a href="http://extensions.services.openoffice.org/fr/dictionaries?">Esperanta vortaro
                  por LibreOffice/OpenOffice</a>.</li>
             <li><strong>Ni forte konsilas uzi
                 <a href="http://www.libreoffice.org/download">LibreOffice-3.5.4</a></strong>
-                (aŭ pli nova ) aŭ <strong><a href="http://www.openoffice.org/download/">Apache
+                (aŭ pli nova) aŭ <strong><a href="http://www.openoffice.org/download/">Apache
                 OpenOffice-3.4.1</a></strong> (aŭ pli nova), ĉar pli malnovaj versioj
                 havas cimon, kiu kaŭzas longan paŭzon je la startigo de la programo.</li>
             <li>Uzi <em>Iloj… → Aldonaĵa mastrumilo… → Aldoni…</em> en
@@ -113,7 +113,7 @@ include("../../include/checkform.php");
           <ul style="padding-left: 20px">
             <li>Tiu versio estas por tiuj, kiuj deziras uzi Lingvoilon
                 sen LibreOffice/OpenOffice, uzante ekzemple la
-                grafika Java-interfaco, aŭ en komanda linio,
+                grafikan Java-interfacon, aŭ en komanda linio,
                 aŭ kiel servilo, aŭ ene de aliaj programoj kiel
                 ene de la
                 <a href="http://www.vim.org/scripts/script.php?script_id=3223">tekstoredaktilo Vim</a>.
