@@ -65,7 +65,7 @@ include("../../include/checkform.php");
     <tr>
       <td>
         <?php
-          $downloadTitle = "Elŝuti Lingvoilon";
+          $downloadTitle = "Elŝuti Lingvoilon  ";
           $downloadLabel = "por LibreOffice/OpenOffice";
           $downloadVersionLabel = "versio";
           $downloadPath  = "/download";
@@ -75,7 +75,7 @@ include("../../include/checkform.php");
       <td>&nbsp;&nbsp;&nbsp;</td>
       <td>
         <?php
-          $downloadTitleStandAlone = "Elŝuti Lingvoilon";
+          $downloadTitleStandAlone = "Elŝuti Lingvoilon  ";
           $downloadLabelStandAlone = "memstara";
           $downloadVersionLabelStandAlone = "versio";
           $downloadPathStandAlone  = "/download";
