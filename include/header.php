@@ -73,7 +73,8 @@
              'br': 'Fazioù ebet.',
              'de-DE': 'Keine Fehler gefunden.',
              'eo': 'Neniuj eraroj trovitaj.',
-             'fr': 'Aucune erreur trouvée.'
+             'fr': 'Aucune erreur trouvée.',
+             'ca': 'No s\'ha trobat cap error'
             },
          languagetool_i18n_explain :
             {
@@ -81,21 +82,24 @@
              'br': 'Muioc’h a zitouroù…',
              'de-DE': 'Mehr Informationen...',
              'eo': 'Pliaj informoj…',
-             'fr': 'Plus d’informations…'
+             'fr': 'Plus d’informations…',
+             'ca': 'Més informació…'
             },
          languagetool_i18n_ignore_once :
             {
              // "Ignore suggestion":
              'de-DE': 'Hier ignorieren',
              'eo': 'Ignori sugeston',
-             'fr': 'Ignorer la suggestion'
+             'fr': 'Ignorer la suggestion',
+             'ca': 'Ignora el suggeriment'
             },
          languagetool_i18n_ignore_all :
             {
              // "Ignore this kind of error":
              'de-DE': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
-             'fr': 'Ignorer ce type d’erreurs'
+             'fr': 'Ignorer ce type d’erreurs',
+             'ca': 'Ignora aquesta classe d'errors'
             },
 
          languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
