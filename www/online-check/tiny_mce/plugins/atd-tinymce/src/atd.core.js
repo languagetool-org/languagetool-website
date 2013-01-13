@@ -122,7 +122,7 @@ AtDCore.prototype.findSuggestion = function(element) {
 /* 
  * code to manage highlighting of errors
  */
-AtDCore.prototype.markMyWords = function(container_nodes) {
+AtDCore.prototype.markMyWords = function() {
     var ed = tinyMCE.activeEditor;
     var textWithCursor = this.getPlainTextWithCursorMarker();
     var cursorPos = textWithCursor.indexOf("\ufeff");

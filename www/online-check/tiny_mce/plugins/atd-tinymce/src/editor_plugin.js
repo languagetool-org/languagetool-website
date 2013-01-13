@@ -107,14 +107,6 @@
          this.menuVisible = false;
          ed.core = core;
 
-         /* look at the atd_ignore variable and put that stuff into a hash */
-         var ignore = tinymce.util.Cookie.getHash('atd_ignore');
-
-         if (ignore == undefined)
-         {
-            ignore = {};
-         }
-
          /* add a command to request a document check and process the results. */
          editor.addCommand('mceWritingImprovementTool', function(languageCode)
          {
@@ -249,7 +241,7 @@
          var ed  = this.editor;
          var se = ed.selection, b = se.getBookmark();
 
-         ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
+         ed.core.markMyWords();
 
          se.moveToBookmark(b);
       },

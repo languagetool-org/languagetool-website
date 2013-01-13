@@ -122,7 +122,7 @@ AtDCore.prototype.findSuggestion = function(element) {
 /* 
  * code to manage highlighting of errors
  */
-AtDCore.prototype.markMyWords = function(container_nodes) {
+AtDCore.prototype.markMyWords = function() {
     var ed = tinyMCE.activeEditor;
     var textWithCursor = this.getPlainTextWithCursorMarker();
     var cursorPos = textWithCursor.indexOf("\ufeff");
@@ -427,14 +427,6 @@ AtDCore.prototype.isIE = function() {
          this.menuVisible = false;
          ed.core = core;
 
-         /* look at the atd_ignore variable and put that stuff into a hash */
-         var ignore = tinymce.util.Cookie.getHash('atd_ignore');
-
-         if (ignore == undefined)
-         {
-            ignore = {};
-         }
-
          /* add a command to request a document check and process the results. */
          editor.addCommand('mceWritingImprovementTool', function(languageCode)
          {
@@ -569,7 +561,7 @@ AtDCore.prototype.isIE = function() {
          var ed  = this.editor;
          var se = ed.selection, b = se.getBookmark();
 
-         ed.core.markMyWords(ed.core.contents(this.editor.getBody()));
+         ed.core.markMyWords();
 
          se.moveToBookmark(b);
       },
