@@ -20,44 +20,43 @@ Il est aussi possible de définir des règles en Java.</p>
 <p>Utilisez LanguageTool <?=show_link("dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications", "../usage/", 0)?>
   ou essayez-le ici sur cette page :</p>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea
-      onfocus="javascript: if(document.checkform.text.value == 'Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.') { document.checkform.text.value='' } "
-        style="width:100%; height:100px" name="text">Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.</textarea>
-    <br />
-    <div style="margin-top:4px; text-align: right">
-      Langue : <select name="lang" id="lang" >
-          <option value="auto">détection automatique</option>
-          <option value="en" >anglais</option>
-          <option value="ast" >asturien</option>
-          <option value="be" >biélorusse</option>
-          <option value="br" >breton</option>
-          <option value="zh" >chinois</option>
-          <option value="da" >danois</option>
-          <option value="eo" >espéranto</option>
-          <option selected value="fr" >français</option>
-          <option value="gl" >galicien</option>
-          <option value="de" >allemand</option>
-          <option value="es" >espagnol</option>
-          <option value="is" >islandais</option>
-          <option value="it" >italien</option>
-          <option value="ca" >catalan</option>
-          <option value="km" >khmer</option>
-          <option value="lt" >lituanien</option>
-          <option value="ml" >malayalam</option>
-          <option value="nl" >néerlandais</option>
-          <option value="pl" >polonais</option>
-          <option value="ro" >roumain</option>
-          <option value="ru" >russe</option>
-          <option value="sk" >slovaque</option>
-          <option value="sl" >slovène</option>
-          <option value="sv" >suédois</option>
-          <option value="tl" >tagalog</option>
-          <option value="uk" >ukrainien</option>
-      </select>
-      <input type="submit" name="_action_checkText" value="Vérifier le texte"/>
-    </div>
-</form>
+<?php
+$checkSubmitButtonValue = 'Vérifier';
+$showLanguageBox = 1;
+
+$checkDefaultLang = 'fr';
+
+$checkLanguage['auto']  = 'aŭtomate detekti';
+$checkLanguage['en-US'] = 'anglais';
+$checkLanguage['ast']   = 'asturien';
+$checkLanguage['be']    = 'biélorusse';
+$checkLanguage['br']    = 'breton';
+$checkLanguage['zh']    = 'chinois';
+$checkLanguage['da']    = 'danois';
+$checkLanguage['eo']    = 'espéranto';
+$checkLanguage['fr']    = 'français';
+$checkLanguage['gl']    = 'galicien';
+$checkLanguage['de-DE'] = 'allemand';
+$checkLanguage['es']    = 'espagnol';
+$checkLanguage['is']    = 'islandais';
+$checkLanguage['it']    = 'italien';
+$checkLanguage['ca']    = 'catalan';
+$checkLanguage['km']    = 'khmer';
+$checkLanguage['lt']    = 'lituanien';
+$checkLanguage['ml']    = 'malayalam';
+$checkLanguage['nl']    = 'néerlandais';
+$checkLanguage['pl']    = 'polonais';
+$checkLanguage['ro']    = 'roumain';
+$checkLanguage['ru']    = 'russe';
+$checkLanguage['sk']    = 'slovaque';
+$checkLanguage['sl']    = 'slovène';
+$checkLanguage['sv']    = 'suédois';
+$checkLanguage['tl']    = 'tagalog';
+$checkLanguage['uk']    = 'ukrainien';
+
+$checkDefaultText = "Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.";
+include("../../include/checkform.php");
+?>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
 L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou plus récent :<br />
