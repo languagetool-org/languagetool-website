@@ -56,7 +56,6 @@ function printLangOption($langCode) {
     <?php if (1 || $showLanguageBox) { ?>
       <select name="lang" id="lang" >
           <!--<option value="auto">try to auto-detect</option>-->
-          <?php printLangOption("auto") ?>
           <?php printLangOption("ast") ?>
           <?php printLangOption("be") ?>
           <?php printLangOption("br") ?>
