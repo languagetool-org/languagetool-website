@@ -26,7 +26,7 @@ $showLanguageBox = 1;
 
 $checkDefaultLang = 'fr';
 
-$checkLanguage['auto']  = 'aŭtomate detekti';
+$checkLanguage['auto']  = 'détecter automatiquement';
 $checkLanguage['en-US'] = 'anglais';
 $checkLanguage['ast']   = 'asturien';
 $checkLanguage['be']    = 'biélorusse';
