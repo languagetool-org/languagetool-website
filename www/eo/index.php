@@ -20,7 +20,7 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
 <h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
 
 <?php
-$checkSubmitButtonValuer= 'Kontroli';
+$checkSubmitButtonValue = 'Kontroli';
 $showLanguageBox = 1;
 
 $checkDefaultLang = 'eo';
