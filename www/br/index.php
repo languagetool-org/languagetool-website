@@ -1,8 +1,8 @@
 <?php
-$page = "Pajenn degemer";
+$page = "fr";
 $title = "LanguageTool";
 $title2 = "An difazier yezhadurel frank evit ar brezhoneg";
-$lastmod = "2012-06-30 21:15 CET";
+$lastmod = "2013-01-13 10:50 CET";
 include("../../include/header.php");
 ?>
 
@@ -53,7 +53,7 @@ $checkLanguage['tl']    = 'tagalog';
 $checkLanguage['uk']    = 'ukraineg';
 $checkLanguage['zh']    = 'sinaeg';
 
-$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet…";
+$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a faziòu yezharel.";
 include("../../include/checkform.php");
 ?>
 
