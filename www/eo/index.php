@@ -102,7 +102,7 @@ include("../../include/checkform.php");
                 instalado de la kromaĵo.</li>
             <li>Se vi uzas LibreOffice-3.5.x kaj deziras kontroli
                 tekstojn en la angla, elektu:
-                <em>Iloj… → Agodaĵoj… → Lingvaj agordoj→ Skribhelpoj</em>
+                <em>Iloj… → Agordaĵoj… → Lingvaj agordoj→ Skribhelpoj</em>
                 por malŝalti LightProof kaj ŝalti Lingvoilon por la angla.</li>
           </ul>
         </td>
