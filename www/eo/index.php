@@ -1,8 +1,10 @@
 <?php
-$page = "hejmpaĝo";
+$page = "eo";
 $title = "Lingvoilo";
 $title2 = "Stila kaj gramatika kontrolilo";
 $lastmod = "2013-01-05 20:20 CET";
+$enable_textcheck = 1;
+$enable_fancybox = 1;
 include("../../include/header.php");
 ?>
 
@@ -17,43 +19,43 @@ kune kun Lingvoilo por literumaj eraroj en Libreoffice.
 
 <h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
-    <textarea onfocus="javascript: if(document.checkform.text.value == 'Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.') { document.checkform.text.value='' } "
-        style="width:100%; height:100px" name="text">Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.</textarea>
-    <br />
-    <div style="margin-top:4px; text-align: right">
-    Lingvo: <select name="lang" id="lang" >
-        <option value="auto">aŭtomate detekti</option>
-        <option value="en" >angla</option>
-        <option value="ast" >asturia</option>
-        <option value="be" >belarusa</option>
-        <option value="br" >bretona</option>
-        <option value="zh" >ĉina</option>
-        <option value="da" >dana</option>
-        <option selected value="eo" >Esperanto</option>
-        <option value="fr" >franca</option>
-        <option value="gl" >galega</option>
-        <option value="de" >germana</option>
-        <option value="es" >hispana</option>
-        <option value="is" >islanda</option>
-        <option value="it" >itala</option>
-        <option value="ca" >kataluna</option>
-        <option value="km" >kmera</option>
-        <option value="lt" >litova</option>
-        <option value="ml" >malajala</option>
-        <option value="nl" >nederlanda</option>
-        <option value="pl" >pola</option>
-        <option value="ro" >rumana</option>
-        <option value="ru" >rusa</option>
-        <option value="sk" >slovaka</option>
-        <option value="sl" >slovena</option>
-        <option value="sv" >sveda</option>
-        <option value="tl" >tagaloga</option>
-        <option value="uk" >ukraina</option>
-    </select>
-    <input type="submit" name="_action_checkText" value="Kontroli tekston"/>
-    </div>
-</form>
+<?php
+$checkSubmitButtonValuer= 'Kontroli';
+$showLanguageBox = 1;
+
+$checkDefaultLang = 'eo';
+
+$checkLanguage['auto'] = 'aŭtomate detekti';
+$checkLanguage['en']   = 'angla';
+$checkLanguage['ast']  = 'asturia';
+$checkLanguage['be']   = 'belarusa';
+$checkLanguage['br']   = 'bretona';
+$checkLanguage['zh']   = 'ĉina';
+$checkLanguage['da']   = 'dana';
+$checkLanguage['eo']   = 'Esperanto';
+$checkLanguage['fr']   = 'franca';
+$checkLanguage['gl']   = 'galega';
+$checkLanguage['de']   = 'germana';
+$checkLanguage['es']   = 'hispana';
+$checkLanguage['is']   = 'islanda';
+$checkLanguage['it']   = 'itala';
+$checkLanguage['ca']   = 'kataluna';
+$checkLanguage['km']   = 'kmera';
+$checkLanguage['lt']   = 'litova';
+$checkLanguage['ml']   = 'malajala';
+$checkLanguage['nl']   = 'nederlanda';
+$checkLanguage['pl']   = 'pola';
+$checkLanguage['ro']   = 'rumana';
+$checkLanguage['ru']   = 'rusa';
+$checkLanguage['sk']   = 'slovaka';
+$checkLanguage['sl']   = 'slovena';
+$checkLanguage['sv']   = 'sveda';
+$checkLanguage['tl']   = 'tagaloga';
+$checkLanguage['uk']   = 'ukraina';
+
+$checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.";
+include("../../include/checkform.php");
+?>
 
 <h2>Elŝutado</h2>
 
