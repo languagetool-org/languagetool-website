@@ -26,7 +26,7 @@ include("../../include/header.php");
 $checkSubmitButtonValue = "Controlla";
 $showLanguageBox = 1;
 $checkDefaultLang = "it";
-$checkDefaultText = "Inserite qui lo vostro testo... oppure contorlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
+$checkDefaultText = "Inserite qui lo vostro testo... oppure controlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
 include("../../include/checkform.php");
 ?>
 
