@@ -359,13 +359,26 @@
               }
            });
 
-            /* show the menu please */
-            ed.selection.select(e.target);
-            p1 = dom.getPos(e.target);
-            m.showMenu(p1.x, p1.y + e.target.offsetHeight - vp.y);
-            this.menuVisible =  true;
+           /* show the menu please */
+           ed.selection.select(e.target);
+           p1 = dom.getPos(e.target);
+           var xPos = p1.x;
+           m.showMenu(xPos, p1.y + e.target.offsetHeight - vp.y);
+           this.menuVisible =  true;
+           var menuDiv = $('#menu_checktext_spellcheckermenu_co');
+           if (menuDiv) {
+               var menuWidth = menuDiv.width();
+               var textBoxWidth = $('#checktextpara').width();  // not sure why we cannot directly use the textarea's width
+               if (xPos + menuWidth > textBoxWidth) {
+                   // menu runs out of screen, move it to the left
+                   var diff = xPos + menuWidth - textBoxWidth;
+                   menuDiv.css({ left: '-' + diff + 'px' });
+               } else {
+                   menuDiv.css({ left: '0px' });
+               }
+           }
 
-            return tinymce.dom.Event.cancel(e);
+           return tinymce.dom.Event.cancel(e);
          } 
          else
          {
