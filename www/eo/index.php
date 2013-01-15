@@ -62,7 +62,7 @@ $checkLanguage['tl']    = 'tagaloga';
 $checkLanguage['uk']    = 'ukraina';
 $checkLanguage['zh']    = 'ĉina';
 
-$checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku ankaŭ, ke Lingvoilo ankaŭ atentigas pri literumaj erraroj kiel tiu.";
+$checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku, ke Lingvoilo ankaux atentigas pri literumaj erraroj kiel ĉi-tiu.";
 include("../../include/checkform.php");
 ?>
 
