@@ -87,7 +87,7 @@
             },
          languagetool_i18n_ignore_once :
             {
-             // "Ignore suggestion":
+             // "Ignore this error":
              'br': 'Na ober van ouzh ar fazi-mañ',
              'de-DE': 'Hier ignorieren',
              'eo': 'Ignori tiun eraron',
