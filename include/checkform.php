@@ -48,7 +48,7 @@ function printLangOption($langCode) {
 
 <form name="checkform" action="http://community.languagetool.org" method="post">
 
-  <p><textarea name="text" style="width: 100%"
+  <p id="checktextpara"><textarea id="checktext" name="text" style="width: 100%"
                rows="6"><?php print $checkDefaultText ?></textarea></p>
 
   <div style="margin-top:0px; text-align: right">
