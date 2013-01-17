@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   curl_setopt($curl, CURLOPT_SSLVERSION, 3);
   curl_setopt($curl, CURLOPT_POST, true);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $postText);
+  curl_setopt($curl, CURLOPT_HEADER, 0);
   
   header("Content-Type: text/xml; charset=utf-8");
   //for debugging:
