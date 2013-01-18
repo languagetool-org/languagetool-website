@@ -331,20 +331,21 @@ FORM TEXTAREA {
 .downloadButtonSmall {
     display: block;
     background-image: linear-gradient(to bottom, #FBDB2D 0%, #EC8622 100%) !important;
-    margin-left: 22px;
+/*     margin-left: 22px; */
 }
 
 .downloadButtonSmall, .downloadButtonSmall > a {
     min-height: 42px !important;
+    padding-right: 5px;
 }
 
 .downloadButtonSmall img, .downloadButtonSmall span {
     position: relative;
-    left: -22px;
+/*     left: -22px; */
 }
 
 .downloadButtonSmall img {
-    top: -1px;
+/*     top: -1px; */
 }
 
 .downloadButtonSmall span {
@@ -356,9 +357,14 @@ FORM TEXTAREA {
 }
 
 .downloadButtonSmall .downloadButtonLogo {
-    height: 45px !important;
-    width: 45px !important;
-    padding: 0px 5px 0px 0px;
+    height: 32px !important;
+    width: 32px !important;
+    padding: 4px;
+}
+
+.reg {
+	font-size: 50%;
+	vertical-align: top;
 }
 
 /* end: download button on the homepage */

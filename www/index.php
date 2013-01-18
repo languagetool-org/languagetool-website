@@ -109,10 +109,10 @@ as some users have performance problems when using LanguageTool with Java 7.
               <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (or later) or
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (or later) as older versions
               have a bug that causes a freeze on startup</li>
-            <li>Use <em>Tools -&gt; Extension Manager -&gt; Add...</em> in LibreOffice/OpenOffice.org to install this file</li>
+            <li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice.org to install this file</li>
             <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
             <li>If you are using LibreOffice 3.5.x and you want to check English texts:
-              Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> to disable LightProof and enable LanguageTool for English</li>
+              Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>
           </ul>
 
         </td>
@@ -125,7 +125,17 @@ as some users have performance problems when using LanguageTool with Java 7.
             <li>Unzip the file and start LanguageToolGUI.jar by double clicking it.
               Also see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
           </ul>
-
+          
+          <br/>
+          
+          <?php
+          include("../include/downloadFx.php");
+          ?>
+          
+          <ul style="padding-left: 20px">
+            <li>Check selected text on websites and text in text fields</li>
+          </ul>
+          
         </td>
 
       </tr>
