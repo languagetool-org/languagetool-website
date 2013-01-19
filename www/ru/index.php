@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-01-12 19:05:00 CET";
+$lastmod = "2013-01-19 17:30:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -96,6 +96,11 @@ include("../../include/checkform.php");
         </td>
       </tr>
       </table>
+        <?php
+          $downloadLabelFx = "расширение для Mozilla<span class="reg">&reg;</span> Firefox<span class="reg">&reg;</span>";
+          $downloadTitleFx = "Скачать  LanguageToolFx";
+          include("../../include/downloadFx.php");
+        ?>
 </div>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
