@@ -96,12 +96,13 @@ include("../../include/checkform.php");
         </td>
       </tr>
       </table>
-        <?php
-          $downloadLabelFx = "расширение для Mozilla<span class="reg">&reg;</span> Firefox<span class="reg">&reg;</span>";
+        
+</div>
+
+<?php
           $downloadTitleFx = "Скачать  LanguageToolFx";
           include("../../include/downloadFx.php");
-        ?>
-</div>
+?>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
