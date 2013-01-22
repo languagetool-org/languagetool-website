@@ -74,6 +74,7 @@
              'de-DE': 'Keine Fehler gefunden.',
              'eo': 'Neniuj eraroj trovitaj.',
              'fr': 'Aucune erreur trouvée.',
+             'ru': 'Ошибки не найдены.',
              'ca': 'No s\'ha trobat cap error'
             },
          languagetool_i18n_explain :
@@ -83,6 +84,7 @@
              'de-DE': 'Mehr Informationen...',
              'eo': 'Pliaj klarigoj…',
              'fr': 'Plus d’informations…',
+             'ru': 'Подробнее…',
              'ca': 'Més informació…'
             },
          languagetool_i18n_ignore_once :
@@ -92,6 +94,7 @@
              'de-DE': 'Hier ignorieren',
              'eo': 'Ignori tiun eraron',
              'fr': 'Ignorer cette erreur',
+             'ru': 'Пропустить эту ошибку',
              'ca': 'Ignora el suggeriment'
             },
          languagetool_i18n_ignore_all :
@@ -101,6 +104,7 @@
              'de-DE': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs',
+             'ru': 'Пропустить этот тип ошибок',
              'ca': 'Ignora aquesta classe d\'errors'
             },
 
