@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2012-11-01 16:06:00 CET";
+$lastmod = "2013-01-23 22:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -31,7 +31,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
     </li>
     <li><a href="#javarules">Adding new Java rules</a></li>
     <li><a href="#translation">Translating the user interface</a></li>
-    <li><a href="#newlanguage">Adding support for a new language</a></li>
+    <!--<li><a href="#newlanguage">Adding support for a new language</a></li>-->
     <li><a href="#background">Background information</a></li>
 </ul>
 
@@ -84,14 +84,16 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <h2><a name="checkout">Source code checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
-want to use the latest development version, check out LanguageTool from <a href="http://subversion.apache.org/">subversion</a>:</p>
+want to use the latest development version, check out LanguageTool with <a href="http://subversion.apache.org/">Subversion</a>:</p>
 
 <code style="display: block;">
-svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/JLanguageTool languagetool
+svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool languagetool
 </code>
 
-<p>You can then run the tests with <tt>ant test</tt> or build the code with <tt>ant</tt> or <tt>ant dist-standalone</tt>.
-Please see the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/README.txt", 0) ?> file that comes with LanguageTool and the
+<p>You can then build the code with <tt>mvn clean package</tt> or just run the tests with <tt>mvn clean test</tt>.
+After the build, the LibreOffice/OpenOffice extension can be found in <tt>languagetool-office-extension/target</tt>,
+the stand-alone version in <tt>languagetool-standalone/target</tt>.
+Please also see <!--the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/README.txt", 0) ?> file that comes with LanguageTool and --> the
 <?=show_link("Usage page", "/usage/", 0) ?>.</p>
 
 <h2><a name="process">Language checking process</a></h2>
@@ -136,7 +138,7 @@ Here are some examples of patterns that can be used in that file:
 	<li><?php hl('<token postag="VB" />
 <token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
-		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
+		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
         for a list of possible English part-of-speech tags.
     </li>
 	<li><?php hl('<token>cause</token>
@@ -410,7 +412,7 @@ can be developed as a Java class. As a developer, extend LanguageTool's
 <tt><a href="api/org/languagetool/rules/Rule.html#match(org.languagetool.AnalyzedSentence)">match(AnalyzedSentence text)</a></tt>
 method.</p>
 
-<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/src/main/java/org/languagetool/rules/WordRepeatRule.java?revision=4635&amp;content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
+<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java?content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
 add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
@@ -423,6 +425,7 @@ files. Updated translations are only copied to the LanguageTool source before a 
 if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.</p>
 
 
+<!-- TODO: update now that we have switched to Maven 
 <h2><a name="newlanguage">Adding support for a new language</a></h2>
 
 <p>Adding a new language requires some changes to the Java source files. You should check out
@@ -471,7 +474,7 @@ in that file and copy those lines, adapting them to your language.</li>
 <?=show_link("Transifex", "https://www.transifex.net/projects/p/languagetool/", 0) ?>.</li>
 
 </ul>
-
+-->
 
 <h2><a name="background">Background information</a></h2>
 
