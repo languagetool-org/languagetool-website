@@ -147,7 +147,7 @@ as some users have performance problems when using LanguageTool with Java 7.
 
 <p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/JLanguageTool/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>).
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 
