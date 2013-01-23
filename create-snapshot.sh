@@ -7,9 +7,9 @@ cd /home/languagetool/languagetool.org
 svn up svn-checkout
 cd svn-checkout
 
-ant dist && mv dist/LanguageTool-*-dev.oxt $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.oxt
-
-ant dist-standalone && mv dist/LanguageTool-*-dev.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
+mvn clean package -DskipTests && 
+ mv languagetool-office-extension/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.oxt &&
+ mv languagetool-standalone/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
 
 # delete *.oxt files older than 5 days:
 rm `find $SNAPSHOT_DIR -name "*.oxt" -mtime +5`
