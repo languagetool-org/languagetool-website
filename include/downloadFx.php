@@ -1,5 +1,5 @@
 <?php
-if( !isset($downloadTitleFx) )      $downloadTitleFx = 'Download LanguageToolFx';
+if( !isset($downloadTitleFx) )      $downloadTitleFx = 'Download LanguageToolFx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 if( !isset($downloadLabelFx) )      $downloadLabelFx = 'extension for Mozilla Firefox';
 ?>
 
