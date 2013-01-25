@@ -1,6 +1,6 @@
 <?php
 if( !isset($downloadTitleFx) )      $downloadTitleFx = 'Download LanguageToolFx';
-if( !isset($downloadLabelFx) )      $downloadLabelFx = 'extension for Mozilla<span class="reg">&reg;</span> Firefox<span class="reg">&reg;</span>';
+if( !isset($downloadLabelFx) )      $downloadLabelFx = 'extension for Mozilla Firefox';
 ?>
 
 <div class="downloadButtonSmallContainer">
