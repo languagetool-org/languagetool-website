@@ -767,7 +767,7 @@ AtDCore.prototype.isIE = function() {
             error        : function( type, req, o )
             {
                plugin.editor.setProgressState(0);
-               alert( type + "\n" + req.status + "\nAt: " + o.url ); 
+               alert("Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works."); 
             }
          });
       }
