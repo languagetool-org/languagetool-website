@@ -135,7 +135,7 @@ AtDCore.prototype.markMyWords = function() {
         if (!suggestion.used) {
             var spanStart = suggestion.offset;
             var spanEnd = spanStart + suggestion.errorlength;
-            if (previousSpanStart != -1 && spanEnd >= previousSpanStart) {
+            if (previousSpanStart != -1 && spanEnd > previousSpanStart) {
                 // overlapping errors - these are not supported by our underline approach,
                 // as we would need overlapping <span>s for that, so skip the error:
                 continue;
