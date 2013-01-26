@@ -6,6 +6,9 @@ $lastmod = "2012-12-30 17:37:00 CET";
 include("../../include/header.php");
 ?>
 
+<p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
+  (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
+
 <p class="firstpara"><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
 <ul>
   <li>Many <?=show_link("updates for the error detection rules", "../changes/V_1_9_to_V_2_0/", 0) ?> for English, Spanish, French, German, Portuguese, Russian, Breton, Catalan, Esperanto, and Ukrainian</li>
@@ -36,10 +39,6 @@ include("../../include/header.php");
 <p><strong>2012-06-01:</strong> Use our new <?=show_link("rule creator", "../ruleeditor/", 0) ?> to easily create XML error detection rules for LanguageTool.</p>
 
 <p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "../development/#intro", 0) ?>!</p>
-
-<p style="margin-top: 25px">
-<?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
-  (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
 
 <p>See <?=show_link("the news archive", "archive.php", 0) ?> for old news.</p>
 
