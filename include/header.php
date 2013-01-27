@@ -250,7 +250,6 @@ function makeEntry($name, $visName) {
            <?php
         }
         ?>
-        <div class="submenuitem"><a href="http://wiki.languagetool.org">Wiki</a></div>
         <?php
         if ($page == "developer-links") {
           ?>
@@ -286,6 +285,7 @@ function makeEntry($name, $visName) {
 			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("wikicheck", "WikiCheck"); ?>
 			<?php makeEntry("development", "Development"); ?>
+			<?php makeEntry("http://wiki.languagetool.org", "Wiki"); ?>
 			<?php makeEntry("contact", "Contact"); ?>
 
 			<div style="margin-top:70px;font-size:12px">
