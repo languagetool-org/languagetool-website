@@ -7,6 +7,11 @@ cd /home/languagetool/languagetool.org
 svn up svn-checkout
 cd svn-checkout
 
+M2_HOME=/home/languagetool/apache-maven-3.0.4
+M2=$M2_HOME/bin
+PATH=$M2:$PATH
+MAVEN_OPTS=-Xmx512m -XX:MaxPermSize=128m
+
 mvn clean package -DskipTests && 
  mv languagetool-office-extension/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.oxt &&
  mv languagetool-standalone/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
