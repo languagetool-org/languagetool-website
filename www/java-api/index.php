@@ -3,14 +3,15 @@ $page = "development";
 $sub_page = "java-api";
 $title = "LanguageTool";
 $title2 = "Java API";
-$lastmod = "2013-01-04 23:20:00 CET";
+$lastmod = "2013-02-05 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
 <h2 class="firstpara">Embedding LanguageTool in Java applications</h2>
 
-    <p>Get LanguageTool by downloading the *.zip package from the homepage or by adding this dependency to your Maven pom.xml:</p>
+    <p>Get LanguageTool by downloading the *.zip package from the homepage or by adding this dependency to your
+    <?=show_link("Maven", "http://maven.apache.org/run-maven/", 0) ?> pom.xml:</p>
 
 <div class="xmlrule" style="margin-top:5px">
 <?php hl('<dependency>
