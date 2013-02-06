@@ -2,7 +2,7 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2012-12-25 18:35:00 CET";
+$lastmod = "2013-02-06 20:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -27,7 +27,7 @@ include("../../include/header.php");
         <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
 </ul>
 
-<h3>Other Open Source Language Tools</h3>
+<h3>Other Open Source Grammar Checkers</h3>
 
 <ul>
 	<li><?=show_simple_link("After the Deadline", "http://open.afterthedeadline.com/")?>,
@@ -38,21 +38,22 @@ include("../../include/header.php");
 	<li><?=show_simple_link("An Gramad&oacute;ir", "http://borel.slu.edu/gramadoir/")?>,
 		a grammar checker for the Irish language</li>
 	<li><?=show_simple_link("CoGrOO", "http://cogroo.sourceforge.net/")?>
-		a Grammar Checker for Portuguese</li>
+		a grammar checker for Portuguese</li>
 	<li><?=show_simple_link("Grammalecte", "http://www.dicollecte.org/grammalecte/")?>
-		a Grammar Checker for French written in Python, based on Lightproof</li>
+		a grammar checker for French written in Python, based on Lightproof</li>
 	<li><?=show_simple_link("GRAC", "http://grac.sourceforge.net/")?>
 		corpus-based grammar checker written in Python</li>
     <li><?=show_simple_link("Lightproof", "http://numbertext.org/lightproof/")?>,
    		a Python-based grammar checker embedded in LibreOffice since 3.5,
         <?=show_simple_link("Lightproof editor", "http://extensions.libreoffice.org/extension-center/lightproof-editor")?>
     </li>
-	<li><?=show_simple_link("Queequeg", "http://queequeg.sourceforge.net/index-e.html")?>
+    <li><?=show_simple_link("Link Grammar", "http://www.abisource.com/projects/link-grammar/")?>, a syntactic parser for English</li>
+	<li><?=show_simple_link("Queequeg", "http://queequeg.sourceforge.net/index-e.html")?>,
 		agreement checker written in Python</li>
-	<li><?=show_simple_link("Virastyar", "https://sourceforge.net/projects/virastyar/")?>
+	<li><?=show_simple_link("Virastyar", "https://sourceforge.net/projects/virastyar/")?>,
 		spelling and punctuation checker for Persian for MS Word, written in C#</li>		
 	<li><?=show_simple_link("Old version of LanguageTool in Python", "http://tkltrans.sourceforge.net/#r03") ?>, a much older
-		and less powerful version without OpenOffice.org integration but support for Hungarian</li>
+		and less powerful version without OpenOffice.org integration</li>
 </ul>
 
 <?php
