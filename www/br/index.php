@@ -108,7 +108,13 @@ Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
 <p>
 Trougarez d’ar raktres <a href="http://www.apertium.org/">Apertium</a> evit ar geriadur brezhonek yezhadurel.</p>
 <p>
-Trugarez ivez d’ar gevredigezh <a href="http://www.drouizig.org">An Drouizig</a> evit ar <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>, hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool. Diwallit avat: an difazier LanguageTool hag an <a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">difazier An Drouizig</a> a zo daou meziant disheñvel. Arabat kemmeskañ anezho.</p>
+Trugarez ivez d’ar gevredigezh
+<a href="http://www.drouizig.org">An Drouizig</a> evit ar
+<a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>
+hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool.
+Diwallit avat: an difazier LanguageTool hag an
+<a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">difazier An Drouizig</a>
+a zo daou veziant disheñvel. Arabat kemmeskañ anezho.</p>
 
 <h2>Aotre-implijout</h2>
 <p>
