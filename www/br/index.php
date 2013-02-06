@@ -106,7 +106,10 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.</p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
 Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
 <p>
-Trougarez d’ar raktres <a href="http://www.apertium.org/">Apertium</a> evit ar geriadur brezhonek yezhadurel.</p>
+Ne vefe ket possupl an difazier LanguageTool hep ar geriadur
+brezhonek Apertium. Trugarez neuze da Francis Tyers ha
+Fulup Jakez evit o labour gant ar raktres
+<a href="http://www.apertium.org/">Apertium</a>. 
 <p>
 Trugarez ivez d’ar gevredigezh
 <a href="http://www.drouizig.org">An Drouizig</a> evit ar
