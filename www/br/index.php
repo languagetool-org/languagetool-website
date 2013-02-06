@@ -15,7 +15,7 @@ Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
 <p>
 LanguageTool a gav fazioù evel ar c’hemmadurioù direizh (ar paotred → ar baotred) hag all, fazioù na
 vezont ket kavet gant un difazier skrivadurel. Displegañ a ra ar fazioù ha kinnig a ra
-reizhadennoù. Ne gav ket fazioù skrivadurel avat. Met posupl
+reizhadennoù. LanguageTool evit OpenOffice/LibreOfice ne gav ket fazioù skrivadurel avat. Met posupl
 eo implijout ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
 geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
@@ -103,7 +103,11 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.
 </p>
 <p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
-Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.
+Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
+<p>
+Trougarez d’ar raktres <a href="http://www.apertium.org/">Apertium</a> evit ar geriadur brezhonek yezhadurel.</p>
+<p>
+Trugarez ivez d’ar gevredigezh <a href="http://www.drouizig.org">An Drouizig</a> evit ar <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>, hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool. Diwallit avat: an difazier LanguageTool hag an difazier An Drouizig a zo daou meziant disheñvel. Arabat kemmeskañ anezho.</p>
 </p>
 <h2>Aotre-implijout</h2>
 <p>
