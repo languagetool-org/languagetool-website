@@ -99,8 +99,9 @@ Ezhomm hon eus eus ho skoazell evit gwellaat LanguageTool e brezhoneg.
 Mennozhioù evit diskoachañ muioc’h a fazioù hoc’h eus marteze? Pe marteze hoc’h eus
 kavet ur gudenn bennak gant LanguageTool brezhoneg? Skrivit da
 <a href="mailto:dominique.pelle@gmail.com">zDominique Pellé</a>,
-pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.
-</p>
+pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.</p>
+
+<h2>Trugarez</h2>
 <p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
 Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
@@ -108,7 +109,7 @@ Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
 Trougarez d’ar raktres <a href="http://www.apertium.org/">Apertium</a> evit ar geriadur brezhonek yezhadurel.</p>
 <p>
 Trugarez ivez d’ar gevredigezh <a href="http://www.drouizig.org">An Drouizig</a> evit ar <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>, hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool. Diwallit avat: an difazier LanguageTool hag an difazier An Drouizig a zo daou meziant disheñvel. Arabat kemmeskañ anezho.</p>
-</p>
+
 <h2>Aotre-implijout</h2>
 <p>
 Gallout a rit implijout LanguageTool gant an aotre
