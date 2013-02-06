@@ -115,9 +115,9 @@ Trugarez ivez d’ar gevredigezh
 <a href="http://www.drouizig.org">An Drouizig</a> evit ar
 <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>
 hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool.
-Diwallit avat: an difazier yezhadurel LanguageTool hag an
-<a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">difazier An Drouizig</a>
-a zo daou veziant disheñvel. Arabat kemmeskañ anezho.</p>
+Diwallit avat: disheñvel eo difazier yezhadurel LanguageTool diouzh
+<a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">difazier An Drouizig</a>.
+Arabat kemmeskañ anezho.</p>
 
 <h2>Aotre-implijout</h2>
 <p>
