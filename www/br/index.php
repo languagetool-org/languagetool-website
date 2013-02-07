@@ -13,10 +13,13 @@ Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetoo
 Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
 </p>
 <p>
-LanguageTool a gav fazioù evel ar c’hemmadurioù direizh (ar paotred → ar baotred) hag all, fazioù na
-vezont ket kavet gant un difazier skrivadurel. Displegañ a ra ar fazioù ha kinnig a ra
-reizhadennoù. LanguageTool evit OpenOffice/LibreOfice ne gav ket fazioù skrivadurel avat. Met posupl
-eo implijout ur <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
+LanguageTool a gav fazioù evel ar c’hemmadurioù direizh
+(ar paotred → ar baotred) hag all, fazioù na vezont ket kavet
+gant un difazier skrivadurel. Displegañ a ra ar fazioù ha
+kinnig a ra reizhadennoù a-wechoù. LanguageTool evit
+OpenOffice/LibreOfice ne gav ket fazioù reizhskrivañ avat.
+Met posupl eo implijout ur
+<a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">
 geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
 
@@ -106,7 +109,7 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.</p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
 Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
 <p>
-Ne vefe ket possupl an difazier LanguageTool hep ar geriadur
+Ne vefe ket posupl an difazier LanguageTool hep ar geriadur
 brezhonek Apertium. Trugarez neuze da Francis Tyers ha
 Fulup Jakez evit o labour gant ar raktres
 <a href="http://www.apertium.org/">Apertium</a>. 
@@ -114,7 +117,7 @@ Fulup Jakez evit o labour gant ar raktres
 Trugarez ivez d’ar gevredigezh
 <a href="http://www.drouizig.org">An Drouizig</a> evit ar
 <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>
-hag a zo implijet evit kavout fazioù skrivadurel gant LanguageTool.
+hag a zo implijet evit kavout fazioù reizhskrivañ gant LanguageTool.
 Diwallit avat: disheñvel eo difazier yezhadurel LanguageTool diouzh
 <a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">hini An Drouizig</a>.</p>
 
