@@ -251,6 +251,17 @@ function makeEntry($name, $visName) {
         }
         ?>
         <?php
+        if ($sub_page == "http-server") {
+          ?>
+           <div class="submenuitem activeMenuitem">HTTP Server</div>
+           <?php
+        } else {
+          ?>
+           <div class="submenuitem"><a href="<?php print $rootUrl ?>/http-server/">HTTP Server</a></div>
+           <?php
+        }
+        ?>
+        <?php
         if ($page == "developer-links") {
           ?>
              <div class="submenuitem activeMenuitem">Links</div>
