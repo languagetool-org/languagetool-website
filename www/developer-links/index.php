@@ -2,7 +2,7 @@
 $page = "developer-links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources for Developers";
-$lastmod = "2012-12-31 14:35:00 CET";
+$lastmod = "2013-02-16 14:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -37,6 +37,7 @@ include("../../include/header.php");
 
 <ul>
     <li><?=show_simple_link("Source code in Subversion", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool")?></li>
+    <li><?=show_simple_link("Source code mirrored at github", "https://github.com/danielnaber/languagetool-mirror/")?> (does not include the website etc)</li>
     <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/") ?>
       (<?=show_simple_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt") ?>)</li>
     <li><?=show_simple_link("API documentation (Javadoc)", "/development/api/")?></li>
