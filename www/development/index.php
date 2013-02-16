@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-01-23 22:06:00 CET";
+$lastmod = "2013-02-16 22:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -287,11 +287,12 @@ it will always test all rules, so we recommend you use that during rule developm
 
       <li>
         <p><strong>Match coordinated words</strong>, for example to match
-       	"both... as well" we could write:</p>
+       	"both ... as well as" we could write:</p>
 
        	<?php hl('<token skip="-1">both<exception scope="next">and</exception></token>
 <token>as</token>
-<token>well</token>'); ?>
+<token>well</token>
+<token>as</token>'); ?>
 
        	<p>Here the exception is applied only to the skipped tokens.</p>
 
