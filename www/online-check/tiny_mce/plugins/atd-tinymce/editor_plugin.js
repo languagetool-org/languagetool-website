@@ -493,7 +493,7 @@ AtDCore.prototype.isIE = function() {
          /* again showing a menu, I have no clue what */
          editor.onClick.add(plugin._showMenu, plugin);
 
-         /* we're showing some sort of menu, no idea what */
+         /* comment this in and comment out the list below to get the browser's standard context menu on right click: */
          //editor.onContextMenu.add(plugin._showMenu, plugin);
          // without this, the context menu opens but nothing in it can be selected:
          editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
