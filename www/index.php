@@ -9,7 +9,7 @@ include("../include/header.php");
 include("../include/browser_language.php");
 ?>
 
-<a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage"
+<a title="LanguageTool installed as an add-on in LibreOffice" class="fancyboxImage"
    href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
@@ -114,7 +114,7 @@ as some users have performance problems when using LanguageTool with Java 7.
               have a bug that causes a freeze on startup</li>
             <li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice.org to install this file</li>
             <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
-            <li>If you are using LibreOffice 3.5.x and you want to check English texts:
+            <li>If you are using LibreOffice 3.5 or later and you want to check English texts:
               Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>
           </ul>
 
