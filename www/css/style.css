@@ -53,13 +53,12 @@ tt {
 .xmlrule {
     background-color: #eeeeee;
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .command {
+    padding: 5px;
     background-color: #eeeeee;
-    padding-top: 10px;
-    padding-bottom: 10px
 }
 
 .xmlcode {

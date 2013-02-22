@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-02-16 22:06:00 CET";
+$lastmod = "2013-02-22 22:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -86,8 +86,14 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <p>If you are a Java developer and you want to extend LanguageTool or if you
 want to use the latest development version, check out LanguageTool with <a href="http://subversion.apache.org/">Subversion</a>:</p>
 
-<code style="display: block;">
+<code class="command">
 svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool languagetool
+</code>
+
+<p>Alternatively, you can get the code from github, where it is mirrored:</p> 
+
+<code class="command">
+git clone https://github.com/danielnaber/languagetool-mirror.git
 </code>
 
 <p>You can then build the code with <tt>mvn clean package</tt> or just run the tests with <tt>mvn clean test</tt>.

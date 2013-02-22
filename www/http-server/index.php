@@ -21,7 +21,7 @@ include('../../include/geshi/geshi.php');
       <li>
         <p>Start LanguageTool on the command line using this command:</p>
 
-       	<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt>
+       	<tt class="command">java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt>
 
         <p>You can use the <tt>--port</tt> or <tt>-p</tt> option to specify the port number. If
         no port number is specified, the default (8081) is used. For security reasons, the server will
@@ -39,7 +39,7 @@ include('../../include/geshi/geshi.php');
     <p>If you're not just testing you should use HTTP POST to transfer your data. You
     can test it like this, using <?=show_link("curl", "http://curl.haxx.se/") ?>:</p>
 
-    <tt>curl --data "language=en-US&amp;text=a simple test" http://localhost:8081</tt>
+    <tt class="command">curl --data "language=en-US&amp;text=a simple test" http://localhost:8081</tt>
 
     <p>The <tt>language</tt> parameter must specify the language code
     of the text to be checked, e.g. <tt>en</tt> (English) or <tt>en-US</tt> (American English).
@@ -91,7 +91,7 @@ include('../../include/geshi/geshi.php');
 <p>Starting with version 2.0, LanguageTool offers an embedded HTTPS server. It works just like the HTTP server
 described above, but it only supports <tt>https</tt>. It can be started like this:</p>
 
-<tt>java -cp LanguageTool.jar org.languagetool.server.HTTPSServer --config server.properties</tt>
+<tt class="command">java -cp LanguageTool.jar org.languagetool.server.HTTPSServer --config server.properties</tt>
 
 <p><tt>server.properties</tt> is a Java properties file like this:</p>
 
