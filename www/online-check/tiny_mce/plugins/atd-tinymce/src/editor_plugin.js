@@ -441,9 +441,9 @@
             type:  "POST",
             data:  "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + encodeURI(languageCode),
             success: success,
-            error: function(type, req, o) {
+            error: function(jqXHR, textStatus, errorThrown) {
                plugin.editor.setProgressState(0);
-               alert("Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works."); 
+               alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works."); 
             }
          });
    
