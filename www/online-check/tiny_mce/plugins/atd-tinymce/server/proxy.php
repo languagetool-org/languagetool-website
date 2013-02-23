@@ -1,4 +1,8 @@
 <?php
+// we use CORS now - no need for a proxy anymore:
+print "(proxy is disabled)";
+return;
+
 // LanguageTool Proxy Script
 // requires curl for PHP - on Ubuntu, install with "sudo apt-get install php5-curl"
 error_reporting(E_ALL);
