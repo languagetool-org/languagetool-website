@@ -447,26 +447,26 @@ AtDCore.prototype.isIE = function() {
 
             /* send request to our service */
             var textContent = plugin.editor.core.getPlainText();
-            plugin.sendRequest('', textContent, languageCode, function(data, request, jqXHR)
+            plugin.sendRequest('checkDocument', textContent, languageCode, function(data, request, someObject)
             {
                /* turn off the spinning thingie */
                plugin.editor.setProgressState(0);
 
                /* if the server is not accepting requests, let the user know */
-               if (jqXHR.status != 200 || jqXHR.responseText.substr(1, 4) == 'html' || jqXHR.responseText == '')
+               if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
                {
                   ed.windowManager.alert( plugin.editor.getLang('AtD.message_server_error', 'There was a problem communicating with the service. Try again in one minute.') );
                   return;
                }
 
                /* check to see if things are broken first and foremost */
-               if (jqXHR.responseXML.getElementsByTagName('message').item(0) != null)
+               if (request.responseXML.getElementsByTagName('message').item(0) != null)
                {
-                  ed.windowManager.alert(jqXHR.responseXML.getElementsByTagName('message').item(0).firstChild.data);
+                  ed.windowManager.alert(request.responseXML.getElementsByTagName('message').item(0).firstChild.data);
                   return;
                }
 
-               var results = core.processXML(jqXHR.responseXML);
+               var results = core.processXML(request.responseXML);
 
                if (results.length == 0) {
                   var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
@@ -755,7 +755,8 @@ AtDCore.prototype.isIE = function() {
             alert('Please specify: languagetool_rpc_url');
             return;
          }
-          
+   
+        /*
          jQuery.ajax({
             url:   url + "/" + file,
             type:  "POST",
@@ -765,10 +766,8 @@ AtDCore.prototype.isIE = function() {
                plugin.editor.setProgressState(0);
                alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works."); 
             }
-         });
+         });*/
    
-         /* this causes an OPTIONS request to be send as a preflight - LT server doesn't support that,
-         thus we're using jQuery.ajax() instead
          tinymce.util.XHR.send({
             url          : url + "/" + file,
             content_type : 'text/xml',
@@ -782,7 +781,7 @@ AtDCore.prototype.isIE = function() {
                plugin.editor.setProgressState(0);
                alert("Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works."); 
             }
-         });*/
+         });
       }
    });
 
