@@ -2,14 +2,14 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2012-12-02 13:30:00 CET";
+$lastmod = "2013-03-08 13:30:00 CET";
 include("../../include/header.php");
 ?>
 
 <h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
 
 <ul class="largelist">
-<li>LibreOffice 3.5 comes with its own integrated grammar checker (LightProof) which seems to disable LanguageTool for
+<li>LibreOffice 3.5 and later comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
     you are working with to make LanguageTool work.</li>
@@ -24,22 +24,10 @@ include("../../include/header.php");
 	(under <em>Tools -&gt; Extension Manager</em>).</li>
 </ul>
 
-<h2>Common problems with OpenOffice.org/LibreOffice integration</a></h2>
+<h2>Common problems with LibreOffice/OpenOffice.org integration</a></h2>
 
 <ul class="largelist">
-<li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
- This bug has been fixed in <strong>LibreOffice 3.5.4</strong> and <strong>Apache OpenOffice 3.4.1</strong> - all older versions are affected
- by this, so we strongly recommend to use at least these releases.
- If you cannot update, we recommend you use Java 6 for now,
- as the freeze is worse with Java 7. <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
-</li>
-<li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
-    One problem solved by this is getting <a href="../images/class_not_found.png">a long error message with "NoClassDefFoundError"</a> during installation.
-    See
-	<a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
-	for details.</li>
-<li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
-    <a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
+
 <li>If you get <strong>"Could not create Java implementation loader"</strong>, please work through
     <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">these suggestions</a>.
     <strong>Note: </strong> if you have this problem on 64-bit Windows,
@@ -48,6 +36,22 @@ include("../../include/header.php");
     (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
     </li>
     
+<li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
+    One problem solved by this is getting <a href="../images/class_not_found.png">a long error message with "NoClassDefFoundError"</a> during installation.
+    See
+	<a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
+	for details.</li>
+
+<li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
+    <a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
+
+<li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
+   This bug has been fixed in <strong>LibreOffice 3.5.4</strong> and <strong>Apache OpenOffice 3.4.1</strong> - all older versions are affected
+   by this, so we strongly recommend to use at least these releases.
+   If you cannot update, we recommend you use Java 6 for now,
+   as the freeze is worse with Java 7. <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=3153545&amp;group_id=110216&amp;atid=655717">Bug report</a>.
+</li>
+
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
     For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
     in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
@@ -70,6 +74,7 @@ include("../../include/header.php");
             ODT Compare</a> extension - use version 1.2.0 of DeltaXML ODT Compare, which fixes the problem.</li>
     </ul>
 </li>
+
 </ul>
 
 <h2>Known Limitations</h2>
@@ -78,11 +83,11 @@ include("../../include/header.php");
     <li>Some errors are not detected: LanguageTool uses rules to detect errors, i.e. it will only complain about errors for which there 
         is a rule that detects it. Please consider learning <a href="../development/">how to write rules</a> and help make LanguageTool 
         better by contributing your rules.</li>
-    <li>Some rules that work across sentences don't work in OpenOffice.org/LibreOffice. This also affects the rule that checks whether
+    <li>Some rules that work across sentences don't work in LibreOffice/OpenOffice.org. This also affects the rule that checks whether
         three sentences start with the same word.</li>
     <li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>
     <li>LanguageTool doesn't work correctly with documents that contain revisions
-        (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">#92013</a>)
+        (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">OOo #92013</a>)
     </li>
 </ul>
 
