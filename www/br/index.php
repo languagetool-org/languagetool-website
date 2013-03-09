@@ -107,7 +107,8 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.</p>
 <h2>Trugarez</h2>
 <p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
-Fulup Jakez, Joseph Monfort, Denis Arnaud ha Thierry Vignaud.</p>
+Fulup Jakez, Joseph Monfort, Denis Arnaud, Thierry Vignaud ha
+Philippe Basciano-Le Gall.</p>
 <p>
 Ne vefe ket posupl an difazier LanguageTool hep ar geriadur
 brezhonek Apertium. Trugarez neuze da Francis Tyers ha
