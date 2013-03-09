@@ -10,7 +10,7 @@ include("../include/browser_language.php");
 ?>
 
 <a title="LanguageTool installed as an add-on in LibreOffice" class="fancyboxImage"
-   href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="216" height="160" align="right"
    src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 <p class="firstpara"><strong>LanguageTool is an Open Source proofreading software for English, French, German, Polish,
