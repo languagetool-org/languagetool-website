@@ -453,6 +453,13 @@ AtDCore.prototype.isIE = function() {
                plugin.editor.setProgressState(0);
 
                /* if the server is not accepting requests, let the user know */
+               if (request.responseText.substr(0, 6) == 'Error:')
+               {
+                  // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
+                  ed.windowManager.alert(request.responseText);
+                  return;
+               }
+
                if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
                {
                   ed.windowManager.alert( plugin.editor.getLang('AtD.message_server_error', 'There was a problem communicating with the service. Try again in one minute.') );
