@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-01-05 15:00:00 CET";
+$lastmod = "2013-03-09 13:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 include("../include/header.php");
@@ -83,8 +83,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <h2>Download</h2>
 
-<p>LanguageTool requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later - we recommend Java 6 for now,
-as some users have performance problems when using LanguageTool with Java 7.
+<p>LanguageTool requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
 <strong>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
