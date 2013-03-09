@@ -10,12 +10,14 @@
   if (gethostname() == 'lisa') {   // Daniel's local server for testing
     $rootUrl = "/languagetool";
   }
+  $hasJQuery = 0;
   ?>
   <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="<?php print $rootUrl ?>/favicon.ico?20120923" />
   <?php if ($enable_fancybox) { ?>
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <?php $hasJQuery = 1; ?>
     <link rel="stylesheet" href="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
     <script type="text/javascript">
     <!--
@@ -31,6 +33,7 @@
   <?php if ($enable_tablesorter) { ?>
     <link href="<?php print $rootUrl ?>/css/tablesorter-style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
+    <?php $hasJQuery = 1; ?>
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
     <script type="text/javascript">
     <!--
@@ -51,6 +54,9 @@
   <?php if ($enable_textcheck) { ?>
     <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
     <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
+    <?php if ($hasJQuery == 0) { ?>
+      <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
+    <?php } ?>
     <script language="javascript" type="text/javascript">
 
      tinyMCE.init({
@@ -72,6 +78,7 @@
              // "No errors were found.":
              'br': 'Fazi ebet.',
              'de-DE': 'Keine Fehler gefunden.',
+             'de-DE-x-simple-language': 'Keine möglichen Verstöße gegen Leichte Sprache gefunden.',
              'eo': 'Neniuj eraroj trovitaj.',
              'fr': 'Aucune erreur trouvée.',
              'ru': 'Ошибки не найдены.',
@@ -82,6 +89,7 @@
              // "Explain..." - shown if there's an URL with a more detailed description:
              'br': 'Muioc’h a ditouroù…',
              'de-DE': 'Mehr Informationen...',
+             'de-DE-x-simple-language': 'Mehr Informationen...',
              'eo': 'Pliaj klarigoj…',
              'fr': 'Plus d’informations…',
              'ru': 'Подробнее…',
@@ -92,6 +100,7 @@
              // "Ignore this error":
              'br': 'Na ober van ouzh ar fazi-mañ',
              'de-DE': 'Hier ignorieren',
+             'de-DE-x-simple-language': 'Hier ignorieren',
              'eo': 'Ignori tiun eraron',
              'fr': 'Ignorer cette erreur',
              'ru': 'Пропустить эту ошибку',
@@ -102,6 +111,7 @@
              // "Ignore this kind of error":
              'br': 'Na ober van ouzh ar fazioù seurt-se',
              'de-DE': 'Fehler dieses Typs ignorieren',
+             'de-DE-x-simple-language': 'Fehler dieses Typs ignorieren',
              'eo': 'Ignori tiun specon de eraroj',
              'fr': 'Ignorer ce type d’erreurs',
              'ru': 'Пропустить этот тип ошибок',

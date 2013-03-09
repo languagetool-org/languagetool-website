@@ -23,6 +23,8 @@ function printLangOption($langCode) {
       case 'fr':    $lang = 'French';     break;
       case 'gl':    $lang = 'Galician';   break;
       case 'de-DE': $lang = 'German';     break;
+      case 'de-DE-x-simple-language':
+                    $lang = 'Deutsch, Leichte Sprache'; break;
       case 'is':    $lang = 'Icelandic';  break;
       case 'it':    $lang = 'Italian';    break;
       case 'km':    $lang = 'Khmer';      break;
@@ -54,8 +56,11 @@ function printLangOption($langCode) {
   <div style="margin-top:0px; text-align: right">
     <!-- always activate language selection box as we don't have feedback yet about which language was auto-detected -->
     <?php if (1 || $showLanguageBox) { ?>
-      <select name="lang" id="lang" >
+      <select name="lang" id="lang">
           <!--<option value="auto">try to auto-detect</option>-->
+          <?php foreach ($addedLanguages as $key => $val) { ?>
+            <?php printLangOption($key) ?>
+          <?php } ?>
           <?php printLangOption("ast") ?>
           <?php printLangOption("be") ?>
           <?php printLangOption("br") ?>

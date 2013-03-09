@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2013-01-13 13:43:00 CET";
+$lastmod = "2013-03-09 13:43:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -156,6 +156,12 @@ Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von Langu
 <p>
 In <a target="_blank" href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1">freiesMagazin 08/2012</a> ist ein ausführlicher Artikel, in dem die Verwendungsmöglichkeiten und die Funktionsweise von LanguageTool beschrieben werden, erschienen.
 </p>
+
+<h2>Spezielle Varianten</h2>
+
+<p>LanguageTool unterstützt jetzt auch <a href="leichte-sprache/">eine Prüfung auf Leichte Sprache</a>.</p>
+
+<p></p>
 
 <h2>Kontakt</h2>
 <!-- TODO: direkter Kontakt? -->
