@@ -16,12 +16,12 @@ MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 # artifacts will aggregate *all* languages into the language-module.properties, even
 # for those projects that don't depend on all of the languages:
 mvn clean &&
+mvn --projects languagetool-wikipedia --also-make package -DskipTests &&
+mv languagetool-wikipedia/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-wikipedia-`date +%Y%m%d`-snapshot.zip &&
 mvn --projects languagetool-office-extension --also-make package -DskipTests &&
 mv languagetool-office-extension/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.oxt &&
 mvn --projects languagetool-standalone --also-make package -DskipTests &&
-mv languagetool-standalone/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip &&
-mvn --projects languagetool-wikipedia --also-make package -DskipTests &&
-mv languagetool-wikipedia/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-wikipedia-`date +%Y%m%d`-snapshot.zip
+mv languagetool-standalone/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
 
 # delete files older than 10 days:
 rm `find $SNAPSHOT_DIR -name "*.oxt" -mtime +10`
