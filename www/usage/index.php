@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2012-01-05 17:40:00 CET";
+$lastmod = "2013-03-10 15:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -39,6 +39,13 @@ include('../../include/geshi/geshi.php');
 	<p>See "as a stand-alone application" above, but start LanguageTool.jar using:</p>
 	<tt>java -jar LanguageTool.jar &lt;filename&gt;</tt>
 	<p>Use <tt>java -jar LanguageTool.jar --help</tt> to get detailed usage information.</p>
+
+
+<h2>Embedding LanguageTool on a Web Page</h2>
+
+<ul>
+  <li><?=show_link("Integration on Websites", "$rootUrl/website-integration/", 0) ?></li>
+</ul>
 
 
 <h2>Embedding LanguageTool from other Applications</h2>

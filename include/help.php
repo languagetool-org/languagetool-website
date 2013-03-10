@@ -11,6 +11,18 @@ function hljava($code, $class="xmlcode") {
 	print "<div class='".$class."'>".$geshi->parse_code()."</div>";
 }
 
+function hlJavascript($code, $class="xmlcode") {
+	$geshi = new GeSHi($code, "Javascript", "../../include/geshi/");
+	$geshi->set_header_type(GESHI_HEADER_NONE);
+	print "<div class='".$class."'>".$geshi->parse_code()."</div>";
+}
+
+function hlHtml($code, $class="xmlcode") {
+	$geshi = new GeSHi($code, "html4strict", "../../include/geshi/");
+	$geshi->set_header_type(GESHI_HEADER_NONE);
+	print "<div class='".$class."'>".$geshi->parse_code()."</div>";
+}
+
 function show_simple_link($title, $url) {
     $html = "<a href='".$url."'>".$title."</a>";
     return $html;
