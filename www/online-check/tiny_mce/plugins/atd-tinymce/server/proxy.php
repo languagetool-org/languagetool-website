@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $postText = trim(file_get_contents('php://input'));
-  $postText = html_entity_decode($postText, ENT_COMPAT | ENT_HTML401, "UTF-8");
+  $postText = html_entity_decode($postText, ENT_COMPAT, "UTF-8");
   
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, "https://languagetool.org");
