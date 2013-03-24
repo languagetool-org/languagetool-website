@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-03-09 13:00:00 CET";
+$lastmod = "2013-03-24 13:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 include("../include/header.php");
@@ -77,13 +77,13 @@ $checkDefaultText = "Paste your own text here... or check this text too see an f
 include("../include/checkform.php");
 ?>
 
-<p><strong>Try LanguageTool without installation, using Java WebStart.</strong>
+<p>Try LanguageTool without installation, using Java WebStart.
 Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later:<br />
 <strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Download</h2>
 
-<p>LanguageTool requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
+<p>Using LanguageTool locally requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
 <strong>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
@@ -107,14 +107,14 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li><strong>We strongly recommend using
-              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (or later) or
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (or later) as older versions
-              have a bug that causes a freeze on startup</li>
             <li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice.org to install this file</li>
-            <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
-            <li>If you are using LibreOffice 3.5 or later and you want to check English texts:
+            <li><strong>Restart LibreOffice/OpenOffice.org</strong> after installation of the extension</li>
+            <li>If you are using LibreOffice <!--3.5 or later--> and you want to check English texts:
               Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>
+            <li>We recommend using
+              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4 or later</a> or
+              <a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1 or later</a> as older versions
+              have a bug that causes a freeze on startup</li>
           </ul>
 
         </td>
@@ -135,7 +135,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
           ?>
           
           <ul style="padding-left: 20px">
-            <li>Check selected text on websites and text in text fields</li>
+            <li>Check selected text on websites and text in text fields. No Java required!</li>
           </ul>
           
         </td>
