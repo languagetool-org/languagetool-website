@@ -71,6 +71,18 @@ include("../../include/checkform.php");
         <td><a href="#liboinstall">Installationsanleitung für LibreOffice/OpenOffice</a></td>
         <td><a href="#standalone">LanguageTool als Stand-Alone-Anwendung verwenden</a></td>
       </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="middle">
+          <?php
+          $downloadTitleFx = "LanguageToolFx herunterladen";
+          $downloadLabelFx = "Erweiterung für Firefox";
+          include("../../include/downloadFx.php");
+          ?>
+        </td>
+      </tr>
     </table>
 </div>
 
@@ -133,7 +145,7 @@ Außerdem weist LanguageTool in fremdsprachigen Texten auf <a href="http://de.wi
 LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
 
 <ol>
-    <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier</a> kostenlos herunter und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
+    <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier kostenlos herunter</a> und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
     <li>Laden Sie sich die aktuelle Version von LanguageTool herunter. (Der Downloadbutton befindet sich oben auf dieser Seite.)</li>
     <li>Öffnen Sie LibreOffice bzw. OpenOffice.org und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
     <li>Klicken Sie nun auf <i>Hinzufügen&hellip;</i>, wählen Sie die in Schritt 2 heruntergeladene Datei aus und klicken Sie auf <i>Öffnen</i>.</li>
