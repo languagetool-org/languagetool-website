@@ -2,6 +2,7 @@
 # LanguageTool regression tests on Wikipedia data
 # dnaber, 2013-03-24
 
+export LANG="de_DE.UTF-8"
 date=`date +%Y%m%d`
 jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
@@ -26,7 +27,7 @@ overviewTitle="LanguageTool Regression Test Overview $displayDate"
 echo "<head><title>$overviewTitle</title></head>"  >>$globalResultFile
 echo "<body>" >>$globalResultFile
 echo "<h1>$overviewTitle</h1>" >>$globalResultFile
-echo "<p>This page lists the results of our automatic regression testing against a fixed (but small!) Wikipedia corpus.</p>" >>$globalResultFile
+echo "<p>This page lists the results of our automatic regression testing against a fixed Wikipedia corpus with $maxDocs articles per language.</p>" >>$globalResultFile
 echo "<p>Changes $oldDisplayDate to $displayDate</p>" >>$globalResultFile
 
 # TODO: add more languages
@@ -55,6 +56,9 @@ do
   fi
 done
 
+displayDateEnd=`date +"%Y-%m-%d %H:%M"`
+echo "<p>Regression test runtime: $displayDate to $displayDateEnd</p>" >>$globalResultFile
+
 echo "</body>" >>$globalResultFile
 echo "</html>" >>$globalResultFile
 mv $globalResultFile $targetDir
@@ -65,4 +69,5 @@ mailFromPart1=naber
 mailFromPart2=danielnaber.de
 mailToPart1=naber
 mailToPart2=danielnaber.de
-lynx --dump $targetDir/$globalResultFile | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool regression test" ${mailToPart1}@${mailToPart2}
+lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool regression test" ${mailToPart1}@${mailToPart2}
+echo "Mail sent to ${mailToPart1}@${mailToPart2}"
