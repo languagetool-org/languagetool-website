@@ -59,3 +59,10 @@ echo "</body>" >>$globalResultFile
 echo "</html>" >>$globalResultFile
 mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
+
+### send mail:
+mailFromPart1=naber
+mailFromPart2=danielnaber.de
+mailToPart1=naber
+mailToPart2=danielnaber.de
+lynx --dump $targetDir/$globalResultFile | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool regression test" ${mailToPart1}@${mailToPart2}
