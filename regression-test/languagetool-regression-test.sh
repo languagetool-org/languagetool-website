@@ -70,7 +70,7 @@ echo "Overview saved to $targetDir/$globalResultFile"
 ### send mail:
 mailFromPart1=naber
 mailFromPart2=danielnaber.de
-mailToPart1=naber
-mailToPart2=danielnaber.de
+mailToPart1=languagetool-commits
+mailToPart2=lists.sourceforge.net
 lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool regression test" ${mailToPart1}@${mailToPart2}
 echo "Mail sent to ${mailToPart1}@${mailToPart2}"
