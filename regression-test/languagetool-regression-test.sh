@@ -2,13 +2,16 @@
 # LanguageTool regression tests on Wikipedia data
 # dnaber, 2013-03-24
 
-export LANG="de_DE.UTF-8"
 date=`date +%Y%m%d`
 jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
 maxDocs="1000"
 targetDir="/home/languagetool/languagetool.org/website-from-svn/www/regression-tests"
 jarUrl="http://www.languagetool.org/download/snapshots/LanguageTool-wikipedia-${date}-snapshot.zip"
+
+export LANG="de_DE.UTF-8"
+export JAVA_HOME="/home/languagetool/jdk1.7.0_07"
+export PATH="/home/languagetool/jdk1.7.0_07/bin:$PATH"
 
 rm LanguageTool-wikipedia-*-snapshot.zip
 wget $jarUrl
@@ -31,7 +34,7 @@ echo "<p>This page lists the results of our automatic regression testing against
 echo "<p>Changes $oldDisplayDate to $displayDate</p>" >>$globalResultFile
 
 # TODO: add more languages
-for lang in de en
+for lang in en de fr ru br ca pl
 do
   echo "============== $lang =============="
   wikiFile="$corpusDir/$lang/${lang}wiki-[0-9]*-pages-articles.xml"
