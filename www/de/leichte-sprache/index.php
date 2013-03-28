@@ -4,6 +4,7 @@ $title = "LanguageTool";
 $title2 = "Prüfung auf Leichte Sprache";
 $lastmod = "2013-03-09 13:40:00 CET";
 $enable_textcheck = 1;
+$subSubPage = 1;
 include("../../../include/header.php");
 ?>
 

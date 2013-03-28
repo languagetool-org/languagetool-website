@@ -7,7 +7,7 @@
   //online:
   $rootUrl = "";
   //local:
-  if (gethostname() == 'lisa') {   // Daniel's local server for testing
+  if (gethostname() == 'do_not_use') {   // Daniel's local server for testing - configure http://languagetool.localhost instead
     $rootUrl = "/languagetool";
   }
   $hasJQuery = 0;
@@ -154,7 +154,7 @@ $start_time = ((float)$usec + (float)$sec);
 include("help.php");
 
 function makeEntry($name, $visName) {
-	global $page, $sub_page, $rootUrl;
+	global $page, $sub_page, $rootUrl, $subSubPage;
 	if (($page == $name && !$sub_page) || ($name == "." && $page == "homepage")) {
 		?>
 		<div class="menuitem activeMenuitem"><? print $visName ?></div>
@@ -166,6 +166,8 @@ function makeEntry($name, $visName) {
 		} else {
 			if (substr($name, 0, 7) == "http://") {
 				$url = $name;
+			} else if ($subSubPage) {
+				$url = "../../".$name;
 			} else {
 				$url = "../".$name;
 			}
