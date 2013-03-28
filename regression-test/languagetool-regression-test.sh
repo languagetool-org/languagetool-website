@@ -68,8 +68,8 @@ mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
 
 ### send mail:
-mailFromPart1=naber
-mailFromPart2=danielnaber.de
+mailFromPart1=dnaber
+mailFromPart2=users.sourceforge.net
 mailToPart1=languagetool-commits
 mailToPart2=lists.sourceforge.net
 lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
