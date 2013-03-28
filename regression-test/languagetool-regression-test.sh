@@ -1,5 +1,5 @@
 #!/bin/bash
-# LanguageTool regression tests on Wikipedia data
+# LanguageTool nightly diff tests on Wikipedia data
 # dnaber, 2013-03-24
 
 date=`date +%Y%m%d`
@@ -26,11 +26,11 @@ globalResultFile="result_${date}.html"
 rm $globalResultFile
 
 echo "<html>" >>$globalResultFile
-overviewTitle="LanguageTool Regression Test Overview $displayDate"
+overviewTitle="LanguageTool Nightly Diff Overview $displayDate"
 echo "<head><title>$overviewTitle</title></head>"  >>$globalResultFile
 echo "<body>" >>$globalResultFile
 echo "<h1>$overviewTitle</h1>" >>$globalResultFile
-echo "<p>This page lists the results of our automatic regression testing against a fixed Wikipedia corpus with $maxDocs articles per language.</p>" >>$globalResultFile
+echo "<p>This page lists the results of our automatic nightly testing against a fixed Wikipedia corpus with $maxDocs articles per language.</p>" >>$globalResultFile
 echo "<p>Changes $oldDisplayDate to $displayDate</p>" >>$globalResultFile
 
 # TODO: add more languages
@@ -60,7 +60,7 @@ do
 done
 
 displayDateEnd=`date +"%Y-%m-%d %H:%M"`
-echo "<p>Regression test runtime: $displayDate to $displayDateEnd</p>" >>$globalResultFile
+echo "<p>Total runtime: $displayDate to $displayDateEnd</p>" >>$globalResultFile
 
 echo "</body>" >>$globalResultFile
 echo "</html>" >>$globalResultFile
@@ -72,5 +72,5 @@ mailFromPart1=naber
 mailFromPart2=danielnaber.de
 mailToPart1=languagetool-commits
 mailToPart2=lists.sourceforge.net
-lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool regression test" ${mailToPart1}@${mailToPart2}
+lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
 echo "Mail sent to ${mailToPart1}@${mailToPart2}"
