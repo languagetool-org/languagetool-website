@@ -51,7 +51,7 @@ foreach ($languagesWithPage as $i => $value) {
           print "Nota: també tenim una <a href='$value/'>pàgina en català</a>.";
         break;
         case "Russian":
-          print "Примечание: ещё у нас есть <a href='$value/'>страничка на русском языке</a>.";
+          print "Внимание: у нас есть <a href='$value/'>страничка на русском языке</a>!";
         break;
         case "Portuguese":
           print "Nota: também temos uma <a href='$value/'>página em Português</a>.";
