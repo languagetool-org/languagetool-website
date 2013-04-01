@@ -2,12 +2,21 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2012-12-30 17:37:00 CET";
+$lastmod = "2013-04-01 17:37:00 CET";
 include("../../include/header.php");
 ?>
 
 <p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
   (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
+
+<p class="firstpara"><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
+<ul>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/V_2_0_to_languagetool-2.1/", 0) ?> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, and Italian</li>
+  <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several. 
+    They can soon be found <?=show_link("at Maven Central", "http://search.maven.org/#search|ga|1|a%3A%22languagetool%22", 0) ?>.</li>
+  <li>Small bug fixes</li>
+  <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
+</ul>
 
 <p class="firstpara"><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
 <ul>
