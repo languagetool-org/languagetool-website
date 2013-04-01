@@ -1,5 +1,5 @@
 <?php
-$version= "2.0";
+$version= "2.1";
 $filesize = "33";   //MB
 if( !isset($downloadTitle) )        $downloadTitle        = "Download LanguageTool";
 if( !isset($downloadLabel) )        $downloadLabel        = "for LibreOffice/OpenOffice";
