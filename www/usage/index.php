@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2013-03-10 15:40:00 CET";
+$lastmod = "2013-04-01 20:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -15,30 +15,30 @@ include('../../include/geshi/geshi.php');
   	If that doesn't work, call <em>Tools -&gt; Extension Manager -&gt; Add...</em>.
     Close LibreOffice/OpenOffice.org and re-start it. Type some text
   	with an error that LanguageTool can detect and you should see a blue underline.
-    You might want to use "This is an test." as en example &ndash; make sure the text language is set
+    You might want to use "This is an test." as an example &ndash; make sure the text language is set
     to English for this example.</p>
 
 
 <h2>As a stand-alone application</h2>
 	<p>Download the *.zip version (not the *.oxt one) and unzip it.
-	Then start <tt>LanguageToolGUI.jar</tt> by double clicking on it.
+	Then start <tt>languagetool-standalone.jar</tt> by double clicking on it.
     If your computer isn't
-	configured to start jar archives, start it from the command line using:
-	<tt>java -jar LanguageToolGUI.jar</tt></p>
+	configured to start *.jar archives, start it from the command line using
+	<tt>java -jar languagetool-standalone.jar</tt>.</p>
 	
     <p>You can use the <tt>--tray</tt> option to start LanguageTool inside the system tray.
 	After you copy any text to the clipboard, clicking LanguageTool in the system tray will
 	cause the application to open and check the contents of the clipboard automatically. This way
 	you can use LanguageTool for applications that do not support direct integration of the checker.</p>
 
-    <p>The file size of the stand-alone version is so much larger than that of the LibreOffice/OpenOffice
+    <p>By the way, the file size of the stand-alone version is much larger than that of the LibreOffice/OpenOffice
     extension because it contains spell checking and thus dictionaries for most languages.</p>
 
 
 <h2>As a stand-alone application on the command line</h2>
 	<p>See "as a stand-alone application" above, but start LanguageTool.jar using:</p>
-	<tt>java -jar LanguageTool.jar &lt;filename&gt;</tt>
-	<p>Use <tt>java -jar LanguageTool.jar --help</tt> to get detailed usage information.</p>
+	<tt>java -jar languagetool-commandline.jar &lt;filename&gt;</tt>
+	<p>Use <tt>java -jar languagetool-commandline.jar --help</tt> to get detailed usage information.</p>
 
 
 <h2>Embedding LanguageTool on a Web Page</h2>
