@@ -146,7 +146,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
 <p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 

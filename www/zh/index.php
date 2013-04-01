@@ -53,7 +53,7 @@ include("../../include/checkform.php");
 
 <p>未经测试的当前版本的daily builds可在
 <?=show_link("快照目录", "download/snapshots/", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>)中获得。
+ (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>)中获得。
  旧版本仍然可以在<?=show_link("下载目录", "../download/", 0) ?>中下载。</p>
 
 <h2>新闻</h2>

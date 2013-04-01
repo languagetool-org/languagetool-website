@@ -144,7 +144,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 
 <p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt SVN sont disponibles dans le
 <?=show_link("répertoire snapshot", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
 
  Mais attention : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprend de 
  nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.

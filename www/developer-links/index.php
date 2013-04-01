@@ -42,7 +42,7 @@ include("../../include/header.php");
     </li>
     <li><?=show_simple_link("Source code mirrored at github", "https://github.com/danielnaber/languagetool-mirror/")?> (does not include the website etc)</li>
     <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/") ?>
-      (<?=show_simple_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt") ?>)</li>
+      (<?=show_simple_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt") ?>)</li>
     <li><?=show_simple_link("API documentation (Javadoc)", "/development/api/")?></li>
 </ul>
 

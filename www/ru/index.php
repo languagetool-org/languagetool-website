@@ -115,7 +115,7 @@ include("../../include/checkform.php");
 
 <p>Доступны 
 <?=show_link("ежедневные нетестированные сборки", "../download/snapshots/", 0) ?>
- (<?=show_link("Список изменений", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>).
+ (<?=show_link("Список изменений", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
 </p>
 
 

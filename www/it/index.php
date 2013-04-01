@@ -98,7 +98,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
 
 <p>Versioni non testate e aggiornate giornalmente del tool sono disponibili al link
 <?=show_link("versioni di sviluppo", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
  Rilasci precedenti sono disponibili al link <?=show_link("versioni scaricabili", "../download/", 0) ?>.</p>
 
 
