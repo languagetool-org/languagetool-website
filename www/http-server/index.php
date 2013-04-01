@@ -3,15 +3,15 @@ $page = "development";
 $sub_page = "http-server";
 $title = "LanguageTool";
 $title2 = "HTTP Server";
-$lastmod = "2013-02-08 23:20:00 CET";
+$lastmod = "2013-03-31 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
 <h2 class="firstpara">Accessing LanguageTool via HTTP</h2>
 
-    <p>LanguageTool comes with its own embedded HTTP server so you can send a text
-      to LanguageTool via HTTP and get the detected errors back as XML. This embedded server can be started in two ways:</p>
+    <p>LanguageTool comes with its own embedded HTTP/HTTPS server so you can send a text
+      to LanguageTool via HTTP or HTTPS and get the detected errors back as XML. This embedded server can be started in two ways:</p>
 
     <ul>
       <li>Start the stand-alone application and configure it (<em>File -&gt; Options...</em>) to listen on a port that
@@ -21,12 +21,12 @@ include('../../include/geshi/geshi.php');
       <li>
         <p>Start LanguageTool on the command line using this command:</p>
 
-       	<tt class="command">java -cp LanguageTool.jar org.languagetool.server.HTTPServer</tt>
+       	<tt class="command">java -cp languagetool-server.jar org.languagetool.server.HTTPServer</tt>
 
         <p>You can use the <tt>--port</tt> or <tt>-p</tt> option to specify the port number. If
         no port number is specified, the default (8081) is used. For security reasons, the server will
         not be accessible from other hosts. If you want to run a server for remote users you will
-        need to use the <tt>--public</tt> option (not much tested yet) or  write a small Java program
+        need to use the <tt>--public</tt> option or  write a small Java program
         that creates an instance of
         <tt><a href="http://www.languagetool.org/development/api/index.html?org/languagetool/server/HTTPServer.html">org.languagetool.server.HTTPServer</a></tt>.
       </li>
@@ -69,13 +69,13 @@ include('../../include/geshi/geshi.php');
 	an XML response like this:</p>
 
 <div class="xmlrule" style="margin-top:5px"><?php hl('<?xml version="1.0" encoding="UTF-8"?>
-<matches software="LanguageTool" version="1.9" buildDate="2012-09-29">
+<matches software="LanguageTool" version="2.1" buildDate="2013-04-01 14:49">
+<language shortname="en-US" name="English (US)"/>
 <error fromy="0" fromx="0" toy="0" tox="5"
   ruleId="UPPERCASE_SENTENCE_START"
   msg="This sentence does not start with an uppercase letter"
-  replacements="This" context="this is a test."
-  contextoffset="0" offset="0"
-  errorlength="4" category="Capitalization"/>
+  replacements="This" context="this is a test." contextoffset="0" offset="0"
+  errorlength="4" category="Capitalization" locqualityissuetype="misspelling"/>
 </matches>'); ?>
 </div>
 
@@ -91,7 +91,7 @@ include('../../include/geshi/geshi.php');
 <p>Starting with version 2.0, LanguageTool offers an embedded HTTPS server. It works just like the HTTP server
 described above, but it only supports <tt>https</tt>. It can be started like this:</p>
 
-<tt class="command">java -cp LanguageTool.jar org.languagetool.server.HTTPSServer --config server.properties</tt>
+<tt class="command">java -jar languagetool-server.jar --config server.properties</tt>
 
 <p><tt>server.properties</tt> is a Java properties file like this:</p>
 
