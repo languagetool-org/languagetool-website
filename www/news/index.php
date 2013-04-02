@@ -11,7 +11,7 @@ include("../../include/header.php");
 
 <p class="firstpara"><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
 <ul>
-  <li>Many <?=show_link("updates for the error detection rules", "../changes/V_2_0_to_languagetool-2.1/", 0) ?> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, and Italian</li>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/V_2_0_to_languagetool-2.1/", 0) ?> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, Catalan and Italian</li>
   <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several. 
     They can soon be found <?=show_link("at Maven Central", "http://search.maven.org/#search|ga|1|a%3A%22languagetool%22", 0) ?>.</li>
   <li>Small bug fixes</li>
