@@ -2,7 +2,7 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2013-04-01 17:37:00 CET";
+$lastmod = "2013-04-02 17:37:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -13,7 +13,7 @@ include("../../include/header.php");
 <ul>
   <li>Many <?=show_link("updates for the error detection rules", "../changes/V_2_0_to_languagetool-2.1/", 0) ?> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, Catalan and Italian</li>
   <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several. 
-    They can soon be found <?=show_link("at Maven Central", "http://search.maven.org/#search|ga|1|a%3A%22languagetool%22", 0) ?>.</li>
+    They can be found <?=show_link("at Maven Central", "http://search.maven.org/#search|ga|1|languagetool", 0) ?>.</li>
   <li>Small bug fixes</li>
   <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
 </ul>
