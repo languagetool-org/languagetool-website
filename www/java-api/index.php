@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "java-api";
 $title = "LanguageTool";
 $title2 = "Java API";
-$lastmod = "2013-03-31 23:20:00 CET";
+$lastmod = "2013-04-02 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -12,9 +12,6 @@ include('../../include/geshi/geshi.php');
 
     <p>Get LanguageTool by downloading the *.zip package from the homepage or by adding a
     dependency like this to your <?=show_link("Maven", "http://maven.apache.org/run-maven/", 0) ?> pom.xml:</p>
-
-<p class="warning">The new Maven artifacts fro LanguageTool 2.1 are not yet on
- Maven Central, but they should appear soon (2013-04-01)</p>
 
 <div class="xmlrule" style="margin-top:5px">
 <?php hl('<dependency>
