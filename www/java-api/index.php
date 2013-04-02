@@ -22,6 +22,7 @@ include('../../include/geshi/geshi.php');
 </div>
 
     <p>This will get the dependencies needed to check English. Use <tt>language-de</tt> as an artifactId for German etc.
+    (<?=show_link("see all artifacts", "http://search.maven.org/#search|ga|1|languagetool")?>).
     If you want to use all languages that LanguageTool supports, use <tt>language-all</tt>.</p>
 
     <p>If you download the ZIP instead, you will need the JAR files and everything under <tt>org/languagetool</tt> 
