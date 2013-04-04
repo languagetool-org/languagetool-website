@@ -65,7 +65,7 @@ include('../../include/geshi/geshi.php');
 	enabled and disabled rules at the same time. If you want to disable all the rules
     except those explicitly enabled, you can use the parameter enabledOnly=yes, for example:</p>
     
-    <tt>hhttp://localhost:8081/?language=en&enabled=STRANGE_RULE,ANOTHER_RULE&enabledOnly=yes&text=my+text</tt><br />
+    <tt>http://localhost:8081/?language=en&enabled=STRANGE_RULE,ANOTHER_RULE&enabledOnly=yes&text=my+text</tt><br />
 
 	<p>Note that for a server started from a GUI, a user may configure it in the configuration dialog box to disable
 	some unwanted rules. This may be beneficial if the calling program does not allow configuration of the call to the
