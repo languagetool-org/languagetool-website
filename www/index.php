@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-04-01 17:00:00 CET";
+$lastmod = "2013-04-04 17:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 include("../include/header.php");
@@ -124,7 +124,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Unzip the file and start LanguageToolGUI.jar by double clicking it.
+            <li>Unzip the file and start languagetool-standalone.jar by double clicking it.
               Also see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
           </ul>
           
