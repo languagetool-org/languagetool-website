@@ -34,7 +34,7 @@ echo "<p>This page lists the results of our automatic nightly testing against a 
 echo "<p>Changes $oldDisplayDate to $displayDate</p>" >>$globalResultFile
 
 # TODO: add more languages
-for lang in en de fr ru br ca pl
+for lang in en de fr ru br ca pl it
 do
   echo "============== $lang =============="
   wikiFile="$corpusDir/$lang/${lang}wiki-[0-9]*-pages-articles.xml"
