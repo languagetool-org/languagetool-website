@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-04-04 17:00:00 CET";
+$lastmod = "2013-04-07 14:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 include("../include/header.php");
@@ -77,7 +77,7 @@ $checkDefaultText = "Paste your own text here... or check this text too see an f
 include("../include/checkform.php");
 ?>
 
-<p>Try LanguageTool without installation, using Java WebStart.
+<p>Try LanguageTool without installation, using Java WebStart (note: this is not the latest version of LanguageTool).
 Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later:<br />
 <strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
