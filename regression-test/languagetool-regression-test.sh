@@ -31,9 +31,11 @@ echo "<head><title>$overviewTitle</title></head>"  >>$globalResultFile
 echo "<body>" >>$globalResultFile
 echo "<h1>$overviewTitle</h1>" >>$globalResultFile
 echo "<p>This page lists the results of our automatic nightly testing against a fixed Wikipedia corpus with $maxDocs articles per language.</p>" >>$globalResultFile
-echo "<p>Changes $oldDisplayDate to $displayDate</p>" >>$globalResultFile
+echo "<p>Changes $oldDisplayDate to $displayDate<br/>" >>$globalResultFile
+languageToolVersion=`java -jar $jarFile version`
+echo "Version: $languageToolVersion</p>" >>$globalResultFile
 
-# TODO: add more languages
+# as this uses a lot of resources, we only check the languages in active development:
 for lang in en de fr ru br ca pl it
 do
   echo "============== $lang =============="
