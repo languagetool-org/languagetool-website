@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-04-01 20:00:00 CET";
+$lastmod = "2013-04-10 19:05:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -108,6 +108,7 @@ include("../../include/checkform.php");
 
 <?php
           $downloadTitleFx = "Скачать  LanguageToolFx";
+          $downloadLabelFx = "Расширение для Mozilla Firefox"; 
           include("../../include/downloadFx.php");
 ?>
 
