@@ -81,6 +81,17 @@ include("../../include/checkform.php");
         <td><a href="#liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</a></td>
         <td><a href="#standalone">Com s'usa LanguageTool com a aplicació independent</a></td>
       </tr>
+      <tr>
+         <td>
+	       <?php
+	       $downloadTitleFx = "Descarrega LanguageToolFx";
+	       $downloadLabelFx = "Extensió per a Firefox";
+	       include("../../include/downloadFx.php");
+	       ?>
+         </td>
+         <td>
+         </td>
+      </tr>
     </table>
 </div>
 
