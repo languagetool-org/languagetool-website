@@ -132,6 +132,18 @@ include("../../include/checkform.php");
           </ul>
         </td>
       </tr>
+      <tr>
+        <td>
+          <?php
+          $downloadTitleFx = "Elŝuti LanguageToolFx";
+          $downloadLabelFx = "Por Firefox";
+          include("../../include/downloadFx.php");
+          ?>
+          <ul style="padding-left: 20px">
+            <li>Tiu kromaĵo por la retumilo Fajrovulpo (Firefox) kontrolas la gramatikon de apartigitan tekston en TTT-paĝoj aŭ en tekstokampoj. Java ne estas bezonata.</li>
+          </ul>
+        </td>
+      </tr>
     </table>
 </div>
 
