@@ -139,6 +139,18 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
           </ul>
         </td>
       </tr>
+      <tr>
+        <td colspan="2">
+          <?php
+          $downloadTitleFx = "Télécharger LanguageToolFx";
+          $downloadLabelFx = "Pour Firefox";
+          include("../../include/downloadFx.php");
+          ?>
+          <ul style="padding-left: 20px">
+            <li>Ce pluggin de Firefox contrôle la grammaire dans la sélection de texte de pages web, ou dans les champs de texte. Java n’est pas requis.</li>
+          </ul>
+        </td>
+      </tr>
     </table>
 </div>
 
