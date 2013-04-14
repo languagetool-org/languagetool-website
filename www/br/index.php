@@ -87,6 +87,15 @@ include("../../include/checkform.php");
         ?>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">
+        <?php
+        $downloadTitleFx = "Pellgargit LanguageToolFx";
+        $downloadLabelFx = "evit Firefox";
+        include("../../include/downloadFx.php");
+        ?>
+      </td>
+    </tr>
   </table>
 </div>
 
