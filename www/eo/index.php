@@ -136,7 +136,7 @@ include("../../include/checkform.php");
         <td colspan="2">
           <?php
           $downloadTitleFx = "Elŝuti LanguageToolFx";
-          $downloadLabelFx = "Por Firefox";
+          $downloadLabelFx = "por Firefox";
           include("../../include/downloadFx.php");
           ?>
           <ul style="padding-left: 20px">
