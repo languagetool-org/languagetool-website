@@ -35,15 +35,15 @@ version 1.5 of LanguageTool will thus contain more than 200 rules for Chinese te
 <h3>Documentation by the GSoC participants</h3>
 
 <ul>
-    <li><?=show_link("How to Use Indexer and Searcher for Fast Rule Evaluation", "http://languagetool.wikidot.com/how-to-use-indexer-and-searcher-for-fast-rule-evaluation", 0) ?> (Tao Lin)</li>
-    <li><?=show_link("Developing Chinese rules", "http://languagetool.wikidot.com/developing-chinese-rules", 0) ?> (Tao Lin)</li>
-    <li><?=show_link("Adding A New Language To Automatic Language Detection", "http://languagetool.wikidot.com/adding-a-new-language-to-automatic-language-detection", 0) ?> (Michael Bryant)</li>
+    <li><?=show_link("How to Use Indexer and Searcher for Fast Rule Evaluation", "http://wiki.languagetool.org/how-to-use-indexer-and-searcher-for-fast-rule-evaluation", 0) ?> (Tao Lin)</li>
+    <li><?=show_link("Developing Chinese rules", "http://wiki.languagetool.org/developing-chinese-rules", 0) ?> (Tao Lin)</li>
+    <li><?=show_link("Adding A New Language To Automatic Language Detection", "http://wiki.languagetool.org/adding-a-new-language-to-automatic-language-detection", 0) ?> (Michael Bryant)</li>
 </ul>
 
 <h3>Other links</h3>
 
 <ul>
-    <li><?=show_link("LanguageTool Project ideas", "http://languagetool.wikidot.com/missing-features", 0) ?></li>
+    <li><?=show_link("LanguageTool Project ideas", "http://wiki.languagetool.org/missing-features", 0) ?></li>
     <li><?=show_link("Google Summer of Code 2011 Homepage", "http://code.google.com/soc/", 0) ?></li>
     <li><?=show_link("Google Summer of Code 2011 Timeline", "http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/timeline", 0) ?></li>
 </ul>
