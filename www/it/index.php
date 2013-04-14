@@ -74,7 +74,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice</a></strong> in quanto le versioni più vecchie 
               hanno un problema che causa uno stallo in partenza</li>
             <li>Utilizzate poi il menu <em>Tools -&gt; Extension Manager -&gt; Add...</em> per installare il fole che scaricate</li>
-            <li><strong>Restart OpenOffice.org/LibreOffice</strong> after installation of the extension</li>
+            <li><strong>Riavviare OpenOffice.org/LibreOffice</strong> dopo l'installazione della estensione</li>
             <li>Se volete utilizzare LanguageTool in LibreOffice 3.5.x e volete controllare testi in Inglese:
               Utilizzate <em>Options -> Language Settings -> Writing Aids -> Edit...</em> per disabilitare LightProof e abilitare LanguageTool</li>
           </ul>
@@ -88,6 +88,16 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
           <ul style="padding-left: 20px">
             <li>Scompattate lo zip scaricato file e fate doppio click sul file LanguageToolGUI.jar.
               Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
+          </ul>
+          
+          <br/>
+          
+          <?php
+          include("../../include/downloadFx.php");
+          ?>
+          
+          <ul style="padding-left: 20px">
+            <li>Controlla il testo selezionato in siti web e in campi testo nel browser. Non richiede Java!</li>
           </ul>
 
         </td>
