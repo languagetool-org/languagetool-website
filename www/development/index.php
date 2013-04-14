@@ -41,8 +41,8 @@ new error detection rules, plus more. You don't even have to be a programmer for
 
 <ol>
   <li>Download the stand-alone version of LanguageTool <?=show_link("from the homepage", "../", 0)?> and unzip it.</li>
-  <li>Open <tt>rules/en/grammar.xml</tt> in your preferred text editor or in an XML editor.</li>
-  <li>Search for <tt>&lt;category name="Possible Typos"&gt;</tt> (it's quite at the top) and copy and paste this snippet just after
+  <li>Open <tt>org/languagetool/rules/en/grammar.xml</tt> in your preferred text editor or in an XML editor.</li>
+  <li>Search for <tt>name="Possible Typos"</tt> (it's quite at the top) and copy and paste this snippet just after
     that category element:
     <div class="xmlrule" style="margin-top:5px">
     <?php hl('<rule id="EXAMPLE_RULE" name="My example rule">
@@ -56,7 +56,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
 </rule>'); ?>
     </div>
   </li>
-  <li>Run <tt>LanguageToolGUI.jar</tt> by clicking it or by calling <tt>java -jar LanguageToolGUI.jar</tt> in your command line.</li>
+  <li>Run <tt>languagetool-standalone.jar</tt> by clicking it or by calling <tt>java -jar languagetool-standalone.jar</tt> in your command line.</li>
   <li>Select English as the text language and type something like "A foo bar tour in London", then start text checking.</li>
   <li>LanguageTool will now check your text and suggest "bicycle" as a replacement for "foo bar", because that's
     what the rule which we just added says.</li>
@@ -75,7 +75,7 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <ol>
 	<li>Read this page (some features described here are quite advanced, so you won't need everything)</li>
 	<li>Start writing rules for the error you'd like LanguageTool to detect</li>
-	<li>See <?=show_link("our wiki", "http://languagetool.wikidot.com/", 0)?> for more tips and tricks</li>
+	<li>See <?=show_link("our wiki", "http://wiki.languagetool.org", 0)?> for more tips and tricks</li>
 	<li>Post your rules to our <?=show_link("mailing list",
       "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?>
       so we can include them in LanguageTool</li>
@@ -227,7 +227,7 @@ etc as an error:</p>
 
 <h3><a name="testing">Testing rules</a></h3>
 
-<p>The LanguageTool user interface (LanguageToolGUI.jar) needs to be restarted if you have changed the <tt>grammar.xml</tt> file.
+<p>The LanguageTool user interface (languagetool-standalone.jar) needs to be restarted if you have changed the <tt>grammar.xml</tt> file.
 Testing rules is faster with our embedded test case feature: just call
 <tt>sh testrules.sh en</tt> on Linux or <tt>testrules.bat en</tt> on Windows, using your language code instead of <tt>en</tt>.
 
@@ -468,7 +468,7 @@ package. Install it and add its installation directory to your PATH. Once it wor
 create your own version of <tt>manually_added.txt</tt> and use that to create a <tt>.dict</tt> file,
 then adapt your tagger to use it (e.g. copy <tt>EnglishTagger.java</tt> and change the 
 <tt>getFileName()</tt> implementation). More details about building dictionaries
-are <?=show_link("in the Wiki.", "http://languagetool.wikidot.com/developing-a-tagger-dictionary", 0) ?>
+are <?=show_link("in the Wiki.", "http://wiki.languagetool.org/developing-a-tagger-dictionary", 0) ?>
 </p></li>
 
 <li>Adapt <tt>openoffice/Addons.xcu</tt> and <tt>openoffice/description.xml</tt> to translate the user
