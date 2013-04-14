@@ -83,7 +83,6 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
            include("../../include/download.php");
            ?>
         </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
             $downloadTitleStandAlone = "Télécharger LanguageTool";
@@ -120,7 +119,6 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
                 pour désactiver LightProof et activer LanguageTool pour l’anglais.</li>
           </ul>
         </td>
-        <td></td>
 
         <td valign="top">
           <ul style="padding-left: 20px">
