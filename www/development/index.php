@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-02-22 22:06:00 CET";
+$lastmod = "2013-04-14 23:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -422,7 +422,7 @@ method.</p>
 <p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java?content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
-add your rule's id to <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
+add your rule's class to the <tt>getRelevantRules()</tt> method in <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
 
 
 <h2><a name="translation">Translating the user interface</a></h2>
