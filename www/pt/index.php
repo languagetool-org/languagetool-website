@@ -2,7 +2,7 @@
 $page = "pt";
 $title = "LanguageTool";
 $title2 = "Corrector Gramatical e de Estilo";
-$lastmod = "2013-01-05 13:27:00 CET";
+$lastmod = "2013-04-14 23:27:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -49,6 +49,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
       <tr>
         <td>
            <?php
+           $downloadTitle = "Download LanguageTool";   // translate me
+           $downloadLabel = "for LibreOffice/OpenOffice";  // translate me
            $downloadPath = "download";
            include("../../include/download.php");
            ?>
@@ -56,6 +58,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
+           $downloadTitleStandAlone = "Download LanguageTool";  // translate me
+           $downloadLabelStandAlone = "for stand-alone use";  // translate me
            $downloadPath = "download";
            include("../../include/downloadStandAlone.php");
            ?>
@@ -90,6 +94,12 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
             <li>Faz unzip ao ficheiro e inicia o LanguageToolGUI.jar com um 
 			duplo clique nele. Vê também <?=show_link("outras formas de usar o LanguageTool", "../usage/", 0)?>.</li>
           </ul>
+
+          <?php
+            $downloadTitleFx = "Download LanguageToolFx";  // translate me
+            $downloadLabelFx = "Firefox Add-on";  // translate me
+            include("../../include/downloadFx.php");
+          ?>
 
         </td>
 
