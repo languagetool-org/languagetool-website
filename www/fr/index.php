@@ -135,13 +135,10 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
                 double-cliquant dessus. Voyez aussi les
                 <?=show_link("autres manières d’utiliser LanguageTool", "../usage/", 0)?>.</li>
           </ul>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+          <br/>
           <?php
           $downloadTitleFx = "Télécharger LanguageToolFx";
-          $downloadLabelFx = "Pour Firefox";
+          $downloadLabelFx = "pour Firefox";
           include("../../include/downloadFx.php");
           ?>
           <ul style="padding-left: 20px">

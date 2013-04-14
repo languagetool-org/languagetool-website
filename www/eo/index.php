@@ -130,10 +130,7 @@ include("../../include/checkform.php");
                 Vidu ankaŭ la
                 <?=show_link("aliajn manierojn por uzi Lingvoilon", "../usage/", 0)?>.</li>
           </ul>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+          <br/>
           <?php
           $downloadTitleFx = "Elŝuti LanguageToolFx";
           $downloadLabelFx = "por Firefox";
