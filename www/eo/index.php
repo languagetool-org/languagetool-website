@@ -133,7 +133,7 @@ include("../../include/checkform.php");
         </td>
       </tr>
       <tr>
-        <td>
+        <td colspan="2">
           <?php
           $downloadTitleFx = "Elŝuti LanguageToolFx";
           $downloadLabelFx = "Por Firefox";
