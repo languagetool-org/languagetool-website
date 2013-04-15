@@ -49,8 +49,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
       <tr>
         <td>
            <?php
-           $downloadTitle = "Download LanguageTool";   // translate me
-           $downloadLabel = "for LibreOffice/OpenOffice";  // translate me
+           $downloadTitle = "Download LanguageTool";
+           $downloadLabel = "para o LibreOffice/OpenOffice";
            $downloadPath = "download";
            include("../../include/download.php");
            ?>
@@ -58,8 +58,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
-           $downloadTitleStandAlone = "Download LanguageTool";  // translate me
-           $downloadLabelStandAlone = "for stand-alone use";  // translate me
+           $downloadTitleStandAlone = "Download LanguageTool";
+           $downloadLabelStandAlone = "para uso independente";
            $downloadPath = "download";
            include("../../include/downloadStandAlone.php");
            ?>
@@ -96,8 +96,8 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
           </ul>
 
           <?php
-            $downloadTitleFx = "Download LanguageToolFx";  // translate me
-            $downloadLabelFx = "Firefox Add-on";  // translate me
+            $downloadTitleFx = "Download LanguageToolFx";
+            $downloadLabelFx = "Add-on para o Firefox"; 
             include("../../include/downloadFx.php");
           ?>
 
