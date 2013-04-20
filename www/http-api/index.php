@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-api";
 $title = "LanguageTool";
 $title2 = "HTTP API";
-$lastmod = "2013-02-08 23:20:00 CET";
+$lastmod = "2013-04-20 10:20:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -33,7 +33,7 @@ When using it, please keep the following rules in mind:</p>
 <p>If you're not just testing you should use POST to transfer your data. You
 can test it like this, using <?=show_link("curl", "http://curl.haxx.se/") ?>:</p>
 
-<tt>curl --data "language=en-US&text=my texd" https://languagetool.org:8081</tt>
+<tt>curl --sslv3 --data "language=en-US&text=my texd" https://languagetool.org:8081</tt>
 
 <p>Please see <?=show_link("HTTP server", "../http-server/") ?> for information
 about the parameters you can supply.</p>
