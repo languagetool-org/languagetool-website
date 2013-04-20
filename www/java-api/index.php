@@ -38,7 +38,7 @@ List<RuleMatch> matches = langTool.check("A sentence " +
     "with a error in the Hitchhiker\'s Guide tot he Galaxy");
 for (RuleMatch match : matches) {
   System.out.println("Potential error at line " +
-      match.getEndLine() + ", column " +
+      match.getLine() + ", column " +
       match.getColumn() + ": " + match.getMessage());
   System.out.println("Suggested correction: " +
       match.getSuggestedReplacements());
