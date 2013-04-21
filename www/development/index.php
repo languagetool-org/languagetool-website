@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-04-14 23:06:00 CET";
+$lastmod = "2013-04-21 23:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -87,7 +87,7 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 want to use the latest development version, check out LanguageTool with <a href="http://subversion.apache.org/">Subversion</a>:</p>
 
 <code class="command">
-svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool languagetool
+svn checkout http://svn.code.sf.net/p/languagetool/code/trunk/languagetool languagetool
 </code>
 
 <p>Alternatively, you can get the code from github, where it is mirrored:</p> 
