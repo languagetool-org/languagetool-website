@@ -119,8 +119,10 @@
             },
 
          languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
-         /* the URL of your proxy file: */
-         languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
+         /* The URL of your proxy file or the LT server if you're using CORS, i.e. started the server with '--allow-origin "*"'
+          * (see https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS?redirectlocale=en-US&redirectslug=HTTP_access_control):
+          */
+         languagetool_rpc_url                 : "https://languagetool.org:8081",
          /* edit this file to customize how LanguageTool shows errors: */
          languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css",
          /* this stuff is a matter of preference: */
