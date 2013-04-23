@@ -254,6 +254,12 @@ it will always test all rules, so we recommend you use that during rule developm
     Starting with LanguageTool 1.8, overlapping matches for rules in the same rulegroup are filtered out
     to avoid duplicate matches for the same error.</p>
 
+<h3><a name="categories">Categories</a></h3>
+    <p>The rules are best put into categories that describe their purpose, and allow to enable or disable
+        a number of rules at the same time. When creating a category, you can use <tt>type</tt>
+        attribute to describe the type of the error according to the <a href="http://www.w3.org/International/multilingualweb/lt/drafts/its20/its20.html#lqissue-typevalues">Quality Issue Type</a> 
+        from the W3 Internationalization Tag Set. This will make integration of LT with other tools easier.        
+    </p>
 
 <h3><a name="turningoff">Turning rules off by default</a></h3>
 
