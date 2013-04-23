@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-04-21 23:06:00 CET";
+$lastmod = "2013-04-23 23:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -24,6 +24,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
       <li><a href="#testing">Testing rules</a></li>
       <li><a href="#inflection">Inflection</a></li>
       <li><a href="#grouping">Grouping rules</a></li>
+      <li><a href="#categories">Categories</a></li>
       <li><a href="#turningoff">Turning rules off by default</a></li>
       <li><a href="#skip">Skip</a></li>
       <li><a href="#variables">Variables</a></li>
@@ -256,7 +257,7 @@ it will always test all rules, so we recommend you use that during rule developm
 
 <h3><a name="categories">Categories</a></h3>
     <p>The rules are best put into categories that describe their purpose, and allow to enable or disable
-        a number of rules at the same time. When creating a category, you can use <tt>type</tt>
+        a number of rules at the same time. When creating a category, you can use the <tt>type</tt>
         attribute to describe the type of the error according to the <a href="http://www.w3.org/International/multilingualweb/lt/drafts/its20/its20.html#lqissue-typevalues">Quality Issue Type</a> 
         from the W3 Internationalization Tag Set. This will make integration of LT with other tools easier.        
     </p>
