@@ -137,7 +137,7 @@ include("../../include/checkform.php");
           include("../../include/downloadFx.php");
           ?>
           <ul style="padding-left: 20px">
-            <li>Tiu kromaĵo por la retumilo Fajrovulpo (Firefox) kontrolas la gramatikon de apartigitan tekston en TTT-paĝoj aŭ en tekstokampoj. Java ne estas bezonata.</li>
+            <li>Tiu kromaĵo por la retumilo Fajrovulpo (Firefox) kontrolas la gramatikon de apartigita teksto en TTT-paĝoj aŭ en tekstokampoj. Java ne estas bezonata.</li>
           </ul>
         </td>
       </tr>
