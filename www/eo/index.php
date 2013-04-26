@@ -182,7 +182,7 @@ Lingvoilo ne estas la nura Esperanta gramatika kontrolilo. Vidu ankaŭ:
 
 <p>Lingvoilo libere haveblas sub la permesilo <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 Kodofonto elŝuteblas ĉe <a href="http://sourceforge.net/projects/languagetool/">Sourceforge</a> per SVN:
-<pre>$ svn co https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool languagetool
+<pre>$ svn co http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/ languagetool
 </pre></p>
 
 <p>La enhavo de la hejmpaĝo haveblas sub la permesilo

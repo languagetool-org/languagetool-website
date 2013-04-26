@@ -37,12 +37,12 @@ include("../../include/header.php");
 
 <ul>
     <li>
-      <?=show_simple_link("Source code in Subversion", "https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/languagetool")?>
-      (<?=show_simple_link("browser view", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/")?>)
+      <?=show_simple_link("Source code in Subversion", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/")?>
+      (<?=show_simple_link("browser view", "http://sourceforge.net/p/languagetool/code/HEAD/tree/trunk/")?>)
     </li>
     <li><?=show_simple_link("Source code mirrored at github", "https://github.com/danielnaber/languagetool-mirror/")?> (does not include the website etc)</li>
-    <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/") ?>
-      (<?=show_simple_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt") ?>)</li>
+    <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/?C=M;O=D") ?>
+      (<?=show_simple_link("CHANGES.txt", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/CHANGES.txt") ?>)</li>
     <li><?=show_simple_link("API documentation (Javadoc)", "/development/api/")?></li>
 </ul>
 
@@ -62,10 +62,10 @@ include("../../include/header.php");
 <ul>
     <li><?=show_simple_link("HOO: Helping Our Own", "http://clt.mq.edu.au/research/projects/hoo/") ?></li>
     <li><?=show_simple_link("Learner corpora around the world", "http://www.uclouvain.be/en-cecl-lcworld.html") ?></li>
-    <li><?=show_simple_link("LanguageTool's small German error collection", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-language-modules/de/src/main/resources/org/languagetool/resource/de/errors.txt") ?></li>
+    <li><?=show_simple_link("LanguageTool's small German error collection", "http://wiki.languagetool.org/german-error-collection") ?></li>
     <li>English
       <ul>
-        <li><?=show_simple_link("LanguageTool's small English error collection", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/errors.txt") ?></li>
+        <li><?=show_simple_link("LanguageTool's small English error collection", "http://wiki.languagetool.org/english-error-collection") ?></li>
         <li><?=show_simple_link("COCA - Corpus of Contemporary American English", "http://corpus.byu.edu/coca/") ?></li>
         <li><?=show_simple_link("XML file with 221 collected English grammar errors", "/download/errors.xml") ?></li>
       </ul>

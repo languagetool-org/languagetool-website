@@ -100,7 +100,7 @@ git clone https://github.com/danielnaber/languagetool-mirror.git
 <p>You can then build the code with <tt>mvn clean package</tt> or just run the tests with <tt>mvn clean test</tt>.
 After the build, the LibreOffice/OpenOffice extension can be found in <tt>languagetool-office-extension/target</tt>,
 the stand-alone version in <tt>languagetool-standalone/target</tt>.
-Please also see <!--the <?=show_link("README", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/README.txt", 0) ?> file that comes with LanguageTool and --> the
+Please also see <!--the <?=show_link("README", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/README.txt", 0) ?> file that comes with LanguageTool and --> the
 <?=show_link("Usage page", "/usage/", 0) ?>.</p>
 
 <h2><a name="process">Language checking process</a></h2>
@@ -145,7 +145,7 @@ Here are some examples of patterns that can be used in that file:
 	<li><?php hl('<token postag="VB" />
 <token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
-		See <?=show_link("resource/en/tagset.txt", "http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
+		See <?=show_link("resource/en/tagset.txt", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
         for a list of possible English part-of-speech tags.
     </li>
 	<li><?php hl('<token>cause</token>
@@ -426,7 +426,7 @@ can be developed as a Java class. As a developer, extend LanguageTool's
 <tt><a href="api/org/languagetool/rules/Rule.html#match(org.languagetool.AnalyzedSentence)">match(AnalyzedSentence text)</a></tt>
 method.</p>
 
-<p>See <tt><a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java?content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
+<p>See <tt><a href="http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java?content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
 add your rule's class to the <tt>getRelevantRules()</tt> method in <tt>&lt;YourLanguage&gt;.java</tt> to activate it.

@@ -142,7 +142,7 @@ for your language in the "translations" section.</p>
 <h2>PHP Proxy</h2>
 
 <p>Download the 
-<a href="https://languagetool.svn.sourceforge.net/svnroot/languagetool/trunk/website/www/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php">proxy.php</a>
+<a href="http://svn.code.sf.net/p/languagetool/code/trunk/website/www/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php">proxy.php</a>
 and place it on your server, in the same directory as your page. If you want to place it somewhere else you
 need to adapt <tt>languagetool_rpc_url</tt> in the page's <tt>&lt;head&gt;</tt> section. In any case, the proxy script
 needs to be placed on the same domain as the page with the textarea. By the way, if you open the 

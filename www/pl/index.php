@@ -41,7 +41,7 @@ include("../../include/header.php");
 
 <h2>Funkcja</h2>
 
-LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="http://languagetool.svn.sourceforge.net/viewvc/languagetool/trunk/languagetool/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml?content-type=text%2Fplain">lista aktualnie stosowanych reguł</a>.<br/><br/>
+LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="http://sourceforge.net/p/languagetool/code/HEAD/tree/trunk/languagetool/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml?content-type=text%2Fplain">lista aktualnie stosowanych reguł</a>.<br/><br/>
 
 <small>(Po przesunięciu kursora myszy nad błędem wyświetli się odpowiedni opis).</small>
 
