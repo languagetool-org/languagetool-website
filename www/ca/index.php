@@ -49,7 +49,7 @@ $checkLanguage['sv']    = 'suec';
 $checkLanguage['tl']    = 'tagàlog';
 $checkLanguage['uk']    = 'ucraïnès';
 
-$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a algunes errors que LanguageTool hi pot detectat.";
+$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
 include("../../include/checkform.php");
 ?>
 
