@@ -67,7 +67,7 @@ foreach ($languagesWithPage as $i => $value) {
 <h2 style="margin-top: 40px">Try it online</h2>
 
 <p>Use LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, as a stand-alone application, or embedded in other applications", "usage/", 0)?>
-  or try it out here:</p>
+  or try it out here (if it doesn't work for you, please use <?=show_link("the fallback form", "simple-check/", 0)?>):</p>
 
 <?php
 $checkSubmitButtonValue = "Check Text";
