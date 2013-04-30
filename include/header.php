@@ -248,7 +248,7 @@ function makeEntry($name, $visName) {
           <?php
 	    }
 		?>
-        <div class="submenuitem"><a href="http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter">Bug Reports</a></div>
+        <div class="submenuitem"><a href="http://sourceforge.net/p/languagetool/bugs/">Bug Reports</a></div>
         <?php
         if ($sub_page == "java-api") {
           ?>

@@ -2,16 +2,17 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2013-02-06 20:35:00 CET";
+$lastmod = "2013-04-30 20:35:00 CET";
 include("../../include/header.php");
 ?>
 
 <h3 class="firstpara">Issue Tracking</h3>
 
 <ul>
-	<li><?=show_simple_link("Open Bug Reports", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655717&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
-	<li><?=show_simple_link("Open Feature Requests", "http://sourceforge.net/tracker/?limit=25&amp;func=&amp;group_id=110216&amp;atid=655720&amp;assignee=&amp;status=&amp;category=&amp;artgroup=&amp;keyword=&amp;submitter=&amp;artifact_id=&amp;assignee=&amp;status=1&amp;category=&amp;artgroup=&amp;submitter=&amp;keyword=&amp;artifact_id=&amp;submit=Filter")?></li>
-	<li><?=show_simple_link("Create a new Bug Report or Feature Request", "http://sourceforge.net/tracker/?func=add&amp;group_id=110216&amp;atid=655717")?></li>
+	<li><?=show_simple_link("Open Bug Reports", "http://sourceforge.net/p/languagetool/bugs/")?></li>
+	<li><?=show_simple_link("Open Feature Requests", "http://sourceforge.net/p/languagetool/feature-requests/")?></li>
+	<li><?=show_simple_link("Create a new Bug Report", "https://sourceforge.net/p/languagetool/bugs/new/")?> or
+        <?=show_simple_link("Feature Request", "https://sourceforge.net/p/languagetool/feature-requests/new/")?></li>
 </ul>
 
 <h3>LanguageTool Integration</h3>
