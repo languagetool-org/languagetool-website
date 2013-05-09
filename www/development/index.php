@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-04-23 23:06:00 CET";
+$lastmod = "2013-05-09 23:06:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -82,6 +82,10 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
       so we can include them in LanguageTool</li>
 </ol>
 
+<p>If your language isn't supported yet, you can add it by following the
+<a href="http://wiki.languagetool.org/adding-a-new-language">documentation in our wiki</a>.</p>
+
+
 <h2><a name="checkout">Source code checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
@@ -91,7 +95,7 @@ want to use the latest development version, check out LanguageTool with <a href=
 svn checkout http://svn.code.sf.net/p/languagetool/code/trunk/languagetool languagetool
 </code>
 
-<p>Alternatively, you can get the code from github, where it is mirrored:</p> 
+<p>Alternatively, you can get the code from github, where it is mirrored (<b>Sorry, the mirror is currently not up-to-date</b> - May 2013):</p>
 
 <code class="command">
 git clone https://github.com/danielnaber/languagetool-mirror.git
@@ -222,7 +226,7 @@ etc as an error:</p>
         to make the test also check whether the correction suggested by LanguageTool is what you expect.
         These sentences are used by the
 		automatic test cases that can be run using <tt>sh testrules.sh</tt> (on Linux), <tt>testrules.bat</tt> (on Windows),
-        or <tt>ant test</tt> (for Java developers).</li>
+        or <tt>mvn clean test</tt> (for Java developers).</li>
 </ul>
 
 
@@ -438,57 +442,6 @@ add your rule's class to the <tt>getRelevantRules()</tt> method in <tt>&lt;YourL
 files. Updated translations are only copied to the LanguageTool source before a release, so
 if you need an early preview, say so on the LanguageTool mailing list and we'll update the files accordingly.</p>
 
-
-<!-- TODO: update now that we have switched to Maven 
-<h2><a name="newlanguage">Adding support for a new language</a></h2>
-
-<p>Adding a new language requires some changes to the Java source files. You should check out
-the "JLanguageTool" module from subversion (see <a href="#checkout">above</a> or the <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=110216">sourceforge 
-help</a>). You may then call <tt><a href="http://ant.apache.org/">ant</a></tt> to
-build LanguageTool. Ant should compile
-a file named like <tt>LanguageTool-1.x.y-dev.oxt</tt> in the <tt>dist</tt> directory.</p>
-
-<ul>
-
-<li><p><tt>Language.java</tt> contains 
-the information about supported languages. You can add a new language by creating
-a new <tt>Language</tt> object in this class and providing a part-of-speech tagger
-for it, similar to <tt>de/danielnaber/languagetool/tagging/en/EnglishTagger.java</tt>. The tagger
-must implement the <tt>Tagger</tt> interface, any implementation details (i.e. how
-to actually assign tags to words) are up to you -- the easiest thing is probably
-to just copy the English tagger.</p>
-
-<p>A trivial tagger that only assigns
-null tags to words is <tt>DemoTagger</tt>. This is enough for rules that refer
-to words but not to part-of-speech tags. You can add those rules to a file
-<tt>rules/xy/grammar.xml</tt>, whereas <tt>xy</tt> is the short name for your language.
-You will also need to add the short name of your language to <tt>rules.dtd</tt>.</p>
-
-<p>The test cases run by "ant test" will automatically include your new language
-and its rules, based on the "example" elements of each rule.</p>
-
-<p>To add part-of-speech tags, please have a look at <tt>resource/en/make-dict-en.sh</tt>
-(note: this file is only in subversion, not in the released OXT). First try to make it work
-for English. You need the
-<?=show_link("fsa", "http://www.eti.pg.gda.pl/katedry/kiw/pracownicy/Jan.Daciuk/personal/fsa.html", 1) ?> 
-package. Install it and add its installation directory to your PATH. Once it works for English,
-create your own version of <tt>manually_added.txt</tt> and use that to create a <tt>.dict</tt> file,
-then adapt your tagger to use it (e.g. copy <tt>EnglishTagger.java</tt> and change the 
-<tt>getFileName()</tt> implementation). More details about building dictionaries
-are <?=show_link("in the Wiki.", "http://wiki.languagetool.org/developing-a-tagger-dictionary", 0) ?>
-</p></li>
-
-<li>Adapt <tt>openoffice/Addons.xcu</tt> and <tt>openoffice/description.xml</tt> to translate the user
-interface of LanguageTool into your language when used in OpenOffice.org.</li>
-
-<li>Adapt <tt>build.xml</tt>. Just search for "/en/"
-in that file and copy those lines, adapting them to your language.</li>
-
-<li>Add the two-letter code of your language to <tt>i18n_update.sh</tt> and create a translation on
-<?=show_link("Transifex", "https://www.transifex.net/projects/p/languagetool/", 0) ?>.</li>
-
-</ul>
--->
 
 <h2><a name="background">Background information</a></h2>
 
