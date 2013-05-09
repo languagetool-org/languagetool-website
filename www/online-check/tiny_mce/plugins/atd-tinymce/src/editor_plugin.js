@@ -459,7 +459,7 @@
             url          : url + "/" + file,
             content_type : 'text/xml',
             type         : "POST",
-            data         : "text=" + encodeURI(data).replace(/&/g, '%26')
+            data         : "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B')
                            + "&language=" + encodeURI(languageCode),
             async        : true,
             success      : success,
