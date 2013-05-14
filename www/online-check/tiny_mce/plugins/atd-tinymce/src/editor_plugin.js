@@ -460,7 +460,10 @@
             content_type : 'text/xml',
             type         : "POST",
             data         : "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B')
-                           + "&language=" + encodeURI(languageCode),
+                           + "&language=" + encodeURI(languageCode)
+                           // there's a bug somewhere in AtDCore.prototype.markMyWords which makes
+                           // multiple spaces vanish - thus disable that rule to avoid confusion:
+                           + "&disabled=WHITESPACE_RULE",
             async        : true,
             success      : success,
             error        : function( type, req, o )
