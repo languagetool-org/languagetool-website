@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-05-09 23:06:00 CET";
+$lastmod = "2013-05-18 11:55:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -102,7 +102,14 @@ git clone https://github.com/danielnaber/languagetool-mirror.git
 </code>
 
 <p>You can then build the code with <tt>mvn clean package</tt> or just run the tests with <tt>mvn clean test</tt>.
-After the build, the LibreOffice/OpenOffice extension can be found in <tt>languagetool-office-extension/target</tt>,
+Maven's default memory settings are often too low, so you will probably need to set your environment
+variable <tt>MAVEN_OPTS</tt> to:</p>
+
+<code class="command">
+-Xmx512m -XX:MaxPermSize=256m
+</code>
+
+<p>After the build, the LibreOffice/OpenOffice extension can be found in <tt>languagetool-office-extension/target</tt>,
 the stand-alone version in <tt>languagetool-standalone/target</tt>.
 Please also see <!--the <?=show_link("README", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/README.txt", 0) ?> file that comes with LanguageTool and --> the
 <?=show_link("Usage page", "/usage/", 0) ?>.</p>

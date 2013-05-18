@@ -49,6 +49,8 @@ code {
 }
 tt {
     background-color: #eeeeee;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 .xmlrule {
     background-color: #eeeeee;
