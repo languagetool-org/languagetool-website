@@ -30,6 +30,32 @@
     // -->
     </script>
   <?php } ?>
+
+  <?php if ($enable_download_dialogs) { ?>
+      <script type="text/javascript" src="<?php print $rootUrl ?>/js/zebra_dialog.js"></script>
+      <link href="<?php print $rootUrl ?>/css/zebra_dialog.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript">
+          <!--
+          function showDownloadOfficeThanks() {
+              $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
+                  '<ul>' +
+                  '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
+                  '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of the extension</li>' +
+                  '  <li>If you are using LibreOffice and you want to check English texts:' +
+                  '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
+                  '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">the list of common problems</a>.</strong></li>' +
+                  '</ul>',
+                  {width: 600});
+          }
+          function showDownloadStandaloneThanks() {
+              $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool-standalone.jar by double clicking it.</p>' +
+                  '<p>Advanced options are described at <a href="<?php print $rootUrl ?>/usage/">other ways to use LanguageTool</a>.',
+                  {width: 600});
+          }
+          // -->
+      </script>
+  <?php } ?>
+
   <?php if ($enable_tablesorter) { ?>
     <link href="<?php print $rootUrl ?>/css/tablesorter-style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>

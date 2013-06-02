@@ -2,9 +2,10 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-04-07 14:00:00 CET";
+$lastmod = "2013-06-01 22:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
+$enable_download_dialogs = 1;
 include("../include/header.php");
 include("../include/browser_language.php");
 ?>
@@ -86,58 +87,48 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 <p>Using LanguageTool locally requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
 <strong>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
+<noscript class="warning">Please activate Javascript - we use it to display some tips after you start a download</noscript>
+
 <div class="downloadSection">
     <table width="100%">
       <tr>
         <td>
            <?php
            $downloadPath = "download";
+           $onclick = "onclick=\"setTimeout(function(){showDownloadOfficeThanks()},500)\"";
            include("../include/download.php");
            ?>
+            <div style="margin-left: 5px">
+                <a href="#" onclick="showDownloadOfficeThanks()">Help</a>
+            </div>
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
            $downloadPath = "download";
+           $onclick = "onclick=\"setTimeout(function(){showDownloadStandaloneThanks()},500)\"";
            include("../include/downloadStandAlone.php");
            ?>
+            <div style="margin-left: 5px">
+                <a href="#" onclick="showDownloadStandaloneThanks()">Help</a>
+            </div>
         </td>
       </tr>
       <tr>
-        <td valign="top">
 
-          <ul style="padding-left: 20px">
-            <li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice.org to install this file</li>
-            <li><strong>Restart LibreOffice/OpenOffice.org</strong> after installation of the extension</li>
-            <li>If you are using LibreOffice <!--3.5 or later--> and you want to check English texts:
-              Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>
-            <li>We recommend using
-              <a href="http://www.libreoffice.org/download">LibreOffice 3.5.4 or later</a> or
-              <a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1 or later</a> as older versions
-              have a bug that causes a freeze on startup</li>
-          </ul>
+        <td valign="top" align="middle" colspan="3">
 
-        </td>
-
-        <td></td>
-
-        <td valign="top">
-
-          <ul style="padding-left: 20px">
-            <li>Unzip the file and start languagetool-standalone.jar by double clicking it.
-              Also see <?=show_link("other ways to use LanguageTool", "usage/", 0)?>.</li>
-          </ul>
-          
           <br/>
-          
+          <br/>
+
           <?php
           include("../include/downloadFx.php");
           ?>
-          
-          <ul style="padding-left: 20px">
-            <li>Check selected text on websites and text in text fields. No Java required!</li>
-          </ul>
-          
+
+          <div style="margin-left: 5px">
+              Check selected text on websites and<br/>text in text fields. No Java required!
+          </div>
+
         </td>
 
       </tr>
