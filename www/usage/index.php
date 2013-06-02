@@ -2,7 +2,7 @@
 $page = "usage";
 $title = "LanguageTool";
 $title2 = "Usage";
-$lastmod = "2013-04-01 20:40:00 CET";
+$lastmod = "2013-06-01 20:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -30,6 +30,9 @@ include('../../include/geshi/geshi.php');
 	After you copy any text to the clipboard, clicking LanguageTool in the system tray will
 	cause the application to open and check the contents of the clipboard automatically. This way
 	you can use LanguageTool for applications that do not support direct integration of the checker.</p>
+
+    <p><?=show_link("A list of all command-line options", "http://wiki.languagetool.org/command-line-options", 0) ?>
+    is available in our Wiki.</p>
 
     <p>By the way, the file size of the stand-alone version is much larger than that of the LibreOffice/OpenOffice
     extension because it contains spell checking and thus dictionaries for most languages.</p>
