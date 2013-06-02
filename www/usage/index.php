@@ -31,29 +31,36 @@ include('../../include/geshi/geshi.php');
 	cause the application to open and check the contents of the clipboard automatically. This way
 	you can use LanguageTool for applications that do not support direct integration of the checker.</p>
 
-    <p><?=show_link("A list of all command-line options", "http://wiki.languagetool.org/command-line-options", 0) ?>
-    is available in our Wiki.</p>
-
     <p>By the way, the file size of the stand-alone version is much larger than that of the LibreOffice/OpenOffice
     extension because it contains spell checking and thus dictionaries for most languages.</p>
 
 
 <h2>As a stand-alone application on the command line</h2>
-	<p>See "as a stand-alone application" above, but start LanguageTool.jar using:</p>
+	<p>See "as a stand-alone application" above, but start LanguageTool using:</p>
 	<tt>java -jar languagetool-commandline.jar &lt;filename&gt;</tt>
 	<p>Use <tt>java -jar languagetool-commandline.jar --help</tt> to get detailed usage information.</p>
+
+    <p><?=show_link("A list of all command-line options", "http://wiki.languagetool.org/command-line-options", 0) ?>
+    is also available in our Wiki.</p>
+
+
+<h2>As a Firefox Add-On</h2>
+
+<ul style="list-style-type: none">
+    <li><?=show_link("Download the Add-On", "https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/", 0) ?></li>
+</ul>
 
 
 <h2>Embedding LanguageTool on a Web Page</h2>
 
-<ul>
+<ul style="list-style-type: none">
   <li><?=show_link("Integration on Websites", "$rootUrl/website-integration/", 0) ?></li>
 </ul>
 
 
 <h2>Embedding LanguageTool from other Applications</h2>
 
-<ul>
+<ul style="list-style-type: none">
   <li><?=show_link("Using LanguageTool from a Java application", "$rootUrl/java-api/", 0) ?></li>
   <li><?=show_link("Using LanguageTool via HTTP", "$rootUrl/http-api/", 0) ?></li>
 </ul>
