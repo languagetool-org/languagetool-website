@@ -243,16 +243,6 @@ function makeEntry($name, $visName) {
           <?php
 	    }
 
-	    if ($page == "web-integration") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Website Integration</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/website-integration">Website Integration</a></div>
-          <?php
-	    }
-
 	    if ($page == "links") {
 	      ?>
           <div class="submenuitem activeMenuitem">Links</div>
@@ -276,6 +266,18 @@ function makeEntry($name, $visName) {
 		?>
 
         <div class="submenuitem"><a href="http://sourceforge.net/p/languagetool/bugs/">Bug Reports</a></div>
+
+        <?php
+        if ($page == "web-integration") {
+        ?>
+        <div class="submenuitem activeMenuitem">Website Integration</div>
+        <?php
+        } else {
+            ?>
+            <div class="submenuitem"><a href="<?php print $rootUrl ?>/website-integration">Website Integration</a></div>
+        <?php
+        }
+        ?>
 
         <?php
         if ($sub_page == "java-api") {
