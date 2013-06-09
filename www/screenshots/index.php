@@ -45,7 +45,7 @@ include("../../include/header.php");
         <?=show_link("Download CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 0) ?>
     </p>
     <p class="imgbox">
-        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/lt-thunderbird.png">
+        <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" class="fancyboxImage" href="art/lt-thunderbird.png">
         <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
         </a>
         <br/>
