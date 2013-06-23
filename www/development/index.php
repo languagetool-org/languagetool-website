@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-05-18 11:55:00 CET";
+$lastmod = "2013-06-23 11:55:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -401,7 +401,8 @@ it will always test all rules, so we recommend you use that during rule developm
 	form with a POS tag "VBN" in the suggestion. You can also specify POS tags using 
 	regular expressions (<tt>postag_regexp="yes"</tt>) and replace POS tags – just like 
 	in the above example with acronyms. This is useful for large and complicated 
-	tagsets (for many examples, see Polish rule file: <tt>rules/pl/grammar.xml</tt>).</p>
+	tagsets (for many examples, see Polish rule file: <a href="http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml"
+            ><tt>rules/pl/grammar.xml</tt></a>).</p>
 	
 	<p>Sometimes the rule should change the case of the matched word. For this purpose, 
 	you can use <tt>case_conversion</tt> attribute values: <tt>startlower</tt>, <tt>startupper</tt>,
