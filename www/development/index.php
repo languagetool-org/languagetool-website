@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-06-23 11:55:00 CET";
+$lastmod = "2013-06-26 11:55:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -418,16 +418,26 @@ it will always test all rules, so we recommend you use that during rule developm
 	in the <tt>postag</tt> attribute, and then apply this POS tag to the verb "kierować". This way the verb 
 	will be inflected just the way the matched verb was originally inflected. The reason why you 
 	need to specify the POS tag is that the matched token can have several POS tags (several readings).</p>
-	
-	<p>Note that by default <tt>&lt;match&gt;</tt> element inside the <tt>&lt;token&gt;</tt> element inserts only a string – 
+
+	<p>Note that by default <tt>&lt;match&gt;</tt> element inside the <tt>&lt;token&gt;</tt> element inserts only a string –
 	so it matches a string, and not part of speech tags. So even if it refers to 
 	a token with a POS tag, it copies the matched token, and not its POS token. However, 
 	you can use all above attributes to change the form of the token.</p>
-	<p>You can however use the <tt>&lt;match&gt;</tt> element to copy POS tags alone but to do so,
+
+    <p>You can however use the <tt>&lt;match&gt;</tt> element to copy POS tags alone but to do so,
 	you must use the attribute <tt>setpos="yes"</tt>. All other attributes can be applied so that
 	the POS could be converted appropriately. This can be useful for creating rules specifying grammatical 
 	agreement. Currently, such rules must be quite wordy, somewhat more terse syntax is in 
 	development.</p>
+
+    <p>You can use <tt>postag_replace</tt> to require the suggestion to have only <em>some</em> of the same POS
+    tags as the matching word. As always with regular expressions, you put the relevant parts
+    in parenthesis and then refer to them using <tt>$1</tt>, <tt>$2</tt> etc:</p>
+
+    <?php hl('<match no="1"
+       postag="(adj|ppas|pact):sg:inst.*(:pos)"
+       postag_regex="yes"
+       postag_replace="$1:sg:.*nom.*:n1\.n2.*$2"></match>'); ?>
 
 
 <h2><a name="javarules">Adding new Java rules</a></h2>
