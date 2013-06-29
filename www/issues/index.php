@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-03-08 13:30:00 CET";
+$lastmod = "2013-06-29 22:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -41,6 +41,10 @@ include("../../include/header.php");
     See
 	<a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
 	for details.</li>
+
+<li><strong>On Ubuntu</strong>, if you get a message similar to <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> in LibreOffice/OpenOffice,
+	see <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
+    Note that the message might not appear in a dialog but only on the command line, so you might want to start LibreOffice/OpenOffice from a terminal window.</li>
 
 <li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
     <a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
