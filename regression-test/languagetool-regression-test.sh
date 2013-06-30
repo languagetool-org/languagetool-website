@@ -68,6 +68,7 @@ echo "</body>" >>$globalResultFile
 echo "</html>" >>$globalResultFile
 mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
+rm -r LanguageTool-wikipedia*/
 
 ### send mail:
 mailFromPart1=dnaber
