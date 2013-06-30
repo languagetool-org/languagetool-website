@@ -371,9 +371,7 @@ function makeEntry($name, $visName) {
               <table>
                 <tr>
                   <td valign="top"><a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-left:10px;margin-right:5px" src="http://www.languagetool.org/images/twitter_link16x16.png" alt="twitter logo"/></a></td>
-                  <td><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a><br/>
-                    <span style="color:#777777">(also <a href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg">via RSS</a>)</span>
-                  </td>
+                  <td><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a></td>
                 </tr>
                 <tr>
                   <td valign="top"><a href="http://www.facebook.com/LanguageTool"><img border="0" style="margin-left:10px;margin-right:5px" src="http://www.languagetool.org/images/facebook_link16x16.png" alt="facebook logo"/></a></td>

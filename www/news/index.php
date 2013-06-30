@@ -2,12 +2,11 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2013-04-02 17:37:00 CET";
+$lastmod = "2013-06-30 17:37:00 CET";
 include("../../include/header.php");
 ?>
 
-<p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
-  (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
+<p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> for the latest news.</p>
 
 <p class="firstpara"><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
 <ul>
@@ -57,8 +56,6 @@ include("../../include/header.php");
 <p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "../development/#intro", 0) ?>!</p>
 
 <p>See <?=show_link("the news archive", "archive.php", 0) ?> for old news.</p>
-
-<div style="height: 400px"></div>
 
 <?php
 include("../../include/footer.php");

@@ -76,7 +76,7 @@ include("../../include/checkform.php");
 
 <p><strong>2011-11-18：</strong>我们现在提供<?=show_link("Wikicheck，一个使用LanguageTool检测维基百科页面的新服务", "http://community.languagetool.org/wikiCheck/index", 0)?></p>
 
-<?=show_link("在twitter上", "http://twitter.com/languagetoolorg", 0) ?>（以及 <?=show_link("在RSS上", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>）跟踪我们的最新消息。
+<?=show_link("在twitter上", "http://twitter.com/languagetoolorg", 0) ?> 跟踪我们的最新消息。
 在<?=show_link("新闻档案", "../news/", 0) ?>中看以前的新闻。
 
 
