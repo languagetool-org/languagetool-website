@@ -9,10 +9,17 @@ include("../../include/header.php");
 <p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?>
   (also <?=show_link("via RSS", "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=languagetoolorg", 0) ?>) for the latest news.</p>
 
+<p class="firstpara"><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
+<ul>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/languagetool-2.1_to_languagetool-2.2/", 0) ?> for French, Catalan, German, Portuguese, Russian, Esperanto, and Breton.</li>
+  <li>Small bug fixes</li>
+  <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
+</ul>
+
 <p class="firstpara"><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
 <ul>
   <li>Many <?=show_link("updates for the error detection rules", "../changes/V_2_0_to_languagetool-2.1/", 0) ?> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, Catalan and Italian</li>
-  <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several. 
+  <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several.
     They can be found <?=show_link("at Maven Central", "http://search.maven.org/#search|ga|1|languagetool", 0) ?>.</li>
   <li>Small bug fixes</li>
   <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
