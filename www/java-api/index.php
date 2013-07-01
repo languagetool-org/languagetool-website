@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "java-api";
 $title = "LanguageTool";
 $title2 = "Java API";
-$lastmod = "2013-04-02 23:20:00 CET";
+$lastmod = "2013-07-01 21:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -17,7 +17,7 @@ include('../../include/geshi/geshi.php');
 <?php hl('<dependency>
   <groupId>org.languagetool</groupId>
   <artifactId>language-en</artifactId>
-  <version>2.1</version>
+  <version>2.2</version>
 </dependency>'); ?>
 </div>
 

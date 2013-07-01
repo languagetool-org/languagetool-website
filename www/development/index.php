@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-06-26 11:55:00 CET";
+$lastmod = "2013-06-30 11:55:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -43,8 +43,8 @@ new error detection rules, plus more. You don't even have to be a programmer for
 <ol>
   <li>Download the stand-alone version of LanguageTool <?=show_link("from the homepage", "../", 0)?> and unzip it.</li>
   <li>Open <tt>org/languagetool/rules/en/grammar.xml</tt> in your preferred text editor or in an XML editor.</li>
-  <li>Search for <tt>name="Possible Typos"</tt> (it's quite at the top) and copy and paste this snippet just after
-    that category element:
+  <li>Search for <tt>name="Possible Typos"</tt> (it's quite at the top), copy and paste this snippet just after
+    that <tt>&lt;category ...&gt;</tt> tag and save the file:
     <div class="xmlrule" style="margin-top:5px">
     <?php hl('<rule id="EXAMPLE_RULE" name="My example rule">
     <pattern>
@@ -57,8 +57,8 @@ new error detection rules, plus more. You don't even have to be a programmer for
 </rule>'); ?>
     </div>
   </li>
-  <li>Run <tt>languagetool-standalone.jar</tt> by clicking it or by calling <tt>java -jar languagetool-standalone.jar</tt> in your command line.</li>
-  <li>Select English as the text language and type something like "A foo bar tour in London", then start text checking.</li>
+  <li>Run <tt>languagetool-standalone.jar</tt> by clicking it or by calling <tt>java -jar languagetool-standalone.jar</tt> on the command line.</li>
+  <li>Select English as the text language and type something like "A foo bar test", then start text checking.</li>
   <li>LanguageTool will now check your text and suggest "bicycle" as a replacement for "foo bar", because that's
     what the rule which we just added says.</li>
 </ol>
@@ -78,7 +78,8 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 	<li>Start writing rules for the error you'd like LanguageTool to detect</li>
 	<li>See <?=show_link("our wiki", "http://wiki.languagetool.org", 0)?> for more tips and tricks</li>
 	<li>Post your rules to our <?=show_link("mailing list",
-      "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?>
+      "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?> or <?=show_link("to the forum",
+            "../forum", 0)?>
       so we can include them in LanguageTool</li>
 </ol>
 
@@ -95,7 +96,7 @@ want to use the latest development version, check out LanguageTool with <a href=
 svn checkout http://svn.code.sf.net/p/languagetool/code/trunk/languagetool languagetool
 </code>
 
-<p>Alternatively, you can get the code from github, where it is mirrored (<b>Sorry, the mirror is currently not up-to-date</b> - May 2013):</p>
+<p>Alternatively, you can get the code from github, where it is mirrored (<b>Sorry, the mirror is currently not up-to-date</b> - July 2013):</p>
 
 <code class="command">
 git clone https://github.com/danielnaber/languagetool-mirror.git
@@ -464,7 +465,7 @@ if you need an early preview, say so on the LanguageTool mailing list and we'll 
 <h2><a name="background">Background information</a></h2>
 
 <p>For some background information, Daniel Naber's diploma thesis
-about the original version of LanguageTool is available - please note that this refers to an earlier version of LanguageTool
+about the original version of LanguageTool from 2003 is available - please note that this refers to an earlier version of LanguageTool
 which was written in Python:</p>
 
 <ul>
