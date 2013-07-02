@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-server";
 $title = "LanguageTool";
 $title2 = "HTTP Server";
-$lastmod = "2013-03-31 23:20:00 CET";
+$lastmod = "2013-07-02 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -21,10 +21,10 @@ include('../../include/geshi/geshi.php');
       <li>
         <p>Start LanguageTool on the command line using this command:</p>
 
-       	<tt class="command">java -cp languagetool-server.jar org.languagetool.server.HTTPServer</tt>
+       	<tt class="command">java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081</tt>
 
-        <p>You can use the <tt>--port</tt> or <tt>-p</tt> option to specify the port number. If
-        no port number is specified, the default (8081) is used. For security reasons, the server will
+        <p><!--You can use the <tt>--port</tt> or <tt>-p</tt> option to specify the port number. If
+        no port number is specified, the default (8081) is used. -->For security reasons, the server will
         not be accessible from other hosts. If you want to run a server for remote users you will
         need to use the <tt>--public</tt> option or  write a small Java program
         that creates an instance of
