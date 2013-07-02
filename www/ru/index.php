@@ -209,7 +209,7 @@ LanguageTool можно использовать для проверки гра�
     <li>Основные <a href="http://languagetool.org/changes/languagetool-2.1_to_languagetool-2.2/">изменения в xml-правилах.</a></li>
     <li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a></li>
 </ul>
-<p>Ещё вышла версия 0.3 <a https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFX</a> - расширения Mozilla FireFox для проверки грамматики.</p>
+<p>Ещё вышла версия 0.3 <a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFX</a> - расширения Mozilla FireFox для проверки грамматики с помощью LanguageTool 2.2.</p>
 
 <p><strong>31.03.2013:</strong> Вышла версия LanguageTool 2.1. Для русского языка  изменения включают:</p>
 <ul>
