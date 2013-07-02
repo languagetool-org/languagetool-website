@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-07-01 18:49:00 CET";
+$lastmod = "2013-07-02 18:26:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -17,7 +17,7 @@ include("../../include/header.php");
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 220 правил</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 227 правил</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
@@ -128,7 +128,7 @@ include("../../include/checkform.php");
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
-<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a>. 
+<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/ru/download/manual.jsp">Java 1.6.0_04 или новее</a>. 
 </p>
 <p>Рекомендуется как минимум Apache OpenOffice 3.4.1 (или LibreOffice 3.5.4). 
 </p>
@@ -139,7 +139,7 @@ include("../../include/checkform.php");
 
 
 <h2>Использование в качестве независимого приложения</h2>
-Системные требования:   <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a> от Sun или Oracle.
+Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 1.6.0_04 или новее </a> от Sun или Oracle.
 <a title="LanguageTool 1.9 работает как независимое графическое приложение" class="fancyboxImage"
    href="/ru/screenshots/LT-GUI-ru-1.9.png"><img style="margin-left: 15px" width="200" height="208" align="right"
    src="/ru/screenshots/LT-GUI-ru-1.9-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
@@ -157,7 +157,7 @@ LanguageTool можно использовать для проверки гра�
 
 
 <h2>Использование в качестве консольного приложения</h2>
-Системные требования:  <a href="http://www.java.com/en/download/manual_v6.jsp">Java 1.6.0_04 или новее</a> от Sun или Oracle.
+Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 1.6.0_04 или новее</a> от Sun или Oracle.
 <ul>
     <li>Скачать программу.</li>
     <li>Распаковать полученный архив.</li>
@@ -209,7 +209,7 @@ LanguageTool можно использовать для проверки гра�
     <li>Основные <a href="http://languagetool.org/changes/languagetool-2.1_to_languagetool-2.2/">изменения в xml-правилах.</a></li>
     <li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a></li>
 </ul>
-
+<p>Ещё вышла версия 0.3 <a https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFX</a> - расширения Mozilla FireFox для проверки грамматики.</p>
 
 <p><strong>31.03.2013:</strong> Вышла версия LanguageTool 2.1. Для русского языка  изменения включают:</p>
 <ul>
