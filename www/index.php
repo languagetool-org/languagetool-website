@@ -144,8 +144,7 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 <h3>License &amp; Source Code</h3>
 
 <p>LanguageTool is freely available under the <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-The source is available <?=show_link("in SVN at Sourceforge", "http://sourceforge.net/p/languagetool/code/10383/tree/", 0) ?>.
-The contents of this homepage is available under <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
+The source is available <?=show_link("in SVN at Sourceforge", "http://sourceforge.net/p/languagetool/code/10383/tree/", 0) ?>.</p>
 
 <?php
 include("../include/footer.php");

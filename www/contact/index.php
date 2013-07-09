@@ -2,7 +2,7 @@
 $page = "contact";
 $title = "LanguageTool";
 $title2 = "Contact";
-$lastmod = "2012-12-19 12:39:00 CET";
+$lastmod = "2013-07-09 12:39:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -42,6 +42,16 @@ Friesenstr. 3<br/>
 14482 Potsdam<br/>
 email: <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span>
 </div>
+
+
+<h3>License</h3>
+
+<p>The contents of this homepage is available under <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.
+The software, LanguageTool, is available under <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.</p>
+
+<p>This page uses some icons provided by <?=show_link("FatCow", "http://www.fatcow.com/free-icons", 0)?>
+ which are available under <?=show_link("CC BY 3.0", "http://creativecommons.org/licenses/by/3.0/us/", 0)?>.
+<!-- see images/(information|exclamation|accept).png in ltcommunity --></p>
 
 
 <h3>Privacy</h3>
