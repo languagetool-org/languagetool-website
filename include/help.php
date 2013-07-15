@@ -28,7 +28,7 @@ function show_simple_link($title, $url) {
     return $html;
 }
         
-function show_link($title, $url, $show_alt, $title_attr="") {
+function show_link($title, $url, $show_alt=false, $title_attr="") {
 	global $homepage;
 	$html = "";
 	$alt = "";
