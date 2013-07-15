@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-api";
 $title = "LanguageTool";
 $title2 = "HTTP API";
-$lastmod = "2013-05-11 21:20:00 CET";
+$lastmod = "2013-07-15 09:20:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -21,7 +21,7 @@ When using it, please keep the following rules in mind:</p>
   <li>This is a free service, thus there are no guarantees about performance or availability.</li>
   <li>The LanguageTool version installed may be the latest official release or some snapshot. We will simply
       deploy new versions, thus the behavior might change without any warning.</li>
-  <li>We promise that we only log meta data of your requests (date/time, text length, language), not the actual text.</li>
+  <li>We promise that we only log meta data of your requests (date/time, text length, language, HTTP referrer), not the actual text.</li>
 </ul>
 
 <h2>URL</h2>
