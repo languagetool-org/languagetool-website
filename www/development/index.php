@@ -64,7 +64,9 @@ new error detection rules, plus more. You don't even have to be a programmer for
 </ol>
 
 <p>That's it! You have just added a new rule. Keep on reading to get a grasp on what the elements of a rule mean
-and how to build more complex rules or <?=show_link("use the rule creator", "../ruleeditor", 0)?> to build simple rules.</p>
+and how to build more complex rules or <?=show_link("use the rule creator", "../ruleeditor", 0)?> to build simple rules.
+<a href="../contact/">Send us</a> your rules so we can add them to the next release of LanguageTool.
+</p>
 
 
 <h2><a name="helpwanted">Help wanted!</a></h2>
