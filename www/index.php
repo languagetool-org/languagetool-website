@@ -14,12 +14,9 @@ include("../include/browser_language.php");
    href="screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="216" height="160" align="right"
    src="screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool is an Open Source proofreading software for English, French, German, Polish,
-Romanian, and <?=show_link("more than 20 other languages", "languages/", 0) ?>. It finds many errors that a simple
+<p class="homepageIntroText"><strong>LanguageTool is an Open Source proofreading software for English, French, German, Polish,
+and <?=show_link("more than 20 other languages", "languages/", 0) ?>. It finds many errors that a simple
 spell checker cannot detect like mixing up <em>there/their</em> and it detects some grammar problems.</strong></p>
-
-<p>LanguageTool finds errors by looking for text patterns defined in an XML file. Alternatively, error detection
-rules can be written in Java.</p>
 
 <?php
 // language codes of languages that have their own page:
@@ -67,9 +64,6 @@ foreach ($languagesWithPage as $i => $value) {
 
 <h2 style="margin-top: 40px">Try it online</h2>
 
-<p>Use LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, as a stand-alone application, or embedded in other applications", "usage/", 0)?>
-  or try it out here (if it doesn't work for you, please use <?=show_link("the fallback form", "simple-check/", 0)?>):</p>
-
 <?php
 $checkSubmitButtonValue = "Check Text";
 $showLanguageBox = 1;
@@ -78,9 +72,9 @@ $checkDefaultText = "Paste your own text here... or check this text too see an f
 include("../include/checkform.php");
 ?>
 
-<p>Try LanguageTool without installation, using Java WebStart (note: this is not the latest version of LanguageTool).
-Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later:<br />
-<strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+<p>Try LanguageTool without installation, using Java WebStart:<br/>
+<?=show_link("Start LanguageTool", "webstart/web/LanguageTool.jnlp", 0) ?> (&gt;30&nbsp;MB, requires
+<a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;6</a> or later, note: this is not the latest version of LanguageTool)</p>
 
 <h2>Download</h2>
 
@@ -118,7 +112,6 @@ Requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp
 
         <td valign="top" align="middle" colspan="3">
 
-          <br/>
           <br/>
 
           <?php

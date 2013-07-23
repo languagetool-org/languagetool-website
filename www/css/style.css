@@ -403,3 +403,8 @@ FORM TEXTAREA {
 .imgboxcontainer ~ * {
     clear: both;
 }
+
+.homepageIntroText {
+    margin-top: 0;
+    font-size: 16px;
+}
