@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-06-30 11:55:00 CET";
+$lastmod = "2013-07-24 11:55:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -114,8 +114,8 @@ variable <tt>MAVEN_OPTS</tt> to:</p>
 
 <p>After the build, the LibreOffice/OpenOffice extension can be found in <tt>languagetool-office-extension/target</tt>,
 the stand-alone version in <tt>languagetool-standalone/target</tt>.
-Please also see <!--the <?=show_link("README", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/README.txt", 0) ?> file that comes with LanguageTool and --> the
-<?=show_link("Usage page", "/usage/", 0) ?>.</p>
+See the <?=show_link("Usage page", "/usage/", 0) ?> for information on how to use those files.
+See <a href="http://wiki.languagetool.org/maven-tips">Maven tips</a> on the Wiki for hints on how to build faster.</p>
 
 <h2><a name="process">Language checking process</a></h2>
 
