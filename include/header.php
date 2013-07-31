@@ -378,6 +378,16 @@ function makeEntry($name, $visName) {
                   <td><a href="http://www.facebook.com/LanguageTool">Find us on Facebook</a>
                   </td>
                 </tr>
+                <tr>
+                  <td></td>
+                  <td style="font-weight: normal">
+                      <form action="http://46260.seu1.cleverreach.com/f/46260-106283/wcs/" method="post">
+                          <label for="text2133452">Get announcements<br/>via email</label>
+                          <input id="text2133452" name="email" value="" placeholder="your@address.org" type="text" style="font-weight: normal; width:96%" />
+                          <input type="submit" value="Subscribe" style="font-weight: normal; margin-top: 2px"/>
+                      </form>
+                  </td>
+                </tr>
               </table>
             </div>
 		</div>

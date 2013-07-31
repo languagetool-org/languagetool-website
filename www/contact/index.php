@@ -13,13 +13,19 @@ include("../../include/header.php");
 
 <ul>
     <li><?=show_link("Post to our forum", "/forum", 0)?> - this is the easiest way of contacting us</li>
-	<li>Mailing list:
+	<li>Developer and user mailing list:
       <ul>
         <li>Post to our mailing list at <span style="color:#777777">languagetool-devel <span>a&#116;</span> lists.sourceforge.net</span>
           (note that your message requires manual moderation if you are not subscribed, this might take up to 24 hours)</li>
         <li><?=show_simple_link("Subscribe/Unsubscribe",  "http://lists.sourceforge.net/mailman/listinfo/languagetool-devel") ?></li>
         <li><?=show_simple_link("Archive (mail-archive.com)", "http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/")?></li>
         <li><?=show_simple_link("Archive (Sourceforge)", "http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel")?></li>
+      </ul>
+  </li>
+  <li>Announcement mailing list - low traffic, you will only receive emails about new LanguageTool releases and major new features:
+      <ul>
+          <li><a href="http://46260.seu1.cleverreach.com/f/46260-106283/">Subscribe</a></li>
+          <li><a href="http://46260.seu1.cleverreach.com/f/46260-106283/wwu/">Unsubscribe</a></li>
       </ul>
   </li>
   <li>If you don't want to post to public forums or mailing lists you can contact the maintainers directly:
