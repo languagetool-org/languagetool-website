@@ -1,6 +1,7 @@
 #!/bin/sh
 # compiles the current LanguageTool code and moves the result to a snapshots directory
 
+export JAVA_HOME=/home/languagetool/jdk1.7.0_07
 SNAPSHOT_DIR=../website-from-svn/www/download/snapshots
 
 cd /home/languagetool/languagetool.org
@@ -10,7 +11,7 @@ cd svn-checkout
 M2_HOME=/home/languagetool/apache-maven-3.0.4
 M2=$M2_HOME/bin
 PATH=$M2:$PATH
-MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=200m"
 
 # We need to build like this - building the top-level project and then taking the
 # artifacts will aggregate *all* languages into the language-module.properties, even
