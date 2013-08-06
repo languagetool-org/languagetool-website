@@ -2,6 +2,8 @@
 # compiles the current LanguageTool code and moves the result to a snapshots directory
 
 export JAVA_HOME=/home/languagetool/jdk1.7.0_07
+export MAVEN_OPTS="-Xmx500M -XX:MaxPermSize=256M"
+
 SNAPSHOT_DIR=../website-from-svn/www/download/snapshots
 
 cd /home/languagetool/languagetool.org
