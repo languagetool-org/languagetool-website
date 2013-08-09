@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-07-24 11:55:00 CET";
+$lastmod = "2013-08-09 18:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -92,16 +92,10 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 <h2><a name="checkout">Source code checkout (Java developers only)</a></h2>
 
 <p>If you are a Java developer and you want to extend LanguageTool or if you
-want to use the latest development version, check out LanguageTool with <a href="http://subversion.apache.org/">Subversion</a>:</p>
+want to use the latest development version, check out LanguageTool from <a href="https://github.com/languagetool-org/languagetool/">github</a>:</p>
 
 <code class="command">
-svn checkout http://svn.code.sf.net/p/languagetool/code/trunk/languagetool languagetool
-</code>
-
-<p>Alternatively, you can get the code from github, where it is mirrored (<b>Sorry, the mirror is currently not up-to-date</b> - July 2013):</p>
-
-<code class="command">
-git clone https://github.com/danielnaber/languagetool-mirror.git
+git clone https://github.com/languagetool-org/languagetool.git
 </code>
 
 <p>You can then build the code with <tt>mvn clean package</tt> or just run the tests with <tt>mvn clean test</tt>.
@@ -159,7 +153,7 @@ Here are some examples of patterns that can be used in that file:
 	<li><?php hl('<token postag="VB" />
 <token>house</token>', "xmlcodeNoIndent"); ?>
 		matches a base form verb followed by the word <em>house</em>.
-		See <?=show_link("resource/en/tagset.txt", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
+		See <?=show_link("resource/en/tagset.txt", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt", 0) ?>
         for a list of possible English part-of-speech tags.
     </li>
 	<li><?php hl('<token>cause</token>
@@ -404,7 +398,7 @@ it will always test all rules, so we recommend you use that during rule developm
 	form with a POS tag "VBN" in the suggestion. You can also specify POS tags using 
 	regular expressions (<tt>postag_regexp="yes"</tt>) and replace POS tags – just like 
 	in the above example with acronyms. This is useful for large and complicated 
-	tagsets (for many examples, see Polish rule file: <a href="http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml"
+	tagsets (for many examples, see the Polish rule file: <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml"
             ><tt>rules/pl/grammar.xml</tt></a>).</p>
 	
 	<p>Sometimes the rule should change the case of the matched word. For this purpose, 
@@ -451,7 +445,7 @@ can be developed as a Java class. As a developer, extend LanguageTool's
 <tt><a href="api/org/languagetool/rules/Rule.html#match(org.languagetool.AnalyzedSentence)">match(AnalyzedSentence text)</a></tt>
 method.</p>
 
-<p>See <tt><a href="http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java?content-type=text%2Fplain">rules/WordRepeatRule.java</a></tt>
+<p>See <tt><a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/java/org/languagetool/rules/WordRepeatRule.java">rules/WordRepeatRule.java</a></tt>
 for a simple
 example which you can use to develop your own rules. You will also need to
 add your rule's class to the <tt>getRelevantRules()</tt> method in <tt>&lt;YourLanguage&gt;.java</tt> to activate it.
