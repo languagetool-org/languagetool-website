@@ -2,7 +2,7 @@
 $page = "developer-links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources for Developers";
-$lastmod = "2013-06-11 20:35:00 CET";
+$lastmod = "2013-08-09 23:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -37,12 +37,11 @@ include("../../include/header.php");
 
 <ul>
     <li>
-      <?=show_simple_link("Source code in Subversion", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/")?>
-      (<?=show_simple_link("browser view", "http://sourceforge.net/p/languagetool/code/HEAD/tree/trunk/")?>)
+      <?=show_simple_link("Source code on github", "https://github.com/languagetool-org/")?>
+      (<?=show_simple_link("Old source code in Subversion", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/")?>)
     </li>
-    <li><?=show_simple_link("Source code mirrored at github", "https://github.com/danielnaber/languagetool-mirror/")?> (does not include the website etc)</li>
     <li><?=show_simple_link("Daily builds of the current development version", "/download/snapshots/?C=M;O=D") ?>
-      (<?=show_simple_link("CHANGES.txt", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/CHANGES.txt") ?>)</li>
+      (<?=show_simple_link("CHANGES.txt", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt") ?>)</li>
     <li><?=show_simple_link("API documentation (Javadoc)", "/development/api/")?></li>
 </ul>
 

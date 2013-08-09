@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-server";
 $title = "LanguageTool";
 $title2 = "HTTP Server";
-$lastmod = "2013-07-02 23:20:00 CET";
+$lastmod = "2013-08-09 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -89,7 +89,7 @@ include('../../include/geshi/geshi.php');
     <p>Some rules contain a link to a webpage. The link
     will be available as the contents of the <tt>url</tt> attribute of the <tt>error</tt> element.</p>
 
-    <p>Here's <?=show_link("a DTD with short descriptions of the elements", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-core/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
+    <p>Here's <?=show_link("a DTD with short descriptions of the elements", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/resource/api-output.dtd", 0) ?>.</p>
 
     <p>You can call <tt>http://localhost:8081/Languages</tt> to get a list of all languages available.</p>
 

@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-06-30 21:00:00 CET";
+$lastmod = "2013-08-09 21:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 $enable_download_dialogs = 1;
@@ -130,14 +130,14 @@ include("../include/checkform.php");
 
 <p>Untested daily builds of the current development version are available at
 <?=show_link("the snapshot directory", "download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/languagetool-standalone/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt", 0) ?>).
  Old releases are still available in the <?=show_link("download directory", "download/", 0) ?>.</p>
 
 
 <h3>License &amp; Source Code</h3>
 
 <p>LanguageTool is freely available under the <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-The source is available <?=show_link("in SVN at Sourceforge", "http://sourceforge.net/p/languagetool/code/10383/tree/", 0) ?>.</p>
+The source is available <?=show_link("on github", "https://github.com/languagetool-org/", 0) ?>.</p>
 
 <?php
 include("../include/footer.php");

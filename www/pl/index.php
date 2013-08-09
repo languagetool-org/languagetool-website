@@ -2,7 +2,7 @@
 $page = "pl";
 $title = "LanguageTool";
 $title2 = "Narzędzie korektorskie";
-$lastmod = "2012-02-09 06:52:00 CET";
+$lastmod = "2013-08-09 23:52:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -41,7 +41,7 @@ include("../../include/header.php");
 
 <h2>Funkcja</h2>
 
-LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="http://sourceforge.net/p/languagetool/code/HEAD/tree/trunk/languagetool/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml?content-type=text%2Fplain">lista aktualnie stosowanych reguł</a>.<br/><br/>
+LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml">lista aktualnie stosowanych reguł</a>.<br/><br/>
 
 <small>(Po przesunięciu kursora myszy nad błędem wyświetli się odpowiedni opis).</small>
 
