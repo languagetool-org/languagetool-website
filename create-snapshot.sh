@@ -4,11 +4,10 @@
 export JAVA_HOME=/home/languagetool/jdk1.7.0_07
 export MAVEN_OPTS="-Xmx500M -XX:MaxPermSize=256M"
 
-SNAPSHOT_DIR=../website-from-svn/www/download/snapshots
+SNAPSHOT_DIR=../languagetool-website/www/download/snapshots
 
-cd /home/languagetool/languagetool.org
-svn up svn-checkout
-cd svn-checkout
+cd /home/languagetool/languagetool.org/git-checkout
+git fetch && git rebase origin/master
 
 M2_HOME=/home/languagetool/apache-maven-3.0.4
 M2=$M2_HOME/bin
