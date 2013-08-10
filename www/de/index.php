@@ -2,7 +2,7 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2013-03-09 13:43:00 CET";
+$lastmod = "2013-08-10 13:43:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -79,6 +79,7 @@ include("../../include/checkform.php");
           <?php
           $downloadTitleFx = "LanguageToolFx herunterladen";
           $downloadLabelFx = "Erweiterung für Firefox";
+          $downloadUrlFx = "https://addons.mozilla.org/de/firefox/addon/languagetoolfx/";
           include("../../include/downloadFx.php");
           ?>
         </td>
