@@ -6,7 +6,7 @@ date=`date +%Y%m%d`
 jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
 maxDocs="1000"
-targetDir="/home/languagetool/languagetool.org/website-from-svn/www/regression-tests"
+targetDir="/home/languagetool/languagetool.org/languagetool-website/www/regression-tests"
 jarUrl="http://www.languagetool.org/download/snapshots/LanguageTool-wikipedia-${date}-snapshot.zip"
 
 export LANG="de_DE.UTF-8"
@@ -75,5 +75,5 @@ mailFromPart1=dnaber
 mailFromPart2=users.sourceforge.net
 mailToPart1=languagetool-commits
 mailToPart2=lists.sourceforge.net
-lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/website-from-svn/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
+lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/languagetool-website/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
 echo "Mail sent to ${mailToPart1}@${mailToPart2}"
