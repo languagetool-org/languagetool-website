@@ -147,7 +147,7 @@ include("../../include/checkform.php");
 <p>Lingvoilo daŭre pliboniĝas. Reguloj estas ofte aldonitaj aŭ ŝanĝitaj.
 Por tiuj, kiuj deziras uzi la plej freŝan version,
 <?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?> el
-la lasta versio en la SVN-deponejo ankaŭ haveblas
+la lasta versio en la git-deponejo ankaŭ haveblas
 (<?=show_link("liston de ŝanĝoj", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
 Sed atentu: tiuj versioj estas malpli testitaj ol la oficiala versio.
 Tamen, Lingvoilo enhavas multajn aŭtomatajn testojn, do la ĉiu-tagaj versioj
@@ -181,8 +181,8 @@ Lingvoilo ne estas la nura Esperanta gramatika kontrolilo. Vidu ankaŭ:
 <h2>Permesilo kaj kodofonto</h2>
 
 <p>Lingvoilo libere haveblas sub la permesilo <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
-Kodofonto elŝuteblas ĉe <a href="http://sourceforge.net/projects/languagetool/">Sourceforge</a> per SVN:
-<pre>$ svn co http://svn.code.sf.net/p/languagetool/code/trunk/languagetool/ languagetool
+Kodofonto elŝuteblas ĉe <a href="http://sourceforge.net/projects/languagetool/">Sourceforge</a> per git:
+<pre>$ git clone https://github.com/languagetool-org/languagetool.git
 </pre></p>
 
 <p>La enhavo de la hejmpaĝo haveblas sub la permesilo
