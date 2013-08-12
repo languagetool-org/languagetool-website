@@ -149,7 +149,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
     </table>
 </div>
 
-<p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt SVN sont disponibles dans le
+<p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt git sont disponibles dans le
 <?=show_link("répertoire snapshot", "../download/snapshots/?C=M;O=D", 0) ?>
  (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
 
@@ -166,7 +166,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 <h3>License &amp; code source</h3>
 
 <p>LanguageTool est disponible sous la licence <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-Le code source est disponible dans le dépôt <?=show_link("SVN de Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
+Le code source est disponible dans le dépôt <?=show_link("git de github", "https://github.com/languagetool-org/languagetool.git", 0) ?>.
 Le contenu de cette page est disponible sous la licence <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
 
 <p>LanguageTool utilise le dictionnaire français <a href="http://www.dicollecte.org/home.php?prj=fr">dicollecte</a> pour l’étiquetage grammatical des mots et la correction orthographique dans la version autonome (sans LibreOffice/OpenOffice).</p>
