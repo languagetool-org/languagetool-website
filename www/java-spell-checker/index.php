@@ -8,6 +8,8 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
+<?php include('../../include/github_ribbon.php'); ?>
+
 <h2 class="firstpara">Why?</h2>
 
 <p>It's easy to use LanguageTool as a spell checker in your Java projects. While you can also

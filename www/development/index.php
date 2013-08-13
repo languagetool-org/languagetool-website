@@ -7,6 +7,8 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
+<?php include('../../include/github_ribbon.php'); ?>
+
 <div class="longPage">
 
 <p class="firstpara">This page has everything you need to know to teach LanguageTool

@@ -7,6 +7,8 @@ $lastmod = "2013-07-15 09:20:00 CET";
 include("../../include/header.php");
 ?>
 
+<?php include('../../include/github_ribbon.php'); ?>
+
 <h2 class="firstpara">Public REST API</h2>
 
 <p>We offer an HTTPS REST service that anybody can use to check text with LanguageTool.

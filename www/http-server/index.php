@@ -8,6 +8,8 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
+<?php include('../../include/github_ribbon.php'); ?>
+
 <h2 class="firstpara">Accessing LanguageTool via HTTP</h2>
 
     <p>LanguageTool comes with its own embedded HTTP/HTTPS server so you can send a text

@@ -8,6 +8,8 @@ include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
 
+<?php include('../../include/github_ribbon.php'); ?>
+
 <h2 class="firstpara">Embedding LanguageTool in Java applications</h2>
 
     <p>Get LanguageTool by downloading the *.zip package from the homepage or by adding a
