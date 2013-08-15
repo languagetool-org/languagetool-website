@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "http-server";
 $title = "LanguageTool";
 $title2 = "HTTP Server";
-$lastmod = "2013-08-09 23:20:00 CET";
+$lastmod = "2013-08-15 23:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -114,7 +114,7 @@ maxTextLength = 50000
 </pre>
 
 <p>To run the server you need your own SSL certificate, just like when you protect your
-webserver using SSL. Assuming you have the required files in PEM format, which looks like this:</p>
+webserver using SSL. Assuming you have the required files in PEM/X.509 format, which look like this (the key file):</p>
 
 <pre>
 -----BEGIN RSA PRIVATE KEY-----
@@ -122,15 +122,26 @@ webserver using SSL. Assuming you have the required files in PEM format, which l
 -----END RSA PRIVATE KEY-----
 </pre>
 
+<p>...and this (the certificate - there may be more than one):</p>
+
+<pre>
+-----BEGIN CERTIFICATE-----
+(lots of random characters here)
+-----END CERTIFICATE-----
+</pre>
+
 <p>You can convert this format to the Java keystore format which LanguageTool needs with openssl and with
 the <tt>keytool</tt> command that comes with Java:</p>
 
 <pre class="command">
-cat key crt ca.crt >server.pem
+cat key server.crt ca.crt >server.pem
 openssl pkcs12 -export -out server.p12 -in server.pem
 keytool -importkeystore -srckeystore server.p12
     -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype jks
 </pre>
+
+<p>Note that the key has a password and the keystore has one - currently LanguageTool requires both
+passwords to be the same.</p>
 
 <?php
 include("../../include/footer.php");
