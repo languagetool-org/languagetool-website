@@ -3,7 +3,7 @@ $page = "development";
 $sub_page = "java-api";
 $title = "LanguageTool";
 $title2 = "Java API";
-$lastmod = "2013-07-01 21:20:00 CET";
+$lastmod = "2013-08-21 11:20:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -46,9 +46,28 @@ for (RuleMatch match : matches) {
       match.getSuggestedReplacements());
 }'); ?>
 </div>
-	
+
+
+<h3>Spell Checking</h3>
+
     <p>If you want spell checking, you will need to specify a language variant in the <tt>JLanguageTool</tt> constructor,
     e.g. <tt>new AmericanEnglish()</tt> instead of just <tt>new English()</tt>.</p>
+
+
+<h3>Supported Languages</h3>
+
+    <p>LanguageTool determines which languages it supports at runtime by reading them from a file
+    <tt>META-INF/org/languagetool/language-module.properties</tt> in the classpath. The file may look like this:</p>
+    
+    <div class="xmlrule" style="padding-left: 5px">
+    languageClasses=org.languagetool.language.Italian<br/>
+    languageClasses=org.languagetool.language.Polish<br/>
+    languageClasses=org.languagetool.language.English,org.languagetool.language.AmericanEnglish
+    </div>
+    
+    <p>You either build that file yourself, adapted to the languages you support, or you take
+    it from the LanguageTool stand-alone distribution. Of course, the classes referenced in that
+    file actually need to be in your classpath.</p>
 
 <?php
 include("../../include/footer.php");
