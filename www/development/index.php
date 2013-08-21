@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-08-09 18:40:00 CET";
+$lastmod = "2013-08-21 18:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -28,6 +28,7 @@ new error detection rules, plus more. You don't even have to be a programmer for
       <li><a href="#grouping">Grouping rules</a></li>
       <li><a href="#categories">Categories</a></li>
       <li><a href="#turningoff">Turning rules off by default</a></li>
+      <li><a href="#minmax">Min/Max</a></li>
       <li><a href="#skip">Skip</a></li>
       <li><a href="#variables">Variables</a></li>
     </ul>
@@ -280,6 +281,34 @@ it will always test all rules, so we recommend you use that during rule developm
       Options dialog box, and this setting is being saved in the configuration
       file.</p>
 
+
+<h3><a name="minmax">Min/Max</a></h3>
+
+    <p class="warning">Note: these attributes will probably be available in LanguageTool 2.3</p>
+
+    <p>To match a token optionally, use the <tt>min</tt> attribute with a value of <tt>0</tt>. For example, to
+    match "a person" or "a nice person":</p>
+
+<?php hl('<token>a</token>
+<token min="0">nice</token>
+<token>person</token>'); ?>
+
+    <p>You can combine this with <tt>max</tt> to specify the maximum number of occurrences possible.
+    For example, to match "a person", "a nice person", or "a nice nice person":</p>
+
+<?php hl('<token>a</token>
+<token min="0" max="2">nice</token>
+<token>person</token>'); ?>
+
+<!--
+    <p>By not specifying a word you can use this to skip overs any tokens.
+    For example, to match "a person", "a tall person", or "a nice xyz person":</p>
+
+<?php hl('<token>a</token>
+<token min="0" max="2"/>
+<token>person</token>'); ?>-->
+
+    <p>Note than <tt>min</tt> only accepts values <tt>0</tt> or <tt>1</tt>.</p>
 
 <h3><a name="skip">Skip</a></h3>
 
