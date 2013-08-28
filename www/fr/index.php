@@ -131,7 +131,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
                 Cette version signale non seulement les fautes de grammaire
                 mais aussi les fautes d’orthographe grâce à des dictionnaires
                 intégrés à LanguageTool.</li>
-            <li>Dézippez le fichier et démarrez LanguageToolGUI.jar en
+            <li>Dézippez le fichier et démarrez languagetool-standalone.jar en
                 double-cliquant dessus. Voyez aussi les
                 <?=show_link("autres manières d’utiliser LanguageTool", "../usage/", 0)?>.</li>
           </ul>
