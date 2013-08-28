@@ -233,6 +233,7 @@ AtDCore.prototype._getPlainText = function(removeCursor) {
             .replace(/<br>/g, "\n")
             .replace(/<br\s*\/>/g, "\n")
             .replace(/<.*?>/g, "")
+            .replace(/&amp;/g, "&")
             .replace(/&nbsp;/g, " ");  // for Chrome - no idea where this comes from
     if (removeCursor) {
         plainText = plainText.replace(/\ufeff/g, "");  // feff = 65279 = cursor code
