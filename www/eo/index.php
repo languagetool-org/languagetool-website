@@ -126,7 +126,7 @@ include("../../include/checkform.php");
                 Tiu versio ne nur atentigas pri gramatikaj eraroj
                 sed ankaŭ pri literumaj eraroj dank’ al vortaroj
                 en Lingvoilo.</li>
-            <li>Duoble-klaku sur la dosieron kaj startigu LanguageToolGUI.jar.
+            <li>Duoble-klaku sur la dosieron kaj startigu languagetool-standalone.jar.
                 Vidu ankaŭ la
                 <?=show_link("aliajn manierojn por uzi Lingvoilon", "../usage/", 0)?>.</li>
           </ul>
