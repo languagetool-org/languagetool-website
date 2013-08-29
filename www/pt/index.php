@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $page = "pt";
 $title = "LanguageTool";
 $title2 = "Corrector Gramatical e de Estilo";
@@ -110,15 +110,14 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
 disponíveis na
 <?=show_link("directoria de snapshots", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
+ (<?=show_link("CHANGES.txt", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt", 0) ?>).
  Versões antigas continuam disponíveis na <?=show_link("directoria de download", "../download/", 0) ?>.</p>
 
 
 <h3>Licença &amp; Código Fonte</h3>
 
 <p>O LanguageTool está disponível gratuitamente sob a <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-O código-fonte está disponível em <?=show_link("SVN na Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>.
-O conteúdo desta homepage está disponível sob o <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
+O código-fonte está disponível em <?=show_link("GitHub", "https://github.com/languagetool-org/", 0) ?>.</p>
 
 <?php
 include("../../include/footer.php");
