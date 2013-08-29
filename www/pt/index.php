@@ -38,7 +38,7 @@ include("../../include/checkform.php");
 Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima:<br />
 <strong><?=show_link("Iniciar o LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
-<h2>Download</h2>
+<h2>Descarregar</h2>
 
 <p>O LanguageTool requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima - recomendamos de momento o Java 6, visto 
 alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7.
@@ -49,7 +49,7 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
       <tr>
         <td>
            <?php
-           $downloadTitle = "Download LanguageTool";
+           $downloadTitle = "Descarregar LanguageTool";
            $downloadLabel = "para o LibreOffice/OpenOffice";
            $downloadPath = "download";
            include("../../include/download.php");
@@ -58,7 +58,7 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td>
            <?php
-           $downloadTitleStandAlone = "Download LanguageTool";
+           $downloadTitleStandAlone = "Descarregar LanguageTool";
            $downloadLabelStandAlone = "para uso independente";
            $downloadPath = "download";
            include("../../include/downloadStandAlone.php");
@@ -91,12 +91,12 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Faz unzip ao ficheiro e inicia o LanguageToolGUI.jar com um 
+            <li>Faz unzip ao ficheiro e inicia o languagetool-standalone.jar com um 
 			duplo clique nele. Vê também <?=show_link("outras formas de usar o LanguageTool", "../usage/", 0)?>.</li>
           </ul>
 
           <?php
-            $downloadTitleFx = "Download LanguageToolFx";
+            $downloadTitleFx = "Descarregar LanguageToolFx";
             $downloadLabelFx = "Add-on para o Firefox"; 
             include("../../include/downloadFx.php");
           ?>
