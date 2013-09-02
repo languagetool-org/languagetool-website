@@ -2,7 +2,7 @@
 $page = "ru";
 $title = "LanguageTool";
 $title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-07-02 18:44:00 CET";
+$lastmod = "2013-09-02 19:00:00 CET";
 $enable_textcheck = 1;
 $enable_fancybox = 1;
 include("../../include/header.php");
@@ -162,7 +162,7 @@ LanguageTool можно использовать для проверки гра�
     <li>Скачать программу.</li>
     <li>Распаковать полученный архив.</li>
     <li>Подготовить файл Example.txt с текстом для проверки.</li>
-    <li>Запустить программу командой java -jar languagetool-commandline.jar.jar -l ru Example.txt</li>
+    <li>Запустить программу командой java -jar languagetool-commandline.jar -l ru Example.txt</li>
 </ul>
 <a href="http://wiki.languagetool.org/command-line-options">Ключи командной строки консольного приложения</a>
 
