@@ -178,7 +178,7 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 
 <ol>
     <li>Descarregueu i descomprimiu l'arxiu zip (per exemple, fent clic amb el botó dret del ratolí &rarr; <i>descomprimeix</i> &rarr; <i>aquí o en un altre lloc</i>).</li>
-    <li>Executeu l'arxiu LanguageToolGUI.jar amb Java (potser fent-hi doble-clic).</li>
+    <li>Executeu l'arxiu languagetool-standalone.jar amb Java (potser fent-hi doble-clic).</li>
 </ol>
 
 
