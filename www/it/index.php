@@ -86,7 +86,7 @@ in quanto alcuni utenti hanno riportato problemi di performance utilizzando Lang
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Scompattate lo zip scaricato file e fate doppio click sul file LanguageToolGUI.jar.
+            <li>Scompattate lo zip scaricato file e fate doppio click sul file languagetool-standalone.jar.
               Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
           </ul>
           
