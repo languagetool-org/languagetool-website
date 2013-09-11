@@ -2,7 +2,7 @@
 $page = "web-integration";
 $title = "LanguageTool";
 $title2 = "Integration on Websites";
-$lastmod = "2013-03-10 17:40:00 CET";
+$lastmod = "2013-09-11 13:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -145,9 +145,17 @@ for your language in the "translations" section.</p>
 <a href="http://svn.code.sf.net/p/languagetool/code/trunk/website/www/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php">proxy.php</a>
 and place it on your server, in the same directory as your page. If you want to place it somewhere else you
 need to adapt <tt>languagetool_rpc_url</tt> in the page's <tt>&lt;head&gt;</tt> section. In any case, the proxy script
-needs to be placed on the same domain as the page with the textarea. By the way, if you open the 
-proxy page with your browser, you will just see a message that it only supports POST.</p>
+needs to be placed on the same domain as the page with the textarea.</p>
 
+<p>If you open the proxy page with your browser, you will just see a message that it only supports POST.
+To test the proxy directly, use <a href="http://curl.haxx.se/download.html">curl</a>:</p>
+    
+<pre class="xmlrule" style="padding-left: 5px">
+curl --data "language=en-US&text=My+texd" <b>http://your-server.org/path/to/proxy.php</b>
+</pre>
+
+<p>This should return an XML document. If it doesn't there is probably some problem with your PHP version or 
+installation and you will need to upgrade it.</p>
 
 
 <h2>Done!</h2>
