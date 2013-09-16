@@ -19,14 +19,13 @@ include("../../include/header.php");
 <h3>LanguageTool Integration</h3>
 
 <ul>
-	<li><?=show_simple_link("LanguageTool for vim", "http://www.vim.org/scripts/script.php?script_id=3223") ?></li>
-	<li><?=show_simple_link("LanguageTool for LyX", "http://wiki.lyx.org/Tools/LyX-GrammarChecker") ?></li>
-	<li><?=show_simple_link("LanguageTool plugin for OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/")?>
-		a plugin that enables grammar-checking in computer-aided translation tool OmegaT</li>
-	<li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
-	<li><?=show_simple_link("LanguageToolFx for Firefox", "https://addons.mozilla.org/firefox/addon/languagetoolfx/")?></li>
-        <li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/thunderbird/addon/14781")?></li>
-        <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
+    <li><?=show_simple_link("LanguageTool in CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate")?> used as a server to enhance translation QA</li>
+    <li><?=show_simple_link("LanguageTool for Emacs", "http://www.emacswiki.org/emacs/langtool.el")?></li>
+    <li><?=show_simple_link("LanguageToolFx for Firefox", "https://addons.mozilla.org/firefox/addon/languagetoolfx/")?></li>
+    <li><?=show_simple_link("LanguageTool for LyX", "http://wiki.lyx.org/Tools/LyX-GrammarChecker") ?></li>
+    <li><?=show_simple_link("LanguageTool plugin for OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/")?> a plugin that enables grammar-checking in computer-aided translation tool OmegaT</li>
+    <li><?=show_simple_link("LanguageTool for Thunderbird", "https://addons.mozilla.org/thunderbird/addon/14781")?></li>
+    <li><?=show_simple_link("LanguageTool for vim", "http://www.vim.org/scripts/script.php?script_id=3223") ?></li>
 </ul>
 
 <h3>Other Open Source Grammar Checkers</h3>
