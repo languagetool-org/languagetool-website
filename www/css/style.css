@@ -408,3 +408,8 @@ FORM TEXTAREA {
     margin-top: 0;
     font-size: 16px;
 }
+
+.maintainerNeeded {
+    background-color: yellow;
+    font-weight: bold;
+}
