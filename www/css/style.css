@@ -410,6 +410,6 @@ FORM TEXTAREA {
 }
 
 .maintainerNeeded {
-    background-color: yellow;
+    background-color: #ffff95;
     font-weight: bold;
 }
