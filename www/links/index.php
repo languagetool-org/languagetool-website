@@ -2,7 +2,7 @@
 $page = "links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources";
-$lastmod = "2013-09-16 13:35:00 CET";
+$lastmod = "2013-09-23 10:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -37,7 +37,7 @@ include("../../include/header.php");
 		a grammar checker for Portuguese</li>
 	<li><?=show_simple_link("Grammalecte", "http://www.dicollecte.org/grammalecte/")?>
 		a grammar checker for French written in Python, based on Lightproof</li>
-    <li><?=show_simple_link("Lightproof", "http://numbertext.org/lightproof/")?>,
+    <li><?=show_simple_link("Lightproof", "http://cgit.freedesktop.org/libreoffice/lightproof")?>,
    		a Python-based grammar checker embedded in LibreOffice since 3.5,
         <?=show_simple_link("Lightproof editor", "http://extensions.libreoffice.org/extension-center/lightproof-editor")?>
     </li>
