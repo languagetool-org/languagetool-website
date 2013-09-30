@@ -2,11 +2,25 @@
 $page = "news";
 $title = "LanguageTool";
 $title2 = "News";
-$lastmod = "2013-06-30 17:37:00 CET";
+$lastmod = "2013-09-30 14:37:00 CET";
 include("../../include/header.php");
 ?>
 
 <p><?=show_link("Follow us on twitter", "http://twitter.com/languagetoolorg", 0) ?> for the latest news.</p>
+
+<p class="firstpara"><strong>2013-09-30:</strong> Released LanguageTool 2.3. Changes include:</p>
+<ul>
+  <li>Many <?=show_link("updates for the error detection rules", "../changes/languagetool-2.2_to_languagetool-2.3/", 0) ?> for
+      English, French, Catalan, Ukranian, Portuguese, German, and Breton.</li>
+    <li>LanguageTool requires Java 7 now</li>
+    <li>Use of multiple threads now for text checking on modern hardware, improving performance</li>
+    <li>Rule syntax improvements</li>
+    <li>English now has a chunker to detect singular and plural noun chunks</li>
+    <li>The standalone version now underlines errors with a red or blue line</li>
+    <li>Java API cleanups and improved thread-safety</li>
+    <li>Other small bug fixes</li>
+  <li>See the <?=show_link("Change Log", "../download/CHANGES.txt", 0) ?> for a complete list of changes</li>
+</ul>
 
 <p class="firstpara"><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
 <ul>
