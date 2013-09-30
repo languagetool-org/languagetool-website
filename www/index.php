@@ -2,7 +2,7 @@
 $page = "homepage";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-08-09 21:00:00 CET";
+$lastmod = "2013-09-30 14:00:00 CET";
 $enable_fancybox = 1;
 $enable_textcheck = 1;
 $enable_download_dialogs = 1;

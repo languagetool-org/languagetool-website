@@ -11,9 +11,9 @@ include("../../include/header.php");
 <p class="firstpara"><strong>2013-09-30:</strong> Released LanguageTool 2.3. Changes include:</p>
 <ul>
   <li>Many <?=show_link("updates for the error detection rules", "../changes/languagetool-2.2_to_languagetool-2.3/", 0) ?> for
-      English, French, Catalan, Ukranian, Portuguese, German, and Breton.</li>
+      English, French, Catalan, Ukrainian, Portuguese, German, and Breton.</li>
     <li>LanguageTool requires Java 7 now</li>
-    <li>Use of multiple threads now for text checking on modern hardware, improving performance</li>
+    <li>Use of multiple threads for text checking on modern hardware, improving performance</li>
     <li>Rule syntax improvements</li>
     <li>English now has a chunker to detect singular and plural noun chunks</li>
     <li>The standalone version now underlines errors with a red or blue line</li>
