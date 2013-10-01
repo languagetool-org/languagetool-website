@@ -55,6 +55,12 @@ include("../../include/checkform.php");
 
 <br/><br/>
 
+<h2>Descàrrega</h2>
+
+<p>Per a usar LanguageTool localment cal tenir instal·lat <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> o posterior.
+<strong>Teniu problemes? Consulteu la <?=show_link("llista de problemes habituals", "issues", 0)?>.</strong></p>
+
+
 <div class="downloadSection">
     <table width="100%">
       <tr>
