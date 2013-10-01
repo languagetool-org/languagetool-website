@@ -14,9 +14,9 @@ include("../../include/browser_language.php");
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 <p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc.. Ele 
-encontra muitos erros que um simples corrector ortográfico não consegue detectar, 
+encontra muitos erros que um simples corrector ortográfico não detecta, 
 tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
-gramaticais.</strong></p>
+gramaticais.<br/></strong></p>
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
