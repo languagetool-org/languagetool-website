@@ -67,8 +67,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.
 
 <h2>Télécharger</h2>
 
-<p>LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou plus récent - nous recommandons Java 6 pour l’instant, car certains utilisateurs ont eu des problèmes de performance en utilisant LanguageTool avec Java 7.
-<strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <?=show_link("liste des problèmes les plus fréquents", "../issues", 0)?>.</strong></p>
+<p>LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <?=show_link("liste des problèmes les plus fréquents", "../issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
