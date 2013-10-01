@@ -62,7 +62,7 @@ include("../../include/checkform.php");
 ?>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
-L’application LanguageTool nécessite <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou plus récent :<br />
+L’application LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> :<br />
 <strong><?=show_link("Démarrer LanguageTool (&gt;30&nbsp;Mo)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Télécharger</h2>
