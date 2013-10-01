@@ -24,7 +24,6 @@ Java.</p>
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
-<p>Usa o LanguageTool ou testa-o aqui:</p>
 
 <?php
 $checkSubmitButtonValue = "Verificar Texto";
@@ -34,9 +33,9 @@ $checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto pa
 include("../../include/checkform.php");
 ?>
 
-<p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong> 
-Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima, nota: esta não é a versão mais recente do LanguageTool)
-<strong><?=show_link("Iniciar o LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+<p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
+<strong><?=show_link("Iniciar o LanguageTool", "../webstart/web/LanguageTool.jnlp", 0) ?></strong> 
+ (&gt;30&nbsp;MB, requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima, nota: esta não é a versão mais recente do LanguageTool)</p>
 
 <h2>Descarregar</h2>
 
