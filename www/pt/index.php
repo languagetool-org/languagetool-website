@@ -16,7 +16,7 @@ include("../../include/browser_language.php");
 <p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc.. Ele 
 encontra muitos erros que um simples corrector ortográfico não detecta, 
 tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
-gramaticais.<br/></strong></p>
+gramaticais.<br/><br/></strong></p>
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
@@ -75,7 +75,7 @@ include("../../include/checkform.php");
 			no arranque.</li>
             <li>Usa <em>Tools -&gt; Extension Manager -&gt; Add...</em> no LibreOffice/OpenOffice.org 
 			para instalar este ficheiro</li>
-            <li><strong>Reinicia o OpenOffice.org/LibreOffice</strong> após a 
+            <li><strong>Reinicia o OpenOffice/LibreOffice</strong> após a 
 			instalação da extensão</li>
             <li>Se usares o LibreOffice 3.5.x e queres verificar textos em 
 			Inglês: Usa <em>Options -> Language Settings -> Writing Aids -> Edit...</em> 
