@@ -18,10 +18,6 @@ encontra muitos erros que um simples corrector ortográfico não consegue detect
 tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
 gramaticais.</strong></p>
 
-<p>O LanguageTool encontra erros em padrões de texto definidos num ficheiro 
-XML. Alternativamente, as regras de detecção de erros podem ser escritas em 
-Java.</p>
-
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
 
@@ -32,6 +28,8 @@ $checkDefaultLang = "pt";
 $checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
 include("../../include/checkform.php");
 ?>
+
+
 
 <p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
 <strong><?=show_link("Iniciar o LanguageTool", "../webstart/web/LanguageTool.jnlp", 0) ?></strong> 
@@ -97,10 +95,13 @@ include("../../include/checkform.php");
 
           <?php
             $downloadTitleFx = "Descarregar LanguageToolFx";
-            $downloadLabelFx = "Add-on para o Firefox"; 
+            $downloadLabelFx = "Extensão para o Firefox"; 
             include("../../include/downloadFx.php");
           ?>
-
+          <div style="margin-left: 5px">
+              Verifica texto seleccionado em páginas web e<br/>texto em campos de texto. Não necessita Java!
+          </div>
+		  
         </td>
 
       </tr>
@@ -114,7 +115,7 @@ disponíveis na
  Versões antigas continuam disponíveis na <?=show_link("directoria de download", "../download/", 0) ?>.</p>
 
 
-<h3>Licença &amp; Código Fonte</h3>
+<h3>Licença &amp; Código-Fonte</h3>
 
 <p>O LanguageTool está disponível gratuitamente sob a <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
 O código-fonte está disponível em <?=show_link("GitHub", "https://github.com/languagetool-org/", 0) ?>.</p>
