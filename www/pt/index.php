@@ -34,15 +34,16 @@ $checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto pa
 include("../../include/checkform.php");
 ?>
 
-<p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.</strong> 
-Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima:<br />
+<p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong> 
+Requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima, nota: esta não é a versão mais recente do LanguageTool)
 <strong><?=show_link("Iniciar o LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
 
 <h2>Descarregar</h2>
 
-<p>O LanguageTool requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima - recomendamos de momento o Java 6, visto 
-alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7.
-<strong>Tens problemas? Por favor lê a <?=show_link("Listagem de problemas comuns", "../issues", 0)?>.</strong></p>
+<p>Usar o LanguageTool localmente requer o <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima.
+<strong>Tens problemas? Por favor lê a <?=show_link("lista de problemas comuns", "../issues", 0)?>.</strong></p>
+
+<noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares um download</noscript>
 
 <div class="downloadSection">
     <table width="100%">
@@ -92,7 +93,7 @@ alguns utilizadores enfrentarem alguns problemas de performance ao usar o Java 7
 
           <ul style="padding-left: 20px">
             <li>Faz unzip ao ficheiro e inicia o languagetool-standalone.jar com um 
-			duplo clique nele. Vê também <?=show_link("outras formas de usar o LanguageTool", "../usage/", 0)?>.</li>
+			duplo clique. Vê também <?=show_link("outras formas de usar o LanguageTool", "../usage/", 0)?>.</li>
           </ul>
 
           <?php
