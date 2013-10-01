@@ -15,7 +15,7 @@ include("../../include/header.php");
     you are working with to make LanguageTool work.</li>
 <li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
 	even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
-<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 6.0 or later from Oracle/Sun</a>
+<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle/Sun</a>
 	is installed on your system. Java versions which are not from Oracle/Sun may not work.</li>
 <li>Make sure this version of Java is selected in OpenOffice.org
 	(under <em>Tools -&gt; Options -&gt; Java</em>).</li>
@@ -51,9 +51,7 @@ include("../../include/header.php");
 
 <li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
    This bug has been fixed in <strong>LibreOffice 3.5.4</strong> and <strong>Apache OpenOffice 3.4.1</strong> - all older versions are affected
-   by this, so we strongly recommend to use at least these releases.
-   If you cannot update, we recommend you use Java 6 for now,
-   as the freeze is worse with Java 7. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
+   by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
 </li>
 
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
