@@ -78,7 +78,7 @@ include("../include/checkform.php");
 
 <h2>Download</h2>
 
-<p>Using LanguageTool locally requires <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
+<p>Using LanguageTool locally requires <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> or later.
 <strong>Having problems? Please see the <?=show_link("list of common problems", "issues", 0)?>.</strong></p>
 
 <noscript class="warning">Please activate Javascript - we use it to display some tips after you start a download</noscript>
