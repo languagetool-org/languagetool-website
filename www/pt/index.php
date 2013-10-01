@@ -95,11 +95,11 @@ include("../../include/checkform.php");
 
           <?php
             $downloadTitleFx = "Descarregar LanguageToolFx";
-            $downloadLabelFx = "Extensão para o Firefox"; 
+            $downloadLabelFx = "Extensão para o Mozilla Firefox"; 
             include("../../include/downloadFx.php");
           ?>
           <div style="margin-left: 5px">
-              Verifica texto seleccionado em páginas web e<br/>texto em campos de texto. Não necessita Java!
+              Verifica o texto seleccionado em páginas web e<br/>em campos de texto. Não necessita Java!
           </div>
 		  
         </td>
