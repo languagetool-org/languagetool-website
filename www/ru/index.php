@@ -128,7 +128,7 @@ include("../../include/checkform.php");
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
-<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/ru/download/manual.jsp">Java 1.6.0_04 или новее</a>. 
+<p>Системные требования: как минимум OpenOffice.org 3.0.1 (или <a href="http://ru.libreoffice.org/">LibreOffice</a>), <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a>. 
 </p>
 <p>Рекомендуется как минимум Apache OpenOffice 3.4.1 (или LibreOffice 3.5.4). 
 </p>
