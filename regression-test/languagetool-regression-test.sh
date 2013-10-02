@@ -42,7 +42,7 @@ do
   wikiFile="$corpusDir/$lang/${lang}wiki-[0-9]*-pages-articles.xml"
   mv result_${lang}.new result_${lang}.old
   ls -l $wikiFile
-  commandOptions="-jar $jarFile check-dump - - $lang $wikiFile - $maxDocs 0"
+  commandOptions="-jar $jarFile check-dump -l $lang -f $wikiFile --max-articles $maxDocs"
   echo "Command options: ${commandOptions}"
   java $commandOptions | sed -e 's/[0-9]\+.) //' >result_${lang}.new
   diff -u result_${lang}.old result_${lang}.new >result_${lang}.diff
