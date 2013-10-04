@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-06-29 22:30:00 CET";
+$lastmod = "2013-10-04 22:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -13,15 +13,16 @@ include("../../include/header.php");
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
     you are working with to make LanguageTool work.</li>
-<li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
-	even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
 <li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle/Sun</a>
-	is installed on your system. Java versions which are not from Oracle/Sun may not work.</li>
+    is installed on your system. Java versions which are not from Oracle/Sun may not work. If you're using an
+    old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
 <li>Make sure this version of Java is selected in OpenOffice.org
-	(under <em>Tools -&gt; Options -&gt; Java</em>).</li>
+    (under <em>Tools -&gt; Options -&gt; Java</em>).</li>
+<li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
+    even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
 <li>If LanguageTool doesn't start and you see no error message, please
-	check if the extension is enabled in the Extension manager
-	(under <em>Tools -&gt; Extension Manager</em>).</li>
+    check if the extension is enabled in the Extension manager
+    (under <em>Tools -&gt; Extension Manager</em>).</li>
 </ul>
 
 <h2>Common problems with LibreOffice/OpenOffice.org integration</a></h2>
@@ -39,11 +40,11 @@ include("../../include/header.php");
 <li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
     One problem solved by this is getting <a href="../images/class_not_found.png">a long error message with "NoClassDefFoundError"</a> during installation.
     See
-	<a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
-	for details.</li>
+    <a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
+    for details.</li>
 
 <li><strong>On Ubuntu</strong>, if you get a message similar to <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> in LibreOffice/OpenOffice,
-	see <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
+    see <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
     Note that the message might not appear in a dialog but only on the command line, so you might want to start LibreOffice/OpenOffice from a terminal window.</li>
 
 <li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
@@ -59,8 +60,8 @@ include("../../include/header.php");
     in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
     before deleting anything).</li>
 <li>The <strong>menu items in LibreOffice/OpenOffice.org get mixed up</strong> when both <a href="http://open.afterthedeadline.com/">After the Deadline</a>
-	and LanguageTool are installed. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">The macro</a> mentioned here
-	   might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
+    and LanguageTool are installed. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">The macro</a> mentioned here
+    might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
 
 <li>If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
     <ul>
