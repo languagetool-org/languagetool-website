@@ -18,8 +18,8 @@ include("../../include/header.php");
     as an add-on in LibreOffice or OpenOffice.org.
     Java versions which are not from Oracle may not work. If you're using an
     old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
-<li>Make sure this version of Java is selected in LibreOffice/OpenOffice.org
-    (under <em>Tools -&gt; Options -&gt; Java</em>).</li>
+<li>Make sure this version of Java is selected in LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) or OpenOffice.org
+    (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
     even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
 <li>If LanguageTool doesn't start and you see no error message, please
