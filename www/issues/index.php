@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-10-04 22:30:00 CET";
+$lastmod = "2013-10-05 11:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -13,8 +13,10 @@ include("../../include/header.php");
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
     you are working with to make LanguageTool work.</li>
-<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle/Sun</a>
-    is installed on your system. Java versions which are not from Oracle/Sun may not work. If you're using an
+<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle</a>
+    is installed on your system. On Windows, use the 32-bit version of Java if you want to use LanguageTool
+    as an add-on in LibreOffice or OpenOffice.org.
+    Java versions which are not from Oracle may not work. If you're using an
     old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
 <li>Make sure this version of Java is selected in LibreOffice/OpenOffice.org
     (under <em>Tools -&gt; Options -&gt; Java</em>).</li>
