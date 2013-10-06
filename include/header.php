@@ -39,8 +39,10 @@
           function showDownloadOfficeThanks() {
               $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
                   '<ul>' +
+                  '<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - ' +
+                  '  LanguageTool will not work otherwise.</li>' + 
                   '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
-                  '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of the extension</li>' +
+                  '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
                   '  <li>If you are using LibreOffice and you want to check English texts:' +
                   '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
                   '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">the list of common problems</a>.</strong></li>' +

@@ -30,6 +30,10 @@ include("../../include/header.php");
 <h2>Common problems with LibreOffice/OpenOffice.org integration</a></h2>
 
 <ul class="largelist">
+    
+<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - LanguageTool will not 
+    work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
+    on Windows and Mac.</li>
 
 <li>If you get <strong>"Could not create Java implementation loader"</strong>, please work through
     <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">these suggestions</a>.
