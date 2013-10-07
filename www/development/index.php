@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-08-21 18:40:00 CET";
+$lastmod = "2013-10-07 18:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -82,10 +82,17 @@ detect more errors. Also see <?=show_link("the list of supported languages", "..
 	<li>Read this page (some features described here are quite advanced, so you won't need everything)</li>
 	<li>Start writing rules for the error you'd like LanguageTool to detect</li>
 	<li>See <?=show_link("our wiki", "http://wiki.languagetool.org", 0)?> for more tips and tricks</li>
-	<li>Post your rules to our <?=show_link("mailing list",
-      "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?> or <?=show_link("to the forum",
-            "../forum", 0)?>
+	<li>Post your rules <?=show_link("to the forum",
+            "../forum", 0)?> or <?=show_link("to our mailing list",
+      "http://lists.sourceforge.net/lists/listinfo/languagetool-devel", 0)?>  
       so we can include them in LanguageTool</li>
+    <li>Subscribe to our development mailing list:
+        <!-- code copied from https://lists.sourceforge.net/lists/listinfo/languagetool-devel: -->
+        <FORM Method=POST ACTION="https://lists.sourceforge.net/lists/subscribe/languagetool-devel">
+            <INPUT placeholder="your email address" type="Text" name="email" size="30" value="">
+            <INPUT type="Submit" name="email-button" value="Subscribe">
+        </FORM>
+    </li>
 </ol>
 
 <p>If your language isn't supported yet, you can add it by following the
