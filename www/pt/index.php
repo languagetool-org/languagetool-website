@@ -16,7 +16,7 @@ include("../../include/browser_language.php");
 <p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc.. Ele 
 encontra muitos erros que um simples corrector ortográfico não detecta, 
 tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
-gramaticais.<br/><br/></strong></p>
+gramaticais.<br/><br/><br/></strong></p>
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
@@ -33,14 +33,14 @@ include("../../include/checkform.php");
 
 <p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
 <strong><?=show_link("Iniciar o LanguageTool", "../webstart/web/LanguageTool.jnlp", 0) ?></strong> 
- (&gt;30&nbsp;MB, requer o <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima, nota: esta não é a versão mais recente do LanguageTool)</p>
+ (&gt;30&nbsp;MB, requer o <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima)</p>
 
 <h2>Descarregar</h2>
 
 <p>Usar o LanguageTool localmente requer o <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima.
 <strong>Tens problemas? Por favor lê a <?=show_link("lista de problemas comuns", "../issues", 0)?>.</strong></p>
 
-<noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares um download</noscript>
+<noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares uma transferência</noscript>
 
 <div class="downloadSection">
     <table width="100%">
@@ -73,7 +73,7 @@ include("../../include/checkform.php");
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou 
 			acima) visto as versões anteriores terem um bug que causa uma pausa 
 			no arranque.</li>
-            <li>Usa <em>Tools -&gt; Extension Manager -&gt; Add...</em> no LibreOffice/OpenOffice.org 
+            <li>Usa <em>Tools -&gt; Extension Manager -&gt; Add...</em> no LibreOffice/OpenOffice 
 			para instalar este ficheiro</li>
             <li><strong>Reinicia o OpenOffice/LibreOffice</strong> após a 
 			instalação da extensão</li>
