@@ -74,7 +74,7 @@ include("../include/checkform.php");
 
 <p>Try LanguageTool without installation, using Java WebStart:<br/>
 <?=show_link("Start LanguageTool", "webstart/web/LanguageTool.jnlp", 0) ?> (&gt;30&nbsp;MB, requires
-<a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;6</a> or later, note: this is not the latest version of LanguageTool)</p>
+<a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> or later)</p>
 
 <h2>Download</h2>
 
