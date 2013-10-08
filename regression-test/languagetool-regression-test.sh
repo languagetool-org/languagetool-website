@@ -15,8 +15,9 @@ export PATH="/home/languagetool/jdk1.7.0_07/bin:$PATH"
 
 rm LanguageTool-wikipedia-*-snapshot.zip
 wget $jarUrl
-unzip -o LanguageTool-wikipedia-${date}-snapshot.zip
-cd LanguageTool-wikipedia*/
+unzip -o -d LanguageTool-wikipedia LanguageTool-wikipedia-${date}-snapshot.zip
+mv LanguageTool-wikipedia/LanguageTool-wikipedia-*/* LanguageTool-wikipedia/
+cd LanguageTool-wikipedia/
 
 mkdir $targetDir/$date
 displayDate=`date +"%Y-%m-%d %H:%M"`
@@ -68,7 +69,6 @@ echo "</body>" >>$globalResultFile
 echo "</html>" >>$globalResultFile
 mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
-rm -r LanguageTool-wikipedia*/
 
 ### send mail:
 mailFromPart1=dnaber
