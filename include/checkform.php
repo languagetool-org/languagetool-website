@@ -27,6 +27,7 @@ function printLangOption($langCode) {
                 $lang = 'Deutsch, Leichte Sprache'; break;
             case 'is':    $lang = 'Icelandic';  break;
             case 'it':    $lang = 'Italian';    break;
+            case 'ja':    $lang = 'Japanese';   break;
             case 'km':    $lang = 'Khmer';      break;
             case 'lt':    $lang = 'Lithuanian'; break;
             case 'ml':    $lang = 'Malayalam';  break;
@@ -84,6 +85,7 @@ function printLangOption($langCode) {
                         <?php printLangOption("de-DE") ?>
                         <?php printLangOption("is") ?>
                         <?php printLangOption("it") ?>
+                        <?php printLangOption("ja") ?>
                         <?php printLangOption("km") ?>
                         <?php printLangOption("lt") ?>
                         <?php printLangOption("ml") ?>
