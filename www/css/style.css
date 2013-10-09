@@ -413,3 +413,9 @@ FORM TEXTAREA {
     background-color: #ffff95;
     font-weight: bold;
 }
+
+/* for http://languagetool.org/languages/ */
+.langVariants {
+    color: grey;
+    font-size: smaller;
+}
