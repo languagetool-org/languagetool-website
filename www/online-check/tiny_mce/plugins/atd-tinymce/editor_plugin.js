@@ -652,7 +652,7 @@ AtDCore.prototype.isIE = function() {
             }
              
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
-            var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "No errors were found.";
+            var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this error";
             var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
              
