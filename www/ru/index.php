@@ -130,6 +130,8 @@ include("../../include/checkform.php");
 </ul>
 <p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a>. 
 </p>
+<p>Для работы в Windows требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a>. 
+</p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
 Необходимо поставить галочку для LanguageTool и убрать для LightProof. 
