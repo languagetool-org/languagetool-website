@@ -2,6 +2,8 @@
 # LanguageTool nightly diff tests on Wikipedia data
 # dnaber, 2013-03-24
 
+cd /home/languagetool/regression-test/
+
 date=`date +%Y%m%d`
 jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
