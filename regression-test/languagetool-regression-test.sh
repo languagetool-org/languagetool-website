@@ -15,8 +15,18 @@ export PATH="/home/languagetool/jdk1.7.0_07/bin:$PATH"
 
 rm LanguageTool-wikipedia-*-snapshot.zip
 wget $jarUrl
+
+mkdir data-temp
+# store the results, we need them to make a diff:
+mv LanguageTool-wikipedia/result* data-temp/
+mv LanguageTool-wikipedia/old-date data-temp/
+rm -r LanguageTool-wikipedia
 unzip -o -d LanguageTool-wikipedia LanguageTool-wikipedia-${date}-snapshot.zip
 mv LanguageTool-wikipedia/LanguageTool-wikipedia-*/* LanguageTool-wikipedia/
+# move the old results back to the directory we'll be working in:
+mv data-temp/* LanguageTool-wikipedia/
+rm -r data-temp
+
 cd LanguageTool-wikipedia/
 
 mkdir $targetDir/$date
