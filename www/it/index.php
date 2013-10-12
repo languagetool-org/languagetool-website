@@ -36,8 +36,7 @@ Richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp
 
 <h2>Scaricatelo</h2>
 
-<p>LanguageTool richiede <?=show_link("Java&nbsp;6", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive - al momento, raccomandiamo di utilizzare Java 6 
-in quanto alcuni utenti hanno riportato problemi di performance utilizzando LanguageTool con Java 7.
+<p>LanguageTool richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive.
 <strong>State riscontrando dei problemi? Controllate la <?=show_link("lista dei problemi noti", "../issues", 0)?>.</strong></p>
 
 <div class="downloadSection">
