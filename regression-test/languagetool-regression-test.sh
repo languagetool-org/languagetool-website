@@ -9,7 +9,12 @@ jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
 maxDocs="1000"
 targetDir="/home/languagetool/languagetool.org/languagetool-website/www/regression-tests"
-jarUrl="http://www.languagetool.org/download/snapshots/LanguageTool-wikipedia-${date}-snapshot.zip"
+remoteJarFile="LanguageTool-wikipedia-${date}-snapshot.zip"
+jarUrl="http://www.languagetool.org/download/snapshots/$remoteJarFile"
+mailFromPart1=dnaber
+mailFromPart2=users.sourceforge.net
+mailToPart1=languagetool-commits
+mailToPart2=lists.sourceforge.net
 
 export LANG="de_DE.UTF-8"
 export JAVA_HOME="/home/languagetool/jdk1.7.0_07"
@@ -17,6 +22,11 @@ export PATH="/home/languagetool/jdk1.7.0_07/bin:$PATH"
 
 rm LanguageTool-wikipedia-*-snapshot.zip
 wget $jarUrl
+
+if [ ! -f $remoteJarFile ]; then
+    echo "Downloading $jarUrl failed" | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test failed" ${mailToPart1}@${mailToPart2}
+    exit
+fi
 
 mkdir data-temp
 # store the results, we need them to make a diff:
@@ -83,9 +93,5 @@ mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
 
 ### send mail:
-mailFromPart1=dnaber
-mailFromPart2=users.sourceforge.net
-mailToPart1=languagetool-commits
-mailToPart2=lists.sourceforge.net
 lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/languagetool-website/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
 echo "Mail sent to ${mailToPart1}@${mailToPart2}"
