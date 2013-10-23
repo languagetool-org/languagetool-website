@@ -2,7 +2,7 @@
 $page = "developer-links";
 $title = "LanguageTool";
 $title2 = "Links &amp; Resources for Developers";
-$lastmod = "2013-08-12 18:35:00 CET";
+$lastmod = "2013-10-23 13:35:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -48,6 +48,12 @@ include("../../include/header.php");
 <h3>Development Tools and Resources</h3>
 
 <ul>
+    <li>Bug trackers:
+        <ul>
+            <li><?=show_simple_link("Main bug tracker", "https://github.com/languagetool-org/languagetool/issues?state=open")?></li>
+            <li><?=show_simple_link("Old bug tracker at Sourceforge", "http://sourceforge.net/p/languagetool/bugs/")?></li>
+        </ul>
+    </li>
     <li><?=show_simple_link("Nightly rule match diffs", "http://www.languagetool.org/regression-tests/?C=M;O=D")?></li>
     <li><?=show_simple_link("User interface translation (i18n) at Transifex", "http://www.transifex.net/projects/p/languagetool/resource/messagesbundleproperties/")?></li>
     <li><?=show_simple_link("Jenkins CI (Continuous integration) at CloudBees", "http://languagetool.ci.cloudbees.com")?></li>

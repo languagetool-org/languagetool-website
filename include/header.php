@@ -267,7 +267,7 @@ function makeEntry($name, $visName) {
 	    }
 		?>
 
-        <div class="submenuitem"><a href="http://sourceforge.net/p/languagetool/bugs/">Bug Reports</a></div>
+        <div class="submenuitem"><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Bug Reports</a></div>
 
         <?php
         if ($page == "web-integration") {
