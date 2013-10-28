@@ -7,7 +7,7 @@ cd /home/languagetool/regression-test/
 date=`date +%Y%m%d`
 jarFile="languagetool-wikipedia.jar"
 corpusDir="/home/languagetool/regression-test/static-regression-data"
-maxDocs="1000"
+maxSentences="40000"
 targetDir="/home/languagetool/languagetool.org/languagetool-website/www/regression-tests"
 remoteJarFile="LanguageTool-wikipedia-${date}-snapshot.zip"
 jarUrl="http://www.languagetool.org/download/snapshots/$remoteJarFile"
@@ -53,7 +53,7 @@ overviewTitle="LanguageTool Nightly Diff Overview $displayDate"
 echo "<head><title>$overviewTitle</title></head>"  >>$globalResultFile
 echo "<body>" >>$globalResultFile
 echo "<h1>$overviewTitle</h1>" >>$globalResultFile
-echo "<p>This page lists the results of our automatic nightly testing against a fixed Wikipedia corpus with $maxDocs articles per language.</p>" >>$globalResultFile
+echo "<p>This page lists the results of our automatic nightly testing against a fixed Wikipedia and Tatoeba corpus with $maxSentences sentences per language.</p>" >>$globalResultFile
 echo "<p>Changes $oldDisplayDate to $displayDate<br/>" >>$globalResultFile
 languageToolVersion=`java -jar $jarFile version`
 echo "Version: $languageToolVersion</p>" >>$globalResultFile
@@ -63,9 +63,10 @@ for lang in en de fr ru br ca pl it pt
 do
   echo "============== $lang =============="
   wikiFile="$corpusDir/$lang/${lang}wiki-[0-9]*-pages-articles.xml"
+  tatoebaFile="/home/languagetool/corpus/tatoeba/tatoeba-${lang}.txt"
   mv result_${lang}.new result_${lang}.old
   ls -l $wikiFile
-  commandOptions="-jar $jarFile check-dump -l $lang -f $wikiFile --max-articles $maxDocs"
+  commandOptions="-jar $jarFile check-data -l $lang -f $wikiFile -f $tatoebaFile --max-sentences $maxSentences"
   echo "Command options: ${commandOptions}"
   java $commandOptions | sed -e 's/[0-9]\+.) //' >result_${lang}.new
   diff -u result_${lang}.old result_${lang}.new >result_${lang}.diff
