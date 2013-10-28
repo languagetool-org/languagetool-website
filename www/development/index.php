@@ -2,7 +2,7 @@
 $page = "development";
 $title = "LanguageTool";
 $title2 = "Development";
-$lastmod = "2013-10-07 18:40:00 CET";
+$lastmod = "2013-10-28 18:40:00 CET";
 include("../../include/header.php");
 include('../../include/geshi/geshi.php');
 ?>
@@ -290,8 +290,6 @@ it will always test all rules, so we recommend you use that during rule developm
 
 
 <h3><a name="minmax">Min/Max</a></h3>
-
-    <p class="warning">Note: these attributes will probably be available in LanguageTool 2.3</p>
 
     <p>To match a token optionally, use the <tt>min</tt> attribute with a value of <tt>0</tt>. For example, to
     match "a person" or "a nice person":</p>
