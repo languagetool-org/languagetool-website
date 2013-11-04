@@ -262,7 +262,7 @@ function makeEntry($name, $visName) {
           <?php
 	    } else {
 	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/ruleeditor">Rule Creator</a></div>
+          <div class="submenuitem"><a href="http://community.languagetool.org/ruleEditor">Rule Creator</a></div>
           <?php
 	    }
 		?>
