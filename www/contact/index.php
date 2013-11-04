@@ -66,7 +66,7 @@ The software, LanguageTool, is available under <?=show_link("LGPL", "http://www.
 IP address (to a form like 192.168.xxx.xxx) to protect your privacy. If you don't want your
 visit to be recorded at all by Piwik, you can opt out here:</p>
 
-<iframe frameborder="no" width="600px" height="200px" src="http://openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
+<iframe frameborder="no" width="600px" height="200px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
 
 <?php
 include("../../include/footer.php");
