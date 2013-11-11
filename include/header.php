@@ -4,12 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><?php print $title." ".$title2 ?></title>
   <?php
-  //online:
   $rootUrl = "";
-  //local:
-  if (gethostname() == 'do_not_use') {   // Daniel's local server for testing - configure http://languagetool.localhost instead
-    $rootUrl = "/languagetool";
-  }
   $hasJQuery = 0;
   ?>
   <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />

@@ -2,12 +2,13 @@
 $page = "de";
 $title = "LanguageTool";
 $title2 = "Style and Grammar Checker";
-$lastmod = "2013-04-29 18:43:00 CET";
+$lastmod = "2013-11-11 13:43:00 CET";
 include("../../include/header.php");
 ?>
 
-<p>Please use this form if the <?=show_link("form on our homepage", "../", 0)?> doesn't work for you
-(note: this may use a different version of LanguageTool than the form on the homepage):</p>
+<p>Please use this form if the <?=show_link("form on our homepage", "../", 0)?> doesn't work for you.
+Note: your text will <strong>not be encrypted</strong> when sent over the Internet with this form, 
+and this check may use a different version of LanguageTool than the form on the homepage:</p>
 
 <form action="http://community.languagetool.org" method="post">
     <textarea style="width:100%;height:300px;margin-bottom:5px" name="text">Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.</textarea>

@@ -62,7 +62,11 @@ foreach ($languagesWithPage as $i => $value) {
 }
 ?>
 
-<h2 style="margin-top: 40px">Try it online</h2>
+<?php if ($_SERVER['HTTPS'] == 'on') { ?>
+    <h2 style="margin-top: 40px">Try it online (<a href="http://languagetool.org">turn off SSL</a>)</h2>
+<?php } else { ?>
+    <h2 style="margin-top: 40px">Try it online (<a href="https://languagetool.org">turn on SSL</a>)</h2>
+<?php } ?>
 
 <?php
 $checkSubmitButtonValue = "Check Text";

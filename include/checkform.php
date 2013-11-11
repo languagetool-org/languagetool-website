@@ -49,7 +49,9 @@ function printLangOption($langCode) {
 }
 ?>
 
-<form name="checkform" action="http://community.languagetool.org" method="post">
+<noscript class="warning">Please turn on Javascript to use this form, or use <a href="simple-check/">the fallback form</a></noscript>
+
+<form name="checkform" action="#" method="post">
 
   <p id="checktextpara" style="margin: 0"><textarea id="checktext" name="text" style="width: 100%"
                rows="6"><?php print $checkDefaultText ?></textarea></p>
