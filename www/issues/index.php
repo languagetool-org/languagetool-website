@@ -2,13 +2,18 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-10-05 11:30:00 CET";
+$lastmod = "2013-11-12 19:30:00 CET";
 include("../../include/header.php");
 ?>
 
 <h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
 
 <ul class="largelist">
+<li><strong>For Mac users:</strong> LanguageTool now requires Java 7, which is available for the Mac only as a 64 bit version.
+    LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
+    cannot be used as an LibreOffice/OpenOffice plugin on the Mac. The only known workaround is to use
+    <strong>LanguageTool 2.2</strong>, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
+    of Java 6 still exists. LanguageTool 2.2 doesn't require Java 7 but also works with Java 6.</li>
 <li>LibreOffice 3.5 and later comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
