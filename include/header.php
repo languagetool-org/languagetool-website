@@ -272,17 +272,7 @@ function makeEntry($name, $visName) {
 
 		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Javadoc</a></div>
 
-        <?php
-        if ($sub_page == "http-api") {
-          ?>
-           <div class="submenuitem activeMenuitem">HTTP API</div>
-           <?php
-        } else {
-          ?>
-           <div class="submenuitem"><a href="<?php print $rootUrl ?>/http-api/">HTTP API</a></div>
-           <?php
-        }
-        ?>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/public-http-api">HTTP API</a></div>
 
         <?php
         if ($sub_page == "http-server") {
