@@ -274,28 +274,11 @@ function makeEntry($name, $visName) {
 
         <div class="submenuitem"><a href="http://wiki.languagetool.org/public-http-api">HTTP API</a></div>
 
-        <?php
-        if ($sub_page == "http-server") {
-          ?>
-           <div class="submenuitem activeMenuitem">HTTP Server</div>
-           <?php
-        } else {
-          ?>
-           <div class="submenuitem"><a href="<?php print $rootUrl ?>/http-server/">HTTP Server</a></div>
-           <?php
-        }
-        ?>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/http-server">HTTP Server</a></div>
 
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/development-links">Links</a></div>
+        
         <?php
-        if ($page == "developer-links") {
-          ?>
-             <div class="submenuitem activeMenuitem">Links</div>
-             <?php
-        } else {
-          ?>
-             <div class="submenuitem"><a href="<?php print $rootUrl ?>/developer-links">Links</a></div>
-             <?php
-        }
     }
 }
 ?>
