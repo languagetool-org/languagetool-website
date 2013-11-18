@@ -264,41 +264,11 @@ function makeEntry($name, $visName) {
 
         <div class="submenuitem"><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Bug Reports</a></div>
 
-        <?php
-        if ($page == "web-integration") {
-        ?>
-        <div class="submenuitem activeMenuitem">Website Integration</div>
-        <?php
-        } else {
-            ?>
-            <div class="submenuitem"><a href="<?php print $rootUrl ?>/website-integration">Website Integration</a></div>
-        <?php
-        }
-        ?>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/integration-on-websites">Website Integration</a></div>
 
-        <?php
-        if ($sub_page == "java-api") {
-          ?>
-           <div class="submenuitem activeMenuitem">Java API</div>
-           <?php
-        } else {
-          ?>
-           <div class="submenuitem"><a href="<?php print $rootUrl ?>/java-api/">Java API</a></div>
-           <?php
-        }
-        ?>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/java-api">Java API</a></div>
 
-        <?php
-        if ($sub_page == "java-spell-checker") {
-          ?>
-           <div class="submenuitem activeMenuitem">Java Spell Checker</div>
-           <?php
-        } else {
-          ?>
-           <div class="submenuitem"><a href="<?php print $rootUrl ?>/java-spell-checker/">Java Spell Checker</a></div>
-           <?php
-        }
-        ?>
+        <div class="submenuitem"><a href="http://wiki.languagetool.org/java-spell-checker/">Java Spell Checker</a></div>
 
 		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Javadoc</a></div>
 
