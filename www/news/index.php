@@ -67,7 +67,7 @@ include("../../include/header.php");
 
 <p><strong>2012-06-01:</strong> Use our new <?=show_link("rule creator", "../ruleeditor/", 0) ?> to easily create XML error detection rules for LanguageTool.</p>
 
-<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "../development/#intro", 0) ?>!</p>
+<p><strong>2012-05-27:</strong> Want to improve LanguageTool? Read our new <?=show_link("three-minute introduction", "http://wiki.languagetool.org/development-overview#toc0", 0) ?>!</p>
 
 <p>See <?=show_link("the news archive", "archive.php", 0) ?> for old news.</p>
 

@@ -95,7 +95,7 @@ include("../../include/header.php");
 
 <ul>
     <li>Some errors are not detected: LanguageTool uses rules to detect errors, i.e. it will only complain about errors for which there 
-        is a rule that detects it. Please consider learning <b><a href="../development/#intro">how to write rules</a></b> and 
+        is a rule that detects it. Please consider learning <b><a href="http://wiki.languagetool.org/development-overview#toc0">how to write rules</a></b> and 
         <b><a href="http://wiki.languagetool.org/make-languagetool-better">help make LanguageTool better</a></b> by contributing your rules.</li>
     <li>Some rules that work across sentences don't work in LibreOffice/OpenOffice.org. This also affects the rule that checks whether
         three sentences start with the same word.</li>

@@ -60,7 +60,7 @@ function printLangOption($langCode) {
         <tr>
             <td style="vertical-align: top">
                 <?php if ($checkDefaultLang == "en-US") { ?>
-                    Error not found? <a href="/development/#intro">Improve LanguageTool by writing rules that detect errors</a>.<br/>
+                    Error not found? <a href="http://wiki.languagetool.org/development-overview#toc0">Improve LanguageTool by writing rules that detect errors</a>.<br/>
                     The form doesn't work for you? Please use <a href="simple-check/">the fallback form</a>.
                 <?php } ?>
             </td>

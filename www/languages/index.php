@@ -9,7 +9,7 @@ include("../../include/header.php");
 
 <p class="firstpara">LanguageTool supports several languages to a different degree. This page lists the
 number of rules per language to give a very rough indication of how well a
-language is supported. If your language is not supported, see <a href="../development/#intro">our three-minute introduction</a>
+language is supported. If your language is not supported, see <a href="http://wiki.languagetool.org/development-overview#toc0">our three-minute introduction</a>
 on writing error detection rules. Of course you're welcome to improve and add rules for the existing languages, too.</p>
 
 <!-- Output of RuleOverview.java: -->
