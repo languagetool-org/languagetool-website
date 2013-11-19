@@ -176,7 +176,7 @@ list($usec, $sec) = explode(" ", microtime());
 $start_time = ((float)$usec + (float)$sec);
 include("help.php");
 
-function makeEntry($name, $visName) {
+function makeEntry($name, $visName, $externalUrl) {
 	global $page, $sub_page, $rootUrl, $subSubPage;
 	if (($page == $name && !$sub_page) || ($name == "." && $page == "homepage")) {
 		?>
@@ -194,6 +194,9 @@ function makeEntry($name, $visName) {
 			} else {
 				$url = "../".$name;
 			}
+		}
+		if ($externalUrl) {
+			$url = $externalUrl;
 		}
 		?>
         <div class="menuitem"><a href="<?php print $url ?>" style="display: block;"><? print $visName ?></a></div>
@@ -303,7 +306,7 @@ function makeEntry($name, $visName) {
 			<?php makeEntry(".", "Homepage"); ?>
 			<?php makeEntry("forum", "Forum"); ?>
 			<?php makeEntry("wikicheck", "WikiCheck"); ?>
-			<?php makeEntry("development", "Development"); ?>
+			<?php makeEntry("development", "Development", "http://wiki.languagetool.org/development-overview"); ?>
 			<?php makeEntry("http://wiki.languagetool.org", "Wiki"); ?>
 			<?php makeEntry("contact", "Contact"); ?>
 
