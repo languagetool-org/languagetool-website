@@ -2,13 +2,15 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-11-12 19:30:00 CET";
+$lastmod = "2013-11-21 12:30:00 CET";
 include("../../include/header.php");
 ?>
 
 <h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
 
 <ul class="largelist">
+<li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
+    actually works, please <a href="languagetool-test.odt">load this document</a> and follow the instructions in it.</li>
 <li><strong>For Mac users:</strong> LanguageTool now requires Java 7, which is available for the Mac only as a 64 bit version.
     LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
     cannot be used as an LibreOffice/OpenOffice plugin on the Mac. The only known workaround is to use
