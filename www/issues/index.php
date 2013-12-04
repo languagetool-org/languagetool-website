@@ -2,7 +2,7 @@
 $page = "other";
 $title = "LanguageTool";
 $title2 = "Common Problems";
-$lastmod = "2013-11-21 12:30:00 CET";
+$lastmod = "2013-12-04 12:30:00 CET";
 include("../../include/header.php");
 ?>
 
@@ -10,7 +10,7 @@ include("../../include/header.php");
 
 <ul class="largelist">
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
-    actually works, please <a href="languagetool-test.odt">load this document</a> and follow the instructions in it.</li>
+    actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
 <li><strong>For Mac users:</strong> LanguageTool now requires Java 7, which is available for the Mac only as a 64 bit version.
     LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
     cannot be used as an LibreOffice/OpenOffice plugin on the Mac. The only known workaround is to use
@@ -38,7 +38,7 @@ include("../../include/header.php");
 
 <ul class="largelist">
     
-<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - LanguageTool will not 
+<li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not 
     work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
     on Windows and Mac.</li>
 
@@ -63,11 +63,6 @@ include("../../include/header.php");
 <li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
     <a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
 
-<li><strong>Freeze on startup</strong>: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
-   This bug has been fixed in <strong>LibreOffice 3.5.4</strong> and <strong>Apache OpenOffice 3.4.1</strong> - all older versions are affected
-   by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
-</li>
-
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
     For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
     in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
@@ -76,8 +71,12 @@ include("../../include/header.php");
     and LanguageTool are installed. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">The macro</a> mentioned here
     might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
 
-<li>If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
+<li style="color:#888888">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
     <ul>
+        <li>Freeze on startup: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
+            This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
+            by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
+        </li>
         <li>LanguageTool installation fails if the name of your user account contains
             special characters. The only workaround so far seems to be to use a different
             user account. (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=95162">#95162</a>)</li>
@@ -99,9 +98,9 @@ include("../../include/header.php");
     <li>Some errors are not detected: LanguageTool uses rules to detect errors, i.e. it will only complain about errors for which there 
         is a rule that detects it. Please consider learning <b><a href="http://wiki.languagetool.org/development-overview#toc0">how to write rules</a></b> and 
         <b><a href="http://wiki.languagetool.org/make-languagetool-better">help make LanguageTool better</a></b> by contributing your rules.</li>
-    <li>Some rules that work across sentences don't work in LibreOffice/OpenOffice.org. This also affects the rule that checks whether
-        three sentences start with the same word.</li>
-    <li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>
+    <!--<li>Some rules that work across sentences don't work in LibreOffice/OpenOffice.org. This also affects the rule that checks whether
+        three sentences start with the same word.</li>-->
+    <!--<li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>-->
     <li>LanguageTool doesn't work correctly with documents that contain revisions
         (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">OOo #92013</a>)
     </li>
