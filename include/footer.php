@@ -1,25 +1,23 @@
-		<!-- /MAIN TEXT -->
+<div id="footer">
+  <?php
 
-        <?php if (!isset($show_date) || $show_date != 0) { ?>
-          <p class="lastmod">Page last modified:
-              <?php
-                list($date, $time, $cet) = split(" ", $lastmod);
-                print $date;
-              ?>
-          </p>
-        <?php } ?>
+    $footer_pages = array(
+      array( 'name'=>'Contact', 'url' => $rootUrl . '/contact' ),
+      //array( 'name' => 'Wiki', 'url' => 'http://wiki.languagetool.org/')
+    );
 
-	</td>
-</tr>
-</table>
+    foreach ($footer_pages as $page) {
+      print '<span><a href="'.$page['url'].'">'.$page['name'].'</a></span>';
+    }
 
-<p class="invisible">Time to generate page:
-<?php
-	print sprintf("%.2fs", getmicrotime()-$start_time);
-?>
-</p>
+  ?>
+  <!--
+  <span>
+    Last modified on <?php if (!isset($show_date) || $show_date != 0) { list($date, $time, $cet) = explode(" ", $lastmod); print $date; } ?>
+  </span>
+  -->
+</div>
 
-<!-- Piwik -->
 <script type="text/javascript">
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://openthesaurus.stats.mysnip-hosting.de/" : "http://openthesaurus.stats.mysnip-hosting.de/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
@@ -31,6 +29,3 @@ piwikTracker.enableLinkTracking();
 } catch( err ) {}
 </script><noscript><p><img src="http://openthesaurus.stats.mysnip-hosting.de/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
 <!-- End Piwik Tracking Code -->
-
-</body>
-</html>

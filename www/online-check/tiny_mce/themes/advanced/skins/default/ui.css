@@ -15,8 +15,8 @@
 .defaultSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
 .defaultSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(../../img/icons.gif) -820px 0}
 
-/* Layout */
-.defaultSkin table.mceLayout {border:0; border-left:1px solid #CCC; border-right:1px solid #CCC}
+/* Layout 
+.defaultSkin table.mceLayout {border:0;}
 .defaultSkin table.mceLayout tr.mceFirst td {border-top:1px solid #CCC}
 .defaultSkin table.mceLayout tr.mceLast td {border-bottom:1px solid #CCC}
 .defaultSkin table.mceToolbar, .defaultSkin tr.mceFirst .mceToolbar tr td, .defaultSkin tr.mceLast .mceToolbar tr td {border:0; margin:0; padding:0;}
@@ -32,6 +32,7 @@
 .defaultSkin td.mceCenter {text-align:center;}
 .defaultSkin td.mceCenter table {margin:0 auto; text-align:left;}
 .defaultSkin td.mceRight table {margin:0 0 0 auto;}
+*/
 
 /* Button */
 .defaultSkin .mceButton {display:block; border:1px solid #F0F0EE; width:20px; height:20px; margin-right:1px}

@@ -51,25 +51,25 @@ function printLangOption($langCode) {
 
 <noscript class="warning">Please turn on Javascript to use this form, or use <a href="simple-check/">the fallback form</a></noscript>
 
-<form name="checkform" action="#" method="post">
-
-  <p id="checktextpara" style="margin: 0"><textarea id="checktext" name="text" style="width: 100%"
-               rows="6"><?php print $checkDefaultText ?></textarea></p>
-
-    <table style="width:100%">
-        <tr>
-            <td style="vertical-align: top">
+<form id="checkform" class="" name="checkform" action="#" method="post">
+    <div class="handle"></div>
+    <div class="window">
+        <!-- TODO: comment in once problem with error popup position is solved:
+        <div class="fullscreen-toggle">
+            <a href="#" title="toggle fullscreen mode" onClick="fullscreen_toggle();return false;"></a>
+        </div>
+        -->
+        <p id="checktextpara" style="margin: 0">
+            <textarea id="checktext" name="text" style="width: 100%" rows="6"><?php print $checkDefaultText ?></textarea>
+        </p>
+        <div id="editor_controls">
+            <div class="message">
                 <?php if ($checkDefaultLang == "en-US") { ?>
-                    Error not found? <a href="http://wiki.languagetool.org/development-overview#toc0">Improve LanguageTool by writing rules that detect errors</a>.<br/>
-                    The form doesn't work for you? Please use <a href="simple-check/">the fallback form</a>.
+                    Error not found? <a href="http://wiki.languagetool.org/development-overview#toc0">Improve LanguageTool by writing rules that detect errors</a>. The form doesn't work for you? Please use <a href="simple-check/">the fallback form</a>.
                 <?php } ?>
-            </td>
-            <td style="text-align: right">
-
-                <!-- always activate language selection box as we don't have feedback yet about which language was auto-detected -->
-                <?php if (1 || $showLanguageBox) { ?>
-                    <select name="lang" id="lang">
-                        <!--<option value="auto">try to auto-detect</option>-->
+            </div>
+            <div class="dropdown">
+                    <select class="dropkick" name="lang" id="lang">
                         <?php foreach ($addedLanguages as $key => $val) { ?>
                             <?php printLangOption($key) ?>
                         <?php } ?>
@@ -102,30 +102,11 @@ function printLangOption($langCode) {
                         <?php printLangOption("tl") ?>
                         <?php printLangOption("uk") ?>
                     </select>
-                <?php } else { ?>
-                    <input type="hidden" name="lang" value="<?php print $checkDefaultLang ?>"/>
-                <?php } ?>
+            </div>
+            <div class="submit">
                 <input type="submit" name="_action_checkText" value="<?php print $checkSubmitButtonValue ?>" onClick="doit();return false;">
-
-            </td>
-        </tr>
-    </table>
-
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
 </form>
-
-<script language="javascript" type="text/javascript">
-/*var languageCode = window.navigator.userLanguage || window.navigator.language;
-if (document.checkform.lang.value) {
-  for (var i = 0; i < document.checkform.lang.options.length; i++) {
-    if (document.checkform.lang.options[i].value == languageCode) {
-      document.checkform.lang.value = languageCode;
-      break;
-    }
-  }
-  if (languageCode == 'de-DE') {
-    document.checkform.text.value = "Fügen Sie hier Ihren Text ein. oder nutzen Sie. diesen Text als Biespiel für ein Paar Fehler ,die LanguageTool erkennen kann: Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
-    //document.checkform.text.value = "Fügen Sie hier Ihren Text<br/>nein. oder nutzen Sie. diesen Text als<br/>Biespiel.";
-    document.checkform.lang.value = "de-DE";
-  }
-}*/
-</script>

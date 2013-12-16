@@ -1,340 +1,265 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title><?php print $title." ".$title2 ?></title>
-  <?php
-  $rootUrl = "";
+<?php
+
+  function current_url(){
+    $s = &$_SERVER;
+    $ssl = (!empty($s['HTTPS']) && $s['HTTPS'] == 'on') ? true:false;
+    $sp = strtolower($s['SERVER_PROTOCOL']);
+    $protocol = substr($sp, 0, strpos($sp, '/')) . (($ssl) ? 's' : '');
+    $port = $s['SERVER_PORT'];
+    $port = ((!$ssl && $port=='80') || ($ssl && $port=='443')) ? '' : ':'.$port;
+    $host = isset($s['HTTP_X_FORWARDED_HOST']) ? $s['HTTP_X_FORWARDED_HOST'] : isset($s['HTTP_HOST']) ? $s['HTTP_HOST'] : $s['SERVER_NAME'];
+    $full_current_url = $protocol . '://' . $host . $port . $s['REQUEST_URI'];
+    return $full_current_url;
+  }
+
   $hasJQuery = 0;
-  ?>
-  <link href="<?php print $rootUrl ?>/css/style.css?2" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="<?php print $rootUrl ?>/favicon.ico?20120923" />
-  <?php if ($enable_fancybox) { ?>
-    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
-    <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <?php $hasJQuery = 1; ?>
-    <link rel="stylesheet" href="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+  $assets = array(
+    'links' => array(
+      array(
+        'src' => $rootUrl . '/css/style_v2.less?' . rand(),
+        'rel' => "stylesheet",
+        'type' => "text/less",
+        'media' => ''
+      ),
+      array(
+        'src' => $rootUrl . '/favicon.ico?' . rand(),
+        'rel' => "shortcut icon",
+        'type' => "",
+        'media' => ''
+      ),
+      array(
+        'src' => $rootUrl . '/js/fancybox/jquery.fancybox-1.3.4.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => 'screen'
+      ),
+      array(
+        'src' => $rootUrl . '/css/zebra_dialog.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
+      array(
+        'src' => $rootUrl . '/css/tablesorter-style.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
+      array(
+        'src' => $rootUrl . '/css/lib/dropkick/dropkick.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
+    )
+  );
+?>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php print $title." ".$title2 ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<?php foreach ($assets['links'] as $link) { ?>
+  <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>" type="<?= $link['type'] ?>" media="<?= $link['media'] ?>" />
+<?php } ?>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
+
+<?php if ($enable_fancybox) { ?>
+  <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <?php $hasJQuery = 1; ?>
     <script type="text/javascript">
-    <!--
       $(document).ready(function() {
         $("a.fancyboxImage").fancybox({
           'hideOnContentClick': true,
           'titlePosition': 'inside'
         });
       });
-    // -->
     </script>
-  <?php } ?>
+<?php } ?>
 
-  <?php if ($enable_download_dialogs) { ?>
-      <script type="text/javascript" src="<?php print $rootUrl ?>/js/zebra_dialog.js"></script>
-      <link href="<?php print $rootUrl ?>/css/zebra_dialog.css" rel="stylesheet" type="text/css" />
-      <script type="text/javascript">
-          <!--
-          function showDownloadOfficeThanks() {
-              $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
-                  '<ul>' +
-                  '<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - ' +
-                  '  LanguageTool will not work otherwise.</li>' + 
-                  '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
-                  '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
-                  '  <li>If you are using LibreOffice and you want to check English texts:' +
-                  '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
-                  '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">the list of common problems</a>.</strong></li>' +
-                  '</ul>',
-                  {width: 600});
-          }
-          function showDownloadStandaloneThanks() {
-              $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool-standalone.jar by double clicking it.</p>' +
-                  '<p>Advanced options are described at <a href="<?php print $rootUrl ?>/usage/">other ways to use LanguageTool</a>.',
-                  {width: 600});
-          }
-          // -->
-      </script>
-  <?php } ?>
-
-  <?php if ($enable_tablesorter) { ?>
-    <link href="<?php print $rootUrl ?>/css/tablesorter-style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
-    <?php $hasJQuery = 1; ?>
-    <script type="text/javascript" src="<?php print $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
-    <script type="text/javascript">
-    <!--
-      $(document).ready(function() {
-          $(".sortable").tablesorter({
-            headers: {
-              2: {
-                sorter: false
-              }
-            }
-          });
-      }
-    );
-    // -->
-    </script>
-  <?php } ?>
-
-  <?php if ($enable_textcheck) { ?>
-    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
-    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
-    <?php if ($hasJQuery == 0) { ?>
-      <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
-    <?php } ?>
-    <script language="javascript" type="text/javascript">
-
-     tinyMCE.init({
-         mode : "textareas",
-         plugins                     : "AtD,paste",
-
-         //Keeps Paste Text feature active until user deselects the Paste as Text button
-         paste_text_sticky : true,
-         //select pasteAsPlainText on startup
-         setup : function(ed) {
-             ed.onInit.add(function(ed) {
-                 ed.pasteAsPlainText = true;
-             });
-         },
-
-         /* translations: */
-         languagetool_i18n_no_errors :
-            {
-             // "No errors were found.":
-             'br': 'Fazi ebet.',
-             'de-DE': 'Keine Fehler gefunden.',
-             'de-DE-x-simple-language': 'Keine möglichen Verstöße gegen Leichte Sprache gefunden.',
-             'eo': 'Neniuj eraroj trovitaj.',
-             'fr': 'Aucune erreur trouvée.',
-             'ru': 'Ошибки не найдены.',
-             'ca': 'No s\'ha trobat cap error'
-            },
-         languagetool_i18n_explain :
-            {
-             // "Explain..." - shown if there's an URL with a more detailed description:
-             'br': 'Muioc’h a ditouroù…',
-             'de-DE': 'Mehr Informationen...',
-             'de-DE-x-simple-language': 'Mehr Informationen...',
-             'eo': 'Pliaj klarigoj…',
-             'fr': 'Plus d’informations…',
-             'ru': 'Подробнее…',
-             'ca': 'Més informació…'
-            },
-         languagetool_i18n_ignore_once :
-            {
-             // "Ignore this error":
-             'br': 'Na ober van ouzh ar fazi-mañ',
-             'de-DE': 'Hier ignorieren',
-             'de-DE-x-simple-language': 'Hier ignorieren',
-             'eo': 'Ignori tiun eraron',
-             'fr': 'Ignorer cette erreur',
-             'ru': 'Пропустить эту ошибку',
-             'ca': 'Ignora el suggeriment'
-            },
-         languagetool_i18n_ignore_all :
-            {
-             // "Ignore this kind of error":
-             'br': 'Na ober van ouzh ar fazioù seurt-se',
-             'de-DE': 'Fehler dieses Typs ignorieren',
-             'de-DE-x-simple-language': 'Fehler dieses Typs ignorieren',
-             'eo': 'Ignori tiun specon de eraroj',
-             'fr': 'Ignorer ce type d’erreurs',
-             'ru': 'Пропустить этот тип ошибок',
-             'ca': 'Ignora aquesta classe d\'errors'
-            },
-
-         languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
-         /* the URL of your proxy file: */
-         languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
-         /* edit this file to customize how LanguageTool shows errors: */
-         languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css",
-         /* this stuff is a matter of preference: */
-         theme                              : "advanced",
-         theme_advanced_buttons1            : "",
-         theme_advanced_buttons2            : "",
-         theme_advanced_buttons3            : "",
-         theme_advanced_toolbar_location    : "none",
-         theme_advanced_toolbar_align       : "left",
-         theme_advanced_statusbar_location  : "bottom",  // activated so we have a resize button
-         theme_advanced_path                : false,     // don't display path in status bar
-         theme_advanced_resizing            : true,
-         theme_advanced_resizing_use_cookie : false,
-         /* disable the gecko spellcheck since AtD provides one */
-         gecko_spellcheck                   : false
-     });
-
-     function doit() {
-         var langCode = document.checkform.lang.value;
-         tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
-     }
-     </script>
-  <?php } ?>
-
-</head>
-<body>
-
-<?php
-list($usec, $sec) = explode(" ", microtime());
-$start_time = ((float)$usec + (float)$sec);
-include("help.php");
-
-function makeEntry($name, $visName, $externalUrl) {
-	global $page, $sub_page, $rootUrl, $subSubPage;
-	if (($page == $name && !$sub_page) || ($name == "." && $page == "homepage")) {
-		?>
-		<div class="menuitem activeMenuitem"><? print $visName ?></div>
-		<?php
-	} else {
-		$url = $name;
-		if ($page == "homepage") {
-			$url = $name;
-		} else {
-			if (substr($name, 0, 7) == "http://") {
-				$url = $name;
-			} else if ($subSubPage) {
-				$url = "../../".$name;
-			} else {
-				$url = "../".$name;
-			}
-		}
-		if ($externalUrl) {
-			$url = $externalUrl;
-		}
-		?>
-        <div class="menuitem"><a href="<?php print $url ?>" style="display: block;"><? print $visName ?></a></div>
-		<?php
-	}
-	if ($name == ".") {
-	    if ($page == "news") {
-	      ?>
-          <div class="submenuitem activeMenuitem">News</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/news">News</a></div>
-          <?php
-	    }
-
-	    if ($page == "screenshots") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Screenshots</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/screenshots">Screenshots</a></div>
-          <?php
-	    }
-
-	    if ($page == "languages") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Supported Languages</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/languages">Supported Languages</a></div>
-          <?php
-	    }
-
-	    if ($page == "usage") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Usage</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/usage">Usage</a></div>
-          <?php
-	    }
-
-	    if ($page == "links") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Links</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="<?php print $rootUrl ?>/links">Links</a></div>
-          <?php
-	    }
-	}
-	if ($name == "development") {
-	    if ($sub_page == "ruleeditor") {
-	      ?>
-          <div class="submenuitem activeMenuitem">Rule Creator</div>
-          <?php
-	    } else {
-	      ?>
-          <div class="submenuitem"><a href="http://community.languagetool.org/ruleEditor">Rule Creator</a></div>
-          <?php
-	    }
-		?>
-
-        <div class="submenuitem"><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Bug Reports</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/integration-on-websites">Website Integration</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/java-api">Java API</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/java-spell-checker/">Java Spell Checker</a></div>
-
-		<div class="submenuitem"><a href="<?php print $rootUrl ?>/development/api/">Javadoc</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/public-http-api">HTTP API</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/http-server">HTTP Server</a></div>
-
-        <div class="submenuitem"><a href="http://wiki.languagetool.org/development-links">Links</a></div>
-        
-        <?php
+<?php if ($enable_download_dialogs) { ?>
+  <script type="text/javascript" src="<?php print $rootUrl ?>/js/zebra_dialog.js"></script>
+  <script type="text/javascript">
+    function showDownloadOfficeThanks() {
+        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
+            '<ul>' +
+            '<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - ' +
+            '  LanguageTool will not work otherwise.</li>' + 
+            '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
+            '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
+            '  <li>If you are using LibreOffice and you want to check English texts:' +
+            '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
+            '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">the list of common problems</a>.</strong></li>' +
+            '</ul>',
+            {width: 600});
     }
-}
-?>
+    function showDownloadStandaloneThanks() {
+        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool-standalone.jar by double clicking it.</p>',
+            {width: 600});
+    }
+  </script>
+<?php } ?>
 
+<?php if ($enable_tablesorter) { ?>
+  <?php $hasJQuery = 1; ?>
+  <script type="text/javascript" src="<?php print $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".sortable").tablesorter({
+        headers: {
+          2: {
+            sorter: false
+          }
+        }
+      });
+    });
+  </script>
+<?php } ?>
 
-<table border="0" width="100%">
-<tr>
-	<td></td>
-	<td>
-		<?php if ($page == "homepage") { ?>
-			<h1><?php print $title ?></h1>
-		<?php } else { ?>
-			<h1 id="hplink"><a href="/"><?php print $title ?></a></h1>
-		<?php } ?>
-	</td>
-	<td><h1 style="text-align:left"><?php print $title2 ?></h1></td>
-</tr>
-<tr>
-	<td width="43"></td>
-	<td width="201" valign="top">
-		<div id="menu">
-			<?php makeEntry(".", "Homepage"); ?>
-			<?php makeEntry("forum", "Forum"); ?>
-			<?php makeEntry("wikicheck", "WikiCheck"); ?>
-			<?php makeEntry("development", "Development", "http://wiki.languagetool.org/development-overview"); ?>
-			<?php makeEntry("http://wiki.languagetool.org", "Wiki"); ?>
-			<?php makeEntry("contact", "Contact"); ?>
+<?php if ($enable_textcheck) { ?>
+  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
+  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
+  <?php if ($hasJQuery == 0) { ?>
+    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.4.min.js"></script>
+  <?php } ?>
+  <script language="javascript" type="text/javascript">
 
-			<div style="margin-top:70px;font-size:12px">
-              <table>
-                <tr>
-                  <td valign="top"><a href="http://twitter.com/languagetoolorg"><img border="0" style="margin-left:10px;margin-right:5px" src="<?php print $rootUrl ?>/images/twitter_link16x16.png" alt="twitter logo"/></a></td>
-                  <td><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a></td>
-                </tr>
-                <tr>
-                  <td valign="top"><a href="http://www.facebook.com/LanguageTool"><img border="0" style="margin-left:10px;margin-right:5px" src="<?php print $rootUrl ?>/images/facebook_link16x16.png" alt="facebook logo"/></a></td>
-                  <td><a href="http://www.facebook.com/LanguageTool">Find us on Facebook</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td style="font-weight: normal">
-                      <form action="http://46260.seu1.cleverreach.com/f/46260-106283/wcs/" method="post">
-                          <label for="text2133452">Get announcements<br/>via email</label>
-                          <input id="text2133452" name="email" value="" placeholder="your@address.org" type="text" style="font-weight: normal; width:96%" />
-                          <input type="submit" value="Subscribe" style="font-weight: normal; margin-top: 2px"/>
-                      </form>
-                  </td>
-                </tr>
-              </table>
-            </div>
-		</div>
-	</td>
-	<td class="content">
+   tinyMCE.init({
+       mode : "textareas",
+       plugins                     : "AtD,paste",
 
-		<!-- MAIN TEXT -->
+       //Keeps Paste Text feature active until user deselects the Paste as Text button
+       paste_text_sticky : true,
+       //select pasteAsPlainText on startup
+       setup : function(ed) {
+           ed.onInit.add(function(ed) {
+               ed.pasteAsPlainText = true;
+           });
+       },
+
+       /* translations: */
+       languagetool_i18n_no_errors :
+          {
+           // "No errors were found.":
+           'br': 'Fazi ebet.',
+           'de-DE': 'Keine Fehler gefunden.',
+           'de-DE-x-simple-language': 'Keine möglichen Verstöße gegen Leichte Sprache gefunden.',
+           'eo': 'Neniuj eraroj trovitaj.',
+           'fr': 'Aucune erreur trouvée.',
+           'ru': 'Ошибки не найдены.',
+           'ca': 'No s\'ha trobat cap error'
+          },
+       languagetool_i18n_explain :
+          {
+           // "Explain..." - shown if there's an URL with a more detailed description:
+           'br': 'Muioc’h a ditouroù…',
+           'de-DE': 'Mehr Informationen...',
+           'de-DE-x-simple-language': 'Mehr Informationen...',
+           'eo': 'Pliaj klarigoj…',
+           'fr': 'Plus d’informations…',
+           'ru': 'Подробнее…',
+           'ca': 'Més informació…'
+          },
+       languagetool_i18n_ignore_once :
+          {
+           // "Ignore this error":
+           'br': 'Na ober van ouzh ar fazi-mañ',
+           'de-DE': 'Hier ignorieren',
+           'de-DE-x-simple-language': 'Hier ignorieren',
+           'eo': 'Ignori tiun eraron',
+           'fr': 'Ignorer cette erreur',
+           'ru': 'Пропустить эту ошибку',
+           'ca': 'Ignora el suggeriment'
+          },
+       languagetool_i18n_ignore_all :
+          {
+           // "Ignore this kind of error":
+           'br': 'Na ober van ouzh ar fazioù seurt-se',
+           'de-DE': 'Fehler dieses Typs ignorieren',
+           'de-DE-x-simple-language': 'Fehler dieses Typs ignorieren',
+           'eo': 'Ignori tiun specon de eraroj',
+           'fr': 'Ignorer ce type d’erreurs',
+           'ru': 'Пропустить этот тип ошибок',
+           'ca': 'Ignora aquesta classe d\'errors'
+          },
+
+       languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
+       /* the URL of your proxy file: */
+       languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
+       /* edit this file to customize how LanguageTool shows errors: */
+       languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css",
+       /* this stuff is a matter of preference: */
+       theme                              : "advanced",
+       theme_advanced_buttons1            : "",
+       theme_advanced_buttons2            : "",
+       theme_advanced_buttons3            : "",
+       theme_advanced_toolbar_location    : "none",
+       theme_advanced_toolbar_align       : "left",
+       theme_advanced_statusbar_location  : "bottom",  // activated so we have a resize button
+       theme_advanced_path                : false,     // don't display path in status bar
+       theme_advanced_resizing            : true,
+       theme_advanced_resizing_use_cookie : false,
+       /* disable the gecko spellcheck since AtD provides one */
+       gecko_spellcheck                   : false
+   });
+
+    function fullscreen_toggle() {
+      if ($('form#checkform').hasClass('fullscreen')) {
+        $('form#checkform').removeClass('fullscreen');
+        $('body').removeClass('fullscreen');
+        $('iframe#checktext_ifr').height(270);
+      }else{
+        $('body').addClass('fullscreen');
+        $('form#checkform').addClass('fullscreen');
+        $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
+      };
+      return false;
+    }
+
+   function doit() {
+       var langCode = document.checkform.lang.value;
+       tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
+   }
+
+   $(function(){
+    $(window).resize(function(){
+      if ($('form#checkform').hasClass('fullscreen')) {
+        $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
+      };
+    });
+   });
+
+   </script>
+<?php } ?>
+
+<script type="text/javascript" src="<?php print $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.dropkick').dropkick({
+      change: function (value, label) {}
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  function resize_buttons(){
+    var max_height = 0;
+    $('.button_container .title').each(function(){
+      $(this).height('auto');
+      if ($(this).height() > max_height) {
+        max_height = $(this).height();
+      }
+    });
+    console.log('setting', max_height);
+    $('.button_container .title').height(max_height);    
+  }
+  $(function(){
+    $(window).resize(function(){
+      resize_buttons();
+    });
+    resize_buttons();
+  });
+</script>

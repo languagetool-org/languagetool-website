@@ -1,34 +1,11 @@
 .hiddenSpellError {
-    padding-bottom: 2px;
-    background-image: url("../../../../../images/squiggle_red.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    vertical-align: text-top;
-    cursor: default;
+    background-color: rgba(255,0,0, 0.2);
 }
 
 .hiddenGrammarError {
-    padding-bottom: 2px;
-    background-image: url("../../../../../images/squiggle.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    vertical-align: text-top;
-    cursor: default;
+    background-color: #fee481;
 }
 
 .hiddenSuggestion {
-    padding-bottom: 2px;
-    background-image: url("../../../../../images/squiggle.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    vertical-align: text-top;
-    cursor: default;
-}
-
-body.mceContentBody { 
-    background: #f7f7f7;
-}
-
-body, td, pre {
-    font-size: 12px;
+    background-color: #fee481;
 }
