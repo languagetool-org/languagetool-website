@@ -25,7 +25,7 @@
         email: <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span>
     </p>
 
-    <h1>License</h1>
+    <h1>Licenses</h1>
 
     <p>The contents of this homepage is available under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
         The software, LanguageTool, is available under <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a> or later.</p>
@@ -34,7 +34,8 @@
         which are available under <a href="http://creativecommons.org/licenses/by/3.0/us/">CC BY 3.0</a>.
         <!-- see images/(information|exclamation|accept).png in ltcommunity --></p>
     
-    <p>The font used is <em>Source Sans Pro</em> from Adobe, available under <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL Open Font License, 1.1</a></p>
+    <p>The font used is <a href="https://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> from Adobe,
+    available under <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL Open Font License, 1.1</a>.</p>
 
 
     <h1>Privacy</h1>
