@@ -1,422 +1,587 @@
-/*
-Theme Name: iOrange2b
-Theme URI: http://www.darjanpanic.com
-Description: iOrange2b Template v1 by Brian Green and Darjan Panic.
-Version: 1.0
-Author: Brian Green and Darjan Panic, Modified by Daniel Naber
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic";
 
-Use it however you want, just leave the links in the footer :)
-*/
+* {
+font-family:'Source Sans Pro',sans-serif;
+margin:0;
+padding:0
+}
+
 body {
-	background: url(../images/bg.jpg?2) no-repeat;
-	max-width: 1100px;
+color:#777
 }
 
-a:link {
-	color: #bf6c00;
-	text-decoration: none;
-}
-a:visited {
-	color: #a75e00;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:active {
-	text-decoration: underline;
+body.fullscreen {
+overflow:hidden
 }
 
-h1 {
-	margin-top: 5px;
-	text-align: center;
-	font-family: verdana, sans-serif;
-	font-size: 24px;
-	color: #ef8701;
+body a {
+color:#1a36d8
 }
 
-h2 {
-	margin-top: 30px;
-	margin-bottom: 5px;
+body a img {
+border:0
 }
 
-h3 {
-	margin-bottom: 2px;
+body .alt_lang_message {
+padding:10px 0;
+font-size:12px;
+text-align:center;
+color:#735c01;
+background-color:#fee68a
 }
 
-code {
-    background-color: #eeeeee;
-}
-tt {
-    background-color: #eeeeee;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-.xmlrule {
-    background-color: #eeeeee;
-    padding-top: 10px;
-    padding-bottom: 10px;
+body .alt_lang_message a {
+color:#403301
 }
 
-.command {
-    padding: 5px;
-    background-color: #eeeeee;
+body #header {
+width:100%;
+background-color:#fff
 }
 
-.xmlcode {
-	font-family: monospace;
-	margin-left: 15px;
-	font-size: larger;
+body #header #container {
+width:900px;
+margin:14px auto
 }
 
-.xmlcodeNoIndent {
-	font-family: monospace;
-	font-size: larger;
+body #header #container #logo {
+margin-left:20px;
+margin-right:80px;
+width:34px;
+float:left
 }
 
-pre {
-	margin-bottom: 0px;
-}
-	
-.firstpara {
-	margin-top: 0px;
+body #header #container #nav {
+position:relative;
+top:6px;
+float:left
 }
 
-.content {
-	padding-left: 5px;
-	padding-right: 25px;
-	color: #2c2c2c;
-	font-family: verdana, sans-serif;
-	font-size: 12px;
-	vertical-align: top;
+body #header #container #nav a {
+font-size:18px;
+color:#000;
+text-decoration:none;
+font-weight:600;
+margin-right:30px
 }
 
-.footer {
-	padding-top: 20px;
-	text-align: right;
-	color: #bbbbbb;
-	font-family: verdana, sans-serif;
-	font-size: 9px;
+body #header #container #nav a.active,body #header #container #nav a:hover {
+color:#1a36d8
 }
 
-.invisible {
-	padding-top: 20px;
-	text-align: right;
-	color: #ffffee;
-	font-family: verdana, sans-serif;
-	font-size: 9px;
+body #header #container #social {
+position:relative;
+top:4px;
+float:right
 }
 
-.footer a {
-	color: #ffc06f;
+body #header #container #social a {
+margin-left:10px;
+float:right;
+display:block;
+width:30px;
+height:30px;
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-11-28-04-48-30-529765ced00b0.png);
+background-position:20px 20px
 }
 
-.lastmod {
-    margin-top: 40px;
-	font-size: 9px;
-	color: #888888;
-	font-family: verdana, sans-serif;
+body #header #container #social a:hover {
+-moz-opacity:.5;
+filter:alpha(opacity=50);
+opacity:.5;
+-webkit-transition:all .2s linear
 }
 
-/* ------------------------------------------------- */
-/* Demo */
-
-.error {
-	background-color: #f8aab5;
+body #header #container #social a.facebook {
+background-position:-4px 34px
 }
 
-.suggestion {
-	background-color: #7ef7ac;
+body #header #container #social a.twitter {
+background-position:-44px -42px
 }
 
-/* copied from community website */
-.errorMarker {
-	/* font-weight: bold; */
-	padding-bottom: 2px;
-	background-image: url("../images/squiggle.png");
-	background-repeat: repeat-x;
-	background-position: left bottom;        
-	vertical-align: text-top;
-}
-/* ------------------------------------------------- */
-
-/* Link and heading "LanguageTool" in the upper left corner: */
-#hplink a:link {
-	color: #ef8700;
+body #stage {
+display:block;
+width:100%;
+background-size:cover
 }
 
-#hplink a:visited {
-	color: #ef8700;
+body #stage.start {
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-11-28-05-11-49-52976b45c249c.png)
 }
 
-#hplink a:hover {
-	color: #ef8700;
+body #stage.download {
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-10-08-32-32-52a76c50189f9.png)
 }
 
-/* ------------------------------------------------- */
-
-#menu {
-    font-weight: bold;
-    text-decoration: none;
-    font-family: verdana, sans-serif;
-    font-size: 16px;
+body #stage .inner {
+width:900px;
+margin:0 auto;
+padding:80px 0
 }
 
-.menuitem {
-    margin-bottom: 10px;
+body #stage .inner #image {
+text-align:right;
+float:right;
+width:60%
 }
 
-.submenuitem {
-    margin-top: -8px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 14px;
+body #stage .inner #image img {
+-moz-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+box-shadow:0 10px 20px rgba(0,0,0,0.2)
 }
 
-.menuitem a {
-    padding-left: 10px;
-   	padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 0px;
-    margin-right: 0px;
-   	margin-bottom: 10px;
-    color: #464646;
-    text-decoration: none;
+body #stage .inner #editor {
+float:left;
+width:60%
 }
 
-.menuitem a:hover {
-    color: white;
-    background-color: #ef8701;
+body #stage .inner #editor form#checkform {
+position:relative
 }
 
-.activeMenuitem {
-    color: #ffffff;
-    background: #ef8701;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 0px;
-    margin-right: 0px;
+body #stage .inner #editor form#checkform .fullscreen-toggle {
+position:absolute;
+right:18px;
+bottom:115px;
+text-align:right
 }
 
-.submenuitem.activeMenuitem {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-left: 10px;
+body #stage .inner #editor form#checkform .fullscreen-toggle a {
+width:18px;
+height:18px;
+margin-left:-20px;
+display:inline-block;
+overflow:hidden;
+position:absolute;
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-02-03-25-13-529c984934423.png)
 }
 
-.warning {
-	border-color: #ffb251;
-	border-style: solid;
-	border-width: 2px;
-	background: #fcffd5;
-	padding: 5px;	
+body #stage .inner #editor form#checkform .fullscreen-toggle a:hover {
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-02-08-06-03-529cda1b08627.png)
 }
 
-.downloadSection {
+body #stage .inner #editor form#checkform.fullscreen {
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0
 }
 
-.largelist li {
-    margin-top: 12px;
+body #stage .inner #editor form#checkform.fullscreen .handle {
+display:none
 }
 
-.largelist li li {
-    margin-top: 5px;
+body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a {
+position:fixed;
+top:20px;
+right:20px;
+margin:0!important;
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-02-08-06-03-529cda1b08627.png)
 }
 
-li {
-    margin-top: 5px;
+body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a:hover {
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-02-03-25-13-529c984934423.png)
 }
 
-/* check form on the homepage */
-FORM SELECT:HOVER {
-    background-color: #EF8701;
-    color: #FFFFFF;
-    border: 1px solid #464646;
-}
-FORM SELECT {
-    background-color: #F9F5F2;
-    color: #464646;
-    border: 1px solid #cccccc;
-    font-weight: bold;
-    padding: 4px;
-}
-FORM INPUT:HOVER {
-    background-color: #EF8701;
-    border: 1px solid #464646;
-    color: #FFFFFF;
-}
-FORM INPUT {
-    background-color: #FBF7F4;
-    border: 1px solid #cccccc;
-    color: #464646;
-    font-weight: bold;
-    padding: 4px;
-}
-FORM TEXTAREA {
-    background-color: #EEEEEE;
-    border: 1px solid #cccccc;
-}
-/* end: check form on the homepage */
-
-/* download button on the homepage */
-.downloadButton {
-    /* blue: #5397FF; #75ACFF, #3083FF */
-    background-color: #F4B028;
-    background-image: url("../images/downloadArrow.png");
-    background-image: url("../images/downloadArrow.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBDB2D), color-stop(100%,#EC8622));
-    background-image: url("../images/downloadArrow.png"), -moz-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
-    background-image: url("../images/downloadArrow.png"), -ms-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
-    background-image: url("../images/downloadArrow.png"), -o-linear-gradient(top, #FBDB2D 0%, #EC8622 100%);
-    background-image: url("../images/downloadArrow.png"), linear-gradient(to bottom, #FBDB2D 0%, #EC8622 100%);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    min-height: 74px;
-    border-radius: 10px;
-    display: table-cell;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1), inset 0 -4px rgba(0, 0, 0, 0.1);
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+body #stage .inner #editor .handle {
+display:block;
+height:24px;
+width:100%;
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-04-09-16-48-529f8db0197a4.png);
+-webkit-border-top-left-radius:3px;
+-webkit-border-top-right-radius:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;
+border-top-left-radius:3px;
+border-top-right-radius:3px
 }
 
-.downloadButtonLogo {
-    height: 52px;
-    width: 52px;
-    float: left;
-    padding: 11px;
-    border: none;
+body #stage .inner #editor .window {
+background-color:#fff
 }
 
-.downloadButton a {
-    display: block;
-    min-height: 74px;
-    padding-right: 50px;
-    white-space: nowrap;
+body #stage .inner #editor .inner {
+padding:0;
+margin:0;
+width:90%
 }
 
-.downloadButton a:hover {
-    text-decoration: none;
+body #stage .inner #editor .inner #checktext {
+height:270px
 }
 
-.downloadButton span {
-    font-family: georgia, "Bitstream Charter", serif;
-    position: relative;
-    top: 8px;
+body #stage .inner #editor .inner #checktext_path_row {
+display:none
 }
 
-.downloadButton .languagetool {
-    color: black;
-    font-size: 12.1pt;
-    font-weight: bold;
+body #stage .inner #editor .inner .message {
+display:none;
+padding:10px;
+font-size:11px;
+color:#735c01;
+background-color:#fee68a
 }
 
-.downloadButton .download {
-    color: black;
-    font-size: 11.9pt;
-    font-weight: normal;
+body #stage .inner #editor .inner .message a {
+color:#403301
 }
 
-.downloadButton .version {
-    color: black;
-    font-size: 9pt;
-    font-weight: normal;
+body #stage .inner #editor .inner #editor_controls {
+padding:20px;
+background-color:#ebebeb
 }
 
-.downloadButtonSmallContainer {
-    display: table-cell;
+body #stage .inner #editor .inner #editor_controls .dropdown {
+float:left;
+display:block;
+width:50%
 }
 
-.downloadButtonSmall {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    display: block;
-    background-image: linear-gradient(to bottom, #FBDB2D 0%, #EC8622 100%) !important;
-/*     margin-left: 22px; */
+body #stage .inner #editor .inner #editor_controls .submit {
+float:right;
+text-align:right;
+display:block;
+width:50%
 }
 
-.downloadButtonSmall, .downloadButtonSmall > a {
-    min-height: 42px !important;
-    padding-right: 5px;
+body #stage .inner #editor .inner #editor_controls .submit input {
+border:0;
+color:#fff;
+font-size:18px;
+padding:7px 20px;
+background-color:#1a36d8;
+cursor:pointer
 }
 
-.downloadButtonSmall img, .downloadButtonSmall span {
-    position: relative;
-/*     left: -22px; */
+body #stage .inner #editor .inner #editor_controls .submit input:hover,body #stage .inner #editor .inner #editor_controls .submit input:active {
+background-color:#152baa;
+-webkit-transition:all .2s linear
 }
 
-.downloadButtonSmall img {
-/*     top: -1px; */
+body #stage .inner #text {
+float:left;
+width:40%
 }
 
-.downloadButtonSmall span {
-    top: 1px !important;
+body #stage .inner #text p {
+font-weight:300;
+line-height:40px;
+color:#fff;
+font-size:2em
 }
 
-.downloadButtonSmall > a {
-    padding-right: 0px;
+body #stage .inner #text p strong {
+font-weight:600
 }
 
-.downloadButtonSmall .downloadButtonLogo {
-    height: 32px !important;
-    width: 32px !important;
-    padding: 4px;
+body #stage .inner #text p.small {
+line-height:30px;
+color:rgba(255,255,255,0.6);
+margin-top:30px;
+font-size:22px
 }
 
-.reg {
-	font-size: 50%;
-	vertical-align: top;
+body #plugins {
+width:900px;
+margin:60px auto 70px
 }
 
-/* end: download button on the homepage */
-
-.longPage h2 {
-    border-bottom: 1px solid #CCCCCC;
+body #plugins h2 {
+font-size:36px;
+font-weight:400;
+color:#000;
+margin:0;
+margin-bottom:20px
 }
 
-.longPage h3 {
-    border-bottom: 1px solid #CCCCCC;
+body #plugins #list {
+margin-top:20px
 }
 
-.imgbox {
-    width: 320px;
-    height: 300px;
-    font-size: 11px;
-    text-align: center;
-    float: left;
-    margin: 0px 10px 0px 7px;
+body #plugins #list ul {
+margin-left:20px;
+margin-right:60px;
+float:left
 }
 
-.imgbox > a:first-child > img {
-    width: 320px;
-    height: auto;
-    border: 0px;
+body #plugins #list ul li {
+margin-bottom:5px;
+color:#1a36d8
 }
 
-.imgbox > a:last-of-type {
-    line-height:21px;
+body #download {
+width:900px;
+margin:60px auto 70px
 }
 
-.imgboxcontainer ~ * {
-    clear: both;
+body #download h2 {
+font-size:36px;
+font-weight:400;
+color:#000;
+margin:0;
+margin-bottom:20px
 }
 
-.homepageIntroText {
-    margin-top: 0;
-    font-size: 16px;
+body #download p.small {
+font-size:13px
 }
 
-.maintainerNeeded {
-    background-color: #ffff95;
-    font-weight: bold;
+body #download .button_container {
+width:300px;
+float:left
 }
 
-/* for http://languagetool.org/languages/ */
-.langVariants {
-    color: grey;
-    font-size: smaller;
+body #download .button_container .inner_button {
+background-color:#fdd743;
+margin:0 20px 20px 0;
+display:block
+}
+
+body #download .button_container .inner_button .title {
+color:#000;
+font-size:20px;
+padding:20px
+}
+
+body #download .button_container .inner_button .meta {
+font-size:13px;
+color:rgba(0,0,0,0.6);
+background-color:#fee275;
+padding:8px 20px
+}
+
+body #actions {
+background-color:#373737;
+padding:30px 0
+}
+
+body #actions .actions-inner {
+margin:0 auto;
+width:900px
+}
+
+body #actions .actions-inner #license_info {
+height:80px;
+display:block;
+width:50%;
+float:left;
+background-image:url(https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-12-03-01-00-52-529d1f347adc9.png);
+background-position:0 50%;
+background-repeat:no-repeat
+}
+
+body #actions .actions-inner #license_info .inner {
+padding-left:65px;
+color:#fff
+}
+
+body #actions .actions-inner #license_info .inner h2 {
+font-weight:400;
+font-size:18px
+}
+
+body #actions .actions-inner #license_info .inner p {
+margin-top:10px;
+font-size:15px;
+font-weight:200;
+color:rgba(255,255,255,0.8)
+}
+
+body #actions .actions-inner #license_info .inner p a {
+text-decoration:none;
+border-bottom:1px solid rgba(255,255,255,0.3);
+color:rgba(255,255,255,0.8)
+}
+
+body #actions .actions-inner #newsletter_reg {
+height:80px;
+display:block;
+width:45%;
+float:right;
+background-image:url(../images/email-symbol.png);
+background-position:0 50%;
+background-repeat:no-repeat
+}
+
+body #actions .actions-inner #newsletter_reg .inner {
+padding-left:65px;
+color:#fff
+}
+
+body #actions .actions-inner #newsletter_reg .inner h2 {
+font-weight:400;
+font-size:18px
+}
+
+body #actions .actions-inner #newsletter_reg .inner p {
+margin-top:10px;
+font-size:15px;
+font-weight:200;
+color:rgba(255,255,255,0.4)
+}
+
+body #actions .actions-inner #newsletter_reg .inner input {
+font-size:15px;
+padding:5px 10px;
+border:0
+}
+
+body #actions .actions-inner #newsletter_reg .inner input[type=submit] {
+background-color:#1a36d8;
+color:#fff
+}
+
+body #footer {
+padding:30px 0;
+background-color:#ebebeb;
+color:#777;
+display:block;
+font-size:13px;
+text-align:center
+}
+
+body #footer span {
+display:inline-block;
+margin:0 10px
+}
+
+body #footer span a {
+color:#777;
+text-decoration:none;
+border-bottom:1px solid rgba(119,119,119,0.3)
+}
+
+body #footer span a:hover {
+border-bottom:1px solid #777
+}
+
+@media (max-width:945px) {
+#header #container {
+width:680px!important
+}
+
+#stage .inner {
+padding:30px 0!important;
+width:80%!important
+}
+
+#stage .inner #editor {
+display:none!important
+}
+
+#stage .inner #text {
+width:100%!important
+}
+
+#download {
+margin:30px auto!important;
+width:80%!important
+}
+
+#download h2 {
+font-size:27px
+}
+
+#download .button_container {
+overflow:hidden;
+width:50%!important
+}
+
+#actions .actions-inner {
+width:80%!important;
+margin:0 auto!important
+}
+
+#actions .actions-inner #license_info,#actions .actions-inner #newsletter_reg {
+width:100%!important;
+height:auto!important
+}
+
+#actions .actions-inner #license_info {
+margin-bottom:25px
+}
+}
+
+@media (max-width:750px) {
+#header #container {
+width:100%!important
+}
+
+#header #container #logo {
+margin:10px 0!important;
+width:100%!important;
+text-align:center!important
+}
+
+#header #container #logo a {
+width:100%!important
+}
+
+#header #container #logo a img {
+text-align:center!important
+}
+
+#header #logo {
+float:none!important
+}
+
+#header #nav {
+float:none!important;
+margin-bottom:20px;
+text-align:center!important
+}
+
+#header #nav a {
+font-size:18px!important;
+margin:0 5px!important
+}
+
+#header #social {
+display:none
+}
+
+#stage #text p {
+font-size:22px!important;
+line-height:30px!important
+}
+
+#stage #text p.small {
+font-size:17px!important;
+line-height:23px!important
+}
+}
+
+@media (max-width:650px) {
+#download {
+margin:30px auto!important;
+width:80%!important
+}
+
+#download .button_container {
+width:100%!important
+}
+
+#download .button_container .inner_button {
+margin:0 0 10px!important
+}
+
+#download .button_container .title {
+padding:10px!important;
+font-size:15px!important;
+height:auto!important
+}
+
+#download .button_container .meta {
+font-size:13px!important;
+padding:5px 10px!important
+}
+}
+
+@media (max-width:400px) {
+#header #nav a {
+font-size:15px!important
+}
 }
