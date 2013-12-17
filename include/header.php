@@ -17,10 +17,10 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => $rootUrl . '/css/style_v2.less?' . rand(),
+        'src' => $rootUrl . '/css/style.css',
         'rel' => "stylesheet",
-        'type' => "text/less",
-        'media' => ''
+        'type' => "text/css",
+        'media' => 'screen'
       ),
       array(
         'src' => $rootUrl . '/favicon.ico?' . rand(),
