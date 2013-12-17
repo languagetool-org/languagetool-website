@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang=en>
 <head>
+    <?php
+    $page = "other";
+    $title = "LanguageTool Contact";
+    ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
-<?php include("../../include/partials/stage_head.php"); ?>
-<div id="content">
+
+<div id="textcontent">
 
     <h1>Need Help?</h1>
     
@@ -24,7 +28,7 @@
     <h1>License</h1>
 
     <p>The contents of this homepage is available under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
-        The software, LanguageTool, is available under <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.</p>
+        The software, LanguageTool, is available under <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a> or later.</p>
 
     <p>This page uses some icons provided by <a  href="http://www.fatcow.com/free-icons">FatCow</a>
         which are available under <a href="http://creativecommons.org/licenses/by/3.0/us/">CC BY 3.0</a>.

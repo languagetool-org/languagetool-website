@@ -1,8 +1,8 @@
 <div id="header">
   <div id="container">
     <div id="logo">
-      <a href="<?php print $rootUrl; ?>">
-        <img src="https://s3-eu-west-1.amazonaws.com/51e3d489f1e/2013-11-28-04-38-25-5297637114adc.png">
+      <a href="/">
+        <img src="/images/logo36x38.png">
       </a>
     </div>
     <div id="nav">
@@ -10,8 +10,8 @@
         $pages = array(
           array('name'=>'Home', 'url' => $rootUrl . '/'),
           // TODO: comment in when done: array('name'=>'Screenshots', 'url' => $rootUrl . '/?page=screenshots'),
-          array('name'=>'Support', 'url' => $rootUrl . '/?page=support'),
-          array('name'=>'Development', 'url' => 'http://wiki.languagetool.org/development-overview')
+          array('name'=>'Support', 'url' => $rootUrl . '/support/'),
+          array('name'=>'Development', 'url' => '/development/')
         );
 
         foreach ($pages as $page) {

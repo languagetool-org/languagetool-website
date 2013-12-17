@@ -8,13 +8,52 @@
 
 @blue: #1a36d8;
 @yellow: #fdd743;
+@textColor: #111111;
 
 body {
   color: #777777;
+
+  /* standard content page without much images etc: */
+  #textcontent {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    color: @textColor;
+    p {
+      margin-bottom: 10px;
+    }
+    .headlines {
+      color: lighten(@textColor, 20%);
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      .headlines;
+    }
+    h2 {
+      .headlines;
+    }
+    ul {
+      margin-left: 30px;
+      margin-right: 60px;
+      margin-bottom: 10px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    .oldInformation {
+      color: lighten(@textColor, 40%);
+      a {
+        color: lighten(@blue, 30%);
+      }
+    }
+  } 
+
   &.fullscreen {
     overflow: hidden;
   }
-  a {
+  a[href] {
     color: @blue;
     img {
       border: 0px;
@@ -29,6 +68,16 @@ body {
     a {
       color: darken(@yellow, 50%);
     }
+  }
+  .warning {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    background-color: lighten(@yellow, 14%);
+    border-style: dashed;
+    border-width: 2px;
+    border-color: red;
   }
   #header {
     width: 100%;

@@ -1,14 +1,21 @@
-<?php
-$page = "other";
-$title = "LanguageTool";
-$title2 = "Common Problems";
-$lastmod = "2013-12-04 12:30:00 CET";
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $page = "other";
+    $title = "LanguageTool Common Problems";
+    $lastmod = "2013-12-04 12:30:00 CET";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
 
-<h2 class="firstpara"><a name="commonproblems">Checklist in Case of Problems</a></h2>
+<div id="textcontent">
 
-<ul class="largelist">
+<h1><a name="commonproblems">Checklist in Case of Problems</a></h1>
+
+<ul>
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
 <li><strong>For Mac users:</strong> LanguageTool now requires Java 7, which is available for the Mac only as a 64 bit version.
@@ -34,9 +41,9 @@ include("../../include/header.php");
     (under <em>Tools -&gt; Extension Manager</em>).</li>
 </ul>
 
-<h2>Common problems with LibreOffice/OpenOffice.org integration</a></h2>
+<h2>Common Problems with LibreOffice/OpenOffice.org Integration</h2>
 
-<ul class="largelist">
+<ul>
     
 <li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not 
     work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
@@ -71,7 +78,7 @@ include("../../include/header.php");
     and LanguageTool are installed. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">The macro</a> mentioned here
     might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
 
-<li style="color:#888888">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
+<li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
     <ul>
         <li>Freeze on startup: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
             This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
@@ -108,9 +115,14 @@ include("../../include/header.php");
 
 <h2>Still need Help?</h2>
 
-<p>If LanguageTool still doesn't work properly for you, please <?=show_link("post to the forum", "/forum", 0)?> describing the problem
+<p>If LanguageTool still doesn't work properly for you, please <a href="/forum">post to the forum</a> describing the problem
 and letting us know which version of LanguageTool, LibreOffice/OpenOffice.org and which operating system you are using.</p>
+
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

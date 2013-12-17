@@ -9,13 +9,13 @@
           'title' => 'LanguageTool for <strong>LibreOffice</strong> and <strong>OpenOffice</strong>',
           'link' => 'download/LanguageTool-2.3.oxt',
           'onclick' => 'onclick="setTimeout(function(){showDownloadOfficeThanks()},500)"',
-          'additional_info' => 'Version 2.3 &mdash; 45 MB &mdash; Requires Java7+'
+          'additional_info' => 'Version 2.3 &mdash; 45 MB &mdash; Requires Java 7'
         ),
         array(
           'title' => 'LanguageTool stand-alone for your <strong>Desktop</strong>',
           'link' => 'download/LanguageTool-2.3.zip',
           'onclick' => 'onclick="setTimeout(function(){showDownloadStandaloneThanks()},500)"',
-          'additional_info' => 'Version 2.3 &mdash; 67 MB &mdash; Requires Java7+'
+          'additional_info' => 'Version 2.3 &mdash; 67 MB &mdash; Requires Java 7'
         ),
         array(
           'title' => 'LanguageTool browser extension for <strong>Firefox</strong>',
@@ -38,7 +38,7 @@
   <div style="clear:both;"></div>
   <br>
   <p class="small">
-    Having problems? Please see the <a href="issues/">list of common problems</a>.
+    Having problems? Please see <a href="issues/">our checklist</a>.
   </p>
 
 </div>

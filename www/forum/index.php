@@ -1,10 +1,14 @@
-<?php
-$page = "forum";
-$title = "LanguageTool";
-$title2 = "User Forum";
-$lastmod = "2011-11-05 22:30:00 CET";
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $page = "forum";
+    $title = "LanguageTool Forum";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
 
 <a id="nabblelink" href="http://languagetool.2306527.n4.nabble.com/">Go to the LanguageTool user forum</a>
 <script src="http://languagetool.2306527.n4.nabble.com/embed/f3993201"></script>
@@ -13,3 +17,6 @@ include("../../include/header.php");
 $show_date = 0;
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>
