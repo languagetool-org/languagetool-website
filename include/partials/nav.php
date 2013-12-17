@@ -2,7 +2,7 @@
   <div id="container">
     <div id="logo">
       <a href="/">
-        <img src="/images/logo36x38.png">
+        <img src="/images/logo36x38.png" title="LanguageTool logo">
       </a>
     </div>
     <div id="nav">

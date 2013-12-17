@@ -64,8 +64,10 @@
   <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>" type="<?= $link['type'] ?>" media="<?= $link['media'] ?>" />
 <?php } ?>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
+<!-- used only for development:
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
+-->
 
 <?php if ($enable_fancybox) { ?>
   <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>

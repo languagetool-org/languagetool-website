@@ -21,15 +21,15 @@
   $languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
   $defaultLang = getDefaultLanguage();
 
-  $pages = array('start', 'screenshots', 'support', 'development');
+  $pages = array('start', 'screenshots');
   
   if (isset($_GET['page'])) {
     if (in_array($_GET['page'], $pages)) {
       $requestPage = htmlspecialchars($_GET['page']);
-    }else{
+    } else {
       $requestPage = '404';
     }
-  }else{
+  } else {
     $requestPage = 'start';
   }
 
@@ -41,7 +41,7 @@
     $lang = htmlspecialchars($_GET['lang']);
     setcookie("lang", $lang);
     header('Location: ' . $rootUrl);
-  }elseif (isset($_COOKIE['lang'])) {
+  } elseif (isset($_COOKIE['lang'])) {
     $currentLang = htmlspecialchars($_COOKIE['lang']);
   }
 
@@ -102,9 +102,6 @@
       -->
       <?php if ($requestPage == 'start' || $requestPage == 'screenshots') { ?>
         <?php include("../include/partials/start_actions.php"); ?>
-      <?php } ?>
-      <?php if ($requestPage == 'support') { ?>
-        <?php include("../include/partials/support.php"); ?>
       <?php } ?>
     </div>
     <?php include("../include/footer.php"); ?>

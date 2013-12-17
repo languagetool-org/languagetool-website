@@ -33,6 +33,8 @@
     <p>This page uses some icons provided by <a  href="http://www.fatcow.com/free-icons">FatCow</a>
         which are available under <a href="http://creativecommons.org/licenses/by/3.0/us/">CC BY 3.0</a>.
         <!-- see images/(information|exclamation|accept).png in ltcommunity --></p>
+    
+    <p>The font used is <em>Source Sans Pro</em> from Adobe, available under <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL Open Font License, 1.1</a></p>
 
 
     <h1>Privacy</h1>
