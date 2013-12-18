@@ -142,7 +142,7 @@ display:block
   padding: 10px;
 }
 
-.dk_options_inner li {
+.dk_options_inner .column {
 width:23%;
 margin: 0px 2% 0px 0px;
 float:left

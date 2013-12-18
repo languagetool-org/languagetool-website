@@ -277,7 +277,24 @@
       }
 
       $dk = $(template);
-      $dk.find('.dk_options_inner').html(options.join(''));
+
+      function split(a, n) {
+          var len = a.length,out = [], i = 0;
+          while (i < len) {
+              var size = Math.ceil((len - i) / n--);
+              out.push(a.slice(i, i + size));
+              i += size;
+          }
+          return out;
+      }
+
+      var columns = split(options, 4);
+      var html = '';
+      for (var i = 0; i < columns.length; i++) {
+        var html = html + '<ul class="column">'+columns[i].join('')+'</ul>';
+      };
+
+      $dk.find('.dk_options_inner').html(html);
 
       return $dk;
     }
