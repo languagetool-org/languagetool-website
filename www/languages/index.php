@@ -1,13 +1,19 @@
-<?php
-$page = "languages";
-$title = "LanguageTool";
-$title2 = "Supported Languages";
-$show_date = 0;
-$enable_tablesorter = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $enable_tablesorter = 1;
+    $page = "other";
+    $title = "LanguageTool Supported Languages";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
 
-<p class="firstpara">LanguageTool supports several languages to a different degree. This page lists the
+<div id="textcontent">
+
+<p>LanguageTool supports several languages to a different degree. This page lists the
 number of rules per language to give a very rough indication of how well a
 language is supported. If your language is not supported, see <a href="http://wiki.languagetool.org/development-overview#toc0">our three-minute introduction</a>
 on writing error detection rules. Of course you're welcome to improve and add rules for the existing languages, too.</p>
@@ -17,7 +23,7 @@ on writing error detection rules. Of course you're welcome to improve and add ru
 <b>Rules in LanguageTool 2.4-SNAPSHOT</b><br />
 Date: 2013-10-09<br /><br />
 
-<table class="tablesorter sortable">
+<table class="tablesorter sortable" style="width: auto">
     <thead>
     <tr>
         <th valign='bottom' width="200">Language</th>
@@ -68,13 +74,14 @@ to that language. There are some rules that deal with punctuation
 and that apply to almost all languages.</p>
 
 <p>
-<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.xml">Show false friend rules</a>
+<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.xml">Show false friend rules source code file</a>
 </p>
         
 <!--
 <p>Auto-detected means that a language can be detected by LanguageTool without the user needing to select the language.</p>
 -->
 
-<?php
-include("../../include/footer.php");
-?>
+    <?php include("../include/footer.php"); ?>
+
+</body>
+</html>

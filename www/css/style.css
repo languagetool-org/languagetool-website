@@ -49,6 +49,12 @@ body #textcontent .oldInformation {
 body #textcontent .oldInformation a {
   color: #98a6f3;
 }
+body #textcontent .langVariants {
+  color: #808080;
+}
+body #textcontent .maintainerNeeded {
+  background-color: #ffff95;
+}
 body.fullscreen {
   overflow: hidden;
 }
@@ -287,6 +293,9 @@ body #stage .inner #text p.small {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 30px;
   font-size: 22px;
+}
+body #stage .inner #text p a {
+  color: white;
 }
 body #plugins {
   width: 900px;

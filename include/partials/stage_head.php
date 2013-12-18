@@ -13,26 +13,8 @@
         </div>
       </div>
       <div id="text">
-        <?php
-          $content = array(
-            'en' => array(
-              '<strong>LanguageTool</strong> is an Open Source proofreading software for English, French, German, Polish, and more than 20 other languages.',
-              'It finds many errors that a simple spell checker cannot detect like mixing up there/their and it detects some grammar problems.'
-            ),
-            'pl' => array(
-              'LanguageTool to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze 25 innych języków.',
-              ''
-            )
-          );
-        ?>
-        <!--<p>
-          <?php print $content[$currentLang][0]; ?>
-        </p>
-        <p class="small">
-          <?php print $content[$currentLang][1]; ?>
-        </p>-->
         
-        <p><strong>LanguageTool</strong> is an Open Source proofreading software for English, French, German, Polish, and more than 20 other languages.</p>
+        <p><strong>LanguageTool</strong> is an Open Source proofreading software for English, French, German, Polish, and more than <a href="languages/">20 other languages</a>.</p>
         <p class="small">It finds many errors that a simple spell checker cannot detect and several grammar problems.</p>
 
       </div>
