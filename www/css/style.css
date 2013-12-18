@@ -43,6 +43,10 @@ body #textcontent ul {
 body #textcontent ul li {
   margin-bottom: 5px;
 }
+body #textcontent tt {
+  background-color: #eee;
+  font-family: monospace;
+}
 body #textcontent .oldInformation {
   color: #777777;
 }

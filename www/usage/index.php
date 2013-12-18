@@ -1,13 +1,19 @@
-<?php
-$page = "usage";
-$title = "LanguageTool";
-$title2 = "Usage";
-$lastmod = "2013-06-08 20:40:00 CET";
-include("../../include/header.php");
-include('../../include/geshi/geshi.php');
-?>
-		
-<p class="firstpara">LanguageTool can be used in a different number of ways:</p>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $title = "LanguageTool Usage";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
+
+<h1>Usage</h1>
+    
+<p>LanguageTool can be used in a different number of ways:</p>
 
 
 <h2>As a LibreOffice/OpenOffice.org Extension</h2>
@@ -37,40 +43,36 @@ include('../../include/geshi/geshi.php');
 
 <h2>As a stand-alone Application on the Command Line</h2>
 	<p>See "as a stand-alone application" above, but start LanguageTool using:</p>
-	<tt>java -jar languagetool-commandline.jar &lt;filename&gt;</tt>
+
+	<p><tt>java -jar languagetool-commandline.jar &lt;filename&gt;</tt></p>
+
 	<p>Use <tt>java -jar languagetool-commandline.jar --help</tt> to get detailed usage information.</p>
 
-    <p><?=show_link("A list of all command-line options", "http://wiki.languagetool.org/command-line-options", 0) ?>
+    <p><a href="http://wiki.languagetool.org/command-line-options">A list of all command-line options</a>
     is also available in our Wiki.</p>
 
 
 <h2>As a Firefox Add-On</h2>
 
-<ul style="list-style-type: none">
-    <li><?=show_link("Download the Add-On", "https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/", 0) ?></li>
+<ul>
+    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/">Download the Add-On</a></li>
 </ul>
 
 <h2>As an Add-On in other Programs</h2>
 
-<ul style="list-style-type: none">
-    <li>See the <?=show_link("links page", "../links/", 0) ?> for other software that can integrate LanguageTool</li>
+<ul>
+    <li><a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on">Software that supports LanguageTool as a Plug-in or Add-on</a></li>
 </ul>
 
+<h2>For Developers</h2>
 
-<h2>Embedding LanguageTool on a Web Page</h2>
+See <a href="../development/">development</a> for how to use LanguageTool in your own software.
 
-<ul style="list-style-type: none">
-  <li><?=show_link("Integration on Websites", "$rootUrl/website-integration/", 0) ?></li>
-</ul>
-
-
-<h2>Embedding LanguageTool from other Applications</h2>
-
-<ul style="list-style-type: none">
-  <li><?=show_link("Using LanguageTool from a Java application", "$rootUrl/java-api/", 0) ?></li>
-  <li><?=show_link("Using LanguageTool via HTTP", "$rootUrl/http-api/", 0) ?></li>
-</ul>
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>
