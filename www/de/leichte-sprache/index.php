@@ -1,12 +1,16 @@
-<?php
-$page = "de-simple-language";
-$title = "LanguageTool";
-$title2 = "Prüfung auf Leichte Sprache";
-$lastmod = "2013-04-09 20:40:00 CET";
-$enable_textcheck = 1;
-$subSubPage = 1;
-include("../../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $title = "LanguageTool - Prüfung auf Leichte Sprache";
+    ?>
+    <?php include("../../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p class="firstpara">Die Leichte Sprache ist eine besonders leicht verständliche Ausdrucksweise.
 Es existiert kein offizieller Standard, was genau Leichte Sprache ausmacht, es gibt zur Orientierung allerdings 
@@ -25,10 +29,15 @@ $checkDefaultText = "Fügen Sie hier Ihren Text ein oder benutzen Sie diesen Tex
 include("../../../include/checkform.php");
 ?>
 
-<p>Die normale Textprüfung ohne Berücksichtigung der Leichten Sprache finden Sie <a href="../">auf unserer deutschen Startseite</a>.</p>
+<p style="margin-top: 10px">Die normale Textprüfung ohne Berücksichtigung der Leichten Sprache finden Sie <a href="../">auf unserer deutschen Startseite</a>.</p>
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</div>
 
 <?php
 include("../../../include/footer.php");
 ?>
+
+</body>
+</html>

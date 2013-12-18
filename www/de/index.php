@@ -1,12 +1,16 @@
-<?php
-$page = "de";
-$title = "LanguageTool";
-$title2 = "Stil- und Grammatikprüfung";
-$lastmod = "2013-08-10 13:43:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $enable_fancybox = 1;
+    $title = "LanguageTool Stil- und Grammatikprüfung";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch <a href="http://www.languagetool.org/languages/">mehr als 20 weitere Sprachen</a> unterstützt.
 Sie können es hier ausprobieren:</p>
@@ -143,7 +147,8 @@ Außerdem weist LanguageTool in fremdsprachigen Texten auf <a href="http://de.wi
 
 
 <h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice nutzen</h2>
-LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:
+
+<p>LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:</p>
 
 <ol>
     <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier kostenlos herunter</a> und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
@@ -181,7 +186,11 @@ In <a target="_blank" href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012
 
 <p>Fragen beantworten wir im <a href="../forum">Forum</a>, wo Sie auch gerne Einträge auf Deutsch hinterlassen können. Dort ist es auch möglich, Fehlalarme von LanguageTool zu melden oder neue Regeln vorzuschlagen.</p>
 
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

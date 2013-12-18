@@ -59,7 +59,7 @@ body {
     h2 {
       .headlines;
     }
-    ul {
+    ul, ol {
       margin-left: 30px;
       margin-right: 60px;
       margin-bottom: 10px;
@@ -70,6 +70,13 @@ body {
     tt {
       background-color: #eee;
       font-family: monospace;
+    }
+    .errorMarker {
+      padding-bottom: 2px;
+      background-image: url("../images/squiggle.png");
+      background-repeat: repeat-x;
+      background-position: left bottom;
+      vertical-align: text-top;
     }
     .oldInformation {
       color: lighten(@textColor, 40%);
