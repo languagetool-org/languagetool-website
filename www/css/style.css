@@ -370,6 +370,11 @@ body #download .button_container {
   width: 300px;
   float: left;
 }
+body #download .button_container :hover {
+  -moz-opacity: 0.985;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+}
 body #download .button_container .inner_button {
   background-color: #fdd743;
   margin: 0px 20px 20px 0px;
