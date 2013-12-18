@@ -19,6 +19,7 @@ function printLangOption($langCode) {
             case 'da':    $lang = 'Danish';     break;
             case 'nl':    $lang = 'Dutch';      break;
             case 'en-US': $lang = 'English';    break;
+            case 'el':    $lang = 'Greek';     break;
             case 'eo':    $lang = 'Esperanto';  break;
             case 'fr':    $lang = 'French';     break;
             case 'gl':    $lang = 'Galician';   break;
@@ -87,6 +88,7 @@ function printLangOption($langCode) {
                         <?php printLangOption("fr") ?>
                         <?php printLangOption("gl") ?>
                         <?php printLangOption("de-DE") ?>
+                        <?php printLangOption("el") ?>
                         <?php printLangOption("is") ?>
                         <?php printLangOption("it") ?>
                         <?php printLangOption("ja") ?>
