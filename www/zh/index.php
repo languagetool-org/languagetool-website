@@ -1,12 +1,17 @@
-<?php
-$page = "zh";
-$title = "LanguageTool";
-$title2 = "文体和语法检测器";
-$lastmod = "2012-04-27 20:00:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=zh>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool 文体和语法检测器";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p class="firstpara"><strong>LanguageTool是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href="../languages/">其他语言</a>的支持。</strong>
 你可以认为LanguageTool是一个能够检测出简单拼写错误检查器所无法检测的文本错误软件，例如：<em>二个人/两个人</em>这样的量词错误. 它也能发现一些语法错误，但不包括拼写检查。</p>
@@ -22,11 +27,11 @@ $checkSubmitButtonValue = "检测文本";
 $showLanguageBox = 1;
 $checkDefaultLang = "zh";
 $checkDefaultText = "将文本粘贴在此，或者检测以下文本：我和她去看了二部电影。";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
-<p><strong>使用WebStart免安装试用LanguageTool。</strong>
-需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;6</a>及以上版本：<br />
+<p style="margin-top: 10px"><strong>使用WebStart免安装试用LanguageTool。</strong>
+需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>及以上版本：<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">运行LanguageTool (29&nbsp;MB)</a></strong></p>
 
 
@@ -34,13 +39,18 @@ include("../../include/checkform.php");
 
 <div class="downloadSection">
 	<div id="downloadButton">
-        <?php
-        $downloadPath = "../download";
-        include("../../include/download.php");
-        ?>
+        <div id="download" style="margin: 0">
+            <?php
+            //TODO: translate these:
+            //$downloadTitle = "LanguageTool für <strong>LibreOffice/OpenOffice</strong>";
+            //$downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";
+            //$downloadLabelFx = "LanguageTool als Erweiterung für <strong>Firefox</strong>";
+            ?>
+            <?php include("../../include/pages/download-buttons.php"); ?>
+        </div>
 	</div>
 	<ul>
-		<li>需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;6</a>及以上版本。</li>
+		<li>需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>及以上版本。</li>
         <li>在LibreOffice/OpenOffice.org中安装方法：<em>Tools -&gt; Extension Manager -&gt; Add...</em>或者查看 <a href="../usage/">其他的方法来使用LanguageTool</a>。</li>
         <li>在安装这个插件之后<strong>重启OpenOffice.org/LibreOffice</strong>。</li>
         <li>如果你正在使用LibreOffice 3.5并且你想检测中文文本:
@@ -90,8 +100,11 @@ include("../../include/checkform.php");
 <p>研究组负责人：<a href="mailto:jpz6311whu@bnuz.edu.cn">姜赢</a>（博士），北京师范大学珠海分校管理学院讲师</p>
 <p>本网页由研究组成员（信息管理与信息系统专业学生）<b>林耿锐</b>、<b>吕洋</b>、<b>刘轩伟</b>、<b>闫洪滔</b>和<b>程文婷</b>更新和翻译。</p>
 
-<div style="height:50px"></div>
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

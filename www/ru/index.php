@@ -1,12 +1,17 @@
-<?php
-$page = "ru";
-$title = "LanguageTool";
-$title2 = "Программа для проверки грамматики и стиля";
-$lastmod = "2013-10-10 08:52:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=ru>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool Программа для проверки грамматики и стиля";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <a title="LanguageTool работает в качестве расширения LibreOffice 3.3" class="fancyboxImage"
    href="/ru/screenshots/screenshot-lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
@@ -69,48 +74,24 @@ $checkSubmitButtonValue = "Проверить текст";
 $showLanguageBox = 0;
 $checkDefaultLang = "ru";
 $checkDefaultText = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
-<p><a href="http://community.languagetool.org/?lang=ru"/>Здесь</a> можно запустить  LanguageTool непосредственно в браузере.
+<p><a href="http://community.languagetool.org/?lang=ru">Здесь</a> можно запустить  LanguageTool непосредственно в браузере.
 </p>
 
-
 <h2>Скачать</h2>
-       <div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-           <?php     
-           $downloadTitle = "Скачать LanguageTool";
-           $downloadLabel = "для LibreOffice/OpenOffice";
-           $downloadVersionLabel = "Версия";
-           $downloadPath = "/download"; 
-           include("../../include/download.php");
-           ?>
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
-        <td>
-           <?php         
-           $downloadTitleStandAlone = "Скачать  LanguageTool";
-           $downloadLabelStandAlone = "независимая версия";
-           $downloadVersionLabelStandAlone = "Версия";                
-           $downloadPathStandAlone  = "/download";
-           include("../../include/downloadStandAlone.php");
-           ?>
-        </td>
-      </tr>
-      </table>
-        
-</div>
 
 <?php
-          $downloadTitleFx = "Скачать  LanguageToolFx";
-          $downloadLabelFx = "Расширение для Firefox"; 
-          include("../../include/downloadFx.php");
+$downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
+$downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
 ?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
+</div>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
@@ -300,9 +281,11 @@ LanguageTool можно использовать для проверки гра�
 Исходный код доступен <a href="http://sourceforge.net/projects/languagetool/">на Sourceforge</a> через SVN.
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
-<div style="height:50px"></div>
-
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

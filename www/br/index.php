@@ -1,12 +1,17 @@
-<?php
-$page = "fr";
-$title = "LanguageTool";
-$title2 = "An difazier yezhadurel frank evit ar brezhoneg";
-$lastmod = "2013-01-13 10:50 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=br>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool - An difazier yezhadurel frank evit ar brezhoneg";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
 Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
@@ -60,46 +65,21 @@ $checkLanguage['uk']    = 'ukraineg';
 $checkLanguage['zh']    = 'sinaeg';
 
 $checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <h2>Pellgargañ</h2>
 
-<div class="downloadSection">
-  <table width="100%">
-    <tr>
-      <td>
-        <?php
-          $downloadTitle = "Pellgargit LanguageTool";
-          $downloadLabel = "evit LibreOffice/OpenOffice";
-          $downloadVersionLabel = "Stumm";
-          $downloadPath  = "/download";
-          include("../../include/download.php");
-        ?>
-      </td>
-      <td>
-        <?php
-          $downloadTitleStandAlone = "Pellgargit LanguageTool";
-          $downloadLabelStandAlone = "hep LibreOffice/OpenOffice";
-          $downloadVersionLabelStandAlone = "Stumm";
-          $downloadPathStandAlone  = "/download";
-          include("../../include/downloadStandAlone.php");
-        ?>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <?php
-        $downloadTitleFx = "Pellgargit LanguageToolFx";
-        $downloadLabelFx = "evit Firefox";
-        include("../../include/downloadFx.php");
-        ?>
-      </td>
-    </tr>
-  </table>
+<?php
+$downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
+$downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
 </div>
 
-Ar restr da bellgargañ a dalvez evit ar brezhoneg hag an holl yezhoù all.
+<p>Ar restr da bellgargañ a dalvez evit ar brezhoneg hag an holl yezhoù all.</p>
 
 <h2>Skramm skouer</h2>
 
@@ -138,6 +118,11 @@ Gallout a rit implijout LanguageTool gant an aotre
 </p>
 <div style="height:30px"></div>
 
+</div>
+
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

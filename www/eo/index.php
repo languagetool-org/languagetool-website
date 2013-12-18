@@ -1,12 +1,17 @@
-<?php
-$page = "eo";
-$title = "Lingvoilo";
-$title2 = "Stila kaj gramatika kontrolilo";
-$lastmod = "2013-01-05 20:20 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=eo>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "Lingvoilo Stila kaj gramatika kontrolilo";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p class="firstpara"><strong>Lingvoilo (LanguageTool) estas libera plurlingva
 programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en
@@ -63,33 +68,22 @@ $checkLanguage['uk']    = 'ukraina';
 $checkLanguage['zh']    = 'ĉina';
 
 $checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku, ke Lingvoilo ankaux atentigas pri literumaj erraroj kiel ĉi-tiu.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <h2>Elŝutado</h2>
 
+<?php
+$downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
+$downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
+</div>
+
 <div class="downloadSection">
-  <table width="100%">
-    <tr>
-      <td>
-        <?php
-          $downloadTitle = "Elŝuti la kromaĵon Lingvoilo";
-          $downloadLabel = "por LibreOffice/OpenOffice";
-          $downloadVersionLabel = "versio";
-          $downloadPath  = "/download";
-          include("../../include/download.php");
-        ?>
-      </td>
-      <td>
-        <?php
-          $downloadTitleStandAlone = "Elŝuti Lingvoilon";
-          $downloadLabelStandAlone = "memstara";
-          $downloadVersionLabelStandAlone = "versio";
-          $downloadPathStandAlone  = "/download";
-          include("../../include/downloadStandAlone.php");
-        ?>
-      </td>
-    </tr>
+  <table width="90%">
     <tr>
       <td valig="top">
           <ul style="padding-left: 20px">
@@ -130,12 +124,8 @@ include("../../include/checkform.php");
                 Vidu ankaŭ la
                 <a href="../usage/">aliajn manierojn por uzi Lingvoilon</a>.</li>
           </ul>
-          <br/>
-          <?php
-          $downloadTitleFx = "Elŝuti LanguageToolFx";
-          $downloadLabelFx = "por Firefox";
-          include("../../include/downloadFx.php");
-          ?>
+        </td>
+        <td valign="top">
           <ul style="padding-left: 20px">
             <li>Tiu kromaĵo por la retumilo Fajrovulpo (Firefox) kontrolas la gramatikon de apartigita teksto en TTT-paĝoj aŭ en tekstokampoj. Java ne estas bezonata.</li>
           </ul>
@@ -190,6 +180,11 @@ Kodofonto elŝuteblas ĉe <a href="https://github.com/languagetool-org/languaget
 
 <div style="height:30px"></div>
 
+</div>
+
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

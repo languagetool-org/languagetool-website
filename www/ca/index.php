@@ -1,12 +1,17 @@
-<?php
-$page = "ca";
-$title = "LanguageTool";
-$title2 = "Corrector gramatical i d'estil";
-$lastmod = "2012-11-10 00:00:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=ca>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool - Corrector gramatical i d'estil";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">moltes altres llengües</a>.</p>
 
@@ -50,7 +55,7 @@ $checkLanguage['tl']    = 'tagàlog';
 $checkLanguage['uk']    = 'ucraïnès';
 
 $checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <br/><br/>
@@ -60,46 +65,15 @@ include("../../include/checkform.php");
 <p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o posterior.
 <strong>Teniu problemes? Consulteu la <a href="../issues">llista de problemes habituals</a>.</strong></p>
 
-
-<div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-           <?php
-           $downloadTitle = "Descarrega LanguageTool";
-           $downloadLabel = "per a LibreOffice/OpenOffice";
-           $downloadVersionLabel = "versió";
-           $downloadPath = "../download";
-           include("../../include/download.php");
-           ?>
-        </td>
-        <td>
-           <?php
-           $downloadTitleStandAlone = "Descarrega LanguageTool";
-           $downloadLabelStandAlone = "com a programa independent";
-           $downloadVersionLabelStandAlone = "versió";
-           $downloadPathStandAlone = "../download";
-           include("../../include/downloadStandAlone.php");
-           ?>
-        </td>
-      </tr>
-      <tr>
-        <td><a href="#liboinstall">Instruccions d'instal·lació per a LibreOffice/OpenOffice</a></td>
-        <td><a href="#standalone">Com s'usa LanguageTool com a aplicació independent</a></td>
-      </tr>
-      <tr>
-         <td>
-	       <?php
-	       $downloadTitleFx = "Descarrega LanguageToolFx";
-	       $downloadLabelFx = "Extensió per a Firefox";
-	       include("../../include/downloadFx.php");
-	       ?>
-         </td>
-         <td>
-         </td>
-      </tr>
-    </table>
+<?php
+$downloadTitle = "Descarrega LanguageTool per a <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Descarrega LanguageTool com a <strong>programa independent</strong>";
+$downloadLabelFx = "Descarrega LanguageToolFx Extensió per a <strong>Firefox</strong>";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
 </div>
+
 
 <h2>Funcions</h2>
 
@@ -195,7 +169,11 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 <p>Podeu fer consultes en el nostre <a href="../forum">fòrum</a> (per a totes les llengües). També podeu informar de falses alarmes o fer propostes de noves regles.
 Per a comentaris específics de LanguageTool en català, podeu escriure en aquest <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEFCTVNTSFdvRXB2N3lrMnZTYXJNVEE6MQ">formulari</a>.</p>
 
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

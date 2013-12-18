@@ -1,12 +1,17 @@
-<?php
-$page = "it";
-$title = "LanguageTool";
-$title2 = "Correttore di Stile e Grammatica";
-$lastmod = "2013-01-06 10:30:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=it>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool Correttore di Stile e Grammatica";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <a title="LanguageTool installato come add-on in LibreOffice 3.3" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
@@ -27,7 +32,7 @@ $checkSubmitButtonValue = "Controlla";
 $showLanguageBox = 1;
 $checkDefaultLang = "it";
 $checkDefaultText = "Inserite qui lo vostro testo... oppure controlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
@@ -39,31 +44,17 @@ Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o 
 <p>LanguageTool richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive.
 <strong>State riscontrando dei problemi? Controllate la <a href="../issues">lista dei problemi noti</a>.</strong></p>
 
-<div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-           <?php
-           $downloadTitle        = "Scarica LanguageTool";
-           $downloadLabel        = "per LibreOffice/OpenOffice";
-           $downloadVersionLabel = "Versione";
-           $downloadPath         = "/download";
-           $downloadLabelMB      = "MB";
-           include("../../include/download.php");
-           ?>
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
-        <td>
-           <?php
-           $downloadTitleStandAlone = "Scarica LanguageTool";
-           $downloadLabelStandAlone = "applicazione Java";
-           $downloadVersionLabelStandAlone = "Versione";
-           $downloadPathStandAlone  = "/download";
-           $downloadLabelMB         = "MB";
-           include("../../include/downloadStandAlone.php");
-           ?>
-        </td>
-      </tr>
+<?php
+$downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";
+//$downloadLabelFx = "";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
+</div>
+
+    <div class="downloadSection">
+    <table width="90%">
       <tr>
         <td valign="top">
 
@@ -89,11 +80,8 @@ Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o 
               Per ulteriori informazioni fate riferimento a <a href="../usage/">altre modalità di utilizzo di LanguageTool</a>.</li>
           </ul>
           
-          <br/>
-          
-          <?php
-          include("../../include/downloadFx.php");
-          ?>
+        </td>
+        <td valign="top">
           
           <ul style="padding-left: 20px">
             <li>Controlla il testo selezionato in siti web e in campi testo nel browser. Non richiede Java!</li>
@@ -113,10 +101,16 @@ Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o 
 
 <h3>Licenza e Codice Sorgente</h3>
 
-<p>LanguageTool è aperto al contributo di tutti. LanguageTool è disponibile sotto licenza <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Il codice 
-sorgente è disponibile <a href="http://sourceforge.net/scm/?type=svn&group_id=110216">in SVN su Sourceforge</a>. I contenuti di questa homepage sono disponibili sotto 
+<p>LanguageTool è aperto al contributo di tutti. LanguageTool è disponibile sotto licenza <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
+<!--Il codice 
+sorgente è disponibile <a href="http://sourceforge.net/scm/?type=svn&group_id=110216">in SVN su Sourceforge</a>.--> I contenuti di questa homepage sono disponibili sotto 
 licenza <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

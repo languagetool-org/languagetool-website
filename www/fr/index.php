@@ -1,12 +1,17 @@
-<?php
-$page = "fr";
-$title = "LanguageTool";
-$title2 = "Correcteur grammatical";
-$lastmod = "2013-01-05 14:00:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=fr>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool Correcteur grammatical";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
 
 <p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
 français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href="../languages/">plus de 20 autres langues</a>.
@@ -58,7 +63,7 @@ $checkLanguage['tl']    = 'tagalog';
 $checkLanguage['uk']    = 'ukrainien';
 
 $checkDefaultText = "Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
@@ -69,30 +74,17 @@ L’application LanguageTool nécessite <a href="http://www.java.com/en/download
 
 <p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
 
-<div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-           <?php
-           $downloadTitle        = "Télécharger LanguageTool";
-           $downloadLabel        = "pour LibreOffice/OpenOffice";
-           $downloadVersionLabel = "version";
-           $downloadPath         = "/download";
-           $downloadLabelMB      = "Mo";
-           include("../../include/download.php");
-           ?>
-        </td>
-        <td>
-           <?php
-            $downloadTitleStandAlone = "Télécharger LanguageTool";
-            $downloadLabelStandAlone = "autonome";
-            $downloadVersionLabelStandAlone = "version";
-            $downloadPathStandAlone  = "/download";
-            $downloadLabelMB         = "Mo";
-            include("../../include/downloadStandAlone.php");
-           ?>
-        </td>
-      </tr>
+<?php
+$downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
+$downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
+</div>
+
+    <div class="downloadSection">
+    <table width="90%">
       <tr>
         <td valign="top">
 
@@ -134,12 +126,8 @@ L’application LanguageTool nécessite <a href="http://www.java.com/en/download
                 double-cliquant dessus. Voyez aussi les
                 <a href="../usage/">autres manières d’utiliser LanguageTool</a>.</li>
           </ul>
-          <br/>
-          <?php
-          $downloadTitleFx = "Télécharger LanguageToolFx";
-          $downloadLabelFx = "pour Firefox";
-          include("../../include/downloadFx.php");
-          ?>
+        </td>
+        <td valign="top">
           <ul style="padding-left: 20px">
             <li>Cette extension de Firefox contrôle la grammaire dans la sélection de texte des pages web, ou dans les champs de texte. Java n’est pas requis.</li>
           </ul>
@@ -170,6 +158,11 @@ Le contenu de cette page est disponible sous la licence <a href="http://creative
 
 <p>LanguageTool utilise le dictionnaire français <a href="http://www.dicollecte.org/home.php?prj=fr">dicollecte</a> pour l’étiquetage grammatical des mots et la correction orthographique dans la version autonome (sans LibreOffice/OpenOffice).</p>
 
+</div>
+
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

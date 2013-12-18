@@ -1,39 +1,29 @@
+<!doctype html>
+<html lang=pl>
+<head>
+    <?php
+    $enable_textcheck = 1;
+    $enable_fancybox = 1;
+    $title = "LanguageTool Narzędzie korektorskie";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="textcontent">
+
+<p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="/languages/">25 innych języków</a>.</p>
+
 <?php
-$page = "pl";
-$title = "LanguageTool";
-$title2 = "Narzędzie korektorskie";
-$lastmod = "2013-08-09 23:52:00 CET";
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-include("../../include/header.php");
+$downloadTitle = "Pobierz LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "Pobierz LanguageTool pakiet samodzielny";
+//$downloadLabelFx = "";
 ?>
-
-<p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="http://www.languagetool.org/languages/">25 innych języków</a>.</p>
-
-<div class="downloadSection">
-  <table width="100%">
-    <tr>
-      <td>
-        <?php
-          $downloadTitle = "Pobierz LanguageTool";
-          $downloadLabel = "dla LibreOffice/OpenOffice";
-          $downloadVersionLabel = "wersja";
-          $downloadPath  = "/download";
-          include("../../include/download.php");
-        ?>
-      </td>
-      <td>
-        <?php
-          $downloadTitleStandAlone = "Pobierz LanguageTool";
-          $downloadLabelStandAlone = "pakiet samodzielny";
-          $downloadVersionLabelStandAlone = "wersja";
-          $downloadPathStandAlone  = "/download";
-          include("../../include/downloadStandAlone.php");
-        ?>
-      </td>
-    </tr>
-  </table>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
 </div>
+
 
 <div style="color:grey;font-size:smaller">
    <a href="#liboinstall" style="color:grey;">Instalacja w pakiecie LibreOffice/OpenOffice.org</a> – <a href="../usage/"  style="color:grey;">inne możliwości zastosowania (opis w języku angielskim)</a>
@@ -106,7 +96,7 @@ Poza tym w tekstach obcojęzycznych LanguageTool wykrywa <a href="http://pl.wiki
 
 <h2>Wypróbuj narzędzie LanguageTool</h2>
 
-LanguageTool można wypróbować <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
+LanguageTool można wypróbować <a href="/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
 bezpośrednio w przeglądarce:<br/><br/>
 
 <?php
@@ -114,7 +104,7 @@ $checkSubmitButtonValue = "Sprawdź tekst";
 $showLanguageBox = 0;
 $checkDefaultLang = "pl";
 $checkDefaultText = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma korektor pisowni, ale działa on tylko w wersji samodzielnej lub uruchamianej przez przez Java Web Start.";
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
 <h2 id="liboinstall">Użycie korektora LanguageTool w pakiecie LibreOffice/OpenOffice.org</h2>
@@ -139,7 +129,11 @@ Po włączeniu funkcji automatycznego sprawdzania pisowni problemy znalezione pr
 Informacje na temat rozwoju projektu podajemy też na polskim blogu <a href="http://morfologik.blogspot.com">Morfologik</a>.
 </p>
 
+</div>
 
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>
