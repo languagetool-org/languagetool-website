@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <?php
-    $page = "development";
+    $page = "Development";
     $title = "LanguageTool Development";
     $lastmod = "2013-12-17 12:30:00 CET";
     ?>

@@ -3,7 +3,7 @@
   error_reporting(E_ALL);
 
   // basic configuration
-  $page = "homepage";
+  $page = "Home";
   $title = "LanguageTool";
   $title2 = "Style and Grammar Checker";
   $lastmod = "2013-09-30 14:00:00 CET";
@@ -20,18 +20,6 @@
   $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
   $languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
   $defaultLang = getDefaultLanguage();
-
-  $pages = array('start', 'screenshots');
-  
-  if (isset($_GET['page'])) {
-    if (in_array($_GET['page'], $pages)) {
-      $requestPage = htmlspecialchars($_GET['page']);
-    } else {
-      $requestPage = '404';
-    }
-  } else {
-    $requestPage = 'start';
-  }
 
   $currentLang = 'en';
 

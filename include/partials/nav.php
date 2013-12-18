@@ -14,12 +14,12 @@
           array('name'=>'Development', 'url' => '/development/')
         );
 
-        foreach ($pages as $page) {
+        foreach ($pages as $aPage) {
           $activeClass = '';
-          if ($page['url'] == current_url()) {
+          if ($page == $aPage['name']) {
             $activeClass = 'active';
           }
-          print '<a class="'.$activeClass.'" href="'.$page['url'].'">'.$page['name'].'</a>';
+          print '<a class="'.$activeClass.'" href="'.$aPage['url'].'">'.$aPage['name'].'</a>';
         }
       ?>
     </div>

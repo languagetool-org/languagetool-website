@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <?php
-    $page = "development";
+    $page = "Screenshots";
     $title = "LanguageTool Screenshots";
     ?>
     <?php include("../../include/header.php"); ?>
