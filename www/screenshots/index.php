@@ -1,15 +1,23 @@
-<?php
-$page = "screenshots";
-$title = "LanguageTool";
-$title2 = "Screenshots";
-$lastmod = "2013-01-03 21:45:00 CET";
-$enable_fancybox = 1;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $page = "development";
+    $title = "LanguageTool Screenshots";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
+
+<div id="screenshots">
+<div id="textcontent">
+    
+<h1>Screenshots</h1>
 
 <div class="imgboxcontainer">
     <p class="imgbox">
-        <a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage" href="art/screenshot_lo3.png">
+        <a title="LanguageTool installed as an add-on in LibreOffice 3.3" href="art/screenshot_lo3.png">
         <img src="art/screenshot_lo3_small.png" alt="LanguageTool in LibreOffice 3.3"/>
         </a>
         <br/>
@@ -18,7 +26,7 @@ include("../../include/header.php");
         <a href="http://libreoffice.org/">Download LibreOffice</a>
     </p>
     <p class="imgbox">
-        <a title="LanguageTool installed as an add-on in Polish OpenOffice.org 3.0.1" class="fancyboxImage" href="art/screenshot_ooo3_pl.png">
+        <a title="LanguageTool installed as an add-on in Polish OpenOffice.org 3.0.1" href="art/screenshot_ooo3_pl.png">
         <img src="art/screenshot_ooo3_pl_small.png" alt="LanguageTool in Polish OpenOffice.org 3.0"/>
         </a>
         <br/>
@@ -27,7 +35,7 @@ include("../../include/header.php");
         <a href="http://openoffice.org/">Download Apache OpenOffice</a>
     </p>
     <p class="imgbox">
-        <a title="The simple stand-alone user interface which lets you type in or paste text and check it" class="fancyboxImage" href="art/screenshot.png">
+        <a title="The simple stand-alone user interface which lets you type in or paste text and check it" href="art/screenshot.png">
         <img src="art/screenshot_small.png" alt="stand-alone version of LanguageTool"/>
         </a>
         <br/>
@@ -36,7 +44,7 @@ include("../../include/header.php");
         <a href="http://languagetool.org/">Download LanguageTool for stand-alone use</a>
     </p>
     <p class="imgbox">
-        <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png">
+        <a title="LanguageTool may be used to check translations in CheckMate" href="art/lt-checkmate.png">
         <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
         </a>
         <br/>
@@ -45,7 +53,7 @@ include("../../include/header.php");
         <a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">Download CheckMate</a>
     </p>
     <p class="imgbox">
-        <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" class="fancyboxImage" href="art/lt-thunderbird.png">
+        <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" href="art/lt-thunderbird.png">
         <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
         </a>
         <br/>
@@ -54,7 +62,7 @@ include("../../include/header.php");
         <a href="https://addons.mozilla.org/thunderbird/addon/grammar-checker/">Download Grammar Checker</a>
     </p>
     <p class="imgbox">
-        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/languagetoolfx.png">
+        <a title="Check selected text on websites with the Firefox extension" href="art/languagetoolfx.png">
         <img src="art/languagetoolfx_small.png" alt="LanguageToolFx Firefox extension"/>
         </a>
         <br/>
@@ -63,7 +71,7 @@ include("../../include/header.php");
         <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx/">Download LanguageToolFx</a>
     </p>
     <p class="imgbox">
-        <a title="The simple LanguageTool plugin in OmegaT that helps to check your translation on the go" class="fancyboxImage" href="art/lt-omegat.png">
+        <a title="The simple LanguageTool plugin in OmegaT that helps to check your translation on the go" href="art/lt-omegat.png">
         <img src="art/lt-omegat_small.png" alt="LanguageTool plugin in OmegaT"/>
         </a>
         <br/>
@@ -72,7 +80,7 @@ include("../../include/header.php");
         <a href="https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">Download plugin for OmegaT</a>
     </p>
     <p class="imgbox">
-        <a title="Check text in Vim" class="fancyboxImage" href="art/lt-vim.png">
+        <a title="Check text in Vim" href="art/lt-vim.png">
         <img src="art/lt-vim.png" alt="Grammar Checker plugin for Vim"/>
         </a>
         <br/>
@@ -82,6 +90,8 @@ include("../../include/header.php");
     </p>
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+</div>
+</div>
+
+</body>
+</html>

@@ -12,6 +12,31 @@
 
 body {
   color: #777777;
+  
+  #screenshots {
+    .imgbox {
+      width: 320px;
+      height: 300px;
+      font-size: 11px;
+      text-align: center;
+      float: left;
+      margin: 0px 10px 0px 7px;
+    }
+
+    .imgbox > a:first-child > img {
+      width: 320px;
+      height: auto;
+      border: 0px;
+    }
+
+    .imgbox > a:last-of-type {
+      line-height:21px;
+    }
+
+    .imgboxcontainer ~ * {
+      clear: both;
+    }
+  }
 
   /* standard content page without much images etc: */
   #textcontent {

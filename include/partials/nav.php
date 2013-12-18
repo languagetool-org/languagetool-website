@@ -8,9 +8,9 @@
     <div id="nav">
       <?php
         $pages = array(
-          array('name'=>'Home', 'url' => $rootUrl . '/'),
-          // TODO: comment in when done: array('name'=>'Screenshots', 'url' => $rootUrl . '/?page=screenshots'),
-          array('name'=>'Support', 'url' => $rootUrl . '/support/'),
+          array('name'=>'Home', 'url' => '/'),
+          array('name'=>'Screenshots', 'url' => '/screenshots/'),
+          array('name'=>'Support', 'url' => '/support/'),
           array('name'=>'Development', 'url' => '/development/')
         );
 
