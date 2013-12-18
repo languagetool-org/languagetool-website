@@ -115,8 +115,8 @@ include("../../include/checkform.php");
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
 <p>Доступны 
-<?=show_link("ежедневные нетестированные сборки", "../download/snapshots/", 0) ?>
- (<?=show_link("Список изменений", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
+<a href="../download/snapshots/">ежедневные нетестированные сборки</a>
+ (<a href="http://www.languagetool.org/download/CHANGES.txt">Список изменений</a>).
 </p>
 
 
@@ -176,13 +176,13 @@ LanguageTool можно использовать для проверки гра�
 <p class="firstpara"><strong>Интеграция LanguageTool с приложениями</strong>:</p>
 
 <ul style="list-style:none"><a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">
-	<li><?=show_link("LanguageTool для vim", "http://www.vim.org/scripts/script.php?script_id=3223", 1) ?></li>
-	<li><?=show_link("LanguageTool для LyX", "http://wiki.lyx.org/Tools/LyX-GrammarChecker", 1) ?></li>
-	<li><?=show_link("LanguageTool плагин для OmegaT", "https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/", 1)?>
+	<li><a href="http://www.vim.org/scripts/script.php?script_id=3223">LanguageTool для vim</a></li>
+	<li><a href="http://wiki.lyx.org/Tools/LyX-GrammarChecker">LanguageTool для LyX</a></li>
+	<li><a href="https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">LanguageTool плагин для OmegaT</a>
 		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами.</li>
-	<li><?=show_link("LanguageTool и CheckMate", "http://www.opentag.com/okapi/wiki/index.php?title=CheckMate", 1)?> используется как сервер для расширения возможностей контроля качества переводов.</li>
-	<li><?=show_link("LanguageTool для Thunderbird", "https://addons.mozilla.org/en-US/thunderbird/addon/14781", 1)?></li>
-        <li><?=show_link("LanguageToolFx для Firefox", "https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/", 1)?></li>
+	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов.</li>
+	<li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/14781">LanguageTool для Thunderbird</a></li>
+        <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFx для Firefox</a></li>
 </ul>
 
 
@@ -291,14 +291,14 @@ LanguageTool можно использовать для проверки гра�
 
 <p><a href="http://myooo.ru/content/view/83/43/">Домашняя страничка расширения для OpenOffice.org/LibreOffice на русском языке.</a></p>
 
-<p><?=show_link("Список известных проблем", "../issues", 0)?>.</p>
+<p><a href="../issues">Список известных проблем</a>.</p>
 
 
 <h2>Лицензия и исходный код</h2>
 
-<p>LanguageTool свободно распространятся по лицензии <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-Исходный код доступен <?=show_link("на Sourceforge", "http://sourceforge.net/projects/languagetool/", 1) ?> через SVN.
-Содержимое этой домашней страницы доступно по лицензии <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 1) ?>.</p>
+<p>LanguageTool свободно распространятся по лицензии <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
+Исходный код доступен <a href="http://sourceforge.net/projects/languagetool/">на Sourceforge</a> через SVN.
+Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 <div style="height:50px"></div>
 

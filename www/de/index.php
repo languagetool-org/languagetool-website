@@ -163,7 +163,7 @@ Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von Langu
 </ol>
 
 <p>
-<?=show_link("weitere Verwendungsmöglichkeiten", "../usage/", 0)?>
+<a href="../usage/">weitere Verwendungsmöglichkeiten</a>
 </p>
 
 <p>

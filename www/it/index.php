@@ -12,14 +12,14 @@ include("../../include/header.php");
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot di LanguageTool"/></a>
 
-<p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi scritti in <?=show_link("più di 20 lingue", "../languages/", 0) ?>. Tra i linguaggi supportati abbiamo: italiano, inglese, francese e tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</strong></p>
+<p class="firstpara"><strong>LanguageTool è uno strumento Open Source che permette la correzione di testi scritti in <a href="../languages/">più di 20 lingue</a>. Tra i linguaggi supportati abbiamo: italiano, inglese, francese e tedesco. Permette di identificare errori che un semplice correttore ortografico non può riconoscere. Suggerisce, ad esempio, l'uso corretto delle <em>eufoniche</em> o il corretto articolo per la parola <em>pneumatico</em>. Effettua numerosi controlli di tipo grammaticale grazie al contributo della community degli utenti stessi.</strong></p>
 
 <p>LanguageTool, infatti, è uno strumento molto potente che trova errori ricercando, all'interno del testo, delle combinazioni definite in regole di tipo XML ovvero codificate in Java.</p>
 
 
 <h2 style="margin-top: 40px">Provatelo ora</h2>
 
-<p>Potete utilizzare LanguageTool <?=show_link("in LibreOffice/OpenOffice.org, come applicazione a sé stante o inclusa in altre applicazioni", "../usage/", 0)?>.</p>
+<p>Potete utilizzare LanguageTool <a href="../usage/">in LibreOffice/OpenOffice.org, come applicazione a sé stante o inclusa in altre applicazioni</a>.</p>
 <p>In alternativa, potete provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
 <?php
@@ -31,13 +31,13 @@ include("../../include/checkform.php");
 ?>
 
 <p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
-Richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive:<br />
-<strong><?=show_link("Start LanguageTool (&gt;30&nbsp;MB)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive:<br />
+<strong><a href="../webstart/web/LanguageTool.jnlp">Start LanguageTool (&gt;30&nbsp;MB)</a></strong></p>
 
 <h2>Scaricatelo</h2>
 
-<p>LanguageTool richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> o versioni successive.
-<strong>State riscontrando dei problemi? Controllate la <?=show_link("lista dei problemi noti", "../issues", 0)?>.</strong></p>
+<p>LanguageTool richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive.
+<strong>State riscontrando dei problemi? Controllate la <a href="../issues">lista dei problemi noti</a>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
@@ -86,7 +86,7 @@ Richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp
 
           <ul style="padding-left: 20px">
             <li>Scompattate lo zip scaricato file e fate doppio click sul file languagetool-standalone.jar.
-              Per ulteriori informazioni fate riferimento a <?=show_link("altre modalità di utilizzo di LanguageTool", "../usage/", 0)?>.</li>
+              Per ulteriori informazioni fate riferimento a <a href="../usage/">altre modalità di utilizzo di LanguageTool</a>.</li>
           </ul>
           
           <br/>
@@ -106,16 +106,16 @@ Richiede <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp
 </div>
 
 <p>Versioni non testate e aggiornate giornalmente del tool sono disponibili al link
-<?=show_link("versioni di sviluppo", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
- Rilasci precedenti sono disponibili al link <?=show_link("versioni scaricabili", "../download/", 0) ?>.</p>
+<a href="../download/snapshots/?C=M;O=D">versioni di sviluppo</a>
+ (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
+ Rilasci precedenti sono disponibili al link <a href="../download/">versioni scaricabili</a>.</p>
 
 
 <h3>Licenza e Codice Sorgente</h3>
 
-<p>LanguageTool è aperto al contributo di tutti. LanguageTool è disponibile sotto licenza <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>. Il codice 
-sorgente è disponibile <?=show_link("in SVN su Sourceforge", "http://sourceforge.net/scm/?type=svn&group_id=110216", 0) ?>. I contenuti di questa homepage sono disponibili sotto 
-licenza <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
+<p>LanguageTool è aperto al contributo di tutti. LanguageTool è disponibile sotto licenza <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Il codice 
+sorgente è disponibile <a href="http://sourceforge.net/scm/?type=svn&group_id=110216">in SVN su Sourceforge</a>. I contenuti di questa homepage sono disponibili sotto 
+licenza <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 <?php
 include("../../include/footer.php");

@@ -9,7 +9,7 @@ include("../../include/header.php");
 ?>
 
 <p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
-français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <?=show_link("plus de 20 autres langues", "../languages/", 0) ?>.
+français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href="../languages/">plus de 20 autres langues</a>.
 Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simple correcteur orthographique
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
 accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
@@ -19,7 +19,7 @@ Il est aussi possible de définir des règles en Java.</p>
 
 <h2 style="margin-top: 40px">Essayer LanguageTool en ligne</h2>
 
-<p>Utilisez LanguageTool <?=show_link("dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications", "../usage/", 0)?>
+<p>Utilisez LanguageTool <a href="../usage/">dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications</a>
   ou essayez-le ici sur cette page :</p>
 
 <?php
@@ -62,12 +62,12 @@ include("../../include/checkform.php");
 ?>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
-L’application LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> :<br />
-<strong><?=show_link("Démarrer LanguageTool (&gt;30&nbsp;Mo)", "../webstart/web/LanguageTool.jnlp", 0) ?></strong></p>
+L’application LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> :<br />
+<strong><a href="../webstart/web/LanguageTool.jnlp">Démarrer LanguageTool (&gt;30&nbsp;Mo)</a></strong></p>
 
 <h2>Télécharger</h2>
 
-<p>LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <?=show_link("liste des problèmes les plus fréquents", "../issues", 0)?>.</strong></p>
+<p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
 
 <div class="downloadSection">
     <table width="100%">
@@ -132,7 +132,7 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.
                 intégrés à LanguageTool.</li>
             <li>Dézippez le fichier et démarrez languagetool-standalone.jar en
                 double-cliquant dessus. Voyez aussi les
-                <?=show_link("autres manières d’utiliser LanguageTool", "../usage/", 0)?>.</li>
+                <a href="../usage/">autres manières d’utiliser LanguageTool</a>.</li>
           </ul>
           <br/>
           <?php
@@ -149,12 +149,12 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.
 </div>
 
 <p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt git sont disponibles dans le
-<?=show_link("répertoire snapshot", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
+<a href="../download/snapshots/?C=M;O=D">répertoire snapshot</a>
+ (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
 
  Mais attention : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprend de 
  nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.
- Les anciennes versions sont toujours disponibles dans le <?=show_link("répertoire de téléchargement", "../download/", 0) ?>.</p>
+ Les anciennes versions sont toujours disponibles dans le <a href="../download/">répertoire de téléchargement</a>.</p>
 
 <h2>Copie d’écran dans LibreOffice</h2>
 
@@ -164,9 +164,9 @@ L’application LanguageTool nécessite <?=show_link("Java&nbsp;7", "http://www.
 
 <h3>License &amp; code source</h3>
 
-<p>LanguageTool est disponible sous la licence <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-Le code source est disponible dans le dépôt <?=show_link("git de github", "https://github.com/languagetool-org/languagetool.git", 0) ?>.
-Le contenu de cette page est disponible sous la licence <?=show_link("CC BY-SA 3.0", "http://creativecommons.org/licenses/by-sa/3.0/", 0) ?>.</p>
+<p>LanguageTool est disponible sous la licence <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
+Le code source est disponible dans le dépôt <a href="https://github.com/languagetool-org/languagetool.git">git de github</a>.
+Le contenu de cette page est disponible sous la licence <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 <p>LanguageTool utilise le dictionnaire français <a href="http://www.dicollecte.org/home.php?prj=fr">dicollecte</a> pour l’étiquetage grammatical des mots et la correction orthographique dans la version autonome (sans LibreOffice/OpenOffice).</p>
 

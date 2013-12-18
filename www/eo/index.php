@@ -128,7 +128,7 @@ include("../../include/checkform.php");
                 en Lingvoilo.</li>
             <li>Duoble-klaku sur la dosieron kaj startigu languagetool-standalone.jar.
                 Vidu ankaŭ la
-                <?=show_link("aliajn manierojn por uzi Lingvoilon", "../usage/", 0)?>.</li>
+                <a href="../usage/">aliajn manierojn por uzi Lingvoilon</a>.</li>
           </ul>
           <br/>
           <?php
@@ -146,14 +146,14 @@ include("../../include/checkform.php");
 
 <p>Lingvoilo daŭre pliboniĝas. Reguloj estas ofte aldonitaj aŭ ŝanĝitaj.
 Por tiuj, kiuj deziras uzi la plej freŝan version,
-<?=show_link("versioj ĝisdatigitaj ĉiu-tage", "../download/snapshots/?C=M;O=D", 0) ?> el
+<a href="../download/snapshots/?C=M;O=D">versioj ĝisdatigitaj ĉiu-tage</a> el
 la lasta versio en la git-deponejo ankaŭ haveblas
-(<?=show_link("liston de ŝanĝoj", "http://www.languagetool.org/download/CHANGES.txt", 0) ?>).
+(<a href="http://www.languagetool.org/download/CHANGES.txt">liston de ŝanĝoj</a>).
 Sed atentu: tiuj versioj estas malpli testitaj ol la oficiala versio.
 Tamen, Lingvoilo enhavas multajn aŭtomatajn testojn, do la ĉiu-tagaj versioj
 estas ankaŭ sufiĉe sencimaj.
 Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
-<?=show_link("dosierujo de elŝuto", "../download/", 0) ?>.</p>
+<a href="../download/">dosierujo de elŝuto</a>.</p>
 
 <h2>Ekrankopio en LibreOffice</h2>
 

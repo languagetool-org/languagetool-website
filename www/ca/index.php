@@ -57,8 +57,8 @@ include("../../include/checkform.php");
 
 <h2>Descàrrega</h2>
 
-<p>Per a usar LanguageTool localment cal tenir instal·lat <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> o posterior.
-<strong>Teniu problemes? Consulteu la <?=show_link("llista de problemes habituals", "../issues", 0)?>.</strong></p>
+<p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o posterior.
+<strong>Teniu problemes? Consulteu la <a href="../issues">llista de problemes habituals</a>.</strong></p>
 
 
 <div class="downloadSection">
@@ -188,7 +188,7 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 </ol>
 
 
-<?=show_link("altres possibilitats d'ús", "../usage/", 0)?>
+<a href="../usage/">altres possibilitats d'ús</a>
 
 <h2>Contacte</h2>
 

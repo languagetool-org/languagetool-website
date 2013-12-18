@@ -32,13 +32,13 @@ include("../../include/checkform.php");
 
 
 <p><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
-<strong><?=show_link("Iniciar o LanguageTool", "../webstart/web/LanguageTool.jnlp", 0) ?></strong> 
- (&gt;30&nbsp;MB, requer o <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima)</p>
+<strong><a href="../webstart/web/LanguageTool.jnlp">Iniciar o LanguageTool</a></strong> 
+ (&gt;30&nbsp;MB, requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> ou acima)</p>
 
 <h2>Descarregar</h2>
 
-<p>Usar o LanguageTool localmente requer o <?=show_link("Java&nbsp;7", "http://www.java.com/en/download/manual.jsp", 0)?> ou acima.
-<strong>Tens problemas? Por favor lê a <?=show_link("lista de problemas comuns", "../issues", 0)?>.</strong></p>
+<p>Usar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> ou acima.
+<strong>Tens problemas? Por favor lê a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
 <noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares uma transferência</noscript>
 
@@ -90,7 +90,7 @@ include("../../include/checkform.php");
 
           <ul style="padding-left: 20px">
             <li>Faz unzip ao ficheiro e inicia o languagetool-standalone.jar com um 
-			duplo clique. Vê também <?=show_link("outras formas de usar o LanguageTool", "../usage/", 0)?>.</li>
+			duplo clique. Vê também <a href="../usage/">outras formas de usar o LanguageTool</a>.</li>
           </ul>
 
           <?php
@@ -110,15 +110,15 @@ include("../../include/checkform.php");
 
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
 disponíveis na
-<?=show_link("directoria de snapshots", "../download/snapshots/?C=M;O=D", 0) ?>
- (<?=show_link("CHANGES.txt", "https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt", 0) ?>).
- Versões antigas continuam disponíveis na <?=show_link("directoria de download", "../download/", 0) ?>.</p>
+<a href="../download/snapshots/?C=M;O=D">directoria de snapshots</a>
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt">CHANGES.txt</a>).
+ Versões antigas continuam disponíveis na <a href="../download/">directoria de download</a>.</p>
 
 
 <h3>Licença &amp; Código-Fonte</h3>
 
-<p>O LanguageTool está disponível gratuitamente sob a <?=show_link("LGPL", "http://www.fsf.org/licensing/licenses/lgpl.html#SEC1", 0)?>.
-O código-fonte está disponível em <?=show_link("GitHub", "https://github.com/languagetool-org/", 0) ?>.</p>
+<p>O LanguageTool está disponível gratuitamente sob a <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
+O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
 
 <?php
 include("../../include/footer.php");

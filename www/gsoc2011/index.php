@@ -7,17 +7,16 @@ include("../../include/header.php");
 ?>
 		
 <p class="firstpara">LanguageTool participated in Google's Summer of Code 2011 (GSoC2011). What is it?
-Quoting the <?=show_link("GSoC Homepage", "http://code.google.com/soc/", 0) ?>, "Google Summer 
+Quoting the <a href="http://code.google.com/soc/">GSoC Homepage</a>, "Google Summer 
 of Code is a global program that offers student developers stipends to write code for various open source software projects." </p>
 
 <p>Both LanguageTool projects have been successfully completed this year:</p>
 
 <p><b>Michael Bryant's</b> project was to add language identification and enable us to reuse
 linguistic resources from other projects. These were the rules
-included in the <?=show_link("After the Deadline grammar checker",
-"http://www.afterthedeadline.com/", 0)?> (some of them will
+included in the <a href="http://www.afterthedeadline.com/">After the Deadline grammar checker</a> (some of them will
 be included in version 1.5 after some additional checking)
-and conversion of <?=show_link("Constraint Grammar", "http://en.wikipedia.org/wiki/Constraint_Grammar", 0) ?> (CG) rules into the format of
+and conversion of <a href="http://en.wikipedia.org/wiki/Constraint_Grammar">Constraint Grammar</a> (CG) rules into the format of
 disambiguation rules. CG is widely used for Scandinavian languages and
 we hope that adding an easy option to convert them will enable further
 steps to add deeper linguistic analysis or parsing to LanguageTool without
@@ -35,17 +34,17 @@ version 1.5 of LanguageTool will thus contain more than 200 rules for Chinese te
 <h3>Documentation by the GSoC participants</h3>
 
 <ul>
-    <li><?=show_link("How to Use Indexer and Searcher for Fast Rule Evaluation", "http://wiki.languagetool.org/how-to-use-indexer-and-searcher-for-fast-rule-evaluation", 0) ?> (Tao Lin)</li>
-    <li><?=show_link("Developing Chinese rules", "http://wiki.languagetool.org/developing-chinese-rules", 0) ?> (Tao Lin)</li>
-    <li><?=show_link("Adding A New Language To Automatic Language Detection", "http://wiki.languagetool.org/adding-a-new-language-to-automatic-language-detection", 0) ?> (Michael Bryant)</li>
+    <li><a href="http://wiki.languagetool.org/how-to-use-indexer-and-searcher-for-fast-rule-evaluation">How to Use Indexer and Searcher for Fast Rule Evaluation</a> (Tao Lin)</li>
+    <li><a href="http://wiki.languagetool.org/developing-chinese-rules">Developing Chinese rules</a> (Tao Lin)</li>
+    <li><a href="http://wiki.languagetool.org/adding-a-new-language-to-automatic-language-detection">Adding A New Language To Automatic Language Detection</a> (Michael Bryant)</li>
 </ul>
 
 <h3>Other links</h3>
 
 <ul>
-    <li><?=show_link("LanguageTool Project ideas", "http://wiki.languagetool.org/missing-features", 0) ?></li>
-    <li><?=show_link("Google Summer of Code 2011 Homepage", "http://code.google.com/soc/", 0) ?></li>
-    <li><?=show_link("Google Summer of Code 2011 Timeline", "http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/timeline", 0) ?></li>
+    <li><a href="http://wiki.languagetool.org/missing-features">LanguageTool Project ideas</a></li>
+    <li><a href="http://code.google.com/soc/">Google Summer of Code 2011 Homepage</a></li>
+    <li><a href="http://www.google-melange.com/document/show/gsoc_program/google/gsoc2011/timeline">Google Summer of Code 2011 Timeline</a></li>
 </ul>
 
 <?php

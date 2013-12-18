@@ -10,7 +10,6 @@
 <?php
 list($usec, $sec) = explode(" ", microtime()); 
 $start_time = ((float)$usec + (float)$sec);
-include("help.php");
 
 function makeEntry($name, $visName) {
 	global $page;

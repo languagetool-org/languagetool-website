@@ -25,6 +25,7 @@
         </li>
         <li><a href="http://community.languagetool.org">community.languagetool.org</a>, includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a> and Wikipedia checks</li>
         <li><a href="http://wiki.languagetool.org">Our Wiki</a> contains the complete development documentation</li>
+        <li><a href="api/">Javadoc</a></li>
         <li><a href="https://github.com/languagetool-org/languagetool">Source code at github</a></li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a></li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?labels=easy+fix&amp;state=open">Easy fixes</a> - easy issues for new contributors</li>
