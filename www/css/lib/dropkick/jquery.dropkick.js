@@ -280,8 +280,8 @@
 
       function split(a, n) {
         var len = a.length, out = [], i = 0;
+        var size = Math.ceil(len / n);
         while (i < len) {
-          var size = Math.ceil((len - i) / n--);
           out.push(a.slice(i, i + size));
           i += size;
         }
