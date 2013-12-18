@@ -14,7 +14,7 @@
 
     <h1>Need Help?</h1>
     
-    <p>Please visit the <a href="../?page=support">support page</a>.</p>
+    <p>Please visit the <a href="/support/">support page</a>.</p>
 
     <h1>Imprint</h1>
     

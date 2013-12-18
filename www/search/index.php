@@ -1,11 +1,17 @@
-<?php
-$page = "search";
-$title = "LanguageTool";
-$title2 = "Search";
-$show_date = 0;
-include("../../include/header.php");
-?>
+<!doctype html>
+<html lang=en>
+<head>
+    <?php
+    $page = "other";
+    $title = "LanguageTool Search";
+    ?>
+    <?php include("../../include/header.php"); ?>
+</head>
+<body>
+<?php include("../../include/partials/nav.php"); ?>
 
+<div id="textcontent">
+    
 <TABLE WIDTH="100%">
     <FORM name="searchform" METHOD=GET ACTION="http://languagetool.org.master.com/texis/master/search/">
         <TR><TD ALIGN=CENTER width="80%" NOWRAP><INPUT SIZE=30 name="q" value="" placeholder="search terms"><INPUT TYPE=submit name=xsubmit VALUE="Search:" id="mastercom-but_search" class="mastercom-searchbut"><SELECT NAME=s ONCHANGE="var val = this.form.s.options[this.form.s.selectedIndex].value; if (val != 'SS') this.form.submit()">
@@ -18,7 +24,7 @@ include("../../include/header.php");
     </FORM>
 </TABLE>
 
-<div style="height:500px"/>
+<div style="height:500px"></div>
 
 <script type="text/javascript">
     <!--
@@ -28,6 +34,11 @@ include("../../include/header.php");
     // -->
 </script>
 
+</div>
+
 <?php
 include("../../include/footer.php");
 ?>
+
+</body>
+</html>

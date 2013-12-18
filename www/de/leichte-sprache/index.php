@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=en>
+<html lang=de>
 <head>
     <?php
     $enable_textcheck = 1;

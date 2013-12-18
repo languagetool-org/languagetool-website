@@ -92,12 +92,8 @@
     <?php include("../include/partials/nav.php"); ?>
     <?php include("../include/partials/stage_head.php"); ?>
     <div id="content">
-      <?php if ($requestPage == 'start' || $requestPage == 'screenshots') { ?>
-        <?php include("../include/pages/downloads.php"); ?>
-      <?php } ?>
-      <?php if ($requestPage == 'start' || $requestPage == 'screenshots') { ?>
-        <?php include("../include/partials/start_actions.php"); ?>
-      <?php } ?>
+      <?php include("../include/pages/downloads.php"); ?>
+      <?php include("../include/partials/start_actions.php"); ?>
     </div>
     <?php include("../include/footer.php"); ?>
   </body>

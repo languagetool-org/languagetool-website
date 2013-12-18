@@ -21,7 +21,7 @@
         <li style="font-size: large"><a href="/forum"><strong>Post to our forum</strong></a> - this is the easiest way of contacting us</li>
         <li>Developer and user mailing list:
             <ul>
-                <li>Post to our <strong>mailing list at <span style="color:#777777">languagetool-devel <span>a&#116;</span> lists.sourceforge.net</span></strong>
+                <li>Post to our <strong>mailing list at <span style="color:#666666">languagetool-devel <span>a&#116;</span> lists.sourceforge.net</span></strong>
                     (note that your message requires manual moderation if you are not subscribed, this might take up to 24 hours)</li>
                 <li><a href="http://lists.sourceforge.net/mailman/listinfo/languagetool-devel">Subscribe/Unsubscribe</a></li>
                 <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Archive (mail-archive.com)</a></li>

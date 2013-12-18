@@ -156,7 +156,7 @@ LanguageTool можно использовать для проверки гра�
 
 <p class="firstpara"><strong>Интеграция LanguageTool с приложениями</strong>:</p>
 
-<ul style="list-style:none"><a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">
+<ul style="list-style:none">
 	<li><a href="http://www.vim.org/scripts/script.php?script_id=3223">LanguageTool для vim</a></li>
 	<li><a href="http://wiki.lyx.org/Tools/LyX-GrammarChecker">LanguageTool для LyX</a></li>
 	<li><a href="https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">LanguageTool плагин для OmegaT</a>
