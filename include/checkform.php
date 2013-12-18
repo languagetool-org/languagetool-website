@@ -60,14 +60,16 @@ function printLangOption($langCode) {
         </div>
         -->
         <p id="checktextpara" style="margin: 0">
-            <textarea id="checktext" name="text" style="width: 100%" rows="6"><?php print $checkDefaultText ?></textarea>
+            <textarea id="checktext" name="text" style="width: 100%" rows="10"><?php print $checkDefaultText ?></textarea>
         </p>
         <div id="editor_controls">
+            <!--
             <div class="message">
                 <?php if ($checkDefaultLang == "en-US") { ?>
                     Error not found? <a href="http://wiki.languagetool.org/development-overview#toc0">Improve LanguageTool by writing rules that detect errors</a>. The form doesn't work for you? Please use <a href="simple-check/">the fallback form</a>.
                 <?php } ?>
             </div>
+            -->
             <div class="dropdown">
                     <select class="dropkick" name="lang" id="lang">
                         <?php foreach ($addedLanguages as $key => $val) { ?>

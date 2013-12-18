@@ -95,11 +95,6 @@
       <?php if ($requestPage == 'start' || $requestPage == 'screenshots') { ?>
         <?php include("../include/pages/downloads.php"); ?>
       <?php } ?>
-      <!--
-      <?php if ($requestPage == 'screenshots') { ?>
-        <?php include("../include/partials/plugins.php"); ?>
-      <?php } ?>
-      -->
       <?php if ($requestPage == 'start' || $requestPage == 'screenshots') { ?>
         <?php include("../include/partials/start_actions.php"); ?>
       <?php } ?>

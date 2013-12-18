@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(/fonts/fonts.css);
 
 body, td, pre {color:#000; font-family: 'Source Sans Pro', sans-serif; font-size:18px!important; line-height:1.7em!important;margin:20px 30px;background-color: #fff;}
 body {background:#FFF;}

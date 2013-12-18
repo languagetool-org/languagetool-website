@@ -26,12 +26,10 @@ $checkDefaultLang = "de-DE-x-simple-language";
 $checkLanguage["de-DE"] = "Deutsch" ;
 $addedLanguages["de-DE-x-simple-language"] = "Leichte Sprache";
 $checkDefaultText = "Fügen Sie hier Ihren Text ein oder benutzen Sie diesen Text als Beispiel. Dieser Text wurde nur zum Testen geschrieben. Die Donaudampfschifffahrt darf da nicht fehlen. Und die Nutzung des Genitivs auch nicht.";
-include("../../../include/checkform.php");
+include("../../../include/checkform-embedded.php");
 ?>
 
 <p style="margin-top: 10px">Die normale Textprüfung ohne Berücksichtigung der Leichten Sprache finden Sie <a href="../">auf unserer deutschen Startseite</a>.</p>
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </div>
 

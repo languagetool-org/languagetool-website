@@ -2,6 +2,7 @@
 <html lang=en>
 <head>
     <?php
+    $enable_textcheck = 1;
     $enable_fancybox = 1;
     $title = "LanguageTool Stil- und Grammatikprüfung";
     ?>
@@ -11,13 +12,14 @@
 <?php include("../../include/partials/nav.php"); ?>
 
 <div id="textcontent">
+    
+<h1>LanguageTool für Deutsch</h1>
 
 <p>LanguageTool ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Stil- und Grammatikprüfung, die neben Deutsch noch <a href="http://www.languagetool.org/languages/">mehr als 20 weitere Sprachen</a> unterstützt.
 Sie können es hier ausprobieren:</p>
 
 <?php
 $checkSubmitButtonValue = "Text Prüfen";
-$showLanguageBox = 0;
 $checkDefaultLang = "de-DE";
 $checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rechtschreibprüfun findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
 $checkLanguage['auto']  = 'automatisch erkennen';
@@ -48,49 +50,24 @@ $checkLanguage['sl']    = 'Slowenisch';
 $checkLanguage['sv']    = 'Schwedisch';
 $checkLanguage['tl']    = 'Tagalog';
 $checkLanguage['uk']    = 'Ukrainisch';
-include("../../include/checkform.php");
+include("../../include/checkform-embedded.php");
 ?>
 
-<p>Sie können LanguageTool auch <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder herunterladen:</p>
-        
-<div class="downloadSection">
-    <table width="100%">
-      <tr>
-        <td>
-           <?php
-           $downloadTitle = "LanguageTool herunterladen";
-           $downloadLabel = "für LibreOffice/OpenOffice";
-           include("../../include/download.php");
-           ?>
-        </td>
-        <td>
-           <?php
-           $downloadTitleStandAlone = "LanguageTool herunterladen";
-           $downloadLabelStandAlone = "als eigenständiges Programm";
-           include("../../include/downloadStandAlone.php");
-           ?>
-        </td>
-      </tr>
-      <tr>
-        <td><a href="#liboinstall">Installationsanleitung für LibreOffice/OpenOffice</a></td>
-        <td><a href="#standalone">LanguageTool als Stand-Alone-Anwendung verwenden</a></td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td colspan="2" align="middle">
-          <?php
-          $downloadTitleFx = "LanguageToolFx herunterladen";
-          $downloadLabelFx = "Erweiterung für Firefox";
-          $downloadUrlFx = "https://addons.mozilla.org/de/firefox/addon/languagetoolfx/";
-          include("../../include/downloadFx.php");
-          ?>
-        </td>
-      </tr>
-    </table>
+<p style="margin-top: 10px">Sie können LanguageTool auch <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">per Java WebStart testen</a> oder hier herunterladen:</p>
+
+<?php
+$downloadTitle = "LanguageTool für <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";
+$downloadLabelFx = "LanguageTool als Erweiterung für <strong>Firefox</strong>";
+?>
+<div id="download" style="margin: 0">
+    <?php include("../../include/pages/download-buttons.php"); ?>
 </div>
 
+<a href="#liboinstall">Installationsanleitung für LibreOffice/OpenOffice</a>
+<a href="#standalone">LanguageTool als Stand-Alone-Anwendung verwenden</a>
+
+    
 <h2>Funktionen</h2>
 
 LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1700</a> Fehler in deutschsprachigen Texten:<br/><br/>

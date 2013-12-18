@@ -90,7 +90,35 @@ body {
     .maintainerNeeded {
       background-color: #ffff95;
     }
-  } 
+  }
+
+  #editor_controls {
+    padding: 20px;
+    .dropdown{
+      float: left;
+      display: block;
+      width: 50%;
+    }
+    .submit{
+      float: right;
+      text-align: right;
+      display: block;
+      width: 50%;
+      input {
+        border: 0px;
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 20px;
+        background-color: @blue;
+        cursor: pointer;
+        &:hover, &:active {
+          background-color: darken(@blue, 10%);
+          -webkit-transition: all 0.2s linear;
+        }
+      }
+    }
+    background-color: darken(#fff, 8%);
+  }
 
   &.fullscreen {
     overflow: hidden;
@@ -280,33 +308,6 @@ body {
             a {
               color: darken(@yellow, 50%);
             }
-          }
-          #editor_controls {
-            padding: 20px;
-            .dropdown{
-              float: left;
-              display: block;
-              width: 50%;
-            }
-            .submit{
-              float: right;
-              text-align: right;
-              display: block;
-              width: 50%;
-              input {
-                border: 0px;
-                color: #fff;
-                font-size: 18px;
-                padding: 7px 20px;
-                background-color: @blue;
-                cursor: pointer;
-                &:hover, &:active {
-                  background-color: darken(@blue, 10%);
-                  -webkit-transition: all 0.2s linear;
-                }
-              }
-            }
-            background-color: darken(#fff, 8%);
           }
         }
       }
