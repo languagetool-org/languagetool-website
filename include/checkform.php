@@ -2,8 +2,16 @@
 function printLangOption($langCode) {
     global $checkDefaultLang;
     global $checkLanguage;
+    
+    //print "checkDefaultLang: $checkDefaultLang";
 
-    $checked = ($langCode == $checkDefaultLang) ? " selected='selected'" : "";
+    if (strpos($langCode, '-') >= 0) {
+        // e.g. de-DE
+        $shortLangCode = substr($langCode, 0, strpos($langCode, '-'));
+        $checked = ($shortLangCode == $checkDefaultLang) ? " selected='selected'" : "";
+    } else {
+        $checked = ($langCode == $checkDefaultLang) ? " selected='selected'" : "";
+    }
 
     if (isset($checkLanguage[$langCode])) {
         // User defined translation.

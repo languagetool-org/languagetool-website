@@ -19,7 +19,7 @@
 
   $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
   $languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
-  $defaultLang = getDefaultLanguage();
+  $checkDefaultLang = getDefaultLanguage();
 
   $currentLang = 'en';
 
