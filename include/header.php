@@ -255,7 +255,6 @@
         max_height = $(this).height();
       }
     });
-    console.log('setting', max_height);
     $('.button_container .title').height(max_height);    
   }
   $(function(){
