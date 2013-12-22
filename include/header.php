@@ -17,13 +17,13 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => $rootUrl . '/css/style.css',
+        'src' => $rootUrl . '/css/style.css?v3',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
       ),
       array(
-        'src' => $rootUrl . '/favicon.ico?' . rand(),
+        'src' => $rootUrl . '/favicon.ico?',
         'rel' => "shortcut icon",
         'type' => "",
         'media' => ''
@@ -192,7 +192,7 @@
        /* the URL of your proxy file: */
        languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
        /* edit this file to customize how LanguageTool shows errors: */
-       languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css",
+       languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v3",
        /* this stuff is a matter of preference: */
        theme                              : "advanced",
        theme_advanced_buttons1            : "",
