@@ -693,7 +693,17 @@ AtDCore.prototype.isIE = function() {
            ed.selection.select(e.target);
            p1 = dom.getPos(e.target);
            var xPos = p1.x;
-           m.showMenu(xPos, p1.y + e.target.offsetHeight - vp.y);
+
+           // moves popup a bit down to not overlap text:
+           //TODO: why is this needed? why does the text (tinyMCE content) have a slightly lower start position in Firefox?
+           var posWorkaround = 0;
+           if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+             posWorkaround = 10;
+           } else {
+             posWorkaround = 2;
+           }
+           
+           m.showMenu(xPos, p1.y + e.target.offsetHeight - vp.y + posWorkaround);
            this.menuVisible =  true;
            var menuDiv = $('#menu_checktext_spellcheckermenu_co');
            if (menuDiv) {
