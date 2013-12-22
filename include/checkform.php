@@ -70,28 +70,12 @@ function printLangOption($langCode) {
         -->
         <p id="checktextpara" style="margin: 0">
             <?php
-            if ($checkDefaultLang == "en") {
-                $checkDefaultText = "Paste your own text here... or check this text too see an few of of the problems that LanguageTool can detecd.";
-            } elseif ($checkDefaultLang == "br") {
-                $checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
-            } elseif ($checkDefaultLang == "ca") {
-                $checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
-            } elseif ($checkDefaultLang == "zh") {
-                $checkDefaultText = "将文本粘贴在此，或者检测以下文本：我和她去看了二部电影。";
-            } elseif ($checkDefaultLang == "eo") {
-                $checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku, ke Lingvoilo ankaux atentigas pri literumaj erraroj kiel ĉi-tiu.";
-            } elseif ($checkDefaultLang == "fr") {
-                $checkDefaultText = "Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.";
-            } elseif ($checkDefaultLang == "de") {
-                $checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rechtschreibprüfun findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
-            } elseif ($checkDefaultLang == "it") {
-                $checkDefaultText = "Inserite qui lo vostro testo... oppure controlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
-            } elseif ($checkDefaultLang == "pl") {
-                $checkDefaultText = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma korektor pisowni, ale działa on tylko w wersji samodzielnej lub uruchamianej przez przez Java Web Start.";
-            } elseif ($checkDefaultLang == "pt") {
-                $checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
-            } elseif ($checkDefaultLang == "ru") {
-                $checkDefaultText = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
+            require_once("default_texts.php");
+            $checkDefaultText = getDefaultDemoText($checkDefaultLang);
+            if ($checkDefaultLang == "") {
+                // fallback to English:
+                $checkDefaultLang = "en";
+                $checkDefaultText = getDefaultDemoText("en");
             }
             ?>
             <textarea id="checktext" name="text" style="width: 100%" rows="10"><?php print $checkDefaultText ?></textarea>

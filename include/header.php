@@ -240,8 +240,24 @@
 <script type="text/javascript" src="<?php print $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
 <script type="text/javascript">
   $(function(){
+    <?php
+    require_once("default_texts.php");
+    print getDefaultDemoTextMappingForJavaScript();
+    ?>
     $('.dropkick').dropkick({
-      change: function (value, label) {}
+      change: function (value, label) {
+          value = value.replace(/-..$/, "");  // en-US -> en
+          var newText = languageToText[value];  // 'languageToText' comes from default_texts.php
+          if (newText) {
+              tinyMCE.activeEditor.setContent(newText);
+              tinyMCE.get('checktext').focus();
+          } else {
+              tinyMCE.activeEditor.setContent("Add your text here");
+              tinyMCE.get('checktext').focus();
+              tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
+              // TODO: set real placeholder instead?
+          }
+      }
     });
   });
 </script>
