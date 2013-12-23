@@ -4,7 +4,6 @@
     <?php
     $page = "Development";
     $title = "LanguageTool Development";
-    $lastmod = "2013-12-17 12:30:00 CET";
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
@@ -18,20 +17,20 @@
     <p>LanguageTool is an Open Source project and we're looking forward to your contributions.</p>
     
     <ul>
-        <li><a href="http://wiki.languagetool.org/development-overview">Development Overview</a>, for users who want to extend LanguageTool with their own rules
+        <li style="font-size: large"><a href="http://wiki.languagetool.org"><strong>wiki.languagetool.org</strong></a> contains the complete development documentation, including:
             <ul>
-                <li>Includes: <a href="http://wiki.languagetool.org/development-overview#toc0">The three-minute introduction</a></li>
+                <li><a href="http://wiki.languagetool.org/development-overview#toc0">The three-minute introduction</a></li>
+                <li><a href="http://wiki.languagetool.org/development-overview">Development Overview</a>, for users who want to extend LanguageTool with their own rules
             </ul>
         </li>
-        <li><a href="http://community.languagetool.org">community.languagetool.org</a>, includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a> and Wikipedia checks</li>
-        <li><a href="http://wiki.languagetool.org">Our Wiki</a> contains the complete development documentation</li>
-        <li><a href="api/">Javadoc</a></li>
-        <li><a href="https://github.com/languagetool-org/languagetool">Source code at github</a></li>
-        <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a></li>
-        <li><a href="https://github.com/languagetool-org/languagetool/issues?labels=easy+fix&amp;state=open">Easy fixes</a> - easy issues for new contributors</li>
-        <li><a href="https://github.com/languagetool-org">Source code of related projects (like this website) at github</a></li>
+        <li style="font-size: large"><a href="https://github.com/languagetool-org/languagetool"><strong>Source code at github</strong></a></li>
+        <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a> and Wikipedia checks</li>
         <li><a href="http://lists.sourceforge.net/mailman/listinfo/languagetool-devel">Development mailing list</a> (<a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">archive</a>)</li>
-        <li><a href="http://wiki.languagetool.org/development-links">All development-related links</a></li>
+        <li><a href="api/">Javadoc</a>, API documentation</li>
+        <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a></li>
+        <li><a href="https://github.com/languagetool-org/languagetool/issues?labels=easy+fix&amp;state=open">Easy fixes</a>, easy issues for new contributors</li>
+        <li><a href="https://github.com/languagetool-org">Source code of related projects (like this website) at github</a></li>
+        <li><a href="http://wiki.languagetool.org/development-links">See all development-related links</a></li>
     </ul>
 
     <h2>Embedding LanguageTool on a Web Page</h2>

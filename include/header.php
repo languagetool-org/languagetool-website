@@ -94,7 +94,7 @@
             '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
             '  <li>If you are using LibreOffice and you want to check English texts:' +
             '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
-            '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">the list of common problems</a>.</strong></li>' +
+            '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">our checklist</a>.</strong></li>' +
             '</ul>',
             {width: 600});
     }
