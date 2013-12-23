@@ -496,7 +496,7 @@ AtDCore.prototype.isIE = function() {
             /* loading the content.css file, why? I have no clue */
             if (editor.settings.content_css !== false)
             {
-               editor.dom.loadCSS(editor.getParam("languagetool_css_url", url + '/css/content.css'));
+               editor.dom.loadCSS(editor.getParam("languagetool_css_url", url + '/css/content.css?v3'));
             }
          });
 
