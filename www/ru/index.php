@@ -71,9 +71,7 @@
 
 <?php
 $checkSubmitButtonValue = "Проверить текст";
-$showLanguageBox = 0;
 $checkDefaultLang = "ru";
-$checkDefaultText = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
 include("../../include/checkform-embedded.php");
 ?>
 

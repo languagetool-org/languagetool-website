@@ -29,7 +29,6 @@ Il est aussi possible de définir des règles en Java.</p>
 
 <?php
 $checkSubmitButtonValue = 'Vérifier';
-$showLanguageBox = 1;
 
 $checkDefaultLang = 'fr';
 
@@ -62,7 +61,6 @@ $checkLanguage['sv']    = 'suédois';
 $checkLanguage['tl']    = 'tagalog';
 $checkLanguage['uk']    = 'ukrainien';
 
-$checkDefaultText = "Copiez votre texte ici ou vérifiez cet exemple contenant plusieurs erreur que LanguageTool doit doit pouvoir detecter.";
 include("../../include/checkform-embedded.php");
 ?>
 

@@ -101,9 +101,7 @@ bezpośrednio w przeglądarce:<br/><br/>
 
 <?php
 $checkSubmitButtonValue = "Sprawdź tekst";
-$showLanguageBox = 0;
 $checkDefaultLang = "pl";
-$checkDefaultText = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma korektor pisowni, ale działa on tylko w wersji samodzielnej lub uruchamianej przez przez Java Web Start.";
 include("../../include/checkform-embedded.php");
 ?>
 

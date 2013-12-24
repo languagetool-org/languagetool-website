@@ -22,7 +22,6 @@ ací en el navegador:<br/><br/>
 
 <?php
 $checkSubmitButtonValue = "Comprova el text";
-$showLanguageBox = 0;
 $checkDefaultLang = "ca";
 
 $checkLanguage['auto']  = 'detecció automàtica';
@@ -54,7 +53,6 @@ $checkLanguage['sv']    = 'suec';
 $checkLanguage['tl']    = 'tagàlog';
 $checkLanguage['uk']    = 'ucraïnès';
 
-$checkDefaultText = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
 include("../../include/checkform-embedded.php");
 ?>
 

@@ -34,7 +34,6 @@ por pliaj detalaj klarigoj pri la eraro.</p>
 
 <?php
 $checkSubmitButtonValue = 'Kontroli';
-$showLanguageBox = 1;
 
 $checkDefaultLang = 'eo';
 
@@ -67,7 +66,6 @@ $checkLanguage['tl']    = 'tagaloga';
 $checkLanguage['uk']    = 'ukraina';
 $checkLanguage['zh']    = 'ĉina';
 
-$checkDefaultText = "Alglui vian kontrolendan tekston ĉi tie... Aŭ nur kontrolu tiun ekzemplon. Ĉu vi vi rimarkis, ke estas gramatikaj eraro en tiu frazo? Rimarku, ke Lingvoilo ankaux atentigas pri literumaj erraroj kiel ĉi-tiu.";
 include("../../include/checkform-embedded.php");
 ?>
 

@@ -24,9 +24,7 @@
 
 <?php
 $checkSubmitButtonValue = "检测文本";
-$showLanguageBox = 1;
 $checkDefaultLang = "zh";
-$checkDefaultText = "将文本粘贴在此，或者检测以下文本：我和她去看了二部电影。";
 include("../../include/checkform-embedded.php");
 ?>
 

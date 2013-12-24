@@ -27,9 +27,7 @@ gramaticais.<br/><br/><br/></strong></p>
 
 <?php
 $checkSubmitButtonValue = "Verificar Texto";
-$showLanguageBox = 1;
 $checkDefaultLang = "pt";
-$checkDefaultText = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
 include("../../include/checkform-embedded.php");
 ?>
 

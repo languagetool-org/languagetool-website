@@ -20,8 +20,7 @@ Sie können es hier ausprobieren:</p>
 
 <?php
 $checkSubmitButtonValue = "Text Prüfen";
-$checkDefaultLang = "de-DE";
-$checkDefaultText = "Fügen Sie hier Ihren Text ein. oder nutzen Sie diesen Text als Beispiel für ein Paar Fehler ,die LanguageTool erkennen kann. ( Eine Rechtschreibprüfun findet findet übrigens auch statt. Nachdem wir die ABM-Maßnahme bemängelten, wurden die Problem sofort behoben. Ihm wurde Angst und bange, als er davon hörte.";
+$checkDefaultLang = "de";
 $checkLanguage['auto']  = 'automatisch erkennen';
 $checkLanguage['en-US'] = 'Englisch';
 $checkLanguage['ast']   = 'Asturisch';

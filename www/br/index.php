@@ -32,7 +32,6 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 
 <?php
 $checkSubmitButtonValue = 'Gwiriañ an destenn';
-$showLanguageBox = 1;
 
 $checkDefaultLang = 'br';
 
@@ -64,7 +63,6 @@ $checkLanguage['tl']    = 'tagalog';
 $checkLanguage['uk']    = 'ukraineg';
 $checkLanguage['zh']    = 'sinaeg';
 
-$checkDefaultText = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
 include("../../include/checkform-embedded.php");
 ?>
 
