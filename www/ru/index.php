@@ -276,7 +276,7 @@ LanguageTool можно использовать для проверки гра�
 <h2>Лицензия и исходный код</h2>
 
 <p>LanguageTool свободно распространятся по лицензии <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
-Исходный код доступен <a href="http://sourceforge.net/projects/languagetool/">на Sourceforge</a> через SVN.
+Исходный код доступен <a href="https://github.com/languagetool-org/">на GitHub</a> через Git.
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 
