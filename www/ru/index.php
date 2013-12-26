@@ -279,7 +279,11 @@ LanguageTool можно использовать для проверки гра�
 Исходный код доступен <a href="http://sourceforge.net/projects/languagetool/">на Sourceforge</a> через SVN.
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
+
+
 </div>
+<?php include("../../include/partials/start_actions.php"); ?>
+
 
 <?php
 include("../../include/footer.php");
