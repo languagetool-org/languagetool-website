@@ -52,7 +52,7 @@ $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>
 </div>
 
     <div class="downloadSection">
-    <table width="100%">
+    <table width="90%">
         <td valign="top">
 
           <ul style="padding-left: 20px">

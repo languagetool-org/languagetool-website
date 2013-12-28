@@ -15,7 +15,7 @@
 <TABLE WIDTH="100%">
     <FORM name="searchform" METHOD=GET ACTION="http://languagetool.org.master.com/texis/master/search/">
         <TR><TD ALIGN=CENTER width="80%" NOWRAP><INPUT SIZE=30 name="q" value="" placeholder="search terms"><INPUT TYPE=submit name=xsubmit VALUE="Search:" id="mastercom-but_search" class="mastercom-searchbut"><SELECT NAME=s ONCHANGE="var val = this.form.s.options[this.form.s.selectedIndex].value; if (val != 'SS') this.form.submit()">
-                        <OPTION VALUE=SS SELECTED>All of Languagetool.org
+                        <OPTION VALUE=SS SELECTED>All of languagetool.org
                         <OPTION VALUE=.1 >Only Javadoc
                         <OPTION VALUE=.2 >Only Wiki
                             <!--{Services}--></SELECT></TD>
