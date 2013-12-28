@@ -307,6 +307,15 @@ body #stage .inner #editor .inner .message {
 body #stage .inner #editor .inner .message a {
   color: #403301;
 }
+body #stage .inner #editor .languageHomepage {
+  color: #111111;
+  margin-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #ebebeb;
+}
 body #stage .inner #text {
   float: left;
   width: 40%;

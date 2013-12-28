@@ -17,9 +17,8 @@
 
   include("../include/browser_language.php");
 
-  $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
-  $languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
   $checkDefaultLang = getDefaultLanguage();
+  //$checkDefaultLang = "en";  // comment in for testing
 
   $currentLang = 'en';
 
@@ -32,44 +31,6 @@
   } elseif (isset($_COOKIE['lang'])) {
     $currentLang = htmlspecialchars($_COOKIE['lang']);
   }
-
-  /* TODO
-  foreach ($languagesWithPage as $i => $value) {
-      if ($value == $defaultLang || substr($defaultLang, 0, 3) == $value."-") {
-        $langName = $languageNamesWithPage[$i];
-        print "<div class='alt_lang_message'>";
-        switch ($langName) {
-          case "Breton":
-            print "Remerk: ur <a href='$rootUrl?lang=$value'>bajenn vrezhonek</a> hon eus ivez.";
-          break;
-          case "Esperanto":
-            print "Rimarko: ni ankaŭ havas <a href='$rootUrl?lang=$value'>hejmpaĝon en Esperanto</a>.";
-          break;
-          case "French":
-            print "Remarque : nous avons aussi une <a href='$rootUrl?lang=$value'>page en français</a>.";
-          break;
-          case "German":
-            print "Hinweis: Es gibt auch eine <a href='$rootUrl?lang=$value'>Seite auf Deutsch</a>.";
-          break;
-          case "Italian":
-            print "Nota: abbiamo anche una <a href='$rootUrl?lang=$value'>pagina in italiano</a>.";
-          break;
-          case "Catalan":
-            print "Nota: també tenim una <a href='$rootUrl?lang=$value'>pàgina en català</a>.";
-          break;
-          case "Russian":
-            print "Внимание: у нас есть <a href='$rootUrl?lang=$value'>страничка на русском языке</a>!";
-          break;
-          case "Portuguese":
-            print "Nota: também temos uma <a href='$rootUrl?lang=$value'>página em Português</a>.";
-          break;
-          default;
-            print "Note: we also have a <a href='$rootUrl?lang=$value'>page in $langName</a>.";
-        }
-        print "</div>";
-      }
-  }*/
-
 ?>
 <!doctype html>
 <html lang=en>
