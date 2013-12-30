@@ -118,7 +118,7 @@ $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
                 Tiu versio ne nur atentigas pri gramatikaj eraroj
                 sed ankaŭ pri literumaj eraroj dank’ al vortaroj
                 en Lingvoilo.</li>
-            <li>Duoble-klaku sur la dosieron kaj startigu languagetool-standalone.jar.
+            <li>Duoble-klaku sur la dosieron kaj startigu languagetool.jar.
                 Vidu ankaŭ la
                 <a href="../usage/">aliajn manierojn por uzi Lingvoilon</a>.</li>
           </ul>

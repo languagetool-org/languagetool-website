@@ -74,7 +74,7 @@ $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</stro
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Scompattate lo zip scaricato file e fate doppio click sul file languagetool-standalone.jar.
+            <li>Scompattate lo zip scaricato file e fate doppio click sul file languagetool.jar.
               Per ulteriori informazioni fate riferimento a <a href="../usage/">altre modalità di utilizzo di LanguageTool</a>.</li>
           </ul>
           

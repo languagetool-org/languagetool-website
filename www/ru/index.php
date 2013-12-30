@@ -126,7 +126,7 @@ $downloadLabelFx = "Скачать LanguageToolFx Расширение для <s
 <ul>
     <li>Скачать программу.</li>
     <li>Распаковать полученный архив.</li>
-    <li>Запустить программу languagetool-standalone.jar двойным щелчком мышки или командой java -jar languagetool-standalone.jar</li>
+    <li>Запустить программу languagetool.jar двойным щелчком мышки или командой java -jar languagetool.jar</li>
 </ul>
 
 LanguageTool можно использовать для проверки грамматики в любом тексте, который предварительно скопирован в буфер обмена.

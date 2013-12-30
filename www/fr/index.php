@@ -120,7 +120,7 @@ $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
                 Cette version signale non seulement les fautes de grammaire
                 mais aussi les fautes d’orthographe grâce à des dictionnaires
                 intégrés à LanguageTool.</li>
-            <li>Dézippez le fichier et démarrez languagetool-standalone.jar en
+            <li>Dézippez le fichier et démarrez languagetool.jar en
                 double-cliquant dessus. Voyez aussi les
                 <a href="../usage/">autres manières d’utiliser LanguageTool</a>.</li>
           </ul>

@@ -78,7 +78,7 @@ $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li>Faz unzip ao ficheiro e inicia o languagetool-standalone.jar com um 
+            <li>Faz unzip ao ficheiro e inicia o languagetool.jar com um 
 			duplo clique. Vê também <a href="../usage/">outras formas de usar o LanguageTool</a>.</li>
           </ul>
         </td>

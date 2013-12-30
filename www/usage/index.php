@@ -27,10 +27,10 @@
 
 <h2>As a Stand-alone Application</h2>
 	<p>Download the *.zip version (not the *.oxt one) and unzip it.
-	Then start <tt>languagetool-standalone.jar</tt> by double clicking it.
+	Then start <tt>languagetool.jar</tt> by double clicking it.
     If your computer isn't
 	configured to start *.jar archives, start it from the command line using
-	<tt>java -jar languagetool-standalone.jar</tt>.</p>
+	<tt>java -jar languagetool.jar</tt>.</p>
 	
     <p>You can use the <tt>--tray</tt> option to start LanguageTool inside the system tray.
 	After you copy any text to the clipboard, clicking LanguageTool in the system tray will

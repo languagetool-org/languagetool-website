@@ -99,7 +99,7 @@
             {width: 600});
     }
     function showDownloadStandaloneThanks() {
-        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool-standalone.jar by double clicking it.</p>',
+        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool.jar by double clicking it.</p>',
             {width: 600});
     }
   </script>
