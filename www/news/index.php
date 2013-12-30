@@ -14,7 +14,19 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
-<p class="firstpara"><strong>2013-09-30:</strong> Released LanguageTool 2.3. Changes include:</p>
+<p><strong>2013-12-30:</strong> Released LanguageTool 2.4. Changes include:</p>
+<ul>
+  <li>Many <a href="../changes/languagetool-2.3_to_languagetool-2.4/">updates for the error detection rules</a> for
+      English, French, Catalan, Polish, Portuguese, German, and Breton.</li>
+  <li>Frequency data can be used to improve the spell checker suggestions</li>
+  <li>Renamed the stand-alone JAR file from <tt>languagetool-standalone.jar</tt> to <tt>languagetool.jar</tt></li>
+  <li>Show example sentences in the stand-alone GUI</li>
+  <li>Several bug fixes</li>
+  <li>Small cleanups in the Java API</li>
+  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+</ul>
+
+<p><strong>2013-09-30:</strong> Released LanguageTool 2.3. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.2_to_languagetool-2.3/">updates for the error detection rules</a> for
       English, French, Catalan, Ukrainian, Portuguese, German, and Breton.</li>
@@ -25,7 +37,7 @@
     <li>The standalone version now underlines errors with a red or blue line</li>
     <li>Java API cleanups and improved thread-safety</li>
     <li>Other small bug fixes</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+    <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p class="firstpara"><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
