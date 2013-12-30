@@ -16,9 +16,9 @@
 <p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="/languages/">25 innych języków</a>.</p>
 
 <?php
-$downloadTitle = "Pobierz LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Pobierz LanguageTool pakiet samodzielny";
-//$downloadLabelFx = "";
+$downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
+$downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
+$downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
 ?>
 <div id="download" style="margin: 0">
     <?php include("../../include/pages/download-buttons.php"); ?>
