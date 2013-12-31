@@ -180,10 +180,13 @@
          /* again showing a menu, I have no clue what */
          editor.onClick.add(plugin._showMenu, plugin);
 
-         /* comment this in and comment out the line below to get the browser's standard context menu on right click: */
-         //editor.onContextMenu.add(plugin._showMenu, plugin);
-         // without this, the context menu opens but nothing in it can be selected:
-         editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
+         // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
+         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+           editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
+         } else {
+           editor.onContextMenu.add(plugin._showMenu, plugin);
+           editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
+         }
 
          /* strip out the markup before the contents is serialized (and do it on a copy of the markup so we don't affect the user experience) */
          editor.onPreProcess.add(function(sender, object) 
@@ -374,7 +377,7 @@
            // moves popup a bit down to not overlap text:
            //TODO: why is this needed? why does the text (tinyMCE content) have a slightly lower start position in Firefox?
            var posWorkaround = 0;
-           if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+           if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
              posWorkaround = 10;
            } else {
              posWorkaround = 2;
