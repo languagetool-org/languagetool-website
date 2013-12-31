@@ -92,7 +92,7 @@
 .defaultSkin .mceMenu td {height:20px}
 .defaultSkin .mceMenu a {position:relative;padding:3px 0 4px 0}
 .defaultSkin .mceMenu .mceText {position:relative; display:block; font-family:Tahoma,Verdana,Arial,Helvetica; color:#000; cursor:default; margin:0; padding:0 25px 0 25px; display:block}
-.defaultSkin .mceMenu span.mceText, .defaultSkin .mceMenu .mcePreview {font-size:11px}
+.defaultSkin .mceMenu span.mceText, .defaultSkin .mceMenu .mcePreview {font-size:13px}
 .defaultSkin .mceMenu pre.mceText {font-family:Monospace}
 .defaultSkin .mceMenu .mceIcon {position:absolute; top:0; left:0; width:22px;}
 .defaultSkin .mceMenu .mceMenuItemEnabled a:hover, .defaultSkin .mceMenu .mceMenuItemActive {background-color:#dbecf3}
