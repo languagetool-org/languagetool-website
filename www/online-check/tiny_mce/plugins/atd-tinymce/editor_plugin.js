@@ -657,7 +657,7 @@ AtDCore.prototype.isIE = function() {
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this error";
-            var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
+            //var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
              
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
@@ -681,7 +681,7 @@ AtDCore.prototype.isIE = function() {
                }
             });
 
-            m.add({
+            /*m.add({
               title : ignoreThisKindOfErrorText,
               onclick : function() 
               {
@@ -690,7 +690,7 @@ AtDCore.prototype.isIE = function() {
                  t._removeWordsByRuleId(ruleId);
                  t._checkDone();
               }
-           });
+           });*/
 
            /* show the menu please */
            ed.selection.select(e.target);

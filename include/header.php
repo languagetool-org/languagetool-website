@@ -176,7 +176,7 @@
            'ru': 'Пропустить эту ошибку',
            'ca': 'Ignora el suggeriment'
           },
-       languagetool_i18n_ignore_all :
+       /*languagetool_i18n_ignore_all :
           {
            // "Ignore this kind of error":
            'br': 'Na ober van ouzh ar fazioù seurt-se',
@@ -186,7 +186,7 @@
            'fr': 'Ignorer ce type d’erreurs',
            'ru': 'Пропустить этот тип ошибок',
            'ca': 'Ignora aquesta classe d\'errors'
-          },
+          },*/
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */
