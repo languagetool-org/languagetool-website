@@ -29,7 +29,19 @@ $downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
    <a href="#liboinstall" style="color:grey;">Instalacja w pakiecie LibreOffice/OpenOffice.org</a> – <a href="../usage/"  style="color:grey;">inne możliwości zastosowania (opis w języku angielskim)</a>
 </div> 
 
-<h2>Funkcja</h2>
+<h2>Wypróbuj narzędzie LanguageTool</h2>
+
+LanguageTool można wypróbować <a href="/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
+bezpośrednio w przeglądarce:<br/><br/>
+
+<?php
+$checkSubmitButtonValue = "Sprawdź tekst";
+$checkDefaultLang = "pl";
+include("../../include/checkform-embedded.php");
+?>
+
+
+<h2>Możliwości programu</h2>
 
 LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml">lista aktualnie stosowanych reguł</a>.<br/><br/>
 
@@ -94,16 +106,6 @@ LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=p
 
 Poza tym w tekstach obcojęzycznych LanguageTool wykrywa <a href="http://pl.wikipedia.org/wiki/Fa%C5%82szywy_przyjaciel" target="_blank">fałszywych przyjaciół tłumacza</a>.<br/><br/>
 
-<h2>Wypróbuj narzędzie LanguageTool</h2>
-
-LanguageTool można wypróbować <a href="/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
-bezpośrednio w przeglądarce:<br/><br/>
-
-<?php
-$checkSubmitButtonValue = "Sprawdź tekst";
-$checkDefaultLang = "pl";
-include("../../include/checkform-embedded.php");
-?>
 
 <h2 id="liboinstall">Użycie korektora LanguageTool w pakiecie LibreOffice/OpenOffice.org</h2>
 LanguageTool to tak zwane rozszerzenie <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępnego</a> pakietu biurowego <a href="http://pl.libreoffice.org/" target="_blank">LibreOffice</a> i <a href="http://pl.openoffice.org/" target="_blank">OpenOffice.org</a>. Aby używać korektora LanguageTool w pakiecie, wykonaj następujące czynności:
