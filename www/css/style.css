@@ -248,9 +248,6 @@ body #stage .inner #editor form#checkform .fullscreen-toggle a {
   position: absolute;
   background-image: url(/images/fullscreen-toggle2.png);
 }
-body #stage .inner #editor form#checkform .fullscreen-toggle a:hover {
-  background-image: url(/images/fullscreen-toggle1.png);
-}
 body #stage .inner #editor form#checkform.fullscreen {
   position: fixed;
   top: 0px;
@@ -263,13 +260,10 @@ body #stage .inner #editor form#checkform.fullscreen .handle {
 }
 body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a {
   position: fixed;
-  top: 20px;
+  bottom: 100px;
   right: 20px;
   margin: 0px!important;
   background-image: url(/images/fullscreen-toggle1.png);
-}
-body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a:hover {
-  background-image: url(/images/fullscreen-toggle2.png);
 }
 body #stage .inner #editor .handle {
   display: block;

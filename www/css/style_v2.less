@@ -246,9 +246,6 @@ body {
               overflow: hidden;
               position: absolute;
               background-image: url(/images/fullscreen-toggle2.png);
-              &:hover {
-                background-image: url(/images/fullscreen-toggle1.png);
-              }
             }
           }
           &.fullscreen {
@@ -263,13 +260,10 @@ body {
             .fullscreen-toggle {
               a {
                 position: fixed;
-                top: 20px;
+                bottom: 100px; 
                 right: 20px;
                 margin: 0px!important;
                 background-image: url(/images/fullscreen-toggle1.png);
-                &:hover {
-                  background-image: url(/images/fullscreen-toggle2.png);
-                }
               }
             }
           }
