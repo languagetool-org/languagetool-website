@@ -218,13 +218,13 @@
         $('form#checkform').removeClass('fullscreen');
         $('body').removeClass('fullscreen');
         $('iframe#checktext_ifr').height(270);
-      }else{
+      } else {
         tinymce.EditorManager.execCommand('mceRemoveControl',true, 'checktext');
         tinymce.EditorManager.execCommand('mceAddControl', true, 'checktext');
         $('body').addClass('fullscreen');
         $('form#checkform').addClass('fullscreen');
         $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
-      };
+      }
       return false;
     }
 
@@ -237,7 +237,7 @@
     $(window).resize(function(){
       if ($('form#checkform').hasClass('fullscreen')) {
         $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
-      };
+      }
     });
    });
 
