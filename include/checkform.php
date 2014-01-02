@@ -63,11 +63,9 @@ function printLangOption($langCode) {
 <form id="checkform" class="" name="checkform" action="#" method="post">
     <div class="handle"></div>
     <div class="window">
-        <!-- TODO: comment in once problem with error popup position is solved:
         <div class="fullscreen-toggle">
             <a href="#" title="toggle fullscreen mode" onClick="fullscreen_toggle();return false;"></a>
         </div>
-        -->
         <p id="checktextpara" style="margin: 0">
             <?php
             require_once("default_texts.php");

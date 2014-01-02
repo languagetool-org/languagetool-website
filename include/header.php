@@ -210,10 +210,17 @@
 
     function fullscreen_toggle() {
       if ($('form#checkform').hasClass('fullscreen')) {
+        // re-init the editor - this way we lose the error markers, but it's needed
+        // to get proper position of the context menu:
+        // source: http://stackoverflow.com/questions/4651676/how-do-i-remove-tinymce-and-then-re-add-it
+        tinymce.EditorManager.execCommand('mceRemoveControl',true, 'checktext');
+        tinymce.EditorManager.execCommand('mceAddControl', true, 'checktext');
         $('form#checkform').removeClass('fullscreen');
         $('body').removeClass('fullscreen');
         $('iframe#checktext_ifr').height(270);
       }else{
+        tinymce.EditorManager.execCommand('mceRemoveControl',true, 'checktext');
+        tinymce.EditorManager.execCommand('mceAddControl', true, 'checktext');
         $('body').addClass('fullscreen');
         $('form#checkform').addClass('fullscreen');
         $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
