@@ -1,5 +1,6 @@
 <?php
     function getDefaultDemoTexts() {
+        $map['ast'] = "Apega testu equí. o revisa toes les pallabres de esti testu pa ver dalgún de los problemis que LanguageTool ye pa deteutar. ¿Afáyeste con los correutores gramaticales? Has date cuenta de que entá nun son perfeutos.";
         $map['en'] = "Paste your own text here. or check this text too see an few of of the problems that LanguageTool can detecd. What do you thinks of grammer checkers? Please not that they are not perfect.";
         $map['br'] = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
         $map['ca'] = "Introduïu açí el vostre text. o feu servir aquest texts com a a exemple per a alguns errades que LanguageTool hi pot detectat.";
