@@ -76,13 +76,13 @@
         <img src="art/lt-omegat_small.png" alt="LanguageTool plugin in OmegaT"/>
         </a>
         <br/>
-        The simple LanguageTool plugin in <a href="http://omegat.org/" target="_blank"/>OmegaT</a> that helps to check your translation on the go
+        The simple LanguageTool plugin in <a href="http://omegat.org/" target="_blank">OmegaT</a> that helps to check your translation on the go
         <br/>
         <a href="https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">Download plugin for OmegaT</a>
     </p>
     <p class="imgbox">
         <a title="Check text in Vim" class="fancyboxImage" href="art/lt-vim.png">
-        <img src="art/lt-vim.png" alt="Grammar Checker plugin for Vim"/>
+        <img src="art/lt-vim-small.png" alt="Grammar Checker plugin for Vim"/>
         </a>
         <br/>
         Check text within the <a href="http://www.vim.org" target="_blank">Vim text editor</a>
