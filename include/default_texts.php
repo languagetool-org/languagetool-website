@@ -11,7 +11,7 @@
         $map['de-DE-x-simple-language'] = "Fügen Sie hier Ihren Text ein oder benutzen Sie diesen Text als Beispiel. Dieser Text wurde nur zum Testen geschrieben. Die Donaudampfschifffahrt darf da nicht fehlen. Und die Nutzung des Genitivs auch nicht.";
         $map['it'] = "Inserite qui lo vostro testo... oppure controlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
         $map['pl'] = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma jusz korektor psowni, który wyrurznia bledy na czewrono.";
-        $map['pt'] = "Cola o teu próprio texto aqui... ou verifica este texto para ver alguns dos dos problemas que o LanguageTool consegue detectar.";
+        $map['pt'] = "Cola o teu próprio texto aqui... ou verifica este texto, afim de ver alguns dos dos problemas que o LanguageTool consegue detectar. Isto permitirá corrigir os teus erros à última da hora.";
         $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
         return $map;
     }
