@@ -119,9 +119,9 @@ $downloadLabelFx = "Скачать LanguageToolFx Расширение для <s
 
 <h2>Использование в качестве независимого приложения</h2>
 Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a> от Oracle.
-<a title="LanguageTool 1.9 работает как независимое графическое приложение" class="fancyboxImage"
-   href="/ru/screenshots/LT-GUI-ru-1.9.png"><img style="margin-left: 15px" width="200" height="208" align="right"
-   src="/ru/screenshots/LT-GUI-ru-1.9-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
+<a title="LanguageTool 2.5-SNAPSHOT работает как независимое графическое приложение" class="fancyboxImage"
+   href="/ru/screenshots/LT-GUI-ru-2.5.png"><img style="margin-left: 15px" width="200" height="208" align="right"
+   src="/ru/screenshots/LT-GUI-ru-2.5-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
 
 <ul>
     <li>Скачать программу.</li>
