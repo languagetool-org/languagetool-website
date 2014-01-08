@@ -10,9 +10,9 @@ $buttons = array(
     ),
     array(
       'title' => $downloadTitleStandAlone ? $downloadTitleStandAlone : 'LanguageTool stand-alone for your <strong>Desktop</strong>',
-      'link' => '/download/LanguageTool-2.4.zip',
+      'link' => '/download/LanguageTool-2.4.1.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'Version 2.4 &mdash; 70 MB &mdash; Requires Java 7'
+      'additional_info' => 'Version 2.4.1 &mdash; 70 MB &mdash; Requires Java 7'
     ),
     array(
       'title' => $downloadLabelFx ? $downloadLabelFx: 'LanguageTool browser extension for <strong>Firefox</strong>',
