@@ -158,7 +158,7 @@
                if (results.length == 0) {
                   var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
                   var noErrorsText = plugin.editor.getParam('languagetool_i18n_no_errors')[lang] || "No errors were found.";
-                  ed.windowManager.alert(noErrorsText);
+                  $('#feedbackMessage').html(noErrorsText);
                }
                else {
                   plugin.markMyWords();

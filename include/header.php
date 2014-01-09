@@ -140,6 +140,13 @@
            ed.onInit.add(function(ed) {
                ed.pasteAsPlainText = true;
            });
+           // remove any 'no errors found' message:
+           ed.onKeyUp.add(function(ed, e) {
+               $('#feedbackMessage').html('');  
+           });
+           ed.onPaste.add(function(ed, e) {
+               $('#feedbackMessage').html('');
+           });
        },
 
        /* translations: */
@@ -230,7 +237,7 @@
         tinymce.EditorManager.execCommand('mceAddControl', true, 'checktext');
         $('body').addClass('fullscreen');
         $('form#checkform').addClass('fullscreen');
-        $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
+        $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() - $('#handle').outerHeight() );
       }
       return false;
     }

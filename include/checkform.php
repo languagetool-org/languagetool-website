@@ -61,7 +61,7 @@ function printLangOption($langCode) {
 <noscript class="warning">Please turn on Javascript to use this form, or use <a href="simple-check/">the fallback form</a></noscript>
 
 <form id="checkform" class="" name="checkform" action="#" method="post">
-    <div class="handle"></div>
+    <div id="handle"><div id="feedbackMessage"></div></div>
     <div class="window">
         <div class="fullscreen-toggle">
             <a href="#" title="toggle fullscreen mode" onClick="fullscreen_toggle();return false;"></a>

@@ -255,9 +255,6 @@ body #stage .inner #editor form#checkform.fullscreen {
   right: 0px;
   bottom: 0px;
 }
-body #stage .inner #editor form#checkform.fullscreen .handle {
-  display: none;
-}
 body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a {
   position: fixed;
   bottom: 100px;
@@ -265,7 +262,7 @@ body #stage .inner #editor form#checkform.fullscreen .fullscreen-toggle a {
   margin: 0px!important;
   background-image: url(/images/fullscreen-toggle1.png);
 }
-body #stage .inner #editor .handle {
+body #stage .inner #editor #handle {
   display: block;
   height: 24px;
   width: 100%;
@@ -276,6 +273,12 @@ body #stage .inner #editor .handle {
   -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+body #stage .inner #editor #handle #feedbackMessage {
+  padding-top: 2px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
 }
 body #stage .inner #editor .window {
   background-color: #fff;

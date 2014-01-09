@@ -254,9 +254,6 @@ body {
             left: 0px;
             right: 0px;
             bottom: 0px;
-            .handle {
-              display: none;
-            }
             .fullscreen-toggle {
               a {
                 position: fixed;
@@ -268,7 +265,7 @@ body {
             }
           }
         } 
-        .handle {
+        #handle {
           display: block;
           height: 24px;
           width: 100%;
@@ -279,6 +276,12 @@ body {
           -moz-border-radius-topright: 3px;
           border-top-left-radius: 3px;
           border-top-right-radius: 3px;
+          #feedbackMessage {
+            padding-top: 2px;
+            color: green;
+            text-align: center;
+            font-weight: bold;
+          }
         }
         .window {
           background-color: #fff;
