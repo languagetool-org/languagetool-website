@@ -299,7 +299,7 @@ LanguageTool можно использовать для проверки гра�
 
 
 </div>
-<?php include("../../include/partials/start_actions.php"); ?>
+<?php include("/include/start_actions.php"); ?>
 
 
 <?php
