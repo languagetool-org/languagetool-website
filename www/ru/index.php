@@ -107,7 +107,7 @@ $downloadLabelFx = "Скачать LanguageToolFx Расширение для <s
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
-<p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a>. 
+<p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7 от Oracle </a> или IcedTea. 
 </p>
 <p>Для работы в Windows требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a>. 
 </p>
@@ -118,7 +118,7 @@ $downloadLabelFx = "Скачать LanguageToolFx Расширение для <s
 
 
 <h2>Использование в качестве независимого приложения</h2>
-Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a> от Oracle.
+Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a> от Oracle или IcedTea.
 <a title="LanguageTool 2.5-SNAPSHOT работает как независимое графическое приложение" class="fancyboxImage"
    href="/ru/screenshots/LT-GUI-ru-2.5.png"><img style="margin-left: 15px" width="200" height="208" align="right"
    src="/ru/screenshots/LT-GUI-ru-2.5-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
@@ -136,7 +136,7 @@ LanguageTool можно использовать для проверки гра�
 
 
 <h2>Использование в качестве консольного приложения</h2>
-Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a> от Oracle.
+Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 7</a> от Oracle или IcedTea.
 <ul>
     <li>Скачать программу.</li>
     <li>Распаковать полученный архив.</li>
@@ -297,9 +297,6 @@ LanguageTool можно использовать для проверки гра�
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 
-
-</div>
-<?php include("/include/start_actions.php"); ?>
 
 
 <?php
