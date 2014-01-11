@@ -123,7 +123,8 @@ function printLangOption($langCode) {
                     </select>
             </div>
             <div class="submit">
-                <input type="submit" name="_action_checkText" value="<?php print $checkSubmitButtonValue ?>" onClick="doit();return false;">
+                <input type="submit" name="_action_checkText" value="<?php print $checkSubmitButtonValue ?>" 
+                       onClick="doit();return false;" title="<?php print $checkSubmitButtonTitle ?>">
             </div>
             <div style="clear:both;"></div>
         </div>

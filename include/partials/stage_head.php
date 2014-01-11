@@ -4,6 +4,7 @@
     <div class="inner">
       <?php
         $checkSubmitButtonValue = "Check Text";
+        $checkSubmitButtonTitle = "Check text - you can also use Ctrl+Return";
         include("../include/checkform.php");
       ?>
     <?php

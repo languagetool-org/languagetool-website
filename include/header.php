@@ -140,10 +140,13 @@
            ed.onInit.add(function(ed) {
                ed.pasteAsPlainText = true;
            });
-           // remove any 'no errors found' message:
-           ed.onKeyUp.add(function(ed, e) {
-               $('#feedbackMessage').html('');  
+           ed.onKeyDown.add(function(ed, e) {
+               if (e.ctrlKey && e.keyCode == 13) {  // Ctrl+Return
+                   doit();
+                   tinymce.dom.Event.cancel(e);
+               }
            });
+           // remove any 'no errors found' message:
            ed.onPaste.add(function(ed, e) {
                $('#feedbackMessage').html('');
            });
