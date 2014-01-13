@@ -13,7 +13,7 @@
         <h2>Get announcements via email</h2>
         <p>
           <form action="https://eu1.cleverreach.com/f/46260-106283/wcs/" method="post">
-              <input id="text2133452" name="email" id="email" type="text" placeholder="email address"><input id="submit" type="submit" value="Subscribe">
+              <input id="text2133452" name="email" type="text" placeholder="email address"><input id="submit" type="submit" value="Subscribe">
           </form>
         </p>
       </div>
