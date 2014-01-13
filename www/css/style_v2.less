@@ -115,6 +115,10 @@ body {
           background-color: darken(@blue, 10%);
           -webkit-transition: all 0.2s linear;
         }
+        &:disabled {
+          background-color: lighten(@blue, 30%);
+          cursor: default;
+        }
       }
     }
     background-color: darken(#fff, 8%);

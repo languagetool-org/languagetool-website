@@ -131,6 +131,7 @@
             {
                /* turn off the spinning thingie */
                plugin.editor.setProgressState(0);
+               document.checkform._action_checkText.disabled = false;
 
                /* if the server is not accepting requests, let the user know */
                if (request.responseText.substr(0, 6) == 'Error:')

@@ -115,6 +115,10 @@ body #editor_controls .submit input:active {
   background-color: #152baa;
   -webkit-transition: all 0.2s linear;
 }
+body #editor_controls .submit input:disabled {
+  background-color: #98a6f3;
+  cursor: default;
+}
 body.fullscreen {
   overflow: hidden;
 }

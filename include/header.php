@@ -260,6 +260,7 @@
    }
 
    function doit() {
+       document.checkform._action_checkText.disabled = true;
        var langCode = document.checkform.lang.value;
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
