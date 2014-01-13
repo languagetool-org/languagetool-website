@@ -123,7 +123,7 @@
 
 <?php if ($enable_textcheck) { ?>
   <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js"></script>
+  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
