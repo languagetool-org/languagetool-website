@@ -147,9 +147,9 @@
                } else if (e.keyCode == 27) {   // Escape
                    // doesn't work in firefox, the re-init in turnOffFullScreenView()
                    // might clash with event handling:
-                   //if ($('form#checkform').hasClass('fullscreen')) {
-                   //    turnOffFullScreenView();
-                   //}
+                   if ($('form#checkform').hasClass('fullscreen')) {
+                       setTimeout(turnOffFullScreenView, 100);  // use timeout to prevent problems on Firefox
+                   }
                }
            });
            // remove any 'no errors found' message:
@@ -249,6 +249,7 @@
        $('form#checkform').removeClass('fullscreen');
        $('body').removeClass('fullscreen');
        $('iframe#checktext_ifr').height(270);
+       tinymce.execCommand('mceFocus', false, 'checktext');
    }
 
    function turnOnFullScreenView() {
@@ -257,6 +258,7 @@
        $('body').addClass('fullscreen');
        $('form#checkform').addClass('fullscreen');
        $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() - $('#handle').outerHeight() );
+       tinymce.execCommand('mceFocus', false, 'checktext');
    }
 
    function doit() {
