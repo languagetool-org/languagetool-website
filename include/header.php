@@ -153,6 +153,9 @@
                }
            });
            // remove any 'no errors found' message:
+           ed.onKeyUp.add(function(ed, e) {
+               $('#feedbackMessage').html('');
+           });
            ed.onPaste.add(function(ed, e) {
                $('#feedbackMessage').html('');
            });
