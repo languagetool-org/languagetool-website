@@ -182,12 +182,12 @@
          editor.onClick.add(plugin._showMenu, plugin);
 
          // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
-         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+         /*if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
            editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
          } else {
            editor.onContextMenu.add(plugin._showMenu, plugin);
            editor.onContextMenu.add(plugin._doNotShowMenu, plugin);
-         }
+         }*/
 
          /* strip out the markup before the contents is serialized (and do it on a copy of the markup so we don't affect the user experience) */
          editor.onPreProcess.add(function(sender, object) 
@@ -266,6 +266,11 @@
        
       _showMenu : function(ed, e) 
       {
+        
+         if (e.which == 3) {
+            // ignore right mouse button
+            return;
+         }
          var t = this, ed = t.editor, m = t._menu, p1, dom = ed.dom, vp = dom.getViewPort(ed.getWin());
          var plugin = this;
 
