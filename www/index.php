@@ -6,7 +6,6 @@
   $page = "Home";
   $title = "LanguageTool";
   $title2 = "Style and Grammar Checker";
-  $lastmod = "2013-09-30 14:00:00 CET";
   //$rootUrl = "http://janoelze.de/projects/languagetool-website/www";
   $rootUrl = "";
 

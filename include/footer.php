@@ -11,11 +11,6 @@
     }
 
   ?>
-  <!--
-  <span>
-    Last modified on <?php if (!isset($show_date) || $show_date != 0) { list($date, $time, $cet) = explode(" ", $lastmod); print $date; } ?>
-  </span>
-  -->
 </div>
 
 <script type="text/javascript">

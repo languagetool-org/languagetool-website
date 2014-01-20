@@ -4,7 +4,6 @@
     <?php
     $page = "other";
     $title = "LanguageTool Common Problems";
-    $lastmod = "2013-12-04 12:30:00 CET";
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
