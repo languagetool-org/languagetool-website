@@ -22,8 +22,9 @@ Sie eine genauere Beschreibung des möglichen Problems. Mehr Informationen zu Le
 <?php
 $checkSubmitButtonValue = "Text prüfen";
 $checkDefaultLang = "de-DE-x-simple-language";
-$checkLanguage["de-DE"] = "Deutsch" ;
-$addedLanguages["de-DE-x-simple-language"] = "Leichte Sprache";
+$checkLanguage = array(
+    'de-DE-x-simple-language'  => 'Deutsch, Leichte Sprache'
+);
 include("../../../include/checkform-embedded.php");
 ?>
 

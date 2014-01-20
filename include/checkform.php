@@ -1,4 +1,39 @@
 <?php
+
+if (!isset($checkLanguage)) {
+    $checkLanguage = array(
+        'ast' => 'Asturian',
+        'be'  => 'Belarusian',
+        'br'  => 'Breton',
+        'ca'  => 'Catalan',
+        'zh'  => 'Chinese',
+        'da'  => 'Danish',
+        'nl'  => 'Dutch',
+        'en-US'  => 'English',
+        'eo'  => 'Esperanto',
+        'fr'  => 'French',
+        'gl'  => 'Galician',
+        'de-DE'  => 'German',
+        'el'  => 'Greek',
+        'is'  => 'Icelandic',
+        'it'  => 'Italian',
+        'ja'  => 'Japanese',
+        'km'  => 'Khmer',
+        'lt'  => 'Lithuanian',
+        'ml'  => 'Malayalam',
+        'pl'  => 'Polish',
+        'pt'  => 'Portuguese',
+        'ro'  => 'Romanian',
+        'ru'  => 'Russian',
+        'sk'  => 'Slovak',
+        'sl'  => 'Slovenian',
+        'es'  => 'Spanish',
+        'sv'  => 'Swedish',
+        'tl'  => 'Tagalog',
+        'uk'  => 'Ukrainian'
+    );
+}
+
 function printLangOption($langCode) {
     global $checkDefaultLang;
     global $checkLanguage;
@@ -13,47 +48,7 @@ function printLangOption($langCode) {
         $checked = ($langCode == $checkDefaultLang) ? " selected='selected'" : "";
     }
 
-    if (isset($checkLanguage[$langCode])) {
-        // User defined translation.
-        $lang = $checkLanguage[$langCode];
-    } else {
-        // No user defined translation -> default to language names in English.
-        switch ($langCode) {
-            case 'ast':   $lang = 'Asturian';   break;
-            case 'be':    $lang = 'Belarusian'; break;
-            case 'br':    $lang = 'Breton';     break;
-            case 'ca':    $lang = 'Catalan';    break;
-            case 'zh':    $lang = 'Chinese';    break;
-            case 'da':    $lang = 'Danish';     break;
-            case 'nl':    $lang = 'Dutch';      break;
-            case 'en-US': $lang = 'English';    break;
-            case 'el':    $lang = 'Greek';     break;
-            case 'eo':    $lang = 'Esperanto';  break;
-            case 'fr':    $lang = 'French';     break;
-            case 'gl':    $lang = 'Galician';   break;
-            case 'de-DE': $lang = 'German';     break;
-            case 'de-DE-x-simple-language':
-                $lang = 'Deutsch, Leichte Sprache'; break;
-            case 'is':    $lang = 'Icelandic';  break;
-            case 'it':    $lang = 'Italian';    break;
-            case 'ja':    $lang = 'Japanese';   break;
-            case 'km':    $lang = 'Khmer';      break;
-            case 'lt':    $lang = 'Lithuanian'; break;
-            case 'ml':    $lang = 'Malayalam';  break;
-            case 'pl':    $lang = 'Polish';     break;
-            case 'pt':    $lang = 'Portuguese'; break;
-            case 'ro':    $lang = 'Romanian';   break;
-            case 'ru':    $lang = 'Russian';    break;
-            case 'sk':    $lang = 'Slovak';     break;
-            case 'sl':    $lang = 'Slovenian';  break;
-            case 'es':    $lang = 'Spanish';    break;
-            case 'sv':    $lang = 'Swedish';    break;
-            case 'tl':    $lang = 'Tagalog';    break;
-            case 'uk':    $lang = 'Ukrainian';  break;
-
-            default:      $lang = 'Automatic';  break;
-        }
-    }
+    $lang = $checkLanguage[$langCode];
     print "<option value=\"$langCode\" $checked>$lang</option>\n";
 }
 ?>
@@ -88,38 +83,11 @@ function printLangOption($langCode) {
             -->
             <div class="dropdown">
                     <select class="dropkick" name="lang" id="lang">
-                        <?php foreach ($addedLanguages as $key => $val) { ?>
-                            <?php printLangOption($key) ?>
-                        <?php } ?>
-                        <?php printLangOption("ast") ?>
-                        <?php printLangOption("be") ?>
-                        <?php printLangOption("br") ?>
-                        <?php printLangOption("ca") ?>
-                        <?php printLangOption("zh") ?>
-                        <?php printLangOption("da") ?>
-                        <?php printLangOption("nl") ?>
-                        <?php printLangOption("en-US") ?>
-                        <?php printLangOption("eo") ?>
-                        <?php printLangOption("fr") ?>
-                        <?php printLangOption("gl") ?>
-                        <?php printLangOption("de-DE") ?>
-                        <?php printLangOption("el") ?>
-                        <?php printLangOption("is") ?>
-                        <?php printLangOption("it") ?>
-                        <?php printLangOption("ja") ?>
-                        <?php printLangOption("km") ?>
-                        <?php printLangOption("lt") ?>
-                        <?php printLangOption("ml") ?>
-                        <?php printLangOption("pl") ?>
-                        <?php printLangOption("pt") ?>
-                        <?php printLangOption("ro") ?>
-                        <?php printLangOption("ru") ?>
-                        <?php printLangOption("sk") ?>
-                        <?php printLangOption("sl") ?>
-                        <?php printLangOption("es") ?>
-                        <?php printLangOption("sv") ?>
-                        <?php printLangOption("tl") ?>
-                        <?php printLangOption("uk") ?>
+                        <?php
+                        foreach ($checkLanguage as $key => $val) {
+                            printLangOption($key);
+                        }
+                        ?>
                     </select>
             </div>
             <div class="submit">
