@@ -1,5 +1,6 @@
 <?php
     function getDefaultDemoTexts() {
+        // TODO: some of these texts were manually copied from Transifex (key: guiDemoText) - we need a better process for that:
         $map['ast'] = "Apega testu equí. o revisa toes les pallabres de esti testu pa ver dalgún de los problemis que LanguageTool ye pa deteutar. ¿Afáyeste con los correutores gramaticales? Has date cuenta de que entá nun son perfeutos.";
         $map['en'] = "Paste your own text here. or check this text too see an few of of the problems that LanguageTool can detecd. What do you thinks of grammer checkers? Please not that they are not perfect.";
         $map['br'] = "Lakait amañ ho testenn vrezhonek da vezañ gwiriet. Pe implijit an frazenn-mañ gant meur a fazioù yezhadurel.";
@@ -13,6 +14,20 @@
         $map['pl'] = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma jusz korektor psowni, który wyrurznia bledy na czewrono.";
         $map['pt'] = "Cola o teu próprio texto aqui... ou verifica este texto, afim de ver alguns dos dos problemas que o LanguageTool consegue detectar. Isto permitirá corrigir os teus erros à última da hora.";
         $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
+        //$map['be'] = "Гэта прыклад тэксту каб паказаць вам, як працуе LanguageTool. Майце на ўвазе, аднак, што яно не ўключае спраўджванне арфаграфіі.";
+        //$map['da'] = "Dette er et teksteksempel for at at vise hvordan LanguageTool virker.";
+        //$map['el'] = "";
+        $map['es'] = "Este es un un ejemplo de texto de entrada para mostrar como funciona LanguageTool.";
+        $map['gl'] = "Esta vai a ser unha mostra de de exemplo para amosar  o funcionamento de LanguageTool.";
+        $map['is'] = "Þetta er dæmi um texta sem á að sína farm á hvernig LanguageTool virkar. Það er þó hérmeð gert ljóst að forritið framkvæmir ekki hefðbundna ritvilluleit.";
+        //$map['ja'] = "";
+        $map['km'] = "ឃ្លា​នេះ​បង្ហាញ​ពី​ពី​កំហុស​វេយ្យាករណ៍ ដើម្បី​បញ្ជាក់​ពី​ប្រសិទ្ធភាព​របស់​កម្មវិធី LanguageTool សំរាប់​ភាសាខ្មែរ។";
+        //$map['nl'] = "";
+        //$map['ro'] = "";
+        $map['sk'] = "Toto je ukážkový vstup, na predvedenie funkčnosti LanguageTool. Pamätajte si si, že neobsahuje \"kontrolu\" preklepo.";
+        //$map['sl'] = "";
+        $map['tl'] = "Ang LanguageTool ay maganda gamit sa araw-araw. Ang talatang ito ay nagpapakita ng ng kakayahan ng LanguageTool at hinahalimbawa kung paano ito gamitin. Litaw rin sa talatang ito na may mga bagaybagay na hindii pa kayang itama nng LanguageTool.";
+        //$map['uk'] = "";
         return $map;
     }
 
