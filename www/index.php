@@ -1,12 +1,8 @@
 <?php
-
   error_reporting(E_ALL);
 
-  // basic configuration
   $page = "Home";
-  $title = "LanguageTool";
-  $title2 = "Style and Grammar Checker";
-  //$rootUrl = "http://janoelze.de/projects/languagetool-website/www";
+  $title = "LanguageTool Style and Grammar Checker";
   $rootUrl = "";
 
   $enable_tablesorter = 0;
@@ -15,21 +11,10 @@
   $enable_download_dialogs = 1;
 
   include("../include/browser_language.php");
-
   $checkDefaultLang = getDefaultLanguage();
   //$checkDefaultLang = "en";  // comment in for testing
 
   $currentLang = 'en';
-
-  // here we are getting the lang either from
-  // the URL parameter or the cookie
-  if (isset($_GET['lang'])) {
-    $lang = htmlspecialchars($_GET['lang']);
-    setcookie("lang", $lang);
-    header('Location: ' . $rootUrl);
-  } elseif (isset($_COOKIE['lang'])) {
-    $currentLang = htmlspecialchars($_COOKIE['lang']);
-  }
 ?>
 <!doctype html>
 <html lang=en>
