@@ -14,7 +14,7 @@
         $map['pl'] = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma jusz korektor psowni, który wyrurznia bledy na czewrono.";
         $map['pt'] = "Cola o teu próprio texto aqui... ou verifica este texto, afim de ver alguns dos dos problemas que o LanguageTool consegue detectar. Isto permitirá corrigir os teus erros à última da hora.";
         $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
-        //$map['be'] = "Гэта прыклад тэксту каб паказаць вам, як працуе LanguageTool. Майце на ўвазе, аднак, што яно не ўключае спраўджванне арфаграфіі.";
+        $map['be'] = "Паспрабуйце напісаць нейкі тэкст з памылкамі, а LanguageTool паспрабуе паказаць нейкия найбольш распаусюджаныя памылки.";
         //$map['da'] = "Dette er et teksteksempel for at at vise hvordan LanguageTool virker.";
         //$map['el'] = "";
         $map['es'] = "Este es un un ejemplo de texto de entrada para mostrar como funciona LanguageTool.";
