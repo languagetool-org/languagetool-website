@@ -47,7 +47,7 @@
     $checkSubmitButtonValue = "Text Prüfen";
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
 
-    $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatikprüfung, die neben Deutsch noch <a href='/languages/'>mehr als 20 weitere Sprachen</a> unterstützt.";
+    $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch noch <a href='/languages/'>mehr als 20 weitere Sprachen</a> unter&shy;stützt.";
     $introText2 = "";
 
     $downloadRequiresJava = "Benötigt Java {version}";
