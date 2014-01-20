@@ -22,7 +22,7 @@
         $map['is'] = "Þetta er dæmi um texta sem á að sína farm á hvernig LanguageTool virkar. Það er þó hérmeð gert ljóst að forritið framkvæmir ekki hefðbundna ritvilluleit.";
         //$map['ja'] = "";
         $map['km'] = "ឃ្លា​នេះ​បង្ហាញ​ពី​ពី​កំហុស​វេយ្យាករណ៍ ដើម្បី​បញ្ជាក់​ពី​ប្រសិទ្ធភាព​របស់​កម្មវិធី LanguageTool សំរាប់​ភាសាខ្មែរ។";
-        //$map['nl'] = "";
+        $map['nl'] = "Een ieder kan fouten maken, tikvouten bij voorbeeld.";
         //$map['ro'] = "";
         $map['sk'] = "Toto je ukážkový vstup, na predvedenie funkčnosti LanguageTool. Pamätajte si si, že neobsahuje \"kontrolu\" preklepo.";
         //$map['sl'] = "";
