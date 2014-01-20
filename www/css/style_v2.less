@@ -407,6 +407,51 @@ body {
       }
     }
   }
+  #languageContent {
+    width: 900px;
+    margin: 60px auto 70px auto;
+    color: black;
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      color: #000;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .headlines {
+      color: lighten(@textColor, 20%);
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      .headlines;
+    }
+    h2 {
+      .headlines;
+    }
+    ul, ol {
+      margin-left: 30px;
+      margin-right: 60px;
+      margin-bottom: 10px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    tt {
+      background-color: #eee;
+      font-family: monospace;
+    }
+    .errorMarker {
+      padding-bottom: 2px;
+      background-image: url("../images/squiggle.png");
+      background-repeat: repeat-x;
+      background-position: left bottom;
+      vertical-align: text-top;
+    }
+  }
   #actions {
     background-color: #373737;
     padding: 30px 0px;
