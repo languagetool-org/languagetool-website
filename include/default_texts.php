@@ -25,7 +25,7 @@
         $map['nl'] = "Een ieder kan fouten maken, tikvouten bij voorbeeld.";
         //$map['ro'] = "";
         $map['sk'] = "Toto je ukážkový vstup, na predvedenie funkčnosti LanguageTool. Pamätajte si si, že neobsahuje \"kontrolu\" preklepo.";
-        //$map['sl'] = "";
+        $map['sl'] = "Tukaj vnesite svoje besedilo... Pa poglejmo primer besedila s nekaj napakami ki jih lahko razpozna orodje LanguageTool; ko opazite napake, jih lahko enostavno popiravite. ( Obenem se izvrši tudi preverjanje črkovanja črkovanja.";
         $map['tl'] = "Ang LanguageTool ay maganda gamit sa araw-araw. Ang talatang ito ay nagpapakita ng ng kakayahan ng LanguageTool at hinahalimbawa kung paano ito gamitin. Litaw rin sa talatang ito na may mga bagaybagay na hindii pa kayang itama nng LanguageTool.";
         //$map['uk'] = "";
         return $map;
