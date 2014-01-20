@@ -402,8 +402,10 @@ body #download .button_container .inner_button .meta {
   padding: 8px 20px;
 }
 body #languageContent {
-  width: 900px;
+  max-width: 900px;
   margin: 60px auto 70px auto;
+  padding-right: 15px;
+  padding-left: 15px;
   color: black;
 }
 body #languageContent h2 {
