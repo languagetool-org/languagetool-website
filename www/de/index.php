@@ -43,6 +43,7 @@
         'be'  => 'Weißrussisch'
     );
 
+    $addYourTextHere = "Hier Text einfügen";  // used for languages that have no demo text
     $checkSubmitButtonValue = "Text Prüfen";
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
 

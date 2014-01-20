@@ -296,7 +296,11 @@
               tinyMCE.activeEditor.setContent(newText);
               tinyMCE.get('checktext').focus();
           } else {
-              tinyMCE.activeEditor.setContent("Add your text here");
+              <?php if($addYourTextHere) { ?>
+                tinyMCE.activeEditor.setContent("<?php print $addYourTextHere ?>");
+              <? } else { ?>
+                tinyMCE.activeEditor.setContent("Add your text here");
+              <? } ?>
               tinyMCE.get('checktext').focus();
               tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
               // TODO: set real placeholder instead?
