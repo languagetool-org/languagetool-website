@@ -16,12 +16,14 @@ body #screenshots .imgbox {
   font-size: 11px;
   text-align: center;
   float: left;
-  margin: 0px 10px 0px 7px;
+  margin: 0px 15px 8px 15px;
 }
 body #screenshots .imgbox > a:first-child > img {
   width: 320px;
   height: auto;
   border: 0px;
+  margin-bottom: 7px;
+  box-shadow: 5px 5px 10px grey;
 }
 body #screenshots .imgbox > a:last-of-type {
   line-height: 21px;
