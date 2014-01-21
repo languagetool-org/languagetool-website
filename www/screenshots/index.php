@@ -18,11 +18,11 @@
 
 <div class="imgboxcontainer">
     <p class="imgbox">
-        <a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage" href="art/screenshot_lo3.png">
-        <img src="art/screenshot_lo3_small.png" alt="LanguageTool in LibreOffice 3.3"/>
+        <a title="LanguageTool installed as an add-on in LibreOffice 4.1" class="fancyboxImage" href="art/screenshot_libreoffice.png">
+        <img src="art/screenshot_libreoffice_small.png" alt="LanguageTool in LibreOffice 4.1"/>
         </a>
         <br/>
-        LanguageTool installed as an add-on in LibreOffice&nbsp;3.3
+        LanguageTool installed as an add-on in LibreOffice&nbsp;4.1
         <br/>
         <a href="http://libreoffice.org/">Download LibreOffice</a>
     </p>
@@ -36,11 +36,11 @@
         <a href="http://openoffice.org/">Download Apache OpenOffice</a>
     </p>
     <p class="imgbox">
-        <a title="The simple stand-alone user interface which lets you type in or paste text and check it" class="fancyboxImage" href="art/screenshot.png">
+        <a title="The stand-alone user interface which lets you type in or paste text and check it" class="fancyboxImage" href="art/screenshot.png">
         <img src="art/screenshot_small.png" alt="stand-alone version of LanguageTool"/>
         </a>
         <br/>
-        The simple stand-alone user interface which lets you type in or paste text and check it
+        The stand-alone user interface which lets you type in or paste text and check it
         <br/>
         <a href="http://languagetool.org/">Download LanguageTool for stand-alone use</a>
     </p>
