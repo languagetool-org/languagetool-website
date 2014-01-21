@@ -76,12 +76,10 @@ and that apply to almost all languages.</p>
 <p>
 <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.xml">Show false friend rules source code file</a>
 </p>
-        
-<!--
-<p>Auto-detected means that a language can be detected by LanguageTool without the user needing to select the language.</p>
--->
 
-    <?php include("../include/footer.php"); ?>
+</div>
+
+<?php include("../../include/footer.php"); ?>
 
 </body>
 </html>
