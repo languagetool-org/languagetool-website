@@ -94,5 +94,9 @@
 </div>
 </div>
 
+<div style="clear:both;"></div>
+
+<?php include("../../include/footer.php"); ?>
+
 </body>
 </html>
