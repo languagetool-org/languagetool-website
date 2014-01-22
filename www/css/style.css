@@ -9,6 +9,7 @@
 body {
   color: #777777;
   /* standard content page without many images etc: */
+  /* language-specific page: */
 }
 body #screenshots .imgbox {
   width: 320px;
@@ -149,62 +150,62 @@ body #languageContent .langVariants {
 body #languageContent .maintainerNeeded {
   background-color: #ffff95;
 }
-body #content {
+body #textOrLanguageContent {
   margin: 60px auto 70px auto;
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 100px;
   color: #111111;
 }
-body #content p {
+body #textOrLanguageContent p {
   margin-bottom: 10px;
 }
-body #content .headlines {
+body #textOrLanguageContent .headlines {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #content h1 {
+body #textOrLanguageContent h1 {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #content h2 {
+body #textOrLanguageContent h2 {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #content ul,
-body #content ol {
+body #textOrLanguageContent ul,
+body #textOrLanguageContent ol {
   margin-left: 30px;
   margin-right: 60px;
   margin-bottom: 10px;
 }
-body #content ul li,
-body #content ol li {
+body #textOrLanguageContent ul li,
+body #textOrLanguageContent ol li {
   margin-bottom: 5px;
 }
-body #content tt {
+body #textOrLanguageContent tt {
   background-color: #eee;
   font-family: monospace;
 }
-body #content .errorMarker {
+body #textOrLanguageContent .errorMarker {
   padding-bottom: 2px;
   background-image: url("../images/squiggle.png");
   background-repeat: repeat-x;
   background-position: left bottom;
   vertical-align: text-top;
 }
-body #content .oldInformation {
+body #textOrLanguageContent .oldInformation {
   color: #777777;
 }
-body #content .oldInformation a {
+body #textOrLanguageContent .oldInformation a {
   color: #98a6f3;
 }
-body #content .langVariants {
+body #textOrLanguageContent .langVariants {
   color: #808080;
 }
-body #content .maintainerNeeded {
+body #textOrLanguageContent .maintainerNeeded {
   background-color: #ffff95;
 }
 body #editor_controls {
