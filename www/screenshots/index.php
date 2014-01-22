@@ -27,13 +27,11 @@
         <a href="http://libreoffice.org/">Download LibreOffice</a>
     </p>
     <p class="imgbox">
-        <a title="LanguageTool installed as an add-on in Polish OpenOffice.org 3.0.1" class="fancyboxImage" href="art/screenshot_ooo3_pl.png">
-        <img src="art/screenshot_ooo3_pl_small.png" alt="LanguageTool in Polish OpenOffice.org 3.0"/>
+        <a title="LanguageTool installed as an add-on in Polish LibreOffice 4.1" class="fancyboxImage" href="art/LOO-dialog.png">
+        <img src="art/LOO-dialog_small.png" alt="LanguageTool in Polish LibreOffice 4.1"/>
         </a>
         <br/>
-        LanguageTool installed as an add-on in Polish OpenOffice.org&nbsp;3.0.1
-        <br/>
-        <a href="http://openoffice.org/">Download Apache OpenOffice</a>
+        LanguageTool installed as an add-on in Polish LibreOffice.org&nbsp;4.1
     </p>
     <p class="imgbox">
         <a title="The stand-alone user interface which lets you type in or paste text and check it" class="fancyboxImage" href="art/screenshot.png">
