@@ -51,11 +51,11 @@
     $introText2 = "";
 
     $downloadHeadline = "Descarregar";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadRequiresJava = "Requer Java {version}";
     $downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";
     $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
-    $checklistText = "Por favor vê a <a href='/issues/'>a nossa lista de controlo</a> se experienciares problemas.";
+    $checklistText = "Por favor vê a <a href='/issues/'>a nossa lista de problemas comuns</a> se experienciares problemas.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicia-o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
 
@@ -73,7 +73,7 @@
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 
-<h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
+<h2 style="margin-top: 40px">Experimenta <em>on-line</em></h2>
 
 
 <p style="margin-top: 10px"><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
