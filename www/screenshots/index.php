@@ -45,17 +45,17 @@
         <a href="http://languagetool.org/">Download LanguageTool for stand-alone use</a>
     </p>
     <p class="imgbox">
-        <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png">
-        <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
+        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/languagetoolfx.png">
+            <img src="art/languagetoolfx_small.png" alt="LanguageToolFx Firefox extension"/>
         </a>
         <br/>
-        LanguageTool in the server mode is used in CheckMate to check translations using a comfortable GUI
+        Check text on websites with the extension for <a href="http://mozilla.org/firefox/" target="_blank">Mozilla&nbsp;Firefox</a>
         <br/>
-        <a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">Download CheckMate</a>
+        <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx/">Download LanguageToolFx</a>
     </p>
     <p class="imgbox">
         <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" class="fancyboxImage" href="art/lt-thunderbird.png">
-        <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
+            <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
         </a>
         <br/>
         Check text in emails with the Grammar Checker extension for <a href="http://mozilla.org/thunderbird/" target="_blank">Mozilla&nbsp;Thunderbird</a>
@@ -63,13 +63,13 @@
         <a href="https://addons.mozilla.org/thunderbird/addon/grammar-checker/">Download Grammar Checker</a>
     </p>
     <p class="imgbox">
-        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/languagetoolfx.png">
-        <img src="art/languagetoolfx_small.png" alt="LanguageToolFx Firefox extension"/>
+        <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png">
+        <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
         </a>
         <br/>
-        Check text on websites with the extension for <a href="http://mozilla.org/firefox/" target="_blank">Mozilla&nbsp;Firefox</a>
+        LanguageTool in the server mode is used in CheckMate to check translations using a comfortable GUI
         <br/>
-        <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx/">Download LanguageToolFx</a>
+        <a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">Download CheckMate</a>
     </p>
     <p class="imgbox">
         <a title="The simple LanguageTool plugin in OmegaT that helps to check your translation on the go" class="fancyboxImage" href="art/lt-omegat.png">
