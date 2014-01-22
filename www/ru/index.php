@@ -73,7 +73,7 @@
    src="/ru/screenshots/screenshot-lo3-very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 
-<p class="firstpara">LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики и стиля.
+<p>LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики и стиля.
 
 <h2>Функциональность</h2>
 
@@ -192,7 +192,7 @@ LanguageTool можно использовать для проверки гра�
 </ul>
 
 
-<p class="firstpara"><strong>Интеграция LanguageTool с приложениями</strong>:</p>
+<p><strong>Интеграция LanguageTool с приложениями</strong>:</p>
 
 <ul style="list-style:none">
 	<li><a href="http://www.vim.org/scripts/script.php?script_id=3223">LanguageTool для vim</a></li>

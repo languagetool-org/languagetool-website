@@ -40,14 +40,14 @@
     <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
 </ul>
 
-<p class="firstpara"><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
+<p><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.1_to_languagetool-2.2/">updates for the error detection rules</a> for French, Catalan, German, Portuguese, Russian, Esperanto, and Breton.</li>
   <li>Small bug fixes</li>
   <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
 </ul>
 
-<p class="firstpara"><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
+<p><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/V_2_0_to_languagetool-2.1/">updates for the error detection rules</a> for English, French, German, Portuguese, Polish, Russian, Breton, Esperanto, Catalan and Italian</li>
   <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several.
@@ -56,7 +56,7 @@
   <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
 </ul>
 
-<p class="firstpara"><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
+<p><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/V_1_9_to_V_2_0/">updates for the error detection rules</a> for English, Spanish, French, German, Portuguese, Russian, Breton, Catalan, Esperanto, and Ukrainian</li>
   <li>The embedded HTTP server can now be started from the context menu if LanguageTool is running in the system tray</li>
@@ -64,17 +64,17 @@
   <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
 </ul>
 
-<p class="firstpara"><strong>2012-10-10:</strong> LanguageTool 1.9 is now available
+<p><strong>2012-10-10:</strong> LanguageTool 1.9 is now available
   <a href="http://search.maven.org/#search|ga|1|languagetool">on Maven Central</a> for Java developers</p>
 
-<p class="firstpara"><strong>2012-09-30:</strong> Released LanguageTool 1.9. Changes include:</p>
+<p><strong>2012-09-30:</strong> Released LanguageTool 1.9. Changes include:</p>
 <ul>
   <li>Initial support for Japanese with about 20 rules</li>
   <li>Many <a href="../changes/V_1_8_to_V_1_9/">updates for the error detection rules</a> for Danish, German, English, Catalan, Russian, Chinese, French, Breton, Portuguese, Esperanto</li>
   <li>Several bug fixes</li>
 </ul>
 
-<p class="firstpara"><strong>2012-06-30:</strong> Released LanguageTool 1.8. Changes include:</p>
+<p><strong>2012-06-30:</strong> Released LanguageTool 1.8. Changes include:</p>
 <ul>
   <li>Spell checking is now included (not used in LibreOffice/OpenOffice)</li>
   <li>Many <a href="../changes/V_1_7_to_V_1_8/">updates for the error detection rules</a> for German, English, Catalan, Italian, French, Breton, Polish, Esperanto</li>

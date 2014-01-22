@@ -12,7 +12,7 @@
 
 <div id="textContent">
 
-<p class="firstpara">Die Leichte Sprache ist eine besonders leicht verständliche Ausdrucksweise.
+<p>Die Leichte Sprache ist eine besonders leicht verständliche Ausdrucksweise.
 Es existiert kein offizieller Standard, was genau Leichte Sprache ausmacht, es gibt zur Orientierung allerdings 
 einige Regeln. Mit dieser Seite können Sie LanguageTool benutzen, um Texte gegen einige (nicht alle) dieser
 Regeln zu prüfen. Mögliche Fehler werden farbig markiert. Durch Klick auf die markierten Wörter erhalten
