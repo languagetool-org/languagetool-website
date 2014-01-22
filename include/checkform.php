@@ -71,7 +71,7 @@ function printLangOption($langCode) {
                 $checkDefaultText = getDefaultDemoText("en");
             }
             ?>
-            <textarea id="checktext" name="text" style="width: 100%" rows="10"><?php print $checkDefaultText ?></textarea>
+            <textarea id="checktext" name="text" style="width: 100%" rows="10"><?= $checkDefaultText ?></textarea>
         </p>
         <div id="editor_controls">
             <!--
@@ -91,8 +91,8 @@ function printLangOption($langCode) {
                     </select>
             </div>
             <div class="submit">
-                <input type="submit" name="_action_checkText" value="<?php print $checkSubmitButtonValue ?>" 
-                       onClick="doit();return false;" title="<?php print $checkSubmitButtonTitle ?>">
+                <input type="submit" name="_action_checkText" value="<?= $checkSubmitButtonValue ?>" 
+                       onClick="doit();return false;" title="<?= $checkSubmitButtonTitle ?>">
             </div>
             <div style="clear:both;"></div>
         </div>

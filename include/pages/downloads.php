@@ -1,7 +1,7 @@
 <div id="download">
 
   <?php if(isset($downloadHeadline)) { ?>
-      <h2><?php print $downloadHeadline ?></h2>
+      <h2><?= $downloadHeadline ?></h2>
   <?php } else { ?>
       <h2>Download</h2>
   <?php } ?>
@@ -11,19 +11,19 @@
   <br>
   <p class="small">
       <?php if(isset($checklistText)) { ?>
-          <?php print $checklistText ?>
+          <?= $checklistText ?>
       <?php } else { ?>
           Please see <a href='/issues/'>our checklist</a> if you experience problems.
       <?php } ?>
 
       <?php if(isset($otherDownloadsText)) { ?>
-          <?php print $otherDownloadsText ?>
+          <?= $otherDownloadsText ?>
       <?php } else { ?>
           Download <a href="/download/">old releases</a> or <a href="/download/snapshots/?C=M;O=D">daily builds</a>.
       <?php } ?>
 
       <?php if(isset($webstartText)) { ?>
-          <?php print $webstartText ?>
+          <?= $webstartText ?>
       <?php } else { ?>
           Start with <a href="/webstart/web/LanguageTool.jnlp">Java WebStart</a>.
       <?php } ?>

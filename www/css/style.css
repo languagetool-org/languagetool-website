@@ -439,6 +439,9 @@ body #stage .inner #editor .languageHomepage {
   padding-bottom: 5px;
   background-color: #ebebeb;
 }
+body #stage .inner #editor .languageHomepage a {
+  text-decoration: none;
+}
 body #stage .inner #text {
   float: left;
   width: 40%;

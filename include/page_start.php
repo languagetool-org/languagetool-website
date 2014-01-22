@@ -11,8 +11,8 @@
         </div>
         <div id="text">
 
-            <p><?php print $introText1 ?></p>
-            <p class="small"><?php print $introText2 ?></p>
+            <p><?= $introText1 ?></p>
+            <p class="small"><?= $introText2 ?></p>
 
         </div>
         <div style="clear:both;"></div>

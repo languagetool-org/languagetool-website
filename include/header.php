@@ -57,7 +57,7 @@
 ?>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php print $title ?></title>
+<title><?= $title ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <?php foreach ($assets['links'] as $link) { ?>
@@ -77,7 +77,7 @@
 -->
 
 <?php if ($enable_fancybox) { ?>
-  <script type="text/javascript" src="<?php print $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="<?= $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
   <?php $hasJQuery = 1; ?>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -90,7 +90,7 @@
 <?php } ?>
 
 <?php if ($enable_download_dialogs) { ?>
-  <script type="text/javascript" src="<?php print $rootUrl ?>/js/zebra_dialog.js"></script>
+  <script type="text/javascript" src="<?= $rootUrl ?>/js/zebra_dialog.js"></script>
   <script type="text/javascript">
     function showDownloadOfficeThanks() {
         $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
@@ -101,7 +101,7 @@
             '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
             '  <li>If you are using LibreOffice and you want to check English texts:' +
             '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
-            '  <li><strong>Having problems? Please see <a href="<?php print $rootUrl ?>/issues">our checklist</a>.</strong></li>' +
+            '  <li><strong>Having problems? Please see <a href="<?= $rootUrl ?>/issues">our checklist</a>.</strong></li>' +
             '</ul>',
             {width: 600});
     }
@@ -114,7 +114,7 @@
 
 <?php if ($enable_tablesorter) { ?>
   <?php $hasJQuery = 1; ?>
-  <script type="text/javascript" src="<?php print $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="<?= $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $(".sortable").tablesorter({
@@ -130,10 +130,10 @@
 
 <?php if ($enable_textcheck) { ?>
 
-  <script type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
+  <script type="text/javascript" src="<?= $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
+  <script type="text/javascript" src="<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
   <?php if ($hasJQuery == 0) { ?>
-    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="<?= $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
   <script type="text/javascript">
 
@@ -224,9 +224,9 @@
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */
-       languagetool_rpc_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
+       languagetool_rpc_url                 : "<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php?url=",
        /* edit this file to customize how LanguageTool shows errors: */
-       languagetool_css_url                 : "<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v3",
+       languagetool_css_url                 : "<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v3",
        /* this stuff is a matter of preference: */
        theme                              : "advanced",
        theme_advanced_buttons1            : "",
@@ -288,7 +288,7 @@
 
    </script>
 
-    <script type="text/javascript" src="<?php print $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
+    <script type="text/javascript" src="<?= $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
     <script type="text/javascript">
         $(function(){
             <?php
@@ -304,7 +304,7 @@
                         tinyMCE.get('checktext').focus();
                     } else {
                         <?php if($addYourTextHere) { ?>
-                        tinyMCE.activeEditor.setContent("<?php print $addYourTextHere ?>");
+                        tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
                         <? } else { ?>
                         tinyMCE.activeEditor.setContent("Add your text here");
                         <? } ?>
