@@ -21,6 +21,9 @@
     //$downloadTitle = "...";
     //$downloadTitleStandAlone = "...";
     //$downloadLabelFx = "...";
+    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
+    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
+    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
