@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é software de Código Aberto de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, e mais de <a href='languages/'>20 idiomas</a>.";
+    $introText1 = "O <strong>LanguageTool</strong> é software de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Descarregar";
@@ -57,7 +57,7 @@
     $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
     $checklistText = "Por favor vê a <a href='/issues/'>a nossa lista de controlo</a> se experienciares problemas.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
-    $webstartText = "Inicia o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
+    $webstartText = "Inicia-o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
