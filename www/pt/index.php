@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é software de código aberto de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, e mais de <a href='/languages/'>20 idiomas."</a>;
+    $introText1 = "O <strong>LanguageTool</strong> é software de Código Aberto de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Download";
