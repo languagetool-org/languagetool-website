@@ -45,19 +45,19 @@
 
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é software Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc..";
+    $introText1 = "O <strong>LanguageTool</strong> é software de código aberto de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, e mais de <a href='/languages/'>20 idiomas."</a>;
     $introText2 = "";
 
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadHeadline = "Descarregar";
+    $downloadRequiresJava = "Requer o Java {version}";
     $downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";
     $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $checklistText = "Por favor vê a <a href='/issues/'>a nossa lista</a> se experienciares problemas.";
+    $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
+    $webstartText = "Inicia o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -68,9 +68,9 @@
 
 <div id="languageContent">
 
-<a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage"
+<a title="O LanguageTool instalado como um add-on no LibreOffice 3.3" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
+   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
