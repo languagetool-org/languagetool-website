@@ -59,7 +59,12 @@ function printLangOption($langCode) {
     <div id="handle"><div id="feedbackMessage"></div></div>
     <div class="window">
         <div class="fullscreen-toggle">
-            <a href="#" title="toggle fullscreen mode" onClick="fullscreen_toggle();return false;"></a>
+            <?php
+            if (!$toggleFullscreenMode) {
+                $toggleFullscreenMode = "toggle fullscreen mode";
+            }
+            ?>
+            <a href="#" title="<?= $toggleFullscreenMode ?>" onClick="fullscreen_toggle();return false;"></a>
         </div>
         <p id="checktextpara" style="margin: 0">
             <?php

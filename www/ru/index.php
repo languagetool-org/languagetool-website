@@ -45,6 +45,7 @@
 
     $checkSubmitButtonValue = "Проверить текст";
     $checkSubmitButtonTitle = "Проверить текст";   //TODO: add "also possible by using Ctrl+Return"
+    $toggleFullscreenMode = "toggle fullscreen mode";
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики и стиля.";

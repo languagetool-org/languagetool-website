@@ -43,6 +43,7 @@
 
     $checkSubmitButtonValue = "Comprova el text";
     $checkSubmitButtonTitle = "Comprova el text";  //TODO: add "also possible by using Ctrl+Return"
+    $toggleFullscreenMode = "toggle fullscreen mode";
 
     $introText1 = "<strong>LanguageTool</strong> és una eina de programari lliure per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
     $introText2 = "";

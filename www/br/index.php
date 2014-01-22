@@ -42,6 +42,7 @@
 
     $checkSubmitButtonValue = 'Gwiriañ an destenn';
     $checkSubmitButtonTitle = "Gwiriañ an destenn";   //TODO: add "also possible by using Ctrl+Return"
+    $toggleFullscreenMode = "toggle fullscreen mode";
 
     $introText1 = "Un difazier yezhadurel liesyezhek frank ha digoust eo <strong>Language&shy;Tool</strong>.";
     $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>. Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. ";

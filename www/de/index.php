@@ -45,6 +45,7 @@
     $addYourTextHere = "Hier Text einfügen";  // used for languages that have no demo text
     $checkSubmitButtonValue = "Text Prüfen";
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
+    $toggleFullscreenMode = "Vollbild-Ansicht umschalten";
 
     $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch noch <a href='/languages/'>mehr als 20 weitere Sprachen</a> unter&shy;stützt.";
     $introText2 = "Sie können LanguageTool auf dieser Seite benutzen oder kostenlos herunterladen.";

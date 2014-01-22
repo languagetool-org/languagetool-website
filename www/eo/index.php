@@ -43,6 +43,7 @@
 
     $checkSubmitButtonValue = 'Kontroli';
     $checkSubmitButtonValue = 'Kontroli';  //TODO: add "also possible by using Ctrl+Return"
+    $toggleFullscreenMode = "toggle fullscreen mode";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
     $introText2 = "";

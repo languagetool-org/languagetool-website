@@ -43,6 +43,7 @@
 
     $checkSubmitButtonValue = 'Vérifier';
     $checkSubmitButtonTitle = "Vérifier";    //TODO: add "also possible by using Ctrl+Return"
+    $toggleFullscreenMode = "toggle fullscreen mode";
 
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
     $introText2 = "";
