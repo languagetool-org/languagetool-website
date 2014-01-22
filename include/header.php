@@ -23,7 +23,7 @@
         'media' => 'screen'
       ),
       array(
-        'src' => $rootUrl . '/favicon.ico?',
+        'src' => $rootUrl . '/favicon.ico',
         'rel' => "shortcut icon",
         'type' => "",
         'media' => ''
