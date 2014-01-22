@@ -9,44 +9,39 @@
       ?>
     <?php
     $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
-    $languageNamesWithPage = array("Breton", "Catalan", "Chinese", "Esperanto", "French", "German", "Italian", "Polish", "Russian", "Portuguese");
     $content = "";
     foreach ($languagesWithPage as $i => $value) {
         if ($value == $checkDefaultLang || substr($defaultLang, 0, 3) == $value."-") {
-            $langName = $languageNamesWithPage[$i];
-            switch ($langName) {
-                case "Breton":
+            switch ($value) {
+                case "br":
                     $content = "Ur <a href='$value/'>bajenn vrezhonek</a> hon eus ivez.";
                     break;
-                case "Esperanto":
+                case "eo":
                     $content = "Ni ankaŭ havas <a href='$value/'>hejmpaĝon en Esperanto</a>.";
                     break;
-                case "French":
+                case "fr":
                     $content = "Nous avons aussi une <a href='$value/'>page en français</a>.";
                     break;
-                case "German":
-                    $content = "Es gibt auch eine <a href='$value/'>Seite auf Deutsch</a>.";
+                case "de":
+                    $content = "<a href='$value/'>Informationen zu LanguageTool auf Deutsch</a>.";
                     break;
-                case "Italian":
+                case "it":
                     $content = "Abbiamo anche una <a href='$value/'>pagina in italiano</a>.";
                     break;
-                case "Catalan":
+                case "ca":
                     $content = "També tenim una <a href='$value/'>pàgina en català</a>.";
                     break;
-                case "Russian":
+                case "ru":
                     $content = "Внимание: у нас есть <a href='$value/'>страничка на русском языке</a>!";
                     break;
-                case "Portuguese":
+                case "pt":
                     $content = "Também temos uma <a href='$value/'>página em Português</a>.";
                     break;
-                default;
-                    $content = "We also have a <a href='$value/'>page in $langName</a>.";
             }
         }
     }
     if ($content != "") {
-        # TODO: comment in
-        #print "<div class='languageHomepage'>$content</div>";
+        print "<div class='languageHomepage'>$content</div>";
     }
     ?>
     </div>
