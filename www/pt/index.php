@@ -57,7 +57,7 @@
     $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
     $checklistText = "Por favor vê a <a href='/issues/'>lista de problemas comuns</a> se experienciares problemas.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
-    $webstartText = "Inicia-o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
+    $webstartText = "Inicia-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
