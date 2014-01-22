@@ -8,7 +8,7 @@
 
     // ------------- TRANSLATIONS START HERE -------------
 
-    $title = "LanguageTool Narzędzie korektorskie";
+    $title = "LanguageTool &mdash; Narzędzie korektorskie";
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
@@ -49,14 +49,14 @@
     $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych języków</a>.";
     $introText2 = "";
 
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadHeadline = "Pobierz";
+    $downloadRequiresJava = "Wymaga środowiska Java w wersji {version}";
     $downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
     $downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $checklistText = "W razie kłopotów z instalacją lub uruchomieniem warto zajrzeć na <a href='/issues/'>listę typowych problemów</a> (w języku angielskim).";
+    $otherDownloadsText = "Pobierz <a href='/download/'>starsze wersje</a> lub <a href='/download/snapshots/?C=M;O=D'>codzienne kompilacje próbne</a>.";
+    $webstartText = "Uruchom <a href='/webstart/web/LanguageTool.jnlp'>za pomocą interfejsu Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -72,12 +72,6 @@
 <div style="color:grey;font-size:smaller">
    <a href="#liboinstall" style="color:grey;">Instalacja w pakiecie LibreOffice/OpenOffice.org</a> – <a href="../usage/"  style="color:grey;">inne możliwości zastosowania (opis w języku angielskim)</a>
 </div> 
-
-<h2>Wypróbuj narzędzie LanguageTool</h2>
-
-LanguageTool można wypróbować <a href="/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
-bezpośrednio w przeglądarce:<br/><br/>
-
 
 
 <h2>Możliwości programu</h2>
