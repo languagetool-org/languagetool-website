@@ -49,14 +49,14 @@
     $introText1 = "<strong>LanguageTool</strong> è uno strumento Open Source che permette la correzione di testi scritti in <a href='/languages/'>più di 20 lingue</a>.";
     $introText2 = "";
 
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadHeadline = "Scarica";
+    $downloadRequiresJava = "Richiede Java {version}";
     $downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";
-    $downloadLabelFx = "LanguageTool browser extension for <strong>Firefox</strong>";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $downloadLabelFx = "Scarica il modulo aggiuntivo LanguageTool per il browser <strong>Firefox</strong>";
+    $checklistText = "Si prega di fare rifeimento alla <a href='/issues/'>nostra lista</a> per problemi.";
+    $otherDownloadsText = "Scarica le <a href='/download/'>vecchie versioni</a> o le <a href='/download/snapshots/?C=M;O=D'>build giornaliere</a>.";
+    $webstartText = "Lancialo <a href='/webstart/web/LanguageTool.jnlp'>con Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
