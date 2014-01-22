@@ -32,7 +32,7 @@
         'lt'  => 'Lithuanian',
         'ml'  => 'Malayalam',
         'pl'  => 'Polish',
-        'pt'  => 'Portuguese',
+        'pt'  => 'Português',
         'ro'  => 'Romanian',
         'ru'  => 'Russian',
         'sk'  => 'Slovak',
@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é software de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
+    $introText1 = "O <strong>LanguageTool</strong> é <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Descarregar";
@@ -55,7 +55,7 @@
     $downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";
     $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
-    $checklistText = "Por favor vê a <a href='/issues/'>a nossa lista de problemas comuns</a> se experienciares problemas.";
+    $checklistText = "Por favor vê a <a href='/issues/'>lista de problemas comuns</a> se experienciares problemas.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicia-o <a href='/webstart/web/LanguageTool.jnlp'>com o Java WebStart</a>.";
 
@@ -73,7 +73,7 @@
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 
-<h2 style="margin-top: 40px">Experimenta <em>on-line</em></h2>
+<h2 style="margin-top: 40px">Experimentar <em>on-line</em></h2>
 
 
 <p style="margin-top: 10px"><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
