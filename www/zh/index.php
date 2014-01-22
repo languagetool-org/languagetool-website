@@ -4,16 +4,33 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "zh";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool 文体和语法检测器";
+
+    $checkSubmitButtonValue = "检测文本";
+    //$checkSubmitButtonTitle = "检测文本";
+
+    $introText1 = "<strong>LanguageTool</strong>是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href='/languages/'>其他语言</a>的支持。";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    //$downloadTitle = "...";
+    //$downloadTitleStandAlone = "...";
+    //$downloadLabelFx = "...";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
-<p class="firstpara"><strong>LanguageTool是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href="../languages/">其他语言</a>的支持。</strong>
+<p><strong>LanguageTool是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href="../languages/">其他语言</a>的支持。</strong>
 你可以认为LanguageTool是一个能够检测出简单拼写错误检查器所无法检测的文本错误软件，例如：<em>二个人/两个人</em>这样的量词错误. 它也能发现一些语法错误，但不包括拼写检查。</p>
 
 <p>LanguageTool将错误规则定义在特定语言的配置文件里面从而查找错误。还可以编写Java规则来检测更为复杂的错误。</p>
@@ -22,47 +39,10 @@
 
 <p><a href="../usage/">在LibreOffice/OpenOffice.org中使用，或者作为独立应用程序使用，或者嵌入到其他系统中使用</a>，或者在这里使用：</p>
 
-<?php
-$checkSubmitButtonValue = "检测文本";
-$checkDefaultLang = "zh";
-include("../../include/checkform-embedded.php");
-?>
-
 <p style="margin-top: 10px"><strong>使用WebStart免安装试用LanguageTool。</strong>
 需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>及以上版本：<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">运行LanguageTool (29&nbsp;MB)</a></strong></p>
 
-
-<h2>下载</h2>
-
-<div class="downloadSection">
-	<div id="downloadButton">
-        <div id="download" style="margin: 0">
-            <?php
-            //TODO: translate these:
-            //$downloadTitle = "LanguageTool für <strong>LibreOffice/OpenOffice</strong>";
-            //$downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";
-            //$downloadLabelFx = "LanguageTool als Erweiterung für <strong>Firefox</strong>";
-            ?>
-            <?php include("../../include/pages/download-buttons.php"); ?>
-        </div>
-	</div>
-	<ul>
-		<li>需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>及以上版本。</li>
-        <li>在LibreOffice/OpenOffice.org中安装方法：<em>Tools -&gt; Extension Manager -&gt; Add...</em>或者查看 <a href="../usage/">其他的方法来使用LanguageTool</a>。</li>
-        <li>在安装这个插件之后<strong>重启OpenOffice.org/LibreOffice</strong>。</li>
-        <li>如果你正在使用LibreOffice 3.5并且你想检测中文文本:
-  			使用<em>Options -> Language Settings -> Writing Aids -> Edit...</em>来关闭LightProof并启动LanguageTool的中文检测功能。</li>
-        <li>如果有问题，请查看<a href="../issues">常见问题列表</a>。</li>
-		<li>请在<a href="../forum">我们的论坛</a>或者
-          <a href="http://sourceforge.net/tracker/?group_id=110216&amp;atid=655717">Sourceforge bug tracker</a>中报告程序bug。</li>
-	</ul>
-</div>
-
-<p>未经测试的当前版本的daily builds可在
-<a href="download/snapshots/">快照目录</a>
- (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>)中获得。
- 旧版本仍然可以在<a href="../download/">下载目录</a>中下载。</p>
 
 <h2>新闻</h2>
 
@@ -100,9 +80,7 @@ include("../../include/checkform-embedded.php");
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

@@ -4,12 +4,62 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "pt";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool Corrector Gramatical e de Estilo";
+
+    // TODO: translate language names and sort them alphabetically (by translation, not by code)
+    $checkLanguage = array(
+        'ast' => 'Asturian',
+        'be'  => 'Belarusian',
+        'br'  => 'Breton',
+        'ca'  => 'Catalan',
+        'zh'  => 'Chinese',
+        'da'  => 'Danish',
+        'nl'  => 'Dutch',
+        'en-US'  => 'English',
+        'eo'  => 'Esperanto',
+        'fr'  => 'French',
+        'gl'  => 'Galician',
+        'de-DE'  => 'German',
+        'el'  => 'Greek',
+        'is'  => 'Icelandic',
+        'it'  => 'Italian',
+        'ja'  => 'Japanese',
+        'km'  => 'Khmer',
+        'lt'  => 'Lithuanian',
+        'ml'  => 'Malayalam',
+        'pl'  => 'Polish',
+        'pt'  => 'Portuguese',
+        'ro'  => 'Romanian',
+        'ru'  => 'Russian',
+        'sk'  => 'Slovak',
+        'sl'  => 'Slovenian',
+        'es'  => 'Spanish',
+        'sv'  => 'Swedish',
+        'tl'  => 'Tagalog',
+        'uk'  => 'Ukrainian'
+    );
+
+    $checkSubmitButtonValue = "Verificar Texto";
+    $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
+
+    $introText1 = "O <strong>LanguageTool</strong> é software Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc..";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";
+    $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
@@ -17,19 +67,9 @@
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot of LanguageTool"/></a>
 
-<p class="firstpara"><strong>O LanguageTool é <em>software</em> Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc.. Ele 
-encontra muitos erros que um simples corrector ortográfico não detecta, 
-tal como misturar <em>there</em>/<em>their</em> e detecta alguns problemas 
-gramaticais.<br/><br/><br/></strong></p>
 
 <h2 style="margin-top: 40px">Experimenta-o <em>on-line</em></h2>
 
-
-<?php
-$checkSubmitButtonValue = "Verificar Texto";
-$checkDefaultLang = "pt";
-include("../../include/checkform-embedded.php");
-?>
 
 <p style="margin-top: 10px"><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
 <strong><a href="../webstart/web/LanguageTool.jnlp">Iniciar o LanguageTool</a></strong> 
@@ -42,15 +82,7 @@ include("../../include/checkform-embedded.php");
 
 <noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares uma transferência</noscript>
 
-<?php
-$downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";
-$downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
-
+    <!--
     <div class="downloadSection">
     <table width="90%">
         <td valign="top">
@@ -92,6 +124,7 @@ $downloadLabelFx = "Descarregar LanguageToolFx Extensão para o Mozilla <strong>
       </tr>
     </table>
 </div>
+-->
 
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
 disponíveis na
@@ -107,9 +140,7 @@ O código-fonte está disponível em <a href="https://github.com/languagetool-or
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

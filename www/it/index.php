@@ -4,12 +4,62 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "it";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool Correttore di Stile e Grammatica";
+
+    // TODO: translate language names and sort them alphabetically (by translation, not by code)
+    $checkLanguage = array(
+        'ast' => 'Asturian',
+        'be'  => 'Belarusian',
+        'br'  => 'Breton',
+        'ca'  => 'Catalan',
+        'zh'  => 'Chinese',
+        'da'  => 'Danish',
+        'nl'  => 'Dutch',
+        'en-US'  => 'English',
+        'eo'  => 'Esperanto',
+        'fr'  => 'French',
+        'gl'  => 'Galician',
+        'de-DE'  => 'German',
+        'el'  => 'Greek',
+        'is'  => 'Icelandic',
+        'it'  => 'Italian',
+        'ja'  => 'Japanese',
+        'km'  => 'Khmer',
+        'lt'  => 'Lithuanian',
+        'ml'  => 'Malayalam',
+        'pl'  => 'Polish',
+        'pt'  => 'Portuguese',
+        'ro'  => 'Romanian',
+        'ru'  => 'Russian',
+        'sk'  => 'Slovak',
+        'sl'  => 'Slovenian',
+        'es'  => 'Spanish',
+        'sv'  => 'Swedish',
+        'tl'  => 'Tagalog',
+        'uk'  => 'Ukrainian'
+    );
+
+    $checkSubmitButtonValue = "Controlla";
+    $checkSubmitButtonTitle = "Controlla";   //TODO: add "also by using Ctrl+Return"
+
+    $introText1 = "<strong>LanguageTool</strong> è uno strumento Open Source che permette la correzione di testi scritti in <a href='/languages/'>più di 20 lingue</a>.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";
+    //$downloadLabelFx = "";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
@@ -27,12 +77,6 @@
 <p>Potete utilizzare LanguageTool <a href="../usage/">in LibreOffice/OpenOffice.org, come applicazione a sé stante o inclusa in altre applicazioni</a>.</p>
 <p>In alternativa, potete provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
-<?php
-$checkSubmitButtonValue = "Controlla";
-$checkDefaultLang = "it";
-include("../../include/checkform-embedded.php");
-?>
-
 <p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
 Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive:<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">Start LanguageTool (&gt;30&nbsp;MB)</a></strong></p>
@@ -42,15 +86,7 @@ Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o 
 <p>LanguageTool richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive.
 <strong>State riscontrando dei problemi? Controllate la <a href="../issues">lista dei problemi noti</a>.</strong></p>
 
-<?php
-$downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";
-//$downloadLabelFx = "";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
-
+<!--
     <div class="downloadSection">
     <table width="90%">
       <tr>
@@ -90,7 +126,8 @@ $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</stro
       </tr>
     </table>
 </div>
-
+-->
+    
 <p>Versioni non testate e aggiornate giornalmente del tool sono disponibili al link
 <a href="../download/snapshots/?C=M;O=D">versioni di sviluppo</a>
  (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
@@ -106,9 +143,7 @@ licenza <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

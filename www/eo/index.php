@@ -4,16 +4,64 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "eo";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "Lingvoilo Stila kaj gramatika kontrolilo";
+
+    $checkLanguage = array(
+        'ast' => 'asturia',
+        'auto' => 'aŭtomate detekti',
+        'be' => 'belarusa',
+        'br' => 'bretona',
+        'ca' => 'kataluna',
+        'da' => 'dana',
+        'de-DE' => 'germana',
+        'en-US' => 'angla',
+        'eo' => 'Esperanto',
+        'es' => 'hispana',
+        'fr' => 'franca',
+        'gl' => 'galega',
+        'is' => 'islanda',
+        'it' => 'itala',
+        'km' => 'kmera',
+        'lt' => 'litova',
+        'ml' => 'malajala',
+        'nl' => 'nederlanda',
+        'pl' => 'pola',
+        'pt' => 'portugala',
+        'ro' => 'rumana',
+        'ru' => 'rusa',
+        'sk' => 'slovaka',
+        'sl' => 'slovena',
+        'sv' => 'sveda',
+        'tl' => 'tagaloga',
+        'uk' => 'ukraina',
+        'zh' => 'ĉina'
+    );
+
+    $checkSubmitButtonValue = 'Kontroli';
+    $checkSubmitButtonValue = 'Kontroli';  //TODO: add "also possible by using Ctrl+Return"
+
+    $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
+    $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
-<p class="firstpara"><strong>Lingvoilo (LanguageTool) estas libera plurlingva
+<p><strong>Lingvoilo (LanguageTool) estas libera plurlingva
 programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en
 <a href="../languages/">multaj aliaj lingvoj</a>.</strong>
 Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.</p>
@@ -30,55 +78,7 @@ aŭ <a href="http://www.lernu.net">Lernu!</a>) aŭ al la
 <a href="http://www.reta-vortaro.de/revo/">Reta Vortaro</a>
 por pliaj detalaj klarigoj pri la eraro.</p>
 
-<h2>Provu Lingvoilo-n rete sen instali ĝin</h2>
-
-<?php
-$checkSubmitButtonValue = 'Kontroli';
-
-$checkDefaultLang = 'eo';
-
-$checkLanguage['ast']   = 'asturia';
-$checkLanguage['auto']  = 'aŭtomate detekti';
-$checkLanguage['be']    = 'belarusa';
-$checkLanguage['br']    = 'bretona';
-$checkLanguage['ca']    = 'kataluna';
-$checkLanguage['da']    = 'dana';
-$checkLanguage['de-DE'] = 'germana';
-$checkLanguage['en-US'] = 'angla';
-$checkLanguage['eo']    = 'Esperanto';
-$checkLanguage['es']    = 'hispana';
-$checkLanguage['fr']    = 'franca';
-$checkLanguage['gl']    = 'galega';
-$checkLanguage['is']    = 'islanda';
-$checkLanguage['it']    = 'itala';
-$checkLanguage['km']    = 'kmera';
-$checkLanguage['lt']    = 'litova';
-$checkLanguage['ml']    = 'malajala';
-$checkLanguage['nl']    = 'nederlanda';
-$checkLanguage['pl']    = 'pola';
-$checkLanguage['pt']    = 'portugala';
-$checkLanguage['ro']    = 'rumana';
-$checkLanguage['ru']    = 'rusa';
-$checkLanguage['sk']    = 'slovaka';
-$checkLanguage['sl']    = 'slovena';
-$checkLanguage['sv']    = 'sveda';
-$checkLanguage['tl']    = 'tagaloga';
-$checkLanguage['uk']    = 'ukraina';
-$checkLanguage['zh']    = 'ĉina';
-
-include("../../include/checkform-embedded.php");
-?>
-
 <h2>Elŝutado</h2>
-
-<?php
-$downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
-$downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
 
 <div class="downloadSection">
   <table width="90%">
@@ -180,9 +180,7 @@ Kodofonto elŝuteblas ĉe <a href="https://github.com/languagetool-org/languaget
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

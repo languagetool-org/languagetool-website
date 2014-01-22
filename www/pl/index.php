@@ -4,26 +4,66 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "pl";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool Narzędzie korektorskie";
+
+    // TODO: translate language names and sort them alphabetically (by translation, not by code)
+    $checkLanguage = array(
+        'ast' => 'Asturian',
+        'be'  => 'Belarusian',
+        'br'  => 'Breton',
+        'ca'  => 'Catalan',
+        'zh'  => 'Chinese',
+        'da'  => 'Danish',
+        'nl'  => 'Dutch',
+        'en-US'  => 'English',
+        'eo'  => 'Esperanto',
+        'fr'  => 'French',
+        'gl'  => 'Galician',
+        'de-DE'  => 'German',
+        'el'  => 'Greek',
+        'is'  => 'Icelandic',
+        'it'  => 'Italian',
+        'ja'  => 'Japanese',
+        'km'  => 'Khmer',
+        'lt'  => 'Lithuanian',
+        'ml'  => 'Malayalam',
+        'pl'  => 'Polish',
+        'pt'  => 'Portuguese',
+        'ro'  => 'Romanian',
+        'ru'  => 'Russian',
+        'sk'  => 'Slovak',
+        'sl'  => 'Slovenian',
+        'es'  => 'Spanish',
+        'sv'  => 'Swedish',
+        'tl'  => 'Tagalog',
+        'uk'  => 'Ukrainian'
+    );
+
+    $checkSubmitButtonValue = "Sprawdź tekst";
+    $checkSubmitButtonTitle = "Sprawdź tekst";   //TODO: "also possible by using Ctrl+Return"
+
+    $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych języków</a>.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
+    $downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
 <p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="/languages/">25 innych języków</a>.</p>
-
-<?php
-$downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
-$downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
-
 
 <div style="color:grey;font-size:smaller">
    <a href="#liboinstall" style="color:grey;">Instalacja w pakiecie LibreOffice/OpenOffice.org</a> – <a href="../usage/"  style="color:grey;">inne możliwości zastosowania (opis w języku angielskim)</a>
@@ -34,11 +74,6 @@ $downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
 LanguageTool można wypróbować <a href="/webstart/web/LanguageTool.jnlp">za pomocą interfejsu Java WebStart</a> lub 
 bezpośrednio w przeglądarce:<br/><br/>
 
-<?php
-$checkSubmitButtonValue = "Sprawdź tekst";
-$checkDefaultLang = "pl";
-include("../../include/checkform-embedded.php");
-?>
 
 
 <h2>Możliwości programu</h2>
@@ -131,9 +166,7 @@ Informacje na temat rozwoju projektu podajemy też na polskim blogu <a href="htt
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

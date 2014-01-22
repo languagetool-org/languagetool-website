@@ -10,7 +10,6 @@
     
     $title = "LanguageTool Stil- und Grammatikprüfung";
 
-    $checkSubmitButtonValue = "Text Prüfen";
     $checkLanguage = array(
         'ast' => 'Asturisch',
         'br'  => 'Bretonisch',

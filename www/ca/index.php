@@ -4,12 +4,60 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "ca";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool - Corrector gramatical i d'estil";
+
+    $checkLanguage = array(
+        //'auto' => 'detecció automàtica',
+        'en-US' => 'anglès',
+        'ast' => 'asturià',
+        'be' => 'bielorús',
+        'br' => 'bretó',
+        'zh' => 'xinès',
+        'da' => 'danès',
+        'eo' => 'esperanto',
+        'fr' => 'francès',
+        'gl' => 'gallec',
+        'de-DE' => 'alemany',
+        'es' => 'espanyol',
+        'is' => 'islandès',
+        'it' => 'italià',
+        'ca' => 'català',
+        'km' => 'khmer',
+        'lt' => 'lituà',
+        'ml' => 'malaiàlam',
+        'nl' => 'nederlandès',
+        'pl' => 'polonès',
+        'pt' => 'portuguès',
+        'ro' => 'romanès',
+        'ru' => 'rus',
+        'sk' => 'elovac',
+        'sl' => 'eslovè',
+        'sv' => 'suec',
+        'tl' => 'tagàlog',
+        'uk' => 'ucraïnès'
+    );
+
+    $checkSubmitButtonValue = "Comprova el text";
+    $checkSubmitButtonTitle = "Comprova el text";  //TODO: add "also possible by using Ctrl+Return"
+
+    $introText1 = "<strong>LanguageTool</strong> és una eina de programari lliure per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Descarrega LanguageTool per a <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Descarrega LanguageTool com a <strong>programa independent</strong>";
+    $downloadLabelFx = "Descarrega LanguageToolFx Extensió per a <strong>Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
@@ -20,57 +68,11 @@
 Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
 ací en el navegador:<br/><br/>
 
-<?php
-$checkSubmitButtonValue = "Comprova el text";
-$checkDefaultLang = "ca";
-
-$checkLanguage['auto']  = 'detecció automàtica';
-$checkLanguage['en-US'] = 'anglès';
-$checkLanguage['ast']   = 'asturià';
-$checkLanguage['be']    = 'bielorús';
-$checkLanguage['br']    = 'bretó';
-$checkLanguage['zh']    = 'xinès';
-$checkLanguage['da']    = 'danès';
-$checkLanguage['eo']    = 'esperanto';
-$checkLanguage['fr']    = 'francès';
-$checkLanguage['gl']    = 'gallec';
-$checkLanguage['de-DE'] = 'alemany';
-$checkLanguage['es']    = 'espanyol';
-$checkLanguage['is']    = 'islandès';
-$checkLanguage['it']    = 'italià';
-$checkLanguage['ca']    = 'català';
-$checkLanguage['km']    = 'khmer';
-$checkLanguage['lt']    = 'lituà';
-$checkLanguage['ml']    = 'malaiàlam';
-$checkLanguage['nl']    = 'nederlandès';
-$checkLanguage['pl']    = 'polonès';
-$checkLanguage['pt']    = 'portuguès';
-$checkLanguage['ro']    = 'romanès';
-$checkLanguage['ru']    = 'rus';
-$checkLanguage['sk']    = 'elovac';
-$checkLanguage['sl']    = 'eslovè';
-$checkLanguage['sv']    = 'suec';
-$checkLanguage['tl']    = 'tagàlog';
-$checkLanguage['uk']    = 'ucraïnès';
-
-include("../../include/checkform-embedded.php");
-?>
-
-<br/><br/>
 
 <h2>Descàrrega</h2>
 
 <p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o posterior.
 <strong>Teniu problemes? Consulteu la <a href="../issues">llista de problemes habituals</a>.</strong></p>
-
-<?php
-$downloadTitle = "Descarrega LanguageTool per a <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Descarrega LanguageTool com a <strong>programa independent</strong>";
-$downloadLabelFx = "Descarrega LanguageToolFx Extensió per a <strong>Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
 
 
 <h2>Funcions</h2>
@@ -169,9 +171,7 @@ Per a comentaris específics de LanguageTool en català, podeu escriure en aques
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

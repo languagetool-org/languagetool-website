@@ -4,12 +4,63 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "ru";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool Программа для проверки грамматики и стиля";
+
+    // TODO: translate language names and sort them alphabetically (by translation, not by code)
+    $checkLanguage = array(
+        'ast' => 'Asturian',
+        'be'  => 'Belarusian',
+        'br'  => 'Breton',
+        'ca'  => 'Catalan',
+        'zh'  => 'Chinese',
+        'da'  => 'Danish',
+        'nl'  => 'Dutch',
+        'en-US'  => 'English',
+        'eo'  => 'Esperanto',
+        'fr'  => 'French',
+        'gl'  => 'Galician',
+        'de-DE'  => 'German',
+        'el'  => 'Greek',
+        'is'  => 'Icelandic',
+        'it'  => 'Italian',
+        'ja'  => 'Japanese',
+        'km'  => 'Khmer',
+        'lt'  => 'Lithuanian',
+        'ml'  => 'Malayalam',
+        'pl'  => 'Polish',
+        'pt'  => 'Portuguese',
+        'ro'  => 'Romanian',
+        'ru'  => 'Russian',
+        'sk'  => 'Slovak',
+        'sl'  => 'Slovenian',
+        'es'  => 'Spanish',
+        'sv'  => 'Swedish',
+        'tl'  => 'Tagalog',
+        'uk'  => 'Ukrainian'
+    );
+
+    $checkSubmitButtonValue = "Проверить текст";
+    $checkSubmitButtonTitle = "Проверить текст";   //TODO: add "also possible by using Ctrl+Return"
+
+    // TODO: add &shy; to make long words break in the browser
+    $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики и стиля.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
+    $downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
@@ -69,27 +120,12 @@
 </p>
 <h2>Проверить текст</h2>
 
-<?php
-$checkSubmitButtonValue = "Проверить текст";
-$checkDefaultLang = "ru";
-include("../../include/checkform-embedded.php");
-?>
-
 <h2>Демонстрация возможностей LanguageTool</h2>
 
 <p><a href="http://community.languagetool.org/?lang=ru">Здесь</a> можно запустить  LanguageTool непосредственно в браузере.
 </p>
 
 <h2>Скачать</h2>
-
-<?php
-$downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
-$downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
 
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
@@ -296,12 +332,9 @@ LanguageTool можно использовать для проверки гра�
 Исходный код доступен <a href="https://github.com/languagetool-org/">на GitHub</a> через Git.
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
+</div>
 
-
-
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

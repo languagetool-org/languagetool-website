@@ -4,19 +4,63 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "br";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool - An difazier yezhadurel frank evit ar brezhoneg";
+    
+    $checkLanguage = array(
+        'de-DE' => 'alamaneg',
+        'ast' => 'astureg',
+        'be' => 'belaruseg',
+        'br' => 'brezhoneg',
+        'da' => 'daneg',
+        'eo' => 'esperanteg',
+        'fr' => 'galleg',
+        'gl' => 'galizeg',
+        'is' => 'islandeg',
+        'it' => 'italianeg',
+        'ca' => 'katalaneg',
+        'km' => 'khmer',
+        'lt' => 'lituaneg',
+        'ml' => 'malayalam',
+        'nl' => 'nederlandeg',
+        'pl' => 'poloneg',
+        'pt' => 'portugaleg',
+        'ro' => 'roumaneg',
+        'ru' => 'rusianeg',
+        'en-US' => 'saozneg',
+        'zh' => 'sinaeg',
+        'sk' => 'slovakeg',
+        'sl' => 'sloveneg',
+        'es' => 'spagnoleg',
+        'sv' => 'svedeg',
+        'tl' => 'tagalog',
+        'uk' => 'ukraineg'
+    );
+
+    $checkSubmitButtonValue = 'Gwiriañ an destenn';
+    $checkSubmitButtonTitle = "Gwiriañ an destenn";   //TODO: add "also possible by using Ctrl+Return"
+
+    $introText1 = "Un difazier yezhadurel liesyezhek frank ha digoust eo <strong>Language&shy;Tool</strong>.";
+    $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>. Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. ";
+    
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
+    $downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
-<p class="firstpara"><strong>Un difazier yezhadurel liesyezhek frank ha digoust eo LanguageTool.</strong>
-Barrek eo da wiriañ testennoù e brezhoneg pe e <a href="http://www.languagetool.org/languages/">yezhoù all</a>.
-Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice.
-</p>
 <p>
 LanguageTool a gav fazioù evel ar c’hemmadurioù direizh
 (ar paotred → ar baotred) hag all, fazioù na vezont ket kavet
@@ -29,53 +73,6 @@ geriadur brezhoneg</a> gant LanguageTool ivez.
 </p>
 
 <h2>LanguageTool enlinenn</h2>
-
-<?php
-$checkSubmitButtonValue = 'Gwiriañ an destenn';
-
-$checkDefaultLang = 'br';
-
-$checkLanguage['ast']   = 'astureg';
-$checkLanguage['be']    = 'belaruseg';
-$checkLanguage['br']    = 'brezhoneg';
-$checkLanguage['ca']    = 'katalaneg';
-$checkLanguage['da']    = 'daneg';
-$checkLanguage['de-DE'] = 'alamaneg';
-$checkLanguage['en-US'] = 'saozneg';
-$checkLanguage['eo']    = 'esperanteg';
-$checkLanguage['es']    = 'spagnoleg';
-$checkLanguage['fr']    = 'galleg';
-$checkLanguage['gl']    = 'galizeg';
-$checkLanguage['is']    = 'islandeg';
-$checkLanguage['it']    = 'italianeg';
-$checkLanguage['km']    = 'khmer';
-$checkLanguage['lt']    = 'lituaneg';
-$checkLanguage['ml']    = 'malayalam';
-$checkLanguage['nl']    = 'nederlandeg';
-$checkLanguage['pl']    = 'poloneg';
-$checkLanguage['pt']    = 'portugaleg';
-$checkLanguage['ro']    = 'roumaneg';
-$checkLanguage['ru']    = 'rusianeg';
-$checkLanguage['sk']    = 'slovakeg';
-$checkLanguage['sl']    = 'sloveneg';
-$checkLanguage['sv']    = 'svedeg';
-$checkLanguage['tl']    = 'tagalog';
-$checkLanguage['uk']    = 'ukraineg';
-$checkLanguage['zh']    = 'sinaeg';
-
-include("../../include/checkform-embedded.php");
-?>
-
-<h2>Pellgargañ</h2>
-
-<?php
-$downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
-$downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
 
 <p>Ar restr da bellgargañ a dalvez evit ar brezhoneg hag an holl yezhoù all.</p>
 
@@ -118,9 +115,7 @@ Gallout a rit implijout LanguageTool gant an aotre
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>

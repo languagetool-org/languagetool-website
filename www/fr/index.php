@@ -4,16 +4,64 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
+    $checkDefaultLang = "fr";
+
+    // ------------- TRANSLATIONS START HERE -------------
+
     $title = "LanguageTool Correcteur grammatical";
+
+    $checkLanguage = array(
+        //'auto' => 'détecter automatiquement',
+        'en-US' => 'anglais',
+        'ast' => 'asturien',
+        'be' => 'biélorusse',
+        'br' => 'breton',
+        'zh' => 'chinois',
+        'da' => 'danois',
+        'eo' => 'espéranto',
+        'fr' => 'français',
+        'gl' => 'galicien',
+        'de-DE' => 'allemand',
+        'es' => 'espagnol',
+        'is' => 'islandais',
+        'it' => 'italien',
+        'ca' => 'catalan',
+        'km' => 'khmer',
+        'lt' => 'lituanien',
+        'ml' => 'malayalam',
+        'nl' => 'néerlandais',
+        'pl' => 'polonais',
+        'pt' => 'portugais',
+        'ro' => 'roumain',
+        'ru' => 'russe',
+        'sk' => 'slovaque',
+        'sl' => 'slovène',
+        'sv' => 'suédois',
+        'tl' => 'tagalog',
+        'uk' => 'ukrainien'
+    );
+
+    $checkSubmitButtonValue = 'Vérifier';
+    $checkSubmitButtonTitle = "Vérifier";    //TODO: add "also possible by using Ctrl+Return"
+
+    $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
+    $introText2 = "";
+
+    $downloadRequiresJava = "Requires Java {version}";
+    $downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
+    $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
+
+    // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/partials/nav.php"); ?>
+<?php include("../../include/page_start.php"); ?>
 
 <div id="textcontent">
 
-<p class="firstpara"><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
+<p><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
 français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href="../languages/">plus de 20 autres langues</a>.
 Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simple correcteur orthographique
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
@@ -27,43 +75,6 @@ Il est aussi possible de définir des règles en Java.</p>
 <p>Utilisez LanguageTool <a href="../usage/">dans LibreOffice/OpenOffice.org, comme une application autonome, ou intégrée à d’autres applications</a>
   ou essayez-le ici sur cette page :</p>
 
-<?php
-$checkSubmitButtonValue = 'Vérifier';
-
-$checkDefaultLang = 'fr';
-
-$checkLanguage['auto']  = 'détecter automatiquement';
-$checkLanguage['en-US'] = 'anglais';
-$checkLanguage['ast']   = 'asturien';
-$checkLanguage['be']    = 'biélorusse';
-$checkLanguage['br']    = 'breton';
-$checkLanguage['zh']    = 'chinois';
-$checkLanguage['da']    = 'danois';
-$checkLanguage['eo']    = 'espéranto';
-$checkLanguage['fr']    = 'français';
-$checkLanguage['gl']    = 'galicien';
-$checkLanguage['de-DE'] = 'allemand';
-$checkLanguage['es']    = 'espagnol';
-$checkLanguage['is']    = 'islandais';
-$checkLanguage['it']    = 'italien';
-$checkLanguage['ca']    = 'catalan';
-$checkLanguage['km']    = 'khmer';
-$checkLanguage['lt']    = 'lituanien';
-$checkLanguage['ml']    = 'malayalam';
-$checkLanguage['nl']    = 'néerlandais';
-$checkLanguage['pl']    = 'polonais';
-$checkLanguage['pt']    = 'portugais';
-$checkLanguage['ro']    = 'roumain';
-$checkLanguage['ru']    = 'russe';
-$checkLanguage['sk']    = 'slovaque';
-$checkLanguage['sl']    = 'slovène';
-$checkLanguage['sv']    = 'suédois';
-$checkLanguage['tl']    = 'tagalog';
-$checkLanguage['uk']    = 'ukrainien';
-
-include("../../include/checkform-embedded.php");
-?>
-
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
 L’application LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> :<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">Démarrer LanguageTool (&gt;30&nbsp;Mo)</a></strong></p>
@@ -72,15 +83,7 @@ L’application LanguageTool nécessite <a href="http://www.java.com/en/download
 
 <p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
 
-<?php
-$downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
-$downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
-$downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
-?>
-<div id="download" style="margin: 0">
-    <?php include("../../include/pages/download-buttons.php"); ?>
-</div>
-
+<!--
     <div class="downloadSection">
     <table width="90%">
       <tr>
@@ -133,7 +136,8 @@ $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
       </tr>
     </table>
 </div>
-
+-->
+    
 <p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt git sont disponibles dans le
 <a href="../download/snapshots/?C=M;O=D">répertoire snapshot</a>
  (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
@@ -158,9 +162,7 @@ Le contenu de cette page est disponible sous la licence <a href="http://creative
 
 </div>
 
-<?php
-include("../../include/footer.php");
-?>
+<?php include("../../include/page_end.php"); ?>
 
 </body>
 </html>
