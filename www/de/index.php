@@ -63,7 +63,7 @@
 
 <?php include("../../include/page_start.php"); ?>
 
-<div id="languageContent">
+<div id="textcontent">
 
     <h2>Funktionen</h2>
 

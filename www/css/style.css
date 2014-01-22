@@ -8,7 +8,7 @@
 }
 body {
   color: #777777;
-  /* standard content page without much images etc: */
+  /* standard content page without many images etc: */
 }
 body #screenshots .imgbox {
   width: 320px;
@@ -32,9 +32,10 @@ body #screenshots .imgboxcontainer ~ * {
   clear: both;
 }
 body #textcontent {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 856px;
+  margin: 60px auto 70px auto;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-bottom: 100px;
   color: #111111;
 }
@@ -184,6 +185,7 @@ body #header #container #social {
   position: relative;
   top: 4px;
   float: right;
+  margin-right: 10px;
 }
 body #header #container #social a {
   margin-left: 10px;
@@ -402,59 +404,6 @@ body #download .button_container .inner_button .meta {
   color: rgba(0, 0, 0, 0.6);
   background-color: #fee275;
   padding: 8px 20px;
-}
-body #languageContent {
-  max-width: 900px;
-  margin: 60px auto 70px auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: black;
-}
-body #languageContent h2 {
-  font-size: 36px;
-  font-weight: 400;
-  color: #000;
-  margin: 0px;
-  margin-bottom: 20px;
-}
-body #languageContent p {
-  margin-bottom: 10px;
-}
-body #languageContent .headlines {
-  color: #444444;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-body #languageContent h1 {
-  color: #444444;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-body #languageContent h2 {
-  color: #444444;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-body #languageContent ul,
-body #languageContent ol {
-  margin-left: 30px;
-  margin-right: 60px;
-  margin-bottom: 10px;
-}
-body #languageContent ul li,
-body #languageContent ol li {
-  margin-bottom: 5px;
-}
-body #languageContent tt {
-  background-color: #eee;
-  font-family: monospace;
-}
-body #languageContent .errorMarker {
-  padding-bottom: 2px;
-  background-image: url("../images/squiggle.png");
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  vertical-align: text-top;
 }
 body #actions {
   background-color: #373737;

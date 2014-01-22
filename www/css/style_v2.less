@@ -40,11 +40,12 @@ body {
     }
   }
 
-  /* standard content page without much images etc: */
+  /* standard content page without many images etc: */
   #textcontent {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 856px;
+    margin: 60px auto 70px auto;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-bottom: 100px;
     color: @textColor;
     p {
@@ -186,6 +187,7 @@ body {
         position: relative;
         top: 4px;
         float: right;
+        margin-right: 10px;
         a {
           margin-left: 10px;
           float: right;
@@ -407,53 +409,6 @@ body {
           padding: 8px 20px;
         }
       }
-    }
-  }
-  #languageContent {
-    max-width: 900px;
-    margin: 60px auto 70px auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    color: black;
-    h2 {
-      font-size: 36px;
-      font-weight: 400;
-      color: #000;
-      margin: 0px;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 10px;
-    }
-    .headlines {
-      color: lighten(@textColor, 20%);
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    h1 {
-      .headlines;
-    }
-    h2 {
-      .headlines;
-    }
-    ul, ol {
-      margin-left: 30px;
-      margin-right: 60px;
-      margin-bottom: 10px;
-      li {
-        margin-bottom: 5px;
-      }
-    }
-    tt {
-      background-color: #eee;
-      font-family: monospace;
-    }
-    .errorMarker {
-      padding-bottom: 2px;
-      background-image: url("../images/squiggle.png");
-      background-repeat: repeat-x;
-      background-position: left bottom;
-      vertical-align: text-top;
     }
   }
   #actions {
