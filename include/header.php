@@ -61,7 +61,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <?php foreach ($assets['links'] as $link) { ?>
-  <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>" type="<?= $link['type'] ?>" media="<?= $link['media'] ?>" />
+  <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>"
+    <?php if ($link['type']) { ?>
+        type="<?= $link['type'] ?>" 
+    <?php } ?>
+    <?php if ($link['media']) { ?>
+        media="<?= $link['media'] ?>"
+    <?php } ?>
+  />
 <?php } ?>
 
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
@@ -123,12 +130,12 @@
 
 <?php if ($enable_textcheck) { ?>
 
-  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
+  <script type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
+  <script type="text/javascript" src="<?php print $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
   <?php if ($hasJQuery == 0) { ?>
-    <script language="javascript" type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="<?php print $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
-  <script language="javascript" type="text/javascript">
+  <script type="text/javascript">
 
    tinyMCE.init({
        mode : "textareas",
