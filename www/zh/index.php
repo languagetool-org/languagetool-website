@@ -32,7 +32,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p><strong>LanguageTool是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href="../languages/">其他语言</a>的支持。</strong>
 你可以认为LanguageTool是一个能够检测出简单拼写错误检查器所无法检测的文本错误软件，例如：<em>二个人/两个人</em>这样的量词错误. 它也能发现一些语法错误，但不包括拼写检查。</p>

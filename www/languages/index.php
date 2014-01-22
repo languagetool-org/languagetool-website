@@ -11,7 +11,7 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <p>LanguageTool supports several languages to a different degree. This page lists the
 number of rules per language to give a very rough indication of how well a

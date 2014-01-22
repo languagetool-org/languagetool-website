@@ -12,7 +12,7 @@
 <?php include("../../include/partials/nav.php"); ?>
 
 <div id="screenshots">
-<div id="textcontent">
+<div id="textContent">
     
 <h1>Screenshots</h1>
 

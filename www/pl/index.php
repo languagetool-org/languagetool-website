@@ -65,7 +65,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p>LanguageTool to <a href="http://pl.wikipedia.org/wiki/Wolnodost%C4%99pne_oprogramowanie" target="_blank">wolnodostępne</a> narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href="/languages/">25 innych języków</a>.</p>
 

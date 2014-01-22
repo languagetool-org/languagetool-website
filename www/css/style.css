@@ -31,7 +31,7 @@ body #screenshots .imgbox > a:last-of-type {
 body #screenshots .imgboxcontainer ~ * {
   clear: both;
 }
-body #textcontent {
+body #textContent {
   max-width: 856px;
   margin: 60px auto 70px auto;
   padding-right: 15px;
@@ -39,55 +39,172 @@ body #textcontent {
   margin-bottom: 100px;
   color: #111111;
 }
-body #textcontent p {
+body #textContent p {
   margin-bottom: 10px;
 }
-body #textcontent .headlines {
+body #textContent .headlines {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #textcontent h1 {
+body #textContent h1 {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #textcontent h2 {
+body #textContent h2 {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-body #textcontent ul,
-body #textcontent ol {
+body #textContent ul,
+body #textContent ol {
   margin-left: 30px;
   margin-right: 60px;
   margin-bottom: 10px;
 }
-body #textcontent ul li,
-body #textcontent ol li {
+body #textContent ul li,
+body #textContent ol li {
   margin-bottom: 5px;
 }
-body #textcontent tt {
+body #textContent tt {
   background-color: #eee;
   font-family: monospace;
 }
-body #textcontent .errorMarker {
+body #textContent .errorMarker {
   padding-bottom: 2px;
   background-image: url("../images/squiggle.png");
   background-repeat: repeat-x;
   background-position: left bottom;
   vertical-align: text-top;
 }
-body #textcontent .oldInformation {
+body #textContent .oldInformation {
   color: #777777;
 }
-body #textcontent .oldInformation a {
+body #textContent .oldInformation a {
   color: #98a6f3;
 }
-body #textcontent .langVariants {
+body #textContent .langVariants {
   color: #808080;
 }
-body #textcontent .maintainerNeeded {
+body #textContent .maintainerNeeded {
+  background-color: #ffff95;
+}
+body #languageContent {
+  max-width: 900px;
+  margin: 60px auto 70px auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+  color: #111111;
+}
+body #languageContent p {
+  margin-bottom: 10px;
+}
+body #languageContent .headlines {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #languageContent h1 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #languageContent h2 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #languageContent ul,
+body #languageContent ol {
+  margin-left: 30px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+body #languageContent ul li,
+body #languageContent ol li {
+  margin-bottom: 5px;
+}
+body #languageContent tt {
+  background-color: #eee;
+  font-family: monospace;
+}
+body #languageContent .errorMarker {
+  padding-bottom: 2px;
+  background-image: url("../images/squiggle.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  vertical-align: text-top;
+}
+body #languageContent .oldInformation {
+  color: #777777;
+}
+body #languageContent .oldInformation a {
+  color: #98a6f3;
+}
+body #languageContent .langVariants {
+  color: #808080;
+}
+body #languageContent .maintainerNeeded {
+  background-color: #ffff95;
+}
+body #content {
+  margin: 60px auto 70px auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+  color: #111111;
+}
+body #content p {
+  margin-bottom: 10px;
+}
+body #content .headlines {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #content h1 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #content h2 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #content ul,
+body #content ol {
+  margin-left: 30px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
+body #content ul li,
+body #content ol li {
+  margin-bottom: 5px;
+}
+body #content tt {
+  background-color: #eee;
+  font-family: monospace;
+}
+body #content .errorMarker {
+  padding-bottom: 2px;
+  background-image: url("../images/squiggle.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  vertical-align: text-top;
+}
+body #content .oldInformation {
+  color: #777777;
+}
+body #content .oldInformation a {
+  color: #98a6f3;
+}
+body #content .langVariants {
+  color: #808080;
+}
+body #content .maintainerNeeded {
   background-color: #ffff95;
 }
 body #editor_controls {

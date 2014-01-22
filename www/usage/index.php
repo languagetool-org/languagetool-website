@@ -9,7 +9,7 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <h1>Usage</h1>
     

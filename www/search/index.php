@@ -10,7 +10,7 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
     
 Sorry, the full text search is currently not available
 

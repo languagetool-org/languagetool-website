@@ -62,7 +62,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p><strong>LanguageTool est un correcteur grammatical libre plurilingue pour le
 français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href="../languages/">plus de 20 autres langues</a>.

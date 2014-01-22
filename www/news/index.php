@@ -10,7 +10,7 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 

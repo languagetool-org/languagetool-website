@@ -9,11 +9,11 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <h1>Links</h1>
 
-<p>this page has been removed, please see the following pages instead:</p>
+<p>This page has been removed, please see the following pages instead:</p>
     
 <ul>
     <li><a href="/development/">Development</a></li>

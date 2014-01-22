@@ -66,7 +66,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <a title="LanguageTool работает в качестве расширения LibreOffice 3.3" class="fancyboxImage"
    href="/ru/screenshots/screenshot-lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"

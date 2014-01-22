@@ -63,7 +63,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">moltes altres llengües</a>.</p>
 

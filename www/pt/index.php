@@ -65,7 +65,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <a title="LanguageTool installed as an add-on in LibreOffice 3.3" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"

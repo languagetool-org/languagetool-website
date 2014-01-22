@@ -10,7 +10,7 @@
 <body>
 <?php include("../../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <p class="firstpara">Die Leichte Sprache ist eine besonders leicht verständliche Ausdrucksweise.
 Es existiert kein offizieller Standard, was genau Leichte Sprache ausmacht, es gibt zur Orientierung allerdings 

@@ -55,7 +55,7 @@
     $downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";
     $downloadLabelFx = "LanguageTool als Erweiterung für <strong>Firefox</strong>";
     $checklistText = "Probleme? Siehe <a href='/issues/'>unsere Hilfeseite</a>.";
-    $otherDownloadsText = "<a href='/download/'>Ältere Versionen</a> und <a href='/download/snapshots/?C=M;O=D'>täglich neu gebaute Versionen</a> herunterladen.";
+    $otherDownloadsText = "<a href='/download/'>Ältere Versionen</a> und <a href='/download/snapshots/?C=M;O=D'>täglich neue Versionen</a> herunterladen.";
     $webstartText = "LanguageTool <a href='/webstart/web/LanguageTool.jnlp'>mit Java WebStart ausführen</a>.";
     
     // ------------- TRANSLATIONS END HERE -------------
@@ -66,7 +66,7 @@
 
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
     <h2>Funktionen</h2>
 

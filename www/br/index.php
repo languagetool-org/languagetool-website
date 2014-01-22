@@ -63,7 +63,7 @@
 
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p>
 LanguageTool a gav fazioù evel ar c’hemmadurioù direizh

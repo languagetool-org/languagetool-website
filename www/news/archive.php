@@ -10,7 +10,7 @@
 <body>
 <?php include("../../include/partials/nav.php"); ?>
 
-<div id="textcontent">
+<div id="textContent">
 
 <p>See <a href="/news">the news page</a> for the latest news.</p>
 

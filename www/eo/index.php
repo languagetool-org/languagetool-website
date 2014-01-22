@@ -63,7 +63,7 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="textcontent">
+<div id="languageContent">
 
 <p><strong>Lingvoilo (LanguageTool) estas libera plurlingva
 programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en
