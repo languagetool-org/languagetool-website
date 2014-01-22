@@ -49,6 +49,7 @@
     $introText1 = "O <strong>LanguageTool</strong> é software Open Source de verificação gramatical para o Inglês, o Francês, o Alemão, o Polaco, o Romeno, etc..";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "Descarregar LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarregar LanguageTool para uso <strong>independente</strong>";

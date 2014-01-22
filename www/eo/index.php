@@ -47,6 +47,7 @@
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";

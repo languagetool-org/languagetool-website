@@ -1,6 +1,10 @@
 <div id="download">
 
-  <h2>Download</h2>
+  <?php if(isset($downloadHeadline)) { ?>
+      <h2><?php print $downloadHeadline ?></h2>
+  <?php } else { ?>
+      <h2>Download</h2>
+  <?php } ?>
 
   <?php include("download-buttons.php"); ?>
     

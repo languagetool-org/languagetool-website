@@ -49,6 +49,7 @@
     $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch noch <a href='/languages/'>mehr als 20 weitere Sprachen</a> unter&shy;stützt.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Benötigt Java {version}";
     $downloadTitle = "LanguageTool für <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";

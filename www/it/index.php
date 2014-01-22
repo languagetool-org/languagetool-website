@@ -49,6 +49,7 @@
     $introText1 = "<strong>LanguageTool</strong> è uno strumento Open Source che permette la correzione di testi scritti in <a href='/languages/'>più di 20 lingue</a>.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";

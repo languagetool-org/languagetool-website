@@ -16,6 +16,7 @@
     $introText1 = "<strong>LanguageTool</strong>是一个开源的文体和语法校正的软件，包括对英语、中文、法语、德语、波兰语、荷兰语、罗马尼亚语等很多 <a href='/languages/'>其他语言</a>的支持。";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     //$downloadTitle = "...";
     //$downloadTitleStandAlone = "...";

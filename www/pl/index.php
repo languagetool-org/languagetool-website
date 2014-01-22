@@ -49,6 +49,7 @@
     $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych języków</a>.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";

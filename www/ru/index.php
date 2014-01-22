@@ -50,6 +50,7 @@
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики и стиля.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";

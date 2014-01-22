@@ -47,6 +47,7 @@
     $introText1 = "<strong>LanguageTool</strong> és una eina de programari lliure per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
     $introText2 = "";
 
+    $downloadHeadline = "Download";
     $downloadRequiresJava = "Requires Java {version}";
     $downloadTitle = "Descarrega LanguageTool per a <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarrega LanguageTool com a <strong>programa independent</strong>";
