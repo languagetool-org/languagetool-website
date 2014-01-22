@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Controlla";   //TODO: add "also by using Ctrl+Return"
 
     $introText1 = "<strong>LanguageTool</strong> è uno strumento Open Source che permette la correzione di testi scritti in <a href='/languages/'>più di 20 lingue</a>.";
-    $introText2 = "";
+    $introText2 = "Provate LanguageTool online su questa pagina oppure scaricatelo gratuitamente.";
 
     $downloadHeadline = "Scarica";
     $downloadRequiresJava = "Richiede Java {version}";
