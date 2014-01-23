@@ -1,5 +1,5 @@
 
-This font (*.ttf files) is Source Sans Pro, published under SIL Open Font License, 1.1 (see below).
+This font (*.woff files) is Source Sans Pro, published under SIL Open Font License, 1.1 (see below).
 Get it at https://www.google.com/fonts/specimen/Source+Sans+Pro
 
 This Font Software is Copyright (c) Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), 
