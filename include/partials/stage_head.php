@@ -23,7 +23,7 @@
                     $content = "Nous avons aussi une <a href='$value/'>page en français</a>.";
                     break;
                 case "de":
-                    $content = "<a href='$value/'>Informationen zu LanguageTool auf Deutsch</a>.";
+                    $content = "<a href='$value/'>Informationen zu LanguageTool auf Deutsch</a>";
                     break;
                 case "it":
                     $content = "Abbiamo anche una <a href='$value/'>pagina in italiano</a>.";
