@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Sprawdź tekst";   //TODO: "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "toggle fullscreen mode";
 
-    $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych języków</a>.";
+    $introText1 = "<span style="font-family: verdana, geneva, arial, helvetica, sans-serif;"><strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych języków</a>.</span>";
     $introText2 = "";
 
     $downloadHeadline = "Pobierz";
