@@ -34,7 +34,7 @@
         'pl'  => 'Polish',
         'pt'  => 'Portuguese',
         'ro'  => 'Romanian',
-        'ru'  => 'Russian',
+        'ru'  => 'Русский',
         'sk'  => 'Slovak',
         'sl'  => 'Slovenian',
         'es'  => 'Spanish',
@@ -45,20 +45,20 @@
 
     $checkSubmitButtonValue = "Проверить текст";
     $checkSubmitButtonTitle = "Проверить текст";   //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $toggleFullscreenMode = "переключить полноэкранный режим" ;
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики и стиля.";
     $introText2 = "";
 
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadHeadline = "Скачать";
+    $downloadRequiresJava = "Требуется Java {version}";
     $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
     $downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $checklistText = "Посмотрите, пожалуйста, <a href='/issues/'>наш список</a> если вы столкнулись с проблемами.";
+    $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>.";
+    $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
