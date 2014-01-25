@@ -12,7 +12,7 @@
           array('name'=>'Screenshots', 'url' => '/screenshots/'),
           array('name'=>'Support', 'url' => '/support/'),
           array('name'=>'Development', 'url' => '/development/'),
-          array('name'=>'WikiCheck', 'url' => 'http://community.languagetool.org')
+          array('name'=>'WikiCheck', 'url' => 'http://community.languagetool.org/wikiCheck')
         );
 
         foreach ($pages as $aPage) {
