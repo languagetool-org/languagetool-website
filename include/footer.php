@@ -3,7 +3,7 @@
 
     $footer_pages = array(
       array( 'name'=>'Contact', 'url' => $rootUrl . '/contact' ),
-      //array( 'name' => 'Wiki', 'url' => 'http://wiki.languagetool.org/')
+      //array( 'name' => 'Privacy Policy', 'url' => $rootUrl . '/privacy')
     );
 
     foreach ($footer_pages as $page) {
