@@ -15,10 +15,10 @@
     <h1>Privacy Policy</h1>
     
     <ul>
-        <li>We <strong>never store the text</strong> that you submit for style and grammar checking on this page.</li>
+        <li>We <strong>never store the text</strong> that you submit for style and grammar checking.</li>
         <li>To improve our proofreading service, we keep a log of the following information:
             date, time, text language, length of submitted text, processing time, number of detected errors (but not the actual errors)</li>
-        <li>Your IP address is stored in an abbreviated form (like <tt>178.48.x.x</tt>) so that it cannot be used to identify you.</li>
+        <li>Your IP address is stored in an abbreviated form (like <tt>178.48.x.x</tt>) so it cannot be used to identify you.</li>
     </ul>
 
 </div>
