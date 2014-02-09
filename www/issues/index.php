@@ -17,10 +17,11 @@
 <ul>
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
-<li><strong>For Mac users:</strong> LanguageTool now requires Java 7, which is available for the Mac only as a 64 bit version.
-    LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
-    cannot be used as an LibreOffice/OpenOffice plugin on the Mac. The only known workaround is to use
-    <strong>LanguageTool 2.2</strong>, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
+<li><strong>For Mac users:</strong> LanguageTool requires Java 7, which is available for the Mac only as a 64 bit version.
+    You need <strong>LibreOffice 4.2 (64bit)</strong> in order to use LanguageTool on a Mac.
+    <br/>Older versions of LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
+    cannot be used with these versions as a LibreOffice/OpenOffice add-on on the Mac. The only known workaround for these older versions is to use
+    LanguageTool 2.2, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
     of Java 6 still exists. LanguageTool 2.2 doesn't require Java 7 but also works with Java 6.</li>
 <li>LibreOffice 3.5 and later comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
     English and Russian.
