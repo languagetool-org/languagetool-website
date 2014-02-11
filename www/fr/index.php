@@ -47,12 +47,13 @@
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
     $introText2 = "";
 
+    $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Nécessite Java {version}";
     $downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
     $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Télécharger <a href='/download/'>une vieille version</a> ou <a href='/download/snapshots/?C=M;O=D'>la dernière version quotidienne</a>.";
+    $checklistText = "Consuler la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
+    $otherDownloadsText = "Télécharger une <a href='/download/'>vieille version</a> ou la <a href='/download/snapshots/?C=M;O=D'>dernière version quotidienne</a>.";
     $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
