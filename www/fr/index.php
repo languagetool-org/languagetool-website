@@ -41,20 +41,19 @@
         'uk' => 'ukrainien'
     );
 
-    $checkSubmitButtonValue = 'Vérifier';
     $checkSubmitButtonTitle = "Vérifier";    //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $toggleFullscreenMode = "basculer le mode plein écran";
 
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
     $introText2 = "";
 
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadRequiresJava = "Nécessite Java {version}";
     $downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
     $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
     $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $otherDownloadsText = "Télécharger <a href='/download/'>une vieille version</a> ou <a href='/download/snapshots/?C=M;O=D'>la dernière version quotidienne</a>.";
+    $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
