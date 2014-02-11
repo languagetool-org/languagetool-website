@@ -41,21 +41,20 @@
         'zh' => 'ĉina'
     );
 
-    $checkSubmitButtonValue = 'Kontroli';
     $checkSubmitButtonValue = 'Kontroli';  //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $toggleFullscreenMode = "baskuli plenekrane";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
     $introText2 = "";
 
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadHeadline = "Elŝutado";
+    $downloadRequiresJava = "Bezonas Java {version}";
     $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
     $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
-    $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
-    $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
+    $checklistText = "Bonvolu vidi <a href='/issues/'>liston de probloj</a>, se vi havas problemojn.";
+    $otherDownloadsText = "Elŝuti <a href='/download/'>malnovajn versiojn</a> aŭ <a href='/download/snapshots/?C=M;O=D'>ĉiutagan version</a>.";
+    $webstartText = "Startigi per <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
