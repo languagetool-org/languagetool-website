@@ -31,7 +31,7 @@
         <img src="art/LOO-dialog_small.png" alt="LanguageTool in Polish LibreOffice 4.1"/>
         </a>
         <br/>
-        LanguageTool installed as an add-on in Polish LibreOffice.org&nbsp;4.1
+        LanguageTool installed as an add-on in Polish LibreOffice&nbsp;4.1
     </p>
     <p class="imgbox">
         <a title="The stand-alone user interface which lets you type in or paste text and check it" class="fancyboxImage" href="art/screenshot.png">
