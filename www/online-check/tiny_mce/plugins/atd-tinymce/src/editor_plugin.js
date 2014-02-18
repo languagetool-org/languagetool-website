@@ -479,7 +479,7 @@
          });*/
    
          tinymce.util.XHR.send({
-            url          : url + "/" + file,
+            url          : url,
             content_type : 'text/xml',
             type         : "POST",
             data         : "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B')
