@@ -137,22 +137,24 @@
                if (request.responseText.substr(0, 6) == 'Error:')
                {
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
-                  ed.windowManager.alert(request.responseText);
+                  $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
                   return;
                }
 
                if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
                {
-                  ed.windowManager.alert( plugin.editor.getLang('AtD.message_server_error', 'There was a problem communicating with the service. Try again in one minute.') );
+                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Try again in one minute.</div>");
                   return;
                }
 
                /* check to see if things are broken first and foremost */
                if (request.responseXML.getElementsByTagName('message').item(0) != null)
                {
-                  ed.windowManager.alert(request.responseXML.getElementsByTagName('message').item(0).firstChild.data);
+                  $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
                   return;
                }
+
+               $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
                var results = core.processXML(request.responseXML);
 
@@ -491,7 +493,8 @@
             {
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
-               alert("Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works."); 
+               var errorMessage = "<div id='severeError'>Error: Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works.</div>";
+               $('#feedbackErrorMessage').html(errorMessage);
             }
          });
       }
