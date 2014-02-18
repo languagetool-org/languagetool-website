@@ -43,8 +43,8 @@
         'uk'  => 'Ukrainian'
     );
 
-    $checkSubmitButtonValue = "Проверить текст";
-    $checkSubmitButtonTitle = "Проверить текст";   //TODO: add "also possible by using Ctrl+Return"
+    $checkSubmitButtonValue = "Проверить...";
+    $checkSubmitButtonTitle = "Проверить...";   //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "переключить полноэкранный режим" ;
 
     // TODO: add &shy; to make long words break in the browser
