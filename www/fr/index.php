@@ -41,6 +41,7 @@
         'uk' => 'ukrainien'
     );
 
+    $checkSubmitButtonValue = "Vérifier";
     $checkSubmitButtonTitle = "Vérifier";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "basculer le mode plein écran";
 
