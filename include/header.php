@@ -147,6 +147,7 @@
        setup : function(ed) {
            ed.onInit.add(function(ed) {
                ed.pasteAsPlainText = true;
+               doit();  // check immediately when entering the page
            });
            ed.onKeyDown.add(function(ed, e) {
                if (e.ctrlKey && e.keyCode == 13) {  // Ctrl+Return
