@@ -218,19 +218,19 @@ body #textOrLanguageContent .maintainerNeeded {
   background-color: #ffff95;
 }
 body #editor_controls {
-  padding: 20px;
+  padding: 15px;
   background-color: #ebebeb;
 }
 body #editor_controls .dropdown {
   float: left;
   display: block;
-  width: 50%;
+  width: 33%;
 }
 body #editor_controls .submit {
   float: right;
   text-align: right;
   display: block;
-  width: 50%;
+  width: 34%;
 }
 body #editor_controls .submit input {
   border: 0px;
@@ -363,7 +363,7 @@ body #stage .inner #image img {
 }
 body #stage .inner #editor {
   float: left;
-  width: 60%;
+  width: 65%;
 }
 body #stage .inner #editor form#checkform {
   position: relative;
@@ -452,7 +452,7 @@ body #stage .inner #editor .languageHomepage a {
 }
 body #stage .inner #text {
   float: left;
-  width: 40%;
+  width: 35%;
 }
 body #stage .inner #text p {
   font-weight: 300;

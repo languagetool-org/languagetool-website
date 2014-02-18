@@ -95,6 +95,35 @@ function printLangOption($langCode) {
                         ?>
                     </select>
             </div>
+            <?php
+            $displayValue = "none";
+            if ($checkDefaultLang == 'en' || $checkDefaultLang == 'de' || $checkDefaultLang == 'pt' || $checkDefaultLang == 'ca') {
+                $displayValue = "block";
+            }
+            ?>
+            <div class="dropdown" id="subLangDropDown" style="display: <?= $displayValue ?>">
+                    <!-- NOTE: keep this in sync with header.php and the if() above: -->
+                    <select class="dropkick" name="subLang" id="subLang">
+                        <?php if ($checkDefaultLang == 'en') { ?>
+                            <option>US</option>
+                            <option>GB</option>
+                            <option>AU</option>
+                            <option>CA</option>
+                            <option>NZ</option>
+                            <option>ZA</option>
+                        <?php } else if ($checkDefaultLang == 'de') { ?>
+                            <option>DE</option>
+                            <option>AT</option>
+                            <option>CH</option>
+                        <?php } else if ($checkDefaultLang == 'pt') { ?>
+                            <option>PT</option>
+                            <option>BR</option>
+                        <?php } else if ($checkDefaultLang == 'ca') { ?>
+                            <option>ES</option>
+                            <option>ES-Valencia</option>
+                        <?php }?>
+                    </select>
+            </div>
             <div class="submit">
                 <input type="submit" name="_action_checkText" value="<?= $checkSubmitButtonValue ?>" 
                        onClick="doit();return false;" title="<?= $checkSubmitButtonTitle ?>">

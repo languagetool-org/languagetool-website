@@ -276,6 +276,10 @@
    function doit() {
        document.checkform._action_checkText.disabled = true;
        var langCode = document.checkform.lang.value;
+       if (document.checkform.subLang && document.checkform.subLang.value) {
+           langCode = langCode.replace(/-..$/, "")  // en-US -> en 
+               + "-" + document.checkform.subLang.value;
+       }
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
 
@@ -296,9 +300,29 @@
             require_once("default_texts.php");
             print getDefaultDemoTextMappingForJavaScript();
             ?>
-            $('.dropkick').dropkick({
+            $('#lang').dropkick({
                 change: function (value, label) {
                     value = value.replace(/-..$/, "");  // en-US -> en
+                    var subLang = $('#subLang');
+                    subLang.find('option').remove();
+                    // For languages that have variants, offer those in a different select:
+                    // NOTE: keep in sync with checkform.php!
+                    var langToSubLang = {
+                        'en': ['US', 'GB', 'AU', 'CA', 'NZ', 'ZA'],
+                        'de': ['DE', 'AT', 'CH'],
+                        'pt': ['PT', 'BR'],
+                        'ca': ['ES', 'ES-Valencia']
+                    };
+                    if (langToSubLang[value]) {
+                        var subLangs = langToSubLang[value];
+                        subLangs.forEach(function(entry) {
+                            subLang.append($("<option />").val(entry).text(entry));
+                        });
+                        $('#subLangDropDown').show();
+                        subLang.dropkick('refresh');
+                    } else {
+                        $('#subLangDropDown').hide();
+                    }
                     var newText = languageToText[value];  // 'languageToText' comes from default_texts.php
                     if (newText) {
                         tinyMCE.activeEditor.setContent(newText);
@@ -316,6 +340,7 @@
                     $('#feedbackMessage').html('');
                 }
             });
+            $('#subLang').dropkick();
         });
     </script>
 
