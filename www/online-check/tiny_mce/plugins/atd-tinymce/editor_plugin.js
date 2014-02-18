@@ -781,6 +781,7 @@ AtDCore.prototype.isIE = function() {
          if (url == '{backend}') 
          {
             this.editor.setProgressState(0);
+            document.checkform._action_checkText.disabled = false;
             alert('Please specify: languagetool_rpc_url');
             return;
          }
@@ -793,6 +794,7 @@ AtDCore.prototype.isIE = function() {
             success: success,
             error: function(jqXHR, textStatus, errorThrown) {
                plugin.editor.setProgressState(0);
+               document.checkform._action_checkText.disabled = false;
                alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works."); 
             }
          });*/
@@ -811,6 +813,7 @@ AtDCore.prototype.isIE = function() {
             error        : function( type, req, o )
             {
                plugin.editor.setProgressState(0);
+               document.checkform._action_checkText.disabled = false;
                alert("Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works."); 
             }
          });
