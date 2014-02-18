@@ -41,7 +41,8 @@
         'zh' => 'ĉina'
     );
 
-    $checkSubmitButtonValue = 'Kontroli';  //TODO: add "also possible by using Ctrl+Return"
+    $checkSubmitButtonValue = 'Kontroli'; 
+    $checkSubmitButtonTitle = "Kontroli la tekston, aŭ Ktrl-Enenklavo";
     $toggleFullscreenMode = "baskuli plenekrane";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
