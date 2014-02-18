@@ -87,21 +87,20 @@ function printLangOption($langCode) {
             </div>
             -->
             <div class="dropdown">
-                    <select class="dropkick" name="lang" id="lang">
-                        <?php
-                        foreach ($checkLanguage as $key => $val) {
-                            printLangOption($key);
-                        }
-                        ?>
-                    </select>
-            </div>
-            <?php
-            $displayValue = "none";
-            if ($checkDefaultLang == 'en' || $checkDefaultLang == 'de' || $checkDefaultLang == 'pt' || $checkDefaultLang == 'ca') {
-                $displayValue = "block";
-            }
-            ?>
-            <div class="dropdown" id="subLangDropDown" style="display: <?= $displayValue ?>">
+                <select class="dropkick" name="lang" id="lang">
+                    <?php
+                    foreach ($checkLanguage as $key => $val) {
+                        printLangOption($key);
+                    }
+                    ?>
+                </select>
+                <?php
+                $displayValue = "none";
+                if ($checkDefaultLang == 'en' || $checkDefaultLang == 'de' || $checkDefaultLang == 'pt' || $checkDefaultLang == 'ca') {
+                    $displayValue = "block";
+                }
+                ?>
+                <div id="subLangDropDown" style="display: <?= $displayValue ?>;float:left;margin-left:6px">
                     <!-- NOTE: keep this in sync with header.php and the if() above: -->
                     <select class="dropkick" name="subLang" id="subLang">
                         <?php if ($checkDefaultLang == 'en') { ?>
@@ -123,6 +122,7 @@ function printLangOption($langCode) {
                             <option>ES-Valencia</option>
                         <?php }?>
                     </select>
+                </div>
             </div>
             <div class="submit">
                 <input type="submit" name="_action_checkText" value="<?= $checkSubmitButtonValue ?>" 

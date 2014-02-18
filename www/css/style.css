@@ -218,13 +218,13 @@ body #textOrLanguageContent .maintainerNeeded {
   background-color: #ffff95;
 }
 body #editor_controls {
-  padding: 15px;
+  padding: 20px;
   background-color: #ebebeb;
 }
 body #editor_controls .dropdown {
   float: left;
   display: block;
-  width: 33%;
+  width: 66%;
 }
 body #editor_controls .submit {
   float: right;
