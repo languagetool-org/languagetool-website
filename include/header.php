@@ -327,6 +327,7 @@
                     if (newText) {
                         tinyMCE.activeEditor.setContent(newText);
                         tinyMCE.get('checktext').focus();
+                        doit();
                     } else {
                         <?php if($addYourTextHere) { ?>
                         tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
@@ -340,7 +341,13 @@
                     $('#feedbackMessage').html('');
                 }
             });
-            $('#subLang').dropkick();
+            $('#subLang').dropkick({
+                // TODO: this messes up the text - it gets called more than once after the main
+                // language has been changed:
+                /*change: function (value, label) {
+                    //doit();
+                }*/
+            });
         });
     </script>
 
