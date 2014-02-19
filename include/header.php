@@ -147,6 +147,11 @@
        setup : function(ed) {
            ed.onInit.add(function(ed) {
                ed.pasteAsPlainText = true;
+               if (document.checkform.lang.value) {
+                   // needed so we don't get invalid lang + subLang combinations when
+                   // user enters the page via back button:
+                   fillSubLanguageSelect(document.checkform.lang.value.replace(/-..$/, ""));
+               }
                doit();  // check immediately when entering the page
            });
            ed.onKeyDown.add(function(ed, e) {
@@ -295,6 +300,28 @@
 
     <script type="text/javascript" src="<?= $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
     <script type="text/javascript">
+        function fillSubLanguageSelect(langCode) {
+            var subLang = $('#subLang');
+            subLang.find('option').remove();
+            // For languages that have variants, offer those in a different select:
+            // NOTE: keep in sync with checkform.php!
+            var langToSubLang = {
+                'en': ['US', 'GB', 'AU', 'CA', 'NZ', 'ZA'],
+                'de': ['DE', 'AT', 'CH'],
+                'pt': ['PT', 'BR'],
+                'ca': ['ES', 'ES-Valencia']
+            };
+            if (langToSubLang[langCode]) {
+                var subLangs = langToSubLang[langCode];
+                subLangs.forEach(function(entry) {
+                    subLang.append($("<option />").val(entry).text(entry));
+                });
+                $('#subLangDropDown').show();
+                subLang.dropkick('refresh');
+            } else {
+                $('#subLangDropDown').hide();
+            }
+        }
         $(function(){
             <?php
             require_once("default_texts.php");
@@ -303,26 +330,7 @@
             $('#lang').dropkick({
                 change: function (value, label) {
                     value = value.replace(/-..$/, "");  // en-US -> en
-                    var subLang = $('#subLang');
-                    subLang.find('option').remove();
-                    // For languages that have variants, offer those in a different select:
-                    // NOTE: keep in sync with checkform.php!
-                    var langToSubLang = {
-                        'en': ['US', 'GB', 'AU', 'CA', 'NZ', 'ZA'],
-                        'de': ['DE', 'AT', 'CH'],
-                        'pt': ['PT', 'BR'],
-                        'ca': ['ES', 'ES-Valencia']
-                    };
-                    if (langToSubLang[value]) {
-                        var subLangs = langToSubLang[value];
-                        subLangs.forEach(function(entry) {
-                            subLang.append($("<option />").val(entry).text(entry));
-                        });
-                        $('#subLangDropDown').show();
-                        subLang.dropkick('refresh');
-                    } else {
-                        $('#subLangDropDown').hide();
-                    }
+                    fillSubLanguageSelect(value);
                     var newText = languageToText[value];  // 'languageToText' comes from default_texts.php
                     if (newText) {
                         tinyMCE.activeEditor.setContent(newText);
