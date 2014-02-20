@@ -469,6 +469,9 @@ body #stage .inner #text p.small {
   margin-top: 30px;
   font-size: 22px;
 }
+body #stage .inner #text p a:hover {
+  color: #d9d9d9;
+}
 body #stage .inner #text p a {
   color: white;
 }
