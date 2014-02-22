@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
     $toggleFullscreenMode = "Vollbild-Ansicht umschalten";
 
-    $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch noch <a href='/languages/'>mehr als 20 weitere Sprachen</a> unter&shy;stützt.";
+    $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
     $introText2 = "Sie können LanguageTool auf dieser Seite benutzen oder kostenlos herunterladen.";
 
     $downloadHeadline = "Download";

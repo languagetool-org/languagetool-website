@@ -365,7 +365,11 @@ body {
           a:hover {
             color: darken(white, 15%);
           }
+          a:before {
+            content: "→\00a0";  /* \00a0 = non-breaking space */
+          }
           a {
+            text-decoration: none;
             color: white;
           }
         }

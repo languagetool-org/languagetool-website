@@ -472,7 +472,12 @@ body #stage .inner #text p.small {
 body #stage .inner #text p a:hover {
   color: #d9d9d9;
 }
+body #stage .inner #text p a:before {
+  content: "→\00a0";
+  /* \00a0 = non-breaking space */
+}
 body #stage .inner #text p a {
+  text-decoration: none;
   color: white;
 }
 body #plugins {
