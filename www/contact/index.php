@@ -17,13 +17,39 @@
     <p>Please visit the <a href="/support/">support page</a>.</p>
     
     
+    <h2>Team</h2>
+    
+    <p>LanguageTool is an Open Source application developed by a group of language enthusiasts and software developers.
+    The people in the core team are:</p>
+
+    <p>Paolo Bianchini,
+    Markus Brenneis,
+    Xavi Ivars,
+    Stefan Lotties,
+    <a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>,
+    Panagiotis Minos,
+    <a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>,
+    <a href="http://www.danielnaber.de">Daniel Naber</a>,
+    Jaume Ortolà,
+    <a href="http://dominiko.livejournal.com/tag/lingvoilo">Dominique Pellé</a>,
+    <a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>,
+    <a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>,
+    Andriy Rysin,
+    Jan Schreiber</p>
+    
+    <p>See the <a href="/languages">list of supported languages</a> for information about who maintains the error
+    detection rules for each language.</p>
+
+
     <h2>Imprint</h2>
+    
+    <p>This website is run by:</p>
     
     <p>
         Daniel Naber<br/>
         Friesenstr. 3<br/>
         14482 Potsdam<br/>
-        email: <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span><br/>
+        email: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span><br/>
         homepage: <a href="http://www.danielnaber.de">danielnaber.de</a>
     </p>
 
