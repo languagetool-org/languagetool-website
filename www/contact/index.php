@@ -67,11 +67,7 @@
 
     <h2>Privacy</h2>
 
-    <p>This website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
-        IP address (to a form like 192.168.xxx.xxx) to protect your privacy. If you don't want your
-        visit to be recorded at all by Piwik, you can opt out here:</p>
-
-    <iframe frameborder="no" width="600px" height="200px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
+    <p>Please see <a href="/privacy">our privacy policy</a>.</p>
 
 </div>
 
