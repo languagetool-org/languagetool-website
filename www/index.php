@@ -2,7 +2,7 @@
   error_reporting(E_ALL);
 
   $page = "Home";
-  $title = "LanguageTool Style and Grammar Checker";
+  $title = "LanguageTool Style and Grammar Check";
   $rootUrl = "";
 
   $enable_tablesorter = 0;
