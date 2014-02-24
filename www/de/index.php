@@ -8,7 +8,7 @@
 
     // ------------- TRANSLATIONS START HERE -------------
     
-    $title = "LanguageTool Stil- und Grammatikprüfung";
+    $title = "Rechtschreibprüfung und Grammatikprüfung mit LanguageTool";
 
     $checkLanguage = array(
         'ast' => 'Asturisch',
@@ -47,8 +47,8 @@
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
     $toggleFullscreenMode = "Vollbild-Ansicht umschalten";
 
-    $introText1 = "<strong>LanguageTool</strong> ist eine freie Stil- und Grammatik&shy;prüfung, die neben Deutsch mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
-    $introText2 = "Sie können LanguageTool auf dieser Seite benutzen oder kostenlos herunterladen.";
+    $introText1 = "<strong>LanguageTool</strong> ist eine freie Textprüfung für Grammatik, Stil und Rechtschreibung. Sie können LanguageTool auf dieser Seite benutzen oder kostenlos herunterladen.";
+    $introText2 = "Neben Deutsch werden mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
 
     $downloadHeadline = "Download";
     $downloadRequiresJava = "Benötigt Java {version}";
@@ -71,11 +71,15 @@
 
     <h2>Funktionen</h2>
 
-    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1700</a> Fehler in deutschsprachigen Texten:<br/><br/>
+    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1800</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
     <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
-    <a class="fancyboxImage" title="LanguageTool als Erweiterung in LibreOffice" href="images/screenshot.png"><img style="margin: 15px" align="right" src="images/screenshot_small.png" alt="Bilschirmfoto von LanguageTool in LibreOffice"/></a>
+    <div style="float: right;margin: 15px">
+        <a class="fancyboxImage" title="LanguageTool als Erweiterung in LibreOffice" href="images/screenshot.png"><img src="images/screenshot_small.png" alt="Bilschirmfoto von LanguageTool in LibreOffice"/></a>
+        <br/>
+        <span style="color:#777">LanguageTool als Erweiterung in LibreOffice</span> 
+    </div>
 
     <ul>
         <li>Grammatik
@@ -118,10 +122,18 @@
                 <li>Können Sie mir die <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?</li>
             </ul>
         </li>
+        <li>Rechtschreibung
+            <ul>
+                <li>Aber LanguageTool kann mehr als eine <span class="errorMarker" title="Möglicher Rechtschreibfehler gefunden. Vorschlag: normale">nromale</span> Rechtschreibprüfung.</li>
+            </ul>
+        </li>
+        <li>LanguageTool weist in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
+            <ul>
+                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkock'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
+            </ul>
+        </li>
         <li>u.v.m.</li>
     </ul>
-
-    Außerdem weist LanguageTool in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin.<br/><br/>
 
 
     <h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice nutzen</h2>
