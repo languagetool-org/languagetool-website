@@ -11,7 +11,7 @@
     $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
     $content = "";
     foreach ($languagesWithPage as $i => $value) {
-        if ($value == $checkDefaultLang || substr($defaultLang, 0, 3) == $value."-") {
+        if ($value == $checkDefaultLang) {
             switch ($value) {
                 case "br":
                     $content = "Ur <a href='$value/'>bajenn vrezhonek</a> hon eus ivez.";
