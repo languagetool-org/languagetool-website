@@ -70,7 +70,7 @@ function printLangOption($langCode) {
             <?php
             require_once("default_texts.php");
             $checkDefaultText = getDefaultDemoText($checkDefaultLang);
-            if ($checkDefaultLang == "") {
+            if ($checkDefaultText == "") {
                 // fallback to English:
                 $checkDefaultLang = "en";
                 $checkDefaultText = getDefaultDemoText("en");
