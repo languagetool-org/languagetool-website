@@ -22,7 +22,7 @@
     <p>LanguageTool is an Open Source application developed by a group of language enthusiasts and software developers.
     The people in the core team are:</p>
 
-    <p>Paolo Bianchini,
+    <p><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>,
     Markus Brenneis,
     Xavi Ivars,
     Stefan Lotties,
