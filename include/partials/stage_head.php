@@ -8,8 +8,28 @@
         include("../include/checkform.php");
       ?>
     <?php
+    $languagesWithMaintainerNeed = array(
+        "be" => "Belarusian",
+        "da" => "Danish",
+        "en" => "English",
+        "gl" => "Galician",
+        "is" => "Icelandic",
+        "ja" => "Japanese",
+        "lt" => "Lithuanian",
+        "ml" => "Malayalam",
+        "pt" => "Portuguese",
+        "ro" => "Romanian",
+        "sv" => "Swedish",
+        "zh" => "Chinese"
+    );
     $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
     $content = "";
+    $defaultLang = getDefaultLanguage();
+    foreach ($languagesWithMaintainerNeed as $langCode => $langName) {
+        if ($langCode == $defaultLang) {
+            $content = "<a href='http://wiki.languagetool.org/tasks-for-language-maintainers'>Help improve our support for $langName</a>";
+        }
+    }
     foreach ($languagesWithPage as $i => $value) {
         if ($value == $checkDefaultLang) {
             switch ($value) {
