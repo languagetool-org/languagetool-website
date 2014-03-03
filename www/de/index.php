@@ -150,6 +150,7 @@
 
     Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von LanguageTool gefundenen Probleme im Text blau markiert. Die Einstellungen von LanguageTool können Sie über <i>Extras &rarr; LanguageTool &rarr; Konfiguration&hellip;</i> ändern.
 
+
     <h2 id="standalone">LanguageTool als eigenständiges Programm benutzen</h2>
 
     <ol>
@@ -161,11 +162,20 @@
         In <a target="_blank" href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1">freiesMagazin 08/2012</a> ist ein ausführlicher Artikel, in dem die Verwendungsmöglichkeiten und die Funktionsweise von LanguageTool beschrieben werden, erschienen.
     </p>
 
+
+    <h2>Mitmachen</h2>
+    
+    <p>Als Open-Source-Projekt ist LanguageTool auf die Mitarbeit von Freiwilligen angewiesen. In unserem
+    Wiki findet sich eine Beschreibung, <a href="http://wiki.languagetool.org/development-overview">wie man eigene Regeln
+    erstellt</a>, um in Zukunft noch mehr Fehler in Texten erkennen zu können.
+    Auch für Entwickler und Übersetzer gibt es bei LanguageTool <a href="http://wiki.languagetool.org/make-languagetool-better">spannende
+    Aufgaben</a>. </p>
+    
+    
     <h2>Spezielle Varianten</h2>
 
     <p>LanguageTool unterstützt auch <a href="leichte-sprache/">eine Prüfung auf Leichte Sprache</a>.</p>
 
-    <p></p>
 
     <h2>Kontakt</h2>
 
