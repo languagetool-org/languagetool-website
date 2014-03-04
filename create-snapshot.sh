@@ -27,3 +27,5 @@ mv languagetool-standalone/target/LanguageTool*.zip $SNAPSHOT_DIR/LanguageTool-`
 # delete files older than 10 days:
 rm `find $SNAPSHOT_DIR -name "*.oxt" -mtime +10`
 rm `find $SNAPSHOT_DIR -name "*.zip" -mtime +10`
+
+/bin/sh /home/languagetool/languagetool.org/languagetool-website/deploy-jars.sh
