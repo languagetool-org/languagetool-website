@@ -24,7 +24,9 @@
             </ul>
         </li>
         <li style="font-size: large"><a href="https://github.com/languagetool-org/languagetool"><strong>Source code at github</strong></a></li>
-        <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a> and Wikipedia checks</li>
+        <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
+            includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a>,
+            <a href="http://community.languagetool.org/analysis">a text analyzer</a>, and Wikipedia checks</li>
         <li><a href="http://lists.sourceforge.net/mailman/listinfo/languagetool-devel">Development mailing list</a> (<a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">archive</a>)</li>
         <li><a href="api/">Javadoc</a>, API documentation</li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a></li>
