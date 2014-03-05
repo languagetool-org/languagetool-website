@@ -32,4 +32,5 @@ cp /tmp/lt-snapshot/LanguageTool-*-SNAPSHOT/META-INF/org/languagetool/language-m
 unzip -d /tmp/lt-wikipedia-snapshot $SNAPSHOT_DIR/LanguageTool-wikipedia-`date +%Y%m%d`-snapshot.zip
 cp /tmp/lt-wikipedia-snapshot/LanguageTool-*-SNAPSHOT/languagetool-wikipedia.jar $WEB_LIB
 
-/home/languagetool/restart-tomcat.sh
+cd /home/languagetool
+./restart-tomcat.sh
