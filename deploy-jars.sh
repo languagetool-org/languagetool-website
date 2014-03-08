@@ -5,11 +5,18 @@
 
 SNAPSHOT_DIR=../languagetool-website/www/download/snapshots
 WEB_LIB=/home/languagetool/tomcat/webapps/ROOT/WEB-INF/lib
+DATE=`date +%Y%m%d`
+
+if [ $# = 1 ]; then
+  DATE=$1
+fi
+
+echo "Using date: $DATE"
 
 cd /home/languagetool/languagetool.org/git-checkout
 rm -r /tmp/lt-snapshot
 rm -r /tmp/lt-wikipedia-snapshot
-unzip -d /tmp/lt-snapshot $SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
+unzip -d /tmp/lt-snapshot $SNAPSHOT_DIR/LanguageTool-$DATE-snapshot.zip
 
 # backup of libs:
 rm -r /home/languagetool/tomcat/lib-bak/
@@ -29,7 +36,7 @@ rm $WEB_LIB/language-..-*-SNAPSHOT.jar
 mkdir -p /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
 cp /tmp/lt-snapshot/LanguageTool-*-SNAPSHOT/META-INF/org/languagetool/language-module.properties /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
 
-unzip -d /tmp/lt-wikipedia-snapshot $SNAPSHOT_DIR/LanguageTool-wikipedia-`date +%Y%m%d`-snapshot.zip
+unzip -d /tmp/lt-wikipedia-snapshot $SNAPSHOT_DIR/LanguageTool-wikipedia-$DATE-snapshot.zip
 cp /tmp/lt-wikipedia-snapshot/LanguageTool-*-SNAPSHOT/languagetool-wikipedia.jar $WEB_LIB
 
 cd /home/languagetool
