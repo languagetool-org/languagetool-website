@@ -38,7 +38,10 @@ rm /tmp/lt-not-in-jars.jar
 zip -r /tmp/lt-not-in-jars.jar org/
 cp /tmp/lt-not-in-jars.jar $WEB_LIB
 # get rid of language-it-2.5-SNAPSHOT.jar etc to avoid duplication:
-rm $WEB_LIB/language-..-*-SNAPSHOT.jar
+rm $WEB_LIB/language-all-*-SNAPSHOT.jar
+rm $WEB_LIB/language-[a-z][a-z]-*-SNAPSHOT.jar
+rm $WEB_LIB/language-[a-z][a-z][a-z]-*-SNAPSHOT.jar
+rm $WEB_LIB/languagetool-core-*-SNAPSHOT.jar
 
 mkdir -p /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
 cp /tmp/lt-snapshot/LanguageTool-*-SNAPSHOT/META-INF/org/languagetool/language-module.properties /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
