@@ -16,7 +16,14 @@ echo "Using date: $DATE"
 cd /home/languagetool/languagetool.org/git-checkout
 rm -r /tmp/lt-snapshot
 rm -r /tmp/lt-wikipedia-snapshot
-unzip -d /tmp/lt-snapshot $SNAPSHOT_DIR/LanguageTool-$DATE-snapshot.zip
+
+SNAPSHOT=$SNAPSHOT_DIR/LanguageTool-$DATE-snapshot.zip
+if [ ! -f $SNAPSHOT ]; then
+  echo "$SNAPSHOT not found, stopping"
+  exit
+fi
+
+unzip -d /tmp/lt-snapshot $SNAPSHOT
 
 # backup of libs:
 rm -r /home/languagetool/tomcat/lib-bak/
