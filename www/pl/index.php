@@ -39,8 +39,8 @@
         'sl'  => 'słoweński',
         'sv'  => 'szwedzki',
         'tl'  => 'tagalski',
-        'uk'  => 'ukraiński'
-        'it'  => 'włoski',
+        'uk'  => 'ukraiński',
+        'it'  => 'włoski'
     );
 
     $checkSubmitButtonValue = "Sprawdź tekst";
