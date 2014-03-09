@@ -45,7 +45,7 @@
 
     $checkSubmitButtonValue = "Sprawdź tekst";
     $checkSubmitButtonTitle = "Sprawdź tekst";   //TODO: "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "tryb pełnoekranooy";
+    $toggleFullscreenMode = "tryb pełnoekranowy";
 
     $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych</a>.";
     $introText2 = "";
