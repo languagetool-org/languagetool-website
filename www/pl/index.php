@@ -8,44 +8,44 @@
 
     // ------------- TRANSLATIONS START HERE -------------
 
-    $title = "LanguageTool &mdash; Narzędzie korektorskie";
+    $title = "LanguageTool &mdash; Narzędzie korektorskie do korekty tekstów w języku polskim";
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
-        'ast' => 'Asturian',
-        'be'  => 'Belarusian',
-        'br'  => 'Breton',
-        'ca'  => 'Catalan',
-        'zh'  => 'Chinese',
-        'da'  => 'Danish',
-        'nl'  => 'Dutch',
-        'en-US'  => 'English',
-        'eo'  => 'Esperanto',
-        'fr'  => 'French',
-        'gl'  => 'Galician',
-        'de-DE'  => 'German',
-        'el'  => 'Greek',
-        'is'  => 'Icelandic',
-        'it'  => 'Italian',
-        'ja'  => 'Japanese',
-        'km'  => 'Khmer',
-        'lt'  => 'Lithuanian',
-        'ml'  => 'Malayalam',
-        'pl'  => 'Polish',
-        'pt'  => 'Portuguese',
-        'ro'  => 'Romanian',
-        'ru'  => 'Russian',
-        'sk'  => 'Slovak',
-        'sl'  => 'Slovenian',
-        'es'  => 'Spanish',
-        'sv'  => 'Swedish',
-        'tl'  => 'Tagalog',
-        'uk'  => 'Ukrainian'
+        'en-US'  => 'angielski',
+        'ast' => 'asturyjsi',
+        'be'  => 'białoruski',
+        'br'  => 'bretoński',
+        'zh'  => 'chiński',
+        'da'  => 'duński',
+        'eo'  => 'esperanto',
+        'ca'  => 'kataloński',
+        'fr'  => 'francuski',
+        'gl'  => 'galicyjski',
+        'el'  => 'grecki',
+        'es'  => 'hiszpański',
+        'is'  => 'islandzki',
+        'ja'  => 'japoński',
+        'km'  => 'kmerski',
+        'lt'  => 'litewski',
+        'ml'  => 'malayalam',
+        'nl'  => 'niderlandzki',
+        'de-DE'  => 'niemiecki',
+        'pl'  => 'polski',
+        'pt'  => 'portugalski',
+        'ro'  => 'rumuński',
+        'ru'  => 'rosyjski',
+        'sk'  => 'słowacki',
+        'sl'  => 'słoweński',
+        'sv'  => 'szwedzki',
+        'tl'  => 'tagalski',
+        'uk'  => 'ukraiński'
+        'it'  => 'włoski',
     );
 
     $checkSubmitButtonValue = "Sprawdź tekst";
     $checkSubmitButtonTitle = "Sprawdź tekst";   //TODO: "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $toggleFullscreenMode = "tryb pełnoekranooy";
 
     $introText1 = "<strong>LanguageTool</strong> to wolnodostępne narzędzie korektorskie, które oprócz języka polskiego obsługuje jeszcze <a href='/languages/'>25 innych</a>.";
     $introText2 = "";
@@ -77,7 +77,12 @@
 
 <h2>Możliwości programu</h2>
 
-LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Tu znajduje się <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml">lista aktualnie stosowanych reguł</a>.<br/><br/>
+LanguageTool wykrywa <a href="http://community.languagetool.org/rule/list?lang=pl">ponad 1000</a> błędów w polskich tekstach. Może więc służyć do korekty językowej &mdash; stylistycznej, gramatycznej, ortograficznej czy typograficznej &mdash; tekstów w języku polskim, ale także w  <a href="/languages/">25 innych językach</a>. 
+Może znacznie ułatwić życie korektorom i redaktorom, gdyż ujawnia literówki kontekstowe, które są niewidoczne dla standardowych korektorów pisowni. A co najlepsze &mdash; narzędzie jest wolnodostępne dla każdego!
+
+<p>Poprawki sugerowane przez program LanguageTool nie ograniczają się do typowych funkcji korektora gramatycznego, gdyż obejmują także nadużywane wyrazy (np. „mapa drogowa” w sensie „harmonogram”), interpunkcję (to jedyne narzędzie, które wykrywa brak przecinka w zdaniach złożonych, np. brak zakończenia przecinkiem zdania zaczynającego się od „który”), a także ogromnie wiele literówek.
+
+<p>Program jest cały czas poprawiany i rozwija się dynamicznie. Tu znajduje się <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/pl/src/main/resources/org/languagetool/rules/pl/grammar.xml">lista aktualnie stosowanych reguł</a>.<br/><br/>
 
 <small>(Po przesunięciu kursora myszy nad błędem wyświetli się odpowiedni opis).</small>
 
