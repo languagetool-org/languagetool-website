@@ -47,7 +47,7 @@ rm $WEB_LIB/languagetool-core-*-SNAPSHOT.jar
 mkdir -p /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
 cp /tmp/lt-snapshot/LanguageTool-*-SNAPSHOT/META-INF/org/languagetool/language-module.properties /home/languagetool/tomcat/webapps/ROOT/WEB-INF/classes/META-INF/org/languagetool/
 
-$WIKI_JAR=$SNAPSHOT_DIR/LanguageTool-wikipedia-$DATE-snapshot.zip
+WIKI_JAR=$SNAPSHOT_DIR/LanguageTool-wikipedia-$DATE-snapshot.zip
 rm $WEB_LIB/languagetool-wikipedia-*-SNAPSHOT.jar
 echo "Going to unzip: $WIKI_JAR"
 unzip -d /tmp/lt-wikipedia-snapshot $WIKI_JAR
