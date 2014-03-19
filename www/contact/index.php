@@ -17,6 +17,13 @@
     <p>Please visit the <a href="/support/">support page</a>.</p>
     
     
+    <h2>Want to join us?</h2>
+    
+    <p>Please subscribe to our <a href="http://lists.sourceforge.net/mailman/listinfo/languagetool-devel">development
+    mailing list</a>, where all the discussion happens. If you have a quick question you may want to
+    use the <a href="/forum">forum</a> instead.</p>
+    
+    
     <h2>Team</h2>
     
     <p>LanguageTool is an Open Source application developed by a group of language enthusiasts and software developers.
