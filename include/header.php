@@ -215,6 +215,11 @@
            'ast': 'Inorar esti error',
            'pl': 'Ignoruj ten błąd'
           },
+       languagetool_i18n_rule_implementation :
+          {
+           // "Rule implementation":
+           //'eo': '...'
+          },
        /*languagetool_i18n_ignore_all :
           {
            // "Ignore this kind of error":

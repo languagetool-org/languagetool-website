@@ -14,8 +14,8 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 
 //
 // TODO:
-// 1. "ignore" and "ignore this kind of error" only works until the next check
-// 2. Ctrl-Z (undo) make the error markers go away
+// 1. "ignore this error" only works until the next check
+// 2. Ctrl-Z (undo) makes the error markers go away
 //
 // fixed: cursor position gets lost on check
 // fixed: "ignore all" doesn't work
@@ -105,6 +105,7 @@ AtDCore.prototype.findSuggestion = function(element) {
     var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
     var errorDescription = {};
+    errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
     errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
     var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
@@ -665,6 +666,7 @@ AtDCore.prototype.isIE = function() {
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this error";
+            var ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation";
             //var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
              
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
@@ -687,6 +689,15 @@ AtDCore.prototype.isIE = function() {
                   dom.remove(e.target, 1);
                   t._checkDone();
                }
+            });
+           
+            var langCode = $('#lang').val().replace(/-.*/, '');
+            // NOTE: this link won't work (as of March 2014) for false friend rules:
+            var ruleUrl = "http://community.languagetool.org/rule/show/" +
+              encodeURI(errorDescription["id"]) + "?lang=" + encodeURI(langCode);
+            m.add({
+               title : ruleImplementation,
+               onclick : function() { window.open(ruleUrl, '_blank'); }
             });
 
             /*m.add({

@@ -14,8 +14,8 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 
 //
 // TODO:
-// 1. "ignore" and "ignore this kind of error" only works until the next check
-// 2. Ctrl-Z (undo) make the error markers go away
+// 1. "ignore this error" only works until the next check
+// 2. Ctrl-Z (undo) makes the error markers go away
 //
 // fixed: cursor position gets lost on check
 // fixed: "ignore all" doesn't work
@@ -105,6 +105,7 @@ AtDCore.prototype.findSuggestion = function(element) {
     var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
     var errorDescription = {};
+    errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
     errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
     var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
