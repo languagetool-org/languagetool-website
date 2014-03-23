@@ -219,6 +219,7 @@
           {
            // "Rule implementation":
            //'eo': '...',
+           'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила'
           },
        /*languagetool_i18n_ignore_all :
