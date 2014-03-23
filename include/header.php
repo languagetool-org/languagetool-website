@@ -218,7 +218,8 @@
        languagetool_i18n_rule_implementation :
           {
            // "Rule implementation":
-           //'eo': '...'
+           //'eo': '...',
+           'ru': 'Описание реализации правила'
           },
        /*languagetool_i18n_ignore_all :
           {
