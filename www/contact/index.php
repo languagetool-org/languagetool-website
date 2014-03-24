@@ -19,7 +19,7 @@
     
     <h2>Want to join us?</h2>
     
-    <p>Please subscribe to our <a href="http://lists.sourceforge.net/mailman/listinfo/languagetool-devel">development
+    <p>Please subscribe to our <a href="../development/mailing-list.php">development
     mailing list</a>, where all the discussion happens. If you have a quick question you may want to
     use the <a href="/forum">forum</a> instead.</p>
     
