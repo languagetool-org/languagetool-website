@@ -691,7 +691,7 @@ AtDCore.prototype.isIE = function() {
                }
             });
            
-            var langCode = $('#lang').val().replace(/-.*/, '');
+            var langCode = $('#lang').val();
             // NOTE: this link won't work (as of March 2014) for false friend rules:
             var ruleUrl = "http://community.languagetool.org/rule/show/" +
               encodeURI(errorDescription["id"]) + "?lang=" + encodeURI(langCode);
