@@ -77,6 +77,7 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["errorlength"] = errorLength;
        suggestion["type"]        = errors[i].getAttribute("category");
        suggestion["ruleid"]      = errors[i].getAttribute("ruleId");
+       suggestion["subid"]       = errors[i].getAttribute("subId");
        var url = errors[i].getAttribute("url");
        if (url) {
            suggestion["moreinfo"] = url;
@@ -106,6 +107,7 @@ AtDCore.prototype.findSuggestion = function(element) {
     var metaInfo = element.getAttribute(this.surrogateAttribute);
     var errorDescription = {};
     errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
+    errorDescription["subid"] = this.getSurrogatePart(metaInfo, 'subid');
     errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
     var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
@@ -152,7 +154,7 @@ AtDCore.prototype.markMyWords = function() {
                 cssName = "hiddenGrammarError";
             }
             var delim = this.surrogateAttributeDelimiter;
-            var metaInfo = ruleId + delim + suggestion.description + delim + suggestion.suggestions;
+            var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions;
             if (suggestion.moreinfo) {
                 metaInfo += delim + suggestion.moreinfo;
             }
@@ -210,13 +212,16 @@ AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
     var parts = surrogateString.split(this.surrogateAttributeDelimiter);
     if (part == 'id') {
         return parts[0];
-    } else if (part == 'description') {
+    } else if (part == 'subid') {
         return parts[1];
-    } else if (part == 'suggestions') {
+    } else if (part == 'description') {
         return parts[2];
-    } else if (part == 'url' && parts.length >= 3) {
+    } else if (part == 'suggestions') {
         return parts[3];
+    } else if (part == 'url' && parts.length >= 4) {
+        return parts[4];
     }
+    console.log("No part '" + part + "' found in surrogateString: " + surrogateString);
     return null;
 };
 
