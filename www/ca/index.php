@@ -42,17 +42,17 @@
     );
 
     $checkSubmitButtonValue = "Comprova el text";
-    $checkSubmitButtonTitle = "Comprova el text";  //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "toggle fullscreen mode";
+    $checkSubmitButtonTitle = "Comprova el text, també amb Ctrl+Return.";
+    $toggleFullscreenMode = "Commuta el mode de pantalla completa";
 
     $introText1 = "<strong>LanguageTool</strong> és una eina de programari lliure per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Descarrega";
-    $downloadRequiresJava = "Requireix Java {version} o posterior";
+    $downloadRequiresJava = "Requereix Java {version} o posterior";
     $downloadTitle = "Descarrega LanguageTool per a <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Descarrega LanguageTool com a <strong>programa independent</strong>";
-    $downloadLabelFx = "Descarrega LanguageToolFx Extensió per a <strong>Firefox</strong>";
+    $downloadLabelFx = "Descarrega LanguageToolFx, extensió per a <strong>Firefox</strong>";
     $checklistText = "Si teniu problemes, vegeu <a href='/issues/'>aquesta llista</a>.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versions antigues</a> o <a href='/download/snapshots/?C=M;O=D'>compilacions diàries</a>.";
     $webstartText = "Executa <a href='/webstart/web/LanguageTool.jnlp'>amb Java WebStart</a>.";
