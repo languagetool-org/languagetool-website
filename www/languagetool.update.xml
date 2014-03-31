@@ -4,7 +4,7 @@
     <identifier value="org.openoffice.languagetool.oxt"/>
     <version value="2.4" />
     <update-download>
-        <src xlink:href="http://www.languagetool.org/download/LanguageTool-2.4.oxt" />
+        <src xlink:href="http://www.languagetool.org/download/LanguageTool-2.5.oxt" />
     </update-download>
     <release-notes>
         <src xlink:href="http://www.languagetool.org/download/CHANGES.txt" lang="en" />
