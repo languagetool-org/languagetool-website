@@ -71,7 +71,7 @@
 <h2>Proveu LanguageTool</h2>
 
 Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
-ací en el navegador:<br/><br/>
+ací en el navegador.<br/><br/>
 
 
 <h2>Descàrrega</h2>
@@ -172,7 +172,7 @@ Tan bon punt s'activi la comprovació d'ortografia i gramàtica, els problemes d
 <h2>Contacte</h2>
 
 <p>Podeu fer consultes en el nostre <a href="../forum">fòrum</a> (per a totes les llengües). També podeu informar de falses alarmes o fer propostes de noves regles.
-Per a comentaris específics de LanguageTool en català, podeu escriure en aquest <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEFCTVNTSFdvRXB2N3lrMnZTYXJNVEE6MQ">formulari</a>.</p>
+Per a comentaris específics de LanguageTool en català, podeu escriure a <a href="mailto:corrector@softcatala.org">corrector@softcatala.org</a>.</p>
 
 </div>
 
