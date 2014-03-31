@@ -14,6 +14,15 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
+<p><strong>2014-03-31:</strong> Released LanguageTool 2.5. Changes include:</p>
+<ul>
+  <li>Many <a href="../changes/languagetool-2.4_to_languagetool-2.5/">updates for the error detection rules</a> for
+      Catalan, English, Esperanto, French, German, Japanese, Polish, Portuguese, and Russian.</li>
+  <li>Added a new 'antipattern' element to the XML rules which can be used to avoid false alarms</li>
+  <li>Small cleanups in the Java API</li>
+  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+</ul>
+
 <p><strong>2013-12-30:</strong> Released LanguageTool 2.4. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.3_to_languagetool-2.4/">updates for the error detection rules</a> for

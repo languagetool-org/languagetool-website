@@ -51,7 +51,7 @@
     $introText2 = "Neben Deutsch werden mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
 
     $downloadHeadline = "Download";
-    $downloadRequiresJava = "Benötigt Java {version}";
+    $downloadRequiresJava = "Benötigt Java {version}+";
     $downloadTitle = "LanguageTool für <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool als <strong>Desktop-Programm</strong>";
     $downloadLabelFx = "LanguageTool als Erweiterung für <strong>Firefox</strong>";

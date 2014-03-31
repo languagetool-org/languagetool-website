@@ -4,21 +4,21 @@ $javaMinVersion = "7";
 if ($downloadRequiresJava) {
     $downloadRequiresJava = str_replace("{version}", $javaMinVersion, $downloadRequiresJava);
 } else {
-    $downloadRequiresJava = "Requires Java $javaMinVersion";
+    $downloadRequiresJava = "Requires Java $javaMinVersion+";
 }
 $buttons = array(
     array(
       'title' => $downloadTitle ? $downloadTitle : 'LanguageTool for <strong>LibreOffice</strong> and <strong>OpenOffice</strong>',
-      'link' => '/download/LanguageTool-2.4.oxt',
+      'link' => '/download/LanguageTool-2.5.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'Version 2.4 &mdash; 45 MB &mdash; ' . $downloadRequiresJava
+      'additional_info' => 'Version 2.5 &mdash; 45 MB &mdash; ' . $downloadRequiresJava
     ),
     array(
       'title' => $downloadTitleStandAlone ? $downloadTitleStandAlone : 'LanguageTool stand-alone for your <strong>Desktop</strong>',
-      'link' => '/download/LanguageTool-2.4.1.zip',
+      'link' => '/download/LanguageTool-2.5.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'Version 2.4.1 &mdash; 70 MB &mdash; ' . $downloadRequiresJava
+      'additional_info' => 'Version 2.5 &mdash; 70 MB &mdash; ' . $downloadRequiresJava
     ),
     array(
       'title' => $downloadLabelFx ? $downloadLabelFx: 'LanguageTool browser extension for <strong>Firefox</strong>',
