@@ -49,7 +49,7 @@
     $introText2 = "";
 
     $downloadHeadline = "Télécharger";
-    $downloadRequiresJava = "Nécessite Java {version}";
+    $downloadRequiresJava = "Nécessite Java {version}+";
     $downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
     $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";

@@ -48,7 +48,7 @@
     $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>. Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. ";
     
     $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}";
+    $downloadRequiresJava = "Requires Java {version}+";
     $downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
     $downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";

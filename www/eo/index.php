@@ -49,7 +49,7 @@
     $introText2 = "";
 
     $downloadHeadline = "Elŝutado";
-    $downloadRequiresJava = "Bezonas Java {version}";
+    $downloadRequiresJava = "Bezonas Java {version}+";
     $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
     $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
