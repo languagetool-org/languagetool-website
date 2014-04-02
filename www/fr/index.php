@@ -81,12 +81,12 @@ Il est aussi possible de définir des règles en Java.</p>
   ou essayez-le ici sur cette page :</p>
 
 <p><strong>Essayer LanguageTool sans installation, avec Java WebStart.</strong>
-L’application LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> :<br />
+L’application LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7 ou 8</a> :<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">Démarrer LanguageTool (&gt;30&nbsp;Mo)</a></strong></p>
 
 <h2>Télécharger</h2>
 
-<p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
+<p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7 ou 8</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
 
 <!--
     <div class="downloadSection">
