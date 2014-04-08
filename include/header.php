@@ -102,11 +102,14 @@
             '  <li>If you are using LibreOffice and you want to check English texts:' +
             '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
             '  <li><strong>Having problems? Please see <a href="<?= $rootUrl ?>/issues">our checklist</a>.</strong></li>' +
+            '  <li><a href="<?= $rootUrl ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases</li>' +
             '</ul>',
             {width: 600});
     }
     function showDownloadStandaloneThanks() {
-        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b><p>Unzip the file and start languagetool.jar by double clicking it.</p>',
+        $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
+            '<p>Unzip the file and start languagetool.jar by double clicking it.</p>' +
+            '<p><a href="<?= $rootUrl ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases.</p>',
             {width: 600});
     }
   </script>
