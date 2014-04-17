@@ -15,7 +15,7 @@
         $map['pt'] = "Cola o teu próprio texto aqui... ou verifica este texto, afim de ver alguns dos dos problemas que o LanguageTool consegue detectar. Isto tal vez permita corrigir os teus erros à última da hora.";
         $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
         $map['be'] = "Паспрабуйце напісаць нейкі тэкст з памылкамі, а LanguageTool паспрабуе паказаць нейкия найбольш распаусюджаныя памылки.";
-        //$map['da'] = "Dette er et teksteksempel for at at vise hvordan LanguageTool virker.";
+        $map['da'] = "Indsæt din egen tekst her , eller brug denne tekst til at se nogle af de fejl LanguageTool fanger. vær opmærksom på at den langtfra er er perfect, men skal være en hjælp til at få standartfejl frem i lyset.";
         //$map['el'] = "";
         $map['es'] = "Este es un un ejemplo de texto de entrada para mostrar como funciona LanguageTool.";
         $map['gl'] = "Esta vai a ser unha mostra de de exemplo para amosar  o funcionamento de LanguageTool.";
