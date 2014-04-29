@@ -21,7 +21,8 @@
         <input type="Submit" name="email-button" value="Subscribe"/>
     </form>
 
-    <p style="margin-top: 20px">Visit the Sourceforge page to <a href="https://lists.sourceforge.net/lists/listinfo/languagetool-devel">unsubscribe</a>.</p>
+    <p style="margin-top: 20px">Once subscribed, you can post to the list at <tt>languagetool-devel <span>at</span> lists.sourceforge.net</tt>.<br/>
+        If you want to unsubscribe, <a href="https://lists.sourceforge.net/lists/listinfo/languagetool-devel">visit the Sourceforge page</a>.</p>
     
     <p>Archives:</p>
     <ul>
