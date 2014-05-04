@@ -58,10 +58,8 @@
     </li>
     
 <li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
-    One problem solved by this is getting <a href="../images/class_not_found.png">a long error message with "NoClassDefFoundError"</a> during installation.
-    See
-    <a href="http://nancib.wordpress.com/2008/05/03/fixing-the-openofficeorg-grammar-glitch-in-ubuntu-hardy/">this blog posting</a>
-    for details.</li>
+    One problem solved by this is getting a long error message with "NoClassDefFoundError" during installation
+    (<a href="../images/class_not_found.png">see screenshot</a>).</li>
 
 <li><strong>On Ubuntu</strong>, if you get a message similar to <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> in LibreOffice/OpenOffice,
     see <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
@@ -79,7 +77,7 @@
     might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
 
 <li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
-    <ul>
+    <ul style="margin-top: 8px">
         <li>Freeze on startup: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
             This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
             by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
