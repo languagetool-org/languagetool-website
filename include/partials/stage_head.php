@@ -79,6 +79,9 @@
     <p class="small"><a href="contribute/">Contribute!</a></p>
     -->
 
+    <p id="noEditorHint" class="small">Make your browser window wider to get a text field
+    where you can try out LanguageTool directly.</p>
+
   </div>
   <div style="clear:both;"></div>
 </div>

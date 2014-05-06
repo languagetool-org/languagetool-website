@@ -361,6 +361,9 @@ body #stage .inner #image img {
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+body #stage .inner #noEditorHint {
+  display: none;
+}
 body #stage .inner #editor {
   float: left;
   width: 65%;
@@ -640,6 +643,10 @@ body #footer span a:hover {
   }
   #stage .inner #editor {
     display: none!important;
+  }
+  #stage .inner #noEditorHint {
+    margin-top: 15px;
+    display: block!important;
   }
   #stage .inner #text {
     width: 100%!important;
