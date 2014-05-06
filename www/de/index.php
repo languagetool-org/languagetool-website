@@ -129,7 +129,7 @@
         </li>
         <li>LanguageTool weist in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
             <ul>
-                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkock'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
+                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
             </ul>
         </li>
         <li>u.v.m.</li>
