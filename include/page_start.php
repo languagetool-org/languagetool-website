@@ -13,6 +13,9 @@
 
             <p><?= $introText1 ?></p>
             <p class="small"><?= $introText2 ?></p>
+            <?php if($contributeLink) { ?>
+                <p class="small"><a href="../contribute/"><?= $contributeLink ?></a></p>
+            <?php } ?>
 
         </div>
         <div style="clear:both;"></div>

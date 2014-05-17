@@ -49,6 +49,7 @@
 
     $introText1 = "<strong>LanguageTool</strong> ist eine freie Textprüfung für Grammatik, Stil und Rechtschreibung. Sie können LanguageTool auf dieser Seite benutzen oder kostenlos herunterladen.";
     $introText2 = "Neben Deutsch werden mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
+    $contributeLink = "Mitmachen!";
 
     $downloadHeadline = "Download";
     $downloadRequiresJava = "Benötigt Java {version}+";
