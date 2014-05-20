@@ -42,9 +42,9 @@
         'be' => 'bielorruso'
     );
 
-    $addYourTextHere = "Inserte texto aquí"; // used for languages that have no demo text
-    $checkSubmitButtonValue = "Verificar Texto";
-    $checkSubmitButtonTitle = "Verificar texto - también puedes presionar Ctrl+Return";
+    $addYourTextHere = "Escriba un texto aquí"; // used for languages that have no demo text
+    $checkSubmitButtonValue = "Verificar texto";
+    $checkSubmitButtonTitle = "Verificar texto - también sirve presionar Ctrl+Return";
     $toggleFullscreenMode = "Cambiar a pantalla completa";
 
     $introText1 = "<strong>LanguageTool</strong> es un software de Código Abierto de verificación gramatical, ortográfica y de estilo. Puedes utilizarlo en esta página o descargarlo gratuitamente.";
