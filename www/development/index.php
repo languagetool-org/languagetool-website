@@ -25,28 +25,32 @@
         </li>
         <li style="font-size: large"><a href="https://github.com/languagetool-org/languagetool"><strong>Source code at github</strong></a></li>
         <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
-            includes <a href="http://community.languagetool.org/ruleEditor/index?lang=en">a rule editor</a>,
+            includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a>,
             <a href="http://community.languagetool.org/analysis">a text analyzer</a>, and Wikipedia checks</li>
         <li><a href="mailing-list.php">Development mailing list</a> (<a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">archive</a>)</li>
-        <li><a href="api/">Javadoc</a>, API documentation</li>
-        <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a></li>
-        <li><a href="https://github.com/languagetool-org/languagetool/issues?labels=easy+fix&amp;state=open">Easy fixes</a>, easy issues for new contributors</li>
+        <li><a href="api/">API documentation (Javadoc)</a></li>
+        <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a>
+            <ul>
+                <li><a href="https://github.com/languagetool-org/languagetool/issues?labels=easy+fix&amp;state=open">Easy fixes</a>, easy issues for new contributors</li>
+            </ul>
+        </li>
         <li><a href="https://github.com/languagetool-org">Source code of related projects (like this website) at github</a></li>
         <li><a href="http://wiki.languagetool.org/development-links">See all development-related links</a></li>
     </ul>
+
+
+    <h2>Using LanguageTool from other Applications</h2>
+
+    <ul>
+        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a> (<a href="api/">API documentation</a>)</li>
+        <li><a href="http://wiki.languagetool.org/public-http-api">Using LanguageTool via HTTP/HTTPS</a></li>
+    </ul>
+
 
     <h2>Embedding LanguageTool on a Web Page</h2>
 
     <ul>
         <li><a href="http://wiki.languagetool.org/integration-on-websites">Integration on Websites</a></li>
-    </ul>
-
-
-    <h2>Embedding LanguageTool from other Applications</h2>
-
-    <ul>
-        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a></li>
-        <li><a href="http://wiki.languagetool.org/public-http-api">Using LanguageTool via HTTP</a></li>
     </ul>
 
 </div>
