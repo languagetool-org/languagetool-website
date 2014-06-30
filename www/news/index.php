@@ -14,6 +14,16 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
+<p><strong>2014-06-30:</strong> Released LanguageTool 2.6. Changes include:</p>
+<ul>
+  <li>Many <!--<a href="../changes/languagetool-2.5_to_languagetool-2.6/">-->updates for the error detection rules<!--</a>--> for
+      English, Breton, Catalan, Esperanto, French, German, Japanese, Polish, Portuguese, Russian, and Spanish.</li>
+  <li>Improved configuration dialog</li>
+  <li>Small rule syntax improvements</li>
+  <li>Java API: removed deprecated methods</li>
+  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+</ul>
+
 <p><strong>2014-03-31:</strong> Released LanguageTool 2.5. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.4_to_languagetool-2.5/">updates for the error detection rules</a> for
