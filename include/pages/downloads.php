@@ -22,13 +22,11 @@
           Download <a href="/download/">old releases</a> or <a href="/download/snapshots/?C=M;O=D">daily builds</a>.
       <?php } ?>
 
-      <!--
       <?php if(isset($webstartText)) { ?>
           <?= $webstartText ?>
       <?php } else { ?>
           Start with <a href="/webstart/web/LanguageTool.jnlp">Java WebStart</a>.
       <?php } ?>
-      -->
       
   </p>
 
