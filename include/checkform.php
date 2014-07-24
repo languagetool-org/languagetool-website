@@ -29,6 +29,7 @@ if (!isset($checkLanguage)) {
         'sl'  => 'Slovenian',
         'es'  => 'Spanish',
         'sv'  => 'Swedish',
+        'ta'  => 'Tamil',
         'tl'  => 'Tagalog',
         'uk'  => 'Ukrainian'
     );
