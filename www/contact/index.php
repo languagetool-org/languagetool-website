@@ -32,7 +32,7 @@
 
     <p><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>,
     Markus Brenneis,
-    Elanjelian Venugopal,
+    <a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>,
     Xavi Ivars,
     Stefan Lotties,
     <a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>,
