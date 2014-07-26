@@ -32,7 +32,7 @@
                 <li><a href="http://www.danielnaber.de">Daniel Naber</a> - contact by sending an email to
                     <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span></li>
                 <li><a href="http://marcinmilkowski.pl">Marcin Miłkowski</a> - contact by using his
-                    <a href="http://marcinmilkowski.pl/en/Contact/">contact form</a></li>
+                    <a href="http://marcinmilkowski.pl/en/contact-me">contact form</a></li>
             </ul>
         </li>
         <li><strong>Announcement mailing list</strong> - low traffic, you will only receive emails about new LanguageTool releases and major new features:
