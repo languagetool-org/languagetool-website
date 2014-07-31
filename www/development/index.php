@@ -27,7 +27,8 @@
         <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
             includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a>,
             <a href="http://community.languagetool.org/analysis">a text analyzer</a>, and Wikipedia checks</li>
-        <li><a href="mailing-list.php">Development mailing list</a> (<a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">archive</a>)</li>
+        <li><a href="mailing-list.php">Development mailing list</a> (<a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">archive 1</a>,
+            <a href="http://markmail.org/search/?q=list%3Anet.sourceforge.lists.languagetool-devel">archive 2</a>)</li>
         <li><a href="api/">API documentation (Javadoc)</a></li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a>
             <ul>
