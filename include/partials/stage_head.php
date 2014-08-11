@@ -22,7 +22,7 @@
         "sv" => "Swedish",
         "zh" => "Chinese"
     );
-    $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt");
+    $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "pl", "ru", "pt", "es");
     $content = "";
     $defaultLang = getDefaultLanguage();
     foreach ($languagesWithMaintainerNeed as $langCode => $langName) {
@@ -57,6 +57,9 @@
                 case "pt":
                     $content = "Também temos uma <a href='$value/'>página em Português</a>.";
                     break;
+                case "es":
+                    $content = "También tenemos uma <a href='$value/'>página en español</a>.";
+                    break;                    
             }
         }
     }
