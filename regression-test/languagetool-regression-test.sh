@@ -59,7 +59,7 @@ languageToolVersion=`java -jar $jarFile version`
 echo "Version: $languageToolVersion</p>" >>$globalResultFile
 
 # as this uses a lot of resources, we only check the languages in active development:
-for lang in en de fr ru br ca pl it pt
+for lang in en de fr ru br ca pl it pt es
 do
   echo "============== $lang =============="
   wikiFile="$corpusDir/$lang/${lang}wiki-[0-9]*-pages-articles.xml"
