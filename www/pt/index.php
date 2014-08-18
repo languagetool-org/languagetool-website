@@ -21,6 +21,7 @@
         'nl'  => 'Dutch',
         'en-US'  => 'English',
         'eo'  => 'Esperanto',
+        'fa'  => 'فارسی',
         'fr'  => 'French',
         'gl'  => 'Galician',
         'de-DE'  => 'German',
