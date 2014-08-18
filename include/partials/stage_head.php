@@ -27,7 +27,7 @@
     $defaultLang = getDefaultLanguage();
     foreach ($languagesWithMaintainerNeed as $langCode => $langName) {
         if ($langCode == $defaultLang) {
-            $content = "<a href='http://wiki.languagetool.org/make-languagetool-better'>Help improve our support for $langName</a>";
+            $content = "<a href='http://wiki.languagetool.org/make-languagetool-better'>We're looking for a maintainer to improve support for $langName!</a>";
         }
     }
     foreach ($languagesWithPage as $i => $value) {
@@ -59,7 +59,7 @@
                     break;
                 case "es":
                     $content = "También tenemos uma <a href='$value/'>página en español</a>.";
-                    break;                    
+                    break;
             }
         }
     }
