@@ -32,6 +32,7 @@
 
     <p><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>,
     Markus Brenneis,
+    <a href="http://github.com/ebraminio">Ebrahim Byagowi</a>,
     <a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>,
     Xavi Ivars,
     Stefan Lotties,
