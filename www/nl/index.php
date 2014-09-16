@@ -8,7 +8,7 @@
 
     // ------------- TRANSLATIONS START HERE -------------
     
-    $title = "Rechtschreibprüfung und Grammatikprüfung mit LanguageTool";
+    $title = "Spellingcontrole en grammaticacontrole met LanguageTool";
 
     $checkLanguage = array(
         'ast' => 'Asturisch',
@@ -43,11 +43,11 @@
     );
 
     $addYourTextHere = "Hier uw tekst";  // used for languages that have no demo text
-    $checkSubmitButtonValue = "Tekst proeflezen";
-    $checkSubmitButtonTitle = "Tekst proeflezen - ook met Ctrl-Enter";
+    $checkSubmitButtonValue = "Tekst controleren";
+    $checkSubmitButtonTitle = "Tekst controleren - ook met Ctrl-Enter";
     $toggleFullscreenMode = "Omschakelen beeldvullend";
 
-    $introText1 = "<strong>LanguageTool</strong> is een gratis controle van tekst op grammatica-, stijl- en spelfouten. U kunt LanguageTool hier gratis gebruiken of kostenloos downloaden.";
+    $introText1 = "<strong>LanguageTool</strong> is een gratis tekstcontrole op grammatica-, stijl- en spelfouten. U kunt LanguageTool hier gratis gebruiken of kostenloos downloaden.";
     $introText2 = "Naast Nederlands kent het meer dan <a href='/languages/'>20 andere talen</a>.";
     $contributeLink = "Meedoen!";
 
@@ -58,7 +58,7 @@
     $downloadLabelFx = "LanguageTool als uitbreiding voor <strong>Firefox</strong>";
     $checklistText = "Problemen? Kijk op <a href='/issues/'>onze hulppagina</a>.";
     $otherDownloadsText = "<a href='/download/'>Oudere versies</a> en <a href='/download/snapshots/?C=M;O=D'>dagelijkse updates</a> downloaden.";
-    $webstartText = "LanguageTool <a href='/webstart/web/LanguageTool.jnlp'>mit Java WebStart starten</a>.";
+    $webstartText = "LanguageTool <a href='/webstart/web/LanguageTool.jnlp'>met Java WebStart starten</a>.";
     
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -85,7 +85,7 @@
     <ul>
         <li>Grammatica
             <ul>
-                <li><span class="errorMarker" title="Overeenstemming tussen lidwoord en zelfstandig naamwoord">De Huis</span> is groot.</li>
+                <li><span class="errorMarker" title="Juist is: 'het huis'">De huis</span> is groot.</li>
                 <li>Voeg <span class="errorMarker" title="Juist is: het spek">de spek</span> toe en bak die even mee.</li>
             </ul>
         </li>
@@ -140,8 +140,8 @@
         <li>Als er nog geen Java op uw computer staat, haalt u dat dan eerst 
 <a href="http://www.java.com/nl/download/manual.jsp" target="_blank">hier gratis op</a> en installeert u het. 
 Ubuntu-gebruikers installeren <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
-        <li>Downloaad de huidige versie van LanguageTool. (De Downloadknop staat bovenaan deze pagina.)</li>
-        <li>Start LibreOffice of OpenOffice.org en kies in het menu <i>Extra</i> de <i>Extensiebeheer</i>.</li>
+        <li>Download de huidige versie van LanguageTool. (De downloadknop staat bovenaan deze pagina.)</li>
+        <li>Start LibreOffice of OpenOffice.org en kies in het menu <i>Extra</i> de optie <i>Extensiebeheer</i>.</li>
         <li>Klik dan op <i>Toevoegen</i>, selecteer het in stap 2 opgehaalde bestand en klik op <i>Openen</i>.</li>
         <li>Start na de instalallatie LibreOffice of OpenOffice.org opnieuw op.</li>
     </ol>
@@ -154,14 +154,14 @@ De instellingen van LanguageTool kunt u  <i>Extra &rarr; LanguageTool &rarr; Ins
 
     <ol>
         <li>Pak het opgehaalde zip-bestand uit.</li>
-        <li>Start languagetool.jar met Java (met een dubbelklik of java -jar languagetool).</li>
+        <li>Start languagetool.jar met Java (met een dubbelklik of java -jar languagetool.jar).</li>
     </ol>
 
 
     <h2>Meedoen</h2>
     
-    <p>Als open-source-projekt is LanguageTool volledig aangewezen op de bijdragen van vrijwilligerd. 
-    In onze wiki is een beschrijving te vinden <a href="http://wiki.languagetool.org/development-overview"> over het maken van eigen regels
+    <p>Als open-source-project is LanguageTool volledig aangewezen op de bijdragen van vrijwilligers. 
+    In onze wiki is een beschrijving te vinden over <a href="http://wiki.languagetool.org/development-overview"> het maken van eigen regels
 </a>, om in de toekomst nog meer aandachtspunten te signaleren.
     Ook voor ontwikkelaars zijn er  
 <a href="http://wiki.languagetool.org/make-languagetool-better">uitdagingen</a> te vinden bij LanguageTool.</p>
