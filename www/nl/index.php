@@ -47,7 +47,7 @@
     $checkSubmitButtonTitle = "Tekst controleren - ook met Ctrl-Enter";
     $toggleFullscreenMode = "Omschakelen beeldvullend";
 
-    $introText1 = "<strong>LanguageTool</strong> is een gratis tekstcontrole op grammatica-, stijl- en spelfouten. U kunt LanguageTool hier gratis gebruiken of kostenloos downloaden.";
+    $introText1 = "<strong>LanguageTool</strong> is een gratis tekstcontrole op grammatica-, stijl- en spelfouten. U kunt LanguageTool hier gratis gebruiken of kosteloos downloaden.";
     $introText2 = "Naast Nederlands kent het meer dan <a href='/languages/'>20 andere talen</a>.";
     $contributeLink = "Meedoen!";
 
