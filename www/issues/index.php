@@ -73,9 +73,13 @@
     For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
     in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
     before deleting anything).</li>
+    
 <li>The <strong>menu items in LibreOffice/OpenOffice.org get mixed up</strong> when both <a href="http://open.afterthedeadline.com/">After the Deadline</a>
     and LanguageTool are installed. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">The macro</a> mentioned here
     might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
+    
+<li>If you start LibreOffice/OpenOffice from the command line and you get a <strong>NoClassDefFoundError</strong>, make
+    sure you're <em>not</em> starting LibreOffice/OpenOffice from the LanguageTool installation directory.</li>
 
 <li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
     <ul style="margin-top: 8px">
