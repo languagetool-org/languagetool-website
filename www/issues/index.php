@@ -87,16 +87,6 @@
             This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
             by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
         </li>
-        <li>LanguageTool installation fails if the name of your user account contains
-            special characters. The only workaround so far seems to be to use a different
-            user account. (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=95162">#95162</a>)</li>
-        <li>If you get a message "Can not activate the factory for com.sun.star.help.HelpIndexer because java.lang.NoClassDefFoundError: org/apache/lucene/analysis/cjk/CJKAnalyzer":
-            this was a bug In OpenOffice.org 3.1, it was fixed in version 3.2 (<a href="http://issues.apache.org/ooo/show_bug.cgi?id=98680">#98680</a>)</li>
-        <li>If you get "Failed to load rules for language English" when opening the configuration dialog, try the latest version of LanguageTool, as this should be fixed in 1.3
-            (problem occurred on openSUSE 11.3 with LanguageTool 1.2 pre-installed)
-            <!-- 2011-03-18 --></li>
-        <li>LanguageTool didn't work together with the <a href="http://extensions.services.openoffice.org/en/project/DeltaXMLODTCompare">DeltaXML
-            ODT Compare</a> extension - use version 1.2.0 of DeltaXML ODT Compare, which fixes the problem.</li>
     </ul>
 </li>
 
@@ -112,7 +102,7 @@
         three sentences start with the same word.</li>-->
     <!--<li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>-->
     <li>LanguageTool doesn't work correctly with documents that contain revisions
-        (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">OOo #92013</a>)
+        (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">OO #92013</a>)
     </li>
 </ul>
 
