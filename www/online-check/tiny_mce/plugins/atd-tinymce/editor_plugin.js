@@ -109,6 +109,7 @@ AtDCore.prototype.findSuggestion = function(element) {
     errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
     errorDescription["subid"] = this.getSurrogatePart(metaInfo, 'subid');
     errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
+    errorDescription["coveredtext"] = this.getSurrogatePart(metaInfo, 'coveredtext');
     var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
         errorDescription["suggestions"] = suggestions.split("#");
@@ -154,7 +155,9 @@ AtDCore.prototype.markMyWords = function() {
                 cssName = "hiddenGrammarError";
             }
             var delim = this.surrogateAttributeDelimiter;
-            var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions;
+            var coveredText = newText.substring(spanStart, spanEnd);
+            var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions
+              + delim + coveredText;
             if (suggestion.moreinfo) {
                 metaInfo += delim + suggestion.moreinfo;
             }
@@ -218,8 +221,10 @@ AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
         return parts[2];
     } else if (part == 'suggestions') {
         return parts[3];
-    } else if (part == 'url' && parts.length >= 4) {
+    } else if (part == 'coveredtext') {
         return parts[4];
+    } else if (part == 'url' && parts.length >= 5) {
+        return parts[5];
     }
     console.log("No part '" + part + "' found in surrogateString: " + surrogateString);
     return null;
@@ -675,8 +680,28 @@ AtDCore.prototype.isIE = function() {
             if (plugin.editor.getParam('languagetool_i18n_rule_implementation')) {
               ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation";
             }
+            var suggestWord = "Suggest word for dictionary...";
+            if (plugin.editor.getParam('languagetool_i18n_suggest_word')) {
+              suggestWord = plugin.editor.getParam('languagetool_i18n_suggest_word')[lang] || "Suggest word for dictionary...";
+            }
+            var suggestWordUrl;
+            if (plugin.editor.getParam('languagetool_i18n_suggest_word_url')) {
+              suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
+            }
+            if (suggestWord && suggestWordUrl) {
+              var newUrl = suggestWordUrl.replace(/{word}/, encodeURIComponent(errorDescription['coveredtext']));
+              (function(url)
+              {
+                m.add({
+                  title : suggestWord,
+                  onclick : function() { window.open(newUrl, '_suggestWord'); }
+                });
+              })(errorDescription[suggestWord]);
+              m.addSeparator();
+            }
+
             //var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
-             
+            
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
                (function(url)
@@ -686,7 +711,6 @@ AtDCore.prototype.isIE = function() {
                      onclick : function() { window.open(url, '_errorExplain'); }
                   });
                })(errorDescription["moreinfo"]);
-
                m.addSeparator();
             }
 

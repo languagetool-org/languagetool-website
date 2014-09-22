@@ -226,6 +226,19 @@
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила'
           },
+       
+       languagetool_i18n_suggest_word :
+          {
+           // "Suggest word for dictionary...": 
+           // *** Also set languagetool_i18n_suggest_word_url below if you set this ***
+           'nl': 'Suggest word for dictionary...'
+          },
+       languagetool_i18n_suggest_word_url :
+          {
+           // "Suggest word for dictionary...":
+           'nl': 'http://www.opentaal.org/suggesties?word={word}'
+          },
+       
        /*languagetool_i18n_ignore_all :
           {
            // "Ignore this kind of error":

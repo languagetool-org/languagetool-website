@@ -346,8 +346,28 @@
             if (plugin.editor.getParam('languagetool_i18n_rule_implementation')) {
               ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation";
             }
+            var suggestWord = "Suggest word for dictionary...";
+            if (plugin.editor.getParam('languagetool_i18n_suggest_word')) {
+              suggestWord = plugin.editor.getParam('languagetool_i18n_suggest_word')[lang] || "Suggest word for dictionary...";
+            }
+            var suggestWordUrl;
+            if (plugin.editor.getParam('languagetool_i18n_suggest_word_url')) {
+              suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
+            }
+            if (suggestWord && suggestWordUrl) {
+              var newUrl = suggestWordUrl.replace(/{word}/, encodeURIComponent(errorDescription['coveredtext']));
+              (function(url)
+              {
+                m.add({
+                  title : suggestWord,
+                  onclick : function() { window.open(newUrl, '_suggestWord'); }
+                });
+              })(errorDescription[suggestWord]);
+              m.addSeparator();
+            }
+
             //var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
-             
+            
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
                (function(url)
@@ -357,7 +377,6 @@
                      onclick : function() { window.open(url, '_errorExplain'); }
                   });
                })(errorDescription["moreinfo"]);
-
                m.addSeparator();
             }
 

@@ -109,6 +109,7 @@ AtDCore.prototype.findSuggestion = function(element) {
     errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
     errorDescription["subid"] = this.getSurrogatePart(metaInfo, 'subid');
     errorDescription["description"] = this.getSurrogatePart(metaInfo, 'description');
+    errorDescription["coveredtext"] = this.getSurrogatePart(metaInfo, 'coveredtext');
     var suggestions = this.getSurrogatePart(metaInfo, 'suggestions');
     if (suggestions) {
         errorDescription["suggestions"] = suggestions.split("#");
@@ -154,7 +155,9 @@ AtDCore.prototype.markMyWords = function() {
                 cssName = "hiddenGrammarError";
             }
             var delim = this.surrogateAttributeDelimiter;
-            var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions;
+            var coveredText = newText.substring(spanStart, spanEnd);
+            var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions
+              + delim + coveredText;
             if (suggestion.moreinfo) {
                 metaInfo += delim + suggestion.moreinfo;
             }
@@ -218,8 +221,10 @@ AtDCore.prototype.getSurrogatePart = function(surrogateString, part) {
         return parts[2];
     } else if (part == 'suggestions') {
         return parts[3];
-    } else if (part == 'url' && parts.length >= 4) {
+    } else if (part == 'coveredtext') {
         return parts[4];
+    } else if (part == 'url' && parts.length >= 5) {
+        return parts[5];
     }
     console.log("No part '" + part + "' found in surrogateString: " + surrogateString);
     return null;
