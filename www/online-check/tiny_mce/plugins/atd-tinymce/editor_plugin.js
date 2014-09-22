@@ -688,7 +688,9 @@ AtDCore.prototype.isIE = function() {
             if (plugin.editor.getParam('languagetool_i18n_suggest_word_url')) {
               suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
             }
-            if (suggestWord && suggestWordUrl) {
+            var ruleId = errorDescription["id"];
+            var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1;
+            if (suggestWord && suggestWordUrl && isSpellingRule) {
               var newUrl = suggestWordUrl.replace(/{word}/, encodeURIComponent(errorDescription['coveredtext']));
               (function(url)
               {
