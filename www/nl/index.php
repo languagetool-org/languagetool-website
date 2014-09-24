@@ -76,11 +76,13 @@
 
     <small>(Beweeg met de muispijl over een aandachtspunt, om de melding te zien.)</small>
 
+    <!--
     <div style="float: right;margin: 15px">
         <a class="fancyboxImage" title="LanguageTool als uitbreiding van LibreOffice" href="images/screenshot.png"><img src="images/screenshot_small.png" alt="Schermafdruk van LanguageTool in LibreOffice"/></a>
         <br/>
         <span style="color:#777">LanguageTool als uitbreiding van LibreOffice</span> 
     </div>
+    -->
 
     <ul>
         <li>Grammatica
