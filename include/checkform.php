@@ -62,7 +62,7 @@ function printLangOption($langCode) {
     <div class="window">
         <div class="fullscreen-toggle">
             <?php
-            if (!$toggleFullscreenMode) {
+            if (!isset($toggleFullscreenMode)) {
                 $toggleFullscreenMode = "toggle fullscreen mode";
             }
             ?>
@@ -128,7 +128,7 @@ function printLangOption($langCode) {
             </div>
             <div class="submit">
                 <input type="submit" name="_action_checkText" value="<?= $checkSubmitButtonValue ?>" 
-                       onClick="doit();return false;" title="<?= $checkSubmitButtonTitle ?>">
+                       onClick="doit();return false;" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>">
             </div>
             <div style="clear:both;"></div>
         </div>

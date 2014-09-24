@@ -12,42 +12,46 @@
     return $full_current_url;
   }
 
+  function getRoot() {
+    return isset($rootUrl) ? $rootUrl : '';
+  }
+
   $hasJQuery = 0;
 
   $assets = array(
     'links' => array(
       array(
-        'src' => $rootUrl . '/css/style.css?v6',
+        'src' => getRoot() . '/css/style.css?v6',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
       ),
       array(
-        'src' => $rootUrl . '/favicon.ico',
+        'src' => getRoot() . '/favicon.ico',
         'rel' => "shortcut icon",
         'type' => "",
         'media' => ''
       ),
       array(
-        'src' => $rootUrl . '/js/fancybox/jquery.fancybox-1.3.4.css',
+        'src' => getRoot() . '/js/fancybox/jquery.fancybox-1.3.4.css',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
       ),
       array(
-        'src' => $rootUrl . '/css/zebra_dialog.css',
+        'src' => getRoot() . '/css/zebra_dialog.css',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => ''
       ),
       array(
-        'src' => $rootUrl . '/css/tablesorter-style.css',
+        'src' => getRoot() . '/css/tablesorter-style.css',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => ''
       ),
       array(
-        'src' => $rootUrl . '/css/lib/dropkick/dropkick.css',
+        'src' => getRoot() . '/css/lib/dropkick/dropkick.css',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => ''
@@ -76,8 +80,8 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
 -->
 
-<?php if ($enable_fancybox) { ?>
-  <script type="text/javascript" src="<?= $rootUrl ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<?php if (isset($enable_fancybox) && $enable_fancybox) { ?>
+  <script type="text/javascript" src="<?= getRoot() ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
   <?php $hasJQuery = 1; ?>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -89,8 +93,8 @@
     </script>
 <?php } ?>
 
-<?php if ($enable_download_dialogs) { ?>
-  <script type="text/javascript" src="<?= $rootUrl ?>/js/zebra_dialog.js"></script>
+<?php if (isset($enable_download_dialogs) && $enable_download_dialogs) { ?>
+  <script type="text/javascript" src="<?= getRoot() ?>/js/zebra_dialog.js"></script>
   <script type="text/javascript">
     function showDownloadOfficeThanks() {
         $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
@@ -101,23 +105,23 @@
             '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
             '  <li>If you are using LibreOffice and you want to check English texts:' +
             '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
-            '  <li><strong>Having problems? Please see <a href="<?= $rootUrl ?>/issues">our checklist</a>.</strong></li>' +
-            '  <li><a href="<?= $rootUrl ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases</li>' +
+            '  <li><strong>Having problems? Please see <a href="<?= getRoot() ?>/issues">our checklist</a>.</strong></li>' +
+            '  <li><a href="<?= getRoot() ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases</li>' +
             '</ul>',
             {width: 600});
     }
     function showDownloadStandaloneThanks() {
         $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
             '<p>Unzip the file and start languagetool.jar by double clicking it.</p>' +
-            '<p><a href="<?= $rootUrl ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases.</p>',
+            '<p><a href="<?= getRoot() ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases.</p>',
             {width: 600});
     }
   </script>
 <?php } ?>
 
-<?php if ($enable_tablesorter) { ?>
+<?php if (isset($enable_tablesorter) && $enable_tablesorter) { ?>
   <?php $hasJQuery = 1; ?>
-  <script type="text/javascript" src="<?= $rootUrl ?>/js/tablesorter/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/js/tablesorter/jquery.tablesorter.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $(".sortable").tablesorter({
@@ -131,12 +135,12 @@
   </script>
 <?php } ?>
 
-<?php if ($enable_textcheck) { ?>
+<?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
-  <script type="text/javascript" src="<?= $rootUrl ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin.js?v2014013"></script>
   <?php if ($hasJQuery == 0) { ?>
-    <script type="text/javascript" src="<?= $rootUrl ?>/js/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
   <script type="text/javascript">
 
@@ -254,9 +258,9 @@
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */
-       languagetool_rpc_url                 : "<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php",
+       languagetool_rpc_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php",
        /* edit this file to customize how LanguageTool shows errors: */
-       languagetool_css_url                 : "<?= $rootUrl ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v3",
+       languagetool_css_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v3",
        /* this stuff is a matter of preference: */
        theme                              : "advanced",
        theme_advanced_buttons1            : "",
@@ -322,7 +326,7 @@
 
    </script>
 
-    <script type="text/javascript" src="<?= $rootUrl ?>/css/lib/dropkick/jquery.dropkick.js"></script>
+    <script type="text/javascript" src="<?= getRoot() ?>/css/lib/dropkick/jquery.dropkick.js"></script>
     <script type="text/javascript">
         function fillSubLanguageSelect(langCode) {
             var subLang = $('#subLang');
@@ -361,7 +365,7 @@
                         tinyMCE.get('checktext').focus();
                         doit();
                     } else {
-                        <?php if($addYourTextHere) { ?>
+                        <?php if(isset($addYourTextHere)) { ?>
                         tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
                         <? } else { ?>
                         tinyMCE.activeEditor.setContent("Add your text here");

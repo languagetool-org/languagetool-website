@@ -17,7 +17,7 @@
 
         foreach ($pages as $aPage) {
           $activeClass = '';
-          if ($page == $aPage['name']) {
+          if (isset($page) && $page == $aPage['name']) {
             $activeClass = 'active';
           }
           print '<a class="'.$activeClass.'" href="'.$aPage['url'].'">'.$aPage['name'].'</a>';
