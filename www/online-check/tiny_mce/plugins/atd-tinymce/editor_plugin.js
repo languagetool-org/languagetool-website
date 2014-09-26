@@ -676,9 +676,9 @@ AtDCore.prototype.isIE = function() {
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this error";
-            var ruleImplementation = "Rule implementation";
+            var ruleImplementation = "Rule implementation...";
             if (plugin.editor.getParam('languagetool_i18n_rule_implementation')) {
-              ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation";
+              ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation...";
             }
             var suggestWord = "Suggest word for dictionary...";
             if (plugin.editor.getParam('languagetool_i18n_suggest_word')) {

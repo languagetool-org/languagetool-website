@@ -208,7 +208,8 @@
            'ru': 'Подробнее…',
            'ca': 'Més informació…',
            'ast': 'Más información…',
-           'pl': 'Więcej informacji…'
+           'pl': 'Więcej informacji…',
+           'nl': 'Uitleg...'
           },
        languagetool_i18n_ignore_once :
           {
@@ -221,14 +222,17 @@
            'ru': 'Пропустить эту ошибку',
            'ca': 'Ignora el suggeriment',
            'ast': 'Inorar esti error',
-           'pl': 'Ignoruj ten błąd'
+           'pl': 'Ignoruj ten błąd',
+           'nl': 'Negeer deze fout'
           },
        languagetool_i18n_rule_implementation :
           {
            // "Rule implementation":
            //'eo': '...',
            'pl': 'Dodatkowe informacje o regule…',
-           'ru': 'Описание реализации правила'
+           'ru': 'Описание реализации правила...',
+           'nl': 'De techniek erachter...',
+           'de-DE': 'Technische Details...'
           },
        
        languagetool_i18n_suggest_word :
