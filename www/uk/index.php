@@ -43,8 +43,8 @@
         'ja'  => 'японська',
     );
 
-    $checkSubmitButtonValue = "Перевірити текст";
-    $checkSubmitButtonTitle = "Перевірити текст";   //TODO: "also possible by using Ctrl+Return"
+    $checkSubmitButtonValue = "Перевірити";
+    $checkSubmitButtonTitle = "Перевірити";   //TODO: "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "перемикнути повноекранний режим";
 
     $introText1 = "<strong>LanguageTool</strong> - вільний програмний засіб для перевірки граматики та стилю для української мови, також підтримує <a href='/languages/'>25 інших мов</a>.";
