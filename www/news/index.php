@@ -14,6 +14,20 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
+<p><strong>2014-09-29:</strong> Released LanguageTool 2.7. Changes include:</p>
+<ul>
+  <li>Many <a href="../changes/languagetool-2.6_to_languagetool-2.7/">updates for the error detection <rules></rules></a> for
+      Breton, Catalan, German, English, Esperanto, Spanish, French, Dutch, Polish, Portuguese, and Russian.</li>
+  <li>Added support for Persian</li>
+  <li>Added support for Tamil</li>
+  <li>Improved spell checking suggestions for English</li>
+  <li>Bug fixes</li>
+  <li>Improved footnote handling in LibreOffice 4.3 and later</li>
+  <li>Java API: removed deprecated methods; small cleanups</li>
+  <li>LanguageTool can now make use of <a href="http://wiki.languagetool.org/finding-errors-using-big-data">ngram data</a></li>
+  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+</ul>
+
 <p><strong>2014-06-30:</strong> Released LanguageTool 2.6. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.5_to_languagetool-2.6/">updates for the error detection <rules></rules></a> for
