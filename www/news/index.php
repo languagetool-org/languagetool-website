@@ -16,7 +16,7 @@
 
 <p><strong>2014-09-29:</strong> Released LanguageTool 2.7. Changes include:</p>
 <ul>
-  <li>Many <a href="../changes/languagetool-2.6_to_languagetool-2.7/">updates for the error detection <rules></rules></a> for
+  <li>Many <a href="../changes/languagetool-2.6_to_languagetool-2.7/">updates for the error detection rules</a> for
       Breton, Catalan, German, English, Esperanto, Spanish, French, Dutch, Polish, Portuguese, and Russian.</li>
   <li>Added support for Persian</li>
   <li>Added support for Tamil</li>
@@ -30,7 +30,7 @@
 
 <p><strong>2014-06-30:</strong> Released LanguageTool 2.6. Changes include:</p>
 <ul>
-  <li>Many <a href="../changes/languagetool-2.5_to_languagetool-2.6/">updates for the error detection <rules></rules></a> for
+  <li>Many <a href="../changes/languagetool-2.5_to_languagetool-2.6/">updates for the error detection rules</a> for
       English, Breton, Catalan, Esperanto, French, German, Japanese, Polish, Portuguese, Russian, and Spanish.</li>
   <li>Improved configuration dialog</li>
   <li>Small rule syntax improvements</li>
