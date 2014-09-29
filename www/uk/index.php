@@ -23,7 +23,7 @@
         'el'  => 'грецька',
         'is'  => 'ісландська',
         'es'  => 'іспаньска',
-        'it'  => 'італійська'
+        'it'  => 'італійська',
         'ca'  => 'каталонська',
         'zh'  => 'китайська',
         'km'  => 'кхмерська',
@@ -61,7 +61,7 @@
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
-    <?php i	nclude("../../include/header.php"); ?>
+    <?php include("../../include/header.php"); ?>
 </head>
 <body>
 <?php include("../../include/page_start.php"); ?>
