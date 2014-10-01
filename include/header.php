@@ -239,12 +239,14 @@
           {
            // "Suggest word for dictionary...": 
            // *** Also set languagetool_i18n_suggest_word_url below if you set this ***
-           'nl': 'Suggest word for dictionary...'
+           'nl': 'Suggest word for dictionary...',
+           'de-DE': 'Wort zur Aufnahme vorschlagen...'
           },
        languagetool_i18n_suggest_word_url :
           {
            // "Suggest word for dictionary...":
-           'nl': 'http://www.opentaal.org/suggesties?word={word}'
+           'nl': 'http://www.opentaal.org/suggesties?word={word}',
+           'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de'
           },
        
        /*languagetool_i18n_ignore_all :
