@@ -476,10 +476,18 @@ AtDCore.prototype.isIE = function() {
                   return;
                }
 
-               if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
+               if (request.status != 200 || request.responseText == '' || request.responseText.substr(1, 4) == 'html')
                {
-                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Try again in one minute.</div>");
+                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
                   _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication']); // Piwik tracking
+                  return;
+               }
+              
+               if (request.responseText.substr(0, 5) !== '<?xml')
+               {
+                  // something is wrong - this does not seem to be the XML we expect 
+                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult']); // Piwik tracking
                   return;
                }
 
