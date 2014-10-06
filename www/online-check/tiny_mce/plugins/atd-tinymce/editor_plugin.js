@@ -472,12 +472,14 @@ AtDCore.prototype.isIE = function() {
                {
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy']); // Piwik tracking
                   return;
                }
 
                if (request.status != 200 || request.responseText.substr(1, 4) == 'html' || request.responseText == '')
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Try again in one minute.</div>");
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication']); // Piwik tracking
                   return;
                }
 
@@ -485,6 +487,7 @@ AtDCore.prototype.isIE = function() {
                if (request.responseXML.getElementsByTagName('message').item(0) != null)
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithException']); // Piwik tracking
                   return;
                }
 
