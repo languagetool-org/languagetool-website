@@ -138,14 +138,16 @@
                {
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy']); // Piwik tracking
+                  var partialErrorMessage = request.responseText.substr(0, 50);
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy', partialErrorMessage]); // Piwik tracking
                   return;
                }
 
                if (request.status != 200 || request.responseText == '' || request.responseText.substr(1, 4) == 'html')
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication']); // Piwik tracking
+                  var detailMessage = "Code: " + request.status;
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication', detailMessage]); // Piwik tracking
                   return;
                }
               
@@ -153,7 +155,8 @@
                {
                   // something is wrong - this does not seem to be the XML we expect 
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult']); // Piwik tracking
+                  var startOfResponse = request.responseText.substr(0, 50);
+                  _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult', startOfResponse]); // Piwik tracking
                   return;
                }
 
