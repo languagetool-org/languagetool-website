@@ -74,7 +74,8 @@ Date: 2014-09-29<br /><br />
 
 <p>The number of Java rules listed is only the number of rules specific
 to that language. There are some rules that deal with punctuation
-and that apply to almost all languages.</p>
+and that apply to almost all languages. The "Activity" column counts
+the number of changes to the rules of that language in the last 6 months.</p>
 
 <p>
 <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.xml">Show false friend rules source code file</a>
