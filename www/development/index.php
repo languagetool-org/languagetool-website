@@ -14,6 +14,16 @@
 
     <h1>Development</h1>
     
+    <h2>API</h2>
+
+    <ul>
+        <li><a href="http://wiki.languagetool.org/public-http-api">Using LanguageTool via HTTP/HTTPS</a></li>
+        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a> (<a href="api/">Javadoc API documentation</a>)</li>
+    </ul>
+
+    
+    <h2>Improving LanguageTool</h2>
+    
     <p>LanguageTool is an Open Source project and we're looking forward to your contributions.</p>
     
     <ul>
@@ -37,14 +47,6 @@
         </li>
         <li><a href="https://github.com/languagetool-org">Source code of related projects (like this website) at github</a></li>
         <li><a href="http://wiki.languagetool.org/development-links">See all development-related links</a></li>
-    </ul>
-
-
-    <h2>Using LanguageTool from other Applications</h2>
-
-    <ul>
-        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a> (<a href="api/">API documentation</a>)</li>
-        <li><a href="http://wiki.languagetool.org/public-http-api">Using LanguageTool via HTTP/HTTPS</a></li>
     </ul>
 
 
