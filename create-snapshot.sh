@@ -33,6 +33,7 @@ rm `find $SNAPSHOT_DIR -name "*.zip" -mtime +10`
 
 # deploy to API server if tests are okay:
 echo "--- Starting tests ---"
+export LANG=de_DE.UTF-8
 cd /home/languagetool/languagetool.org/git-checkout
 mvn -Dlt.default.port=8082 test && \
   echo "--- Tests okay, deploying snapshot to API server ---" && \
