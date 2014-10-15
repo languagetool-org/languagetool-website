@@ -164,8 +164,7 @@
            });
            ed.onKeyDown.add(function(ed, e) {
                if (e.ctrlKey && e.keyCode == 13) {  // Ctrl+Return
-                   if (_paq) { _paq.push(['trackEvent', 'Action', 'CheckText', 'CtrlReturn']); } // Piwik tracking
-                   doit();
+                   doit(true);
                    tinymce.dom.Event.cancel(e);
                } else if (e.keyCode == 27) {   // Escape
                    // doesn't work in firefox, the re-init in turnOffFullScreenView()
@@ -314,15 +313,15 @@
        tinymce.execCommand('mceFocus', false, 'checktext');
    }
 
-   function doit(triggeredByClick) {
-       if (triggeredByClick) {
-         if (_paq) { console.log("track2"); _paq.push(['trackEvent', 'Action', 'CheckText', 'Click']); } // Piwik tracking
-       }
+   function doit(doLog) {
        document.checkform._action_checkText.disabled = true;
        var langCode = document.checkform.lang.value;
        if (document.checkform.subLang && document.checkform.subLang.value) {
            langCode = langCode.replace(/-..$/, "")  // en-US -> en 
                + "-" + document.checkform.subLang.value;
+       }
+       if (doLog) {
+           if (_paq) { _paq.push(['trackEvent', 'Action', 'CheckText', langCode]); } // Piwik tracking
        }
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
