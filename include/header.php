@@ -164,6 +164,7 @@
            });
            ed.onKeyDown.add(function(ed, e) {
                if (e.ctrlKey && e.keyCode == 13) {  // Ctrl+Return
+                   if (_paq) { _paq.push(['trackEvent', 'Action', 'CheckText', 'CtrlReturn']); } // Piwik tracking
                    doit();
                    tinymce.dom.Event.cancel(e);
                } else if (e.keyCode == 27) {   // Escape
@@ -287,6 +288,7 @@
         turnOffFullScreenView();
       } else {
         turnOnFullScreenView();
+        if (_paq) { _paq.push(['trackEvent', 'Action', 'SwitchToFullscreen']); } // Piwik tracking
       }
       return false;
     }
@@ -312,7 +314,10 @@
        tinymce.execCommand('mceFocus', false, 'checktext');
    }
 
-   function doit() {
+   function doit(triggeredByClick) {
+       if (triggeredByClick) {
+         if (_paq) { console.log("track2"); _paq.push(['trackEvent', 'Action', 'CheckText', 'Click']); } // Piwik tracking
+       }
        document.checkform._action_checkText.disabled = true;
        var langCode = document.checkform.lang.value;
        if (document.checkform.subLang && document.checkform.subLang.value) {

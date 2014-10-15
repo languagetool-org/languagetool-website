@@ -128,7 +128,7 @@ function printLangOption($langCode) {
             </div>
             <div class="submit">
                 <input type="submit" name="_action_checkText" value="<?= $checkSubmitButtonValue ?>" 
-                       onClick="doit();return false;" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>">
+                       onClick="doit(true);return false;" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>">
             </div>
             <div style="clear:both;"></div>
         </div>
