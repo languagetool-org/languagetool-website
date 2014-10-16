@@ -480,7 +480,7 @@ AtDCore.prototype.isIE = function() {
                if (request.status != 200 || request.responseText == '' || request.responseText.substr(1, 4) == 'html')
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
-                  var detailMessage = "Code: " + request.status;
+                  var detailMessage = "Code: " + request.status + ", response: '" + request.responseText.substr(0, 4) + "'";
                   _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication', detailMessage]); // Piwik tracking
                   return;
                }
