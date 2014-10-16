@@ -195,7 +195,8 @@
            'ru': 'Ошибки не найдены.',
            'ca': 'No s\'ha trobat cap error',
            'ast': 'Nun s\'atoparon errores',
-           'pl': 'Nie znaleziono błędów'
+           'pl': 'Nie znaleziono błędów',
+           'nl': 'Geen aandachtspunten gevonden.'
           },
        languagetool_i18n_explain :
           {
