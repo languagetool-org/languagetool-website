@@ -12,6 +12,7 @@
 
   include("../include/browser_language.php");
   $checkDefaultLang = getDefaultLanguage();
+  $checkDefaultLangWithCountry = getDefaultLanguageAndCountry();
   //$checkDefaultLang = "en";  // comment in for testing
 
   $currentLang = 'en';

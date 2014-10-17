@@ -352,8 +352,14 @@
             };
             if (langToSubLang[langCode]) {
                 var subLangs = langToSubLang[langCode];
+                var langCodeWithCountry = "<?=$checkDefaultLangWithCountry?>";
+                var langCountry = langCodeWithCountry.replace(/^.*-/, "").toUpperCase();
                 subLangs.forEach(function(entry) {
-                    subLang.append($("<option />").val(entry).text(entry));
+                    if (entry == langCountry) {
+                      subLang.append($("<option selected/>").val(entry).text(entry));
+                    } else {
+                      subLang.append($("<option />").val(entry).text(entry));
+                    }
                 });
                 $('#subLangDropDown').show();
                 subLang.dropkick('refresh');

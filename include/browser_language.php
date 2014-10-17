@@ -7,16 +7,21 @@
 #########################################################
 
 function getDefaultLanguage() {
-   if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
-      return parseDefaultLanguage($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
-   else
+   return getLanguageWithoutCountry(getDefaultLanguageAndCountry());
+}
+
+function getDefaultLanguageAndCountry() {
+   if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+     return parseDefaultLanguage($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+   } else {
       return parseDefaultLanguage(NULL);
+   }
 }
 
 function parseDefaultLanguage($http_accept, $deflang = "en") {
    if(isset($http_accept) && strlen($http_accept) > 1)  {
       # Split possible languages into array
-      $x = explode(",",$http_accept);
+      $x = explode(",", $http_accept);
       foreach ($x as $val) {
          #check for q-value and create associative array. No q-value means 1 by rule
          if(preg_match("/(.*);q=([0-1]{0,1}\.\d{0,4})/i",$val,$matches))
@@ -34,6 +39,11 @@ function parseDefaultLanguage($http_accept, $deflang = "en") {
          }
       }
    }
-   return strtolower(preg_replace("/-..$/i", "", $deflang));  // de-DE -> de
+   return strtolower($deflang);
 }
+
+function getLanguageWithoutCountry($langCode) {
+   return preg_replace("/-.*$/", "", $langCode);  // de-DE -> de
+}
+
 ?>
