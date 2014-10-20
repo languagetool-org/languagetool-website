@@ -58,3 +58,23 @@ unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
   rm -rf /home/languagetool/api/LanguageTool-[1-9].[0-9]*/ && \
   cd /home/languagetool/ && \
   ./restart-api-server.sh
+
+# =====================================================================
+# deploy web app to WikiCheck at Tool Labs:
+# =====================================================================
+cd /home/languagetool/languagetool.org/git-checkout-wikicheck
+mvn install -DskipTests
+
+# there's a Grails bug that causes Grails to not get new SNAPSHOT
+# artifacts, so they need to be deleted manually:
+rm -r ~/.grails/ivy-cache/org.languagetool/
+
+cd /home/languagetool/languagetool.org/git-checkout-wikicheck
+git stash
+git pull -r
+git stash pop
+
+SSH_KEY_FILE=~/.ssh/wikipedia/toollabs
+grails war && \
+  scp -i $SSH_KEY_FILE target/languagetool-wikicheck-0.1.war dnaber@tools-login.wmflabs.org:/data/project/languagetool/ && \
+  ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/deploy-wikicheck.sh"
