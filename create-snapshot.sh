@@ -29,15 +29,31 @@ mv languagetool-standalone/target/LanguageTool*.zip $STANDALONE_TARGET
 rm `find $SNAPSHOT_DIR -name "*.oxt" -mtime +10`
 rm `find $SNAPSHOT_DIR -name "*.zip" -mtime +10`
 
-/bin/sh /home/languagetool/languagetool.org/languagetool-website/deploy-jars.sh
-
-# deploy to API server if tests are okay:
-echo "--- Starting tests ---"
+# =====================================================================
+# run tests:
+# =====================================================================
 export LANG=de_DE.UTF-8
 cd /home/languagetool/languagetool.org/git-checkout
-mvn -Dlt.default.port=8082 test && \
-  echo "--- Tests okay, deploying snapshot to API server ---" && \
-  unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
+mvn -Dlt.default.port=8082 test
+BUILD_SUCCESS=$?
+
+if [ $BUILD_SUCCESS -ne 0 ]
+then
+    echo "Tests failed, stopping deployment"
+    exit
+fi
+
+# =====================================================================
+# deploy JARs to community.languagetool.org:
+# =====================================================================
+echo "--- Deploying JARs to community.languagetool.org ---"
+/bin/sh /home/languagetool/languagetool.org/languagetool-website/deploy-jars.sh
+
+# =====================================================================
+# deploy to API server:
+# =====================================================================
+echo "--- Deploying software snapshot to API server ---"
+unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
   cp -r /home/languagetool/api/LanguageTool-[1-9].[0-9]*/* /home/languagetool/api/ && \
   rm -rf /home/languagetool/api/LanguageTool-[1-9].[0-9]*/ && \
   cd /home/languagetool/ && \
