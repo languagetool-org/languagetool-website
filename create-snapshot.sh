@@ -78,3 +78,8 @@ SSH_KEY_FILE=~/.ssh/wikipedia/toollabs
 grails war && \
   scp -i $SSH_KEY_FILE target/languagetool-wikicheck-0.1.war dnaber@tools-login.wmflabs.org:/data/project/languagetool/ && \
   ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/deploy-wikicheck.sh"
+
+# =====================================================================
+# deploy command-line tools (Feed Checker) for WikiCheck at Tool Labs:
+# =====================================================================
+ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
