@@ -82,4 +82,5 @@ grails war && \
 # =====================================================================
 # deploy command-line tools (Feed Checker) for WikiCheck at Tool Labs:
 # =====================================================================
-ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
+### TODO: comment in again if it works reliably:
+###ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
