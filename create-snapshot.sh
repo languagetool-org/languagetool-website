@@ -62,7 +62,7 @@ unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
 # =====================================================================
 # deploy web app to WikiCheck at Tool Labs:
 # =====================================================================
-cd /home/languagetool/languagetool.org/git-checkout-wikicheck
+cd /home/languagetool/languagetool.org/git-checkout
 mvn install -DskipTests
 
 # there's a Grails bug that causes Grails to not get new SNAPSHOT
