@@ -13,6 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   curl_setopt($curl, CURLOPT_POSTFIELDS, $postText);
   curl_setopt($curl, CURLOPT_HEADER, 0);
   curl_setopt($curl, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);
+  $realIp = $_SERVER['REMOTE_ADDR'];
+  curl_setopt($curl, CURLOPT_HTTPHEADER, array("X_FORWARDED_FOR: $realIp"));
 
   header("Content-Type: text/xml; charset=utf-8");
   //for debugging:
