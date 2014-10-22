@@ -75,6 +75,8 @@ git pull -r
 git stash pop
 
 SSH_KEY_FILE=~/.ssh/wikipedia/toollabs
+GRAILS_HOME=/home/languagetool/grails
+PATH=$GRAILS_HOME/bin:$PATH
 grails war && \
   scp -i $SSH_KEY_FILE target/languagetool-wikicheck-0.1.war dnaber@tools-login.wmflabs.org:/data/project/languagetool/ && \
   ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/deploy-wikicheck.sh"
