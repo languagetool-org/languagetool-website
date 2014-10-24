@@ -71,11 +71,17 @@ function printLangOption($langCode) {
         <p id="checktextpara" style="margin: 0">
             <?php
             require_once("default_texts.php");
-            $checkDefaultText = getDefaultDemoText($checkDefaultLang);
-            if ($checkDefaultText == "") {
+            if ((strpos($_SERVER['HTTP_REFERER'], "http://www.openthesaurus.de") === 0 || strpos($_SERVER['HTTP_REFERER'], "https://www.openthesaurus.de") === 0) 
+                && $_POST['text']) {
+              // This is just a test! Please don't rely on this!
+              $checkDefaultText = htmlspecialchars($_POST['text']);
+            } else {
+              $checkDefaultText = getDefaultDemoText($checkDefaultLang);
+              if ($checkDefaultText == "") {
                 // fallback to English:
                 $checkDefaultLang = "en";
                 $checkDefaultText = getDefaultDemoText("en");
+              }
             }
             ?>
             <textarea id="checktext" name="text" style="width: 100%" rows="10"><?= $checkDefaultText ?></textarea>
