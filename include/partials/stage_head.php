@@ -70,7 +70,6 @@
         }
     }
     ?>
-    <div id="feedbackErrorMessage"></div>
     <?php
     if ($content != "") {
         print "<div class='languageHomepage'>$content</div>";
