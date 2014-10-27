@@ -5,6 +5,7 @@
     $enable_textcheck = 1;
     $enable_fancybox = 1;
     $checkDefaultLang = "ru";
+    $checkDefaultLangWithCountry = "ru-RU";
 
     // ------------- TRANSLATIONS START HERE -------------
 

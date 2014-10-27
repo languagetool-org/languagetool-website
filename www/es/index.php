@@ -5,6 +5,7 @@
     $enable_textcheck = 1;
     $enable_fancybox = 1;
     $checkDefaultLang = "es";
+    $checkDefaultLangWithCountry = "es-ES";
 
     // ------------- TRANSLATIONS START HERE -------------
     
