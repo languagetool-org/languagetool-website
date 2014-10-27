@@ -21,6 +21,12 @@ body #severeError {
   border-width: 4px;
   margin-bottom: 5px;
 }
+body .fullscreen #severeError {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 15px;
+}
 body #screenshots .imgbox {
   width: 320px;
   height: 300px;
