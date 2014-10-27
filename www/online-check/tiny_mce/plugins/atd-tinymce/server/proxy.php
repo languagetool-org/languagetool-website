@@ -21,8 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   //header("Content-Type: text/plain");
   
   if (curl_exec($curl) === false) {
-    print "Error: " . curl_error($curl);
-  };
+    $errorMessage = curl_error($curl);
+    print "Error: " . $errorMessage;
+    error_log("proxy.php error: $errorMessage");
+  }
   curl_close($curl);
 } else {
   print "Error: this proxy only supports POST";
