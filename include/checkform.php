@@ -71,7 +71,7 @@ function printLangOption($langCode) {
         <p id="checktextpara" style="margin: 0">
             <?php
             require_once("default_texts.php");
-            if ((strpos($_SERVER['HTTP_REFERER'], "http://www.openthesaurus.de") === 0 || strpos($_SERVER['HTTP_REFERER'], "https://www.openthesaurus.de") === 0) 
+            if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], "http://www.openthesaurus.de") === 0 || strpos($_SERVER['HTTP_REFERER'], "https://www.openthesaurus.de") === 0) 
                 && $_POST['text']) {
               // This is just a test! Please don't rely on this!
               $checkDefaultText = htmlspecialchars($_POST['text']);
