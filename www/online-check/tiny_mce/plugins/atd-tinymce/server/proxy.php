@@ -12,7 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   curl_setopt($curl, CURLOPT_POST, true);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $postText);
   curl_setopt($curl, CURLOPT_HEADER, 0);
-  curl_setopt($curl, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);
+  if (isset($_SERVER['HTTP_REFERER'])) {
+    curl_setopt($curl, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);
+  }
   $realIp = $_SERVER['REMOTE_ADDR'];
   curl_setopt($curl, CURLOPT_HTTPHEADER, array("X-forwarded-for: $realIp"));
 
