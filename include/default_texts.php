@@ -35,7 +35,11 @@
 
     function getDefaultDemoText($lang) {
         $map = getDefaultDemoTexts();
-        return $map[$lang];
+        if (isset($map[$lang])) {
+            return $map[$lang];
+        } else {
+            return "";
+        }
     }
 
     function getDefaultDemoTextMappingForJavaScript() {
