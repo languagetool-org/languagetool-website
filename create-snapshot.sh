@@ -5,7 +5,14 @@ export JAVA_HOME=/home/languagetool/jdk1.7.0_07
 export MAVEN_OPTS="-Xmx500M -XX:MaxPermSize=300M"
 
 SNAPSHOT_DIR=../languagetool-website/www/download/snapshots
-STANDALONE_TARGET=$SNAPSHOT_DIR/LanguageTool-`date +%Y%m%d`-snapshot.zip
+if [ $# -eq 1 ]
+then
+  BUILD_DATE=$1
+else
+  BUILD_DATE=`date +%Y%m%d`
+fi
+
+STANDALONE_TARGET=$SNAPSHOT_DIR/LanguageTool-$BUILD_DATE-snapshot.zip
 
 cd /home/languagetool/languagetool.org/git-checkout
 git fetch && git rebase origin/master
