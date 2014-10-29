@@ -69,6 +69,7 @@ unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
 # =====================================================================
 # deploy web app to WikiCheck at Tool Labs:
 # =====================================================================
+echo "--- Deploying web app at Tool Labs ---"
 cd /home/languagetool/languagetool.org/git-checkout
 mvn install -DskipTests
 
@@ -76,6 +77,7 @@ mvn install -DskipTests
 # artifacts, so they need to be deleted manually:
 rm -r ~/.grails/ivy-cache/org.languagetool/
 
+echo "-- Getting latest version from git --"
 cd /home/languagetool/languagetool.org/git-checkout-wikicheck
 git stash
 git pull -r
@@ -84,6 +86,7 @@ git stash pop
 SSH_KEY_FILE=~/.ssh/wikipedia/toollabs
 GRAILS_HOME=/home/languagetool/grails
 PATH=$GRAILS_HOME/bin:$PATH
+echo "-- Building and deploying WAR for Tool Labs --"
 grails war && \
   scp -i $SSH_KEY_FILE target/languagetool-wikicheck-0.1.war dnaber@tools-login.wmflabs.org:/data/project/languagetool/ && \
   ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/deploy-wikicheck.sh"
@@ -91,4 +94,5 @@ grails war && \
 # =====================================================================
 # deploy command-line tools (Feed Checker) for WikiCheck at Tool Labs:
 # =====================================================================
+echo "--- Deploying command line feed checker at Tool Labs ---"
 ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
