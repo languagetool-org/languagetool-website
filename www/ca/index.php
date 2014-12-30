@@ -83,7 +83,7 @@ ací en el navegador.<br/><br/>
 
 <h2>Funcions</h2>
 
-LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca">més de 1000</a> regles per a trobar errades en texts en català, més enllà de les que detecta un simple corrector ortogràfic.<br/><br/>
+LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca">més de 2.000</a> regles per a trobar errades en texts en català, més enllà de les que detecta un simple corrector ortogràfic.<br/><br/>
 
 <small>Passeu el cursor per damunt d'un error per a veure la informació corresponent.</small>
 
