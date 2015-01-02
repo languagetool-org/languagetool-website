@@ -30,6 +30,7 @@
         'lt'  => 'Litauisch',
         'ml'  => 'Malayalam',
         'nl'  => 'Niederländisch',
+        'fa'  => 'Persisch',
         'pl'  => 'Polnisch',
         'pt'  => 'Portugiesisch',
         'ro'  => 'Rumänisch',
@@ -38,6 +39,7 @@
         'sk'  => 'Slowakisch',
         'sl'  => 'Slowenisch',
         'es'  => 'Spanisch',
+        'ta'  => 'Tamil',
         'tl'  => 'Tagalog',
         'uk'  => 'Ukrainisch',
         'be'  => 'Weißrussisch'
