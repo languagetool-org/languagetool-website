@@ -58,6 +58,16 @@ AtDCore.prototype.addI18n = function(localizations) {
  * Setters
  */
 
+AtDCore.prototype.getDetectedLanguageFromXML = function(responseXML) {
+    var languages = responseXML.getElementsByTagName('language');
+    if (languages.length != 1) {
+        // shouldn't happen, LT falls back to English instead
+        alert('Sorry, could not detect language');
+    }
+    var langName = languages[0].getAttribute('name');
+    return langName.replace(/\(.*?\)/, "");  // hack: LT doesn't actually detect the variant, so remove it
+};
+
 AtDCore.prototype.processXML = function(responseXML) {
 
     this.suggestions = [];
@@ -505,10 +515,21 @@ AtDCore.prototype.isIE = function() {
                $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
                var results = core.processXML(request.responseXML);
+               if (languageCode === "auto") {
+                  var detectedLang = core.getDetectedLanguageFromXML(request.responseXML);
+                  /*var langDiv = $("#lang");
+                  langDiv.find('option[value="auto"]').remove();
+                  langDiv.prepend($("<option selected/>").val("auto").text("Auto-detected: " + detectedLang));
+                  langDiv.dropkick('refresh');*/
+                  $('#feedbackMessage').html("Detected language: " + detectedLang);
+               }
 
                if (results.length == 0) {
                   var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
                   var noErrorsText = plugin.editor.getParam('languagetool_i18n_no_errors')[lang] || "No errors were found.";
+                  if (languageCode === "auto") {
+                     noErrorsText += " Detected language: " + detectedLang;
+                  }
                   $('#feedbackMessage').html(noErrorsText);
                }
                else {
@@ -863,13 +884,20 @@ AtDCore.prototype.isIE = function() {
                alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works."); 
             }
          });*/
+
+         var langParam = "";
+         if (languageCode === "auto") {
+            langParam = "&autodetect=1";
+         } else {
+            langParam = "&language=" + encodeURI(languageCode);
+         }
    
          tinymce.util.XHR.send({
             url          : url,
             content_type : 'text/xml',
             type         : "POST",
             data         : "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B')
-                           + "&language=" + encodeURI(languageCode)
+                           + langParam
                            // there's a bug somewhere in AtDCore.prototype.markMyWords which makes
                            // multiple spaces vanish - thus disable that rule to avoid confusion:
                            + "&disabled=WHITESPACE_RULE",

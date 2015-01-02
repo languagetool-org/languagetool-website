@@ -2,6 +2,7 @@
 
 if (!isset($checkLanguage)) {
     $checkLanguage = array(
+        'auto' => 'Auto-detect',
         'ast' => 'Asturian',
         'be'  => 'Belarusian',
         'br'  => 'Breton',

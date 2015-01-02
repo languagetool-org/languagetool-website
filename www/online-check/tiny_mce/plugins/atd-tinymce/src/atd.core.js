@@ -58,6 +58,16 @@ AtDCore.prototype.addI18n = function(localizations) {
  * Setters
  */
 
+AtDCore.prototype.getDetectedLanguageFromXML = function(responseXML) {
+    var languages = responseXML.getElementsByTagName('language');
+    if (languages.length != 1) {
+        // shouldn't happen, LT falls back to English instead
+        alert('Sorry, could not detect language');
+    }
+    var langName = languages[0].getAttribute('name');
+    return langName.replace(/\(.*?\)/, "");  // hack: LT doesn't actually detect the variant, so remove it
+};
+
 AtDCore.prototype.processXML = function(responseXML) {
 
     this.suggestions = [];

@@ -385,7 +385,9 @@
                         <?php if(isset($addYourTextHere)) { ?>
                         tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
                         <? } else { ?>
-                        tinyMCE.activeEditor.setContent("Add your text here");
+                        if (value !== "auto") {
+                            tinyMCE.activeEditor.setContent("Add your text here");
+                        }
                         <? } ?>
                         tinyMCE.get('checktext').focus();
                         tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
