@@ -350,9 +350,6 @@ body #stage {
 body #stage.start {
   background-image: url(/images/world-background.png);
 }
-body #stage.download {
-  background-image: url(/images/world-background-for-download.png);
-}
 body #stage .inner {
   width: 950px;
   margin: 0px auto;
