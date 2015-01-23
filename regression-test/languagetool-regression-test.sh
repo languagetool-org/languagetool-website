@@ -17,8 +17,8 @@ mailToPart1=languagetool-commits
 mailToPart2=lists.sourceforge.net
 
 export LANG="de_DE.UTF-8"
-export JAVA_HOME="/home/languagetool/jdk1.7.0_07"
-export PATH="/home/languagetool/jdk1.7.0_07/bin:$PATH"
+export JAVA_HOME="/home/languagetool/java"
+export PATH="/home/languagetool/java/bin:$PATH"
 
 rm LanguageTool-wikipedia-*-snapshot.zip
 wget $jarUrl
