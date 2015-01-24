@@ -89,6 +89,7 @@
         <li>Grammatik
             <ul>
                 <li><span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.</li>
+                <li>Sie hob <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.</li>
                 <li>Ich bin <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.</li>
             </ul>
         </li>
@@ -168,9 +169,11 @@
     Aufgaben</a>. </p>
     
     
-    <h2>Spezielle Varianten</h2>
+    <h2>Varianten</h2>
 
-    <p>LanguageTool unterstützt auch <a href="leichte-sprache/">eine Prüfung auf Leichte Sprache</a>.</p>
+    <p>LanguageTool unterstützt auch <a href="leichte-sprache/">eine Prüfung auf Leichte Sprache</a>. Außerdem
+    werden <a href="../languages/">mehr als 20 weitere Sprachen</a> unterstützt, darunter auch <a href="../">Englisch</a>,
+    <a href="../fr/">Französisch</a> und <a href="../es/">Spanisch</a>.</p>
 
 
     <h2>Kontakt</h2>
