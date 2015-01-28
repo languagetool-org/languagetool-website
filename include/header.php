@@ -391,7 +391,6 @@
                         <? } ?>
                         tinyMCE.get('checktext').focus();
                         tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
-                        // TODO: set real placeholder instead?
                     }
                     $('#feedbackMessage').html('');
                 }
