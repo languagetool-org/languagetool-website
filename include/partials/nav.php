@@ -25,8 +25,9 @@
       ?>
     </div>
     <div id="social">
-      <a class="facebook" href="http://www.facebook.com/LanguageTool" title="facebook"></a>
-      <a class="twitter" href="http://twitter.com/languagetoolorg" title="twitter"></a>
+      <a class="facebook" href="http://www.facebook.com/LanguageTool" title="get news at facebook"></a>
+      <a class="twitter" href="http://twitter.com/languagetoolorg" title="get news at twitter"></a>
+      <a class="github" href="https://github.com/languagetool-org/" title="get the source code at GitHub"></a>
     </div>
     <div style="clear:both;"></div>
   </div>
