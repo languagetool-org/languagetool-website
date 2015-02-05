@@ -216,7 +216,7 @@
           {
            // "Ignore this error":
            'br': 'Na ober van ouzh ar fazi-mañ',
-           'de-DE': 'Hier ignorieren',
+           'de-DE': 'Meldung hier ignorieren',
            'de-DE-x-simple-language': 'Hier ignorieren',
            'eo': 'Ignori tiun eraron',
            'fr': 'Ignorer cette erreur',
@@ -253,18 +253,12 @@
            'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca'
           },
        
-       /*languagetool_i18n_ignore_all :
+       languagetool_i18n_ignore_all :
           {
-           // "Ignore this kind of error":
-           'br': 'Na ober van ouzh ar fazioù seurt-se',
-           'de-DE': 'Fehler dieses Typs ignorieren',
-           'de-DE-x-simple-language': 'Fehler dieses Typs ignorieren',
-           'eo': 'Ignori tiun specon de eraroj',
-           'fr': 'Ignorer ce type d’erreurs',
-           'ru': 'Пропустить этот тип ошибок',
-           'ca': 'Ignora aquesta classe d\'errors',
-           'ast': 'Inorar esta mena d'errores'
-          },*/
+           // "Ignore this word":
+           'de-DE': 'Dieses Wort ignorieren',
+           'de-DE-x-simple-language': 'Dieses Wort ignorieren'
+          },
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */

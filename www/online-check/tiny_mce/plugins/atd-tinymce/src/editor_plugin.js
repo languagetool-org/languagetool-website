@@ -262,11 +262,11 @@
          se.moveToBookmark(b);
       },
 
-      _removeWordsByRuleId : function(ruleId) 
+      _removeWordsByRuleId : function(ruleId, coveredText)
       {
          var ed = this.editor, dom = ed.dom, se = ed.selection, b = se.getBookmark();
 
-         ed.core.removeWordsByRuleId(undefined, ruleId);
+         ed.core.removeWordsByRuleId(undefined, ruleId, coveredText);
 
          /* force a rebuild of the DOM... even though the right elements are stripped, the DOM is still organized
             as if the span were there and this breaks my code */
@@ -393,8 +393,6 @@
               m.addSeparator();
             }
 
-            //var ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore this kind of error";
-            
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
                (function(url)
@@ -415,7 +413,26 @@
                   t._checkDone();
                }
             });
-           
+
+            // 'false': disabled because this gets forgotten on every check, so it's not really useful
+            if (false && isSpellingRule) {
+                var ignoreThisKindOfErrorText = "Ignore this word";
+                if (plugin.editor.getParam('languagetool_i18n_ignore_all')) {
+                    ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang];
+                }
+                m.add({
+                    title : ignoreThisKindOfErrorText,
+                    onclick : function()
+                    {
+                        var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
+                        var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
+                        var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
+                        t._removeWordsByRuleId(ruleId, coveredText);
+                        t._checkDone();
+                    }
+                });
+            }
+
             var langCode = $('#lang').val();
             // NOTE: this link won't work (as of March 2014) for false friend rules:
             var ruleUrl = "http://community.languagetool.org/rule/show/" +
@@ -428,17 +445,6 @@
                title : ruleImplementation,
                onclick : function() { window.open(ruleUrl, '_blank'); }
             });
-
-            /*m.add({
-              title : ignoreThisKindOfErrorText,
-              onclick : function() 
-              {
-                 var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
-                 var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
-                 t._removeWordsByRuleId(ruleId);
-                 t._checkDone();
-              }
-           });*/
 
            /* show the menu please */
            ed.selection.select(e.target);

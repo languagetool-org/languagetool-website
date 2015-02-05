@@ -283,7 +283,7 @@ AtDCore.prototype.removeWords = function(node, w) {
     return count;
 };
 
-AtDCore.prototype.removeWordsByRuleId = function(node, ruleId) {
+AtDCore.prototype.removeWordsByRuleId = function(node, ruleId, coveredText) {
     var count = 0;
     var parent = this;
 
@@ -294,7 +294,8 @@ AtDCore.prototype.removeWordsByRuleId = function(node, ruleId) {
                 parent.replaceWith(n, nnode);
             } else {
                 var surrogate = n.getAttribute(parent.surrogateAttribute);
-                if (!ruleId || (surrogate && parent.getSurrogatePart(surrogate, 'id') == ruleId)) {
+                var textIsRelevant = coveredText ? parent.getSurrogatePart(surrogate, 'coveredtext') == coveredText : true;
+                if (textIsRelevant && (surrogate && parent.getSurrogatePart(surrogate, 'id') == ruleId)) {
                     parent.removeParent(n);
                     count++;
                 }
