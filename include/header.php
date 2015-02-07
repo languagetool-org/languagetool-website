@@ -233,7 +233,8 @@
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила...',
            'nl': 'De techniek erachter...',
-           'de-DE': 'Technische Details...'
+           'de-DE': 'Technische Details...',
+           'ca': 'Informació sobre la regla...'
           },
        
        languagetool_i18n_suggest_word :
