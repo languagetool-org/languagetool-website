@@ -212,24 +212,33 @@
            'pl': 'Więcej informacji…',
            'nl': 'Uitleg...'
           },
+
        languagetool_i18n_ignore_once :
           {
-           // "Ignore this error":
-           'br': 'Na ober van ouzh ar fazi-mañ',
-           'de-DE': 'Meldung hier ignorieren',
-           'de-DE-x-simple-language': 'Hier ignorieren',
-           'eo': 'Ignori tiun eraron',
-           'fr': 'Ignorer cette erreur',
-           'ru': 'Пропустить эту ошибку',
-           'ca': 'Ignora el suggeriment',
-           'ast': 'Inorar esti error',
-           'pl': 'Ignoruj ten błąd',
-           'nl': 'Negeer deze fout'
+           // "Ignore this type of error" -- for non-spelling errors:
+           //'br': 'Na ober van ouzh ar fazi-mañ',
+           'de-DE': 'Fehler dieser Art ignorieren',
+           'de-DE-x-simple-language': 'Fehler dieser Art ignorieren',
+           //'eo': 'Ignori tiun eraron',
+           //'fr': 'Ignorer cette erreur',
+           //'ru': 'Пропустить эту ошибку',
+           //'ca': 'Ignora el suggeriment',
+           //'ast': 'Inorar esti error',
+           //'pl': 'Ignoruj ten błąd',
+           //'nl': 'Negeer deze fout'
+           'fake': 'last entry so all previous items can end with a comma'
           },
+       languagetool_i18n_ignore_all :
+       {
+           // "Ignore error for this word" -- for spelling errors:
+           'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
+           'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
+           'fake': 'last entry so all previous items can end with a comma'
+       },
+
        languagetool_i18n_rule_implementation :
           {
            // "Rule implementation":
-           //'eo': '...',
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила...',
            'nl': 'De techniek erachter...',
@@ -253,13 +262,6 @@
            'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca'
           },
        
-       languagetool_i18n_ignore_all :
-          {
-           // "Ignore this word":
-           'de-DE': 'Dieses Wort ignorieren',
-           'de-DE-x-simple-language': 'Dieses Wort ignorieren'
-          },
-
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */
        languagetool_rpc_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php",

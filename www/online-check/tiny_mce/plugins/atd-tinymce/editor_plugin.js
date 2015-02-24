@@ -37,6 +37,8 @@ function AtDCore() {
      * about errors in the text: */
     this.surrogateAttribute = "onkeypress";
     this.surrogateAttributeDelimiter = "---#---";
+    this.ignoredRulesIds = [];
+    this.ignoredSpellingErrors = [];
 };
 
 /*
@@ -157,6 +159,9 @@ AtDCore.prototype.markMyWords = function() {
             previousSpanStart = spanStart;
             
             var ruleId = suggestion.ruleid;
+            if (this.ignoredRulesIds.indexOf(ruleId) !== -1) {
+                continue;
+            }
             var cssName;
             if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
                 cssName = "hiddenSpellError";
@@ -166,6 +171,9 @@ AtDCore.prototype.markMyWords = function() {
             }
             var delim = this.surrogateAttributeDelimiter;
             var coveredText = newText.substring(spanStart, spanEnd);
+            if (this.ignoredSpellingErrors.indexOf(coveredText) !== -1) {
+                continue;
+            }
             var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions
               + delim + coveredText;
             if (suggestion.moreinfo) {
@@ -711,7 +719,7 @@ AtDCore.prototype.isIE = function() {
              
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
-            var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this error";
+            var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this type of error";
             var ruleImplementation = "Rule implementation...";
             if (plugin.editor.getParam('languagetool_i18n_rule_implementation')) {
               ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation...";
@@ -726,17 +734,6 @@ AtDCore.prototype.isIE = function() {
             }
             var ruleId = errorDescription["id"];
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1;
-            if (suggestWord && suggestWordUrl && isSpellingRule) {
-              var newUrl = suggestWordUrl.replace(/{word}/, encodeURIComponent(errorDescription['coveredtext']));
-              (function(url)
-              {
-                m.add({
-                  title : suggestWord,
-                  onclick : function() { window.open(newUrl, '_suggestWord'); }
-                });
-              })(errorDescription[suggestWord]);
-              m.addSeparator();
-            }
 
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
@@ -750,20 +747,23 @@ AtDCore.prototype.isIE = function() {
                m.addSeparator();
             }
 
-            m.add({
-               title : ignoreThisText,
-               onclick : function() 
-               {
-                  dom.remove(e.target, 1);
-                  t._checkDone();
-               }
-            });
-
-            // 'false': disabled because this gets forgotten on every check, so it's not really useful
-            if (false && isSpellingRule) {
-                var ignoreThisKindOfErrorText = "Ignore this word";
+            if (!isSpellingRule) {
+                m.add({
+                    title : ignoreThisText,
+                    onclick : function()
+                    {
+                        //dom.remove(e.target, 1);
+                        var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
+                        var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
+                        ed.core.ignoredRulesIds.push(ruleId);
+                        t._removeWordsByRuleId(ruleId);
+                        t._checkDone();
+                    }
+                });
+            } else {
+                var ignoreThisKindOfErrorText = "Ignore error for this word";
                 if (plugin.editor.getParam('languagetool_i18n_ignore_all')) {
-                    ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang];
+                    ignoreThisKindOfErrorText = plugin.editor.getParam('languagetool_i18n_ignore_all')[lang] || "Ignore error for this word";
                 }
                 m.add({
                     title : ignoreThisKindOfErrorText,
@@ -772,13 +772,25 @@ AtDCore.prototype.isIE = function() {
                         var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
                         var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
                         var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
+                        ed.core.ignoredSpellingErrors.push(coveredText);
                         t._removeWordsByRuleId(ruleId, coveredText);
                         t._checkDone();
                     }
                 });
             }
 
-            var langCode = $('#lang').val();
+             if (suggestWord && suggestWordUrl && isSpellingRule) {
+                 var newUrl = suggestWordUrl.replace(/{word}/, encodeURIComponent(errorDescription['coveredtext']));
+                 (function(url)
+                 {
+                     m.add({
+                         title : suggestWord,
+                         onclick : function() { window.open(newUrl, '_suggestWord'); }
+                     });
+                 })(errorDescription[suggestWord]);
+             }
+
+             var langCode = $('#lang').val();
             // NOTE: this link won't work (as of March 2014) for false friend rules:
             var ruleUrl = "http://community.languagetool.org/rule/show/" +
               encodeURI(errorDescription["id"]) + "?";
@@ -786,6 +798,7 @@ AtDCore.prototype.isIE = function() {
               ruleUrl += "subId=" + encodeURI(errorDescription["subid"]) + "&";
             }
             ruleUrl += "lang=" + encodeURI(langCode);
+            m.addSeparator();
             m.add({
                title : ruleImplementation,
                onclick : function() { window.open(ruleUrl, '_blank'); }

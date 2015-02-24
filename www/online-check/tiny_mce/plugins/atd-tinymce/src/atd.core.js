@@ -37,6 +37,8 @@ function AtDCore() {
      * about errors in the text: */
     this.surrogateAttribute = "onkeypress";
     this.surrogateAttributeDelimiter = "---#---";
+    this.ignoredRulesIds = [];
+    this.ignoredSpellingErrors = [];
 };
 
 /*
@@ -157,6 +159,9 @@ AtDCore.prototype.markMyWords = function() {
             previousSpanStart = spanStart;
             
             var ruleId = suggestion.ruleid;
+            if (this.ignoredRulesIds.indexOf(ruleId) !== -1) {
+                continue;
+            }
             var cssName;
             if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
                 cssName = "hiddenSpellError";
@@ -166,6 +171,9 @@ AtDCore.prototype.markMyWords = function() {
             }
             var delim = this.surrogateAttributeDelimiter;
             var coveredText = newText.substring(spanStart, spanEnd);
+            if (this.ignoredSpellingErrors.indexOf(coveredText) !== -1) {
+                continue;
+            }
             var metaInfo = ruleId + delim + suggestion.subid + delim + suggestion.description + delim + suggestion.suggestions
               + delim + coveredText;
             if (suggestion.moreinfo) {
