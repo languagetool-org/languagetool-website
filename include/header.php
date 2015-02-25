@@ -233,7 +233,7 @@
            // "Ignore error for this word" -- for spelling errors:
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
-	   'ca'; 'Ignora l\'error d\'aquesta paraula',
+	   'ca': 'Ignora l\'error d\'aquesta paraula',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
