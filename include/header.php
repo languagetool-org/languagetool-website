@@ -222,7 +222,7 @@
            //'eo': 'Ignori tiun eraron',
            //'fr': 'Ignorer cette erreur',
            //'ru': 'Пропустить эту ошибку',
-           'ca': 'Ignora aquesta classe d&quot;errors',
+           'ca': 'Ignora aquesta classe d\'errors',
            //'ast': 'Inorar esti error',
            //'pl': 'Ignoruj ten błąd',
            //'nl': 'Negeer deze fout'
@@ -233,7 +233,7 @@
            // "Ignore error for this word" -- for spelling errors:
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
-	   'ca'; 'Ignora l&quot;error d&quot;aquesta paraula',
+	   'ca'; 'Ignora l\'error d\'aquesta paraula',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
