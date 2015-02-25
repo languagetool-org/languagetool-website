@@ -222,7 +222,7 @@
            //'eo': 'Ignori tiun eraron',
            //'fr': 'Ignorer cette erreur',
            //'ru': 'Пропустить эту ошибку',
-           //'ca': 'Ignora el suggeriment',
+           'ca': 'Ignora aquesta classe d&quot;errors',
            //'ast': 'Inorar esti error',
            //'pl': 'Ignoruj ten błąd',
            //'nl': 'Negeer deze fout'
@@ -233,6 +233,7 @@
            // "Ignore error for this word" -- for spelling errors:
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
+	   'ca'; 'Ignora l&quot;error d&quot;aquesta paraula',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
@@ -243,7 +244,7 @@
            'ru': 'Описание реализации правила...',
            'nl': 'De techniek erachter...',
            'de-DE': 'Technische Details...',
-           'ca': 'Informació sobre la regla...'
+           'ca': 'Implementació de la regla...'
           },
        
        languagetool_i18n_suggest_word :
@@ -252,7 +253,7 @@
            // *** Also set languagetool_i18n_suggest_word_url below if you set this ***
            'nl': 'Suggest word for dictionary...',
            'de-DE': 'Wort zur Aufnahme vorschlagen...',
-           'ca': 'Suggereix un mot per al diccionari...'
+           'ca': 'Suggereix una paraula per al diccionari...'
           },
        languagetool_i18n_suggest_word_url :
           {
