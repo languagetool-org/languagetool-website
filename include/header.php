@@ -219,6 +219,7 @@
            //'br': 'Na ober van ouzh ar fazi-mañ',
            'de-DE': 'Fehler dieser Art ignorieren',
            'de-DE-x-simple-language': 'Fehler dieser Art ignorieren',
+           'sl': 'Prezri te vrste napako',
            //'eo': 'Ignori tiun eraron',
            //'fr': 'Ignorer cette erreur',
            //'ru': 'Пропустить эту ошибку',
@@ -233,7 +234,8 @@
            // "Ignore error for this word" -- for spelling errors:
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
-	   'ca': 'Ignora l\'error d\'aquesta paraula',
+           'ca': 'Ignora l\'error d\'aquesta paraula',
+           'sl': 'Prezri napako za to besedo',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
