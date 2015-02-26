@@ -227,6 +227,7 @@
            //'ast': 'Inorar esti error',
            //'pl': 'Ignoruj ten błąd',
            'nl': 'Negeer dergelijke fouten',
+           'pt': 'Ignorar este tipo de erros',
            'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_ignore_all :
@@ -237,6 +238,7 @@
            'ca': 'Ignora l\'error d\'aquesta paraula',
            'sl': 'Prezri napako za to besedo',
            'nl': 'Negeer deze spelfout',
+           'pt': 'Ignorar erros para esta palavra',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
