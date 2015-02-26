@@ -226,7 +226,7 @@
            'ca': 'Ignora aquesta classe d\'errors',
            //'ast': 'Inorar esti error',
            //'pl': 'Ignoruj ten błąd',
-           //'nl': 'Negeer deze fout'
+           'nl': 'Negeer dergelijke fouten',
            'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_ignore_all :
@@ -236,6 +236,7 @@
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
            'ca': 'Ignora l\'error d\'aquesta paraula',
            'sl': 'Prezri napako za to besedo',
+           'nl': 'Negeer deze spelfout',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
