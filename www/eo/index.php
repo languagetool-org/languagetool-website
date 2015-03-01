@@ -16,20 +16,24 @@
         //'auto' => 'aŭtomate detekti',
         'be' => 'belarusa',
         'br' => 'bretona',
-        'ca' => 'kataluna',
+        'zh' => 'ĉina'
         'da' => 'dana',
         'de-DE' => 'germana',
         'en-US' => 'angla',
         'eo' => 'Esperanto',
+        'el' => 'greka',
         'es' => 'hispana',
         'fr' => 'franca',
         'gl' => 'galega',
         'is' => 'islanda',
         'it' => 'itala',
+        'ja' => 'japana',
+        'ca' => 'kataluna',
         'km' => 'kmera',
         'lt' => 'litova',
         'ml' => 'malajala',
         'nl' => 'nederlanda',
+        'fa' => 'persa',
         'pl' => 'pola',
         'pt' => 'portugala',
         'ro' => 'rumana',
@@ -38,8 +42,8 @@
         'sl' => 'slovena',
         'sv' => 'sveda',
         'tl' => 'tagaloga',
+        'ta' => 'tamila',
         'uk' => 'ukraina',
-        'zh' => 'ĉina'
     );
 
     $checkSubmitButtonValue = 'Kontroli'; 
