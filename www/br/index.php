@@ -20,13 +20,16 @@
         'eo' => 'esperanteg',
         'fr' => 'galleg',
         'gl' => 'galizeg',
+        'el' => 'gresianeg',
         'is' => 'islandeg',
         'it' => 'italianeg',
+        'ja' => 'japaneg',
         'ca' => 'katalaneg',
         'km' => 'khmer',
         'lt' => 'lituaneg',
         'ml' => 'malayalam',
         'nl' => 'nederlandeg',
+        'fa' => 'perseg',
         'pl' => 'poloneg',
         'pt' => 'portugaleg',
         'ro' => 'roumaneg',
@@ -38,6 +41,7 @@
         'es' => 'spagnoleg',
         'sv' => 'svedeg',
         'tl' => 'tagalog',
+        'ta' => 'tamileg',
         'uk' => 'ukraineg'
     );
 
