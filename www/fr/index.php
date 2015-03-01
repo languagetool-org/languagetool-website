@@ -13,24 +13,27 @@
 
     $checkLanguage = array(
         //'auto' => 'détecter automatiquement',
+        'de-DE' => 'allemand',
         'en-US' => 'anglais',
         'ast' => 'asturien',
         'be' => 'biélorusse',
         'br' => 'breton',
+        'ca' => 'catalan',
         'zh' => 'chinois',
         'da' => 'danois',
+        'es' => 'espagnol',
         'eo' => 'espéranto',
         'fr' => 'français',
         'gl' => 'galicien',
-        'de-DE' => 'allemand',
-        'es' => 'espagnol',
+        'el' => 'grec',
         'is' => 'islandais',
         'it' => 'italien',
-        'ca' => 'catalan',
+        'ja' => 'japonais',
         'km' => 'khmer',
         'lt' => 'lituanien',
         'ml' => 'malayalam',
         'nl' => 'néerlandais',
+        'fa' => 'persan',
         'pl' => 'polonais',
         'pt' => 'portugais',
         'ro' => 'roumain',
@@ -39,6 +42,7 @@
         'sl' => 'slovène',
         'sv' => 'suédois',
         'tl' => 'tagalog',
+        'ta' => 'tamoul',
         'uk' => 'ukrainien'
     );
 
