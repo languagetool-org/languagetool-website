@@ -16,7 +16,7 @@
         //'auto' => 'aŭtomate detekti',
         'be' => 'belarusa',
         'br' => 'bretona',
-        'zh' => 'ĉina'
+        'zh' => 'ĉina',
         'da' => 'dana',
         'de-DE' => 'germana',
         'en-US' => 'angla',
