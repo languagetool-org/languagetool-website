@@ -389,11 +389,11 @@
                     } else {
                         <?php if(isset($addYourTextHere)) { ?>
                         tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
-                        <? } else { ?>
+                        <?php } else { ?>
                         if (value !== "auto") {
                             tinyMCE.activeEditor.setContent("Add your text here");
                         }
-                        <? } ?>
+                        <?php } ?>
                         tinyMCE.get('checktext').focus();
                         tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
                     }
