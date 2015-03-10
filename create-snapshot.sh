@@ -17,6 +17,7 @@ STANDALONE_TARGET=$SNAPSHOT_DIR/LanguageTool-$BUILD_DATE-snapshot.zip
 cd /home/languagetool/languagetool.org/git-checkout
 git fetch && git rebase origin/master
 
+# TODO: remove once we're on the new server (.80)
 M2_HOME=/home/languagetool/apache-maven-3.0.4
 M2=$M2_HOME/bin
 PATH=$M2:$PATH
@@ -95,5 +96,5 @@ unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
 # =====================================================================
 # deploy command-line tools (Feed Checker) for WikiCheck at Tool Labs:
 # =====================================================================
-echo "--- Deploying command line feed checker at Tool Labs ---"
-ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
+#echo "--- Deploying command line feed checker at Tool Labs ---"
+#ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
