@@ -17,12 +17,6 @@ STANDALONE_TARGET=$SNAPSHOT_DIR/LanguageTool-$BUILD_DATE-snapshot.zip
 cd /home/languagetool/languagetool.org/git-checkout
 git fetch && git rebase origin/master
 
-# TODO: remove once we're on the new server (.80)
-M2_HOME=/home/languagetool/apache-maven-3.0.4
-M2=$M2_HOME/bin
-PATH=$M2:$PATH
-PATH=$JAVA_HOME/bin:$PATH
-
 # We need to build like this - building the top-level project and then taking the
 # artifacts will aggregate *all* languages into the language-module.properties, even
 # for those projects that don't depend on all of the languages:
