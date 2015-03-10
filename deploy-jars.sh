@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copy the latest LanguageTool JARs to Tomcat for community.languagetool.org
-# Run this after a new snapshot has been created.
+# Run this after a new snapshot has been created - root needs to restart Tomcat then.
 # dnaber, 2014-03-04
 
 SNAPSHOT_DIR=/home/languagetool/languagetool.org/languagetool-website/www/download/snapshots
@@ -53,5 +53,6 @@ echo "Going to unzip: $WIKI_JAR"
 unzip -d /tmp/lt-wikipedia-snapshot $WIKI_JAR
 cp /tmp/lt-wikipedia-snapshot/LanguageTool-*-SNAPSHOT/languagetool-wikipedia.jar $WEB_LIB
 
-cd /home/languagetool
-./restart-tomcat.sh
+# commented out as this now requires root permission:
+#cd /home/languagetool
+#./restart-tomcat.sh
