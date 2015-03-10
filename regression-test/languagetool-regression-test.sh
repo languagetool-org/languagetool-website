@@ -94,5 +94,5 @@ mv $globalResultFile $targetDir
 echo "Overview saved to $targetDir/$globalResultFile"
 
 ### send mail:
-lynx --dump $targetDir/$globalResultFile | sed -e 's#file://localhost/home/languagetool/languagetool.org/languagetool-website/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
+lynx --dump $targetDir/$globalResultFile | sed -e 's#file:///home/languagetool/languagetool.org/languagetool-website/www/#http://languagetool.org/#' | mail -aFrom:${mailFromPart1}@${mailFromPart2} -s "LanguageTool nightly diff test" ${mailToPart1}@${mailToPart2}
 echo "Mail sent to ${mailToPart1}@${mailToPart2}"
