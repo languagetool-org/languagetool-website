@@ -1,18 +1,13 @@
 <!doctype html>
 <html lang=ru>
 <head>
-<?php
-$enable_textcheck = 1;
-$enable_fancybox = 1;
-$checkDefaultLang = "ru";
-$checkDefaultLangWithCountry = "ru-RU";
 
-?>
 <?php include("../../../include/header.php"); ?>
 </head>
 <body>
 <?php include("../../../include/page_start.php"); ?>
-<div id="languageContent">
+
+
 
 <h2>Новости</h2>
 <p><strong>30.12.2014:</strong> Вышла версия LanguageTool 2.8</p>
