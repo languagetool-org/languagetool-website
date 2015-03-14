@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang=ru>
-<head>
 
+<head>
+<?php
+$page = "other";
+$title = "Новости LanguageTool";
+?>
 <?php include("../../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../../include/page_start.php"); ?>
+<?php include("../../../include/partials/nav.php"); ?>
 
-
+<div id="textContent">
 
 <h2>Новости</h2>
 <p><strong>30.12.2014:</strong> Вышла версия LanguageTool 2.8</p>
