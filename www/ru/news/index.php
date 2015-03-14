@@ -8,10 +8,10 @@ $checkDefaultLang = "ru";
 $checkDefaultLangWithCountry = "ru-RU";
 
 ?>
-<?php include("../../include/header.php"); ?>
+<?php include("../../../include/header.php"); ?>
 </head>
 <body>
-<?php include("../../include/page_start.php"); ?>
+<?php include("../../../include/page_start.php"); ?>
 <div id="languageContent">
 
 <h2>Новости</h2>
@@ -164,6 +164,6 @@ $checkDefaultLangWithCountry = "ru-RU";
 </ul>
 
 </div>
-<?php include("../../include/page_end.php"); ?>
+<?php include("../../../include/page_end.php"); ?>
 </body>
 </html>
