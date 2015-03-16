@@ -187,87 +187,87 @@
        languagetool_i18n_no_errors :
           {
            // "No errors were found.":
+           'ast': 'Nun s\'atoparon errores',
            'br': 'Fazi ebet.',
+           'ca': 'No s\'ha trobat cap error',
            'de-DE': 'Keine Fehler gefunden.',
            'de-DE-x-simple-language': 'Keine möglichen Verstöße gegen Leichte Sprache gefunden.',
            'eo': 'Neniuj eraroj trovitaj.',
            'fr': 'Aucune erreur trouvée.',
-           'ru': 'Ошибки не найдены.',
-           'ca': 'No s\'ha trobat cap error',
-           'ast': 'Nun s\'atoparon errores',
+           'nl': 'Geen aandachtspunten gevonden.',
            'pl': 'Nie znaleziono błędów',
-           'nl': 'Geen aandachtspunten gevonden.'
+           'ru': 'Ошибки не найдены.',
+           'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_explain :
           {
            // "Explain..." - shown if there's an URL with a more detailed description:
+           'ast': 'Más información…',
            'br': 'Muioc’h a ditouroù…',
+           'ca': 'Més informació…',
            'de-DE': 'Mehr Informationen...',
            'de-DE-x-simple-language': 'Mehr Informationen...',
            'eo': 'Pliaj klarigoj…',
            'fr': 'Plus d’informations…',
-           'ru': 'Подробнее…',
-           'ca': 'Més informació…',
-           'ast': 'Más información…',
+           'nl': 'Uitleg...',
            'pl': 'Więcej informacji…',
-           'nl': 'Uitleg...'
+           'ru': 'Подробнее…',
+           'fake': 'last entry so all previous items can end with a comma'
           },
 
        languagetool_i18n_ignore_once :
           {
            // "Ignore this type of error" -- for non-spelling errors:
            //'br': 'Na ober van ouzh ar fazi-mañ',
+           'ca': 'Ignora aquesta classe d\'errors',
            'de-DE': 'Fehler dieser Art ignorieren',
            'de-DE-x-simple-language': 'Fehler dieser Art ignorieren',
            'es': 'Ignorar este tipo de error',
-           'sl': 'Prezri te vrste napako',
-           //'eo': 'Ignori tiun eraron',
-           //'fr': 'Ignorer cette erreur',
-           //'ru': 'Пропустить эту ошибку',
-           'ca': 'Ignora aquesta classe d\'errors',
-           //'ast': 'Inorar esti error',
-           //'pl': 'Ignoruj ten błąd',
            'nl': 'Negeer dergelijke fouten',
            'pt': 'Ignorar este tipo de erros',
+           'sl': 'Prezri te vrste napako',
            'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_ignore_all :
        {
            // "Ignore error for this word" -- for spelling errors:
+           'ca': 'Ignora l\'error d\'aquesta paraula',
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
-           'ca': 'Ignora l\'error d\'aquesta paraula',
            'es': 'Ignorar el error para esta palabra',
-           'sl': 'Prezri napako za to besedo',
            'nl': 'Negeer deze spelfout',
            'pt': 'Ignorar erros para esta palavra',
+           'sl': 'Prezri napako za to besedo',
            'fake': 'last entry so all previous items can end with a comma'
        },
 
        languagetool_i18n_rule_implementation :
           {
            // "Rule implementation":
+           'ca': 'Implementació de la regla...',
+           'de-DE': 'Technische Details...',
+           'nl': 'De techniek erachter...',
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила...',
-           'nl': 'De techniek erachter...',
-           'de-DE': 'Technische Details...',
-           'ca': 'Implementació de la regla...'
+           'fake': 'last entry so all previous items can end with a comma'
           },
        
        languagetool_i18n_suggest_word :
           {
-           // "Suggest word for dictionary...": 
+           // "Suggest word for dictionary...":
            // *** Also set languagetool_i18n_suggest_word_url below if you set this ***
-           'nl': 'Suggest word for dictionary...',
+           'ca': 'Suggereix una paraula per al diccionari...',
            'de-DE': 'Wort zur Aufnahme vorschlagen...',
-           'ca': 'Suggereix una paraula per al diccionari...'
+           'nl': 'Suggest word for dictionary...',
+           'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_suggest_word_url :
           {
            // "Suggest word for dictionary...":
-           'nl': 'http://www.opentaal.org/suggesties?word={word}',
+           'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca',
            'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de',
-           'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca'
+           'nl': 'http://www.opentaal.org/suggesties?word={word}',
+           'fake': 'last entry so all previous items can end with a comma'
           },
        
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
