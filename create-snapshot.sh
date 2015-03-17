@@ -80,7 +80,6 @@ git stash
 git pull -r
 git stash pop
 
-JAVA_HOME
 GRAILS_HOME=/home/languagetool/grails
 PATH=$GRAILS_HOME/bin:$PATH
 echo "-- Building and deploying WAR for community.languagetool.org/wikiCheck --"
