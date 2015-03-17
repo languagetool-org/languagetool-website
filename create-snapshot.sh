@@ -89,7 +89,7 @@ unzip -o -d /home/languagetool/tomcat/webapps/wikiCheck/ target/languagetool-wik
 # Tomcat restart needs root permission, but happens automatically by cron job
 
 # =====================================================================
-# deploy command-line tools (Feed Checker) for WikiCheck at Tool Labs:
+# deploy command-line tools (Feed Checker) for WikiCheck:
 # =====================================================================
-#echo "--- Deploying command line feed checker at Tool Labs ---"
-#ssh -i $SSH_KEY_FILE dnaber@tools-login.wmflabs.org "become languagetool /data/project/languagetool/redeploy-feedchecker.sh"
+echo "--- Deploying command line feed checker at community.languagetool.org ---"
+/home/languagetool/feed-checker/redeploy-feedchecker.sh
