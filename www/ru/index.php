@@ -76,7 +76,7 @@
    src="/ru/screenshots/screenshot-lo3-very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 
-<p>LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики и стиля.
+<p>LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики, пунктуации и стиля.
 
 <h2>Функциональность</h2>
 
@@ -115,11 +115,11 @@
         <ul>
         </ul>
     </li>
-       <li>Дополнительно
+       <li>Дополнительные правила
         <ul>
         </ul>
     </li>
-    <li>Проверка орфографии
+    <li>Проверка орфографии (не входит в состав расширения LibreOffice/OpenOffice)
         <ul>
         </ul>
     </li>
