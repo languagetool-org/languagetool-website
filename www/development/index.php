@@ -56,6 +56,9 @@
         <li><a href="http://wiki.languagetool.org/integration-on-websites">Integration on Websites</a></li>
     </ul>
 
+    <br/><br/>
+    <a href="http://www.cloudbees.com/"><img src="/images/cloudbees-logo.png" alt="CloudBees logo"/></a>
+
 </div>
 
 <?php
