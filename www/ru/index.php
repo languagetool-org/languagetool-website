@@ -51,7 +51,7 @@
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
-    $introText2 = "Программа поддерживает более <a href='/languages/'>20 языков"</a>;
+    $introText2 = "Программа поддерживает более <a href='/languages/'>20 языков</a>";
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}";
