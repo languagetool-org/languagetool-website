@@ -51,7 +51,7 @@
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
-    $introText2 = "";
+    $introText2 = "Программа поддерживает более <a href='/languages/'>20 языков"</a>;
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}";
@@ -244,8 +244,8 @@ LanguageTool можно использовать для проверки гра�
 
 <h2>Лицензия и исходный код</h2>
 
-<p>LanguageTool свободно распространятся по лицензии <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a> или по её более новой версии.
-Исходный код доступен <a href="https://github.com/languagetool-org/">на GitHub</a> через Git.
+<p>LanguageTool свободно распространятся по лицензии <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL</a> версии 2.1 или новее.
+Исходный код доступен <a href="https://github.com/languagetool-org/">на GitHub</a> через Git или SVN.
 Содержимое этой домашней страницы доступно по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
 
 </div>
