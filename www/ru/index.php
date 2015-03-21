@@ -58,7 +58,7 @@
     $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
     $downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
-    $checklistText = "Посмотрите, пожалуйста, <a href='/issues/'>наш список</a> если вы столкнулись с проблемами.";
+    $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
     $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>.";
     $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
 
@@ -239,7 +239,7 @@ LanguageTool можно использовать для проверки гра�
 
 <p><a href="http://myooo.ru/content/view/83/43/">Домашняя страничка расширения для OpenOffice.org/LibreOffice на русском языке.</a></p>
 
-<p><a href="../issues">Список известных проблем</a>.</p>
+<p><a href="/ru/issues">Список известных проблем</a>.</p>
 
 
 <h2>Лицензия и исходный код</h2>
