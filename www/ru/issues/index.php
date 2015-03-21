@@ -58,7 +58,7 @@ and will not work with a 64-bit Java. You need to use a <a href="http://www.java
 смотри <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
 Примечание. Это сообщение не появляется в виде диалогового окна, а выводится только при запуске из командной строки. Поэтому, чтобы его увидеть, необходимо запустить LibreOffice/OpenOffice из окна терминала.</li>
 <li>Если возникает сообщение <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> во время установки,необходимо выполнить
-<a href="http://wiki.forumooo.ru/wiki/Profile>очистку (удаление) пользовательского профиля  OpenOffice</a>.</li>
+<a href="http://wiki.forumooo.ru/wiki/Profile">очистку (удаление) пользовательского профиля  OpenOffice</a>.</li>
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
 For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
 in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
@@ -66,9 +66,9 @@ before deleting anything).</li>
 <li><strong>Пункты меню в LibreOffice/OpenOffice.org могут быть смешаны</strong> когда оба расширения <a href="http://open.afterthedeadline.com/">After the Deadline</a>
 и LanguageTool установлены. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">Макрос</a>, представленный здесь,
 поможет в решении этой проблемы. Эта ошибка отражена в <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
-<li>If you start LibreOffice/OpenOffice from the command line and you get a <strong>NoClassDefFoundError</strong>, make
-sure you're <em>not</em> starting LibreOffice/OpenOffice from the LanguageTool installation directory.</li>
-<li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
+<li>Если при запуске LibreOffice/OpenOffice из командной строки появляется сообщение <strong>NoClassDefFoundError</strong>, убедитесь,
+что запуск LibreOffice/OpenOffice происходит <em>НЕ</em> из каталога установки LanguageTool.</li>
+<li class="oldInformation">При использовании старых версий LanguageTool и/или OpenOffice.org, могут возникать следующие проблемы:
 <ul style="margin-top: 8px">
 <li>Зависание при старте: на слабых машинах LanguageTool может вызывать зависание LibreOffice или OpenOffice.org при запуске на секунды или минуту.
 Эта ошибка исправлена в LibreOffice 3.5.4 и Apache OpenOffice 3.4.1, но все более старые версии содержат эту ошибку,
