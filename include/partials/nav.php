@@ -32,9 +32,3 @@
     <div style="clear:both;"></div>
   </div>
 </div>
-
-<div id="bounty" style="background-color: #fffbdd; color: black; font-size: large; text-align: center; padding: 10px">
-    <a style="text-decoration: none" href="https://www.bountysource.com/issues/9358930-develop-an-interface-for-grammar-checkers"
-        >Post a bounty so that Firefox can have a better LanguageTool integration</a>
-    <!--<a style="text-decoration: none" href="#" onclick="$('#bounty').hide()">[close]</a>-->
-</div>
