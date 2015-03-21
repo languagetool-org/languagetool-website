@@ -10,14 +10,14 @@ $title = "Известные проблемы LanguageTool и способы и�
 <body>
 <?php include("../../../include/partials/nav.php"); ?>
 <div id="textContent">
-<h1><a name="commonproblems">Checklist in Case of Problems</a></h1>
+<h1><a name="commonproblems">Контрольный список при возникновении проблем</a></h1>
 <ul>
 <li>Если установка LanguageTool в LibreOffice/OpenOffice не вызвала ошибки, но необходимо проверить его работоспособность,
 загрузите <strong><a href="languagetool-test.odt">тестовый документ</a></strong> и следуйте инструкциям, изложенным в нём.</li>
 <li><strong>Для пользователей Mac:</strong> Для  LanguageTool необходима Java 7 или новее, которая доступна для Mac только в качестве 64 битной версии.
 В связи с этим, необходимо использовать <strong>64-битную версию LibreOffice 4.2 или новее</strong> для работы LanguageTool на Mac.
-<strong>and you <em>also</em> need to have '<a href="http://support.apple.com/kb/DL1572">Java for OS X</a>' installed</strong>,
-additionally to Java&nbsp;7 or later (Source: <a href="https://bugs.freedesktop.org/show_bug.cgi?id=74877">#74877</a>).
+<strong>и <em>так же</em> необходимо установить '<a href="http://support.apple.com/kb/DL1572">Java для OS X</a>' </strong>,
+дополнительно к Java&nbsp;7 или старше (Источник: <a href="https://bugs.freedesktop.org/show_bug.cgi?id=74877">#74877</a>).
 <br/><span class="oldInformation">Older versions of LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
 cannot be used with these versions as a LibreOffice/OpenOffice add-on on the Mac. The only known workaround for these older versions is to use
 LanguageTool 2.2, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
@@ -35,11 +35,11 @@ old version of Java you'll see a confusing error message <a href="../images/vers
 (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Необходимо перезапустить LibreOffice/OpenOffice.org, включая быстрый запуск,  после установки LanguageTool? This is required,
 even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
-<li>If LanguageTool doesn't start and you see no error message, please
-check if the extension is enabled in the Extension manager
-(under <em>Tools -&gt; Extension Manager</em>).</li>
+<li>Если LanguageTool не запускается, и не появляется сообщение об ошибке,
+проверьте, включено ли расширение в менеджере расширений
+(в меню <em>Tools -&gt; Extension Manager</em>).</li>
 </ul>
-<h2>Common Problems with LibreOffice/OpenOffice.org Integration</h2>
+<h2>Общие проблемы с интеграцией в LibreOffice/OpenOffice.org</h2>
 <ul>
 <li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not
 work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
@@ -70,22 +70,20 @@ might help you. This issue is tracked as <a href="http://openatd.trac.wordpress.
 sure you're <em>not</em> starting LibreOffice/OpenOffice from the LanguageTool installation directory.</li>
 <li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
 <ul style="margin-top: 8px">
-<li>Freeze on startup: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
-This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
-by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
+<li>Зависание при старте: for some people, LanguageTool freezes LibreOffice or OpenOffice.org on startup for seconds to minutes.
+Эта ошибка исправлена в LibreOffice 3.5.4 и Apache OpenOffice 3.4.1, но все более старые версии содержат эту ошибку,
+и мы настоятельно рекомендуем использовать как минимум эти версии. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Описание ошибки</a>.
 </li>
 </ul>
 </li>
 </ul>
 <h2>Известные ограничения</h2>
 <ul>
-<li>Some errors are not detected: LanguageTool uses rules to detect errors, i.e. it will only complain about errors for which there
-is a rule that detects it. Please consider learning <b><a href="http://wiki.languagetool.org/development-overview#toc0">how to write rules</a></b> and
-<b><a href="http://wiki.languagetool.org/make-languagetool-better">help make LanguageTool better</a></b> by contributing your rules.</li>
-<!--<li>Some rules that work across sentences don't work in LibreOffice/OpenOffice.org. This also affects the rule that checks whether
-three sentences start with the same word.</li>-->
-<!--<li>For some rules there are a lot of false alarms, i.e., LanguageTool complains about text which is actually correct</li>-->
-<li>LanguageTool doesn't work correctly with documents that contain revisions
+<li>Некоторые ошибки не определяются: LanguageTool использует правила для поиска ошибок, то есть может найти только те ошибки
+которые описаны в правилах. Подробнее о <b><a href="http://wiki.languagetool.org/development-overview#toc0">создании правил</a></b> и
+<b><a href="http://wiki.languagetool.org/make-languagetool-better">расширении возможностей LanguageTool</a></b> путём создания новых правил и включения их в проект.</li>
+
+<li>LanguageTool не может корректно работать с документами, которые содержат историю изменений
 (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=36540">LibreOffice #36540</a>, <a href="https://issues.apache.org/ooo/show_bug.cgi?id=92013">OO #92013</a>)
 </li>
 </ul>
