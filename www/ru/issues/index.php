@@ -29,8 +29,8 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 <li>Убедитесь, что <a href="http://www.java.com/en/download/manual.jsp">Java 7 или новее от Oracle</a>  или IcedTea
 установлена в вашей системе. Для Windows используйте 32-битную версию Java, если используете LanguageTool
 в качестве расширения LibreOffice или OpenOffice.org.
-Версии Java не от Oracle могут не работать. If you're using an
-old version of Java you'll see a confusing error message <a href="../../../images/version-error.jpg">like this</a>.</li>
+Версии Java не от Oracle могут не работать. При использовании
+старых версий Java может появиться сообщение  <a href="../../../images/version-error.jpg">типа этого</a>.</li>
 <li>Убедитесь, что корректная версия Java выбрана в LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) или OpenOffice.org
 (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Необходимо перезапустить LibreOffice/OpenOffice.org, включая быстрый запуск,  после установки LanguageTool? This is required,
@@ -41,14 +41,14 @@ even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org
 </ul>
 <h2>Общие проблемы с интеграцией в LibreOffice/OpenOffice.org</h2>
 <ul>
-<li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not
-work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
-on Windows and Mac.</li>
-<li>If you get <strong>"Could not create Java implementation loader"</strong>, please work through
-<a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">these suggestions</a>.
-<strong>Примечание: </strong> if you have this problem on 64-bit Windows,
-it may be caused by a 64-bit version of Java. LibreOffice and Apache OpenOffice are only built as 32-bit applications
-and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.
+<li>Для использования совместно с <strong>32-битной версией LibreOffice/OpenOffice</strong>, необходимо использовать 32-битную версию Java, иначе LanguageTool не будет
+работать. LibreOffice/OpenOffice пока не предоставляют официальную 64-битную версию для Windows. Поэтому необходимо использовать 32-битную версию Java
+для Windows.</li>
+<li>Если появляется сообщение <strong>"Could not create Java implementation loader"</strong>, можно воспользоваться
+<a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">этими советами</a>.
+<strong>Примечание: </strong> Если возникают проблемы на 64-разрядной Windows,
+то они могут быть вызваны использованием 64-битной версии Java. LibreOffice и Apache OpenOffice сейчас поставляются только как 32-разрядные приложения
+и не работают с 64-разрядной Java. Необходимо использовать <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-разрядную сборку Java для Windows</a>.
 (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
 </li>
 <li><strong>На Ubuntu</strong> установите пакеты <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> .
@@ -59,10 +59,10 @@ and will not work with a 64-bit Java. You need to use a <a href="http://www.java
 Примечание. Это сообщение не появляется в виде диалогового окна, а выводится только при запуске из командной строки. Поэтому, чтобы его увидеть, необходимо запустить LibreOffice/OpenOffice из окна терминала.</li>
 <li>Если возникает сообщение <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> во время установки,необходимо выполнить
 <a href="http://wiki.forumooo.ru/wiki/Profile">очистку (удаление) пользовательского профиля  OpenOffice</a>.</li>
-<li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
-For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
-in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
-before deleting anything).</li>
+<li>Если появляется сообщение <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
+В некоторых случаях LanguageTool может быть установлен дважды в качестве расширения OpenOffice.org. Можно удалить каталоги, которые перечислены
+в сообщении об ошибке (предварительно сделав резервную копию). (Эти каталоги могут иметь произвольные имена типа "EE31.tmp_" или подобные.  Необходимо закрыть OpenOffice.org
+перед удалением каталога).</li>
 <li><strong>Пункты меню в LibreOffice/OpenOffice.org могут быть смешаны</strong> когда оба расширения <a href="http://open.afterthedeadline.com/">After the Deadline</a>
 и LanguageTool установлены. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">Макрос</a>, представленный здесь,
 поможет в решении этой проблемы. Эта ошибка отражена в <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
