@@ -14,24 +14,24 @@ $title = "Известные проблемы LanguageTool и способы и�
 <ul>
 <li>Если установка LanguageTool в LibreOffice/OpenOffice не вызвала ошибки, но необходимо проверить его работоспособность,
 загрузите <strong><a href="languagetool-test.odt">тестовый документ</a></strong> и следуйте инструкциям, изложенным в нём.</li>
-<li><strong>Для пользователей Mac:</strong> Для  LanguageTool необходима Java 7 или новее, которая доступна для Mac только в качестве 64 битной версии.
+<li><strong>Для пользователей Mac:</strong> Для  LanguageTool необходима Java 7 или новее, которая доступна для Mac только в качестве 64-битной версии.
 В связи с этим, необходимо использовать <strong>64-битную версию LibreOffice 4.2 или новее</strong> для работы LanguageTool на Mac.
-<strong>и <em>так же</em> необходимо установить '<a href="http://support.apple.com/kb/DL1572">Java для OS X</a>' </strong>,
+<strong><em>Так же</em> необходимо установить '<a href="http://support.apple.com/kb/DL1572">Java для OS X</a>'</strong>,
 дополнительно к Java&nbsp;7 или старше (Источник: <a href="https://bugs.freedesktop.org/show_bug.cgi?id=74877">#74877</a>).
-<br/><span class="oldInformation">Older versions of LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
-cannot be used with these versions as a LibreOffice/OpenOffice add-on on the Mac. The only known workaround for these older versions is to use
-LanguageTool 2.2, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
-of Java 6 still exists. LanguageTool 2.2 doesn't require Java 7 but also works with Java 6.</span></li>
-<li>LibreOffice 3.5 and later comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
-English and Russian.
-Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
+<br/><span class="oldInformation">Старые версии LibreOffice и OpenOffice доступны только как 32-битные версии, что делает их несовместимыми с LanguageTool в 
+качестве расширения на Mac. Способом решения проблемы является использование более старых версий, например
+LanguageTool 2.2, который доступен в <a href="http://languagetool.org/download/">архиве загрузок</a>, и может быть использован для 32-битных версий
+или для Java 6. LanguageTool 2.2 не требует обязательного наличия Java 7, но зато хорошо работает с Java 6.</span></li>
+<li>LibreOffice 3.5 и новее поставляется со встроенной программой для проверки грамматики (LightProof), которая отключает LanguageTool для
+английского и русского языков.
+Используйте Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
 you are working with to make LanguageTool work.</li>
-<li>Убедитесь, что <a href="http://www.java.com/en/download/manual.jsp">Java 7 или новее от Oracle или IcedTea</a>
+<li>Убедитесь, что <a href="http://www.java.com/en/download/manual.jsp">Java 7 или новее от Oracle</a>  или IcedTea
 установлена в вашей системе. Для Windows используйте 32-битную версию Java, если используете LanguageTool
 в качестве расширения LibreOffice или OpenOffice.org.
-Java versions which are not from Oracle may not work. If you're using an
+Версии Java не от Oracle могут не работать. If you're using an
 old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
-<li>Make sure this version of Java is selected in LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) or OpenOffice.org
+<li>Убедитесь, что корректная версия Java выбрана в LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) или OpenOffice.org
 (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Необходимо перезапустить LibreOffice/OpenOffice.org, включая быстрый запуск,  после установки LanguageTool? This is required,
 even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
