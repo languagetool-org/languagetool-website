@@ -52,13 +52,13 @@ and will not work with a 64-bit Java. You need to use a <a href="http://www.java
 (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
 </li>
 <li><strong>На Ubuntu</strong> установите пакеты <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> .
-One problem solved by this is getting a long error message with "NoClassDefFoundError" during installation
-(<a href="../images/class_not_found.png">see screenshot</a>).</li>
-<li><strong>На Ubuntu</strong>, if you get a message similar to <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> in LibreOffice/OpenOffice,
-see <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
-Note that the message might not appear in a dialog but only on the command line, so you might want to start LibreOffice/OpenOffice from a terminal window.</li>
-<li>If you get <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> during installation, please consider
-<a href="http://user.services.openoffice.org/en/forum/viewtopic.php?p=58403#p58403">resetting your OpenOffice user profile</a>.</li>
+Это поможет устранить проблему, проявляющуюся в возникновении сообщения об ошибке "NoClassDefFoundError" во время установки
+(<a href="../../../images/class_not_found.png">скриншот</a>).</li>
+<li><strong>На Ubuntu</strong>, если появляется сообщение <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> в LibreOffice/OpenOffice,
+смотри <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
+Примечание. Это сообщение не появляется в виде диалогового окна, а выводится только при запуске из командной строки. Поэтому, чтобы его увидеть, необходимо запустить LibreOffice/OpenOffice из окна терминала.</li>
+<li>Если возникает сообщение <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> во время установки,необходимо выполнить
+<a href="http://wiki.forumooo.ru/wiki/Profile>очистку (удаление) пользовательского профиля  OpenOffice</a>.</li>
 <li>If you get <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
 For some reason LanguageTool is installed twice as an extension in OpenOffice.org. You can try deleting the directories listed
 in the error message after making a backup. (The directories to be deleted have random names like "EE31.tmp_" or similar - exit OpenOffice.org
