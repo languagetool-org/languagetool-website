@@ -261,6 +261,7 @@
            'ca': 'Suggereix una paraula per al diccionari...',
            'de-DE': 'Wort zur Aufnahme vorschlagen...',
            'nl': 'Suggest word for dictionary...',
+           'ru': 'Предложить слово для словаря...',
            'fake': 'last entry so all previous items can end with a comma'
           },
        languagetool_i18n_suggest_word_url :
@@ -269,6 +270,7 @@
            'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca',
            'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
+           'nl': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
        
