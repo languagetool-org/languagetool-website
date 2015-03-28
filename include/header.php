@@ -270,7 +270,7 @@
            'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca',
            'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
-           'nl': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
+           'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
        
