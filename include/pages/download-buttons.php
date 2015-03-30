@@ -9,18 +9,18 @@ if (isset($downloadRequiresJava)) {
 $buttons = array(
     array(
       'title' => isset($downloadTitle) ? $downloadTitle : 'LanguageTool for <strong>LibreOffice</strong> and <strong>OpenOffice</strong>',
-      'link' => '/download/LanguageTool-2.8.oxt',
+      'link' => '/download/LanguageTool-2.9.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'Version 2.8 &mdash; 50 MB &mdash; ' . $downloadRequiresJava,
-      'release_info' => 'released 2014-12-30'
+      'additional_info' => 'Version 2.9 &mdash; 55 MB &mdash; ' . $downloadRequiresJava,
+      'release_info' => 'released 2015-03-30'
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'LanguageTool stand-alone for your <strong>Desktop</strong>',
-      'link' => '/download/LanguageTool-2.8.zip',
+      'link' => '/download/LanguageTool-2.9.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'Version 2.8 &mdash; 81 MB &mdash; ' . $downloadRequiresJava,
-      'release_info' => 'released 2014-12-30'
+      'additional_info' => 'Version 2.9 &mdash; 89 MB &mdash; ' . $downloadRequiresJava,
+      'release_info' => 'released 2015-03-30'
     ),
     array(
       'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'LanguageTool browser extension for <strong>Firefox</strong>',
