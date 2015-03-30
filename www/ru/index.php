@@ -80,7 +80,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 370 правил</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 430 правил</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
