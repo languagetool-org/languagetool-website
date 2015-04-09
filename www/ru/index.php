@@ -51,7 +51,7 @@
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
-    $introText2 = "Программа поддерживает более <a href='/languages/'>20 языков</a>";
+    $introText2 = "Программа содержит правила проверки для более чем <a href='/languages/'>20 языков</a>";
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}";
@@ -149,7 +149,7 @@
 <ul>
     <li>Открыть LibreOffice/OpenOffice.Org. </li> 
     <li>Выбрать Сервис - > Управление расширениями - > Добавить. </li> 
-    <li>Выбрать файл с расширением.</li> 
+    <li>Выбрать файл LanguageTool-2.x.oxt</li> 
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
