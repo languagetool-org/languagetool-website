@@ -27,7 +27,7 @@
     $defaultLang = getDefaultLanguage();
     foreach ($languagesWithMaintainerNeed as $langCode => $langName) {
         if ($langCode == $defaultLang) {
-            $content = "<a href='http://wiki.languagetool.org/make-languagetool-better'>We're looking for a maintainer to improve support for $langName!</a>";
+            $content = "<a href='http://wiki.languagetool.org/make-languagetool-better'>We're looking for a maintainer to improve the support for $langName!</a>";
         }
     }
     foreach ($languagesWithPage as $i => $value) {
@@ -79,7 +79,7 @@
   </div>
   <div id="text">
     
-    <p><strong>LanguageTool</strong> is an Open Source proof&shy;reading soft&shy;ware for English, French, German,
+    <p><strong>LanguageTool</strong> is an Open Source proof&shy;reading program for English, French, German,
         Polish, and more than <a href="languages/">20 other languages</a>.</p>
     <p class="small">It finds many errors that a simple spell checker cannot detect and several grammar problems.</p>
 
