@@ -103,8 +103,9 @@
             '  LanguageTool will not work otherwise.</li>' + 
             '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
             '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
-            '  <li>If you are using LibreOffice and you want to check English texts:' +
-            '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable LanguageTool for English</li>' +
+            '  <li>If you are using LibreOffice and you want to check <strong>English</strong> or <strong>Russian</strong> texts:' +
+            '  Use <em>Options &rarr; Language Settings &rarr; Writing Aids &rarr; Edit&hellip;</em> to disable LightProof and enable' +
+            '  LanguageTool for English and/or Russian.</li>' +
             '  <li><strong>Having problems? Please see <a href="<?= getRoot() ?>/issues">our checklist</a>.</strong></li>' +
             '  <li><a href="<?= getRoot() ?>/contact/newsletter.php">Subscribe to our newsletter</a> to get information about new releases</li>' +
             '</ul>',
