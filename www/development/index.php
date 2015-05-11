@@ -55,8 +55,14 @@
     <ul>
         <li><a href="http://wiki.languagetool.org/integration-on-websites">Integration on Websites</a></li>
     </ul>
+    
+    <h2>Powered By</h2>
 
-    <br/><br/>
+    <p>Thanks to ej-technologies for providing us with free licenses of their
+    <a href="http://www.ej-technologies.com/products/jprofiler/overview.html">Java profiler</a>
+    and to <a href="http://www.cloudbees.com/">CloudBees</a> for free access to a hosted Jenkins instance.</p>
+    
+    <a href="http://www.ej-technologies.com/products/jprofiler/overview.html"><img style="margin-right: 15px; margin-bottom: 2px" src="/images/jprofiler_large.png" alt="JProfiler Java profiler logo"/></a>
     <a href="http://www.cloudbees.com/"><img src="/images/cloudbees-logo.png" alt="CloudBees logo"/></a>
 
 </div>
