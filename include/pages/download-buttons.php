@@ -9,11 +9,11 @@ if (isset($downloadRequiresJava)) {
 $buttons = array(
     array(
       'title' => isset($downloadTitle) ? $downloadTitle : 'LanguageTool for <strong>LibreOffice</strong> and <strong>OpenOffice</strong>',
-      'link' => '/download/LanguageTool-2.9.oxt',
+      'link' => '/download/LanguageTool-2.9.1.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'Version 2.9 &mdash; 55 MB &mdash; ' . $downloadRequiresJava,
-      'release_info' => 'released 2015-03-30'
+      'additional_info' => 'Version 2.9.1 &mdash; 55 MB &mdash; ' . $downloadRequiresJava,
+      'release_info' => 'released 2015-05-14'
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'LanguageTool stand-alone for your <strong>Desktop</strong>',
