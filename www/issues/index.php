@@ -47,6 +47,9 @@
 
 <ul>
     
+<li>Users of LanguageTool 2.9: If you experience <strong>osl::Thread::Create failed</strong> errors, please
+    update to LanguageTool 2.9.1 (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
+
 <li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not 
     work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
     on Windows and Mac.</li>
