@@ -41,6 +41,7 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 </ul>
 <h2>Общие проблемы с интеграцией в LibreOffice/OpenOffice.org</h2>
 <ul>
+<li>Пользователям LanguageTool 2.9: Если возникает ошибка <strong>osl::Thread::Create failed</strong>, пожалуйста, обновите LanguageTool до версии 2.9.1 (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
 <li>Для использования совместно с <strong>32-битной версией LibreOffice/OpenOffice</strong>, необходимо использовать 32-битную версию Java, иначе LanguageTool не будет
 работать. LibreOffice/OpenOffice пока не предоставляют официальную 64-битную версию для Windows. Поэтому необходимо использовать 32-битную версию Java
 для Windows.</li>
