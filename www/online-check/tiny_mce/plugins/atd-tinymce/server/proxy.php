@@ -33,12 +33,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (curl_exec($curl) === false) {
     $errorMessage = curl_error($curl);
     $errorCode = curl_errno($curl);
-    // Actually this message can be empty, e.g. if the Apache server is in "No buffer space available" state...
+    if (!$errorMessage && $errorCode == 7) {
+      // Actually the message can be empty, e.g. if the Apache server is in "No buffer space available" state...
+      $errorMessage = "Could not connect LanguageTool server";   // source: http://curl.haxx.se/libcurl/c/libcurl-errors.html
+    }
     print "Error: " . $errorMessage;
     error_log("proxy.php error: $errorMessage, code: $errorCode");
   }
   curl_close($curl);
 } else {
-  print "Error: this proxy only supports POST";
+  print "Error: this proxy only supports POST requests";
 }
 ?>
