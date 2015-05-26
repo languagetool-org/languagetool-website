@@ -32,8 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   if (curl_exec($curl) === false) {
     $errorMessage = curl_error($curl);
+    $errorCode = curl_errno($curl);
+    // Actually this message can be empty, e.g. if the Apache server is in "No buffer space available" state...
     print "Error: " . $errorMessage;
-    error_log("proxy.php error: $errorMessage");
+    error_log("proxy.php error: $errorMessage, code: $errorCode");
   }
   curl_close($curl);
 } else {
