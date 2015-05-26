@@ -17,6 +17,13 @@
 <ul>
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
+<li>If you see different results locally and on languagetool.org, that's for two reasons:
+    <ul style="margin-top: 8px">
+        <li>We usually run the latest version on languagetool.org which might have more rules that the latest release version.</li>
+        <li>English only: We have some additional rules active on languagetool.org that require large data
+            sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-big-data">technical details</a>).</li>
+    </ul>
+</li>
 <li><strong>For Mac users:</strong> LanguageTool requires Java 7 or later, which is available for the Mac only as a 64 bit version.
     You need <strong>the 64-bit version of LibreOffice 4.2 or later</strong> in order to use LanguageTool on a Mac
     <strong>and you <em>also</em> need to have '<a href="http://support.apple.com/kb/DL1572">Java for OS X</a>' installed</strong>,
