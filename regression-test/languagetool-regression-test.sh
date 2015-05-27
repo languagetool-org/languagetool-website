@@ -15,6 +15,7 @@ mailFromPart1=dnaber
 mailFromPart2=users.sourceforge.net
 mailToPart1=languagetool-commits
 mailToPart2=lists.sourceforge.net
+ngramDir=/home/languagetool/ngram-data/
 
 export LANG="de_DE.UTF-8"
 export JAVA_HOME="/home/languagetool/java"
@@ -66,7 +67,7 @@ do
   tatoebaFile="/home/languagetool/corpus/tatoeba/tatoeba-${lang}.txt"
   mv result_${lang}.new result_${lang}.old
   ls -l $wikiFile
-  commandOptions="-jar $jarFile check-data -l $lang -f $wikiFile -f $tatoebaFile --max-sentences $maxSentences"
+  commandOptions="-jar $jarFile check-data -l $lang -f $wikiFile -f $tatoebaFile --max-sentences $maxSentences --languagemodel $ngramDir"
   echo "Command options: ${commandOptions}"
   java $commandOptions | sed -e 's/[0-9]\+.) //' >result_${lang}.new
   diff -u result_${lang}.old result_${lang}.new >result_${lang}.diff
