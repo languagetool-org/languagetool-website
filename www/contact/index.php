@@ -35,6 +35,7 @@
     <a href="http://github.com/ebraminio">Ebrahim Byagowi</a>,
     <a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>,
     Xavi Ivars,
+    Peter Lawrence,
     Stefan Lotties,
     <a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>,
     Panagiotis Minos,
