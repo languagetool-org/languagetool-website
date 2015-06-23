@@ -148,6 +148,16 @@ margin: 0px 2% 0px 0px;
 float:left
 }
 
+#subLangDropDown .dk_options_inner {
+  width:300px;
+}
+
+#subLangDropDown .dk_options_inner .column {
+  width:48%;
+  margin: 0px 2% 0px 0px;
+  float:left
+}
+
 .dk_container select {
 position:absolute;
 top:-99999em;

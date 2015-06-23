@@ -288,7 +288,14 @@
         return out;
       }
 
-      var columns = split(options, 4);
+      var columns;
+      if (options.length <= 4) {
+        columns = split(options, 1);  // e.g. for variants of German
+      } else if (options.length <= 6) {
+        columns = split(options, 2);  // e.g. for variants of English
+      } else {
+        columns = split(options, 4);
+      }
       
       var html = '';
       for (var i = 0; i < columns.length; i++) {

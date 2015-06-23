@@ -359,10 +359,20 @@
             // For languages that have variants, offer those in a different select:
             // NOTE: keep in sync with checkform.php!
             var langToSubLang = {
-                'en': ['US', 'GB', 'AU', 'CA', 'NZ', 'ZA'],
-                'de': ['DE', 'AT', 'CH'],
-                'pt': ['PT', 'BR'],
-                'ca': ['ES', 'ES-Valencia']
+                'en': [
+                    {code: 'US', name: 'United States'},
+                    {code: 'GB', name: 'Great Britain'},
+                    {code: 'ZA', name: 'South Africa'},
+                    {code: 'CA', name: 'Canada'},
+                    {code: 'AU', name: 'Australia'},
+                    {code: 'NZ', name: 'New Zealand'}
+                    ],
+                'de': [
+                    {code: 'DE', name: 'Germany'},
+                    {code: 'AT', name: 'Austria'},
+                    {code: 'CH', name: 'Switzerland'}],
+                'pt': [{code: 'PT', name: 'Portugal'}, {code: 'BR', name: 'Brazil'}],
+                'ca': [{code: 'ES', name: 'ES'}, {code: 'ES-Valencia', name: 'ES-Valencia'}]
             };
             if (langToSubLang[langCode]) {
                 var subLangs = langToSubLang[langCode];
@@ -370,9 +380,9 @@
                 var langCountry = langCodeWithCountry.replace(/^.*-/, "").toUpperCase();
                 subLangs.forEach(function(entry) {
                     if (entry == langCountry) {
-                      subLang.append($("<option selected/>").val(entry).text(entry));
+                      subLang.append($("<option selected/>").val(entry.code).text(entry.name));
                     } else {
-                      subLang.append($("<option />").val(entry).text(entry));
+                      subLang.append($("<option />").val(entry.code).text(entry.name));
                     }
                 });
                 $('#subLangDropDown').show();
