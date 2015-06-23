@@ -177,7 +177,9 @@
            });
            // remove any 'no errors found' message:
            ed.onKeyUp.add(function(ed, e) {
-               $('#feedbackMessage').html('');
+               if (!e.keyCode || e.keyCode != 17) {  // don't hide if user used Ctrl+Return
+                   $('#feedbackMessage').html('');
+               }
            });
            ed.onPaste.add(function(ed, e) {
                $('#feedbackMessage').html('');
