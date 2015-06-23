@@ -144,6 +144,15 @@
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
   <script type="text/javascript">
+      
+   // translation of language variant names:
+   var lt_i18n = {
+       'de': {
+           'DE': 'Deutschland',
+           'AT': 'Österreich',
+           'CH': 'Schweiz'
+       }
+   };
 
    tinyMCE.init({
        mode : "textareas",
@@ -360,8 +369,8 @@
             // NOTE: keep in sync with checkform.php!
             var langToSubLang = {
                 'en': [
-                    {code: 'US', name: 'United States'},
-                    {code: 'GB', name: 'Great Britain'},
+                    {code: 'US', name: 'American'},
+                    {code: 'GB', name: 'British'},
                     {code: 'ZA', name: 'South Africa'},
                     {code: 'CA', name: 'Canada'},
                     {code: 'AU', name: 'Australia'},
@@ -378,11 +387,25 @@
                 var subLangs = langToSubLang[langCode];
                 var langCodeWithCountry = "<?=$checkDefaultLangWithCountry?>";
                 var langCountry = langCodeWithCountry.replace(/^.*-/, "").toUpperCase();
+                var urlLang;
+                if (window.location.href) {
+                    urlLang = window.location.href.replace(/.*\/(..)\/.*/, "$1");
+                    if (urlLang.length != 2) {
+                      urlLang = null;
+                    }
+                }
+                var i18n = lt_i18n[urlLang];
+                //var i18n = lt_i18n['<?= $checkDefaultLang?>'];
+                //var i18n = lt_i18n[langCode];
                 subLangs.forEach(function(entry) {
+                    var displayName = entry.name;
+                    if (i18n && i18n[entry.code]) {
+                      displayName = i18n[entry.code];
+                    }
                     if (entry == langCountry) {
-                      subLang.append($("<option selected/>").val(entry.code).text(entry.name));
+                      subLang.append($("<option selected/>").val(entry.code).text(displayName));
                     } else {
-                      subLang.append($("<option />").val(entry.code).text(entry.name));
+                      subLang.append($("<option />").val(entry.code).text(displayName));
                     }
                 });
                 $('#subLangDropDown').show();
