@@ -381,7 +381,7 @@
                     {code: 'AT', name: 'Austria'},
                     {code: 'CH', name: 'Switzerland'}],
                 'pt': [{code: 'PT', name: 'Portugal'}, {code: 'BR', name: 'Brazil'}],
-                'ca': [{code: 'ES', name: 'ES'}, {code: 'ES-Valencia', name: 'ES-Valencia'}]
+                'ca': [{code: 'ES', name: 'General'}, {code: 'ES-Valencia', name: 'Valencian'}]
             };
             if (langToSubLang[langCode]) {
                 var subLangs = langToSubLang[langCode];
