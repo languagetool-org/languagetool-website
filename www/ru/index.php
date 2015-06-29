@@ -81,7 +81,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 430 правил</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 433 правила</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
@@ -150,13 +150,13 @@
 <ul>
     <li>Открыть LibreOffice/OpenOffice.Org. </li> 
     <li>Выбрать Сервис - > Управление расширениями - > Добавить. </li> 
-    <li>Выбрать файл LanguageTool-2.x.oxt</li> 
+    <li>Выбрать файл LanguageTool-3.x.oxt</li> 
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
 <p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7 от Oracle </a> или IcedTea. 
 </p>
-<p>Для работы в Windows требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a>. 
+<p>Для работы в Windows совместно с Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a>. 
 </p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
