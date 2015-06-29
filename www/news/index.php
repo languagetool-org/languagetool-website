@@ -14,6 +14,18 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
+<p><strong>2015-06-29:</strong> Released LanguageTool 3.0. Changes include:</p>
+<ul>
+  <li>Many updates for the error detection rules for
+    Breton, Catalan, English, German, Polish, Portuguese, Russian, and Ukrainian</li>
+  <li>Bug fixes</li>
+  <li>Java API: removed deprecated methods; cleanups</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
+</ul>
+
+<p><strong>2015-05-14:</strong> Released LanguageTool 2.9.1 for LibreOffice/OpenOffice. Includes a
+bug fix for the "osl::Thread::Create failed" error.</p>
+
 <p><strong>2015-03-30:</strong> Released LanguageTool 2.9. Changes include:</p>
 <ul>
   <li>Many updates for the error detection rules for
