@@ -26,23 +26,30 @@
 
     <h2>Core Team</h2>
 
-    <p><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>,
-    Markus Brenneis,
-    <a href="http://github.com/ebraminio">Ebrahim Byagowi</a>,
-    <a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>,
-    Xavi Ivars,
-    Peter Lawrence,
-    Stefan Lotties,
-    <a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>,
-    Panagiotis Minos,
-    <a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>,
-    <a href="http://www.danielnaber.de">Daniel Naber</a>,
-    Jaume Ortolà,
-    <a href="http://dominiko.livejournal.com/tag/lingvoilo">Dominique Pellé</a>,
-    <a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>,
-    <a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>,
-    Andriy Rysin,
-    Jan Schreiber</p>
+    <ul style="float:left">
+        <li>Andriy Rysin
+        <li><a href="http://www.danielnaber.de">Daniel Naber</a>
+        <li><a href="http://dominiko.livejournal.com/tag/lingvoilo">Dominique Pellé</a>
+        <li><a href="http://github.com/ebraminio">Ebrahim Byagowi</a>
+        <li><a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>
+        <li>Jan Schreiber
+        <li>Jaume Ortolà
+        <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
+        <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
+    </ul>
+    
+    <ul>
+        <li><a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>
+        <li>Markus Brenneis
+        <li>Panagiotis Minos
+        <li><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>
+        <li>Peter Lawrence
+        <li>Stefan Lotties
+        <li>Xavi Ivars
+        <li><a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>
+    </ul>
+
+    <p style="clear: both"></p>
     
     <p>See the <a href="/languages">list of supported languages</a> for information about who maintains the error
     detection rules for each language.</p>
