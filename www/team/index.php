@@ -6,6 +6,19 @@
     $title = "LanguageTool Contact";
     ?>
     <?php include("../../include/header.php"); ?>
+    <style type="text/css">
+        .multicol {
+            width: 65%;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            padding-bottom: 1em;
+        }
+        ul {
+            /* http://stackoverflow.com/questions/11195854/why-using-css3-columns-in-chrome-removes-item-numbers-on-lists/14874114#14874114 */
+            list-style-position: inside;
+        }
+    </style>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
@@ -26,7 +39,7 @@
 
     <h2>Core Team</h2>
 
-    <ul style="float:left">
+    <ul class="multicol">
         <li>Andriy Rysin
         <li><a href="http://www.danielnaber.de">Daniel Naber</a>
         <li><a href="http://dominiko.livejournal.com/tag/lingvoilo">Dominique Pellé</a>
@@ -34,9 +47,6 @@
         <li><a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>
         <li>Jan Schreiber
         <li>Jaume Ortolà
-    </ul>
-    
-    <ul style="float:left">
         <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
         <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
         <li><a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>
@@ -44,9 +54,6 @@
         <li>Matthias Mailänder
         <li>Panagiotis Minos
         <li><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>
-    </ul>
-
-    <ul>
         <li>Peter Lawrence
         <li>Ruud Baars</li>
         <li>Stefan Lotties
@@ -54,8 +61,6 @@
         <li><a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>
     </ul>
 
-    <p style="clear: both"></p>
-    
     <p>See the <a href="/languages">list of supported languages</a> for information about who maintains the error
     detection rules for each language.</p>
 
@@ -64,7 +69,7 @@
     <p>The following people have contributed rules or source code to LanguageTool. Thank you!</p>
     
     <!-- source: our changelog and git log searched for "by", "thanks", and "contribute" -->
-    <ul style="float:left">
+    <ul class="multicol">
         <li>Agnese Dal Borgo
         <li>Agnes Souque
         <li>Albert Jané
@@ -100,9 +105,6 @@
         <li>Jarek Lipski
         <li>Jimmy O'Regan
         <li>Jitesh V. S.
-    </ul>
-
-    <ul style="float:left">
         <li>John Andrews
         <li>Jordi Mas
         <li>Joseph Monfort
@@ -138,9 +140,6 @@
         <li>Philippe Basciano-Le Gall
         <li>PhilippeW
         <li>Ramon Torrents
-    </ul>
-    
-    <ul>
         <li>Rémy Léone
         <li>Reza1615
         <li>Ricard Roca
@@ -170,8 +169,6 @@
         <li>Zdenko Podobný
     </ul>
     
-    <p style="clear: both"></p>
-
     <p>LanguageTool has a history of more than 10 years, so we will probably have missed some
     contributors. If you should be on the list, please let us know and we'll add you.</p>
     
