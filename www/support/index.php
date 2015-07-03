@@ -27,7 +27,7 @@
                 <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel">Archive (Sourceforge)</a></li>
             </ul>
         </li>
-        <li><strong>Contact the maintainers directly</strong> if you don't want to post to public forums or mailing lists:
+        <li>If you absolutely don't want to post to public forums or mailing lists, contact the maintainers directly:
             <ul>
                 <li><a href="http://www.danielnaber.de">Daniel Naber</a> - contact by sending an email to
                     <span style="color:#777777">naber <span>a&#116;</span> danielnaber<span>.</span>de</span></li>
