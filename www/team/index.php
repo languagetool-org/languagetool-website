@@ -34,16 +34,21 @@
         <li><a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>
         <li>Jan Schreiber
         <li>Jaume Ortolà
-        <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
-        <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
     </ul>
     
-    <ul>
+    <ul style="float:left">
+        <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
+        <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
         <li><a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>
         <li>Markus Brenneis
+        <li>Matthias Mailänder
         <li>Panagiotis Minos
         <li><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>
+    </ul>
+
+    <ul>
         <li>Peter Lawrence
+        <li>Ruud Baars</li>
         <li>Stefan Lotties
         <li>Xavi Ivars
         <li><a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>
