@@ -12,11 +12,6 @@
             -webkit-column-count: 3;
             -moz-column-count: 3;
             column-count: 3;
-            padding-bottom: 1em;
-        }
-        ul {
-            /* http://stackoverflow.com/questions/11195854/why-using-css3-columns-in-chrome-removes-item-numbers-on-lists/14874114#14874114 */
-            list-style-position: inside;
         }
     </style>
 </head>
@@ -60,16 +55,13 @@
         <li>Xavi Ivars
         <li><a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>
     </ul>
-
-    <p>See the <a href="/languages">list of supported languages</a> for information about who maintains the error
-    detection rules for each language.</p>
-
+    
     <h2>Contributors</h2>
     
     <p>The following people have contributed rules or source code to LanguageTool. Thank you!</p>
     
     <!-- source: our changelog and git log searched for "by", "thanks", and "contribute" -->
-    <ul class="multicol">
+    <ul class="multicol" style="padding-bottom: 1em">
         <li>Agnese Dal Borgo
         <li>Agnes Souque
         <li>Albert Jané
@@ -169,9 +161,12 @@
         <li>Zdenko Podobný
     </ul>
     
-    <p>LanguageTool has a history of more than 10 years, so we will probably have missed some
+    <p>LanguageTool has a history of more than 10 years, so we probably have missed some
     contributors. If you should be on the list, please let us know and we'll add you.</p>
-    
+
+    <p>See the <a href="/languages">list of supported languages</a> for information about who maintains the error
+    detection rules for each language.</p>
+
     <!-- TODO: external dependencies -->
 
 
