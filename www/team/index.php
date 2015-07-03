@@ -3,7 +3,7 @@
 <head>
     <?php
     $page = "other";
-    $title = "LanguageTool Contact";
+    $title = "LanguageTool Team";
     ?>
     <?php include("../../include/header.php"); ?>
     <style type="text/css">
