@@ -131,7 +131,7 @@
         <li>Olivier R.
         <li>OpenTaal
         <li>paolobenve
-        <li>Pax
+        <li>Andreas "PAX" Lück
         <li>Pere Farrando
         <li>Petra Galuscakova
         <li>Petr Mladek
