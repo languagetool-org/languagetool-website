@@ -83,7 +83,6 @@
         <li>Denis Arnaud
         <li>Derek M Jones
         <li>Dmitri Gabinski
-        <li>Ebrahim Byagowi
         <li>Edward Sanford Sutton
         <li>Eike Rathke
         <li>Elena Cejas
@@ -139,10 +138,10 @@
         <li>Philippe Basciano-Le Gall
         <li>PhilippeW
         <li>Ramon Torrents
-        <li>Rémy Léone
     </ul>
     
     <ul>
+        <li>Rémy Léone
         <li>Reza1615
         <li>Ricard Roca
         <li>Riccardo Murri
