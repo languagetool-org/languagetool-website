@@ -2,8 +2,9 @@
   <?php
 
     $footer_pages = array(
-      array( 'name'=>'Contact', 'url' => getRoot() . '/contact' ),
-      array( 'name' => 'Privacy Policy', 'url' => getRoot() . '/privacy')
+      array( 'name'=>'Team', 'url' => getRoot() . '/team/' ),
+      array( 'name'=>'Imprint', 'url' => getRoot() . '/legal/' ),
+      array( 'name' => 'Privacy Policy', 'url' => getRoot() . '/privacy/')
     );
 
     foreach ($footer_pages as $page) {
