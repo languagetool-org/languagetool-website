@@ -76,6 +76,9 @@
         <li>Arle Lommel
         <li>atrons
         <li>Camille Moulin
+        <li>Caolán McNamara
+        <li>Chase Tingley
+        <li>Dawid Weiss
         <li>Dean Doscher
         <li>Denis Arnaud
         <li>Derek M Jones
@@ -83,6 +86,7 @@
         <li>Edward Sanford Sutton
         <li>Eike Rathke
         <li>Elena Cejas
+        <li>Eleonora
         <li>Esben Aaberg
         <li>Fabio Rainone
         <li>Felix Sasaki and his students
@@ -94,6 +98,7 @@
         <li>Ionuț Păduraru
         <li>Irvine
         <li>jab
+        <li>D. Jentsch
         <li>Jarek Lipski
         <li>Jimmy O'Regan
         <li>Jitesh V. S.
@@ -109,16 +114,21 @@
         <li>Maksym Davydov
         <li>Mantas Kriaučiūnas
         <li>Martin Srebotnjak
+        <li>metal3d
         <li>Metathesis
         <li>Michael Baumann
         <li>Michael Bryant
         <li>mik09
         <li>Mike Detwiler
         <li>Mike Unwalla
+        <li>Mikhail Korobov
+        <li>Mikkel Thomsen
         <li>Mility
+        <li>Milos Sramek
         <li>Nathaniel Oco
         <li>Nathan Wells
         <li>Nick Hough
+        <li>Niki Hansche
         <li>Niklas Johansson
         <li>NOKUBI Takatsugu
         <li>Oliver Schlöbe
@@ -129,14 +139,17 @@
         <li>Pere Farrando
         <li>Petra Galuscakova
         <li>Petr Mladek
+        <li>Philipp Wiesemann
         <li>Philippe Basciano-Le Gall
         <li>PhilippeW
+        <li>Radovan Garabík
         <li>Ramon Torrents
         <li>Rémy Léone
         <li>Reza1615
         <li>Ricard Roca
         <li>Riccardo Murri
         <li>Richard Eckart de Castilho
+        <li>rob144
         <li>Salino01
         <li>Sander van Geloven
         <li>Serkan Kaba
@@ -153,9 +166,11 @@
         <li>Thai
         <li>thatkookooguy
         <li>Thierry Vignaud
+        <li>Thomas Menari
         <li>Tugdual Kalvez
         <li>uma
         <li>Viljar
+        <li>Vincent Maubert
         <li>Wolfgang Lenhard
         <li>Xesús González Rato
         <li>yeryry
