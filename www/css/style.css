@@ -11,6 +11,9 @@ body {
   /* standard content page without many images etc: */
   /* language-specific page: */
 }
+body a {
+  text-decoration: none;
+}
 body #severeError {
   color: black;
   font-weight: bold;
