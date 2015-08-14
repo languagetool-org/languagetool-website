@@ -15,13 +15,18 @@
 <h1><a name="commonproblems">Checklist in Case of Problems</a></h1>
 
 <ul>
+<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle</a>
+    is installed on your system. If you use the 32-bit version of LibreOffice/OpenOffice.org, you will also
+    need to use the 32-bit version of Java (same for the 64-bit version).
+    Java versions which are not from Oracle may not work. If you're using an
+    old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
 <li>If you see different results locally and on languagetool.org, that's for two reasons:
     <ul style="margin-top: 8px">
         <li>We usually run the latest version on languagetool.org which might have more rules that the latest release version.</li>
         <li>English only: We have some additional rules active on languagetool.org that require large data
-            sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-big-data">technical details</a>).</li>
+            sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-n-gram-data">technical details</a>).</li>
     </ul>
 </li>
 <li><strong>For Mac users:</strong> LanguageTool requires Java 7 or later, which is available for the Mac only as a 64 bit version.
@@ -36,11 +41,6 @@
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
     you are working with to make LanguageTool work.</li>
-<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle</a>
-    is installed on your system. On Windows, use the 32-bit version of Java if you want to use LanguageTool
-    as an add-on in LibreOffice or OpenOffice.org.
-    Java versions which are not from Oracle may not work. If you're using an
-    old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
 <li>Make sure this version of Java is selected in LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) or OpenOffice.org
     (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
@@ -58,13 +58,13 @@
     update to LanguageTool 2.9.1 or later (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
 
 <li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not 
-    work otherwise. LibreOffice/OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
+    work otherwise. Apache OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
     on Windows and Mac.</li>
 
 <li>If you get <strong>"Could not create Java implementation loader"</strong>, please work through
     <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">these suggestions</a>.
     <strong>Note: </strong> if you have this problem on 64-bit Windows,
-    it may be caused by a 64-bit version of Java. LibreOffice and Apache OpenOffice are only built as 32-bit applications
+    it may be caused by a 64-bit version of Java. Apache OpenOffice on Windows is only built as a 32-bit application
     and will not work with a 64-bit Java. You need to use a <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-bit build of Java for Windows</a>.
     (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
     </li>
