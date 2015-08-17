@@ -27,8 +27,8 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 Используйте Options -> Language Settings -> Writing aids -> Edit... для отключения LightProof и включения LanguageTool для того языка,
 с которым LanguageTool будет использоваться.</li>
 <li>Убедитесь, что <a href="http://www.java.com/en/download/manual.jsp">Java 7 или новее от Oracle</a>  или IcedTea
-установлена в вашей системе. Для Windows используйте 32-битную версию Java, если используете LanguageTool
-в качестве расширения LibreOffice или OpenOffice.org.
+установлена в вашей системе. Используйте 32-битную версию Java, если используете LanguageTool
+в качестве расширения 32-битных версий LibreOffice  или OpenOffice.org. Для 64-битных версий  LibreOffice  или OpenOffice.org надо использовать 64-битную версию Java.
 Версии Java не от Oracle могут не работать. При использовании
 старых версий Java может появиться сообщение  <a href="../../../images/version-error.jpg">типа этого</a>.</li>
 <li>Убедитесь, что корректная версия Java выбрана в LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) или OpenOffice.org
@@ -48,9 +48,8 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 <li>Если появляется сообщение <strong>"Could not create Java implementation loader"</strong>, можно воспользоваться
 <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">этими советами</a>.
 <strong>Примечание: </strong> Если возникают проблемы на 64-разрядной Windows,
-то они могут быть вызваны использованием 64-битной версии Java. LibreOffice и Apache OpenOffice сейчас поставляются только как 32-разрядные приложения
-и не работают с 64-разрядной Java. Необходимо использовать <a href="http://www.java.com/en/download/faq/java_win64bit.xml#Java for 32-bit">32-разрядную сборку Java для Windows</a>.
-(<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
+то они могут быть вызваны использованием 64-битной версии Java. Используйте 32-битную версию Java, если используете LanguageTool
+в качестве расширения 32-битных версий LibreOffice  или OpenOffice.org. Для 64-битных версий  LibreOffice  или OpenOffice.org надо использовать 64-битную версию Java.
 </li>
 <li><strong>На Ubuntu</strong> установите пакеты <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> .
 Это поможет устранить проблему, проявляющуюся в возникновении сообщения об ошибке "NoClassDefFoundError" во время установки
