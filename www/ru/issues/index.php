@@ -43,8 +43,7 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 <ul>
 <li>Пользователям LanguageTool 2.9: Если возникает ошибка <strong>osl::Thread::Create failed</strong>, пожалуйста, обновите LanguageTool до версии 2.9.1 (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
 <li>Для использования совместно с <strong>32-битной версией LibreOffice/OpenOffice</strong>, необходимо использовать 32-битную версию Java, иначе LanguageTool не будет
-работать. LibreOffice/OpenOffice пока не предоставляют официальную 64-битную версию для Windows. Поэтому необходимо использовать 32-битную версию Java
-для Windows.</li>
+работать. Для использования совместно с <strong>64-битной версией LibreOffice/OpenOffice</strong>, необходимо использовать 64-битную версию Java </li>
 <li>Если появляется сообщение <strong>"Could not create Java implementation loader"</strong>, можно воспользоваться
 <a href="http://www.zotero.org/support/word_processor_plugin_troubleshooting#could_not_create_java_implementation_loader">этими советами</a>.
 <strong>Примечание: </strong> Если возникают проблемы на 64-разрядной Windows,
