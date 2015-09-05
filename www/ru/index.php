@@ -210,7 +210,7 @@ LanguageTool можно использовать для проверки гра�
 		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами.</li>
 	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов.</li>
 	<li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/14781">LanguageTool для Thunderbird</a></li>
-        <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFx для Firefox</a></li>
+        <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx?src=external-lt-homepage-ru">LanguageToolFx для Firefox</a></li>
 </ul>
 
 

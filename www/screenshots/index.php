@@ -49,7 +49,7 @@
         <br/>
         Check text on websites with the extension for <a href="http://mozilla.org/firefox/" target="_blank">Mozilla&nbsp;Firefox</a>
         <br/>
-        <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx/">Download LanguageToolFx</a>
+        <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx?src=external-lt-homepage">Download LanguageToolFx</a>
     </p>
     <p class="imgbox">
         <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" class="fancyboxImage" href="art/lt-thunderbird.png">

@@ -55,7 +55,7 @@
 <h2>As a Firefox Add-On</h2>
 
 <ul>
-    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/">Download the Add-On</a></li>
+    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx?src=external-lt-homepage">Download the Add-On</a></li>
 </ul>
 
 <h2>As an Add-On in other Programs</h2>
