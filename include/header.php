@@ -264,7 +264,7 @@
            // "Rule implementation":
            'ca': 'Implementació de la regla...',
            'de-DE': 'Technische Details...',
-           'eo': 'Realigo de la regulo…'
+           'eo': 'Realigo de la regulo…',
            'fr': 'Implémentation de la règle…',
            'nl': 'De techniek erachter...',
            'pl': 'Dodatkowe informacje o regule…',
