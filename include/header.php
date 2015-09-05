@@ -67,7 +67,7 @@
 <?php foreach ($assets['links'] as $link) { ?>
   <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>"
     <?php if ($link['type']) { ?>
-        type="<?= $link['type'] ?>" 
+        type="<?= $link['type'] ?>"
     <?php } ?>
     <?php if ($link['media']) { ?>
         media="<?= $link['media'] ?>"
@@ -100,7 +100,7 @@
         $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
             '<ul>' +
             '<li>Note that if you have a 32-bit version of LibreOffice/OpenOffice, you will also need a 32-bit version of Java - ' +
-            '  LanguageTool will not work otherwise.</li>' + 
+            '  LanguageTool will not work otherwise.</li>' +
             '<li>Use <em>Tools &rarr; Extension Manager &rarr; Add&hellip;</em> in LibreOffice/OpenOffice to install this file</li>' +
             '  <li><strong>Restart LibreOffice/OpenOffice</strong> (including quickstarter) after installation of this extension</li>' +
             '  <li>If you are using LibreOffice and you want to check <strong>English</strong> or <strong>Russian</strong> texts:' +
@@ -144,7 +144,7 @@
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
   <script type="text/javascript">
-      
+
    // translation of language variant names:
    var lt_i18n = {
        'de': {
@@ -230,11 +230,13 @@
        languagetool_i18n_ignore_once :
           {
            // "Ignore this type of error" -- for non-spelling errors:
-           //'br': 'Na ober van ouzh ar fazi-mañ',
+           'br': 'Na ober van ouzh fazi a seurt-se',
            'ca': 'Ignora aquesta classe d\'errors',
            'de-DE': 'Fehler dieser Art ignorieren',
            'de-DE-x-simple-language': 'Fehler dieser Art ignorieren',
+           'eo': 'Ignori tiun tipon de eraro',
            'es': 'Ignorar este tipo de error',
+           'fr': 'Ignorer ce type d’erreur',
            'nl': 'Negeer dergelijke fouten',
            'pt': 'Ignorar este tipo de erros',
            'sl': 'Prezri te vrste napako',
@@ -247,7 +249,9 @@
            'ca': 'Ignora l\'error d\'aquesta paraula',
            'de-DE': 'Fehlermeldung für dieses Wort ignorieren',
            'de-DE-x-simple-language': 'Fehlermeldung für dieses Wort ignorieren',
+           'eo': 'Ignori eraron por tiu vorto',
            'es': 'Ignorar el error para esta palabra',
+           'fr': 'Ignorer l’erreur pour ce mot',
            'nl': 'Negeer deze spelfout',
            'pt': 'Ignorar erros para esta palavra',
            'sl': 'Prezri napako za to besedo',
@@ -260,18 +264,22 @@
            // "Rule implementation":
            'ca': 'Implementació de la regla...',
            'de-DE': 'Technische Details...',
+           'eo': 'Realigo de la regulo…'
+           'fr': 'Implémentation de la règle…',
            'nl': 'De techniek erachter...',
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила...',
            'fake': 'last entry so all previous items can end with a comma'
           },
-       
+
        languagetool_i18n_suggest_word :
           {
            // "Suggest word for dictionary...":
            // *** Also set languagetool_i18n_suggest_word_url below if you set this ***
            'ca': 'Suggereix una paraula per al diccionari...',
            'de-DE': 'Wort zur Aufnahme vorschlagen...',
+           'eo': 'Sugesti vorton por la vortaro…',
+           'fr': 'Suggerer un mot pour le dictionnaire…',
            'nl': 'Suggest word for dictionary...',
            'ru': 'Предложить слово для словаря...',
            'fake': 'last entry so all previous items can end with a comma'
@@ -285,7 +293,7 @@
            'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
-       
+
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your proxy file: */
        languagetool_rpc_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/server/proxy.php",
@@ -341,7 +349,7 @@
        document.checkform._action_checkText.disabled = true;
        var langCode = document.checkform.lang.value;
        if (document.checkform.subLang && document.checkform.subLang.value) {
-           langCode = langCode.replace(/-..$/, "")  // en-US -> en 
+           langCode = langCode.replace(/-..$/, "")  // en-US -> en
                + "-" + document.checkform.subLang.value;
        }
        if (doLog) {
