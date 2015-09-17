@@ -93,6 +93,7 @@
         <li>Fulup Jakez
         <li>Heikki Lehvaslaiho
         <li>Henrik Bendt
+        <li>Hiroki Yatsu
         <li>Hugo Voisard
         <li>Ilona Kuzmickaja
         <li>Ionuț Păduraru
@@ -114,6 +115,7 @@
         <li>Maksym Davydov
         <li>Mantas Kriaučiūnas
         <li>Martin Srebotnjak
+        <li>Maxim Mozgovoy
         <li>metal3d
         <li>Metathesis
         <li>Michael Baumann
@@ -154,7 +156,7 @@
         <li>Sander van Geloven
         <li>Serkan Kaba
         <li>Shameera
-        <li>Shugyousha
+        <!--<li>Shugyousha = Silvan -->
         <li>Silvan Jegen
         <li>Sławek Borewicz
         <li>Srinath Warrier
