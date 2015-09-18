@@ -24,8 +24,8 @@
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
 <li>If you see different results locally and on languagetool.org, that's for two reasons:
     <ul style="margin-top: 8px">
-        <li>We usually run the latest version on languagetool.org which might have more rules that the latest release version.</li>
-        <li>English only: We have some additional rules active on languagetool.org that require large data
+        <li>We usually run the latest version on languagetool.org which might have more rules than the latest release version.</li>
+        <li>English and German only: We have some additional rules active on languagetool.org that require large data
             sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-n-gram-data">technical details</a>).</li>
     </ul>
 </li>
@@ -37,14 +37,14 @@
     cannot be used with these versions as a LibreOffice/OpenOffice add-on on the Mac. The only known workaround for these older versions is to use
     LanguageTool 2.2, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
     of Java 6 still exists. LanguageTool 2.2 doesn't require Java 7 but also works with Java 6.</span></li>
-<li>LibreOffice 3.5 and later comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
+<li>LibreOffice comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
     you are working with to make LanguageTool work.</li>
 <li>Make sure this version of Java is selected in LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) or OpenOffice.org
     (<em>Tools -&gt; Options -&gt; Java</em>).</li>
 <li>Did you restart LibreOffice/OpenOffice.org - including the QuickStarter - after installation of LanguageTool? This is required,
-    even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
+    even though there is no dialog saying so. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a><!--, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>-->)</li>
 <li>If LanguageTool doesn't start and you see no error message, please
     check if the extension is enabled in the Extension manager
     (under <em>Tools -&gt; Extension Manager</em>).</li>
@@ -54,9 +54,6 @@
 
 <ul>
     
-<li>Users of LanguageTool 2.9: If you experience <strong>osl::Thread::Create failed</strong> errors, please
-    update to LanguageTool 2.9.1 or later (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
-
 <li>Note that if you have a <strong>32-bit version of LibreOffice/OpenOffice</strong>, you will also need a 32-bit version of Java - LanguageTool will not 
     work otherwise. Apache OpenOffice doesn't provide official 64-bit versions for Windows and Mac yet, so you will need a 32-bit Java
     on Windows and Mac.</li>
@@ -91,6 +88,9 @@
     
 <li>If you start LibreOffice/OpenOffice from the command line and you get a <strong>NoClassDefFoundError</strong>, make
     sure you're <em>not</em> starting LibreOffice/OpenOffice from the LanguageTool installation directory.</li>
+    
+<li>We have received reports from people that a re-installation of LanguageTool in LibreOffice/OpenOffice might be needed
+    to make it work after the other issues have been resolved.<!-- Alex, private email 2015-09-18 --></li>
 
 <li class="oldInformation">If you are using an older version of LanguageTool and/or OpenOffice.org, these issues may affect you:
     <ul style="margin-top: 8px">
@@ -98,6 +98,8 @@
             This bug has been fixed in LibreOffice 3.5.4 and Apache OpenOffice 3.4.1 - all older versions are affected
             by this, so we strongly recommend to use at least these releases. <a href="http://sourceforge.net/p/languagetool/bugs/66/">Bug report</a>.
         </li>
+        <li>Users of LanguageTool 2.9: If you experience <strong>osl::Thread::Create failed</strong> errors, please
+            update to LanguageTool 2.9.1 or later (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=90740">#90740</a>)</li>
     </ul>
 </li>
 
