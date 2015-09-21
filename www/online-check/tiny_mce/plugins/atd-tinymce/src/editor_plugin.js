@@ -405,6 +405,7 @@
                         ed.core.ignoredRulesIds.push(ruleId);
                         t._removeWordsByRuleId(ruleId);
                         t._checkDone();
+                        ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
                     }
                 });
             } else {
