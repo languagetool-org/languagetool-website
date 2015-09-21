@@ -83,9 +83,6 @@
         Polish, and more than <a href="languages/">20 other languages</a>.</p>
     <p class="small">It finds many errors that a simple spell checker cannot detect and several grammar problems.</p>
 
-    <p id="noEditorHint">Make your browser window wider to get a text field
-        where you can try out LanguageTool directly or <a href="http://community.languagetool.org/homepage/simpleCheck">use this simple form</a>.</p>
-
     <p class="small"><a href="contribute/">Contribute!</a></p>
 
   </div>

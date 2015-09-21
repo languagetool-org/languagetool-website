@@ -266,9 +266,6 @@ body {
           box-shadow: 0px 10px 20px fade(#000, 20%);
         }
       }
-      #noEditorHint {
-        display: none;
-      }
       #editor {
         float: left;
         width: 65%;
@@ -552,13 +549,9 @@ body {
   #stage {
     .inner {
       padding: 30px 0px!important;
-      width: 80%!important;
+      width: 95%!important;
       #editor {
-        display: none!important;
-      }
-      #noEditorHint {
-        margin-top: 15px;
-        display: block!important;
+        width:100% !important;
       }
       #text {
         width: 100%!important;
@@ -666,5 +659,61 @@ body {
         font-size: 15px!important;
       }
     }
+  }
+}
+
+@media (max-width: 450px) {
+  body #editor_controls .dropdown
+  {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+  }
+  body #editor_controls
+  {
+    padding: 20px 10px;
+  }
+  .dk_container
+  {
+    width: 150px;
+  }
+  .dk_container a
+  {
+    width: 80px !important;
+  }
+  body #editor_controls .submit
+  {
+    padding-top: 10px !important;
+    float: left;
+  }
+}
+
+@media (max-width: 400px) {
+  #header #nav a {
+    font-size: 15px!important;
+  }
+}
+
+@media (max-width: 361px) {
+  body #editor_controls .dropdown
+  {
+    width:100%;
+  }
+  #subLangDropDown
+  {
+  }
+  .dk_container
+  {
+    width: 130px !important;
+  }
+  .dk_container a
+  {
+    width: 80px !important;
+  }
+  body #stage .inner #editor form#checkform .fullscreen-toggle
+  {
   }
 }

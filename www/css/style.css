@@ -371,9 +371,6 @@ body #stage .inner #image img {
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-body #stage .inner #noEditorHint {
-  display: none;
-}
 body #stage .inner #editor {
   float: left;
   width: 65%;
@@ -649,14 +646,10 @@ body #footer span a:hover {
   }
   #stage .inner {
     padding: 30px 0px!important;
-    width: 80%!important;
+    width: 95%!important;
   }
   #stage .inner #editor {
-    display: none!important;
-  }
-  #stage .inner #noEditorHint {
-    margin-top: 15px;
-    display: block!important;
+    width: 100% !important;
   }
   #stage .inner #text {
     width: 100%!important;
@@ -750,5 +743,44 @@ body #footer span a:hover {
 @media (max-width: 400px) {
   #header #nav a {
     font-size: 15px!important;
+  }
+}
+@media (max-width: 450px) {
+  body #editor_controls .dropdown {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+  }
+  body #editor_controls {
+    padding: 20px 10px;
+  }
+  .dk_container {
+    width: 150px;
+  }
+  .dk_container a {
+    width: 80px !important;
+  }
+  body #editor_controls .submit {
+    padding-top: 10px !important;
+    float: left;
+  }
+}
+@media (max-width: 400px) {
+  #header #nav a {
+    font-size: 15px!important;
+  }
+}
+@media (max-width: 361px) {
+  body #editor_controls .dropdown {
+    width: 100%;
+  }
+  .dk_container {
+    width: 130px !important;
+  }
+  .dk_container a {
+    width: 80px !important;
   }
 }
