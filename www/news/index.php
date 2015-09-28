@@ -14,6 +14,15 @@
 
 <p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
 
+<p><strong>2015-09-28:</strong> Released LanguageTool 3.1. Changes include:</p>
+<ul>
+  <li>Many updates for the error detection rules for
+    English, French, German, Japanese, Polish, Portuguese, Russian, and Ukrainian</li>
+  <li>Bug fixes</li>
+  <li>Java API: removed deprecated methods; cleanups</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
+</ul>
+
 <p><strong>2015-06-29:</strong> Released LanguageTool 3.0. Changes include:</p>
 <ul>
   <li>Many updates for the error detection rules for
