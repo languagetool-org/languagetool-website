@@ -41,7 +41,7 @@ $title = "Новости LanguageTool";
 <ul>
 Эта версия включает в себя только обновление для версии с интеграцией с LibreOffice/Apache OpenOffice:
 <li>Исправлена ошибка "osl::Thread::Create failed", проявляющаяся при проверке больших документов, состоящих из более чем 300 листов, в LibreOffice 4.x с установленным LanguageTool-2.9</li>
-Всем пользователям LanguageTool 2.9 - расширения LibreOffice/Apache OpenOffice рекомендуется обновиться до LanguageTool-2.9.1.
+Всем пользователям LanguageTool 2.9 &mdash; расширения LibreOffice/Apache OpenOffice рекомендуется обновиться до LanguageTool-2.9.1.
 </ul>
 
 
