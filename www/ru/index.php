@@ -51,7 +51,7 @@
     $toggleFullscreenMode = "переключить полноэкранный режим" ;
 
     // TODO: add &shy; to make long words break in the browser
-    $introText1 = "<strong>LanguageTool</strong> - это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
+    $introText1 = "<strong>LanguageTool</strong> &mdash; это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
     $introText2 = "Программа содержит правила проверки для более чем <a href='/languages/'>20 языков</a>";
 
     $downloadHeadline = "Скачать";
@@ -77,7 +77,7 @@
    src="/ru/screenshots/screenshot-lo3-very_small.png" alt="Screenshot of LanguageTool"/></a>
 
 
-<p>LanguageTool - это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики, пунктуации и стиля.
+<p>LanguageTool &mdash; это <a href="http://ru.wikipedia.org/wiki/Свободное_программное_обеспечение" target="_blank">свободное программное обеспечение</a> для проверки грамматики, пунктуации и стиля.
 
 <h2>Функциональность</h2>
 
