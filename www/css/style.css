@@ -288,6 +288,13 @@ body .warning {
   border-width: 2px;
   border-color: red;
 }
+body .unmaintainedWarning {
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+  background-color: #fee68a;
+  border: 1px solid red;
+}
 body #header {
   width: 100%;
   background-color: #fff;

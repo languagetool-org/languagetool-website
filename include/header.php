@@ -371,6 +371,35 @@
     <script type="text/javascript" src="<?= getRoot() ?>/css/lib/dropkick/jquery.dropkick.js"></script>
     <script type="text/javascript">
         function fillSubLanguageSelect(langCode) {
+            //console.log("fillSubLanguageSelect " + langCode);
+            var unmaintainedLanguages = {   // see https://languagetool.org/languages/ 
+                "be": "Belarusian",
+                "da": "Danish",
+                "gl": "Galician",
+                "is": "Icelandic",
+                "ja": "Japanese",
+                "lt": "Lithuanian",
+                "ml": "Malayalam",
+                //"pt": "Portuguese",
+                "ro": "Romanian",
+                "sv": "Swedish",
+                "zh": "Chinese"
+            };
+            var halfMaintainedLanguages = { 
+                "en": "English"
+            };
+            if (unmaintainedLanguages[langCode]) {
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " + 
+                    "very incomplete support in LanguageTool and " +
+                    "there is nobody taking care of it. " +
+                    "<a href='http://languagetool.localhost/contribute/'>Would you like to help?</a></div>");
+            } else if (halfMaintainedLanguages[langCode]) {
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
+                    "incomplete support in LanguageTool. " +
+                    "<a href='http://languagetool.localhost/contribute/'>Would you like to help?</a></div>");
+            } else {
+                $('#maintainedInfo').html("");
+            }
             var subLang = $('#subLang');
             subLang.find('option').remove();
             // For languages that have variants, offer those in a different select:
