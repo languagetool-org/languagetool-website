@@ -400,6 +400,27 @@
             } else {
                 $('#maintainedInfo').html("");
             }
+            
+            var languagesWithOwnPage = {   // see https://languagetool.org/languages/ 
+                "br": "Ur bajenn vrezhonek hon eus ivez",
+                "eo": "Ni ankaŭ havas hejmpaĝon en Esperanto",
+                "fr": "Nous avons aussi une page en français",
+                "de": "Informationen zu LanguageTool auf Deutsch",
+                "it": "Abbiamo anche una pagina in italiano",
+                "nl": "Meer over LanguageTool voor het Nederlands",
+                "ca": "També tenim una pàgina en català",
+                "ru": "Внимание: у нас есть страничка на русском языке!",
+                "pt": "Também temos uma página em Português",
+                "es": "También tenemos uma página en español",
+                "uk": "Докладніше про українську в LanguageTool",
+                "pl": "Visit our Polish page about LanguageTool"
+            };
+            if (languagesWithOwnPage[langCode]) {
+                $('#languageInfo').html("<a href='" + langCode + "/'>" + languagesWithOwnPage[langCode] + "</a>");
+            } else {
+                $('#languageInfo').html("");
+            }
+            
             var subLang = $('#subLang');
             subLang.find('option').remove();
             // For languages that have variants, offer those in a different select:

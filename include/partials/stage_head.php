@@ -8,54 +8,8 @@
         include("../include/checkform.php");
       ?>
     <?php
-    $languagesWithPage = array("br", "ca", "zh", "eo", "fr", "de", "it", "nl", "pl", "ru", "pt", "es", "uk");
-    $content = "";
-    $defaultLang = getDefaultLanguage();
-    foreach ($languagesWithPage as $i => $value) {
-        if ($value == $checkDefaultLang) {
-            switch ($value) {
-                case "br":
-                    $content = "Ur <a href='$value/'>bajenn vrezhonek</a> hon eus ivez.";
-                    break;
-                case "eo":
-                    $content = "Ni ankaŭ havas <a href='$value/'>hejmpaĝon en Esperanto</a>.";
-                    break;
-                case "fr":
-                    $content = "Nous avons aussi une <a href='$value/'>page en français</a>.";
-                    break;
-                case "de":
-                    $content = "<a href='$value/'>Informationen zu LanguageTool auf Deutsch</a>";
-                    break;
-                case "it":
-                    $content = "Abbiamo anche una <a href='$value/'>pagina in italiano</a>.";
-                    break;
-                case "nl":
-                    $content = "<a href='$value/'>Meer over LanguageTool voor het Nederlands</a>.";
-                    break;
-                case "ca":
-                    $content = "També tenim una <a href='$value/'>pàgina en català</a>.";
-                    break;
-                case "ru":
-                    $content = "Внимание: у нас есть <a href='$value/'>страничка на русском языке</a>!";
-                    break;
-                case "pt":
-                    $content = "Também temos uma <a href='$value/'>página em Português</a>.";
-                    break;
-                case "es":
-                    $content = "También tenemos uma <a href='$value/'>página en español</a>.";
-                    break;
-                case "uk":
-                    $content = "<a href='$value/'>Докладніше про українську в LanguageTool</a>";
-                    break;
-            }
-        }
-    }
-    ?>
-    <?php
     print "<div id='maintainedInfo' class='languageHomepage'></div>";
-    if ($content != "") {
-        print "<div class='languageHomepage'>$content</div>";
-    }
+    print "<div id='languageInfo' class='languageHomepage'></div>";
     ?>
     </div>
   </div>
