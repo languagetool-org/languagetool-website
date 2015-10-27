@@ -392,11 +392,11 @@
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " + 
                     "very incomplete support in LanguageTool and " +
                     "there is nobody taking care of it. " +
-                    "<a href='http://languagetool.org/contribute/'>Would you like to help?</a></div>");
+                    "<a href='/contribute/'>Would you like to help?</a></div>");
             } else if (halfMaintainedLanguages[langCode]) {
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
                     "incomplete support in LanguageTool. " +
-                    "<a href='http://languagetool.org/contribute/'>Would you like to help?</a></div>");
+                    "<a href='/contribute/'>Would you like to help?</a></div>");
             } else {
                 $('#maintainedInfo').html("");
             }
