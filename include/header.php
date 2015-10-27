@@ -413,7 +413,7 @@
                 "pt": "Também temos uma página em Português",
                 "es": "También tenemos uma página en español",
                 "uk": "Докладніше про українську в LanguageTool",
-                "pl": "Visit our Polish page about LanguageTool",
+                "pl": "Odwiedź stronę programu LanguageTool po polsku",
                 "zh": "Visit our Chinese page about LanguageTool"
             };
             if (languagesWithOwnPage[langCode]) {
