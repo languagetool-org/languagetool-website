@@ -295,6 +295,9 @@ body .unmaintainedWarning {
   background-color: #fee68a;
   border: 1px solid red;
 }
+body #languageInfo {
+  font-size: 16px;
+}
 body #header {
   width: 100%;
   background-color: #fff;
