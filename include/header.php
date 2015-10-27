@@ -413,7 +413,8 @@
                 "pt": "Também temos uma página em Português",
                 "es": "También tenemos uma página en español",
                 "uk": "Докладніше про українську в LanguageTool",
-                "pl": "Visit our Polish page about LanguageTool"
+                "pl": "Visit our Polish page about LanguageTool",
+                "zh": "Visit our Chinese page about LanguageTool"
             };
             if (languagesWithOwnPage[langCode]) {
                 $('#languageInfo').html("<a href='" + langCode + "/'>" + languagesWithOwnPage[langCode] + "</a>");
