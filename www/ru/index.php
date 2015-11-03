@@ -211,6 +211,7 @@ LanguageTool можно использовать для проверки гра�
 	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов.</li>
 	<li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/14781">LanguageTool для Thunderbird</a></li>
         <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx?src=external-lt-homepage-ru">LanguageToolFx для Firefox</a></li>
+        <li><a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a></li>
 </ul>
 
 
@@ -222,6 +223,10 @@ LanguageTool можно использовать для проверки гра�
 
 <h2>Новости</h2>
 
+<p><strong>02.11.2015:</strong>Появилась первая бета-версия LanguageTool для Google Chrome</p>
+
+Скачать <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a></li>
+ 
  
 <p><strong>28.09.2015:</strong> Вышла версия 3.1 LanguageTool!</p>
 <ul>
