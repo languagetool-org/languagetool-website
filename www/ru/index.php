@@ -223,10 +223,10 @@ LanguageTool можно использовать для проверки гра�
 
 <h2>Новости</h2>
 
-<p><strong>02.11.2015:</strong>Появилась первая бета-версия LanguageTool для Google Chrome</p>
+<p><strong>02.11.2015:</strong> Появилась первая бета-версия LanguageTool для Google Chrome!</p>
 
-Скачать <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a></li>
- 
+Установить <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a></li>
+</div>
  
 <p><strong>28.09.2015:</strong> Вышла версия 3.1 LanguageTool!</p>
 <ul>
