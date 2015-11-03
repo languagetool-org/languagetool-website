@@ -55,8 +55,8 @@
     $contributeLink = "Mitmachen!";
 
     $downloadHeadline = "Download";
-    $downloadRequiresJava = "Benötigt Java {version}+";
-    $downloadTitle = "Für <strong>LibreOffice/OpenOffice</strong>";
+    $downloadRequiresJava = "benötigt Java {version}+";
+    $downloadTitle = "Für <strong>LibreOffice</strong><br/>und <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "Als<br/><strong>Desktop-Programm</strong>";
     $downloadLabelFx = "Für <strong>Firefox</strong>";
     $downloadLabelChrome = "Für <strong>Chrome</strong>";
@@ -82,7 +82,7 @@
     <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
     <div style="float: right;margin: 15px">
-        <a class="fancyboxImage" title="LanguageTool als Erweiterung in LibreOffice" href="images/screenshot.png"><img src="images/screenshot_small.png" alt="Bilschirmfoto von LanguageTool in LibreOffice"/></a>
+        <a class="fancyboxImage" title="LanguageTool als Erweiterung in LibreOffice" href="images/screenshot.png"><img src="images/screenshot_small.png" alt="Bildschirmfoto von LanguageTool in LibreOffice"/></a>
         <br/>
         <span style="color:#777">LanguageTool als Erweiterung in LibreOffice</span> 
     </div>
