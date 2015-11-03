@@ -12,17 +12,19 @@ $buttons = array(
       'link' => '/download/LanguageTool-3.1.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'Version 3.1, 55 MB, ' . $downloadRequiresJava,
+      'additional_info' => 'v3.1, 55 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
       'width' => 260
+      //'width' => 220
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'Stand-alone for<br/>your <strong>Desktop</strong>',
       'link' => '/download/LanguageTool-3.1.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'Version 3.1, 87 MB, ' . $downloadRequiresJava,
+      'additional_info' => 'v3.1, 87 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
       'width' => 260
+      //'width' => 220
     ),
     array(
       'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'For <strong>Firefox</strong>',
@@ -31,6 +33,7 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 180
+      //'width' => 220
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -39,6 +42,7 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 180
+      //'width' => 220
     )
 );
 
