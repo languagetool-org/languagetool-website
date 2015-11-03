@@ -525,7 +525,7 @@ body #plugins #list ul li {
 }
 body #download {
   width: 900px;
-  margin: 60px auto 70px auto;
+  margin: 30px auto 70px auto;
 }
 body #download h2 {
   font-size: 36px;
@@ -538,7 +538,6 @@ body #download p.small {
   font-size: 13px;
 }
 body #download .button_container {
-  width: 300px;
   float: left;
 }
 body #download .button_container :hover {

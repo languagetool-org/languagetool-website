@@ -56,6 +56,8 @@
     $downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
     $downloadLabelFx = "LanguageToolFx &mdash; dodatek do przeglądarki Firefox";
+    //$downloadLabelChrome = "For <strong>Chrome</strong>";
+    //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "W razie kłopotów z instalacją lub uruchomieniem warto zajrzeć na <a href='/issues/'>listę typowych problemów</a> (w języku angielskim).";
     $otherDownloadsText = "Pobierz <a href='/download/'>starsze wersje</a> lub <a href='/download/snapshots/?C=M;O=D'>codzienne kompilacje próbne</a>.";
     $webstartText = "Uruchom <a href='/webstart/web/LanguageTool.jnlp'>za pomocą interfejsu Java WebStart</a>.";

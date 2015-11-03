@@ -58,6 +58,8 @@
     $downloadTitle = "Télécharger LanguageTool pour <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Télécharger LanguageTool <strong>autonome</strong>";
     $downloadLabelFx = "Télécharger LanguageTool pour <strong>Firefox</strong>";
+    //$downloadLabelChrome = "For <strong>Chrome</strong>";
+    //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Consuler la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
     $otherDownloadsText = "Télécharger une <a href='/download/'>vieille version</a> ou la <a href='/download/snapshots/?C=M;O=D'>dernière version quotidienne</a>.";
     $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";

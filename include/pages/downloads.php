@@ -8,10 +8,6 @@
 
   <?php include("download-buttons.php"); ?>
   
-  <p style="text-align:right">
-      <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"><b>New:</b> a beta version of LanguageTool for Chrome</a>
-  </p>
-    
   <br>
   <p class="small">
       <?php if(isset($checklistText)) { ?>

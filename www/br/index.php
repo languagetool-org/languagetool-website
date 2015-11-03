@@ -57,6 +57,8 @@
     $downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
     $downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";
+    //$downloadLabelChrome = "Pellgargit <strong>evit Chrome</strong>";
+    //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
     $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
     $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";

@@ -58,6 +58,8 @@
     $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
     $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
+    //$downloadLabelChrome = "For <strong>Chrome</strong>";
+    //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Bonvolu vidi <a href='/issues/'>liston de problemoj</a>, se vi havas problemojn.";
     $otherDownloadsText = "Elŝuti <a href='/download/'>malnovajn versiojn</a> aŭ <a href='/download/snapshots/?C=M;O=D'>ĉiutagan version</a>.";
     $webstartText = "Startigi per <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
