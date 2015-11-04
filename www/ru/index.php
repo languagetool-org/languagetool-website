@@ -55,12 +55,12 @@
     $introText2 = "Программа содержит правила проверки для более чем <a href='/languages/'>20 языков</a>";
 
     $downloadHeadline = "Скачать";
-    $downloadRequiresJava = "Требуется Java {version}";
+    $downloadRequiresJava = "Требуется Java {version}+";
     $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
     $downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
-    //$downloadLabelChrome = "For <strong>Chrome</strong>";
-    //$downloadLabelBrowserAddOn = "Browser Add-on";
+    $downloadLabelChrome = "Для <strong>Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Расширение для браузера";
     $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
     $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>  (<a href='https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md'>список изменений</a>).";
     $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
