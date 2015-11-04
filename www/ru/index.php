@@ -56,9 +56,9 @@
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}+";
-    $downloadTitle = "Скачать LanguageTool для <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "Скачать LanguageTool независимая версия";
-    $downloadLabelFx = "Скачать LanguageToolFx Расширение для <strong>Firefox</strong>";
+    $downloadTitle = "Для <strong>LibreOffice и OpenOffice</strong>";
+    $downloadTitleStandAlone = "Независимая версия";
+    $downloadLabelFx = "Для <strong>Firefox</strong>";
     $downloadLabelChrome = "Для <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Расширение для браузера";
     $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
