@@ -54,11 +54,11 @@
 
     $downloadHeadline = "Descarregar";
     $downloadRequiresJava = "Requer Java {version}+";
-    $downloadTitle = "LanguageTool para o <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "LanguageTool para uso <strong>independente</strong>";
-    $downloadLabelFx = "LanguageToolFx extensão para o <strong>Firefox</strong>";
-    //$downloadLabelChrome = "For <strong>Chrome</strong>";
-    //$downloadLabelBrowserAddOn = "Browser Add-on";
+    $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
+    $downloadTitleStandAlone = "Independente para <strong>Desktop</strong>";
+    $downloadLabelFx = "Para <strong>Firefox</strong>";
+    $downloadLabelChrome = "Para <strong>Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Extra do Navegador";
     $checklistText = "Por favor vê a <a href='/issues/'>lista de problemas comuns</a> se experienciares problemas.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicia-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
