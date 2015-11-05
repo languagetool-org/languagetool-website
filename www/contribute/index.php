@@ -35,9 +35,10 @@
             <strong>I'm a software developer</strong>
             <ul>
                 <li style="margin-top:5px">
-                    <a href="https://github.com/languagetool-org/">Check out the code from github</a>.
-                    <a href="http://wiki.languagetool.org/development-overview#toc2">More detailed instructions</a>.
+                    <a href="https://github.com/languagetool-org/">Check out the code from github</a> &mdash;
+                    <a href="http://wiki.languagetool.org/development-overview#toc2">More detailed instructions</a>
                 </li>
+                <li><a href="https://github.com/languagetool-org/languagetool/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+fix%22">Fix an easy-to-fix issue</a></li>
                 <li>Write a plug-in / add-on / extension for your favorite software to integrate LanguageTool
                     (<a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on">list of existing plug-ins</a>)</li>
             </ul>
