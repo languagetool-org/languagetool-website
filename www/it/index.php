@@ -54,10 +54,10 @@
 
     $downloadHeadline = "Scarica";
     $downloadRequiresJava = "Richiede Java {version}";
-    $downloadTitle = "Scarica LanguageTool per <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "Scarica LanguageTool <strong>applicazione Java</strong>";
-    $downloadLabelFx = "Scarica il modulo aggiuntivo LanguageTool per il browser <strong>Firefox</strong>";
-    //$downloadLabelChrome = "For <strong>Chrome</strong>";
+    $downloadTitle = "Per <strong>LibreOffice</strong>/<strong>OpenOffice</strong>";
+    $downloadTitleStandAlone = "<strong>Applicazione Java</strong>";
+    $downloadLabelFx = "Per <strong>Firefox</strong>";
+    $downloadLabelChrome = "Per <strong>Chrome</strong>";
     //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Si prega di fare rifeimento alla <a href='/issues/'>nostra lista</a> per problemi.";
     $otherDownloadsText = "Scarica le <a href='/download/'>vecchie versioni</a> o le <a href='/download/snapshots/?C=M;O=D'>build giornaliere</a>.";

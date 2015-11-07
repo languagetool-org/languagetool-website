@@ -52,7 +52,7 @@
     $introText2 = "";
 
     $downloadHeadline = "Звантажити";
-    $downloadRequiresJava = "Потрібна Java версії {version}";
+    $downloadRequiresJava = "Потрібна Java версії&nbsp;{version}";
     $downloadTitle = "Для <strong>LibreOffice/OpenOffice</strong>";
     $downloadTitleStandAlone = "Окрема програма для стільниці";
     $downloadLabelFx = "Для <strong>Firefox</strong>";
