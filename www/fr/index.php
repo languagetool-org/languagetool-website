@@ -91,8 +91,6 @@ Il est aussi possible de définir des règles en Java.</p>
  nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.
  Les anciennes versions sont toujours disponibles dans le <a href="../download/">répertoire de téléchargement</a>.</p>
 
-<p>LanguageTool nécessite <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7 ou 8</a>. <strong>Avez-vous des problèmes ? Contrôlez s’il vous plait la <a href="../issues">liste des problèmes les plus fréquents</a>.</strong></p>
-
 <h2>Copie d’écran dans LibreOffice</h2>
 
 <img src="images/LanguageTool-LibreOffice.png" alt="LanguageTool (fr)"/>
