@@ -52,13 +52,13 @@
     $introText1 = "Un difazier yezhadurel liesyezhek frank ha digoust eo <strong>Language&shy;Tool</strong>.";
     $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>. Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. ";
     
-    $downloadHeadline = "Download";
-    $downloadRequiresJava = "Requires Java {version}+";
-    $downloadTitle = "Pellgargit LanguageTool evit <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "Pellgargit LanguageTool hep <strong>LibreOffice/OpenOffice</strong>";
-    $downloadLabelFx = "Pellgargit LanguageToolFx <strong>evit Firefox</strong>";
-    //$downloadLabelChrome = "Pellgargit <strong>evit Chrome</strong>";
-    //$downloadLabelBrowserAddOn = "Browser Add-on";
+    $downloadHeadline = "Pellgargit";
+    $downloadRequiresJava = "Ret eo kaout Java {version}+";
+    $downloadTitle = "Evit <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Hep strong>LibreOffice/OpenOffice</strong>";
+    $downloadLabelFx = "Evit <strong>Firefox</strong>";
+    $downloadLabelChrome = "Evit <strong>Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Enlugellad ar merdeer";
     $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
     $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
     $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
