@@ -46,20 +46,21 @@
         'uk' => 'ukraina',
     );
 
-    $checkSubmitButtonValue = 'Kontroli'; 
+    $checkSubmitButtonValue = 'Kontroli';
     $checkSubmitButtonTitle = "Kontroli la tekston, aŭ Ktrl-Enenklavo";
     $toggleFullscreenMode = "baskuli plenekrane";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
-    $introText2 = "";
+    $introText2 = "Ĝi trovas erarojn, kiuj ne estas trovitaj per simpla literuma kontrolilo.";
+    $contributeLink = "Kunhelpi !";
 
-    $downloadHeadline = "Elŝutado";
+    $downloadHeadline = "Elŝuti";
     $downloadRequiresJava = "Bezonas Java {version}+";
-    $downloadTitle = "Elŝuti la kromaĵon Lingvoilo por <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "Elŝuti Lingvoilon memstara";
-    $downloadLabelFx = "Elŝuti LanguageToolFx por <strong>Firefox</strong>";
-    //$downloadLabelChrome = "For <strong>Chrome</strong>";
-    //$downloadLabelBrowserAddOn = "Browser Add-on";
+    $downloadTitle = "Por <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Memstara";
+    $downloadLabelFx = "Por <strong>Firefox</strong>";
+    $downloadLabelChrome = "Por <strong>Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Kromaĵo de retumulo";
     $checklistText = "Bonvolu vidi <a href='/issues/'>liston de problemoj</a>, se vi havas problemojn.";
     $otherDownloadsText = "Elŝuti <a href='/download/'>malnovajn versiojn</a> aŭ <a href='/download/snapshots/?C=M;O=D'>ĉiutagan version</a>.";
     $webstartText = "Startigi per <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
@@ -83,7 +84,7 @@ Libreoffice/OpenOffice nur atentigas pri gramatikaj eraroj. Uzu Esperantan vorta
 kune kun Lingvoilo por literumaj eraroj en Libreoffice/OpenOffice.</p>
 
 <p>Por iuj eraroj, Lingvoilo sugestas korektojn, kaj
-fojfoje havas ligilon al retaj gramatikoj 
+fojfoje havas ligilon al retaj gramatikoj
 (<a href="http://bertilow.com/pmeg/enhavo.html">PMEG</a> de B. Wennergren,
 <a href="http://www.esperanto.mv.ru/Seppik/index.html">La tuta Esperanto</a> de H. Seppik,
 aŭ <a href="http://www.lernu.net">Lernu!</a>) aŭ al la
