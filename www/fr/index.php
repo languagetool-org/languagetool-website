@@ -80,9 +80,6 @@ Il trouve de nombreuses erreurs qui ne peuvent pas être signalées par un simpl
 comme les confusions d’homonyme (<em>des, dès, dés…</em>), les erreurs de grammaire telles que les
 accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
 
-<p>LanguageTool trouve des erreurs en recherchant des motifs définis par des règles XML.
-Il est aussi possible de définir des règles en Java.</p>
-
 <p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt git sont disponibles dans le
 <a href="../download/snapshots/?C=M;O=D">répertoire snapshot</a>.
 
