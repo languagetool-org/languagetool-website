@@ -91,7 +91,7 @@ por pliaj detalaj klarigoj pri la eraro.</p>
 Por tiuj, kiuj deziras uzi la plej freŝan version,
 <a href="../download/snapshots/?C=M;O=D">versioj ĝisdatigitaj ĉiu-tage</a> el
 la lasta versio en la git-deponejo ankaŭ haveblas
-(<a href="http://www.languagetool.org/download/CHANGES.txt">liston de ŝanĝoj</a>).
+(<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">liston de ŝanĝoj</a>).
 Sed atentu: tiuj versioj estas malpli testitaj ol la oficiala versio.
 Tamen, Lingvoilo enhavas multajn aŭtomatajn testojn, do la ĉiu-tagaj versioj
 estas ankaŭ sufiĉe sencimaj.
