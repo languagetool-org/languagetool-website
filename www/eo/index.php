@@ -51,7 +51,7 @@
     $toggleFullscreenMode = "baskuli plenekrane";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
-    $introText2 = "Ĝi trovas erarojn, kiuj ne estas trovitaj per simpla literuma kontrolilo.";
+    $introText2 = "Ĝi atentigas pri erraroj ne trovitaj per simpla literuma kontrolilo.";
     $contributeLink = "Kunhelpi !";
 
     $downloadHeadline = "Elŝuti";
@@ -74,12 +74,8 @@
 
 <div id="languageContent">
 
-<p><strong>Lingvoilo (LanguageTool) estas libera plurlingva
-programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en
-<a href="../languages/">multaj aliaj lingvoj</a>.</strong>
-Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.</p>
-
-<p>Lingvoilo povas ankaŭ atentigi pri literumaj eraroj, sed la versio por
+<p><Lingvoilo atentigas pri tiuj eraroj, kiujn literuma kontrolilo ne trovas.
+Lingvoilo povas ankaŭ atentigi pri literumaj eraroj, sed la versio por
 Libreoffice/OpenOffice nur atentigas pri gramatikaj eraroj. Uzu Esperantan vortaron
 kune kun Lingvoilo por literumaj eraroj en Libreoffice/OpenOffice.</p>
 
@@ -90,60 +86,6 @@ fojfoje havas ligilon al retaj gramatikoj
 aŭ <a href="http://www.lernu.net">Lernu!</a>) aŭ al la
 <a href="http://www.reta-vortaro.de/revo/">Reta Vortaro</a>
 por pliaj detalaj klarigoj pri la eraro.</p>
-
-<h2>Elŝutado</h2>
-
-<div class="downloadSection">
-  <table width="90%">
-    <tr>
-      <td valig="top">
-          <ul style="padding-left: 20px">
-            <li>Tiu versio estas kromaĵo por LibreOffice/OpenOffice.
-                Ĝi atentigas pri gramatikaj eraroj, sed ne pri literumaj
-                eraroj, ĉar LibreOffice/OpenOffice jam faras tion
-                post elŝuto de
-                 <a href="http://extensions.services.openoffice.org/fr/dictionaries?">Esperanta vortaro
-                 por LibreOffice/OpenOffice</a>.</li>
-            <li><strong>Ni forte konsilas uzi
-                <a href="http://www.libreoffice.org/download">LibreOffice-3.5.4</a></strong>
-                (aŭ pli nova) aŭ <strong><a href="http://www.openoffice.org/download/">Apache
-                OpenOffice-3.4.1</a></strong> (aŭ pli nova), ĉar pli malnovaj versioj
-                havas cimon, kiu kaŭzas longan paŭzon je la startigo de la programo.</li>
-            <li>Uzi <em>Iloj… → Aldonaĵa mastrumilo… → Aldoni…</em> en
-                LibreOffice/OpenOffice.org por instali tiun dosieron.</li>
-            <li><strong>Restartigi OpenOffice.org/LibreOffice</strong> post la
-                instalado de la kromaĵo.</li>
-            <li>Se vi uzas LibreOffice-3.5.x kaj deziras kontroli
-                tekstojn en la angla, elektu:
-                <em>Iloj… → Agordaĵoj… → Lingvaj agordoj→ Skribhelpoj</em>
-                por malŝalti LightProof kaj ŝalti Lingvoilon por la angla.</li>
-          </ul>
-        </td>
-
-        <td valign="top">
-          <ul style="padding-left: 20px">
-            <li>Tiu versio estas por tiuj, kiuj deziras uzi Lingvoilon
-                sen LibreOffice/OpenOffice, uzante ekzemple la
-                grafikan Java-interfacon, aŭ en komanda linio,
-                aŭ kiel servilo, aŭ ene de aliaj programoj kiel
-                ene de la
-                <a href="http://www.vim.org/scripts/script.php?script_id=3223">tekstoredaktilo Vim</a>.
-                Tiu versio ne nur atentigas pri gramatikaj eraroj
-                sed ankaŭ pri literumaj eraroj dank’ al vortaroj
-                en Lingvoilo.</li>
-            <li>Duoble-klaku sur la dosieron kaj startigu languagetool.jar.
-                Vidu ankaŭ la
-                <a href="../usage/">aliajn manierojn por uzi Lingvoilon</a>.</li>
-          </ul>
-        </td>
-        <td valign="top">
-          <ul style="padding-left: 20px">
-            <li>Tiu kromaĵo por la retumilo Fajrovulpo (Firefox) kontrolas la gramatikon de apartigita teksto en TTT-paĝoj aŭ en tekstokampoj. Java ne estas bezonata.</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-</div>
 
 <p>Lingvoilo daŭre pliboniĝas. Reguloj estas ofte aldonitaj aŭ ŝanĝitaj.
 Por tiuj, kiuj deziras uzi la plej freŝan version,
