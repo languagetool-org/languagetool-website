@@ -10,7 +10,7 @@
     // ------------- TRANSLATIONS START HERE -------------
 
     $title = "LanguageTool - An difazier yezhadurel frank evit ar brezhoneg";
-    
+
     $checkLanguage = array(
         'de-DE' => 'alamaneg',
         'ast' => 'astureg',
@@ -51,7 +51,8 @@
 
     $introText1 = "Un difazier yezhadurel liesyezhek frank ha digoust eo <strong>Language&shy;Tool</strong>.";
     $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>. Mont a ra mat en-dro dindan Windows, Linux pe MacOs gant LibreOffice/OpenOffice. ";
-    
+    $contributeLink = "Kenober!";
+
     $downloadHeadline = "Pellgargit";
     $downloadRequiresJava = "Ret eo kaout Java {version}+";
     $downloadTitle = "Evit <strong>LibreOffice/OpenOffice</strong>";
@@ -109,7 +110,7 @@ Philippe Basciano-Le Gall ha Stefan Carpentier.</p>
 Ne vefe ket posupl an difazier LanguageTool hep ar geriadur
 brezhonek Apertium. Trugarez neuze da Francis Tyers ha
 Fulup Jakez evit o labour gant ar raktres
-<a href="http://www.apertium.org/">Apertium</a>. 
+<a href="http://www.apertium.org/">Apertium</a>.
 <p>
 Trugarez ivez d’ar gevredigezh
 <a href="http://www.drouizig.org">An Drouizig</a> evit ar
