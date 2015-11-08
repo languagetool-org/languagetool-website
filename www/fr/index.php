@@ -51,7 +51,8 @@
     $toggleFullscreenMode = "basculer le mode plein écran";
 
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
-    $introText2 = "";
+    $introText2 = "LanguageTool trouve des erreurs grammaticales qui ne sont pas signalées par un correcteur orthographique.";
+    $contributeLink = "Contribuer !";
 
     $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Nécessite Java {version}+";
@@ -149,12 +150,12 @@ L’application LanguageTool nécessite <a href="http://www.java.com/en/download
     </table>
 </div>
 -->
-    
+
 <p>LanguageTool s’améliore en permanence. Des règles sont ajoutées ou modifiées presque tous les jours. Pour ceux qui désirent utiliser la version la plus récente, des versions mises à jours quotidiennement depuis la dernière version dans le dépôt git sont disponibles dans le
 <a href="../download/snapshots/?C=M;O=D">répertoire snapshot</a>
  (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
 
- Mais attention : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprend de 
+ Mais attention : ces versions sont moins testées que les versions officielles. Toutefois, LanguageTool comprend de
  nombreux tests unitaires et les versions quotidiennes sont donc assez stables en général.
  Les anciennes versions sont toujours disponibles dans le <a href="../download/">répertoire de téléchargement</a>.</p>
 
