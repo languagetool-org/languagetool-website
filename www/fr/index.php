@@ -60,7 +60,7 @@
     $downloadTitleStandAlone = "<strong>Autonome</strong>";
     $downloadLabelFx = "Pour <strong>Firefox</strong>";
     $downloadLabelChrome = "Pour <strong>Chrome</strong>";
-    $downloadLabelBrowserAddOn = "Module de navigateur web";
+    $downloadLabelBrowserAddOn = "Module de navigateur";
     $checklistText = "Consuler la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
     $otherDownloadsText = "Télécharger une <a href='/download/'>vieille version</a> ou la <a href='/download/snapshots/?C=M;O=D'>dernière version quotidienne</a>.";
     $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
