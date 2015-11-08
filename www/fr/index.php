@@ -50,8 +50,8 @@
     $checkSubmitButtonTitle = "Vérifier le text, ou Ctrl-Entrée";
     $toggleFullscreenMode = "basculer le mode plein écran";
 
-    $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre plurilingue pour le français, l’anglais, l’allemand, le polonais, le breton, l’espéranto et <a href='/languages/'>plus de 20 autres langues</a>.";
-    $introText2 = "LanguageTool trouve des erreurs grammaticales qui ne sont pas signalées par un correcteur orthographique.";
+    $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre pour le français, l’anglais, l’allemand, et <a href='/languages/'>plus de 20 autres langues</a>.";
+    $introText2 = "Il trouve des erreurs qui ne sont pas signalées par un correcteur orthographique.";
     $contributeLink = "Contribuer !";
 
     $downloadHeadline = "Télécharger";
