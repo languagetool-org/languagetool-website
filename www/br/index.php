@@ -56,7 +56,7 @@
     $downloadHeadline = "Pellgargit";
     $downloadRequiresJava = "Ret eo kaout Java {version}+";
     $downloadTitle = "Evit <strong>LibreOffice/OpenOffice</strong>";
-    $downloadTitleStandAlone = "Hep strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitleStandAlone = "Emren";
     $downloadLabelFx = "Evit <strong>Firefox</strong>";
     $downloadLabelChrome = "Evit <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Enlugellad ar merdeer";
