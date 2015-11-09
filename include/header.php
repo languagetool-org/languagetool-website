@@ -397,6 +397,9 @@
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
                     "incomplete support in LanguageTool. " +
                     "<a href='/contribute/'>Would you like to help?</a></div>");
+            } else if (langCode === 'de') {
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>Kannst Du helfen, LanguageTool zu verbessern? " +
+                    "<a href='/contribute/'>Hier steht, wie.</a></div>");
             } else {
                 $('#maintainedInfo').html("");
             }
