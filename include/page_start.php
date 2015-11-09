@@ -7,6 +7,7 @@
                 <?php
                 include("checkform.php");
                 ?>
+                <div id='maintainedInfo' class='languageHomepage'></div>
             </div>
         </div>
         <div id="text">
