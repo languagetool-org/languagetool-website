@@ -7,10 +7,8 @@
         $checkSubmitButtonTitle = "Check text - you can also use Ctrl+Return";
         include("../include/checkform.php");
       ?>
-    <?php
-    print "<div id='maintainedInfo' class='languageHomepage'></div>";
-    print "<div id='languageInfo' class='languageHomepage'></div>";
-    ?>
+      <div id='maintainedInfo' class='languageHomepage'></div>
+      <div id='languageInfo' class='languageHomepage'></div>
     </div>
   </div>
   <div id="text">
