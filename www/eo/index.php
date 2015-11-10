@@ -51,7 +51,7 @@
     $toggleFullscreenMode = "baskuli plenekrane";
 
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
-    $introText2 = "Ĝi atentigas pri erraroj ne trovitaj per simpla literuma kontrolilo.";
+    $introText2 = "Ĝi atentigas pri eraroj ne trovitaj per simpla literuma kontrolilo.";
     $contributeLink = "Kunhelpi !";
 
     $downloadHeadline = "Elŝuti";
