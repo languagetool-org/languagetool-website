@@ -59,8 +59,8 @@ function printLangOption($langCode) {
 <noscript class="warning">Please turn on Javascript to use this form, or use <a href="simple-check/">the fallback form</a></noscript>
 
 <script>
-    if (navigator.userAgent.indexOf("Edge/") !== -1) {
-        document.write('<div class="warning">Note: The Edge browser currently doesn\'t work with this page. Please download the stand-alone version of LanguageTool or use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> instead</div>');
+    if (navigator.userAgent.indexOf("Edge/") !== -1 || navigator.userAgent.indexOf("Trident/") !== -1) {
+        document.write('<div class="warning">Note: MSIE and Edge browsers currently don\'t work with this page. Please download the stand-alone version of LanguageTool or use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> instead</div>');
     }
 </script>
 
