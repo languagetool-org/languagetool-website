@@ -157,7 +157,7 @@
    tinyMCE.init({
        mode : "textareas",
        plugins                     : "AtD,paste",
-       directionality              : 'auto',   // will display e.g. Persian in right-to-left
+       //directionality              : 'auto',   // will display e.g. Persian in right-to-left -- doesn't work in MSIE
 
        //Keeps Paste Text feature active until user deselects the Paste as Text button
        paste_text_sticky : true,
@@ -423,6 +423,13 @@
                 $('#languageInfo').html("<a href='" + langCode + "/'>" + languagesWithOwnPage[langCode] + "</a>");
             } else {
                 $('#languageInfo').html("");
+            }
+            
+            // 'auto' doesn't work in MSIE, so we switch manually:
+            if (langCode === 'fa') {
+                tinymce.get('checktext').getBody().dir = "rtl";
+            } else {
+                tinymce.get('checktext').getBody().dir = "ltr";
             }
             
             var subLang = $('#subLang');
