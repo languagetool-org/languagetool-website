@@ -386,6 +386,7 @@
                 "zh": "Chinese"
             };
             var halfMaintainedLanguages = { 
+                "nl": "Dutch",
                 "en": "English"
             };
             if (unmaintainedLanguages[langCode]) {
