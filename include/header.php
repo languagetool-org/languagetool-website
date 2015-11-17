@@ -63,6 +63,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?= $title ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
 <?php foreach ($assets['links'] as $link) { ?>
   <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>"
@@ -96,6 +97,12 @@
 <?php if (isset($enable_download_dialogs) && $enable_download_dialogs) { ?>
   <script type="text/javascript" src="<?= getRoot() ?>/js/zebra_dialog.js"></script>
   <script type="text/javascript">
+    function installChromeExtension() {
+        chrome.webstore.install();
+        //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
+        return false;
+    }
+    
     function showDownloadOfficeThanks() {
         $.Zebra_Dialog('<b>Thanks for downloading LanguageTool!</b>' +
             '<ul>' +
