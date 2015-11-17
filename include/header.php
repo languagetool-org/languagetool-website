@@ -96,8 +96,12 @@
 
 <script type="text/javascript">
     function installChromeExtension() {
-        chrome.webstore.install();
-        //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
+        if ($('#extension-is-installed').length > 0) {  // requires 0.8.7 or later of the extension to work
+            alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline.");
+        } else {
+            chrome.webstore.install();
+            //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
+        }
         return false;
     }
 </script>
