@@ -14,8 +14,9 @@ $buttons = array(
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
       'additional_info' => 'v3.1, 55 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
-      'width' => 260
-      //'width' => 220
+      'width' => 260,
+      //'width' => 220,
+      'below' => ''
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'Stand-alone for<br/>your <strong>Desktop</strong>',
@@ -23,8 +24,9 @@ $buttons = array(
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
       'additional_info' => 'v3.1, 87 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
-      'width' => 260
-      //'width' => 220
+      'width' => 260,
+      //'width' => 220,
+      'below' => ''
     ),
     array(
       'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'For <strong>Firefox</strong>',
@@ -32,8 +34,9 @@ $buttons = array(
       'onclick' => '',
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
-      'width' => 180
-      //'width' => 220
+      'width' => 180,
+      //'width' => 220,
+      'below' => ''
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -41,19 +44,29 @@ $buttons = array(
       'onclick' => 'onclick="return installChromeExtension()"',
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
-      'width' => 180
-      //'width' => 220
+      'width' => 180,
+      //'width' => 220,
+      //'below' => '<a href="chrome/">More...</a>'
+      'below' => ''
     )
 );
 
 foreach ($buttons as $button) {
-  print sprintf('<a href="%s" %s class="piwik_download"><div style="width:%spx" class="button_container"><div class="inner_button"><div class="title">%s</div><div title="%s" class="meta">%s</div></div></div></a>',
+  print sprintf('<div style="width:%spx" class="button_container">'.
+                '  <a href="%s" %s class="piwik_download">'.
+                '    <div class="inner_button">'.
+                '      <div class="title">%s</div>'.
+                '      <div title="%s" class="meta">%s</div>'.
+                '    </div>'.
+                '  </a><div style="margin-top:-20px">%s</div>'.
+                '</div>'."\n",
+    $button['width'],
     $button['link'],
     $button['onclick'],
-    $button['width'],
     $button['title'],
     $button['release_info'],
-    $button['additional_info']
+    $button['additional_info'],
+    $button['below']
   );
 }
 ?>
