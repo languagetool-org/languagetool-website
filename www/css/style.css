@@ -293,7 +293,7 @@ body .unmaintainedWarning {
   font-size: 16px;
   color: black;
   background-color: #fee68a;
-  border: 1px solid red;
+  border: 2px solid red;
 }
 body #languageInfo {
   font-size: 16px;
