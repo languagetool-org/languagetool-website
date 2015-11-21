@@ -110,6 +110,9 @@ body #textContent .langVariants {
 body #textContent .maintainerNeeded {
   background-color: #ffff95;
 }
+body #textContent .previousMaintainer {
+  color: #777777;
+}
 body #languageContent {
   max-width: 900px;
   margin: 60px auto 70px auto;
@@ -169,6 +172,9 @@ body #languageContent .langVariants {
 body #languageContent .maintainerNeeded {
   background-color: #ffff95;
 }
+body #languageContent .previousMaintainer {
+  color: #777777;
+}
 body #textOrLanguageContent {
   margin: 60px auto 70px auto;
   padding-right: 15px;
@@ -226,6 +232,9 @@ body #textOrLanguageContent .langVariants {
 }
 body #textOrLanguageContent .maintainerNeeded {
   background-color: #ffff95;
+}
+body #textOrLanguageContent .previousMaintainer {
+  color: #777777;
 }
 body #editor_controls {
   padding: 20px;
