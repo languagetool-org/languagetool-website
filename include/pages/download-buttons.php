@@ -36,7 +36,7 @@ $buttons = array(
       'release_info' => '',
       'width' => 180,
       //'width' => 220,
-      'below' => ''
+        'below' => '<a href="/firefox/">More...</a>'
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -46,8 +46,7 @@ $buttons = array(
       'release_info' => '',
       'width' => 180,
       //'width' => 220,
-      //'below' => '<a href="chrome/">More...</a>'
-      'below' => ''
+      'below' => '<a href="/chrome/">More...</a>'
     )
 );
 
