@@ -12,7 +12,7 @@
 
 <div id="textContent">
 
-    <h2>Style and Grammar Checking for Chrome</h2>
+    <h1>Style and Grammar Checking for Chrome</h1>
     
     <p>Google Chrome supports spell checking, but even for native speakers it's easy
     to mix up words ("Children resemble <u>there</u> parents") or to make
@@ -49,6 +49,7 @@
     error. Click it to have the error replaced in your text. 
     You can also select text outside of an input area and have it checked. You won't be able to
     click the suggestions then, as the extension cannot edit static text.
+    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Space</tt>.
     
     <!--
     <h2>Advanced Options</h2>
@@ -63,6 +64,11 @@
     because we don't have an error detection rule for that error yet. Please consider
     <a href="../contribute/">contributing</a>.
     
+    <h2>Source</h2>
+
+    <p>The source code of this extension is available <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/chrome">at Github</a>.
+    It's released under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a>.</p>
+
     <h2>Firefox</h2>
     
     <p>For Firefox users we offer <a href="https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/">LanguageToolFx</a>,
