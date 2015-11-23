@@ -1,3 +1,8 @@
+
+<div style="background:#fee68a;padding:4px;color:black;text-align: center">
+  <a href="job/marketing.php">We're looking for someone to help us with marketing LanguageTool.</a>
+</div>
+
 <div id="stage" class="start">
 <div class="inner">
   <div id="editor">
