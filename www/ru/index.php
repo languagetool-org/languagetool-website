@@ -52,7 +52,7 @@
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> &mdash; это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
-    $introText2 = "Программа содержит правила проверки для более чем <a href='/languages/'>20 языков</a>";
+    $introText2 = "В состав LanguageTool входят правила для проверки на более чем <a href='/languages/'>20 языках</a>";
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}+";
@@ -150,11 +150,11 @@
 
 <h2>Установка для LibreOffice/OpenOffice.org</h2>
 <ul>
-    <li>Открыть LibreOffice/OpenOffice.Org. </li> 
-    <li>Выбрать Сервис - > Управление расширениями - > Добавить. </li> 
+    <li>Открыть LibreOffice/OpenOffice.Org </li> 
+    <li>Выбрать Сервис - > Управление расширениями - > Добавить </li> 
     <li>Выбрать файл LanguageTool-3.x.oxt</li> 
-    <li>Нажать «ОК».</li>
-    <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
+    <li>Нажать «ОК»</li>
+    <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск)</li>
 </ul>
 <p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7 от Oracle </a> или IcedTea. 
 </p>
@@ -175,8 +175,8 @@
    src="/ru/screenshots/LT-GUI-ru-2.5-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
 
 <ul>
-    <li>Скачать программу.</li>
-    <li>Распаковать полученный архив.</li>
+    <li>Скачать программу</li>
+    <li>Распаковать полученный архив</li>
     <li>Запустить программу languagetool.jar двойным щелчком мышки или командой java -jar languagetool.jar</li>
 </ul>
 
@@ -189,9 +189,9 @@ LanguageTool можно использовать для проверки гра�
 <h2>Использование в качестве консольного приложения</h2>
 Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a> от Oracle или IcedTea.
 <ul>
-    <li>Скачать программу.</li>
-    <li>Распаковать полученный архив.</li>
-    <li>Подготовить файл Example.txt с текстом для проверки.</li>
+    <li>Скачать программу</li>
+    <li>Распаковать полученный архив</li>
+    <li>Подготовить файл Example.txt с текстом для проверки</li>
     <li>Запустить программу командой java -jar languagetool-commandline.jar -l ru Example.txt</li>
 </ul>
 <a href="http://wiki.languagetool.org/command-line-options">Ключи командной строки консольного приложения</a>
@@ -209,8 +209,8 @@ LanguageTool можно использовать для проверки гра�
 	<li><a href="http://www.vim.org/scripts/script.php?script_id=3223">LanguageTool для vim</a></li>
 	<li><a href="http://wiki.lyx.org/Tools/LyX-GrammarChecker">LanguageTool для LyX</a></li>
 	<li><a href="https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/">LanguageTool плагин для OmegaT</a>
-		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами.</li>
-	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов.</li>
+		добавляет проверку грамматики в систему автоматизированных переводов OmegaT с открытыми исходными кодами</li>
+	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов</li>
 	<li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/14781">LanguageTool для Thunderbird</a></li>
         <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx?src=external-lt-homepage-ru">LanguageToolFx для Firefox</a></li>
         <li><a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a></li>
