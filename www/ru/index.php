@@ -135,7 +135,8 @@
 
 <h2>Демонстрация возможностей LanguageTool</h2>
 
-<p><a href="http://community.languagetool.org/?lang=ru">Здесь</a> можно запустить  LanguageTool непосредственно в браузере.
+На этой странице доступна форма для онлайн проверки орфографии и грамматики. 
+<p>А <a href="http://community.languagetool.org/?lang=ru">здесь</a> можно протестировать расширенные возможности LanguageTool непосредственно в браузере.
 </p>
 
 <h2>Скачать</h2>
