@@ -10,7 +10,7 @@
 
     // ------------- TRANSLATIONS START HERE -------------
 
-    $title = "LanguageTool. Программа для проверки грамматики, пунктуации и стиля";
+    $title = "LanguageTool. Система для проверки грамматики, пунктуации и стиля";
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
