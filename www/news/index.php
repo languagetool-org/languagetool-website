@@ -12,7 +12,8 @@
 
 <div id="textContent">
 
-<p><a href="http://twitter.com/languagetoolorg">Follow us on twitter</a> for the latest news.</p>
+<p style="padding:10px; background-color: yellow">Note: We don't update this page anymore. Instead, <a href="http://twitter.com/languagetoolorg">follow us on twitter</a>
+for the latest news or see our <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md#languagetool-change-log">change log</a>.</p>
 
 <p><strong>2015-09-28:</strong> Released LanguageTool 3.1. Changes include:</p>
 <ul>
