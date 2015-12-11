@@ -14,8 +14,7 @@ $buttons = array(
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
       'additional_info' => 'v3.1, 55 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
-      'width' => 260,
-      //'width' => 220,
+      'width' => 220,
       'below' => ''
     ),
     array(
@@ -24,8 +23,7 @@ $buttons = array(
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
       'additional_info' => 'v3.1, 87 MB, ' . $downloadRequiresJava,
       'release_info' => 'released 2015-09-28',
-      'width' => 260,
-      //'width' => 220,
+      'width' => 220,
       'below' => ''
     ),
     array(
@@ -34,9 +32,8 @@ $buttons = array(
       'onclick' => '',
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
-      'width' => 180,
-      //'width' => 220,
-        'below' => '<a href="/firefox/">More...</a>'
+      'width' => 220,
+      'below' => '<a href="/firefox/">More...</a>'
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -44,8 +41,7 @@ $buttons = array(
       'onclick' => 'onclick="return installChromeExtension()"',
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
-      'width' => 180,
-      //'width' => 220,
+      'width' => 220,
       'below' => '<a href="/chrome/">More...</a>'
     )
 );

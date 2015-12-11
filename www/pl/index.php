@@ -53,7 +53,7 @@
 
     $downloadHeadline = "Pobierz";
     $downloadRequiresJava = "Wymaga środowiska Java w wersji co najmniej {version}";
-    $downloadTitle = "LanguageTool dla <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitle = "LanguageTool dla <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "LanguageTool &mdash; pakiet samodzielny";
     $downloadLabelFx = "For <strong>Firefox</strong>";
     $downloadLabelChrome = "For <strong>Chrome</strong>";

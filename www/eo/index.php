@@ -56,7 +56,7 @@
 
     $downloadHeadline = "Elŝuti";
     $downloadRequiresJava = "Bezonas Java {version}+";
-    $downloadTitle = "Por <strong>LibreOffice/OpenOffice</strong>";
+    $downloadTitle = "Por <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "Memstara";
     $downloadLabelFx = "Por <strong>Firefox</strong>";
     $downloadLabelChrome = "Por <strong>Chrome</strong>";

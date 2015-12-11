@@ -56,7 +56,7 @@
 
     $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Nécessite Java {version}+";
-    $downloadTitle = "Pour <strong>LibreOffice</strong>/<strong>OpenOffice</strong>";
+    $downloadTitle = "Pour <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "<strong>Autonome</strong>";
     $downloadLabelFx = "Pour <strong>Firefox</strong>";
     $downloadLabelChrome = "Pour <strong>Chrome</strong>";
