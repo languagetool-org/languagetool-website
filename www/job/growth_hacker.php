@@ -29,6 +29,10 @@
     this challenge? Then please contact
     <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span></p>
     
+    <p>If you don't have time for this, you can still help us! You can <a href="/contribute/">contribute
+    new rules</a>, <a href="https://twitter.com/share?url=https://languagetool.org">tweet about</a>, or share
+    LanguageTool with your friends.</p>
+    
 </div>
 
 <?php include("../../include/footer.php"); ?>
