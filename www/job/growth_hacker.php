@@ -27,7 +27,9 @@
     <p>Like the LanguageTool developers, you won't get paid with money but you can learn a lot and be
     sure you're working on something that benefits a lot of people. Would you like to take
     this challenge? Then please contact
-    <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span></p>
+    <a href="mailto:daniel.naber@languagetool-removeme-.org"
+       onmouseover="this.href=this.href.replace(/-removeme-/,'');">LanguageTool maintainer Daniel Naber</a>
+    with a short introduction of yourself.</p> 
     
     <p>If you don't have time for this, you can still help us! You can <a href="/contribute/">contribute
     new rules</a>, <a href="https://twitter.com/share?url=https://languagetool.org">tweet about</a>, or share
