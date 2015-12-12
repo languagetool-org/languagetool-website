@@ -1,4 +1,5 @@
 <?php include("partials/nav.php"); ?>
+<?php include("partials/banner.php"); ?>
 
 <div id="stage" class="start">
     <div class="inner">
