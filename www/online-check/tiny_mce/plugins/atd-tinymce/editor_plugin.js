@@ -492,7 +492,9 @@ AtDCore.prototype.isIE = function() {
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
                   var partialErrorMessage = request.responseText.substr(0, 50);
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy', partialErrorMessage]); // Piwik tracking
+                  if (_paq) {
+                      _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy', partialErrorMessage]); // Piwik tracking
+                  }
                   return;
                }
 
@@ -500,7 +502,9 @@ AtDCore.prototype.isIE = function() {
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
                   var detailMessage = "Code: " + request.status + ", response: '" + request.responseText.substr(0, 4) + "'";
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication', detailMessage]); // Piwik tracking
+                  if (_paq) {
+                      _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication', detailMessage]); // Piwik tracking
+                  }
                   return;
                }
               
@@ -509,7 +513,9 @@ AtDCore.prototype.isIE = function() {
                   // something is wrong - this does not seem to be the XML we expect 
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
                   var startOfResponse = request.responseText.substr(0, 50);
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult', startOfResponse]); // Piwik tracking
+                  if (_paq) {
+                      _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult', startOfResponse]); // Piwik tracking
+                  }
                   return;
                }
 
@@ -517,7 +523,9 @@ AtDCore.prototype.isIE = function() {
                if (request.responseXML.getElementsByTagName('message').item(0) != null)
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
-                  _paq.push(['trackEvent', 'CheckError', 'ErrorWithException']); // Piwik tracking
+                  if (_paq) {
+                      _paq.push(['trackEvent', 'CheckError', 'ErrorWithException']); // Piwik tracking
+                  }
                   return;
                }
 
