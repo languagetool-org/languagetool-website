@@ -21,7 +21,7 @@
         $map['es'] = "Escriba un texto aquí. LanguageTool le ayudará a afrentar algunas dificultades propias de la escritura. Se a hecho un esfuerzo para detectar errores tipográficos, ortograficos y incluso gramaticales. También algunos errores de estilo, a grosso modo.";
         $map['gl'] = "Esta vai a ser unha mostra de de exemplo para amosar  o funcionamento de LanguageTool.";
         $map['is'] = "Þetta er dæmi um texta sem á að sína farm á hvernig LanguageTool virkar. Það er þó hérmeð gert ljóst að forritið framkvæmir ekki hefðbundna ritvilluleit.";
-        //$map['ja'] = "";
+        $map['ja'] = "これわ文章を入力して'Check Text'をクリックすると、誤記を探すことができる。着色した文字をクリックすると、間違いの詳細の表示する。";
         $map['km'] = "ឃ្លា​នេះ​បង្ហាញ​ពី​ពី​កំហុស​វេយ្យាករណ៍ ដើម្បី​បញ្ជាក់​ពី​ប្រសិទ្ធភាព​របស់​កម្មវិធី LanguageTool សំរាប់​ភាសាខ្មែរ។";
         $map['nl'] = "Een ieder kan fouten maken, tikvouten bij voorbeeld.";
         //$map['ro'] = "";
