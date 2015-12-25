@@ -56,6 +56,9 @@ echo "--- Deploying JARs to community.languagetool.org ---"
 # deploy to API server:
 # =====================================================================
 echo "--- Deploying software snapshot to API server ---"
+rm -r /home/languagetool/api/org
+rm -r /home/languagetool/api/META-INF
+rm -r /home/languagetool/api/libs
 unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
   cp -r /home/languagetool/api/LanguageTool-[1-9].[0-9]*/* /home/languagetool/api/ && \
   rm -rf /home/languagetool/api/LanguageTool-[1-9].[0-9]*/ && \
