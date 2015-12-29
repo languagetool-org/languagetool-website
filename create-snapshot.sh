@@ -87,6 +87,7 @@ GRAILS_HOME=/home/languagetool/grails
 PATH=$GRAILS_HOME/bin:$PATH
 echo "-- Building and deploying WAR for community.languagetool.org/wikiCheck --"
 grails war
+rm -r /home/languagetool/tomcat/webapps/wikiCheck/
 unzip -o -d /home/languagetool/tomcat/webapps/wikiCheck/ target/languagetool-wikicheck-0.1.war
 # Tomcat restart needs root permission, but happens automatically by cron job
 
