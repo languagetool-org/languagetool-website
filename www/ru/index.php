@@ -10,7 +10,7 @@
 
     // ------------- TRANSLATIONS START HERE -------------
 
-    $title = "LanguageTool. Система для проверки грамматики, пунктуации и стиля";
+    $title = "LanguageTool. Система для проверки грамматики, орфографии, пунктуации и стиля";
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
@@ -83,7 +83,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 443 правила</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 481 правило</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
@@ -234,7 +234,7 @@ LanguageTool можно использовать для проверки гра�
 <p><strong>29.12.2015:</strong> Вышла версия 3.2 LanguageTool!</p>
 <ul>
 Изменения для русскоязычного модуля включают:
-<li>Добавлены новые правила.</li>
+<li>Добавлено 38 новых правил.</li>
 <li>Улучшены существующие правила.</li>
 <li>Обновлён словарь для проверки орфографии (в независимой версии).</li>
 
@@ -244,9 +244,10 @@ LanguageTool можно использовать для проверки гра�
 <li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 
+
 <p><strong>02.11.2015:</strong> Появилась первая бета-версия LanguageTool для Google Chrome!</p>
 
-Установить <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a>.</li>
+Установить <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome</a>.</li>
 
 
  
