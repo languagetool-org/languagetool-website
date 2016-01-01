@@ -43,24 +43,6 @@
         <a href="http://languagetool.org/">Download LanguageTool for stand-alone use</a>
     </p>
     <p class="imgbox">
-        <a title="Check selected text on websites with the Firefox extension" class="fancyboxImage" href="art/languagetoolfx.png">
-            <img src="art/languagetoolfx_small.png" alt="LanguageToolFx Firefox extension"/>
-        </a>
-        <br/>
-        Check text on websites with the extension for <a href="http://mozilla.org/firefox/" target="_blank">Mozilla&nbsp;Firefox</a>
-        <br/>
-        <a href="https://addons.mozilla.org/firefox/addon/languagetoolfx?src=external-lt-homepage">Download LanguageToolFx</a>
-    </p>
-    <p class="imgbox">
-        <a title="Check text when writing your emails with the Grammar Checker extension for Mozilla Thunderbird" class="fancyboxImage" href="art/lt-thunderbird.png">
-            <img src="art/lt-thunderbird_small.png" alt="Grammar Checker Thunderbird extension"/>
-        </a>
-        <br/>
-        Check text in emails with the Grammar Checker extension for <a href="http://mozilla.org/thunderbird/" target="_blank">Mozilla&nbsp;Thunderbird</a>
-        <br/>
-        <a href="https://addons.mozilla.org/thunderbird/addon/grammar-checker/">Download Grammar Checker</a>
-    </p>
-    <p class="imgbox">
         <a title="LanguageTool may be used to check translations in CheckMate" class="fancyboxImage" href="art/lt-checkmate.png">
         <img src="art/lt-checkmate-small.png" alt="LanguageTool in CheckMate GUI"/>
         </a>
