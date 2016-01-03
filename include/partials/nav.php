@@ -9,9 +9,9 @@
       <?php
         $pages = array(
           array('name'=>'Home', 'url' => '/'),
-          array('name'=>'Screenshots', 'url' => '/screenshots/'),
-          array('name'=>'Support', 'url' => '/support/'),
+          array('name'=>'Forum', 'url' => 'http://forum.languagetool.org'),
           array('name'=>'Development', 'url' => '/development/'),
+          array('name'=>'Screenshots', 'url' => '/screenshots/'),
           array('name'=>'WikiCheck', 'url' => 'http://community.languagetool.org/wikiCheck/')
         );
 
