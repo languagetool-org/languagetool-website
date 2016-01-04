@@ -69,7 +69,15 @@ do
   ls -l $wikiFile
   commandOptions="-jar $jarFile check-data -l $lang -f $wikiFile -f $tatoebaFile --max-sentences $maxSentences --languagemodel $ngramDir"
   echo "Command options: ${commandOptions}"
-  java $commandOptions | sed -e 's/[0-9]\+.) //' >result_${lang}.new
+  /usr/bin/time -p java $commandOptions 2>/tmp/lt-timing | sed -e 's/[0-9]\+.) //' >result_${lang}.new
+
+  # measure and draw performance graph:
+  usertime=`grep "user" /tmp/lt-timing | sed "s/user //"`
+  systime=`grep "sys" /tmp/lt-timing | sed "s/sys //"`
+  echo "$date $lang $usertime $systime" >>$targetDir/performance-data.csv
+  grep " $lang " $targetDir/performance-data.csv | tail -n 90 >/tmp/performance-data.csv
+  ../perf-plot.pg >$targetDir/performance-$lang.png
+
   diff -u result_${lang}.old result_${lang}.new >result_${lang}.diff
   diffSize=$(stat -c%s "result_${lang}.diff")
   resultFile="result_${lang}_${date}.html"
