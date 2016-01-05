@@ -12,6 +12,12 @@
 /* EXPORTED_SYMBOLS is set so this file can be a JavaScript Module */
 var EXPORTED_SYMBOLS = ['AtDCore'];
 
+/* Name of categories whose errors will only be marked with a light blue, i.e. these are more style suggestions than errors:  */
+var styleErrorCategories = [
+    /* en: */ 'Redundant Phrases', 'Plain English', 'Style',
+    /* de: */ 'Umgangssprache'
+];
+
 //
 // TODO:
 // 1. "ignore this error" only works until the next check
@@ -165,8 +171,9 @@ AtDCore.prototype.markMyWords = function() {
             var cssName;
             if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
                 cssName = "hiddenSpellError";
-            }
-            else {
+            } else if (styleErrorCategories.indexOf(suggestion.type) >= 0) {
+                cssName = "hiddenSuggestion";
+            } else {
                 cssName = "hiddenGrammarError";
             }
             var delim = this.surrogateAttributeDelimiter;
