@@ -15,7 +15,7 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 /* Name of categories whose errors will only be marked with a light blue, i.e. these are more style suggestions than errors:  */
 var styleErrorCategories = [
     /* en: */ 'Redundant Phrases', 'Plain English', 'Style',
-    /* de: */ 'Umgangssprache'
+    /* de: */ 'Umgangssprache', 'Geschlechtergerechte Sprache'
 ];
 
 //
