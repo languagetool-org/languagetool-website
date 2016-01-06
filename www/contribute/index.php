@@ -21,7 +21,7 @@
             <strong>I want to help LanguageTool</strong> (but I'm not a software developer)<br/>
             <ul>
                 <li style="margin-top:5px"><a href="https://twitter.com/share?url=https://languagetool.org">tweet</a> or blog about LanguageTool</li>
-                <li><a href="http://languagetool-user-forum.2306527.n4.nabble.com/">Post improvement ideas to our forum</a></li>
+                <li><a href="http://forum.languagetool.org">Post improvement ideas to our forum</a></li>
                 <li><a href="https://github.com/languagetool-org/languagetool/issues">Post bugs to our issue tracker</a></li>
                 <li>
                     Improve error detection: LanguageTool detects most
