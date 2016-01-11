@@ -15,7 +15,7 @@
 <h1><a name="commonproblems">Checklist in Case of Problems</a></h1>
 
 <ul>
-<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 7 or later from Oracle</a>
+<li>Make sure <a href="http://www.java.com/en/download/manual.jsp">Java 8 or later from Oracle</a>
     is installed on your system. If you use the 32-bit version of LibreOffice/OpenOffice.org, you will also
     need to use the 32-bit version of Java (same for the 64-bit version).
     Java versions which are not from Oracle may not work. If you're using an
@@ -29,14 +29,14 @@
             sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-n-gram-data">technical details</a>).</li>
     </ul>
 </li>
-<li><strong>For Mac users:</strong> LanguageTool requires Java 7 or later, which is available for the Mac only as a 64 bit version.
+<li><strong>For Mac users:</strong> LanguageTool requires Java 8 or later, which is available for the Mac only as a 64 bit version.
     You need <strong>the 64-bit version of LibreOffice 4.2 or later</strong> in order to use LanguageTool on a Mac
     <strong>and you <em>also</em> need to have '<a href="http://support.apple.com/kb/DL1572">Java for OS X</a>' installed</strong>,
     additionally to Java&nbsp;7 or later (Source: <a href="https://bugs.freedesktop.org/show_bug.cgi?id=74877">#74877</a>).
     <br/><span class="oldInformation">Older versions of LibreOffice and OpenOffice are only available in 32 bit, leading to an incompatibility so that LanguageTool
     cannot be used with these versions as a LibreOffice/OpenOffice add-on on the Mac. The only known workaround for these older versions is to use
     LanguageTool 2.2, which is still available from the <a href="http://languagetool.org/download/">download archive</a>, for which a 32 bit version
-    of Java 6 still exists. LanguageTool 2.2 doesn't require Java 7 but also works with Java 6.</span></li>
+    of Java 6 still exists. LanguageTool 2.2 also works with Java 6.</span></li>
 <li>LibreOffice comes with its own integrated grammar checker (LightProof) which disables LanguageTool for
     English and Russian.
     Use Options -> Language Settings -> Writing aids -> Edit... to disable LightProof and enable LanguageTool for the language
