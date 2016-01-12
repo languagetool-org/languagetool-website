@@ -82,11 +82,11 @@
 
 <p style="margin-top: 10px"><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
 <strong><a href="../webstart/web/LanguageTool.jnlp">Iniciar o LanguageTool</a></strong> 
- (&gt;30&nbsp;MB, requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> ou acima)</p>
+ (&gt;30&nbsp;MB, requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima)</p>
 
 <h2>Descarregar</h2>
 
-<p>Usar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> ou acima.
+<p>Usar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
 <strong>Tens problemas? Por favor lê a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
 <noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares uma transferência</noscript>
