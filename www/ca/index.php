@@ -79,7 +79,7 @@ ací en el navegador.<br/><br/>
 
 <h2>Descàrrega</h2>
 
-<p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o posterior.
+<p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o posterior.
 <strong>Teniu problemes? Consulteu la <a href="../issues">llista de problemes habituals</a>.</strong></p>
 
 

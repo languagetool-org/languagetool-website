@@ -87,12 +87,12 @@
 <p>In alternativa, potete provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
 
 <p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
-Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive:<br />
+Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o versioni successive:<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">Start LanguageTool (&gt;30&nbsp;MB)</a></strong></p>
 
 <h2>Scaricatelo</h2>
 
-<p>LanguageTool richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a> o versioni successive.
+<p>LanguageTool richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o versioni successive.
 <strong>State riscontrando dei problemi? Controllate la <a href="../issues">lista dei problemi noti</a>.</strong></p>
 
 <!--

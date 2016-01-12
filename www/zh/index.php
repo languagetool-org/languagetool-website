@@ -48,7 +48,7 @@
 <p><a href="../usage/">在LibreOffice/OpenOffice.org中使用，或者作为独立应用程序使用，或者嵌入到其他系统中使用</a>，或者在这里使用：</p>
 
 <p style="margin-top: 10px"><strong>使用WebStart免安装试用LanguageTool。</strong>
-需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;7</a>及以上版本：<br />
+需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a>及以上版本：<br />
 <strong><a href="../webstart/web/LanguageTool.jnlp">运行LanguageTool (29&nbsp;MB)</a></strong></p>
 
 
