@@ -159,11 +159,11 @@
     <li>Нажать «ОК».</li>
     <li>Обязательно перезапустить LibreOffice/OpenOffice.Org (включая и быстрый запуск).</li>
 </ul>
-<p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 7 от Oracle </a> или IcedTea. 
+<p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 8 от Oracle </a> или IcedTea. 
 </p>
-<p>Для работы в Windows совместно с Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a>. 
+<p>Для работы в Windows совместно с Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
-<p>LibreOffice 5.0 под Windows существует в 64-битном виде, для работы с ней требуется  64-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a>. 
+<p>LibreOffice 5.0 под Windows существует в 64-битном виде, для работы с ней требуется  64-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
@@ -172,7 +172,7 @@
 
 
 <h2>Использование в качестве независимого приложения</h2>
-Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a> от Oracle или IcedTea.
+Системные требования:   <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a> от Oracle или IcedTea.
 <a title="LanguageTool 2.5-SNAPSHOT работает как независимое графическое приложение" class="fancyboxImage"
    href="/ru/screenshots/LT-GUI-ru-2.5.png"><img style="margin-left: 15px" width="200" height="208" align="right"
    src="/ru/screenshots/LT-GUI-ru-2.5-very_small.png" alt="Screenshot of LanguageToolGUI"/></a>
@@ -191,7 +191,7 @@ LanguageTool можно использовать для проверки гра�
 
 
 <h2>Использование в качестве консольного приложения</h2>
-Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 7+</a> от Oracle или IcedTea.
+Системные требования:  <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a> от Oracle или IcedTea.
 <br>
 Использование:
 <ul>
