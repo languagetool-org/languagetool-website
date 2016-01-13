@@ -12,12 +12,6 @@
 /* EXPORTED_SYMBOLS is set so this file can be a JavaScript Module */
 var EXPORTED_SYMBOLS = ['AtDCore'];
 
-/* Name of categories whose errors will only be marked with a light blue, i.e. these are more style suggestions than errors:  */
-var styleErrorCategories = [
-    /* en: */ 'Redundant Phrases', 'Plain English', 'Style',
-    /* de: */ 'Umgangssprache', 'Geschlechtergerechte Sprache'
-];
-
 //
 // TODO:
 // 1. "ignore this error" only works until the next check
@@ -96,6 +90,7 @@ AtDCore.prototype.processXML = function(responseXML) {
        suggestion["type"]        = errors[i].getAttribute("category");
        suggestion["ruleid"]      = errors[i].getAttribute("ruleId");
        suggestion["subid"]       = errors[i].getAttribute("subId");
+       suggestion["its20type"]   = errors[i].getAttribute("locqualityissuetype");
        var url = errors[i].getAttribute("url");
        if (url) {
            suggestion["moreinfo"] = url;
@@ -171,7 +166,7 @@ AtDCore.prototype.markMyWords = function() {
             var cssName;
             if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
                 cssName = "hiddenSpellError";
-            } else if (styleErrorCategories.indexOf(suggestion.type) >= 0) {
+            } else if (suggestion.its20type === 'style') {
                 cssName = "hiddenSuggestion";
             } else {
                 cssName = "hiddenGrammarError";
