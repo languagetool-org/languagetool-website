@@ -9,6 +9,6 @@
 }
 
 .hiddenSuggestion {
-    background-color: #e2e4ff;
+    background-color: rgb(201,205,255);
     cursor: pointer;
 }
