@@ -15,4 +15,4 @@ set grid
 
 set style data linespoints
 
-plot "/tmp/performance-data.csv" using 1:3 title "userspace time"
+plot [:] [0:] "/tmp/performance-data.csv" using 1:3 title "userspace time"
