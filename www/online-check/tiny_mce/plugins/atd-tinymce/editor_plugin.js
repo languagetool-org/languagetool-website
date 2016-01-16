@@ -769,6 +769,12 @@ AtDCore.prototype.isIE = function() {
                         t._removeWordsByRuleId(ruleId);
                         t._checkDone();
                         ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
+                        /*var stateObj = {};
+                        if (window.location.href.indexOf("ignore=") === -1) {
+                            history.replaceState(stateObj, "", "/?ignore=" + ruleId);
+                        } else {
+                            history.replaceState(stateObj, "", window.location.search + "," + ruleId);
+                        }*/
                     }
                 });
             } else {
