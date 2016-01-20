@@ -51,7 +51,7 @@
         'media' => ''
       ),
       array(
-        'src' => getRoot() . '/css/lib/dropkick/dropkick.css',
+        'src' => getRoot() . '/css/lib/dropkick/dropkick.css?v2',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => ''
