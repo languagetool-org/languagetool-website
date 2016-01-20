@@ -298,6 +298,7 @@
            'de-DE': 'Beispiele...',
            'pt': 'Exemplos...',
            'ru': 'Примеры...',
+           'sl': 'Primeri ...',
            'fake': 'last entry so all previous items can end with a comma'
           },
 
@@ -308,6 +309,7 @@
            'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
            'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
            'ru': 'Ни одного примера для этого правила не было найдено.',
+           'sl': 'Žal za to napako ni primerov.',
            'fake': 'last entry so all previous items can end with a comma'
           },
 
@@ -321,6 +323,7 @@
            'nl': 'De techniek erachter...',
            'pl': 'Dodatkowe informacje o regule…',
            'ru': 'Описание реализации правила...',
+           'sl': 'Implementacija pravila ...',
            'fake': 'last entry so all previous items can end with a comma'
           },
 
