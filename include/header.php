@@ -56,6 +56,24 @@
         'type' => "text/css",
         'media' => ''
       ),
+      array(
+        'src' => getRoot() . '/css/jquery-ui/jquery-ui.min.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
+      array(
+        'src' => getRoot() . '/css/jquery-ui/jquery-ui.structure.min.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
+      array(
+        'src' => getRoot() . '/css/jquery-ui/jquery-ui.theme.min.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
     )
   );
 ?>
@@ -77,6 +95,7 @@
 <?php } ?>
 
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <!-- used only for development:
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
 -->
@@ -272,6 +291,20 @@
            'fake': 'last entry so all previous items can end with a comma'
        },
 
+       languagetool_i18n_rule_examples :
+          {
+           // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
+           'de-DE': 'Beispiele...',
+           'fake': 'last entry so all previous items can end with a comma'
+          },
+
+       languagetool_i18n_rule_no_examples :
+          {
+           // "Sorry, no examples found for this rule.":
+           'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
+           'fake': 'last entry so all previous items can end with a comma'
+          },
+
        languagetool_i18n_rule_implementation :
           {
            // "Rule implementation":
@@ -377,6 +410,7 @@
         $('iframe#checktext_ifr').height( $(window).height() - $('#editor_controls').outerHeight() );
       }
     });
+    $('#dialog').dialog({autoOpen: false, modal: true, width: '50%'});
    });
 
    </script>

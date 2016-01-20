@@ -730,6 +730,14 @@ AtDCore.prototype.isIE = function() {
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this type of error";
+            var ruleExamples = "Examples...";
+            if (plugin.editor.getParam('languagetool_i18n_rule_examples')) {
+              ruleExamples = plugin.editor.getParam('languagetool_i18n_rule_examples')[lang] || "Examples...";
+            }
+            var noRuleExamples = "Sorry, no examples found for this rule.";
+            if (plugin.editor.getParam('languagetool_i18n_rule_no_examples')) {
+              noRuleExamples = plugin.editor.getParam('languagetool_i18n_rule_no_examples')[lang] || "Sorry, no examples found for this rule.";
+            }
             var ruleImplementation = "Rule implementation...";
             if (plugin.editor.getParam('languagetool_i18n_rule_implementation')) {
               ruleImplementation = plugin.editor.getParam('languagetool_i18n_rule_implementation')[lang] || "Rule implementation...";
@@ -817,8 +825,45 @@ AtDCore.prototype.isIE = function() {
             ruleUrl += "lang=" + encodeURI(langCode);
             m.addSeparator();
             m.add({
-               title : ruleImplementation,
-               onclick : function() { window.open(ruleUrl, '_blank'); }
+               title : ruleExamples,
+               onclick : function() {
+                   plugin.editor.setProgressState(1);
+                   jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
+                                   + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
+                                   function(data) {
+                                       var ruleHtml = "";
+                                       var exampleCount = 0;
+                                       $.each(data['results'], function(key, val) {
+                                           if (val.sentence && val.status === 'incorrect' && exampleCount < 5) {
+                                               ruleHtml += "<span class='example'>";
+                                               ruleHtml += "<img src='/images/cancel.png'>&nbsp;" +
+                                                           val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='error'>$1</span>") + "<br>";
+                                               // if there are more corrections we cannot be sure they're all good, so don't show any:
+                                               if (val.corrections && val.corrections.length === 1) {
+                                                   var escapedCorr = $('<div/>').text(val.corrections[0]).html();
+                                                   ruleHtml += "<img src='/images/check.png'>&nbsp;" +
+                                                               val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='correction'>" + escapedCorr + "</span>") + "<br>";
+                                               }
+                                               ruleHtml += "</span>";
+                                               ruleHtml += "<br>";
+                                               exampleCount++;
+                                           }
+                                       });
+                                       if (exampleCount === 0) {
+                                           ruleHtml += "<p>" + noRuleExamples + "</p>";
+                                       }
+                                       ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
+                                       var $dialog = $("#dialog");
+                                       $dialog.html(ruleHtml);
+                                       $dialog.dialog("open");
+                                   }).fail(function(e) {
+                                       var $dialog = $("#dialog");
+                                       $dialog.html("Sorry, could not get rules. Server returned error code " + e.status + ".");
+                                       $dialog.dialog("open");
+                                   }).always(function() {
+                                       plugin.editor.setProgressState(0);
+                                   });
+               }
             });
 
            /* show the menu please */
