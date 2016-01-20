@@ -294,6 +294,7 @@
        languagetool_i18n_rule_examples :
           {
            // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
+           'ca': 'Exemples...',
            'de-DE': 'Beispiele...',
            'pt': 'Exemplos...',
            'ru': 'Примеры...',
@@ -303,6 +304,7 @@
        languagetool_i18n_rule_no_examples :
           {
            // "Sorry, no examples found for this rule.":
+           'ca': 'No s\'han trobat exemmples per a aquesta regla.',
            'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
            'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
            'ru': 'Ни одного примера для этого правила не было найдено.',
