@@ -839,10 +839,10 @@ AtDCore.prototype.isIE = function() {
                                                ruleHtml += "<img src='/images/cancel.png'>&nbsp;" +
                                                            val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='error'>$1</span>") + "<br>";
                                                // if there are more corrections we cannot be sure they're all good, so don't show any:
-                                               if (val.corrections && val.corrections.length === 1) {
+                                               if (val.corrections && val.corrections.length === 1 && val.corrections[0] !== '') {
                                                    var escapedCorr = $('<div/>').text(val.corrections[0]).html();
-                                                   ruleHtml += "<img src='/images/check.png'>&nbsp;" +
-                                                               val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='correction'>" + escapedCorr + "</span>") + "<br>";
+                                                   ruleHtml += "<img src='/images/check.png'>&nbsp;";
+                                                   ruleHtml += val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='correction'>" + escapedCorr + "</span>") + "<br>";
                                                }
                                                ruleHtml += "</span>";
                                                ruleHtml += "<br>";
