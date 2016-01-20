@@ -295,7 +295,8 @@
           {
            // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
            'de-DE': 'Beispiele...',
-           'ru-RU': 'Примеры...',
+           'pt': 'Exemplos...',
+           'ru': 'Примеры...',
            'fake': 'last entry so all previous items can end with a comma'
           },
 
@@ -303,7 +304,8 @@
           {
            // "Sorry, no examples found for this rule.":
            'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
-           'ru-RU': 'Ни одного примера для этого правила не было найдено.',
+           'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
+           'ru': 'Ни одного примера для этого правила не было найдено.',
            'fake': 'last entry so all previous items can end with a comma'
           },
 
