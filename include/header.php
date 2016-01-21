@@ -270,6 +270,7 @@
            'es': 'Ignorar este tipo de error',
            'fr': 'Ignorer ce type d’erreur',
            'nl': 'Negeer dergelijke fouten',
+           'pl': 'Pomijaj błędy tego typu',
            'pt': 'Ignorar este tipo de erros',
            'sl': 'Prezri te vrste napako',
            'ru': 'Пропустить этот вид ошибок',
@@ -285,6 +286,7 @@
            'es': 'Ignorar el error para esta palabra',
            'fr': 'Ignorer l’erreur pour ce mot',
            'nl': 'Negeer deze spelfout',
+           'pl': 'Pomijaj błąd w tym słowie',
            'pt': 'Ignorar erros para esta palavra',
            'sl': 'Prezri napako za to besedo',
            'ru': 'Игнорировать эту ошибку',
@@ -296,6 +298,7 @@
            // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
            'ca': 'Exemples...',
            'de-DE': 'Beispiele...',
+           'pl': 'Przykłady...',
            'pt': 'Exemplos...',
            'ru': 'Примеры...',
            'sl': 'Primeri ...',
@@ -307,6 +310,7 @@
            // "Sorry, no examples found for this rule.":
            'ca': 'No s\'han trobat exemmples per a aquesta regla.',
            'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
+           'pl': 'Niestety nie znaleziono żadnych przykładów',
            'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
            'ru': 'Ни одного примера для этого правила не было найдено.',
            'sl': 'Žal za to napako ni primerov.',
@@ -336,6 +340,7 @@
            'eo': 'Sugesti vorton por la vortaro…',
            'fr': 'Suggerer un mot pour le dictionnaire…',
            'nl': 'Suggest word for dictionary...',
+           'pl': 'Zaproponuj dodanie wyrazu do słownika...',
            'ru': 'Предложить слово для словаря...',
            'fake': 'last entry so all previous items can end with a comma'
           },
@@ -345,6 +350,7 @@
            'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca',
            'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
+           'pl': 'http://www.sjp.pl',
            'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
