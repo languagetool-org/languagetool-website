@@ -6,7 +6,16 @@
       <h2>Download</h2>
   <?php } ?>
 
-  <?php include("download-buttons.php"); ?>
+    <script>
+        if (navigator.userAgent.indexOf("Edge/") !== -1 || navigator.userAgent.indexOf("Trident/") !== -1) {
+            document.write('<div class="warning" style="width:90%">');
+            document.write('Important note for LibreOffice/OpenOffice:<br>MSIE and Edge might rename the *.oxt file to *.zip.');
+            document.write(' Please use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> for download or rename the file back to *.oxt after download');
+            document.write('</div><br>');
+        }
+    </script>
+
+    <?php include("download-buttons.php"); ?>
   
   <br>
   <p class="small">
