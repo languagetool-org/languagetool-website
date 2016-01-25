@@ -14,7 +14,9 @@
 
     <h2>Job: Community Manager</h2>
     
-    <p>The LanguageTool project is looking for a volunteer who supports the project as a Community Manager.</p>
+    <p>The LanguageTool project is looking for a volunteer who supports the project as a Community Manager.
+    This task can be brought forward with as little as one or two hours per week (but we're happy if you
+    can spend more time, of course).</p>
 
     <p><strong>The community manager's task is to help the project have: More, happier, engaged users.</strong></p>
     
