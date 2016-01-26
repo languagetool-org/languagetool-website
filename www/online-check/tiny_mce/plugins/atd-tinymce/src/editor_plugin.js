@@ -473,6 +473,9 @@
                title : ruleExamples,
                onclick : function() {
                    plugin.editor.setProgressState(1);
+                   if (_paq) {
+                       _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
+                   }
                    jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
                                    + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
                                    function(data) {
