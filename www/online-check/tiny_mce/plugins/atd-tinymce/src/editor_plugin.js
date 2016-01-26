@@ -473,9 +473,6 @@
                title : ruleExamples,
                onclick : function() {
                    plugin.editor.setProgressState(1);
-                   if (_paq) {
-                       _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
-                   }
                    jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
                                    + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
                                    function(data) {
@@ -499,6 +496,9 @@
                                        });
                                        if (exampleCount === 0) {
                                            ruleHtml += "<p>" + noRuleExamples + "</p>";
+                                           if (_paq) {
+                                               _paq.push(['trackEvent', 'ShowExamples', 'NoExamples', errorDescription["id"]]); // Piwik tracking
+                                           }
                                        }
                                        ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
                                        var $dialog = $("#dialog");
@@ -508,8 +508,14 @@
                                        var $dialog = $("#dialog");
                                        $dialog.html("Sorry, could not get rules. Server returned error code " + e.status + ".");
                                        $dialog.dialog("open");
+                                       if (_paq) {
+                                           _paq.push(['trackEvent', 'ShowExamples', 'ServerError']); // Piwik tracking
+                                       }
                                    }).always(function() {
                                        plugin.editor.setProgressState(0);
+                                       if (_paq) {
+                                           _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
+                                       }
                                    });
                }
             });
