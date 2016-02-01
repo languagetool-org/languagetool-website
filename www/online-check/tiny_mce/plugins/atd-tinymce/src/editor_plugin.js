@@ -468,57 +468,59 @@
               ruleUrl += "subId=" + encodeURI(errorDescription["subid"]) + "&";
             }
             ruleUrl += "lang=" + encodeURI(langCode);
-            m.addSeparator();
-            m.add({
-               title : ruleExamples,
-               onclick : function() {
-                   plugin.editor.setProgressState(1);
-                   jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
-                                   + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
-                                   function(data) {
-                                       var ruleHtml = "";
-                                       var exampleCount = 0;
-                                       $.each(data['results'], function(key, val) {
-                                           if (val.sentence && val.status === 'incorrect' && exampleCount < 5) {
-                                               ruleHtml += "<span class='example'>";
-                                               ruleHtml += "<img src='/images/cancel.png'>&nbsp;" +
-                                                           val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='error'>$1</span>") + "<br>";
-                                               // if there are more corrections we cannot be sure they're all good, so don't show any:
-                                               if (val.corrections && val.corrections.length === 1 && val.corrections[0] !== '') {
-                                                   var escapedCorr = $('<div/>').text(val.corrections[0]).html();
-                                                   ruleHtml += "<img src='/images/check.png'>&nbsp;";
-                                                   ruleHtml += val.sentence.replace(/<marker>(.*?)<\/marker>/, escapedCorr) + "<br>";
-                                               }
-                                               ruleHtml += "</span>";
-                                               ruleHtml += "<br>";
-                                               exampleCount++;
-                                           }
-                                       });
-                                       if (exampleCount === 0) {
-                                           ruleHtml += "<p>" + noRuleExamples + "</p>";
-                                           if (_paq) {
-                                               _paq.push(['trackEvent', 'ShowExamples', 'NoExamples', errorDescription["id"]]); // Piwik tracking
-                                           }
-                                       }
-                                       ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
-                                       var $dialog = $("#dialog");
-                                       $dialog.html(ruleHtml);
-                                       $dialog.dialog("open");
-                                   }).fail(function(e) {
-                                       var $dialog = $("#dialog");
-                                       $dialog.html("Sorry, could not get rules. Server returned error code " + e.status + ".");
-                                       $dialog.dialog("open");
-                                       if (_paq) {
-                                           _paq.push(['trackEvent', 'ShowExamples', 'ServerError']); // Piwik tracking
-                                       }
-                                   }).always(function() {
-                                       plugin.editor.setProgressState(0);
-                                       if (_paq) {
-                                           _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
-                                       }
-                                   });
-               }
-            });
+            if (errorDescription["id"].indexOf("MORFOLOGIK_") !== 0 && errorDescription["id"] !== "HUNSPELL_NO_SUGGEST_RULE") {  // no examples available for spell checking rules
+                m.addSeparator();
+                m.add({
+                    title : ruleExamples,
+                    onclick : function() {
+                        plugin.editor.setProgressState(1);
+                        jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
+                            + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
+                            function(data) {
+                                var ruleHtml = "";
+                                var exampleCount = 0;
+                                $.each(data['results'], function(key, val) {
+                                    if (val.sentence && val.status === 'incorrect' && exampleCount < 5) {
+                                        ruleHtml += "<span class='example'>";
+                                        ruleHtml += "<img src='/images/cancel.png'>&nbsp;" +
+                                            val.sentence.replace(/<marker>(.*?)<\/marker>/, "<span class='error'>$1</span>") + "<br>";
+                                        // if there are more corrections we cannot be sure they're all good, so don't show any:
+                                        if (val.corrections && val.corrections.length === 1 && val.corrections[0] !== '') {
+                                            var escapedCorr = $('<div/>').text(val.corrections[0]).html();
+                                            ruleHtml += "<img src='/images/check.png'>&nbsp;";
+                                            ruleHtml += val.sentence.replace(/<marker>(.*?)<\/marker>/, escapedCorr) + "<br>";
+                                        }
+                                        ruleHtml += "</span>";
+                                        ruleHtml += "<br>";
+                                        exampleCount++;
+                                    }
+                                });
+                                if (exampleCount === 0) {
+                                    ruleHtml += "<p>" + noRuleExamples + "</p>";
+                                    if (_paq) {
+                                        _paq.push(['trackEvent', 'ShowExamples', 'NoExamples', errorDescription["id"]]); // Piwik tracking
+                                    }
+                                }
+                                ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
+                                var $dialog = $("#dialog");
+                                $dialog.html(ruleHtml);
+                                $dialog.dialog("open");
+                            }).fail(function(e) {
+                                var $dialog = $("#dialog");
+                                $dialog.html("Sorry, could not get rules. Server returned error code " + e.status + ".");
+                                $dialog.dialog("open");
+                                if (_paq) {
+                                    _paq.push(['trackEvent', 'ShowExamples', 'ServerError']); // Piwik tracking
+                                }
+                            }).always(function() {
+                                plugin.editor.setProgressState(0);
+                                if (_paq) {
+                                    _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
+                                }
+                            });
+                    }
+                });
+            }
 
            /* show the menu please */
            ed.selection.select(e.target);
