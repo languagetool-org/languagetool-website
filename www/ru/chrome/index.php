@@ -15,14 +15,14 @@
     <h1>Проверка грамматики и стиля для Chrome</h1>
     
     <p>Google Chrome содержит проверку правописания, but even for native speakers it's easy
-    to mix up words ("Children resemble <u>there</u> parents") or to make
-    typos that result in grammar errors ("I talk<u>s</u> to him yesterday"). LanguageTool
+    to mix up words ("Children resemble <u>there</u> parents") или сделать опечатку, которая
+    приведёт к грамматической ошибкеa ("I talk<u>s</u> to him yesterday"). LanguageTool --
     это система с открытым исходным кодом для проверки грамматики и стиля, которая поможет найти много ошибок в тексте,
-    которые стандартная проверка правописания не сможет найти. It's now available as an extension for the Google
+    которые стандартная проверка правописания не сможет найти. |It's now available as an extension for the Google
     Chrome browser so you can conveniently check text before you submit it on the web.
     
-    <p>Он свободен, не требует регистрации, и <a href="../privacy/">мы не собираем ваши тексты.</a>
-    Есть поддержка для английского, французского, русского, испанского, немецкого, польского <a href="../languages/"> и других языков</a>.</p>
+    <p>Он свободен, не требует регистрации, и <a href="../../privacy/">мы не собираем ваши тексты.</a>
+    Есть поддержка для английского, французского, русского, испанского, немецкого, польского <a href="../../languages/"> и других языков</a>.</p>
 
     <div id="download" style="margin-top: 20px">
         <div style="width:280px" class="button_container">
@@ -38,12 +38,12 @@
 
     <p>После установки значок LT появится рядом с адресной строкой браузера:
     
-    <p><img src="images/lt-icon.png">
+    <p><img src="../../chrome/images/lt-icon.png">
     
-    <p>To check a text, click on the extension icon while your cursor is in the text field you'd
-    like to check. Всплывающее окно покажет возможные ошибки:
+    <p>Для проверки текста щёлкните мышкой по значку расширения, когда курсор находится в текстовом поле, которое надо проверить.
+    Всплывающее окно покажет возможные ошибки:
         
-    <video style="margin-top:20px" src="video/output.webm" autoplay loop controls>
+    <video style="margin-top:20px" src="../../chrome/video/output.webm" autoplay loop controls>
     
     <p>Most errors that LanguageTool can detect come with one or more suggestions to fix the
     error. Click it to have the error replaced in your text. 
@@ -58,21 +58,21 @@
     
     <h2>Известные проблемы</h2>
     
-    <p>There's a small number of sites that the extension won't work on. One of them
-    is Google Docs. If you find another one, <a href="../support/">please let us know</a>.
+    <p>Это расширение не поддерживает только очень небольшое число сайтов. Одним из таких сайтов является 
+    Google Docs. Если найдётся другой такой сайт, <a href="../../support/">дайте нам знать</a>.
     If your text contains an error but the extension doesn't detect it, that's probably
     because we don't have an error detection rule for that error yet. Please consider
     <a href="../../contribute/">contributing</a>.
     
     <h2>Исходный код</h2>
 
-    <p>The source code of this extension is available <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/chrome">at Github</a>.
-    It's released under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a>.</p>
+    <p>Исходный код этого расширения доступен по адресу <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/chrome">на Github</a>.
+    Он опубликован на условиях лицензии <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a>.</p>
 
     <h2>Firefox</h2>
     
-    <p>For Firefox users we offer <a href="../../firefox/">LanguageToolFx</a>,
-    which works almost the same.
+    <p>Для пользователей Firefox мы предлагаем <a href="../../firefox/">LanguageToolFx</a>,
+    который работает аналогично этому расширению.
     
 </div>
 
