@@ -14,16 +14,12 @@
 
     <h1>Проверка грамматики и стиля для Chrome</h1>
     
-    <p>Google Chrome содержит проверку правописания, but even for native speakers it's easy
-    to mix up words ("Children resemble <u>there</u> parents") или сделать опечатку, которая
-    приведёт к грамматической ошибкеa ("I talk<u>s</u> to him yesterday"). LanguageTool --
-    это система с открытым исходным кодом для проверки грамматики и стиля, которая поможет найти много ошибок в тексте,
-    которые стандартная проверка правописания не сможет найти. |It's now available as an extension for the Google
-    Chrome browser so you can conveniently check text before you submit it on the web.
-    
-    <p>Он свободен, не требует регистрации, и <a href="../../privacy/">мы не собираем ваши тексты.</a>
-    Есть поддержка для английского, французского, русского, испанского, немецкого, польского <a href="../../languages/"> и других языков</a>.</p>
-
+    <p>Google Chrome содержит проверку правописания, но эта проверка не сможет найти 
+    ошибки в употреблении похожих слов ("Children resemble <u>there</u> parents") или обнаружить опечатку, которая
+    приводит к грамматической ошибке ("I talk<u>s</u> to him yesterday"). LanguageTool –
+    это система с открытым исходным кодом для проверки грамматики и стиля. Система поможет найти много ошибок в тексте,
+    которые стандартная проверка правописания не сможет найти. Сейчас LanguageTool доступен и как расширение для браузера Google
+    Chrome. Теперь можно проверить текст перед тем, как опубликовать его в Интернете.
     <div id="download" style="margin-top: 20px">
         <div style="width:280px" class="button_container">
             <a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"
@@ -45,11 +41,11 @@
         
     <video style="margin-top:20px" src="../../chrome/video/output.webm" autoplay loop controls>
     
-    <p>Most errors that LanguageTool can detect come with one or more suggestions to fix the
-    error. Click it to have the error replaced in your text. 
-    You can also select text outside of an input area and have it checked. You won't be able to
-    click the suggestions then, as the extension cannot edit static text.
-    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Space</tt>.
+    <p>Для большинства ошибок LanguageTool может показать одно или несколько предложений по исправлению 
+    ошибки. Щёлкните по ним для исправления ошибки в проверяемом тексте. 
+    Ещё можно проверить статический текст web-страницы. Но к этому тексту нельзя применить варианты исправления,
+    так как расширение не может редактировать статический текст.
+    Для расширения определены горячие клавиши <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Space</tt>.
     
     <!--
     <h2>Advanced Options</h2>
@@ -60,9 +56,9 @@
     
     <p>Это расширение не поддерживает только очень небольшое число сайтов. Одним из таких сайтов является 
     Google Docs. Если найдётся другой такой сайт, <a href="../../support/">дайте нам знать</a>.
-    If your text contains an error but the extension doesn't detect it, that's probably
-    because we don't have an error detection rule for that error yet. Please consider
-    <a href="../../contribute/">contributing</a>.
+    Если проверяемый текст содержит ошибку, но расширение его не может обнаружить, то скорей всего
+    причиной этого является отсутствие правила для обнаружения этой конкретной ошибки. Пожалуйста, присылайте 
+    <a href="../../contribute/">предложения</a>.
     
     <h2>Исходный код</h2>
 
