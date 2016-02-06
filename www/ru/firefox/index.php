@@ -12,7 +12,7 @@
 
 <div id="textContent">
 
-    <h1>Style and Grammar Checking for Firefox</h1>
+    <h1>Проверка грамматики и стиля для Firefox</h1>
     
     <p>Mozilla Firefox содержит проверку правописания, но эта проверка не сможет найти 
     ошибки в употреблении похожих слов ("Children resemble <u>there</u> parents") или обнаружить опечатку, которая
@@ -21,8 +21,8 @@
     которые стандартная проверка правописания по словарю не сможет найти. Сейчас LanguageTool доступен и как расширение для браузера Firefox.
     Теперь текст можно проверить перед тем, как отправить его в Интернет.
     
-    <p>It's free, no registration is required, and <a href="../../../privacy/">we don't collect your text data.</a>
-    It supports English, Spanish, French, Russian, German, Polish, <a href="../../../languages/">and more</a>.</p>
+    <p>LanguageTool свободен, не требует регистрации и <a href="../../../privacy/">мы не собираем ваши данные.</a>
+    Он поддерживает английский, русский, испанский, французский, немецкий, польский <a href="../../../languages/">и другие языки</a>.</p>
 
     <div id="download" style="margin-top: 20px;">
         <div style="width:280px;" class="button_container">
@@ -35,20 +35,20 @@
     </div>
     <div style="clear: both;"></div>
 
-    <p>After installation, an icon will show up next to your search bar:
+    <p>После установки появится значок LT на панели поиска:
     
-    <p><img src="../../images/lt-icon.png">
+    <p><img src="../../../images/lt-icon.png">
     
-    <p>To check a text, click on the extension icon while your cursor is in the text field you'd
-    like to check. A pop up will show the potential errors:
+    <p>Для проверки текста щёлкните мышкой по значку расширения, когда курсор находится в текстовом поле, которое надо проверить.
+    Всплывающее окно покажет возможные ошибки:
         
     <video style="margin-top:20px" src="../../firefox/video/screencast1.webm" autoplay loop controls>
     
-    <p>Most errors that LanguageTool can detect come with one or more suggestions to fix the
-    error. Click it to have the error replaced in your text. 
-    You can also select text outside of an input area and have it checked. You won't be able to
-    click the suggestions then, as the extension cannot edit static text.
-    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Return</tt>.
+    <p>Для большинства ошибок LanguageTool может показать одно или несколько предложений по исправлению 
+    ошибки. Щёлкните по ним для исправления ошибки в проверяемом тексте. 
+    Ещё можно проверить статический текст web-страницы. Но к этому тексту нельзя применить варианты исправления,
+    так как расширение не может редактировать статический текст.
+    Для расширения определены горячие клавиши <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Return</tt>.
     
     <!--
     <h2>Advanced Options</h2>
@@ -68,7 +68,7 @@
         
     <h2>Исходный код</h2>
 
-    <pИсходный код этого расширения доступен <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/firefox">на Github</a>.
+    <p>Исходный код этого расширения доступен <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/firefox">на Github</a>.
     Он опубликован на условиях лицензии <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0 or later</a>.</p>
 
     <h2>Chrome</h2>
