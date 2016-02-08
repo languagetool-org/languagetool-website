@@ -37,7 +37,7 @@
 
     <p>После установки появится значок LT на панели поиска:
     
-    <p><img src="../../../images/lt-icon.png">
+    <p><img src="../../images/lt-icon.png">
     
     <p>Для проверки текста щёлкните мышкой по значку расширения, когда курсор находится в текстовом поле, которое надо проверить.
     Всплывающее окно покажет возможные ошибки:
@@ -59,17 +59,17 @@
   <h2>Известные проблемы</h2>
 
     <ul>
-        <li>It is not possible to check texts on websites which were loaded before the installation of the extension.</li>
-        <li>If you select a headline and the following paragraph, you might get a warning about wrong case because LanguageTool doesn't consider the paragraph. It might also happen that the last word of the first paragraph and the first word of the second paragraph are joined together.</li>
-        <li>If your text contains an error but the add-on doesn't detect it, that's probably
-            because we don't have an error detection rule for that error yet. Please consider <a href="../contribute/">contributing</a>.
+        <li>Невозможно проверить текст на вкладках браузера,которые были открыты до установки этого расширения.</li>
+        <li>При выборе заголовка и следующего абзаца может появиться предупреждение о неправильном регистре, потому что LanguageTool не считает этот абзац. Это может также случиться, если последнее слово в первом абзаце и первое слово второго абзаца соединены вместе.</li>
+        <li>Если текст содержит ошибку, но LanguageTool не может обнаружить его, то скорей всего в программе нет правила для 
+           обнаружения этой ошибки.  Пожалуйста, <a href="../contribute/">присылайте предложения</a>.
         </li>
     </ul>
         
     <h2>Исходный код</h2>
 
     <p>Исходный код этого расширения доступен <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/firefox">на Github</a>.
-    Он опубликован на условиях лицензии <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0 or later</a>.</p>
+    Он опубликован на условиях лицензии <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0 или новее</a>.</p>
 
     <h2>Chrome</h2>
     
