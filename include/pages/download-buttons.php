@@ -33,7 +33,7 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 220,
-      'below' => '<a href="/firefox/">More...</a>'
+      'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More...</a>'
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -42,7 +42,7 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 220,
-      'below' => '<a href="/chrome/">More...</a>'
+      'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More...</a>'
     )
 );
 
