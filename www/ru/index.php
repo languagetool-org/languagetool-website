@@ -64,8 +64,8 @@
     $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
     $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>  (<a href='https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md'>список изменений</a>).";
     $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
-    $firefoxLink = '<a href="/ru/firefox/">More...</a>';
-    $chromeLink = '<a href="/ru/chrome/">More...</a>';
+    $firefoxLink = '<a href="/ru/firefox/">Подробнее...</a>';
+    $chromeLink = '<a href="/ru/chrome/">Подробнее...</a>';
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
