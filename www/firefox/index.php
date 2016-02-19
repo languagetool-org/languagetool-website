@@ -18,7 +18,7 @@
     to mix up words ("Children resemble <u>there</u> parents") or to make
     typos that result in grammar errors ("I talk<u>s</u> to him yesterday"). LanguageTool
     is an Open Source style and grammar checker that detects many of the problems
-    a common spell checker will miss. It's available as an extension for the Firefox
+    a common spell checker will miss. It's available as an extension for Firefox
     so you can conveniently check text before you submit it on the web.
     
     <p>It's free, no registration is required, and <a href="../privacy/">we don't collect your text data.</a>
