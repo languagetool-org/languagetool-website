@@ -62,14 +62,14 @@
         <li><a href="http://wiki.languagetool.org/integration-on-websites">Integration on Websites</a></li>
     </ul>
     
-    <h2>Powered By</h2>
+    <h2>Thanks to</h2>
 
-    <p>Thanks to
-    <a href="https://www.jetbrains.com">JetBrains</a> for free licenses of the IntelliJ Ultimate Edition,
-    to <a href="http://www.cloudbees.com/">CloudBees</a> for free access to a hosted Jenkins instance,
-    and 
-    ej-technologies for providing us with free licenses of their <a href="http://www.ej-technologies.com/products/jprofiler/overview.html">Java profiler</a>.
-    </p>
+    <ul>
+        <li><a href="https://www.jetbrains.com">JetBrains</a> for free licenses of the IntelliJ Ultimate Edition</li>
+        <li><a href="http://www.cloudbees.com/">CloudBees</a> for free access to a hosted Jenkins instance</li>
+        <li>ej-technologies for providing us with free licenses of their <a href="http://www.ej-technologies.com/products/jprofiler/overview.html">Java profiler</a></li>
+        <li><a href="https://www.discoursehosting.com">DiscourseHosting.com</a> for sponsoring <a href="http://forum.languagetool.org/">our forum</a></li>
+    </ul>
 
     <a href="https://www.jetbrains.com/idea/"><img src="/images/logo_intellij_idea.png" alt="IntelliJ logo"/></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
