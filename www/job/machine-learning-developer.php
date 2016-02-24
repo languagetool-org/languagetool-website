@@ -26,7 +26,17 @@
     (we'd port your solutions to Java so they can become part of LanguageTool).
     Like the other developers, you won't get paid with money but with the chance to be part
     of the team that develops the world's most powerful Open Source style and grammar checker (and a languagetool.org
-    email address). </p>
+    email address).</p>
+    
+    <!--
+    <p>Some ideas of what you could work on:</p>
+    
+    <ul>
+        <li>Improve recall and precision of the <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/confusion_sets.txt">confusion set word pairs</a></li>
+        <li>Develop confusion sets for more languages</li>
+        <li>research how <a href="http://deeplearning4j.org/thoughtvectors.html">thought vectors</a> could be used to find semantic problems</li>
+    </ul>
+    -->
 
     <p>Would you like to work on this? Then please contact
     <a href="mailto:daniel.naber@languagetool-removeme-.org"
