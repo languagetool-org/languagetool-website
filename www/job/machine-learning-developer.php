@@ -3,7 +3,7 @@
 <head>
     <?php
     $page = "other";
-    $title = "Job: Machine Learning Developer";
+    $title = "Machine Learning Developer";
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
@@ -12,7 +12,7 @@
 
 <div id="textContent">
 
-    <h2>Job: Machine Learning Developer</h2>
+    <h2>Machine Learning Developer</h2>
     
     <p>The LanguageTool project is looking for a volunteer who supports us with machine learning.
     So far, LanguageTool uses both rules and <a href="http://wiki.languagetool.org/finding-errors-using-n-gram-data">ngram data</a>
@@ -20,7 +20,8 @@
     with a higher precision and recall.</p>
 
     <p>Why do we need help with this? We're a small team that maintains LanguageTool's support for many languages
-    and several add-ons, so our resources are limited.</p>
+    and several add-ons, so our resources are limited. We think that even with as little as 2 or 3 hours a week, you could
+    make a huge difference for LanguageTool.</p>
 
     <p>There are no formal requirements to contribute. It helps if you're familiar with Java, but other languages are fine, too
     (we'd port your solutions to Java so they can become part of LanguageTool).
