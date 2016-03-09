@@ -139,9 +139,7 @@
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
                   var partialErrorMessage = request.responseText.substr(0, 50);
-                  if (_paq) {
-                      _paq.push(['trackEvent', 'CheckError', 'ErrorFromProxy', partialErrorMessage]); // Piwik tracking
-                  }
+                  t.trackEvent('CheckError', 'ErrorFromProxy', partialErrorMessage);
                   return;
                }
 
@@ -149,9 +147,7 @@
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
                   var detailMessage = "Code: " + request.status + ", response: '" + request.responseText.substr(0, 4) + "'";
-                  if (_paq) {
-                      _paq.push(['trackEvent', 'CheckError', 'ErrorWithCommunication', detailMessage]); // Piwik tracking
-                  }
+                   t.trackEvent('CheckError', 'ErrorWithCommunication', detailMessage);
                   return;
                }
               
@@ -160,9 +156,7 @@
                   // something is wrong - this does not seem to be the XML we expect 
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
                   var startOfResponse = request.responseText.substr(0, 50);
-                  if (_paq) {
-                      _paq.push(['trackEvent', 'CheckError', 'ErrorNoXmlResult', startOfResponse]); // Piwik tracking
-                  }
+                  t.trackEvent('CheckError', 'ErrorNoXmlResult', startOfResponse);
                   return;
                }
 
@@ -170,9 +164,7 @@
                if (request.responseXML.getElementsByTagName('message').item(0) != null)
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
-                  if (_paq) {
-                      _paq.push(['trackEvent', 'CheckError', 'ErrorWithException']); // Piwik tracking
-                  }
+                  t.trackEvent('CheckError', 'ErrorWithException');
                   return;
                }
 
@@ -256,6 +248,14 @@
       {
       },
 
+      _trackEvent : function(val1, val2, val3)
+      {
+          if (typeof(_paq) !== 'undefined') {
+              // Piwik tracking
+              _paq.push(['trackEvent', val1, val2, val3]);
+          }
+      },
+       
       _removeWords : function(w) 
       {
          var ed = this.editor, dom = ed.dom, se = ed.selection, b = se.getBookmark();
@@ -497,9 +497,7 @@
                                 });
                                 if (exampleCount === 0) {
                                     ruleHtml += "<p>" + noRuleExamples + "</p>";
-                                    if (_paq) {
-                                        _paq.push(['trackEvent', 'ShowExamples', 'NoExamples', errorDescription["id"]]); // Piwik tracking
-                                    }
+                                    t.trackEvent('ShowExamples', 'NoExamples', errorDescription["id"]);
                                 }
                                 ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
                                 var $dialog = $("#dialog");
@@ -509,14 +507,10 @@
                                 var $dialog = $("#dialog");
                                 $dialog.html("Sorry, could not get rules. Server returned error code " + e.status + ".");
                                 $dialog.dialog("open");
-                                if (_paq) {
-                                    _paq.push(['trackEvent', 'ShowExamples', 'ServerError']); // Piwik tracking
-                                }
+                                t.trackEvent('ShowExamples', 'ServerError');
                             }).always(function() {
                                 plugin.editor.setProgressState(0);
-                                if (_paq) {
-                                    _paq.push(['trackEvent', 'ShowExamples', 'ShowExampleSentences']); // Piwik tracking
-                                }
+                                t.trackEvent('ShowExamples', 'ShowExampleSentences');
                             });
                     }
                 });

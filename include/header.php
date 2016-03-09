@@ -380,7 +380,7 @@
         turnOffFullScreenView();
       } else {
         turnOnFullScreenView();
-        if (_paq) { _paq.push(['trackEvent', 'Action', 'SwitchToFullscreen']); } // Piwik tracking
+        if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'Action', 'SwitchToFullscreen']); } // Piwik tracking
       }
       return false;
     }
@@ -414,7 +414,7 @@
                + "-" + document.checkform.subLang.value;
        }
        if (doLog) {
-           if (_paq) { _paq.push(['trackEvent', 'Action', 'CheckText', langCode]); } // Piwik tracking
+           if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'Action', 'CheckText', langCode]); } // Piwik tracking
        }
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
