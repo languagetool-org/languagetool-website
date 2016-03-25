@@ -18,7 +18,7 @@
 
     <ul>
         <li><a href="http://wiki.languagetool.org/public-http-api">Using LanguageTool via HTTP/HTTPS</a></li>
-        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a> (<a href="api/">Javadoc API documentation</a>)</li>
+        <li><a href="http://wiki.languagetool.org/java-api">Using LanguageTool from a Java application</a> (<a href="api/index.html?org/languagetool/JLanguageTool.html">Javadoc API documentation</a>)</li>
     </ul>
 
     
