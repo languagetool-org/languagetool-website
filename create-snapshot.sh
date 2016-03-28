@@ -91,16 +91,15 @@ rm -r /home/languagetool/tomcat/webapps/wikiCheck/
 unzip -o -d /home/languagetool/tomcat/webapps/wikiCheck/ target/languagetool-wikicheck-0.1.war
 # Tomcat restart needs root permission, but happens automatically by cron job
 
-## commented out as compilation doesn't work - XMLValidator is in test scope and cannot be found:
-##cd /home/languagetool/languagetool.org/languagetool-community-website
-### stash because e.g. Config.groovy is modified (locally it contains a password):
-##git stash
-##git pull -r
-##git stash pop
-##grails war
-##rm -r /home/languagetool/tomcat/webapps/ROOT/
-##unzip -o -d /home/languagetool/tomcat/webapps/ROOT/ target/ltcommunity-0.1.war
-### Tomcat restart needs root permission, but happens automatically by cron job
+cd /home/languagetool/languagetool.org/languagetool-community-website
+# stash because e.g. Config.groovy is modified (locally it contains a password):
+git stash
+git pull -r
+git stash pop
+grails war
+rm -r /home/languagetool/tomcat/webapps/ROOT/
+unzip -o -d /home/languagetool/tomcat/webapps/ROOT/ target/ltcommunity-0.1.war
+### Tomcat restart needs root permission, but that happens automatically by cron job
 
 # =====================================================================
 # deploy command-line tools (Feed Checker) for WikiCheck:
