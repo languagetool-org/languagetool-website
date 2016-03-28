@@ -9,20 +9,20 @@ if (isset($downloadRequiresJava)) {
 $buttons = array(
     array(
       'title' => isset($downloadTitle) ? $downloadTitle : 'For <strong>LibreOffice</strong><br/>and <strong>OpenOffice</strong>',
-      'link' => '/download/LanguageTool-3.2.oxt',
+      'link' => '/download/LanguageTool-3.3.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'v3.2, 55 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2015-12-29',
+      'additional_info' => 'v3.3, 56 MB, ' . $downloadRequiresJava,
+      'release_info' => 'released 2016-03-28',
       'width' => 220,
       'below' => ''
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'Stand-alone for<br/>your <strong>Desktop</strong>',
-      'link' => '/download/LanguageTool-3.2.zip',
+      'link' => '/download/LanguageTool-3.3.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'v3.2, 88 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2015-12-29',
+      'additional_info' => 'v3.3, 87 MB, ' . $downloadRequiresJava,
+      'release_info' => 'released 2016-03-28',
       'width' => 220,
       'below' => ''
     ),
