@@ -256,7 +256,7 @@ LanguageTool можно использовать для проверки гра�
 <p><strong>10.03.2016:</strong> Появилась бета-версия LanguageTool для Android &mdash; LanguageTool proofreader!</p>
 
 Установить <a href="https://play.google.com/store/apps/details?id=org.softcatala.corrector">LanguageTool proofreader (Корректор LanguageTool) для Android</a>.</li>
-
+ОЧЕНЬ ВАЖНО: После установки программы зайдите в настройки Android: Settings -> Language Input -> Spell Checker (Настройки -> Языки ввода -> Проверка орфографии) и выберите "LanguageTool proofreader" (корректор LanguageTool).
 
 
 
