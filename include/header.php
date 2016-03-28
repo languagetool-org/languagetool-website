@@ -296,7 +296,7 @@
        languagetool_i18n_rule_examples :
           {
            // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
-           'br': 'Skouerioù…'
+           'br': 'Skouerioù…',
            'ca': 'Exemples...',
            'de-DE': 'Beispiele...',
            'eo': 'Ekzemploj…',
