@@ -85,7 +85,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 481 правило</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 501 правило</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
@@ -169,7 +169,7 @@
 </p>
 <p>Для работы в Windows совместно с Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
-<p>LibreOffice 5.0 под Windows существует в 64-битном виде, для работы с ней требуется  64-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
+<p>LibreOffice 5.0 под Windows существует и в 64-битном виде, для работы с этой версией требуется 64-битная <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
@@ -225,7 +225,8 @@ LanguageTool можно использовать для проверки гра�
 	<li><a href="http://www.opentag.com/okapi/wiki/index.php?title=CheckMate">LanguageTool и CheckMate</a> используется как сервер для расширения возможностей контроля качества переводов;</li>
 	<li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/14781">LanguageTool для Thunderbird;</a></li>
         <li><a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx?src=external-lt-homepage-ru">LanguageToolFx для Firefox</a>;</li>
-        <li><a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a>.</li>
+        <li><a href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">LanguageTool для Google Chrome (beta)</a>;</li>
+        <li><a href="https://play.google.com/store/apps/details?id=org.softcatala.corrector">LanguageTool proofreader для Android</a>.</li>
 </ul>
 
 
@@ -236,6 +237,28 @@ LanguageTool можно использовать для проверки гра�
 посвящённом работе в офисных пакетах LibreOffice и OpenOffice.</p>
 
 <h2>Новости</h2>
+
+<p><strong>28.03.2016:</strong>Вышла версия 3.3 LanguageTool!</p>
+<ul>
+Изменения для русскоязычного модуля включают:
+<li>Добавлено 20 новых правил.</li>
+<li>Улучшены существующие правила.</li>
+<li>Для Java правил добавлены примеры.</li>
+<li>Обновлён словарь для проверки орфографии (в независимой версии).</li>
+
+Остальные изменения:
+<li>В программу включён новый словарь немецкого языка для проверки орфографии (в независимой версии).</li>
+<li>Обновлены модули для проверки следующих языков: английского, русского, немецкого, французского, эсперанто  украинского, датского, каталанского, португальского, греческого, польского.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
+</ul>
+
+
+<p><strong>10.03.2016:</strong> Появилась бета-версия LanguageTool для Android &mdash; LanguageTool proofreader!</p>
+
+Установить <a href="https://play.google.com/store/apps/details?id=org.softcatala.corrector">LanguageTool proofreader (Корректор LanguageTool) для Android</a>.</li>
+
+
+
 
 <p><strong>29.12.2015:</strong> Вышла версия 3.2 LanguageTool!</p>
 <ul>
