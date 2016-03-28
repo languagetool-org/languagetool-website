@@ -296,8 +296,11 @@
        languagetool_i18n_rule_examples :
           {
            // "Examples", i.e. examples of incorrect and correct sentences for the matching rule:
+           'br': 'Skouerioù…'
            'ca': 'Exemples...',
            'de-DE': 'Beispiele...',
+           'eo': 'Ekzemploj…',
+           'fr': 'Exemples…',
            'pl': 'Przykłady...',
            'pt': 'Exemplos...',
            'ru': 'Примеры...',
@@ -310,6 +313,8 @@
            // "Sorry, no examples found for this rule.":
            'ca': 'No s\'han trobat exemmples per a aquesta regla.',
            'de-DE': 'Leider wurden keine Beispiele für diese Regel gefunden.',
+           'eo': 'Neniu ekzemplo trovita por tiu regulo.',
+           'fr': 'Aucun exemple trouvé pour cette règle.',
            'pl': 'Niestety nie znaleziono żadnych przykładów',
            'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
            'ru': 'Ни одного примера для этого правила не было найдено.',
