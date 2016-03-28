@@ -61,7 +61,7 @@
     $downloadLabelFx = "Pour <strong>Firefox</strong>";
     $downloadLabelChrome = "Pour <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Module de navigateur";
-    $checklistText = "Consuler la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
+    $checklistText = "Consulter la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
     $otherDownloadsText = "Télécharger une <a href='/download/'>vieille version</a> ou la <a href='/download/snapshots/?C=M;O=D'>dernière version quotidienne</a>.";
     $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
@@ -93,7 +93,7 @@ accords en genre ou en nombre, les conjugaisons incorrectes, etc.</strong></p>
 <p>LanguageTool peut signaler bien plus d’erreurs que sur cette copie d’écran puisque LanguageTool contient plus de 2000 règles XML pour détecter des erreurs. Les fautes de grammaire trouvées par LanguageTool sous soulignées en bleu. Les fautes d’orthographe trouvées par le dictionnaire français de LibreOffice sont soulignées en rouge.</p>
 <p>Veuillez vous assurer que la langue sélectionnée pour le texte dans LibreOffice/OpenOffice est bien le français afin que le correcteur grammatical puisse fonctionner correctement en français.</p>
 
-<h3>License &amp; code source</h3>
+<h3>Licence &amp; code source</h3>
 
 <p>LanguageTool est disponible sous la licence <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 Le code source est disponible dans le dépôt <a href="https://github.com/languagetool-org/languagetool.git">git de github</a>.
