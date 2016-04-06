@@ -14,6 +14,8 @@
 
     <h1>Imprint</h1>
     
+    <p><strong>If you need help, visit <a href="http://forum.languagetool.org">our forum</a>.</strong></p>
+    
     <p>
         Daniel Naber<br/>
         Friesenstr. 3<br/>

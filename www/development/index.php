@@ -30,7 +30,6 @@
         <li style="font-size: large"><a href="https://github.com/languagetool-org/languagetool"><strong>Source code at github</strong></a></li>
         <li style="font-size: large"><a href="http://wiki.languagetool.org"><strong>wiki.languagetool.org</strong></a> contains the complete development documentation, including:
             <ul>
-                <li><a href="http://wiki.languagetool.org/development-overview#toc0">The three-minute introduction</a></li>
                 <li><a href="http://wiki.languagetool.org/development-overview">Development Overview</a>, for users who want to extend LanguageTool with their own rules
             </ul>
         </li>
@@ -41,9 +40,9 @@
                 lists.sourceforge.net</span>. Note that your message requires manual moderation if you are not subscribed, this might take some time.
             <ul>
                 <li><a href="../development/mailing-list.php">Subscribe</a></li>
-                <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Archive at mail-archive.com</a></li>
-                <li><a href="http://markmail.org/search/?q=list%3Anet.sourceforge.lists.languagetool-devel">Archive at markmail.org</a></li>
-                <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel">Archive at Sourceforge</a></li>
+                <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Message archive at mail-archive.com</a>
+                    (alternatively, use the archive at <a href="http://markmail.org/search/?q=list%3Anet.sourceforge.lists.languagetool-devel">markmail.org</a> or
+                    <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel">Sourceforge</a>)</li>
             </ul>
         </li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a>

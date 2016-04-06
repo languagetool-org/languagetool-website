@@ -29,7 +29,7 @@
     <p>Please subscribe to our <a href="../development/mailing-list.php">development
     mailing list</a>, where all the discussion happens. Subscribe to the <a href="../contact/newsletter.php">newsletter</a>
     for information about new releases. If you have a quick question you may want to
-    use the <a href="/forum">forum</a> instead.</p>
+    use the <a href="http://forum.languagetool.org">forum</a> instead.</p>
 
 
     <h2>Core Team</h2>
