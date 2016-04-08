@@ -31,7 +31,7 @@ Date: 2016-03-28<br /><br />
         <th></th>
         <th align="left" width="60">Java<br/>rules</th>
         <th align="left" width="60">False<br/>friends</th>
-        <th align="left" width="60">Spell<br/>check</th>
+        <th align="left" width="60">Spell<br/>check*</th>
         <th align="left" width="60">Confusion<br/>pairs</th>
         <th valign='bottom' align="left" width="70">Activity</th>
         <th valign='bottom' align="left">Rule Maintainers</th>
@@ -74,6 +74,8 @@ Date: 2016-03-28<br /><br />
 
 <!-- End Output of RuleOverview.java -->
 
+<p>* ✓ = spell check &nbsp;&nbsp; (✓) = spell check but no suggestions for misspellings</p>
+    
 <p>The number of Java rules listed is only the number of rules specific
 to that language. There are some rules that deal with punctuation
 and that apply to almost all languages. The "Activity" column counts
