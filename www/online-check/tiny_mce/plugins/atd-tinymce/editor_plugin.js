@@ -966,15 +966,18 @@ AtDCore.prototype.isIE = function() {
              langParam = "&language=" + encodeURI(languageCode);
          }
 
+         var t = this;
          jQuery.ajax({
-            url:   url + "/" + file,
+            url:   url,
             type:  "POST",
             data:  "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + langParam,
             success: success,
             error: function(jqXHR, textStatus, errorThrown) {
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
-               alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works.");
+               var errorText = jqXHR.responseText;
+               $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
+               t._trackEvent('CheckError', 'ErrorWithException', errorText);
             }
          });
 
