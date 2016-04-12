@@ -482,14 +482,14 @@ AtDCore.prototype.isIE = function() {
 
             /* send request to our service */
             var textContent = plugin.editor.core.getPlainText();
-            plugin.sendRequest('checkDocument', textContent, languageCode, function(data, request, someObject)
+            plugin.sendRequest('', textContent, languageCode, function(data, request, jqXHR)
             {
                /* turn off the spinning thingie */
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
 
                /* if the server is not accepting requests, let the user know */
-               if (request.responseText.substr(0, 6) == 'Error:')
+               if (jqXHR.responseText.substr(0, 6) == 'Error:')
                {
                   // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
@@ -498,7 +498,7 @@ AtDCore.prototype.isIE = function() {
                   return;
                }
 
-               if (request.status != 200 || request.responseText == '' || request.responseText.substr(1, 4) == 'html')
+               if (jqXHR.status != 200 || jqXHR.responseText.substr(1, 4) == 'html' || jqXHR.responseText == '')
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
                   var detailMessage = "Code: " + request.status + ", response: '" + request.responseText.substr(0, 4) + "'";
@@ -506,7 +506,7 @@ AtDCore.prototype.isIE = function() {
                   return;
                }
               
-               if (request.responseText.substr(0, 5) !== '<?xml')
+               if (jqXHR.responseText.substr(0, 5) !== '<?xml')
                {
                   // something is wrong - this does not seem to be the XML we expect 
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
@@ -516,7 +516,7 @@ AtDCore.prototype.isIE = function() {
                }
 
                /* check to see if things are broken first and foremost */
-               if (request.responseXML.getElementsByTagName('message').item(0) != null)
+               if (jqXHR.responseXML.getElementsByTagName('message').item(0) != null)
                {
                   $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
                   t._trackEvent('CheckError', 'ErrorWithException');
@@ -525,9 +525,9 @@ AtDCore.prototype.isIE = function() {
 
                $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
-               var results = core.processXML(request.responseXML);
+               var results = core.processXML(jqXHR.responseXML);
                if (languageCode === "auto") {
-                  var detectedLang = core.getDetectedLanguageFromXML(request.responseXML);
+                  var detectedLang = core.getDetectedLanguageFromXML(jqXHR.responseXML);
                   /*var langDiv = $("#lang");
                   langDiv.find('option[value="auto"]').remove();
                   langDiv.prepend($("<option selected/>").val("auto").text("Auto-detected: " + detectedLang));
@@ -958,27 +958,28 @@ AtDCore.prototype.isIE = function() {
             alert('Please specify: languagetool_rpc_url');
             return;
          }
-   
-        /*
+
+         var langParam = "";
+         if (languageCode === "auto") {
+             langParam = "&autodetect=1";
+         } else {
+             langParam = "&language=" + encodeURI(languageCode);
+         }
+
          jQuery.ajax({
             url:   url + "/" + file,
             type:  "POST",
-            data:  "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + encodeURI(languageCode),
+            data:  "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + langParam,
             success: success,
             error: function(jqXHR, textStatus, errorThrown) {
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
-               alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works."); 
+               alert("Could not send request to\n" + url + "\nError: " + textStatus + "\n" + errorThrown + "\nPlease make sure your network connection works.");
             }
-         });*/
+         });
 
-         var langParam = "";
-         if (languageCode === "auto") {
-            langParam = "&autodetect=1";
-         } else {
-            langParam = "&language=" + encodeURI(languageCode);
-         }
-   
+         /* this causes an OPTIONS request to be send as a preflight - LT server doesn't support that,
+         thus we're using jQuery.ajax() instead
          tinymce.util.XHR.send({
             url          : url,
             content_type : 'text/xml',
@@ -997,7 +998,7 @@ AtDCore.prototype.isIE = function() {
                var errorMessage = "<div id='severeError'>Error: Could not send request to\n" + o.url + "\nError: " + type + "\nStatus code: " + req.status + "\nPlease make sure your network connection works.</div>";
                $('#feedbackErrorMessage').html(errorMessage);
             }
-         });
+         });*/
       }
    });
 
