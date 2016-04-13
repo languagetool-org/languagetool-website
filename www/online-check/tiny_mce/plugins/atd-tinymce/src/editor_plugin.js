@@ -133,38 +133,18 @@
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
 
-               /* if the server is not accepting requests, let the user know */
-               if (jqXHR.responseText.substr(0, 6) == 'Error:')
-               {
-                  // the simple proxy turns code 500 responses into code 200 responses, but lets handle at least this error case:
-                  $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseText + "</div>");
-                  var partialErrorMessage = request.responseText.substr(0, 50);
-                  t._trackEvent('CheckError', 'ErrorFromProxy', partialErrorMessage);
-                  return;
-               }
-
-               if (jqXHR.status != 200 || jqXHR.responseText.substr(1, 4) == 'html' || jqXHR.responseText == '')
-               {
-                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: There was a problem communicating with the service. Please try again in one minute.</div>");
-                  var detailMessage = "Code: " + request.status + ", response: '" + request.responseText.substr(0, 4) + "'";
-                  t._trackEvent('CheckError', 'ErrorWithCommunication', detailMessage);
-                  return;
-               }
-              
-               if (jqXHR.responseText.substr(0, 5) !== '<?xml')
-               {
+               if (jqXHR.responseText.substr(0, 5) !== '<?xml') {
                   // something is wrong - this does not seem to be the XML we expect 
-                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
-                  var startOfResponse = request.responseText.substr(0, 50);
                   t._trackEvent('CheckError', 'ErrorNoXmlResult', startOfResponse);
+                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
+                  var startOfResponse = jqXHR.responseText.substr(0, 50);
                   return;
                }
 
                /* check to see if things are broken first and foremost */
-               if (jqXHR.responseXML.getElementsByTagName('message').item(0) != null)
-               {
-                  $('#feedbackErrorMessage').html("<div id='severeError'>" + request.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
-                  t._trackEvent('CheckError', 'ErrorWithException');
+               if (jqXHR.responseXML.getElementsByTagName('message').item(0) != null) {
+                  t._trackEvent('CheckError', 'ErrorWithMessage');
+                  $('#feedbackErrorMessage').html("<div id='severeError'>" + jqXHR.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
                   return;
                }
 
@@ -621,6 +601,9 @@
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
                var errorText = jqXHR.responseText;
+               if (!errorText) {
+                   errorText = "Error: Did not get response from service. Please try again in one minute."; 
+               }
                $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
                t._trackEvent('CheckError', 'ErrorWithException', errorText);
             }
