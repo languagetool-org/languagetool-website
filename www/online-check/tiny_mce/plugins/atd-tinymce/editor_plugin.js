@@ -490,9 +490,9 @@ AtDCore.prototype.isIE = function() {
 
                if (jqXHR.responseText.substr(0, 5) !== '<?xml') {
                   // something is wrong - this does not seem to be the XML we expect 
+                  var startOfResponse = jqXHR.responseText.substr(0, 50);
                   t._trackEvent('CheckError', 'ErrorNoXmlResult', startOfResponse);
                   $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
-                  var startOfResponse = jqXHR.responseText.substr(0, 50);
                   return;
                }
 
