@@ -591,6 +591,14 @@ AtDCore.prototype.isIE = function() {
           }
       },
        
+      _serverLog : function(message)
+      {
+          /*jQuery.ajax({
+              url: 'https://languagetool.org/log.php?text=' + message + " - agent: " + navigator.userAgent,
+              type: 'POST'
+          });*/
+      },
+       
       _removeWords : function(w) 
       {
          var ed = this.editor, dom = ed.dom, se = ed.selection, b = se.getBookmark();
@@ -961,6 +969,7 @@ AtDCore.prototype.isIE = function() {
                }
                $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
                t._trackEvent('CheckError', 'ErrorWithException', errorText);
+               t._serverLog(errorText);
             }
          });
 

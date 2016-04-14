@@ -236,6 +236,14 @@
           }
       },
        
+      _serverLog : function(message)
+      {
+          /*jQuery.ajax({
+              url: 'https://languagetool.org/log.php?text=' + message + " - agent: " + navigator.userAgent,
+              type: 'POST'
+          });*/
+      },
+       
       _removeWords : function(w) 
       {
          var ed = this.editor, dom = ed.dom, se = ed.selection, b = se.getBookmark();
@@ -606,6 +614,7 @@
                }
                $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
                t._trackEvent('CheckError', 'ErrorWithException', errorText);
+               t._serverLog(errorText);
             }
          });
 
