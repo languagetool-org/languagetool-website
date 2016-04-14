@@ -600,21 +600,34 @@
          }
 
          var t = this;
+         var postData = "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + langParam;
          jQuery.ajax({
             url:   url,
             type:  "POST",
-            data:  "text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + langParam,
+            data:  postData,
             success: success,
             error: function(jqXHR, textStatus, errorThrown) {
-               plugin.editor.setProgressState(0);
-               document.checkform._action_checkText.disabled = false;
-               var errorText = jqXHR.responseText;
-               if (!errorText) {
-                   errorText = "Error: Did not get response from service. Please try again in one minute."; 
-               }
-               $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
-               t._trackEvent('CheckError', 'ErrorWithException', errorText);
-               t._serverLog(errorText);
+                // try again
+                t._serverLog("Error on first try, trying again...");
+                setTimeout(function() {
+                    jQuery.ajax({
+                        url:   url,
+                        type:  "POST",
+                        data:  postData,
+                        success: success,
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            plugin.editor.setProgressState(0);
+                            document.checkform._action_checkText.disabled = false;
+                            var errorText = jqXHR.responseText;
+                            if (!errorText) {
+                                errorText = "Error: Did not get response from service. Please try again in one minute.";
+                            }
+                            $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
+                            t._trackEvent('CheckError', 'ErrorWithException', errorText);
+                            t._serverLog(errorText + " (second try)");
+                        }
+                    });
+                }, 500);
             }
          });
 
