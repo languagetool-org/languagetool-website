@@ -595,7 +595,7 @@
          var t = this;
          // There's a bug somewhere in AtDCore.prototype.markMyWords which makes
          // multiple spaces vanish - thus disable that rule to avoid confusion:
-         var postData = "disabled=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26') + "&language=" + langParam;
+         var postData = "disabled=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + "&language=" + langParam;
          jQuery.ajax({
             url:   url,
             type:  "POST",
