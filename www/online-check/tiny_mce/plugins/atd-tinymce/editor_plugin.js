@@ -496,13 +496,6 @@ AtDCore.prototype.isIE = function() {
                   return;
                }
 
-               /* check to see if things are broken first and foremost */
-               if (jqXHR.responseXML.getElementsByTagName('message').item(0) != null) {
-                  t._trackEvent('CheckError', 'ErrorWithMessage');
-                  $('#feedbackErrorMessage').html("<div id='severeError'>" + jqXHR.responseXML.getElementsByTagName('message').item(0).firstChild.data + "</div>");
-                  return;
-               }
-
                $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
                var results = core.processXML(jqXHR.responseXML);
