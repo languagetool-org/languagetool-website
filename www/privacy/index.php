@@ -29,7 +29,8 @@
             <tt>2014-02-24 12:10:24 Check done: 793 chars, en-US, https://languagetool.org/, handlers:1, 3 matches, 132ms, sent</tt>
         </li>
         <li>In our web server log files, your IP address is stored in an abbreviated form (like <tt>192.168.xxx.xxx</tt>)
-            so it cannot be used to identify you.</li>
+            so it cannot be used to identify you. Error messages like for exceeding the query limit are stored with the
+            full IP so we can prevent abuse.</li>
         <li>
             <p>For accesses from web browsers, this website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
                 IP address (to a form like 192.168.xxx.xxx) to protect your privacy. If you don't want your
