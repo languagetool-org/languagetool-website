@@ -52,7 +52,7 @@
 
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> &mdash; это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
-    $introText2 = "В состав LanguageTool входят правила для более чем <a href='/languages/'>25 языков</a>, использующиеся при проверке текста.";
+    $introText2 = "В состав LanguageTool входят правила для более чем <a href='/languages/'>25 языков</a>.";
 
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}+";
@@ -134,7 +134,7 @@
 </p>
 <p>В независимую версию программы дополнительно включена проверка орфографии с коррекцией ошибок.
 </p>
-<p>Доступны расширения для проверки грамматики и стиля в браузерах <a href="/ru/chrome/">Google Chrome</a> и <a href="/ru/firefox/">FireFox</a>
+<p>Доступны расширения для проверки грамматики и стиля в браузерах <a href="/ru/chrome/">Google Chrome</a> и <a href="/ru/firefox/">FireFox</a>.
 </p>
 
 
