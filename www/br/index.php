@@ -105,7 +105,8 @@ pe skrivit er <a href="http://www.languagetool.org/forum/">forom</a>.</p>
 <p>
 Trugarez d’ar re o deus sikouret da sevel LanguageTool e brezhoneg:
 Fulup Jakez, Joseph Monfort, Denis Arnaud, Thierry Vignaud,
-Philippe Basciano-Le Gall ha Stefan Carpentier.</p>
+Philippe Basciano-Le Gall, Stefan Carpentier, Pierre Morvan ha
+Gurvan Parscau.</p>
 <p>
 Ne vefe ket posupl an difazier LanguageTool hep ar geriadur
 brezhonek Apertium. Trugarez neuze da Francis Tyers ha
