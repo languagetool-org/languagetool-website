@@ -266,7 +266,8 @@ AtDCore.prototype._getPlainText = function(removeCursor) {
             .replace(/<.*?>/g, "")
             .replace(/&amp;/g, "&")
             .replace(/&lt;/g, "<")
-            //.replace(/&gt;/g, ">")  // TODO: using '>' still gets converted to '&gt;' for the user - with this line the HTML gets messed up somtimes 
+            // TODO: using '>' still gets converted to '&gt;' for the user - with this line the HTML gets messed up when '<' or '>' are used in the text to check:
+            //.replace(/&gt;/g, ">") 
             .replace(/&nbsp;/g, " ");  // see issue #10
     if (removeCursor) {
         plainText = plainText.replace(/\ufeff/g, "");  // feff = 65279 = cursor code
