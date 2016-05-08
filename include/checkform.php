@@ -89,6 +89,9 @@ function printLangOption($langCode) {
                 $checkDefaultLang = "en";
                 $checkDefaultText = getDefaultDemoText("en");
               }
+              if (isset($_GET['empty'])) {
+                $checkDefaultText = "";
+              }
             }
             ?>
             <textarea id="checktext" name="text" style="width: 100%" rows="10"><?= $checkDefaultText ?></textarea>
