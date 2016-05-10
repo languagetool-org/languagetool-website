@@ -398,7 +398,7 @@ body #stage .inner #image img {
 }
 body #stage .inner #editor {
   float: left;
-  width: 65%;
+  width: 70%;
 }
 body #stage .inner #editor form#checkform {
   position: relative;
@@ -459,7 +459,7 @@ body #stage .inner #editor .inner {
   width: 90%;
 }
 body #stage .inner #editor .inner #checktext {
-  height: 270px;
+  height: 300px;
 }
 body #stage .inner #editor .inner #checktext_path_row {
   display: none;
@@ -487,7 +487,7 @@ body #stage .inner #editor .languageHomepage a {
 }
 body #stage .inner #text {
   float: left;
-  width: 35%;
+  width: 30%;
 }
 body #stage .inner #text p {
   font-weight: 300;
