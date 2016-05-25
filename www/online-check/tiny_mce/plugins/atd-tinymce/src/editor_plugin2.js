@@ -133,19 +133,12 @@
                plugin.editor.setProgressState(0);
                document.checkform._action_checkText.disabled = false;
 
-               if (jqXHR.responseText.substr(0, 5) !== '<?xml') {
-                  // something is wrong - this does not seem to be the XML we expect 
-                  var startOfResponse = jqXHR.responseText.substr(0, 50);
-                  t._trackEvent('CheckError', 'ErrorNoXmlResult', startOfResponse);
-                  $('#feedbackErrorMessage').html("<div id='severeError'>Error: Did not get XML response from service. Please try again in one minute.</div>");
-                  return;
-               }
-
                $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
-               var results = core.processXML(jqXHR.responseXML);
+               var results = core.processJSON(jqXHR.responseText);
                if (languageCode === "auto") {
-                  var detectedLang = core.getDetectedLanguageFromXML(jqXHR.responseXML);
+                  var json = jQuery.parseJSON(jqXHR.responseText);
+                  var detectedLang = json.language.name;
                   /*var langDiv = $("#lang");
                   langDiv.find('option[value="auto"]').remove();
                   langDiv.prepend($("<option selected/>").val("auto").text("Auto-detected: " + detectedLang));
@@ -587,7 +580,7 @@
 
          var langParam = "";
          if (languageCode === "auto") {
-             langParam = "&autodetect=1";
+             langParam = "&language=auto";
          } else {
              langParam = "&language=" + encodeURI(languageCode);
          }
@@ -595,7 +588,7 @@
          var t = this;
          // There's a bug somewhere in AtDCore.prototype.markMyWords which makes
          // multiple spaces vanish - thus disable that rule to avoid confusion:
-         var postData = "disabled=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + "&language=" + langParam;
+         var postData = "disabledRules=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + langParam;
          jQuery.ajax({
             url:   url,
             type:  "POST",
