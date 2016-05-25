@@ -63,6 +63,7 @@ paths:
         - name: enabledOnly
           in: formData
           type: boolean
+          default: false
           description: >-
             If true, only the rules and categories whose IDs are specified with
             'enabledRules' or 'enabledCategories' are enabled.
