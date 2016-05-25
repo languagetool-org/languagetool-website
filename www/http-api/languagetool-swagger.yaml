@@ -1,0 +1,151 @@
+swagger: '2.0'
+info:
+  title: LanguageTool API
+  description: Check texts for style and grammar issues with LanguageTool
+  version: "1.0.0"
+host: languagetool.org:8081
+schemes:
+  - https
+basePath: /v2
+produces:
+  - application/json
+
+paths:
+
+  /check:
+    post:
+      summary: Check a text
+      description: The main feature - check a text with LanguageTool for possible style and grammar issues.
+
+      parameters:
+        - name: text
+          in: formData
+          type: string
+          description: The text to be checked.
+          required: true
+        - name: language
+          in: formData
+          type: string
+          description: A language code like 'en' or 'en-US', or 'auto' to guess the language automatically.
+          required: true
+        - name: motherTongue
+          in: formData
+          type: string
+          description: A language code of the user's native language, enabling false friends checks for some language pairs.
+        - name: preferredVariants
+          in: formData
+          type: string
+          description: Comma-separated list of preferred language variants. The language detector used with 'language=auto' can detect e.g. English, but it cannot decide whether British English or American English is used. Thus this parameter can be used to specify the preferred variants like 'en-GB' and 'de-AT'. Only available with language=auto.
+        - name: enabledRules
+          in: formData
+          type: string
+          description: IDs of rules to be enabled, comma-separated
+        - name: disabledRules
+          in: formData
+          type: string
+          description: IDs of rules to be disabled, comma-separated
+        - name: enabledOnly
+          in: formData
+          type: boolean
+          description: If true, only the rules whose IDs are specified with 'enabled' are enabled.
+        - name: enabledCategories
+          in: formData
+          type: string
+          description: IDs of categories to be enabled, comma-separated
+        - name: disabledCategories
+          in: formData
+          type: string
+          description: IDs of categories to be disabled, comma-separated
+
+      responses:
+        200:
+          description: the result of checking the text
+          schema:
+            properties:
+              software:
+                type: object
+                required: ["name", "version", "buildDate", "apiVersion"]
+                properties:
+                  name:
+                    type: string
+                  version:
+                    type: string
+                  buildDate:
+                    type: string
+                  apiVersion:
+                    type: integer
+                  status:
+                    type: string
+              language:
+                type: object
+                required: ["name", "code"]
+                properties:
+                  name:
+                    type: string
+                  code:
+                    type: string
+              matches:
+                type: array
+                items:
+                  type: object
+                  required: ["message", "offset", "length", "replacements", "context"]
+                  properties:
+                    message:
+                      type: string
+                    offset:
+                      type: integer
+                    length:
+                      type: integer
+                    replacements:
+                      type: array
+                      items:
+                        type: string
+                    context:
+                      type: object
+                      required: ["text", "offset", "length"]
+                      properties:
+                        text:
+                          type: string
+                        offset:
+                          type: integer
+                        length:
+                          type: integer
+                    rule:
+                      type: object
+                      required: ["id", "description", "category"]
+                      properties:
+                        id:
+                          type: string
+                        subId:
+                          type: string
+                        description:
+                          type: string
+                        category:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                            name:
+                              type: string
+
+  /languages:
+    get:
+      summary: Get a list of supported languages.
+      responses:
+        200:
+          description: An array of language objects.
+          schema:
+            type: array
+            items:
+              type: object
+              required: ["name", "code", "longCode"]
+              properties:
+                name:
+                  type: string
+                  description: a language name like 'French' or 'English (Australia)'
+                code:
+                  type: string
+                  description: a language code like 'en'
+                longCode:
+                  type: string
+                  description: a language code like 'en-US' or 'ca-ES-valencia'
