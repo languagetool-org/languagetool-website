@@ -91,19 +91,24 @@
                                     ],
                                     "properties": {
                                         "name": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "Usually 'LanguageTool'."
                                         },
                                         "version": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "A version string like '3.3' or '3.4-SNAPSHOT'."
                                         },
                                         "buildDate": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "Date when the software was built, e.g. '2016-05-25'."
                                         },
                                         "apiVersion": {
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "description": "Version of this API response. We don't expect to make incompatible changes, so this can also be increased for newly added fields."
                                         },
                                         "status": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "An optional warning, e.g. when the API format is not stable."
                                         }
                                     }
                                 },
@@ -115,10 +120,12 @@
                                     ],
                                     "properties": {
                                         "name": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "Language name like 'French' or 'English (US)'."
                                         },
                                         "code": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "ISO 639-1 code like 'en', 'en-US', or 'ca-ES-valencia'"
                                         }
                                     }
                                 },
@@ -135,19 +142,23 @@
                                         ],
                                         "properties": {
                                             "message": {
-                                                "type": "string"
+                                                "type": "string",
+                                                "description": "Message about the error displayed to the user. It might contain '&lt;suggestion&gt;...&lt;/suggestion&gt;'  as a marker for replacements."
                                             },
                                             "offset": {
-                                                "type": "integer"
+                                                "type": "integer",
+                                                "description": "The 0-based character offset of the error in the text."
                                             },
                                             "length": {
-                                                "type": "integer"
+                                                "type": "integer",
+                                                "description": "The length of the error in characters."
                                             },
                                             "replacements": {
                                                 "type": "array",
                                                 "items": {
                                                     "type": "string"
-                                                }
+                                                },
+                                                "description": "A list of replacements that might correct the error. The array can be empty, in this case there is no suggested replacement."
                                             },
                                             "context": {
                                                 "type": "object",
@@ -158,13 +169,16 @@
                                                 ],
                                                 "properties": {
                                                     "text": {
-                                                        "type": "string"
+                                                        "type": "string",
+                                                        "description": "Context of the error, i.e. the error and some text to the left and to the left."
                                                     },
                                                     "offset": {
-                                                        "type": "integer"
+                                                        "type": "integer",
+                                                        "description": "The 0-based character offset of the error in the context text."
                                                     },
                                                     "length": {
-                                                        "type": "integer"
+                                                        "type": "integer",
+                                                        "description": "The length of the error in characters in the context."
                                                     }
                                                 }
                                             },
@@ -177,10 +191,12 @@
                                                 ],
                                                 "properties": {
                                                     "id": {
-                                                        "type": "string"
+                                                        "type": "string",
+                                                        "description": "An rule's identifier that's unique for this language."
                                                     },
                                                     "subId": {
-                                                        "type": "string"
+                                                        "type": "string",
+                                                        "description": "An optional sub identifier of the rule, used when several rules are grouped."
                                                     },
                                                     "description": {
                                                         "type": "string"
@@ -189,16 +205,19 @@
                                                         "type": "array",
                                                         "items": {
                                                             "type": "string"
-                                                        }
+                                                        },
+                                                        "description": "An optional array of URLs with a more detailed description of the error."
                                                     },
                                                     "category": {
                                                         "type": "object",
                                                         "properties": {
                                                             "id": {
-                                                                "type": "string"
+                                                                "type": "string",
+                                                                "description": "A category's identifier that's unique for this language."
                                                             },
                                                             "name": {
-                                                                "type": "string"
+                                                                "type": "string",
+                                                                "description": "A short description of the category."
                                                             }
                                                         }
                                                     }
