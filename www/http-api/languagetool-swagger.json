@@ -5,11 +5,11 @@
         "description": "Check texts for style and grammar issues with LanguageTool",
         "version": "1.0.0"
     },
-    "host": "languagetool.org:8081",
+    "host": "languagetool.org",
     "schemes": [
         "https"
     ],
-    "basePath": "/v2",
+    "basePath": "/api/v2",
     "produces": [
         "application/json"
     ],
