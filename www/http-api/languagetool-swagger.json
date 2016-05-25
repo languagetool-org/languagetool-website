@@ -185,6 +185,12 @@
                                                     "description": {
                                                         "type": "string"
                                                     },
+                                                    "urls": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    },
                                                     "category": {
                                                         "type": "object",
                                                         "properties": {
