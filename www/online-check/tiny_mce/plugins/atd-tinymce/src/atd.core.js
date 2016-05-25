@@ -60,44 +60,28 @@ AtDCore.prototype.addI18n = function(localizations) {
  * Setters
  */
 
-AtDCore.prototype.getDetectedLanguageFromXML = function(responseXML) {
-    var languages = responseXML.getElementsByTagName('language');
-    if (languages.length != 1) {
-        // shouldn't happen, LT falls back to English instead
-        alert('Sorry, could not detect language');
-    }
-    var langName = languages[0].getAttribute('name');
-    return langName.replace(/\(.*?\)/, "");  // hack: LT doesn't actually detect the variant, so remove it
-};
-
-AtDCore.prototype.processXML = function(responseXML) {
-
+AtDCore.prototype.processJSON = function(responseJSON) {
+    var json = jQuery.parseJSON(responseJSON);
     this.suggestions = [];
-    var errors = responseXML.getElementsByTagName('error');
-    for (var i = 0; i < errors.length; i++) {
-       var suggestion = {};
-       // I didn't manage to make the CSS break the text, so we add breaks with Javascript:
-       suggestion["description"] = this._wordwrap(errors[i].getAttribute("msg"), 50, "<br/>");
-       suggestion["suggestions"] = [];
-       var suggestionsStr = errors[i].getAttribute("replacements");
-       if (suggestionsStr) {
-           suggestion["suggestions"] = suggestionsStr;
-       }
-       var errorOffset = parseInt(errors[i].getAttribute("offset"));
-       var errorLength = parseInt(errors[i].getAttribute("errorlength"));
-       suggestion["offset"]      = errorOffset;
-       suggestion["errorlength"] = errorLength;
-       suggestion["type"]        = errors[i].getAttribute("category");
-       suggestion["ruleid"]      = errors[i].getAttribute("ruleId");
-       suggestion["subid"]       = errors[i].getAttribute("subId");
-       suggestion["its20type"]   = errors[i].getAttribute("locqualityissuetype");
-       var url = errors[i].getAttribute("url");
-       if (url) {
-           suggestion["moreinfo"] = url;
-       }
-       this.suggestions.push(suggestion);
+    for (var key in json.matches) {
+        var match = json.matches[key];
+        var suggestion = {};
+        // I didn't manage to make the CSS break the text, so we add breaks with Javascript:
+        suggestion["description"] = this._wordwrap(match.message, 50, "<br/>");
+        suggestion["suggestions"] = [];
+        suggestion["suggestions"] = match.replacements.join("#");
+        suggestion["offset"]      = match.offset;
+        suggestion["errorlength"] = match.length;
+        suggestion["type"]        = match.rule.category.name;
+        suggestion["ruleid"]      = match.rule.id;
+        suggestion["subid"]       = match.rule.subId;
+        suggestion["its20type"]   = match.rule.issueType;
+        var urls = match.rule.urls;
+        if (urls && urls.length > 0 ) {
+            suggestion["moreinfo"] = urls[0];
+        }
+        this.suggestions.push(suggestion);
     }
-
     return this.suggestions;
 };
 
