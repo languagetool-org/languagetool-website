@@ -58,12 +58,6 @@
                         "description": "IDs of rules to be disabled, comma-separated"
                     },
                     {
-                        "name": "enabledOnly",
-                        "in": "formData",
-                        "type": "boolean",
-                        "description": "If true, only the rules whose IDs are specified with 'enabled' are enabled."
-                    },
-                    {
                         "name": "enabledCategories",
                         "in": "formData",
                         "type": "string",
@@ -74,6 +68,12 @@
                         "in": "formData",
                         "type": "string",
                         "description": "IDs of categories to be disabled, comma-separated"
+                    },
+                    {
+                        "name": "enabledOnly",
+                        "in": "formData",
+                        "type": "boolean",
+                        "description": "If true, only the rules and categories whose IDs are specified with 'enabledRules' or 'enabledCategories' are enabled."
                     }
                 ],
                 "responses": {
