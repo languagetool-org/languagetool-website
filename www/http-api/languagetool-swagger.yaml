@@ -121,6 +121,9 @@ paths:
                     message:
                       type: string
                       description: Message about the error displayed to the user.
+                    shortMessage:
+                      type: string
+                      description: An optional shorter version of 'message'.
                     offset:
                       type: integer
                       description: The 0-based character offset of the error in the text.
