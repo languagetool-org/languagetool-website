@@ -169,9 +169,13 @@ paths:
                           type: string
                         urls:
                           type: array
-                          items:
-                            type: string
                           description: An optional array of URLs with a more detailed description of the error.
+                          items:
+                            type: object
+                            properties:
+                              value:
+                                type: string
+                                description: the URL
                         issueType:
                           type: string
                           description: The <a href="http://www.w3.org/International/multilingualweb/lt/drafts/its20/its20.html#lqissue-typevalues">Localization Quality Issue Type</a>. This is not defined for all languages, in which case it will always be 'Uncategorized'.

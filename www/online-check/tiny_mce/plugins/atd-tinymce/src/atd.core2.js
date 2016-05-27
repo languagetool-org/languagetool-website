@@ -86,8 +86,12 @@ AtDCore.prototype.processJSON = function(responseJSON) {
         suggestion["subid"]       = match.rule.subId;
         suggestion["its20type"]   = match.rule.issueType;
         var urls = match.rule.urls;
-        if (urls && urls.length > 0 ) {
-            suggestion["moreinfo"] = urls[0];
+        if (urls && urls.length > 0) {
+            if (urls[0].value) {
+                suggestion["moreinfo"] = urls[0].value;
+            } else {
+                suggestion["moreinfo"] = urls[0];  //TODO: remove this case, it's for an old API version
+            }
         }
         this.suggestions.push(suggestion);
     }

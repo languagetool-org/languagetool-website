@@ -210,10 +210,16 @@
                                                     },
                                                     "urls": {
                                                         "type": "array",
+                                                        "description": "An optional array of URLs with a more detailed description of the error.",
                                                         "items": {
-                                                            "type": "string"
-                                                        },
-                                                        "description": "An optional array of URLs with a more detailed description of the error."
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "value": {
+                                                                    "type": "string",
+                                                                    "description": "the URL"
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "issueType": {
                                                         "type": "string",
