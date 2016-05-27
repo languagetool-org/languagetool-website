@@ -39,7 +39,7 @@ function AtDCore() {
     this.surrogateAttributeDelimiter = "---#---";
     this.ignoredRulesIds = [];
     this.ignoredSpellingErrors = [];
-};
+}
 
 /*
  * Internationalization Functions
@@ -116,7 +116,6 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 // End of wrapper code by James Padolsey
 
 AtDCore.prototype.findSuggestion = function(element) {
-    var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
     var errorDescription = {};
     errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
