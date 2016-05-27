@@ -144,7 +144,7 @@
                                         "properties": {
                                             "message": {
                                                 "type": "string",
-                                                "description": "Message about the error displayed to the user. It might contain '&lt;suggestion&gt;...&lt;/suggestion&gt;'  as a marker for replacements."
+                                                "description": "Message about the error displayed to the user."
                                             },
                                             "offset": {
                                                 "type": "integer",
