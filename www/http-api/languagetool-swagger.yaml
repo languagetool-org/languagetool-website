@@ -129,9 +129,13 @@ paths:
                       description: The length of the error in characters.
                     replacements:
                       type: array
+                      description: Replacements that might correct the error. The array can be empty, in this case there is no suggested replacement.
                       items:
-                        type: string
-                      description: A list of replacements that might correct the error. The array can be empty, in this case there is no suggested replacement.
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            description: the replacement string
                     context:
                       type: object
                       required:
