@@ -26,8 +26,11 @@ paths:
           in: formData
           type: string
           description: >-
-            A language code like 'en' or 'en-US', or 'auto' to guess the
-            language automatically.
+            A language code like `en` or `en-US`, or `auto` to guess the
+            language automatically (see `preferredVariants` below).
+            For languages with variants (English, German, Portuguese) spell
+            checking will only be activated when you specify the variant, e.g.
+            `en-GB` instead of just `en`.
           required: true
         - name: motherTongue
           in: formData
@@ -40,10 +43,10 @@ paths:
           type: string
           description: >-
             Comma-separated list of preferred language variants. The language
-            detector used with 'language=auto' can detect e.g. English, but it
+            detector used with `language=auto` can detect e.g. English, but it
             cannot decide whether British English or American English is used.
             Thus this parameter can be used to specify the preferred variants
-            like 'en-GB' and 'de-AT'. Only available with language=auto.
+            like `en-GB` and `de-AT`. Only available with `language=auto`.
         - name: enabledRules
           in: formData
           type: string
@@ -66,7 +69,7 @@ paths:
           default: false
           description: >-
             If true, only the rules and categories whose IDs are specified with
-            'enabledRules' or 'enabledCategories' are enabled.
+            `enabledRules` or `enabledCategories` are enabled.
       responses:
         '200':
           description: the result of checking the text
