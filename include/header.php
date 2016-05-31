@@ -120,7 +120,7 @@
         } else {
             chrome.webstore.install();
             if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                _paq.push(['trackEvent', 'InstallChromeExtension']);
+                _paq.push(['trackEvent', 'Extension', 'InstallChromeExtension']);
             }
             //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
         }
