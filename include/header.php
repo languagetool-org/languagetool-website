@@ -119,6 +119,9 @@
             alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline.");
         } else {
             chrome.webstore.install();
+            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                _paq.push(['trackEvent', 'InstallChromeExtension']);
+            }
             //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
         }
         return false;
