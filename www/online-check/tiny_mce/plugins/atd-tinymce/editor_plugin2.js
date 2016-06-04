@@ -14,13 +14,8 @@ var EXPORTED_SYMBOLS = ['AtDCore'];
 
 //
 // TODO:
-// 1. "ignore this error" only works until the next check
+// 1. "ignore this error" only works until page reload
 // 2. Ctrl-Z (undo) makes the error markers go away
-//
-// fixed: cursor position gets lost on check
-// fixed: "ignore all" doesn't work
-// fixed: current cursor position is ignored when incorrect (it has its own node)
-// fixed: text with markup (even bold) messes up everything
 //
 
 String.prototype.insert = function (index, string) {
@@ -39,7 +34,7 @@ function AtDCore() {
     this.surrogateAttributeDelimiter = "---#---";
     this.ignoredRulesIds = [];
     this.ignoredSpellingErrors = [];
-};
+}
 
 /*
  * Internationalization Functions
@@ -113,7 +108,6 @@ AtDCore.prototype._wordwrap = function(str, width, brk, cut) {
 // End of wrapper code by James Padolsey
 
 AtDCore.prototype.findSuggestion = function(element) {
-    var text = element.innerHTML;
     var metaInfo = element.getAttribute(this.surrogateAttribute);
     var errorDescription = {};
     errorDescription["id"] = this.getSurrogatePart(metaInfo, 'id');
