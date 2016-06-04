@@ -27,9 +27,7 @@
 
     <h1>LanguageTool HTTP API Migration</h1>
     
-    <h1 style="color:red">DRAFT</h1>
-    
-    <p>2016-05-30</p>
+    <p>2016-06-04</p>
     
     <p>LanguageTool has offered an HTTP/HTTPS API that has been stable for about ten years. Over time, the XML response
     format had become inconsistent. Thus, new versions of LanguageTool will not support the old XML format anymore.
@@ -47,7 +45,10 @@
             web pages and make sure your website is up-to-date.</li>
     </ul>
     
-    <h3>Roadmap</h3>
+    <p>The <tt>--api</tt> switch of the command line version of LanguageTool will not be affected for now, but we
+    strongly recommend using the server mode with the new API anyway.</p>
+    
+    <h3>Road map</h3>
     <ul>
         <li>LanguageTool &lt;= 3.3 supports only the old API</li>
         <li>LanguageTool 3.4 and 3.5 will support both the old and the new API</li>
