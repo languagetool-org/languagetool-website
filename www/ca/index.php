@@ -71,13 +71,7 @@
 
 <p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">moltes altres llengües</a>.</p>
 
-<h2>Proveu LanguageTool</h2>
-
-Podeu provar LanguageTool amb <a href="http://www.languagetool.org/webstart/web/LanguageTool.jnlp">Java WebStart</a> o directament  
-ací en el navegador.<br/><br/>
-
-
-<h2>Descàrrega</h2>
+<h2>Instal·lació</h2>
 
 <p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o posterior.
 <strong>Teniu problemes? Consulteu la <a href="../issues">llista de problemes habituals</a>.</strong></p>
@@ -85,7 +79,7 @@ ací en el navegador.<br/><br/>
 
 <h2>Funcions</h2>
 
-LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca">més de 2.000</a> regles per a trobar errades en texts en català, més enllà de les que detecta un simple corrector ortogràfic.<br/><br/>
+LanguageTool aplica <a href="http://community.languagetool.org/rule/list?lang=ca">més de 2.500</a> regles per a trobar errades en texts en català, més enllà de les que detecta un simple corrector ortogràfic.<br/><br/>
 
 <small>Passeu el cursor per damunt d'un error per a veure la informació corresponent.</small>
 
