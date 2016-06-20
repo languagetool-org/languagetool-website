@@ -8,9 +8,8 @@
     $myAddress = "daniel.naber" ."@". "languagetool.org";
     mail($myAddress,
          "WebExtension uninstall feedback",
-         $_POST['message'] . "\n\nFrom: ".$_POST['email'],
-         "From: $myAddress\n".
-         "Browser: ".$_SERVER['HTTP_USER_AGENT']);
+         $_POST['message'] . "\n\nFrom: ".$_POST['email']."\nBrowser: ".$_SERVER['HTTP_USER_AGENT'],
+         "From: $myAddress\n");
     
     ?>
     <?php include("../../include/header.php"); ?>
