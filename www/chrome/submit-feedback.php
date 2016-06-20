@@ -9,7 +9,8 @@
     mail($myAddress,
          "WebExtension uninstall feedback",
          $_POST['message'] . "\n\nFrom: ".$_POST['email'],
-         "From: $myAddress");
+         "From: $myAddress\n".
+         "Browser: ".$_SERVER['HTTP_USER_AGENT']);
     
     ?>
     <?php include("../../include/header.php"); ?>
