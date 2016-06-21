@@ -69,8 +69,6 @@
 
 <div id="languageContent">
 
-<p>LanguageTool és una eina de <a href="http://ca.wikipedia.org/wiki/Programari_lliure" target="_blank">programari lliure</a> per a la correcció gramatical i d'estil en català i en <a href="http://www.languagetool.org/languages/">moltes altres llengües</a>.</p>
-
 <h2>Instal·lació</h2>
 
 <p>Per a usar LanguageTool localment cal tenir instal·lat <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o posterior.
