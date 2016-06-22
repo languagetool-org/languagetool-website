@@ -27,7 +27,7 @@
 
     <form action="submit-feedback.php" method="post">
         <textarea required style="width:500px;height:150px" name="message" placeholder="Please describe what didn't work as expected"></textarea><br>
-        <input style="width:500px" type="text" name="email" placeholder="your email address"><br>
+        <input required style="width:500px" type="text" name="email" placeholder="your email address"><br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
     <!--
