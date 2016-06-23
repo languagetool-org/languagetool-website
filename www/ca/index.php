@@ -46,8 +46,8 @@
     $checkSubmitButtonTitle = "Comprova el text, també amb Ctrl+Return.";
     $toggleFullscreenMode = "Commuta el mode de pantalla completa";
 
-    $introText1 = "<strong>LanguageTool</strong> és una eina de programari lliure per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
-    $introText2 = "";
+    $introText1 = "<strong>LanguageTool</strong> és un programa de codi obert per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
+    $introText2 = "Troba molts dels errors que un verificador ortogràfic no detecta.";
 
     $downloadHeadline = "Descarrega";
     $downloadRequiresJava = "Requereix Java {version} o posterior";
