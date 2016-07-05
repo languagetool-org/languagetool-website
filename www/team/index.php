@@ -46,6 +46,7 @@
         <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
         <li><a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>
         <li>Markus Brenneis
+        <li>Matheus Poletto
         <li>Matthias Mailänder
         <li>Mike Unwalla
         <li>Panagiotis Minos
