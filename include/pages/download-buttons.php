@@ -33,7 +33,7 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 220,
-      'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More...</a>'
+      'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More information</a>'
     ),
     array(
       'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
@@ -42,18 +42,22 @@ $buttons = array(
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',
       'width' => 220,
-      'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More...</a>'
+      'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More information</a>'
     )
 );
 
 foreach ($buttons as $button) {
+  $below = '';
+  if ($button['below']) {
+    $below = "<div class='details'>" . $button['below'] . "</div>";
+  }
   print sprintf('<div style="width:%spx" class="button_container">'.
                 '  <a href="%s" %s class="piwik_download">'.
                 '    <div class="inner_button">'.
                 '      <div class="title">%s</div>'.
                 '      <div title="%s" class="meta">%s</div>'.
                 '    </div>'.
-                '  </a><div style="margin-top:-20px">%s</div>'.
+                '  </a>%s'.
                 '</div>'."\n",
     $button['width'],
     $button['link'],
@@ -61,7 +65,7 @@ foreach ($buttons as $button) {
     $button['title'],
     $button['release_info'],
     $button['additional_info'],
-    $button['below']
+    $below
   );
 }
 ?>
