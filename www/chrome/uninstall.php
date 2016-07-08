@@ -6,6 +6,16 @@
     $title = "Uninstallation successful";
     ?>
     <?php include("../../include/header.php"); ?>
+    <script>
+        function checkLength() {
+            var textArea = document.getElementById("message");
+            if (textArea.value.length < 15) {
+                alert("Please be more specific and describe *exactly* what the issue was");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
@@ -25,8 +35,8 @@
     </script>
     if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
 
-    <form action="submit-feedback.php" method="post">
-        <textarea required style="width:500px;height:150px" name="message" placeholder="Please describe *exactly* what didn't work as expected. If you just tell us &quot;it doesn't work&quot; we cannot do anything with that."></textarea><br>
+    <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
+        <textarea autofocus required style="width:500px;height:150px" id="message" name="message" placeholder="Please describe *exactly* what didn't work as expected. If you just tell us &quot;it doesn't work&quot; we cannot do anything with that."></textarea><br>
         <input required style="width:500px" type="text" name="email" placeholder="your email address"><br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
