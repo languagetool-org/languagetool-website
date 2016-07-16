@@ -61,7 +61,6 @@
     //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Si prega di fare rifeimento alla <a href='/issues/'>nostra lista</a> per problemi.";
     $otherDownloadsText = "Scarica le <a href='/download/'>vecchie versioni</a> o le <a href='/download/snapshots/?C=M;O=D'>build giornaliere</a>.";
-    $webstartText = "Lancialo <a href='/webstart/web/LanguageTool.jnlp'>con Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -84,11 +83,6 @@
 <h2 style="margin-top: 40px">Provatelo ora</h2>
 
 <p>Potete utilizzare LanguageTool <a href="../usage/">in LibreOffice/OpenOffice.org, come applicazione a sé stante o inclusa in altre applicazioni</a>.</p>
-<p>In alternativa, potete provarlo direttamente dal sito scrivendo nel riquadro sottostante:</p>
-
-<p><strong>Provate LanguageTool senza installazione utilizzando Java WebStart.</strong>
-Richiede <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a> o versioni successive:<br />
-<strong><a href="../webstart/web/LanguageTool.jnlp">Start LanguageTool (&gt;30&nbsp;MB)</a></strong></p>
 
 <h2>Scaricatelo</h2>
 

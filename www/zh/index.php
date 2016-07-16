@@ -27,7 +27,6 @@
     //$downloadLabelBrowserAddOn = "Browser Add-on";
     $checklistText = "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
     $otherDownloadsText = "Download <a href='/download/'>old releases</a> or <a href='/download/snapshots/?C=M;O=D'>daily builds</a>.";
-    $webstartText = "Start <a href='/webstart/web/LanguageTool.jnlp'>with Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -43,16 +42,7 @@
 
 <p>LanguageTool将错误规则定义在特定语言的配置文件里面从而查找错误。还可以编写Java规则来检测更为复杂的错误。</p>
 
-<h2 style="margin-top: 40px">在线试用</h2>
-
-<p><a href="../usage/">在LibreOffice/OpenOffice.org中使用，或者作为独立应用程序使用，或者嵌入到其他系统中使用</a>，或者在这里使用：</p>
-
-<p style="margin-top: 10px"><strong>使用WebStart免安装试用LanguageTool。</strong>
-需要 <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;8</a>及以上版本：<br />
-<strong><a href="../webstart/web/LanguageTool.jnlp">运行LanguageTool (29&nbsp;MB)</a></strong></p>
-
-
-<h2>新闻</h2>
+<h2 style="margin-top: 40px">新闻</h2>
 
 <p><strong>2012-03-25：</strong>LanguageTool 1.7版本发布。变化包括：</p>
 <ul>

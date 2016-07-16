@@ -77,12 +77,6 @@
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 
-<h2 style="margin-top: 40px">Experimentar <em>on-line</em></h2>
-
-
-<p style="margin-top: 10px"><strong>Testa o LanguageTool sem o instalar, usando o Java WebStart.<br/></strong>
-<strong><a href="../webstart/web/LanguageTool.jnlp">Iniciar o LanguageTool</a></strong> 
- (&gt;30&nbsp;MB, requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima)</p>
 
 <h2>Descarregar</h2>
 
