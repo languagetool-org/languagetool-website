@@ -17,7 +17,7 @@
 
 
 <h2>As a LibreOffice/OpenOffice.org Extension</h2>
-    <p>Double click the downloaded <tt>LanguageTool-2.x.oxt</tt> to install it.
+    <p>Double click the downloaded <tt>LanguageTool-3.x.oxt</tt> to install it.
   	If that doesn't work, call <em>Tools -&gt; Extension Manager -&gt; Add...</em>.
     Close LibreOffice/OpenOffice.org and re-start it. Type some text
   	with an error that LanguageTool can detect and you should see a blue underline.
