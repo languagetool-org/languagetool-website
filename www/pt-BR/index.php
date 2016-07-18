@@ -32,7 +32,6 @@
         'fa'  => 'Persian',
         'pl'  => 'Polish',
         'pt'  => 'Português',
-        'pt-BR'  => 'Português Brasileiro',
         'ro'  => 'Romanian',
         'ru'  => 'Russian',
         'sk'  => 'Slovak',
