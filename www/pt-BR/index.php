@@ -5,9 +5,9 @@
     $enable_textcheck = 1;
     $enable_fancybox = 1;
     $checkDefaultLang = "pt";
-    $checkDefaultLangWithCountry = "pt-PT";
+    $checkDefaultLangWithCountry = "pt-BR";
     // ------------- TRANSLATIONS START HERE -------------
-    $title = "LanguageTool Corrector Gramatical e de Estilo";
+    $title = "LanguageTool Corretor Gramatical e de Estilo";
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
         'ast' => 'Asturian',
@@ -44,7 +44,7 @@
     );
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
-    $toggleFullscreenMode = "Alternar para o modo de ecrã inteiro";
+    $toggleFullscreenMode = "Alternar para tela inteira";
     $introText1 = "O <strong>LanguageTool</strong> é <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
     $downloadHeadline = "Baixar";
@@ -53,8 +53,8 @@
     $downloadTitleStandAlone = "Independente para <strong>Desktop</strong>";
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
-    $downloadLabelBrowserAddOn = "Extra do Navegador";
-    $checklistText = "Por favor veja a <a href='/issues/'>lista de problemas comuns</a> se ocorrer problemas.";
+    $downloadLabelBrowserAddOn = "Extensão do Navegador";
+    $checklistText = "Por favor veja nossa <a href='/issues/'>lista de problemas comuns</a> se ocorrerem problemas.";
     $otherDownloadsText = "Baixar <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Iniciar com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
     // ------------- TRANSLATIONS END HERE -------------
@@ -66,18 +66,18 @@
 
 <div id="languageContent">
 
-<a title="O LanguageTool instalado como um add-on no LibreOffice 3.3" class="fancyboxImage"
+<a title="O LanguageTool instalado como uma extensão do LibreOffice 3.3" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 
 
-<h2>Descarregar</h2>
+<h2>Baixar a aplicação</h2>
 
 <p>Usar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
 <strong>Problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
-<noscript class="warning">Por favor ative o Javascript - é usado para mostrar algumas dicas após o inicio de uma transferência</noscript>
+<noscript class="warning">Por favor ative o Javascript - é usado para mostrar algumas dicas durante uma transferência</noscript>
 
     <!--
     <div class="downloadSection">
