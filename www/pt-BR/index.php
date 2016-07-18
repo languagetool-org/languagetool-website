@@ -44,7 +44,7 @@
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "Alternar para tela inteira";
-    $introText1 = "O <strong>LanguageTool</strong> é <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
+    $introText1 = "O <strong>LanguageTool</strong> é um <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
     $downloadHeadline = "Baixar";
     $downloadRequiresJava = "Requer Java {version}+";
