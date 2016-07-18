@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang=pt>
+<html lang=pt-BR>
 <head>
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "pt";
+    $checkDefaultLang = "pt-BR";
     $checkDefaultLangWithCountry = "pt-BR";
     // ------------- TRANSLATIONS START HERE -------------
     $title = "LanguageTool Corretor Gramatical e de Estilo";
