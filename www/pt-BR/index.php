@@ -69,7 +69,18 @@
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-
+<!-- FUNCIONALIDADES -->
+<h2>Funcionalidades</h2>
+O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/list?lang=pt-BR">250 regras gramaticais</a> para o Português:<br/><br/>
+<small>(Esses são alguns dos vários erros que o LanguageTool é capaz de detectar.)</small>
+   
+ <ul>
+ 	<li>Nós viemos <span class="errorMarker" title="Afim deve ser usado como adjetivo.">afim de</span> discutir o projeto.</li>
+        <li>Os atletas <span class="errorMarker" title="Verbos de movimento exigem a preposição A.">chegaram em</span> Curitiba na noite passada.</li>
+        <li><span class="errorMarker" title="O verbo existir admite plural."Existe</span> muitos problemas nesta empresa.</li>
+	<li><span class="errorMarker" title="A frase deve iniciar com letra maíscula.">estamos</span> aqui para ajudar você.</li>
+	<li>Estou feliz por<span class="errorMarker" title="Espaço duplo em uma frase.">&nbsp;&nbsp;</span>você.</li>
+ </ul>    
 
 <h2>Baixar a aplicação</h2>
 
@@ -114,24 +125,6 @@
     </table>
 </div>
 -->
-
-<!-- FUNCIONALIDADES -->
-<div id="languageContent">
-
-    <h2>Funcionalidades</h2>
-    O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/list?lang=pt-BR">250 regras gramaticais</a> para o Português:<br/><br/>
-    <small>(Esses são alguns dos vários erros que o LanguageTool é capaz de detectar.)</small>
-
-    <ul>
-        <li>Nós viemos <span class="errorMarker" title="Afim deve ser usado como adjetivo.">afim de</span> discutir o projeto.</li>
-        <li>Os atletas <span class="errorMarker" title="Verbos de movimento exigem a preposição A.">chegaram em</span> Curitiba na noite passada.</li>
-        <li><span class="errorMarker" title="O verbo existir admite plural."Existe</span> muitos problemas nesta empresa.</li>
-	<li><span class="errorMarker" title="A frase deve iniciar com letra maíscula.">estamos</span> aqui para ajudar você.</li>
-	<li>Estou feliz por<span class="errorMarker" title="Espaço duplo em uma frase.">&nbsp;&nbsp;</span>você.</li>
-     </ul>
-     
-</div>
-
 
 <p>Builds diários não testados, do estado atual de desenvolvimento, estão 
 disponíveis no
