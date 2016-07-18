@@ -4,7 +4,7 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "pt-BR";
+    $checkDefaultLang = "pt";
     $checkDefaultLangWithCountry = "pt-BR";
     // ------------- TRANSLATIONS START HERE -------------
     $title = "LanguageTool Corretor Gramatical e de Estilo";
