@@ -77,7 +77,7 @@ O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/li
  <ul>
  	<li>Nós viemos <span class="errorMarker" title="Afim deve ser usado como adjetivo.">afim de</span> discutir o projeto.</li>
         <li>Os atletas <span class="errorMarker" title="Verbos de movimento exigem a preposição A.">chegaram em</span> Curitiba na noite passada.</li>
-        <li><span class="errorMarker" title="O verbo existir admite plural."Existe</span> muitos problemas nesta empresa.</li>
+        <li><span class="errorMarker" title="O verbo existir admite plural.">Existe</span> muitos problemas nesta empresa.</li>
 	<li><span class="errorMarker" title="A frase deve iniciar com letra maíscula.">estamos</span> aqui para ajudar você.</li>
 	<li>Estou feliz por<span class="errorMarker" title="Espaço duplo em uma frase.">&nbsp;&nbsp;</span>você.</li>
  </ul>    
