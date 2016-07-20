@@ -80,7 +80,11 @@ O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/li
         <li><span class="errorMarker" title="O verbo existir admite plural.">Existe</span> muitos problemas nesta empresa.</li>
 	<li><span class="errorMarker" title="A frase deve iniciar com letra maíscula.">estamos</span> aqui para ajudar você.</li>
 	<li>Estou feliz por<span class="errorMarker" title="Espaço duplo em uma frase.">&nbsp;&nbsp;</span>você.</li>
- </ul>    
+ </ul> 
+ 
+<h2>Versão Português Europeu</h2>
+<p>O LanguageTool também possui uma página especial para o português europeu, <a href="https://languagetool.org/pt/">clique aqui</a>
+para ser redirecionado.</p>
 
 <h2>Baixar a aplicação</h2>
 
@@ -125,8 +129,6 @@ O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/li
     </table>
 </div>
 -->
-
-<h3>Contamos também com uma página para o Português Europeu, <a href="https://languagetool.org/pt/">clique aqui</a>.</h3>
 
 <p>Builds diários não testados, do estado atual de desenvolvimento, estão 
 disponíveis no
