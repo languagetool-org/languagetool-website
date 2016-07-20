@@ -76,7 +76,9 @@
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-
+<h2>Versão Português Brasileiro</h2>
+<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">clique aqui</a>
+para ser redirecionado.</p>
 
 <h2>Descarregar</h2>
 
