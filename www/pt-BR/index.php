@@ -126,6 +126,8 @@ O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/li
 </div>
 -->
 
+<h3>Contamos também com uma página para o Português Europeu, <a href="https://languagetool.org/pt/">clique aqui</a>.</h3>
+
 <p>Builds diários não testados, do estado atual de desenvolvimento, estão 
 disponíveis no
 <a href="../download/snapshots/?C=M;O=D">diretório de snapshots</a>
