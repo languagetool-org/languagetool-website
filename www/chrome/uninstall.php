@@ -15,7 +15,36 @@
             }
             return true;
         }
+        function show(id) {
+            hide('site-fail-detail');
+            hide('error-not-found-detail');
+            hide('too-many-false-alarms-detail');
+            hide('something-else-detail');
+            var elem = document.getElementById(id);
+            if (elem) {
+                elem.style.display = 'block';
+            }
+        }
+        function hide(id) {
+            var elem = document.getElementById(id);
+            if (elem) {
+                elem.style.display = 'none';
+            }
+        }
     </script>
+    <style>
+        .detail {
+            margin-left: 20px;
+            display: none;
+        }
+        .detailBox {
+            width: 300px;
+            height: 100px
+        }
+        .detailInput {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
@@ -36,8 +65,26 @@
     if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
 
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
-        <textarea autofocus required style="width:500px;height:150px" id="message" name="message" placeholder="Please describe *exactly* what didn't work as expected. If you just tell us &quot;it doesn't work&quot; we cannot do anything with that."></textarea><br>
-        <input required style="width:500px" type="text" name="email" placeholder="your email address"><br>
+        <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail')"> it did not work on a site I use</label><br>
+        <div id="site-fail-detail" class="detail">
+            <input class="detailInput" name="message1" placeholder="Link to the site that didn't work"><br>
+        </div>
+
+        <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail')"> it did not find errors</label><br>
+        <div id="error-not-found-detail" class="detail">
+            <textarea class="detailBox" name="message2" placeholder="Please add the sentence or text for which no errors where found"></textarea><br>
+        </div>
+
+        <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="show('too-many-false-alarms-detail')"> found too many 'errors' that are not really errors</label><br>
+        <div id="too-many-false-alarms-detail" class="detail">
+            <textarea class="detailBox" name="message3" placeholder="Please add the sentence or text for which incorrect errors were reported"></textarea><br>
+        </div>
+
+        <label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail')"> something else</label><br>
+        <div id="something-else-detail" class="detail">
+            <textarea class="detailBox" name="message4" placeholder="Please describe *exactly* what didn't work as expected."></textarea><br>
+        </div>
+        <input required style="width:300px" type="text" name="email" placeholder="your email address"><br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
     <!--

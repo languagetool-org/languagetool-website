@@ -6,9 +6,18 @@
     $title = "Thanks for your Feedback";
 
     $myAddress = "daniel.naber" ."@". "languagetool.org";
+    $body = "Reason: " . $_POST['reason']."\n".
+            "Message: " .
+            $_POST['message1']."\n".
+            $_POST['message2']."\n".
+            $_POST['message3']."\n".
+            $_POST['message4']."\n".
+            "\n\n".
+            "From: ".$_POST['email']."\n".
+            "Browser: ".$_SERVER['HTTP_USER_AGENT'];
     mail($myAddress,
          "WebExtension uninstall feedback",
-         $_POST['message'] . "\n\nFrom: ".$_POST['email']."\nBrowser: ".$_SERVER['HTTP_USER_AGENT'],
+         $body,
          "From: $myAddress\nContent-Type:text/plain;charset=utf-8\n");
     
     ?>
