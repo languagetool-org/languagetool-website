@@ -14,7 +14,8 @@
             $_POST['message4']."\n".
             "\n\n".
             "From: ".$_POST['email']."\n".
-            "Browser: ".$_SERVER['HTTP_USER_AGENT'];
+            "Browser: ".$_SERVER['HTTP_USER_AGENT']."\n".
+            "Languages: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'];
     mail($myAddress,
          "WebExtension uninstall feedback",
          $body,
