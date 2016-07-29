@@ -19,8 +19,18 @@
     <p><strong>LanguageTool</strong> is an Open Source proof&shy;reading program for English, French, German,
         Polish, and more than <a href="languages/">20 other languages</a>.</p>
     <p class="small">It finds many errors that a simple spell checker cannot detect and several grammar problems.</p>
+    
+    <script>
+      if (navigator.userAgent.indexOf("Chrome/") !== -1) {
+        document.write('<p class="small"><a onclick="return installChromeExtension()" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a></p>');
+      }
+    </script>
 
-    <p class="small"><a href="contribute/">How to contribute</a></p>
+    <!--
+    <div style="border-color: #7772ee; border-width: 2px; border-style: solid; padding: 10px; margin-top: 25px">
+      <p><a onclick="return installChromeExtension()" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a></p>
+    </div>
+    -->
 
   </div>
   <div style="clear:both;"></div>
