@@ -15,20 +15,22 @@
             }
             return true;
         }
-        function show(id) {
-            hide('site-fail-detail');
-            hide('error-not-found-detail');
-            hide('too-many-false-alarms-detail');
-            hide('something-else-detail');
+        function show(id, messageFieldId) {
+            hide('site-fail-detail', 'message1');
+            hide('error-not-found-detail', 'message2');
+            hide('too-many-false-alarms-detail', 'message3');
+            hide('something-else-detail', 'message4');
             var elem = document.getElementById(id);
             if (elem) {
                 elem.style.display = 'block';
+                document.getElementById(messageFieldId).required = true;
             }
         }
-        function hide(id) {
+        function hide(id, messageFieldId) {
             var elem = document.getElementById(id);
             if (elem) {
                 elem.style.display = 'none';
+                document.getElementById(messageFieldId).required = false;
             }
         }
     </script>
@@ -42,7 +44,7 @@
             height: 100px
         }
         .detailInput {
-            width: 300px;
+            width: 400px;
         }
     </style>
 </head>
@@ -65,24 +67,24 @@
     if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
 
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
-        <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail')"> it did not work on a site I use</label><br>
+        <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use</label><br>
         <div id="site-fail-detail" class="detail">
-            <input class="detailInput" name="message1" placeholder="Link to the site that didn't work"><br>
+            <input class="detailInput" id="message1" name="message1" placeholder="Link to the site that didn't work"><br>
         </div>
 
-        <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail')"> it did not find errors</label><br>
+        <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail', 'message2')"> it did not find errors</label><br>
         <div id="error-not-found-detail" class="detail">
-            <textarea class="detailBox" name="message2" placeholder="Please add the sentence or text for which no errors where found"></textarea><br>
+            <textarea class="detailBox" id="message2" name="message2" placeholder="Please add the sentence or text for which no errors where found"></textarea><br>
         </div>
 
-        <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="show('too-many-false-alarms-detail')"> found too many 'errors' that are not really errors</label><br>
+        <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="show('too-many-false-alarms-detail', 'message3')"> found too many 'errors' that are not really errors</label><br>
         <div id="too-many-false-alarms-detail" class="detail">
-            <textarea class="detailBox" name="message3" placeholder="Please add the sentence or text for which incorrect errors were reported"></textarea><br>
+            <textarea class="detailBox" id="message3" name="message3" placeholder="Please add the sentence or text for which incorrect errors were reported"></textarea><br>
         </div>
 
-        <label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail')"> something else</label><br>
+        <label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail', 'message4')"> something else</label><br>
         <div id="something-else-detail" class="detail">
-            <textarea class="detailBox" name="message4" placeholder="Please describe *exactly* what didn't work as expected."></textarea><br>
+            <textarea class="detailBox" id="message4" name="message4" placeholder="Please describe *exactly* what didn't work as expected."></textarea><br>
         </div>
         <input required style="width:300px" type="text" name="email" placeholder="your email address"><br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
@@ -97,7 +99,6 @@
     
 </div>
 
-<?php include("../../include/footer.php"); ?>
 
 </body>
 </html>
