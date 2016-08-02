@@ -26,7 +26,7 @@
 
     <div id="download" style="margin-top: 20px;">
         <div style="width:280px;" class="button_container">
-            <a href="https://addons.mozilla.org/ru-RU/firefox/addon/languagetoolfx/" class="piwik_download">
+            <a href="https://addons.mozilla.org/ru-RU/firefox/addon/languagetool/" class="piwik_download">
                 <div class="inner_button" style="text-align: center">
                     <div class="title"><strong>Щёлкните здесь</strong> для установки</div>
                 </div>

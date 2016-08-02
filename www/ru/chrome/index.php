@@ -70,7 +70,7 @@
 
     <h2>Firefox</h2>
     
-    <p>Для пользователей Firefox мы предлагаем <a href="../firefox/">LanguageToolFx</a>,
+    <p>Для пользователей Firefox мы предлагаем <a href="../firefox/">LanguageTool</a>,
     который работает аналогично этому расширению.
     
 </div>
