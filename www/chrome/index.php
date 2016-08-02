@@ -71,8 +71,7 @@
 
     <h2>Firefox</h2>
     
-    <p>For Firefox users we offer <a href="../firefox/">LanguageToolFx</a>,
-    which works almost the same.
+    <p>For Firefox users we offer <a href="../firefox/">an add-on that works the same</a>.
     
 </div>
 

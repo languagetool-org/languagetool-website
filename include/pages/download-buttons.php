@@ -28,7 +28,7 @@ $buttons = array(
     ),
     array(
       'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'For <strong>Firefox</strong>',
-      'link' => 'https://addons.mozilla.org/firefox/addon/languagetoolfx?src=external-lt-homepage',
+      'link' => 'https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage',
       'onclick' => '',
       'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
       'release_info' => '',

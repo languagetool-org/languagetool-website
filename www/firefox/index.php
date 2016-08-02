@@ -26,7 +26,7 @@
 
     <div id="download" style="margin-top: 20px;">
         <div style="width:280px;" class="button_container">
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/languagetoolfx/" class="piwik_download">
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/languagetool/" class="piwik_download">
                 <div class="inner_button" style="text-align: center">
                     <div class="title"><strong>Click here</strong> to install</div>
                 </div>
@@ -46,9 +46,9 @@
     
     <p>Most errors that LanguageTool can detect come with one or more suggestions to fix the
     error. Click it to have the error replaced in your text. 
-    You can also select text outside of an input area and have it checked. You won't be able to
+    <!--You can also select text outside of an input area and have it checked. You won't be able to
     click the suggestions then, as the extension cannot edit static text.
-    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Return</tt>.
+    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Return</tt>.-->
     
     <!--
     <h2>Advanced Options</h2>
@@ -59,7 +59,7 @@
 
     <ul>
         <li>It is not possible to check texts on websites which were loaded before the installation of the extension.</li>
-        <li>If you select a headline and the following paragraph, you might get a warning about wrong case because LanguageTool doesn't consider the paragraph. It might also happen that the last word of the first paragraph and the first word of the second paragraph are joined together.</li>
+        <li>A small number of sites like docs.google.com is not yet supported</li>
         <li>If your text contains an error but the add-on doesn't detect it, that's probably
             because we don't have an error detection rule for that error yet. Please consider <a href="../contribute/">contributing</a>.
         </li>
@@ -67,12 +67,12 @@
         
     <h2>Source</h2>
 
-    <p>The source code of this add-on is available <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/firefox">at Github</a>.
-    It's released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0 or later</a>.</p>
+    <p>The source code of this add-on is available <a href="https://github.com/languagetool-org/languagetool-browser-addon/">at Github</a>.
+    It's released under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">LGPL 2.1 or later</a>.</p>
 
     <h2>Chrome</h2>
     
-    <p>For Chrome users we offer <a href="../chrome/">LanguageTool for Chrome</a>, which works almost the same.
+    <p>For Chrome users we offer <a href="../chrome/">LanguageTool for Chrome</a>, which works the same.
     
 </div>
 
