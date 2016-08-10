@@ -23,6 +23,8 @@
     <script>
       if (navigator.userAgent.indexOf("Chrome/") !== -1) {
         document.write('<p class="small"><a onclick="return installChromeExtension()" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a></p>');
+      } else if (navigator.userAgent.indexOf("Firefox/") !== -1) {
+        document.write('<p class="small"><a href="https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage">Add to Firefox</a></p>');
       }
     </script>
 
