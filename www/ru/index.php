@@ -238,7 +238,7 @@ LanguageTool можно использовать для проверки гра�
 
 <h2>Новости</h2>
 
-<p><strong>03.08.2016:</strong>Вышла версия расширения <a href="https://addons.mozilla.org/ru/firefox/addon/languagetool/>LanguageTool для FireFox48+"</a>!</p>
+<p><strong>03.08.2016:</strong>Вышла версия расширения <a href="https://addons.mozilla.org/ru/firefox/addon/languagetool/">LanguageTool для FireFox48+</a>!</p>
 Эта версия заменяет старое расширение LanguageToolFX.
 <ul>
 <li>Расширение полностью переписано с использованием технологии WebExtension.</li>
