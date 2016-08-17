@@ -66,7 +66,7 @@ AtDCore.prototype.processJSON = function(responseJSON) {
         suggestion["suggestions"] = [];
         var suggestions = [];
         for (var k = 0; k < match.replacements.length; k++) {
-            let repl = match.replacements[k];
+            var repl = match.replacements[k];
             if (repl.value) {
                 suggestions.push(repl.value);
             } else {
