@@ -45,8 +45,9 @@
             <iframe frameborder="no" width="600px" height="200px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>            
         </li>
     </ul>
-
-
+    
+    <p><a href="https://github.com/languagetool-org/languagetool-website/commits/master/www/privacy/index.php">Change log of this page</a></p>
+    
 </div>
 
 <?php include("../../include/footer.php"); ?>
