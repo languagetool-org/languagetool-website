@@ -17,16 +17,13 @@
     <ul>
         <li>We <strong>never store the text</strong> that you submit for style and grammar checking.</li>
         <li>To improve our proofreading service, we keep a log of the following information:
-            <ul style="margin-top: 5px">
-                <li>date and time</li>
-                <li>length of submitted text</li>
-                <li>text language</li>
-                <li>referrer (the page on which you submitted the request)</li>
-                <li>processing time</li>
-                <li>number of detected errors (but not the actual errors)</li>
-                <li>internal errors that occur, e.g. the <a href="../firefox">browser add-on</a> not being able
-                    to access the text to be checked</li>
-            </ul>
+            date and time,
+            length of submitted text,
+            text language,
+            referrer (the page on which you submitted the request),
+            processing time,
+            number of detected errors (but not the actual errors),
+            internal errors that occur, e.g. the <a href="../firefox">browser add-on</a> not being able to access the text to be checked.<br>
             This is an example of a log entry that LanguageTool generates:<br/>
             <tt>2014-02-24 12:10:24 Check done: 793 chars, en-US, https://languagetool.org/, handlers:1, 3 matches, 132ms, sent</tt>
         </li>
