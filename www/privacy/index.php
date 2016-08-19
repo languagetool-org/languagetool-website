@@ -15,7 +15,12 @@
     <h1>Privacy Policy</h1>
     
     <ul>
-        <li>We <strong>never store the text</strong> that you submit for style and grammar checking on languagetool.org.</li>
+        <li>We don't store the text that you submit for style and grammar checking on languagetool.org, with the following exceptions:
+            <ul>
+                <li>If you explicitly submit feedback, for example about false alarms or undetected errors, we store that feedback.</li>
+                <li>In case of an internal software error, we log the sentence that caused the error so we can reproduce and fix the error.</li>
+            </ul>
+        </li>
         <li>To improve our proofreading service, we keep a log of the following information:
             date and time,
             length of submitted text,
