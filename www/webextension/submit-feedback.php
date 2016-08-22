@@ -7,7 +7,7 @@
 
     $myAddress = "daniel.naber" ."@". "languagetool.org";
     $body = "Reason: " . $_POST['reason']."\n".
-            "usageCounter: ".$_POST['usageCounter']."\n".
+            "usageCounter: ".intval($_POST['usageCounter'])."\n".
             "Message: " .
             $_POST['message1']."\n".
             $_POST['message2']."\n".
