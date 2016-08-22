@@ -67,6 +67,7 @@
     if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
 
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
+        <input id="version" name="version" type="hidden" value="<?= htmlspecialchars($_GET['version']) ?>">
         <input id="usageCounter" name="usageCounter" type="hidden" value="<?= intval($_GET['usageCounter']) ?>">
         <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use</label><br>
         <div id="site-fail-detail" class="detail">

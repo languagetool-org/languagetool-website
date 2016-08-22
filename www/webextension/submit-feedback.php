@@ -6,8 +6,9 @@
     $title = "Thanks for your Feedback";
 
     $myAddress = "daniel.naber" ."@". "languagetool.org";
-    $body = "Reason: " . $_POST['reason']."\n".
-            "usageCounter: ".intval($_POST['usageCounter'])."\n".
+    $body = "Reason: " .$_POST['reason']."\n".
+            "Version: ".$_POST['version']."\n".
+            "UsageCounter: ".intval($_POST['usageCounter'])."\n".
             "Message: " .
             $_POST['message1']."\n".
             $_POST['message2']."\n".
