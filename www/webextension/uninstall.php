@@ -67,6 +67,7 @@
     if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
 
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
+        <input id="usageCounter" type="hidden" value="">
         <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use</label><br>
         <div id="site-fail-detail" class="detail">
             <input class="detailInput" id="message1" name="message1" placeholder="Link to the site that didn't work"><br>
