@@ -43,6 +43,7 @@
         <li>Jan Schreiber
         <li>Jaume Ortolà
         <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
+        <li>Konstantin Ladutenko
         <li><a href="http://marcinmilkowski.pl/">Marcin Miłkowski</a>
         <li><a href="http://www.marcoagpinto.com">Marco A.G.Pinto</a>
         <li>Markus Brenneis
