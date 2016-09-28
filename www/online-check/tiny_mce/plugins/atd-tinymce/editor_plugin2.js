@@ -659,6 +659,7 @@ AtDCore.prototype.isIE = function() {
 
             /* find the correct suggestions object */
             var errorDescription = ed.core.findSuggestion(e.target);
+            var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
 
             if (errorDescription == undefined)
             {
@@ -684,6 +685,7 @@ AtDCore.prototype.isIE = function() {
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
+                            t._trackEvent('AcceptCorrection', lang + ":" + errorDescription["id"], sugg);
                             t._checkDone();
                          }
                       });
@@ -693,7 +695,6 @@ AtDCore.prototype.isIE = function() {
                m.addSeparator();
             }
              
-            var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this type of error";
             var ruleExamples = "Examples...";
@@ -741,6 +742,7 @@ AtDCore.prototype.isIE = function() {
                         var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
                         ed.core.ignoredRulesIds.push(ruleId);
                         t._removeWordsByRuleId(ruleId);
+                        t._trackEvent('IgnoreRule', lang + ":" + errorDescription["id"]);
                         t._checkDone();
                         ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
                         /*var stateObj = {};
@@ -765,6 +767,7 @@ AtDCore.prototype.isIE = function() {
                         var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
                         ed.core.ignoredSpellingErrors.push(coveredText);
                         t._removeWordsByRuleId(ruleId, coveredText);
+                        t._trackEvent('IgnoreWordError', lang, coveredText);
                         t._checkDone();
                     }
                 });
