@@ -338,7 +338,7 @@
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
-                            t._trackEvent('AcceptCorrection', lang + ":" + errorDescription["id"], sugg);
+                            t._trackEvent('AcceptCorrection', 'AcceptCorrection', lang + ":" + errorDescription["id"] + ":" + sugg);
                             t._checkDone();
                          }
                       });
@@ -395,7 +395,7 @@
                         var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
                         ed.core.ignoredRulesIds.push(ruleId);
                         t._removeWordsByRuleId(ruleId);
-                        t._trackEvent('IgnoreRule', lang + ":" + errorDescription["id"]);
+                        t._trackEvent('IgnoreRule', 'IgnoreRule', lang + ":" + errorDescription["id"]);
                         t._checkDone();
                         ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
                         /*var stateObj = {};
@@ -420,7 +420,7 @@
                         var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
                         ed.core.ignoredSpellingErrors.push(coveredText);
                         t._removeWordsByRuleId(ruleId, coveredText);
-                        t._trackEvent('IgnoreWordError', lang, coveredText);
+                        t._trackEvent('IgnoreWordError', 'IgnoreWordError', lang + ":" + coveredText);
                         t._checkDone();
                     }
                 });
