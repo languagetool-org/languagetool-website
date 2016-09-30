@@ -36,13 +36,11 @@
         <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
             includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a>,
             <a href="http://community.languagetool.org/analysis">a text analyzer</a>, and Wikipedia checks</li>
-        <li><strong>Developer mailing list</strong>. Post to our mailing list at <span style="color:#666666">languagetool-devel <span>a&#116;</span>
-                lists.sourceforge.net</span>. Note that your message requires manual moderation if you are not subscribed, this might take some time.
+        <li style="font-size: large"><a href="http://forum.languagetool.org/c/development"><strong>Development discussion in our forum</strong></a>
             <ul>
-                <li><a href="../development/mailing-list.php">Subscribe</a></li>
-                <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Message archive at mail-archive.com</a>
+                <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Mailing list archive at mail-archive.com</a>
                     (alternatively, use the archive at <a href="http://markmail.org/search/?q=list%3Anet.sourceforge.lists.languagetool-devel">markmail.org</a> or
-                    <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel">Sourceforge</a>)</li>
+                    <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=languagetool-devel">Sourceforge</a>) (up to September 2016)</li>
             </ul>
         </li>
         <li><a href="https://github.com/languagetool-org/languagetool/issues?state=open">Issues / bug tracking at github</a>

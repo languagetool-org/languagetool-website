@@ -46,8 +46,8 @@
     </ul>
     
     
-    <p style="margin-top: 20px">To join the LanguageTool community, please subscribe to our <a href="../development/mailing-list.php">development
-    mailing list</a>, where all the discussion happens.</p>
+    <p style="margin-top: 20px">To join the LanguageTool community, please join our <a href="http://forum.languagetool.org">forum</a>,
+        where all the discussion happens.</p>
     
 </div>
 

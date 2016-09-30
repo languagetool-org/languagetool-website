@@ -26,10 +26,9 @@
 
     <h2>Want to join us?</h2>
     
-    <p>Please subscribe to our <a href="../development/mailing-list.php">development
-    mailing list</a>, where all the discussion happens. Subscribe to the <a href="../contact/newsletter.php">newsletter</a>
-    for information about new releases. If you have a quick question you may want to
-    use the <a href="http://forum.languagetool.org">forum</a> instead.</p>
+    <p>Please join our <a href="http://forum.languagetool.org/">forum</a>,
+    where all the discussion happens. Subscribe to the <a href="../contact/newsletter.php">newsletter</a>
+    for information about new releases.</p>
 
 
     <h2>Core Team</h2>
