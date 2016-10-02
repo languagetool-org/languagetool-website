@@ -17,7 +17,7 @@
         $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
         $map['be'] = "Паспрабуйце напісаць нейкі тэкст з памылкамі, а LanguageTool паспрабуе паказаць нейкия найбольш распаусюджаныя памылки.";
         $map['da'] = "Indsæt din egen tekst her , eller brug denne tekst til at se nogle af de fejl LanguageTool fanger. vær opmærksom på at den langtfra er er perfect, men skal være en hjælp til at få standartfejl frem i lyset.";
-        //$map['el'] = "";
+        $map['el'] = "Επικολλήστε το κείμενο σας εδώ και κάντε κλικ στο κουμπί ελέγχου. Κάντε κλικ στις χρωματιστές φράσεις για λεπτομέρειες σχετικά με πιθανά σφάλματα. Για παράδειγμα σε αυτή τη πρόταση υπάρχουν εσκεμμένα λάθη για να να δείτε πώς λειτουργει το LanguageTool..";
         $map['es'] = "Escriba un texto aquí. LanguageTool le ayudará a afrentar algunas dificultades propias de la escritura. Se a hecho un esfuerzo para detectar errores tipográficos, ortograficos y incluso gramaticales. También algunos errores de estilo, a grosso modo.";
         $map['gl'] = "Esta vai a ser unha mostra de de exemplo para amosar  o funcionamento de LanguageTool.";
         $map['is'] = "Þetta er dæmi um texta sem á að sína farm á hvernig LanguageTool virkar. Það er þó hérmeð gert ljóst að forritið framkvæmir ekki hefðbundna ritvilluleit.";
