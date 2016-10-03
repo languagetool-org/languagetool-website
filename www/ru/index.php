@@ -150,7 +150,7 @@
 <p>LanguageTool можно скачать и <a href="../">с главной страницы</a> сайта.</p>
 
 <p>Доступны 
-<a href="../download/snapshots/">ежедневные нетестированные сборки</a>
+<a href="../download/snapshots/">ежедневные сборки</a>
  (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">cписок изменений</a>).
 </p>
 
