@@ -151,7 +151,7 @@
 
 <p>Доступны 
 <a href="../download/snapshots/">ежедневные сборки</a>
- (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">cписок изменений</a>).
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">список изменений</a>).
 </p>
 
 
