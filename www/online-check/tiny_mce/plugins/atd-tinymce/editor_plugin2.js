@@ -686,7 +686,9 @@ AtDCore.prototype.isIE = function() {
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
-                            t._trackEvent('AcceptCorrection', lang + ":" + errorDescription["id"], sugg + ":" + iTmp);
+                            // 3 levels are not properly displayed in Piwik UI:
+                            //t._trackEvent('AcceptCorrection', lang + ":" + errorDescription["id"], sugg + ":" + iTmp);
+                            t._trackEvent('AcceptCorrection', lang);
                             t._checkDone();
                          }
                       });
@@ -743,7 +745,8 @@ AtDCore.prototype.isIE = function() {
                         var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
                         ed.core.ignoredRulesIds.push(ruleId);
                         t._removeWordsByRuleId(ruleId);
-                        t._trackEvent('IgnoreRule', lang, errorDescription["id"]);
+                        //t._trackEvent('IgnoreRule', lang, errorDescription["id"]);
+                        t._trackEvent('IgnoreRule', lang);
                         t._checkDone();
                         ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
                         /*var stateObj = {};
@@ -768,7 +771,7 @@ AtDCore.prototype.isIE = function() {
                         var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
                         ed.core.ignoredSpellingErrors.push(coveredText);
                         t._removeWordsByRuleId(ruleId, coveredText);
-                        t._trackEvent('IgnoreWordError', lang, coveredText);
+                        t._trackEvent('IgnoreSpellingError', lang);
                         t._checkDone();
                     }
                 });
