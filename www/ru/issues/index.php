@@ -29,12 +29,12 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 <li>Убедитесь, что <a href="http://www.java.com/en/download/manual.jsp">Java 8 или новее от Oracle</a>  или IcedTea
 установлена в вашей системе. Используйте 32-битную версию Java, если используете LanguageTool
 в качестве расширения 32-битных версий LibreOffice  или OpenOffice.org. Для 64-битных версий  LibreOffice  или OpenOffice.org надо использовать 64-битную версию Java.
-Версии Java не от Oracle могут не работать. При использовании
+Альтернативные версии Java могут не работать. При использовании
 старых версий Java может появиться сообщение  <a href="../../../images/version-error.jpg">типа этого</a>.</li>
 <li>Убедитесь, что корректная версия Java выбрана в LibreOffice (<em>Tools -&gt; Options -&gt; Advanced</em>) или OpenOffice.org
 (<em>Tools -&gt; Options -&gt; Java</em>).</li>
-<li>Необходимо перезапустить LibreOffice/OpenOffice.org, включая быстрый запуск,  после установки LanguageTool. Это требуется 
-даже если не появляется сообщения об этом. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
+<li>Необходимо перезапустить LibreOffice/OpenOffice.org, включая быстрый запуск,  после установки LanguageTool. Это требуется, 
+даже если не появляется сообщений об этом. (<a href="https://bugs.freedesktop.org/show_bug.cgi?id=46279">#46279</a>, <a href="http://issues.apache.org/ooo/show_bug.cgi?id=88692">#88692</a>)</li>
 <li>Если LanguageTool не запускается и не появляется сообщение об ошибке,
 проверьте, включено ли расширение в менеджере расширений
 (в меню <em>Tools -&gt; Extension Manager</em>).</li>
@@ -50,19 +50,19 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 то они могут быть вызваны использованием 64-битной версии Java. Используйте 32-битную версию Java, если используете LanguageTool
 в качестве расширения 32-битных версий LibreOffice  или OpenOffice.org. Для 64-битных версий  LibreOffice  или OpenOffice.org надо использовать 64-битную версию Java.
 </li>
-<li><strong>На Ubuntu</strong> установите пакеты <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> .
+<li><strong>На Ubuntu</strong> установите пакеты <tt>libreoffice-java-common</tt> или <tt>openoffice.org-java-common</tt>.
 Это поможет устранить проблему, проявляющуюся в возникновении сообщения об ошибке "NoClassDefFoundError" во время установки
 (<a href="../../../images/class_not_found.png">скриншот</a>).</li>
 <li><strong>На Ubuntu</strong>, если появляется сообщение <tt>Exception in thread "Thread-402" java.awt.HeadlessException</tt> в LibreOffice/OpenOffice,
 смотри <a href="http://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu/5362572#5362572">this stackoverflow answer</a>.
 Примечание. Это сообщение не появляется в виде диалогового окна, а выводится только при запуске из командной строки. Поэтому, чтобы его увидеть, необходимо запустить LibreOffice/OpenOffice из окна терминала.</li>
-<li>Если возникает сообщение <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> во время установки,необходимо выполнить
+<li>Если возникает сообщение <strong>"This media-type is not supported: application/vnd.sun.star.package-bundle2.0.00"</strong> во время установки, то необходимо выполнить
 <a href="http://wiki.forumooo.ru/wiki/Profile">очистку (удаление) пользовательского профиля  OpenOffice</a>.</li>
 <li>Если появляется сообщение <strong>Failed to load rules for language ... Caused by java.lang.ClassNotFoundException: Loading rules failed: Duplicate class definition</strong>:
 В некоторых случаях LanguageTool может быть установлен дважды в качестве расширения OpenOffice.org. Можно удалить каталоги, которые перечислены
 в сообщении об ошибке (предварительно сделав резервную копию). (Эти каталоги могут иметь произвольные имена типа "EE31.tmp_" или подобные.  Необходимо закрыть OpenOffice.org
 перед удалением каталога).</li>
-<li><strong>Пункты меню в LibreOffice/OpenOffice.org могут быть смешаны</strong> когда оба расширения <a href="http://open.afterthedeadline.com/">After the Deadline</a>
+<li><strong>Пункты меню в LibreOffice/OpenOffice.org могут быть смешаны,</strong> когда оба расширения <a href="http://open.afterthedeadline.com/">After the Deadline</a>
 и LanguageTool установлены. <a href="http://www.oooforum.org/forum/viewtopic.phtml?t=122665#428635">Макрос</a>, представленный здесь,
 поможет в решении этой проблемы. Эта ошибка отражена в <a href="http://openatd.trac.wordpress.org/ticket/215">ticket #215 at After the Deadline</a>.</li>
 <li>Если при запуске LibreOffice/OpenOffice из командной строки появляется сообщение <strong>NoClassDefFoundError</strong>, убедитесь,
@@ -78,7 +78,7 @@ LanguageTool 2.2, который доступен в <a href="http://languagetoo
 </ul>
 <h2>Известные ограничения</h2>
 <ul>
-<li>Некоторые ошибки не определяются: LanguageTool использует правила для поиска ошибок, то есть может найти только те ошибки
+<li>Некоторые ошибки не определяются: LanguageTool использует правила для поиска ошибок, то есть может найти только те ошибки,
 которые описаны в правилах. Подробнее о <b><a href="http://wiki.languagetool.org/development-overview#toc0">создании правил</a></b> и
 <b><a href="http://wiki.languagetool.org/make-languagetool-better">расширении возможностей LanguageTool</a></b> путём создания новых правил и включения их в проект.</li>
 
