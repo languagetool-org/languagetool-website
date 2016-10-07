@@ -60,7 +60,7 @@
     $downloadTitleStandAlone = "Memstara";
     $downloadLabelFx = "Por <strong>Firefox</strong>";
     $downloadLabelChrome = "Por <strong>Chrome</strong>";
-    $downloadLabelBrowserAddOn = "Kromaĵo de retumulo";
+    $downloadLabelBrowserAddOn = "Kromaĵo de retumilo";
     $checklistText = "Bonvolu vidi <a href='/issues/'>liston de problemoj</a>, se vi havas problemojn.";
     $otherDownloadsText = "Elŝuti <a href='/download/'>malnovajn versiojn</a> aŭ <a href='/download/snapshots/?C=M;O=D'>ĉiutagan version</a>.";
     $webstartText = "Startigi per <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
