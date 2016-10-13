@@ -64,3 +64,26 @@ unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
   rm -rf /home/languagetool/api/LanguageTool-[1-9].[0-9]*/ && \
   cd /home/languagetool/ && \
   ./restart-api-server.sh
+  
+# =====================================================================
+# deploy community.languagetool.org web app:
+# =====================================================================
+echo "--- Deploying web app at community.languagetool.org ---"
+cd /home/languagetool/languagetool.org/git-checkout
+mvn install -DskipTests
+
+# there's a Grails bug that causes Grails to not get new SNAPSHOT
+# artifacts, so they need to be deleted manually:
+rm -r ~/.grails/ivy-cache/org.languagetool/
+
+cd /home/languagetool/languagetool.org/languagetool-community-website
+# stash because e.g. Config.groovy is modified (locally it contains a password):
+git stash
+git pull -r
+git stash pop
+GRAILS_HOME=/home/languagetool/grails
+PATH=$GRAILS_HOME/bin:$PATH
+grails war
+rm -r /home/languagetool/tomcat/webapps/ROOT/
+unzip -o -d /home/languagetool/tomcat/webapps/ROOT/ target/ltcommunity-0.1.war
+### Tomcat restart needs root permission, but that happens automatically by cron job
