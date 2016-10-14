@@ -25,7 +25,7 @@
     <ul>
         <li>Mixing up "you're" and "your" or "there" and "their"
         <li>Missing determiner, especially in texts written by non-native speakers
-        <li>Word order issues, especially in texts written by non-native speakers
+        <li>Word order issues like the order of adjectives, especially in texts written by non-native speakers
     </ul>
 
     <h3>Tasks</h3>
