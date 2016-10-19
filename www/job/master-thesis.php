@@ -43,7 +43,7 @@
     <h3>Your Profile</h3>
 
     <ul>
-        <li>student of computer science, computational linguistics, or mathematics
+        <li>student of computer science, computational linguistics, mathematics, or similar
         <li>knowledge of machine learning, especially deep learning
         <li>programming knowledge (Java preferred)
         <li>you need to find a supervisor from your university
