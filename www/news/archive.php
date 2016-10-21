@@ -18,7 +18,7 @@
 <ul>
     <li><a href="../changes/V_1_6_to_V_1_7/">Rule updates</a> for several languages (French, English, Breton, Russian, Esperanto, German)</li>
     <li>Several small bug fixes</li>
-    <li>For a detailed list of changes, see the <a href="../download/CHANGES.txt">Changelog</a></li>
+    <li>For a detailed list of changes, see the <a href="../download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2012-02-04:</strong> See our new language-specific pages for <a href="../de/">German</a>, <a href="../ru/">Russian</a>, and <a href="../eo/">Esperanto</a></p>
@@ -27,7 +27,7 @@
 <ul>
     <li><a href="../changes/V_1_5_to_V_1_6/">Rule updates</a> for several languages (Chinese, French, Breton, and others)</li>
     <li>Renamed the Java packages from de.danielnaber.languagetool.* to org.languagetool.*</li>
-    <li>For a more detailed list of changes, see the <a href="../download/CHANGES.txt">Changelog</a></li>
+    <li>For a more detailed list of changes, see the <a href="../download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2011-11-18:</strong> We now offer <a href="http://community.languagetool.org/wikiCheck/index">Wikicheck, a new service to check Wikipedia pages with LanguageTool</a></p>
@@ -37,7 +37,7 @@
     <li>Support for new languages: Chinese, Asturian, Breton, and Tagalog</li>
     <li>Automatic language detection (not relevant for OpenOffice.org/LibreOffice)</li>
     <li>Many rule updates for several languages</li>
-    <li>For a more detailed list of changes, see the <a href="/download/CHANGES.txt">Changelog</a></li>
+    <li>For a more detailed list of changes, see the <a href="/download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2011-08-28:</strong> Our <a href="/gsoc2011">Google Summer of Code students</a> have
@@ -48,7 +48,7 @@ successfully finished their projects and the results will be part of LanguageToo
 	<li>Rule updates for English, French, German, Russian, and Esperanto.</li>
     <li>Support for Khmer</li>
     <li>Some internal cleanups and simplifications</li>
-	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.txt">Changelog</a></li>
+	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2011-03-28:</strong> Released LanguageTool 1.3.1. This fixes a NullPointerException occurring with some inputs.</p>
@@ -57,7 +57,7 @@ successfully finished their projects and the results will be part of LanguageToo
 	<li>Rule updates for Spanish, French, Polish, Dutch, Russian, English, and Esperanto.</li>
     <li>Reduced false alarms for Spanish in a significant way.</li>
 	<li>Some bug fixes.</li>
-	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.txt">Changelog</a></li>
+	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2011-01-02:</strong> Released LanguageTool 1.2. Changes include:
@@ -67,10 +67,10 @@ successfully finished their projects and the results will be part of LanguageToo
 		let you check a local Wikipedia XML dump.</li>
 	<li>Added support for Esperanto.</li>
 	<li>Small bug fixes.</li>
-	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.txt">Changelog</a></li>
+	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.md">Changelog</a></li>
 </ul>
 
-<p><strong>2010-09-26:</strong> Released version 1.1. For a list of changes, see the <a href="/download/CHANGES.txt">Changelog</a></p>
+<p><strong>2010-09-26:</strong> Released version 1.1. For a list of changes, see the <a href="/download/CHANGES.md">Changelog</a></p>
 
 <p><strong>2010-08-29:</strong>
 
@@ -89,7 +89,7 @@ This means that you can now use LanguageTool for these languages via the
 	<li>Rule and dictionary fixes for Dutch, French, Italian, Polish, Spanish, Swedish, and Russian</li>
 	<li>More rules for Dutch, Polish, Russian, Spanish, Slovenian, and English</li>
 	<li>Several bug fixes</li>
-	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.txt">Changelog</a>.</li>
+	<li>For a more detailed list of changes, see the <a href="/download/CHANGES.md">Changelog</a>.</li>
 </ul>
 
 <p><strong>2009-05-22:</strong> Released version 0.9.9. Changes include:

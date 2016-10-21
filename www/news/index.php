@@ -44,7 +44,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>Bug fixes</li>
   <li>Small rule syntax simplifications</li>
   <li>Java API: removed deprecated methods and cleanups</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2014-12-30:</strong> Released LanguageTool 2.8. Changes include:</p>
@@ -53,7 +53,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
     Breton, Catalan, Dutch, English, French, German, Polish, Portuguese, Spanish, Russian, and Ukrainian</li>
   <li>Bug fixes</li>
   <li>Java API: removed deprecated methods</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2014-09-29:</strong> Released LanguageTool 2.7. Changes include:</p>
@@ -67,7 +67,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>Improved footnote handling in LibreOffice 4.3 and later</li>
   <li>Java API: removed deprecated methods; small cleanups</li>
   <li>LanguageTool can now make use of <a href="http://wiki.languagetool.org/finding-errors-using-big-data">ngram data</a></li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2014-06-30:</strong> Released LanguageTool 2.6. Changes include:</p>
@@ -77,7 +77,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>Improved configuration dialog</li>
   <li>Small rule syntax improvements</li>
   <li>Java API: removed deprecated methods</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2014-03-31:</strong> Released LanguageTool 2.5. Changes include:</p>
@@ -86,7 +86,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
       Catalan, English, Esperanto, French, German, Japanese, Polish, Portuguese, and Russian.</li>
   <li>Added a new 'antipattern' element to the XML rules which can be used to avoid false alarms</li>
   <li>Small cleanups in the Java API</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2013-12-30:</strong> Released LanguageTool 2.4. Changes include:</p>
@@ -98,7 +98,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>Show example sentences in the stand-alone GUI</li>
   <li>Several bug fixes</li>
   <li>Small cleanups in the Java API</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2013-09-30:</strong> Released LanguageTool 2.3. Changes include:</p>
@@ -112,14 +112,14 @@ bug fix for the "osl::Thread::Create failed" error.</p>
     <li>The standalone version now underlines errors with a red or blue line</li>
     <li>Java API cleanups and improved thread-safety</li>
     <li>Other small bug fixes</li>
-    <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+    <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2013-06-30:</strong> Released LanguageTool 2.2. Changes include:</p>
 <ul>
   <li>Many <a href="../changes/languagetool-2.1_to_languagetool-2.2/">updates for the error detection rules</a> for French, Catalan, German, Portuguese, Russian, Esperanto, and Breton.</li>
   <li>Small bug fixes</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2013-03-31:</strong> Released LanguageTool 2.1. Changes include:</p>
@@ -128,7 +128,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>For Java developers LanguageTool is now modular: instead of one big JAR, there are several.
     They can be found <a href="http://search.maven.org/#search|ga|1|languagetool">at Maven Central</a>.</li>
   <li>Small bug fixes</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2012-12-30:</strong> Released LanguageTool 2.0. Changes include:</p>
@@ -136,7 +136,7 @@ bug fix for the "osl::Thread::Create failed" error.</p>
   <li>Many <a href="../changes/V_1_9_to_V_2_0/">updates for the error detection rules</a> for English, Spanish, French, German, Portuguese, Russian, Breton, Catalan, Esperanto, and Ukrainian</li>
   <li>The embedded HTTP server can now be started from the context menu if LanguageTool is running in the system tray</li>
   <li>Small bug fixes</li>
-  <li>See the <a href="../download/CHANGES.txt">Change Log</a> for a complete list of changes</li>
+  <li>See the <a href="../download/CHANGES.md">Change Log</a> for a complete list of changes</li>
 </ul>
 
 <p><strong>2012-10-10:</strong> LanguageTool 1.9 is now available

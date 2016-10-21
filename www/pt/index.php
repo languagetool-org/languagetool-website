@@ -134,7 +134,7 @@ para ser redirecionado.</p>
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
 disponíveis na
 <a href="../download/snapshots/?C=M;O=D">directoria de snapshots</a>
- (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.txt">CHANGES.txt</a>).
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">CHANGES.md</a>).
  Versões antigas continuam disponíveis na <a href="../download/">directoria de download</a>.</p>
 
 

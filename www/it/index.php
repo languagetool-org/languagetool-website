@@ -133,7 +133,7 @@
     
 <p>Versioni non testate e aggiornate giornalmente del tool sono disponibili al link
 <a href="../download/snapshots/?C=M;O=D">versioni di sviluppo</a>
- (<a href="http://www.languagetool.org/download/CHANGES.txt">CHANGES.txt</a>).
+ (<a href="http://www.languagetool.org/download/CHANGES.md">CHANGES.md</a>).
  Rilasci precedenti sono disponibili al link <a href="../download/">versioni scaricabili</a>.</p>
 
 

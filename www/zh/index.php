@@ -48,7 +48,7 @@
 <ul>
     <li><a href="../changes/V_1_6_to_V_1_7/">规则更新</a>若干语言（法语、英语、 布列塔尼语、俄语、 世界语和德语)</li>
     <li>修正了几个程序小bug</li>
-    <li>详细变化内容列表：<a href="../download/CHANGES.txt">Changelog</a></li>
+    <li>详细变化内容列表：<a href="../download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2012-02-04：</strong>看看我们的特定语言的新页面：<a href="../de/">德语</a>, <a href="../ru/">俄语</a>, and <a href="../eo/">世界语</a></p>
@@ -57,7 +57,7 @@
 <ul>
     <li><a href="../changes/V_1_5_to_V_1_6/">规则更新</a>若干语言（中文、法语和布列塔尼语等)</li>
     <li>将Java包从de.danielnaber.languagetool.*更名为org.languagetool.*</li>
-    <li>详细变化内容列表：<a href="../download/CHANGES.txt">Changelog</a></li>
+    <li>详细变化内容列表：<a href="../download/CHANGES.md">Changelog</a></li>
 </ul>
 
 <p><strong>2011-11-18：</strong>我们现在提供<a href="http://community.languagetool.org/wikiCheck/index">Wikicheck，一个使用LanguageTool检测维基百科页面的新服务</a></p>

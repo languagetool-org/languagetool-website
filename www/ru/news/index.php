@@ -123,7 +123,7 @@ $title = "Новости LanguageTool";
 <li>Упрощён формат грамматических файлов.</li>
 <li>Создано простое правило в помощь переводчикам: проверяется, чтобы предложения в оригинале и в переводе оканчивались на одни и те же знаки препинания (доступно в режиме bitext и обрабатывает только эти знаки препинания «.?!»)</li>
 <li>Появились пользовательские словари, используемые для проверки орфографии (это файлы <КодЯзыка>/hunspell/spelling.txt).</li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p><strong>30.12.2014:</strong> Вышла версия LanguageTool 2.8.</p>
 <ul>
@@ -134,7 +134,7 @@ $title = "Новости LanguageTool";
 Остальные изменения:
 <li>Обновлены модули для проверки следующих языков: английского, немецкого, французского, украинского, польского, португальского, испанского, тагальского, бретонского, каталанского, астурийского, голландского.</li>
 <li>Основные <a href="http://languagetool.org/changes/languagetool-2.7_to_languagetool-2.8/">изменения в xml-правилах.</a></li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p><strong>29.09.2014:</strong> Вышла версия LanguageTool 2.7</p>
 <ul>
@@ -148,7 +148,7 @@ $title = "Новости LanguageTool";
 Остальные изменения:
 <li>Для LibreOffice 4.3 и старше проверка грамматики не производится в специальных областях (сносках).</li>
 <li>Основные <a href="http://languagetool.org/changes/languagetool-2.6_to_languagetool-2.7/">изменения в xml-правилах.</a></li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p><strong>30.06.2014:</strong> Вышла версия LanguageTool 2.6.</p>
 <ul>
@@ -163,7 +163,7 @@ $title = "Новости LanguageTool";
 <ul>
 <li>Изменён вид диалога настроек. Теперь настройки свёрнуты в группы.</li>
 <li>Основные <a href="http://languagetool.org/changes/languagetool-2.5_to_languagetool-2.6/">изменения в xml-правилах.</a></li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p><strong>31.03.2014:</strong> Вышла версия LanguageTool 2.5.</p>
 <ul>
@@ -177,7 +177,7 @@ $title = "Новости LanguageTool";
 <p>Остальные изменения:</p>
 <ul>
 <li>Основные <a href="http://languagetool.org/changes/languagetool-2.4_to_languagetool-2.5/">изменения в xml-правилах.</a></li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p><strong>09.01.2014:</strong> Вышла версия LanguageTool 2.4.1.</p>
 <ul>
@@ -213,7 +213,7 @@ $title = "Новости LanguageTool";
 <li>Обновлены и доработаны правила для французского, каталанского, немецкого, португальского, русского, бретонского, эсперанто и украинского языков.</li>
 <li>Внесены дополнения и улучшения в основной код программы.</li>
 <li>Основные <a href="http://languagetool.org/changes/languagetool-2.1_to_languagetool-2.2/">изменения в xml-правилах.</a></li>
-<li>Полный <a href="http://languagetool.org/download/CHANGES.txt">список изменений</a>.</li>
+<li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 </ul>
 <p>Ещё вышла версия 0.3 <a href="https://addons.mozilla.org/ru/firefox/addon/languagetoolfx/">LanguageToolFX</a> - расширения Mozilla FireFox для проверки грамматики с помощью LanguageTool 2.2.</p>
 <p><strong>31.03.2013:</strong> Вышла версия LanguageTool 2.1. Для русского языка изменения включают:</p>
