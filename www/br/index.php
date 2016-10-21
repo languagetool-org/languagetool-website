@@ -120,7 +120,7 @@ Trugarez ivez d’ar gevredigezh
 <a href="http://extensions.libreoffice.org/extension-center/an-drouizig-breton-spellchecker">geriadur brezhonek Hunspell</a>
 hag a zo implijet evit kavout fazioù reizhskrivañ gant LanguageTool.
 Diwallit avat: disheñvel eo difazier yezhadurel LanguageTool diouzh
-<a href="http://www.drouizig.org/index.php?option=com_content&view=category&id=38&Itemid=58&lang=br">hini An Drouizig</a>.</p>
+<a href="http://www.drouizig.org/index.php/fr/binviou-fr/an-drouizig-difazier/238-an-drouizig-difazier-l-outil">hini An Drouizig</a>.</p>
 
 <h2>Aotre-implijout</h2>
 <p>
