@@ -52,8 +52,9 @@
         <li>Panagiotis Minos
         <li><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>
         <li>Peter Lawrence
-        <li>Ruud Baars</li>
+        <li>Ruud Baars
         <li>Stefan Lotties
+        <li>Tiago F. Santos
         <li>Xavi Ivars
         <li><a href="http://myooo.ru/content/view/83/43/">Yakov Reztsov</a>
     </ul>
