@@ -64,8 +64,8 @@
     $checklistText = "Probleme? Siehe <a href='/issues/'>unsere Hilfeseite</a>.";
     $otherDownloadsText = "<a href='/download/'>Ältere Versionen</a> und <a href='/download/snapshots/?C=M;O=D'>täglich neue Versionen</a> herunterladen.";
     $webstartText = "LanguageTool <a href='/webstart/web/LanguageTool.jnlp'>mit Java WebStart ausführen</a>.";
-    $firefoxLink = '<a href="/de/firefox/">Mehr Informationen</a>';
-    $chromeLink = '<a href="/de/chrome/">Mehr Informationen</a>';
+    $firefoxLink = '<a href="/firefox/">Mehr Informationen</a>';
+    $chromeLink = '<a href="/chrome/">Mehr Informationen</a>';
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
