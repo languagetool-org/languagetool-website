@@ -8,6 +8,24 @@ if (isset($downloadRequiresJava)) {
 }
 $buttons = array(
     array(
+        'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'For <strong>Firefox</strong>',
+        'link' => 'https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage',
+        'onclick' => '',
+        'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
+        'release_info' => '',
+        'width' => 220,
+        'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More information</a>'
+    ),
+    array(
+        'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
+        'link' => 'https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji',
+        'onclick' => 'onclick="return installChromeExtension()"',
+        'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
+        'release_info' => '',
+        'width' => 220,
+        'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More information</a>'
+    ),
+    array(
       'title' => isset($downloadTitle) ? $downloadTitle : 'For <strong>LibreOffice</strong><br/>and <strong>OpenOffice</strong>',
       'link' => '/download/LanguageTool-3.5.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
@@ -25,24 +43,6 @@ $buttons = array(
       'release_info' => 'released 2016-09-30',
       'width' => 220,
       'below' => ''
-    ),
-    array(
-      'title' => isset($downloadLabelFx) ? $downloadLabelFx: 'For <strong>Firefox</strong>',
-      'link' => 'https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage',
-      'onclick' => '',
-      'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
-      'release_info' => '',
-      'width' => 220,
-      'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More information</a>'
-    ),
-    array(
-      'title' => isset($downloadLabelChrome) ? $downloadLabelChrome: 'For <strong>Chrome</strong>',
-      'link' => 'https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji',
-      'onclick' => 'onclick="return installChromeExtension()"',
-      'additional_info' => isset($downloadLabelBrowserAddOn) ? $downloadLabelBrowserAddOn : 'Browser Add-on',
-      'release_info' => '',
-      'width' => 220,
-      'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More information</a>'
     )
 );
 
