@@ -78,7 +78,7 @@ do
   grep " $lang " $targetDir/performance-data.csv | tail -n 90 >/tmp/performance-data.csv
   ../perf-plot.pg >$targetDir/performance-$lang.png
 
-  diff -u result_${lang}.old result_${lang}.new >result_${lang}.diff
+  diff --minimal -u result_${lang}.old result_${lang}.new >result_${lang}.diff
   diffSize=$(stat -c%s "result_${lang}.diff")
   resultFile="result_${lang}_${date}.html"
   rm $resultFile
