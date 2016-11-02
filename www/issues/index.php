@@ -20,12 +20,14 @@
     need to use the 32-bit version of Java (same for the 64-bit version).
     Java versions which are not from Oracle may not work. If you're using an
     old version of Java you'll see a confusing error message <a href="../images/version-error.jpg">like this</a>.</li>
+<li>If you get an error that says <strong>Invalid memory access</strong>, make sure LanguageTool is installed in a path
+    that has no special characters (use a-z, A-Z and 0-9 only).
 <li>If installation of LanguageTool in LibreOffice/OpenOffice didn't throw an error but you are not sure if it 
     actually works, please <strong><a href="languagetool-test.odt">load this document</a></strong> and follow the instructions in it.</li>
 <li>If you see different results locally and on languagetool.org, that's for two reasons:
     <ul style="margin-top: 8px">
         <li>We usually run the latest version on languagetool.org which might have more rules than the latest release version.</li>
-        <li>English and German only: We have some additional rules active on languagetool.org that require large data
+        <li>For English, German, French, Spanish: We have some additional rules on languagetool.org that require large data
             sets not part of the download version (<a href="http://wiki.languagetool.org/finding-errors-using-n-gram-data">technical details</a>).</li>
     </ul>
 </li>
