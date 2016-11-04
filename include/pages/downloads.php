@@ -3,7 +3,7 @@
   <?php if(isset($downloadHeadline)) { ?>
       <h2><?= $downloadHeadline ?></h2>
   <?php } else { ?>
-      <h2>Download</h2>
+      <h2>Download <span><a href="compare" style="font-size: small">(compare editions)</a></span></h2>
   <?php } ?>
 
     <script>
