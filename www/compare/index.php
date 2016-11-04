@@ -12,11 +12,8 @@
         }
         th, td {
             border: 1px solid black;
-            padding: 8px;
+            padding: 12px 8px;
             text-align: center;
-        }
-        .noCenter {
-            text-align: left;
         }
         .light {
             color: #777777;
