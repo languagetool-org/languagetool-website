@@ -19,17 +19,24 @@
   
   <br>
   <p class="small">
-      <?php if(isset($checklistText)) { ?>
-          <?= $checklistText ?>
-      <?php } else { ?>
-          Please see <a href='/issues/'>our checklist</a> if you experience problems.
-      <?php } ?>
+      <?php
+      if(isset($checklistText)) 
+      {
+        $checklistText;
+      }
+      else {
+        echo "Please see <a href='/issues/'>our checklist</a> if you experience problems.";
+      }
 
-      <?php if(isset($otherDownloadsText)) { ?>
-          <?= $otherDownloadsText ?>
-      <?php } else { ?>
-          Download <a href="/download/">old releases</a> or <a href="/download/snapshots/?C=M;O=D">daily builds</a>.
-      <?php } ?>
+      if(isset($otherDownloadsText)) 
+      {
+        $otherDownloadsText;
+      } 
+      else 
+      {
+       echo "Download <a href="/download/">old releases</a> or <a href="/download/snapshots/?C=M;O=D">daily builds</a>.";
+      }
+      ?>
 
       <!--
       <?php if(isset($webstartText)) { ?>
