@@ -68,6 +68,12 @@
         </tr>
     </table>
 
+    <p>
+    <br>
+    Looking for more software that integrates LanguageTool?
+    <a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on">See this list.</a>    
+    </p>
+    
     <br>
     <br>
     <br>
