@@ -366,7 +366,8 @@ AtDCore.prototype.isIE = function() {
 
 (function() 
 {
-   var JSONRequest = tinymce.util.JSONRequest, each = tinymce.each, DOM = tinymce.DOM; 
+   var JSONRequest = tinymce.util.JSONRequest, each = tinymce.each, DOM = tinymce.DOM;
+   var maxTextLength = 25000;
 
    tinymce.create('tinymce.plugins.AfterTheDeadlinePlugin', 
    {
@@ -963,7 +964,13 @@ AtDCore.prototype.isIE = function() {
                             document.checkform._action_checkText.disabled = false;
                             var errorText = jqXHR.responseText;
                             if (!errorText) {
-                                errorText = "Error: Did not get response from service. Please try again in one minute.";
+                                if (data.length > maxTextLength) {
+                                    // Somehow, the error code 413 is lost in Apache, so we show that error here.
+                                    // This unfortunately means that the limit needs to be configured in the server *and* here.
+                                    errorText = "Error: your text is too long (" + data.length + " characters). This server accepts up to " + maxTextLength + " characters.";
+                                } else {
+                                    errorText = "Error: Did not get response from service. Please try again in one minute.";
+                                }
                             }
                             $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
                             t._trackEvent('CheckError', 'ErrorWithException', errorText);
