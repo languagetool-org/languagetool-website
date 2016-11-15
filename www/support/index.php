@@ -27,12 +27,8 @@
                     <a href="http://marcinmilkowski.pl/en/contact-me">contact form</a></li>
             </ul>
         </li>
-        <li><strong>Announcement mailing list</strong> - low traffic, you will only receive emails about new LanguageTool releases and major new features:
-            <ul>
-                <li><a href="http://46260.seu1.cleverreach.com/f/46260-106283/">Subscribe</a></li>
-                <li><a href="http://46260.seu1.cleverreach.com/f/46260-106283/wwu/">Unsubscribe</a></li>
-            </ul>
-        </li>
+        <li><strong><a href="../contact/newsletter.php">Announcement mailing list</a></strong> - low traffic,
+            you will only receive emails about new LanguageTool releases and major new features</li>
     </ul>
 
 </div>
