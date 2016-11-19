@@ -1,10 +1,14 @@
 <div id="download">
 
-  <?php if(isset($downloadHeadline)) { ?>
-      <h2><?= $downloadHeadline ?></h2>
-  <?php } else { ?>
-      <h2>Download <span><a href="compare" style="font-size: small">(compare editions)</a></span></h2>
-  <?php } ?>
+  <h2>
+      <?php if(isset($downloadHeadline)) { ?>
+          <?= $downloadHeadline ?>
+      <?php } else { ?>
+          Download
+      <?php } ?>
+        <span style="font-size: small"><a href="/compare">compare editions</a> &nbsp;&middot;&nbsp;
+          <a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on" style="font-size: small">more integrations</a></span>
+  </h2>
 
     <script>
         if (navigator.userAgent.indexOf("Edge/") !== -1 || navigator.userAgent.indexOf("Trident/") !== -1) {
