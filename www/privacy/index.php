@@ -37,6 +37,8 @@
         <li>In our web server log files, your IP address is stored in an abbreviated form (like <tt>192.168.xxx.xxx</tt>)
             so it cannot be used to identify you. Error messages like for exceeding the query limit are stored with the
             full IP so we can prevent abuse.</li>
+        <li>If you subscribe to <a href="../contact/newsletter.php">our newsletter</a>, your email address will be stored
+            at our newsletter provider (newsletter2go.com) </li>
         <li>If you don't want any information to be transferred, download the stand-alone version from 
             <a href="/">our homepage</a>. It works locally without internet access and thus doesn't transfer any data.</li>
         <li>
