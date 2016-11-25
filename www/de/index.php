@@ -61,6 +61,8 @@
     $downloadLabelFx = "Für <strong>Firefox</strong>";
     $downloadLabelChrome = "Für <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Browser-Erweiterung";
+    $downloadLabelGoogleDocs = "Für <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Add-on";
     $checklistText = "Probleme? Siehe <a href='/issues/'>unsere Hilfeseite</a>.";
     $otherDownloadsText = "<a href='/download/'>Ältere Versionen</a> und <a href='/download/snapshots/?C=M;O=D'>täglich neue Versionen</a> herunterladen.";
     $webstartText = "LanguageTool <a href='/webstart/web/LanguageTool.jnlp'>mit Java WebStart ausführen</a>.";
