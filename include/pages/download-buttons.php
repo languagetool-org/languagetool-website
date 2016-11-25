@@ -4,7 +4,7 @@ $javaMinVersion = "8";
 if (isset($downloadRequiresJava)) {
     $downloadRequiresJava = str_replace("{version}", $javaMinVersion, $downloadRequiresJava);
 } else {
-    $downloadRequiresJava = "Requires Java $javaMinVersion+";
+    $downloadRequiresJava = "Needs Java $javaMinVersion+";
 }
 $buttons = array(
     array(
