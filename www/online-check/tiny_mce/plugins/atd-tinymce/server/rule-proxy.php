@@ -13,8 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
   $curl = curl_init();
   try {
     register_shutdown_function('shutdown', $curl);
-    curl_setopt($curl, CURLOPT_URL, "http://community.languagetool.org/ruleApi/exampleSentences?lang=".$_GET['lang']."&ruleId=".$_GET['ruleId']);
-    curl_setopt($curl, CURLOPT_PORT, 80);
+    curl_setopt($curl, CURLOPT_URL, "https://community.languagetool.org/ruleApi/exampleSentences?lang=".$_GET['lang']."&ruleId=".$_GET['ruleId']);
+    //curl_setopt($curl, CURLOPT_PORT, 80);
     if (isset($_SERVER['HTTP_REFERER'])) {
       curl_setopt($curl, CURLOPT_REFERER, $_SERVER['HTTP_REFERER']);
     }
