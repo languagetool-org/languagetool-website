@@ -34,8 +34,8 @@
             </ul>
         </li>
         <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
-            includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a>,
-            <a href="http://community.languagetool.org/analysis">a text analyzer</a>, and Wikipedia checks</li>
+            includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a> and
+            <a href="http://community.languagetool.org/analysis">a text analyzer</a></li>
         <li style="font-size: large"><a href="http://forum.languagetool.org/c/development"><strong>Development discussion in our forum</strong></a>
             <ul>
                 <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Mailing list archive at mail-archive.com</a>
