@@ -302,6 +302,7 @@
            'br': 'Skouerioù…',
            'ca': 'Exemples...',
            'de-DE': 'Beispiele...',
+           'de-DE-x-simple-language': 'Beispiele...',
            'eo': 'Ekzemploj…',
            'fr': 'Exemples…',
            'pl': 'Przykłady...',
@@ -330,6 +331,7 @@
            // "Rule implementation":
            'ca': 'Implementació de la regla...',
            'de-DE': 'Technische Details...',
+           'de-DE-x-simple-language': 'Technische Details...',
            'eo': 'Realigo de la regulo…',
            'fr': 'Implémentation de la règle…',
            'nl': 'De techniek erachter...',
