@@ -3,6 +3,7 @@
 <head>
     <?php
     $enable_textcheck = 1;
+    $enable_fancybox = 1;
     $title = "LanguageTool - Prüfung auf Leichte Sprache";
     ?>
     <?php include("../../../include/header.php"); ?>
