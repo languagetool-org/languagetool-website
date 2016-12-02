@@ -357,8 +357,8 @@
        languagetool_i18n_suggest_word_url :
           {
            // "Suggest word for dictionary...":
-           'ca': 'http://community.languagetool.org/suggestion?word={word}&lang=ca',
-           'de-DE': 'http://community.languagetool.org/suggestion?word={word}&lang=de',
+           'ca': 'https://community.languagetool.org/suggestion?word={word}&lang=ca',
+           'de-DE': 'https://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
            'pl': 'http://www.sjp.pl',
            'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
