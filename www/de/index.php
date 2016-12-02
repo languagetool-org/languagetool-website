@@ -80,7 +80,7 @@
 
     <h2>Funktionen</h2>
 
-    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 1800</a> Fehler in deutschsprachigen Texten:<br/><br/>
+    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 2000</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
     <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
@@ -140,11 +140,11 @@
 
     <h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice nutzen</h2>
 
-    <p>LanguageTool steht als sogenannte Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:</p>
+    <p>LanguageTool steht als Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach folgenden Schritten:</p>
 
     <ol>
         <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier kostenlos herunter</a> und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
-        <li>Laden Sie sich die aktuelle Version von LanguageTool herunter. (Der Downloadbutton befindet sich oben auf dieser Seite.)</li>
+        <li>Laden Sie sich die aktuelle Version von LanguageTool herunter. Der Downloadbutton befindet sich oben auf dieser Seite.</li>
         <li>Öffnen Sie LibreOffice bzw. OpenOffice.org und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
         <li>Klicken Sie nun auf <i>Hinzufügen&hellip;</i>, wählen Sie die in Schritt 2 heruntergeladene Datei aus und klicken Sie auf <i>Öffnen</i>.</li>
         <li>Starten Sie nach der Installation LibreOffice bzw. OpenOffice.org neu.</li>
@@ -157,7 +157,7 @@
 
     <ol>
         <li>Entpacken Sie die heruntergeladene zip-Datei (z.&nbsp;B. durch Rechtsklick &rarr; Entpacken &rarr; Hier o.&nbsp;ä.).</li>
-        <li>Führen Sie die Datei languagetool.jar mit Java aus (i.&nbsp;d.&nbsp;R. durch Doppelklick möglich).</li>
+        <li>Führen Sie die Datei <tt>languagetool.jar</tt> mit Java aus (i.&nbsp;d.&nbsp;R. durch Doppelklick möglich).</li>
     </ol>
 
     <p>
@@ -183,7 +183,7 @@
 
     <h2>Kontakt</h2>
 
-    <p>Fragen beantworten wir im <a href="../forum">Forum</a>, wo Sie auch gerne Einträge auf Deutsch hinterlassen können. Dort ist es auch möglich, Fehlalarme von LanguageTool zu melden oder neue Regeln vorzuschlagen.</p>
+    <p>Fragen beantworten wir im <a href="http://forum.languagetool.org">Forum</a>, wo Sie auch gerne Einträge auf Deutsch hinterlassen können. Dort ist es auch möglich, Fehlalarme von LanguageTool zu melden oder neue Regeln vorzuschlagen.</p>
 
 </div>
 
