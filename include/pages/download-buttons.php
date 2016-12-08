@@ -29,6 +29,7 @@ $buttons1 = array(
     array(
         'title' => isset($downloadLabelGoogleDocs) ? $downloadLabelGoogleDocs.$newImg : "For <strong>Google Docs</strong>$newImg",
         'link' => 'https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm',
+        'onclick' => '',
         'additional_info' => isset($downloadLabelAddOn) ? $downloadLabelAddOn : 'Add-on',
         'release_info' => '',
         'width' => 220,
