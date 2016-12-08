@@ -39,6 +39,7 @@
         <li><a href="http://dominiko.livejournal.com/tag/lingvoilo">Dominique Pellé</a>
         <li><a href="http://github.com/ebraminio">Ebrahim Byagowi</a>
         <li><a href="http://www.linkedin.com/pub/elanjelian-venugopal/18/955/b86">Elanjelian Venugopal</a>
+        <li>Fred Kruse
         <li>Jan Schreiber
         <li>Jaume Ortolà
         <li><a href="http://languagetool-es.blogspot.com/">Juan Martorell</a>
