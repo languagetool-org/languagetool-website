@@ -45,6 +45,12 @@
             <td>LanguageTool donation</td>
         </tr>
     </table>
+    
+    <h2>History</h2>
+    
+    <p>We keep a log of donations in
+    <a href="https://docs.google.com/spreadsheets/d/1enGPqRUHMSDOsWK_HfP-1eVebz-WNWstHUpj76VlJRo/edit?usp=sharing">this
+    spread sheet</a>.</p>
 
 </div>
 
