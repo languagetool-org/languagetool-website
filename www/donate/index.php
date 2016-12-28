@@ -11,6 +11,18 @@
 <?php include("../../include/partials/nav.php"); ?>
 
 <div id="textContent">
+    
+    <p>LanguageTool currently has expenses of around €50/month: we pay for a virtual server (€40)
+    and for hosting of <a href="http://forum.languagetool.org">our forum</a> (€10). We are asking
+    for donations to cover new expenses:</p>
+    
+    <ul>
+        <li>Have two servers and a load balancer (EC2 instances at Amazon AWS) for better robustness
+        of our service. This would not only help languagetool.org, but also the Firefox, Chrome,
+        and Google Docs add-on.</li>
+        <li>Pay a student to work on <a href="/job/master-thesis.php">machine
+        learning approaches to text checking</a>.</li>
+    </ul>
 
     <h2>Donate by Credit Card or PayPal</h2>
 
