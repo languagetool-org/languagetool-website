@@ -24,7 +24,7 @@
         learning approaches to text checking</a>.</li>
     </ul>
 
-    <h2>Donate by Credit Card or PayPal</h2>
+    <h2>Donate by Credit Card</h2>
 
     <p>LanguageTool is looking for donations to improve its language checking capabilities and to make the service
     on languagetool.org more stable by adding more servers.</p>
@@ -32,7 +32,17 @@
     <script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/extend-languagetool?recurring=true&hide_donation_meter=true" height="685px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>
     
     <!--<p>Using this form, you'll receive a receipt via email.</p>-->
-    
+
+
+    <h2>Donate by PayPal</h2>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="DZ7EREANKYKXW" />
+        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+
     
     <h2>Donate by Wire Transfer</h2>
 
