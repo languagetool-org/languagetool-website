@@ -61,6 +61,8 @@
     $downloadLabelFx = "Для <strong>Firefox</strong>";
     $downloadLabelChrome = "Для <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Расширение для браузера";
+    $downloadLabelGoogleDocs = "Для <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Расширение для Google Docs";
     $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
     $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>  (<a href='https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md'>список изменений</a>).";
     $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
@@ -85,7 +87,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 618 правил</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 703 правила</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
