@@ -81,7 +81,7 @@
 
 <div id="languageContent">
 
-<h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
+<h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
     <ul>
         <li><strong>Gramática</strong>
@@ -180,7 +180,7 @@
 -->
       </tr>
     </table>
-</div>
+
 
 <!-- TODO Information is repeated. Consider removal.
 <h2>Requisitos</h2>
