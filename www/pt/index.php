@@ -9,9 +9,8 @@
 
     // ------------- TRANSLATIONS START HERE -------------
 
-    $title = "LanguageTool Corrector Gramatical e de Estilo";
+    $title = "LanguageTool Corretor Gramatical e de Estilo";
 
-    // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
         'de-DE'  => 'Alemão',
         'ast' => 'Asturiano',
@@ -47,9 +46,9 @@
 
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto (Ctrl+Return)";
-    $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
+    $toggleFullscreenMode = "Ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é um programa de Código Aberto de verificação gramatical para Português, Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
+    $introText1 = "O <strong>LanguageTool</strong> é um programa de livre e de código aberto para verificação gramatical em Português, Inglês, Francês, Alemão, Polaco, entre outros <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Transferir";
@@ -74,7 +73,6 @@
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
-
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
     <ul>
@@ -182,11 +180,9 @@
 <div id="languageContent">
 <h2>Outras versões</h2>
 
-<p>Builds diários não testados, no estado actual de desenvolvimento, estão 
-disponíveis em
-<a href="../download/snapshots/?C=M;O=D">SNAPSHOTS</a>
- (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">lista de novidades</a>).
-  As versões antigas continuam disponíveis no diretório de <a href="../download/">transferências</a>.</p>
+<p>Os <em>builds</em> diários não testados, no estado actual de desenvolvimento, estão disponíveis em <a href="../download/snapshots/?C=M;O=D">SNAPSHOTS</a>
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">lista de novidades</a>).</p>
+<p>As versões antigas continuam disponíveis no diretório de <a href="../download/">transferências</a>.</p>
 
 <h2>Licença e Código-Fonte</h2>
 
