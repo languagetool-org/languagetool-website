@@ -46,7 +46,7 @@
     );
 
     $checkSubmitButtonValue = "Verificar Texto";
-    $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
+    $checkSubmitButtonTitle = "Verificar Texto (Ctrl+Return)";
     $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
     $introText1 = "O <strong>LanguageTool</strong> é um programa de Código Aberto de verificação gramatical para Português, Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
@@ -193,7 +193,7 @@ disponíveis em
 <p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Os dicionários utilizados são os <a href="http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main">Dicionários Natura</a>. Para informações sobre as licenças dos componente consulte o <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README.txt">README.txt</a>.</p>
 <p>O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
 
-<h2>Versão Português Brasileiro</h2>
+<h2>Versão em Português do Brasil</h2>
 <p>Pode visitar a página para o Português do Brasil, <a href="https://languagetool.org/pt-BR/">aqui</a>.</p>
 
 </div>

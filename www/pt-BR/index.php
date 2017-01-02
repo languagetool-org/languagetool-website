@@ -42,7 +42,7 @@
         'uk'  => 'Ukrainian'
     );
     $checkSubmitButtonValue = "Verificar Texto";
-    $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
+    $checkSubmitButtonTitle = "Verificar Texto (Ctrl+Return)";
     $toggleFullscreenMode = "Alternar para tela inteira";
     $introText1 = "O <strong>LanguageTool</strong> é um <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
@@ -148,7 +148,7 @@ O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/li
 	<li>Estou feliz por<span class="errorMarker" title="Espaço duplo em uma frase.">&nbsp;&nbsp;</span>você.</li>
  </ul> 
  
-<h2>Versão Português Europeu</h2>
+<h2>Versão em Português Europeu</h2>
 <p>O LanguageTool também possui uma página especial para o português europeu, <a href="https://languagetool.org/pt/">clique aqui</a>
 para ser redirecionado.</p>
 
