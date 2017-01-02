@@ -55,13 +55,13 @@
     $downloadHeadline = "Descarregar";
     $downloadRequiresJava = "Requer Java {version}+";
     $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
-    $downloadTitleStandAlone = "Independente para <strong>Desktop</strong>";
+    $downloadTitleStandAlone = "Para <strong>Desktop</strong>";
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extra do Navegador";
-    $checklistText = "Por favor vê a <a href='/issues/'>lista de problemas comuns</a> se experienciares problemas.";
-    $otherDownloadsText = "Descarrega <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
-    $webstartText = "Inicia-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
+    $checklistText = "Por favor veja a <a href='/issues/'>lista de problemas comuns</a> se tiver problemas.";
+    $otherDownloadsText = "Descarregue <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
+    $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
@@ -77,15 +77,15 @@
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 <h2>Versão Português Brasileiro</h2>
-<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">clique aqui</a>
+<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">carregue aqui</a>
 para ser redirecionado.</p>
 
 <h2>Descarregar</h2>
 
-<p>Usar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
-<strong>Tens problemas? Por favor lê a <a href="../issues">lista de problemas comuns</a>.</strong></p>
+<p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
+<strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
-<noscript class="warning">Por favor activa o Javascript - é usado para mostrar algumas dicas após iniciares uma transferência</noscript>
+<noscript class="warning">Por favor, activa o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
 
     <!--
     <div class="downloadSection">
@@ -93,7 +93,7 @@ para ser redirecionado.</p>
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li><strong>Recomendamos fortemente usar o
+            <li><strong>Recomendamos vivamente utilizar o
 			<a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou 
 			acima) ou o
               <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou 
