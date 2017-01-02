@@ -85,7 +85,7 @@
                 <li>Verficação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
             </ul>
         </li>
-        <li><strong>Palavras Compostas</strong>
+        <li><strong>Palavras compostas</strong>
             <ul>
                 <li>Novas regras para deteção de palavras compostas;<!--  <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.--></li>
                 <li>Melhorias significativas no reconhecimento de palavras hifenizadas;<!-- <span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.--></li>
@@ -140,30 +140,19 @@
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
-    
-    </div>
-    <div class="downloadSection">
-    <table width="90%">
-        <td valign="top">
 
-<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
+    <h2>LibreOffice</h2>
 
-<h2>LibreOffice</h2>
-
-<a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
+    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-          <ul style="padding-left: 20px">
-            <li><strong>Recomendamos utilizar a versão mais recente do
-			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
-            <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no OpenOffice/LibreOffice para instalar a extensão;</li>
-            <li><strong>Reinicie</strong> o OpenOffice/LibreOffice após a instalação da extensão;</li>
-            <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong>
-		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
-          </ul>
-        </td>
-        <td></td>
+    <ul>
+       <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
+       <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no OpenOffice/LibreOffice para instalar a extensão;</li>
+       <li><strong>Reinicie</strong> o OpenOffice/LibreOffice após a instalação da extensão;</li>
+       <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
+     </ul>
 
 <!--
         <td valign="top">
