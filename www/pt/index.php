@@ -73,12 +73,6 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-    <div class="downloadSection">
-    <table width="90%">
-        <td valign="top">
-
-<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
-
 <div id="languageContent">
 
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
@@ -146,6 +140,13 @@
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
+    
+    </div>
+    <div class="downloadSection">
+    <table width="90%">
+        <td valign="top">
+
+<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
 
 <h2>LibreOffice</h2>
 
@@ -180,7 +181,7 @@
 -->
       </tr>
     </table>
-
+  </div>
 
 <!-- TODO Information is repeated. Consider removal.
 <h2>Requisitos</h2>
@@ -189,6 +190,7 @@
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 -->
 
+<div id="languageContent">
 <h2>Outras versões</h2>
 
 <p>Builds diários não testados, no estado actual de desenvolvimento, estão 
