@@ -72,7 +72,7 @@
 
 <div id="languageContent">
 
-<a title="O LanguageTool instalado como um add-on no LibreOffice 3.3" class="fancyboxImage"
+<a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
@@ -85,51 +85,44 @@ para ser redirecionado.</p>
 <p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
-<noscript class="warning">Por favor, activa o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
+<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
 
-    <!--
     <div class="downloadSection">
     <table width="90%">
         <td valign="top">
 
           <ul style="padding-left: 20px">
-            <li><strong>Recomendamos vivamente utilizar o
-			<a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou 
-			acima) ou o
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou 
-			acima) visto as versões anteriores terem um bug que causa uma pausa 
+            <li><strong>Recomendamos utilizar a versão mais recente do
+			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong> 
+			visto que algumas versões mais antigas têm um erro que causa problemas 
 			no arranque.</li>
-            <li>Usa <em>Tools -&gt; Extension Manager -&gt; Add...</em> no LibreOffice/OpenOffice 
+            <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no OpenOffice/LibreOffice 
 			para instalar este ficheiro</li>
-            <li><strong>Reinicia o OpenOffice/LibreOffice</strong> após a 
+            <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
 			instalação da extensão</li>
-            <li>Se usares o LibreOffice 3.5.x e queres verificar textos em 
-			Inglês: Usa <em>Options -> Language Settings -> Writing Aids -> Edit...</em> 
-			para desactivar o LightProof e activar o LanguageTool para o Inglês</li>
+            <li>Se utilizar o LibreOffice 3.5.x (ou superior), ative o LanguageTool 			em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em> 
+			, desactive o LightProof e active o LanguageTool.</li>
           </ul>
-
         </td>
-
         <td></td>
 
+<!--
         <td valign="top">
-
           <ul style="padding-left: 20px">
-            <li>Faz unzip ao ficheiro e inicia o languagetool.jar com um 
-			duplo clique. Vê também <a href="../usage/">outras formas de usar o LanguageTool</a>.</li>
+            <li>Descomprima o ficheiro e inicie o languagetool.jar com um 
+			duplo clique. Veja também <a href="../usage/">outras formas de utilizar o LanguageTool</a>.</li>
           </ul>
         </td>
 
         <td valign="top">
           <div style="margin-left: 5px">
-              Verifica o texto seleccionado em páginas web e<br/>em campos de texto. Não necessita Java!
+              Verifique o texto seleccionado em páginas web e<br/>em campos de texto. Não necessita Java!
           </div>
         </td>
-
+-->
       </tr>
     </table>
 </div>
--->
 
 <p>Builds diários não testados, do estado actual de desenvolvimento, estão 
 disponíveis na
