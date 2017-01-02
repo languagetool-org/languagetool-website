@@ -78,7 +78,7 @@
 
 <h2>Requisitos</h2>
 
-<p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
+<p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou superior.
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
 <noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
@@ -122,16 +122,16 @@
     </table>
 </div>
 
-<p>Builds diários não testados, do estado actual de desenvolvimento, estão 
-disponíveis na
-<a href="../download/snapshots/?C=M;O=D">directoria de snapshots</a>
- (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">CHANGES.md</a>).
- Versões antigas continuam disponíveis na <a href="../download/">directoria de download</a>.</p>
+<p>Builds diários não testados, no estado actual de desenvolvimento, estão 
+disponíveis em
+<a href="../download/snapshots/?C=M;O=D">SNAPSHOTS</a>
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">lista de novidades</a>).
+  As versões antigas continuam disponíveis no diretório de <a href="../download/">transferências</a>.</p>
 
 
 <h2>Licença e Código-Fonte</h3>
 
-<p>O LanguageTool está disponível gratuitamente sob a <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
+<p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
 
 <h3>Versão Português Brasileiro</h2>
