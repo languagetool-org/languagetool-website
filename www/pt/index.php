@@ -57,8 +57,8 @@
     $downloadTitleStandAlone = "Para <strong>Desktop</strong>";
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
-    $downloadLabelBrowserAddOn = "Extra do Navegador";
-    $checklistText = "Por favor, veja a <a href='/issues/'>lista de problemas comuns</a> se tiver problemas.";
+    $downloadLabelBrowserAddOn = "Extra para o Navegador Web";
+    $checklistText = "Se tiver problemas, por favor, veja a <a href='/issues/'>lista de soluções</a>.";
     $otherDownloadsText = "Descarregue <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
