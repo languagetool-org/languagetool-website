@@ -13,43 +13,43 @@
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
-        'ast' => 'Asturian',
-        'be'  => 'Belarusian',
-        'br'  => 'Breton',
-        'ca'  => 'Catalan',
-        'zh'  => 'Chinese',
-        'da'  => 'Danish',
-        'nl'  => 'Dutch',
-        'en-US'  => 'English',
+        'de-DE'  => 'Alemão',
+        'ast' => 'Asturiano',
+        'be'  => 'Biolorusso',
+        'br'  => 'Bretão',
+        'ca'  => 'Catalão',
+        'zh'  => 'Chinês',
+        'da'  => 'Dinamarquês',
+        'en-US'  => 'Inglês (EUA)',
+        'sk'  => 'Eslovaco',
+        'sl'  => 'Esloveno',
+        'es'  => 'Espanhol',
         'eo'  => 'Esperanto',
-        'fr'  => 'French',
-        'gl'  => 'Galician',
-        'de-DE'  => 'German',
-        'el'  => 'Greek',
-        'is'  => 'Icelandic',
-        'it'  => 'Italian',
-        'ja'  => 'Japanese',
+        'tl'  => 'Filipino',
+        'fr'  => 'Francês',
+        'gl'  => 'Galego',
+        'nl'  => 'Holandês',
+        'el'  => 'Grego',
+        'is'  => 'Islandês',
+        'it'  => 'Italiano',
+        'ja'  => 'Japonês',
         'km'  => 'Khmer',
         //'lt'  => 'Lithuanian',
         //'ml'  => 'Malayalam',
-        'fa'  => 'Persian',
-        'pl'  => 'Polish',
+        'fa'  => 'Persa',
+        'pl'  => 'Polaco',
         'pt'  => 'Português',
-        'ro'  => 'Romanian',
-        'ru'  => 'Russian',
-        'sk'  => 'Slovak',
-        'sl'  => 'Slovenian',
-        'es'  => 'Spanish',
-        'sv'  => 'Swedish',
-        'tl'  => 'Tagalog',
-        'uk'  => 'Ukrainian'
+        'ro'  => 'Romeno',
+        'ru'  => 'Russo',
+        'sv'  => 'Sueco',
+        'uk'  => 'Ucraniano'
     );
 
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto";    //TODO: add "also possible by using Ctrl+Return"
     $toggleFullscreenMode = "Alternar o modo de ecrã inteiro";
 
-    $introText1 = "O <strong>LanguageTool</strong> é <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
+    $introText1 = "O <strong>LanguageTool</strong> é um programa de Código Aberto de verificação gramatical para Português, Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
     $downloadHeadline = "Transferir";
@@ -63,6 +63,9 @@
     $otherDownloadsText = "Descarregue <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
+    $firefoxLink = '<a href="/firefox/">Mais Informações</a>';
+    $chromeLink = '<a href="/chrome/">Mais Informações</a>';
+
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
@@ -70,16 +73,73 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<div id="languageContent">
+<h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Concordância nominal de género e número;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.--></li>
+                <li>Concordância verbal entre sujeito e verbo;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.--></li>
+                <li>Verficação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
+            </ul>
+        </li>
+        <li><strong>Palavras Compostas</strong>
+            <ul>
+                <li>Novas regras para deteção de palavras compostas;<!--  <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.--></li>
+                <li>Melhorias significativas no reconhecimento de palavras hifenizadas;<!-- <span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras para duplicação de elementos</strong>
+            <!-- <ul>
+                <li>Er hat <span class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</span> Frage gestellt.</li>
+            </ul>-->
+        </li>
+        <li><strong>Regras para reconhecimento de vícios de linguagem</strong>
+            <ul>
+                <li>Redundâncias;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
+                <li>Clichés;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Repetições;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Símbolos monetários;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
+                <li>Espaçamento;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Sinais tipográficos;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de semântica</strong>
+            <ul>
+                <li>Reconhecimento e validação de datas;<!--  <span class="errorMarker" title="Möglicher Rechtschreibfehler gefunden. Vorschlag: normale">nromale</span> Rechtschreibprüfung:--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de estilo</strong>
+            <ul>
+                <li>Repetições;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
+                <li>Gerundismo;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Voz passiva;<!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Frases longas; <!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Deteção de fragmentos;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+            </ul>
+        </li>
+        <li><strong>Reconhecimento das várias variantes de Português</strong>
+            <ul>
+                <li>Regras específicas para Português de Portugal;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
+                <li>Regras específicas para o Novo Acordo Ortográfico;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Suporte adicionado para Português de Angola, Cabo Verde, Timor Leste, Guiné-Bissau, Macau, Moçambique e São Tomé e Príncipe;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Atualização de dicionários e da base de dados morfológica;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <!-- <li> <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?</li>-->
+            </ul>
+        </li>
+        <li><strong>Correções e melhorias diversas aos componentes antigos</strong> <!-- <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
+            <ul>
+                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
+            </ul>-->
+        </li>
+        <li><strong>E muito mais…</strong></li>
+    </ul>
 
-<a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
-   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-<h2>Requisitos</h2>
-
-<p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou superior.
-<strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 
 <noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
 
@@ -89,17 +149,19 @@
 
 <h2>LibreOffice</h2>
 
+<div id="languageContent">
+
+<a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
+   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
+
           <ul style="padding-left: 20px">
             <li><strong>Recomendamos utilizar a versão mais recente do
-			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong> 
-			visto que algumas versões mais antigas têm um erro que causa problemas 
-			no arranque.</li>
-            <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no OpenOffice/LibreOffice 
-			para instalar a extensão;</li>
-            <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
-			instalação da extensão;</li>
+			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
+            <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no OpenOffice/LibreOffice para instalar a extensão;</li>
+            <li><strong>Reinicie</strong> o OpenOffice/LibreOffice após a instalação da extensão;</li>
             <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong>
-		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>.</li>
+		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
           </ul>
         </td>
         <td></td>
@@ -122,21 +184,28 @@
     </table>
 </div>
 
+<!-- TODO Information is repeated. Consider removal.
+<h2>Requisitos</h2>
+
+<p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou superior.
+<strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
+-->
+
+<h2>Outras versões</h2>
+
 <p>Builds diários não testados, no estado actual de desenvolvimento, estão 
 disponíveis em
 <a href="../download/snapshots/?C=M;O=D">SNAPSHOTS</a>
  (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">lista de novidades</a>).
   As versões antigas continuam disponíveis no diretório de <a href="../download/">transferências</a>.</p>
 
+<h2>Licença e Código-Fonte</h2>
 
-<h2>Licença e Código-Fonte</h3>
+<p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Os dicionários utilizados são os <a href="http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main">Dicionários Natura</a>. Para informações sobre as licenças dos componente consulte o <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README.txt">README.txt</a>.</p>
+<p>O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
 
-<p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
-O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
-
-<h3>Versão Português Brasileiro</h2>
-<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">carregue aqui</a>
-para ser redirecionado.</p>
+<h2>Versão Português Brasileiro</h2>
+<p>Pode visitar a página para o Português do Brasil, <a href="https://languagetool.org/pt-BR/">aqui</a>.</p>
 
 </div>
 
