@@ -63,6 +63,73 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
+<h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Concordância nominal de género e número;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.--></li>
+                <li>Concordância verbal entre sujeito e verbo;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.--></li>
+                <li>Verficação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
+            </ul>
+        </li>
+        <li><strong>Palavras Compostas</strong>
+            <ul>
+                <li>Novas regras para deteção de palavras compostas;<!--  <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.--></li>
+                <li>Melhorias significativas no reconhecimento de palavras hifenizadas;<!-- <span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras para duplicação de elementos</strong>
+            <!-- <ul>
+                <li>Er hat <span class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</span> Frage gestellt.</li>
+            </ul>-->
+        </li>
+        <li><strong>Regras para reconhecimento de vícios de linguagem</strong>
+            <ul>
+                <li>Redundâncias;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
+                <li>Clichés;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Repetições;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Símbolos monetários;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
+                <li>Espaçamento;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Sinais tipográficos;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de semântica</strong>
+            <ul>
+                <li>Reconhecimento e validação de datas;<!--  <span class="errorMarker" title="Möglicher Rechtschreibfehler gefunden. Vorschlag: normale">nromale</span> Rechtschreibprüfung:--></li>
+            </ul>
+        </li>
+        <li><strong>Regras de estilo</strong>
+            <ul>
+                <li>Repetições;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
+                <li>Gerundismo;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Voz passiva;<!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Frases longas; <!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Deteção de fragmentos;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+            </ul>
+        </li>
+        <li><strong>Reconhecimento das várias variantes de Português</strong>
+            <ul>
+                <li>Regras específicas para Português de Portugal;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
+                <li>Regras específicas para o Novo Acordo Ortográfico;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Suporte adicionado para Português de Angola, Cabo Verde, Timor Leste, Guiné-Bissau, Macau, Moçambique e São Tomé e Príncipe;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Atualização de dicionários e da base de dados morfológica;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <!-- <li> <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?</li>-->
+            </ul>
+        </li>
+        <li><strong>Correções e melhorias diversas aos componentes antigos</strong> <!-- <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
+            <ul>
+                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
+            </ul>-->
+        </li>
+        <li><strong>E muito mais…</strong></li>
+    </ul>
+
+
 <div id="languageContent">
 
 <a title="O LanguageTool instalado como uma extensão do LibreOffice 3.3" class="fancyboxImage"
