@@ -45,7 +45,7 @@
     $checkSubmitButtonTitle = "Verificar Texto (Ctrl+Return)";
     $toggleFullscreenMode = "Alternar para tela inteira";
     $introText1 = "O <strong>LanguageTool</strong> é um <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
-    $introText2 = "";
+    $introText2 = "Encontra muitos erros que um corretor ortográfico não consegue detectar, e também deteta problemas de gramática.";
     $downloadHeadline = "Baixar";
     $downloadRequiresJava = "Requer Java {version}+";
     $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";

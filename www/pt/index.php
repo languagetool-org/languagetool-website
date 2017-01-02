@@ -49,7 +49,7 @@
     $toggleFullscreenMode = "Ecrã inteiro";
 
     $introText1 = "O <strong>LanguageTool</strong> é um programa livre e de código aberto para verificação gramatical em Português, Inglês, Francês, Alemão, Polaco, entre outros <a href='/languages/'>20 idiomas</a>.";
-    $introText2 = "";
+    $introText2 = "Encontra muitos erros que um corretor ortográfico não consegue detetar, e também deteta problemas de gramática.";
 
     $downloadHeadline = "Transferir";
     $downloadRequiresJava = "Requer Java {version}+";
