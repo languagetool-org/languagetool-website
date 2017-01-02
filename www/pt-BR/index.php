@@ -63,6 +63,12 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
+<div id="languageContent">
+
+<a title="O LanguageTool instalado como uma extensão do LibreOffice 3.3" class="fancyboxImage"
+   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
+
 <h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
     <ul>
@@ -128,13 +134,6 @@
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
-
-
-<div id="languageContent">
-
-<a title="O LanguageTool instalado como uma extensão do LibreOffice 3.3" class="fancyboxImage"
-   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
 <!-- FUNCIONALIDADES -->
 <h2>Funcionalidades</h2>

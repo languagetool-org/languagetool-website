@@ -73,6 +73,12 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
+<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
+
+    <div class="downloadSection">
+    <table width="90%">
+        <td valign="top">
+
 <h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
     <ul>
@@ -138,14 +144,6 @@
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
-
-
-
-<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
-
-    <div class="downloadSection">
-    <table width="90%">
-        <td valign="top">
 
 <h2>LibreOffice</h2>
 
