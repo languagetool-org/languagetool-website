@@ -52,14 +52,14 @@
     $introText1 = "O <strong>LanguageTool</strong> é <em>software</em> de Código Aberto de verificação gramatical para o Inglês, Francês, Alemão, Polaco, e mais de <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "";
 
-    $downloadHeadline = "Descarregar";
+    $downloadHeadline = "Transferir";
     $downloadRequiresJava = "Requer Java {version}+";
     $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "Para <strong>Desktop</strong>";
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extra do Navegador";
-    $checklistText = "Por favor veja a <a href='/issues/'>lista de problemas comuns</a> se tiver problemas.";
+    $checklistText = "Por favor, veja a <a href='/issues/'>lista de problemas comuns</a> se tiver problemas.";
     $otherDownloadsText = "Descarregue <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
@@ -76,7 +76,7 @@
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-<h2>Transferir</h2>
+<h2>Requisitos</h2>
 
 <p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
@@ -87,6 +87,8 @@
     <table width="90%">
         <td valign="top">
 
+<h2>LibreOffice</h2>
+
           <ul style="padding-left: 20px">
             <li><strong>Recomendamos utilizar a versão mais recente do
 			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong> 
@@ -96,9 +98,8 @@
 			para instalar a extensão;</li>
             <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
 			instalação da extensão;</li>
-            <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>ative o LanguageTool</strong>
-		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>
-			, <strong>desactive o LightProof e active o LanguageTool</strong>.</li>
+            <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong>
+		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>.</li>
           </ul>
         </td>
         <td></td>
@@ -128,7 +129,7 @@ disponíveis na
  Versões antigas continuam disponíveis na <a href="../download/">directoria de download</a>.</p>
 
 
-<h3>Licença e Código-Fonte</h3>
+<h2>Licença e Código-Fonte</h3>
 
 <p>O LanguageTool está disponível gratuitamente sob a <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>

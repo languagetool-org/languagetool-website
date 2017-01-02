@@ -93,27 +93,24 @@ para ser redirecionado.</p>
 
 <noscript class="warning">Por favor ative o Javascript - é usado para mostrar algumas dicas durante uma transferência</noscript>
 
-    <!--
-    <div class="downloadSection">
-    <table width="90%">
-        <td valign="top">
+<h2>LibreOffice</h2>
+
           <ul style="padding-left: 20px">
-            <li><strong>Recomendamos usar o
-			<a href="http://www.libreoffice.org/download">LibreOffice 3.5.4</a></strong> (ou 
-			acima) ou o
-              <strong><a href="http://www.openoffice.org/download/">Apache OpenOffice 3.4.1</a></strong> (ou 
-			acima) visto as versões anteriores terem um bug que causa uma pausa 
-			no início.</li>
-            <li>Usa <em>Tools -&gt; Extension Manager -&gt; Add...</em> no LibreOffice/OpenOffice 
-			para instalar este ficheiro</li>
-            <li><strong>Reinicia o OpenOffice/LibreOffice</strong> após a 
-			instalação da extensão</li>
-            <li>Se você usa o LibreOffice 3.5.x e quer verificar textos em 
-			Inglês: Use <em>Options -> Language Settings -> Writing Aids -> Edit...</em> 
-			para desativar o LightProof e ativar o LanguageTool para o Inglês</li>
+            <li><strong>Recomendamos utilizar a versão mais recente do
+			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong> 
+			visto que algumas versões mais antigas têm um erro que causa problemas 
+			no arranque.</li>
+            <li>Use <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no OpenOffice/LibreOffice 
+			para instalar a extensão;</li>
+            <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
+			instalação da extensão;</li>
+            <li>Se usar o LibreOffice 3.5.x (ou superior), <strong>ative o LanguageTool</strong>
+		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>
+			, <strong>desative o LightProof e ative o LanguageTool</strong>.</li>
           </ul>
         </td>
         <td></td>
+<!--
         <td valign="top">
           <ul style="padding-left: 20px">
             <li>Faça unzip ao ficheiro e inicie o languagetool.jar com um 
