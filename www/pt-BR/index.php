@@ -53,9 +53,15 @@
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extensão do Navegador";
+    $downloadLabelGoogleDocs = "Para o <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Complemento";
     $checklistText = "Por favor veja nossa <a href='/issues/'>lista de problemas comuns</a> se ocorrerem problemas.";
     $otherDownloadsText = "Baixar <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
     $webstartText = "Iniciar com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
+
+    $firefoxLink = '<a href="/firefox/">Mais Informações</a>';
+    $chromeLink = '<a href="/chrome/">Mais Informações</a>';
+
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>

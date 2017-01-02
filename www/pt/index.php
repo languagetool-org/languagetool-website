@@ -53,13 +53,15 @@
 
     $downloadHeadline = "Transferir";
     $downloadRequiresJava = "Requer Java {version}+";
-    $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
-    $downloadTitleStandAlone = "Para <strong>Desktop</strong>";
-    $downloadLabelFx = "Para <strong>Firefox</strong>";
-    $downloadLabelChrome = "Para <strong>Chrome</strong>";
+    $downloadTitle = "Para o <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
+    $downloadTitleStandAlone = "Para o <strong>Desktop</strong>";
+    $downloadLabelFx = "Para o <strong>Firefox</strong>";
+    $downloadLabelChrome = "Para o <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extra para o Navegador Web";
+    $downloadLabelGoogleDocs = "Para o <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Complemento";
     $checklistText = "Se tiver problemas, por favor, veja a <a href='/issues/'>lista de soluções</a>.";
-    $otherDownloadsText = "Descarregue <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'>builds diários</a>.";
+    $otherDownloadsText = "Descarregue as <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'><em>builds</em> diários</a>.";
     $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     $firefoxLink = '<a href="/firefox/">Mais Informações</a>';
