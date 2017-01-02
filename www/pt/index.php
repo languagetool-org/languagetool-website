@@ -76,11 +76,7 @@
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
 
-<h2>Versão Português Brasileiro</h2>
-<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">carregue aqui</a>
-para ser redirecionado.</p>
-
-<h2>Descarregar</h2>
+<h2>Transferir</h2>
 
 <p>Utilizar o LanguageTool localmente requer o <a href="http://www.java.com/en/download/manual.jsp">Java&nbsp;<span lang="en-gb">8</span></a> ou acima.
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
@@ -97,11 +93,12 @@ para ser redirecionado.</p>
 			visto que algumas versões mais antigas têm um erro que causa problemas 
 			no arranque.</li>
             <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no OpenOffice/LibreOffice 
-			para instalar este ficheiro</li>
+			para instalar a extensão;</li>
             <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
-			instalação da extensão</li>
-            <li>Se utilizar o LibreOffice 3.5.x (ou superior), ative o LanguageTool 			em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em> 
-			, desactive o LightProof e active o LanguageTool.</li>
+			instalação da extensão;</li>
+            <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>ative o LanguageTool</strong>
+		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>
+			, <strong>desactive o LightProof e active o LanguageTool</strong>.</li>
           </ul>
         </td>
         <td></td>
@@ -131,10 +128,14 @@ disponíveis na
  Versões antigas continuam disponíveis na <a href="../download/">directoria de download</a>.</p>
 
 
-<h3>Licença &amp; Código-Fonte</h3>
+<h3>Licença e Código-Fonte</h3>
 
 <p>O LanguageTool está disponível gratuitamente sob a <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>.
 O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
+
+<h3>Versão Português Brasileiro</h2>
+<p>O LanguageTool também possui uma página especial para o português brasileiro, <a href="https://languagetool.org/pt-BR/">carregue aqui</a>
+para ser redirecionado.</p>
 
 </div>
 
