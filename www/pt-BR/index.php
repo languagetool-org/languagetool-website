@@ -71,7 +71,7 @@
 
 <!-- FUNCIONALIDADES -->
 <h2>Funcionalidades</h2>
-O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/list?lang=pt-BR">250 regras gramaticais</a> para o Português:<br/><br/>
+O LanguageTool possui mais de <a href="http://community.languagetool.org/rule/list?lang=pt-BR">1200 regras gramaticais</a> para o Português:<br/><br/>
 <small>(Esses são alguns dos vários erros que o LanguageTool é capaz de detectar.)</small>
    
  <ul>
