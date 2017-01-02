@@ -73,11 +73,13 @@
 <body>
 <?php include("../../include/page_start.php"); ?>
 
-<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
-
     <div class="downloadSection">
     <table width="90%">
         <td valign="top">
+
+<noscript class="warning">Por favor, active o Javascript - ele é utilizado para mostrar dicas após iniciar a transferência</noscript>
+
+<div id="languageContent">
 
 <h2><strong>Lançada a versão 3.6</strong> (28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
@@ -146,8 +148,6 @@
     </ul>
 
 <h2>LibreOffice</h2>
-
-<div id="languageContent">
 
 <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
