@@ -1,6 +1,12 @@
 ﻿<!doctype html>
 <html lang=pt>
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LanguageTool, o corretor gramatical livre e gratuito, com suporte para mais de 20 idiomas, incluíndo todas as variantes do português.">
+    <meta name="keywords" content="languageTool,gramática,corretor,corrector,gramatical,livre,
+         open-source,código,aberto,gratuito,grátis,verificação,
+         verificar,português,portuguesa,portugal,brasileiro,brasil,libreOffice,
+         openoffice,firefox,chrome">
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
@@ -61,7 +67,7 @@
     $downloadLabelGoogleDocs = "Para o <strong>Google Docs</strong>";
     $downloadLabelAddOn = "Complemento";
     $checklistText = "Se tiver problemas, por favor, veja a <a href='/issues/'>lista de soluções</a>.";
-    $otherDownloadsText = "Descarregue as <a href='/download/'>versões anteriores</a> ou os <a href='/download/snapshots/?C=M;O=D'><em>builds</em> diários</a>.";
+    $otherDownloadsText = "Também pode transferir <a href='/download/'>versões anteriores</a> ou <a href='/download/snapshots/?C=M;O=D'><em>builds</em> diários</a>.";
     $webstartText = "Inicie-o com o <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
 
     $firefoxLink = '<a href="/firefox/">Mais Informações</a>';
