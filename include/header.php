@@ -351,6 +351,7 @@
            'fr': 'Suggerer un mot pour le dictionnaire…',
            'nl': 'Suggest word for dictionary...',
            'pl': 'Zaproponuj dodanie wyrazu do słownika...',
+           'pt': 'Sugerir adicionar ao dicionário...',
            'ru': 'Предложить слово для словаря...',
            'fake': 'last entry so all previous items can end with a comma'
           },
@@ -361,6 +362,7 @@
            'de-DE': 'https://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
            'pl': 'http://www.sjp.pl',
+           'pt': 'https://community.languagetool.org/suggestion?word={word}&lang=pt',
            'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
