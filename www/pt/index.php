@@ -25,7 +25,7 @@
         'ca'  => 'Catalão',
         'zh'  => 'Chinês',
         'da'  => 'Dinamarquês',
-        'en-US'  => 'Inglês (EUA)',
+        'en-US'  => 'Inglês',
         'sk'  => 'Eslovaco',
         'sl'  => 'Esloveno',
         'es'  => 'Espanhol',
