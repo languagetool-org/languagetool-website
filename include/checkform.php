@@ -136,6 +136,8 @@ function printLangOption($langCode) {
                         <?php } else if ($checkDefaultLang == 'pt') { ?>
                             <option>PT</option>
                             <option>BR</option>
+                            <option>AO</option>
+                            <option>MZ</option>
                         <?php } else if ($checkDefaultLang == 'ca') { ?>
                             <option>ES</option>
                             <option>ES-Valencia</option>
