@@ -522,7 +522,7 @@
                     {code: 'DE', name: 'Germany'},
                     {code: 'AT', name: 'Austria'},
                     {code: 'CH', name: 'Switzerland'}],
-                'pt': [{code: 'PT', name: 'Portugal'}, {code: 'BR', name: 'Brazil'}], {code: 'AO', name: 'Angola'}], {code: 'MZ', name: 'Mozambique'}],
+                'pt': [{code: 'PT', name: 'Portugal'}, {code: 'BR', name: 'Brazil'}, {code: 'AO', name: 'Angola'}, {code: 'MZ', name: 'Mozambique'}],
                 'ca': [{code: 'ES', name: 'General'}, {code: 'ES-Valencia', name: 'Valencian'}]
             };
             if (langToSubLang[langCode]) {
