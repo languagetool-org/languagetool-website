@@ -243,6 +243,7 @@
            'fr': 'Aucune erreur trouvée.',
            'nl': 'Geen aandachtspunten gevonden.',
            'pl': 'Nie znaleziono błędów',
+           'pt': 'Não foram encontrados erros.',
            'ru': 'Ошибки не найдены.',
            'fake': 'last entry so all previous items can end with a comma'
           },
@@ -258,6 +259,7 @@
            'fr': 'Plus d’informations…',
            'nl': 'Uitleg...',
            'pl': 'Więcej informacji…',
+           'pt': 'Explicação…',
            'ru': 'Подробнее…',
            'fake': 'last entry so all previous items can end with a comma'
           },
@@ -306,7 +308,7 @@
            'eo': 'Ekzemploj…',
            'fr': 'Exemples…',
            'pl': 'Przykłady...',
-           'pt': 'Exemplos...',
+           'pt': 'Exemplos…',
            'ru': 'Примеры...',
            'sl': 'Primeri ...',
            'fake': 'last entry so all previous items can end with a comma'
@@ -320,7 +322,7 @@
            'eo': 'Neniu ekzemplo trovita por tiu regulo.',
            'fr': 'Aucun exemple trouvé pour cette règle.',
            'pl': 'Niestety nie znaleziono żadnych przykładów',
-           'pt': 'Desculpa, não encontrámos exemplos para esta regra.',
+           'pt': 'Não encontramos exemplos para esta regra.',
            'ru': 'Ни одного примера для этого правила не было найдено.',
            'sl': 'Žal za to napako ni primerov.',
            'fake': 'last entry so all previous items can end with a comma'
@@ -336,6 +338,7 @@
            'fr': 'Implémentation de la règle…',
            'nl': 'De techniek erachter...',
            'pl': 'Dodatkowe informacje o regule…',
+           'pt': 'Detalhes técnicos…',
            'ru': 'Описание реализации правила...',
            'sl': 'Implementacija pravila ...',
            'fake': 'last entry so all previous items can end with a comma'
@@ -351,7 +354,7 @@
            'fr': 'Suggerer un mot pour le dictionnaire…',
            'nl': 'Suggest word for dictionary...',
            'pl': 'Zaproponuj dodanie wyrazu do słownika...',
-           'pt': 'Sugerir adicionar ao dicionário...',
+           'pt': 'Adicionar ao dicionário…',
            'ru': 'Предложить слово для словаря...',
            'fake': 'last entry so all previous items can end with a comma'
           },
