@@ -221,6 +221,16 @@
               // Piwik tracking
               _paq.push(['trackEvent', val1, val2, val3]);
           }
+          if (localStorage) {
+              var actionCount = localStorage.getItem('actionCount');
+              if (actionCount == null) {
+                  actionCount = 0;
+                  localStorage.setItem('firstUse', new Date());  // get it back using new Date(Date.parse(localStorage.getItem('firstUse')))
+              } else {
+                  actionCount = parseInt(actionCount);
+              }
+              localStorage.setItem('actionCount', actionCount + 1);
+          }
       },
        
       _serverLog : function(message)
