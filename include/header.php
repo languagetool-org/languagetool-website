@@ -360,7 +360,8 @@
           },
        languagetool_i18n_suggest_word_url :
           {
-           // "Suggest word for dictionary...":
+           // "Suggest word for dictionary..." - if you add a community.languagetool.org URL,
+           // ask Daniel for the password to the web tool that helps managing the suggestions:
            'ca': 'https://community.languagetool.org/suggestion?word={word}&lang=ca',
            'de-DE': 'https://community.languagetool.org/suggestion?word={word}&lang=de',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
