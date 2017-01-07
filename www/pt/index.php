@@ -88,7 +88,7 @@
             <ul>
                 <li>Concordância nominal de género e número;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.--></li>
                 <li>Concordância verbal entre sujeito e verbo;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.--></li>
-                <li>Verficação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
+                <li>Verificação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
             </ul>
         </li>
         <li><strong>Palavras compostas</strong>
@@ -194,11 +194,11 @@
 
 <h2>Licença e Código-Fonte</h2>
 
-<p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Os dicionários utilizados são os <a href="http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main">Dicionários Natura</a>. Para informações sobre as licenças dos componente consulte o <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README.txt">README.txt</a>.</p>
+<p>O LanguageTool está disponível gratuitamente sob a licença <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. Os dicionários de verificação ortográfica utilizados são os <a href="http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main">Dicionários Natura</a>. O sintetizador e o dicionário morfológico são baseados numa derivação do <a href="https://github.com/TiagoSantos81/FreeLing">Freeling</a>. Para informações sobre as licenças dos componentes consulte o <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README.txt">README.txt</a>.</p>
 <p>O código-fonte está disponível em <a href="https://github.com/languagetool-org/">GitHub</a>.</p>
 
 <h2>Versão em Português do Brasil</h2>
-<p>Pode visitar a página para o Português do Brasil, <a href="https://languagetool.org/pt-BR/">aqui</a>.</p>
+<p>Também pode visitar a página na versão para Português do Brasil, <a href="https://languagetool.org/pt-BR/">aqui</a>.</p>
 
 </div>
 
