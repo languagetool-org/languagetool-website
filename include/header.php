@@ -187,6 +187,12 @@
            'AT': 'Österreich',
            'CH': 'Schweiz'
        }
+       'pt': {
+           'PT': 'Portugal',
+           'BR': 'Brasil',
+           'AO': 'Angola'
+           'MZ': 'Moçambique'
+       }
    };
 
    tinyMCE.init({
@@ -259,7 +265,7 @@
            'fr': 'Plus d’informations…',
            'nl': 'Uitleg...',
            'pl': 'Więcej informacji…',
-           'pt': 'Explicação…',
+           'pt': 'Mais informação…',
            'ru': 'Подробнее…',
            'fake': 'last entry so all previous items can end with a comma'
           },
