@@ -11,6 +11,7 @@
         include("../include/checkform.php");
       ?>
       <div id='maintainedInfo' class='languageHomepage'></div>
+      <div id='donationHint' class='languageHomepage'></div>
       <div id='languageInfo' class='languageHomepage'></div>
     </div>
   </div>

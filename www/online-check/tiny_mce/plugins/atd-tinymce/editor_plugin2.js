@@ -469,6 +469,7 @@ AtDCore.prototype.isIE = function() {
 
             /* create the nifty spinny thing that says "hizzo, I'm doing something fo realz" */
             plugin.editor.setProgressState(1);
+            t._logEventLocally();
 
             /* remove the previous errors */
             plugin._removeWords();
@@ -568,6 +569,11 @@ AtDCore.prototype.isIE = function() {
               // Piwik tracking
               _paq.push(['trackEvent', val1, val2, val3]);
           }
+          this._logEventLocally();
+      },
+       
+      _logEventLocally : function()
+      {
           if (localStorage) {
               var actionCount = localStorage.getItem('actionCount');
               if (actionCount == null) {
@@ -576,7 +582,19 @@ AtDCore.prototype.isIE = function() {
               } else {
                   actionCount = parseInt(actionCount);
               }
-              localStorage.setItem('actionCount', actionCount + 1);
+              actionCount++;
+              localStorage.setItem('actionCount', actionCount);
+              if (actionCount > 20) {  // only show to users with a certain level of activity
+                  var donationDiv = $("#donationHint");
+                  if (donationDiv.html() == "") {
+                      donationDiv.hide();
+                      donationDiv.html("<a href='/donate/'>Donate to help LanguageTool pay its expenses</a>");
+                      donationDiv.slideDown(1000);
+                      if (typeof(_paq) !== 'undefined') {
+                          _paq.push(['trackEvent', "DonationHintShown"]);
+                      }
+                  }
+              }
           }
       },
        
