@@ -13,6 +13,17 @@
 <div id="textContent">
 
     <h2>Master thesis job: development of a machine learning approach to detect grammar errors in English text</h2>
+    
+    <p><b style="color:darkred">This job is already taken. However, if you're interested in machine learning and
+    grammar checking, please contact
+    <script type="text/javascript">
+        <!--
+        var firstPart = "daniel.naber";
+        var lastPart = "languagetool.org";
+        document.write("<a href='mail" + "to:" + firstPart + "@" + lastPart + "'>Daniel<" + "/a>");
+        // -->
+    </script>
+    </b></p>
 
     <p>LanguageTool is an Open Source style and grammar checker that supports more than 20 languages.
     To further improve it, we're looking for a student to extend it with error detection rules based
@@ -58,7 +69,9 @@
     <b>Payment:</b> common local payment for a part-time student job<br>
     <b>Homepage:</b> <a href="https://languagetool.org">https://languagetool.org</a>
 
-    <p><strong>Interested? Please contact the LanguageTool maintainer, daniel.naber@languagetool.org</strong>
+    <!--
+    <p><strong>Interested? Please contact the LanguageTool maintainer, ...</strong>
+    -->
 
     <h3>About languagetool.org</h3>
 
