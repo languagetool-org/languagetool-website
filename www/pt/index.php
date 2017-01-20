@@ -150,8 +150,8 @@
     <h2>LibreOffice</h2>
 
     <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
-   href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
+   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="144" align="right"
+   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
 
     <ul>
        <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
