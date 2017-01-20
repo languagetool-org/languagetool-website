@@ -82,6 +82,11 @@
 
 <div id="languageContent">
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
+
+    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
+   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="118" align="right"
+   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
+
 <h3>Novidades</h3>
     <ul>
         <li><strong>Gramática</strong>
@@ -148,10 +153,6 @@
     </ul>
 
     <h2>LibreOffice</h2>
-
-    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
-   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="144" align="right"
-   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
 
     <ul>
        <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
