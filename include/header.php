@@ -363,7 +363,7 @@
            // "Suggest word for dictionary..." - if you add a community.languagetool.org URL,
            // ask Daniel for the password to the web tool that helps managing the suggestions:
            'ca': 'https://community.languagetool.org/suggestion?word={word}&lang=ca',
-           'de-DE': 'https://community.languagetool.org/suggestion?word={word}&lang=de',
+           'de-DE': 'https://community.languagetool.org/suggestion?word={word}&lang=de&email=off',
            'nl': 'http://www.opentaal.org/suggesties?word={word}',
            'pl': 'http://www.sjp.pl',
            'pt': 'https://community.languagetool.org/suggestion?word={word}&lang=pt',
