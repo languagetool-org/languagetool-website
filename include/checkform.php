@@ -56,7 +56,7 @@ function printLangOption($langCode) {
 }
 ?>
 
-<noscript class="warning">Please turn on Javascript to use this form, or use <a href="simple-check/">the fallback form</a></noscript>
+<noscript class="warning">Please turn on Javascript to use this form, or use <a href="https://community.languagetool.org/homepage/simpleCheck">the fallback form</a></noscript>
 
 <!--<script>
     if (navigator.userAgent.indexOf("Edge/") !== -1 || navigator.userAgent.indexOf("Trident/") !== -1) {
