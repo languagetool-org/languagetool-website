@@ -493,7 +493,7 @@
                 "ca": "També tenim una pàgina en català",
                 "ru": "Внимание: у нас есть страничка на русском языке!",
                 "pt": "Também temos uma página em Português",
-                "es": "También tenemos uma página en español",
+                "es": "También tenemos una página en español",
                 "uk": "Докладніше про українську в LanguageTool",
                 "pl": "Odwiedź stronę programu LanguageTool po polsku",
                 "zh": "Visit our Chinese page about LanguageTool"
