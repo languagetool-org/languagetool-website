@@ -57,6 +57,7 @@ AtDCore.prototype.addI18n = function(localizations) {
 
 AtDCore.prototype.processJSON = function(responseJSON) {
     var json = jQuery.parseJSON(responseJSON);
+    var incompleteResults = json.warnings && json.warnings.incompleteResults;
     this.suggestions = [];
     for (var key in json.matches) {
         var match = json.matches[key];
@@ -90,7 +91,7 @@ AtDCore.prototype.processJSON = function(responseJSON) {
         }
         this.suggestions.push(suggestion);
     }
-    return this.suggestions;
+    return {suggestions: this.suggestions, incompleteResults: incompleteResults};
 };
 
 // Wrapper code by James Padolsey

@@ -57,6 +57,7 @@ AtDCore.prototype.addI18n = function(localizations) {
 
 AtDCore.prototype.processJSON = function(responseJSON) {
     var json = jQuery.parseJSON(responseJSON);
+    var incompleteResults = json.warnings && json.warnings.incompleteResults;
     this.suggestions = [];
     for (var key in json.matches) {
         var match = json.matches[key];
@@ -90,7 +91,7 @@ AtDCore.prototype.processJSON = function(responseJSON) {
         }
         this.suggestions.push(suggestion);
     }
-    return this.suggestions;
+    return {suggestions: this.suggestions, incompleteResults: incompleteResults};
 };
 
 // Wrapper code by James Padolsey
@@ -495,7 +496,7 @@ AtDCore.prototype.isIE = function() {
                   $('#feedbackMessage').html("Detected language: " + detectedLang);
                }
 
-               if (results.length == 0) {
+               if (results.suggestions.length == 0) {
                   var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
                   var noErrorsText = plugin.editor.getParam('languagetool_i18n_no_errors')[lang] || "No errors were found.";
                   if (languageCode === "auto") {
@@ -505,8 +506,11 @@ AtDCore.prototype.isIE = function() {
                }
                else {
                   plugin.markMyWords();
-                  ed.suggestions = results; 
+                  ed.suggestions = results.suggestions; 
                }
+                if (results.incompleteResults) {
+                    $('#feedbackErrorMessage').html("<div id='severeError'>These results may be incomplete due to a server timeout.</div>");
+                }
             });
          });
           
@@ -972,7 +976,9 @@ AtDCore.prototype.isIE = function() {
          var t = this;
          // There's a bug somewhere in AtDCore.prototype.markMyWords which makes
          // multiple spaces vanish - thus disable that rule to avoid confusion:
-         var postData = "disabledRules=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + langParam;
+         var postData = "disabledRules=WHITESPACE_RULE&" +
+             "allowIncompleteResults=true&" + 
+             "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + langParam;
          jQuery.ajax({
             url:   url,
             type:  "POST",

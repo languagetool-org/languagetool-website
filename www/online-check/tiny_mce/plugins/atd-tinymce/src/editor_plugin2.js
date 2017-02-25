@@ -148,7 +148,7 @@
                   $('#feedbackMessage').html("Detected language: " + detectedLang);
                }
 
-               if (results.length == 0) {
+               if (results.suggestions.length == 0) {
                   var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
                   var noErrorsText = plugin.editor.getParam('languagetool_i18n_no_errors')[lang] || "No errors were found.";
                   if (languageCode === "auto") {
@@ -158,8 +158,11 @@
                }
                else {
                   plugin.markMyWords();
-                  ed.suggestions = results; 
+                  ed.suggestions = results.suggestions; 
                }
+                if (results.incompleteResults) {
+                    $('#feedbackErrorMessage').html("<div id='severeError'>These results may be incomplete due to a server timeout.</div>");
+                }
             });
          });
           
@@ -625,7 +628,9 @@
          var t = this;
          // There's a bug somewhere in AtDCore.prototype.markMyWords which makes
          // multiple spaces vanish - thus disable that rule to avoid confusion:
-         var postData = "disabledRules=WHITESPACE_RULE&text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + langParam;
+         var postData = "disabledRules=WHITESPACE_RULE&" +
+             "allowIncompleteResults=true&" + 
+             "text=" + encodeURI(data).replace(/&/g, '%26').replace(/\+/g, '%2B') + langParam;
          jQuery.ajax({
             url:   url,
             type:  "POST",
