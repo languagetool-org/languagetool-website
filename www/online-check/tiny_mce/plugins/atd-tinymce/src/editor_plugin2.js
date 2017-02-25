@@ -162,6 +162,7 @@
                }
                 if (results.incompleteResults) {
                     $('#feedbackErrorMessage').html("<div id='severeError'>These results may be incomplete due to a server timeout.</div>");
+                    t._trackEvent('CheckError', 'ErrorWithException', "Incomplete Results");
                 }
             });
          });
