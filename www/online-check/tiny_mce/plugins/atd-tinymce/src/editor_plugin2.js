@@ -20,7 +20,7 @@
 (function() 
 {
    var JSONRequest = tinymce.util.JSONRequest, each = tinymce.each, DOM = tinymce.DOM;
-   var maxTextLength = 15000;
+   var maxTextLength = 20000;
 
    tinymce.create('tinymce.plugins.AfterTheDeadlinePlugin', 
    {
