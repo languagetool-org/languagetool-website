@@ -109,9 +109,8 @@ Pli malnovaj oficialaj versioj ankoraŭ haveblas en la
 <h2>Ĉu vi bezonas helpon?</h2>
 
 <p>Bonvolu vidi <a href="../issues">liston de la plej oftaj problemoj</a>.
-Por plia helpo, vi povas demandi aŭ en <a href="http://www.languagetool.org/forum/">la
-forumo</a>, aŭ en la <a href="https://lists.sourceforge.net/lists/listinfo/languagetool-devel">retpoŝta
-dissendlisto</a> aŭ retpoŝti al la
+Por plia helpo, vi povas demandi en <a href="http://www.languagetool.org/forum/">la
+forumo</a> (eblas demandi en Esperanto tie) aŭ retpoŝti al la
 <a href="mailto:dominique.pelle@gmail.com">verkisto de la Esperanta versio</a>.</p>
 
 <h2>Ligiloj al aliaj Esperantaj kontroliloj</h2>
