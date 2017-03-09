@@ -35,7 +35,7 @@
         'gl'  => 'Galego',
         'nl'  => 'Holandês',
         'el'  => 'Grego',
-        'is'  => 'Islandês',
+        //'is'  => 'Islandês',
         'it'  => 'Italiano',
         'ja'  => 'Japonês',
         'km'  => 'Khmer',

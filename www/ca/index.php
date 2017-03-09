@@ -24,7 +24,7 @@
         'gl' => 'gallec',
         'de-DE' => 'alemany',
         'es' => 'espanyol',
-        'is' => 'islandès',
+        //'is' => 'islandès',
         'it' => 'italià',
         'ca' => 'català',
         'km' => 'khmer',

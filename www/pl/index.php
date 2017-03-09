@@ -25,7 +25,7 @@
         'gl'  => 'galicyjski',
         'el'  => 'grecki',
         'es'  => 'hiszpański',
-        'is'  => 'islandzki',
+        //'is'  => 'islandzki',
         'ja'  => 'japoński',
         'km'  => 'kmerski',
         //'lt'  => 'litewski',

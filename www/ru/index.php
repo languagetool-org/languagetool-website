@@ -27,7 +27,7 @@
         'gl'  => 'Galician',
         'de-DE'  => 'German',
         'el'  => 'Greek',
-        'is'  => 'Icelandic',
+        //'is'  => 'Icelandic',
         'it'  => 'Italian',
         'ja'  => 'Japanese',
         'km'  => 'Khmer',

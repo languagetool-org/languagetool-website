@@ -26,7 +26,7 @@
         'fr' => 'français',
         'gl' => 'galicien',
         'el' => 'grec',
-        'is' => 'islandais',
+        //'is' => 'islandais',
         'it' => 'italien',
         'ja' => 'japonais',
         'km' => 'khmer',

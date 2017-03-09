@@ -21,7 +21,7 @@
         'fr' => 'galleg',
         'gl' => 'galizeg',
         'el' => 'gresianeg',
-        'is' => 'islandeg',
+        //'is' => 'islandeg',
         'it' => 'italianeg',
         'ja' => 'japaneg',
         'ca' => 'katalaneg',

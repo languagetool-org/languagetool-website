@@ -22,7 +22,7 @@
         'fr'  => 'Frans',
         'gl'  => 'Galicisch',
         'el'  => 'Grieks',
-        'is'  => 'IJslands',
+        //'is'  => 'IJslands',
         'it'  => 'Italiaans',
         'ja'  => 'Japans',
         'ca'  => 'Catalaans',

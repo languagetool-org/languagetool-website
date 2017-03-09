@@ -25,7 +25,7 @@
         'es' => 'hispana',
         'fr' => 'franca',
         'gl' => 'galega',
-        'is' => 'islanda',
+        //'is' => 'islanda',
         'it' => 'itala',
         'ja' => 'japana',
         'ca' => 'kataluna',
