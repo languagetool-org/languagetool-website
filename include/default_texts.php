@@ -14,7 +14,7 @@
         $map['it'] = "Inserite qui il vostro testo... oppure controlate direttamente questo ed avrete un assaggio di quali errori possono essere identificati con LanguageTool.";
         $map['pl'] = "Wpisz tekst lub użyj istniejącego przykładu. To jest przykładowy tekst który pokazuje, jak jak działa LanguageTool. LanguageTool ma jusz korektor psowni, który wyrurznia bledy na czewrono.";
         $map['pt'] = "Cole aqui seu texto...ou verifique esta texto, afim de revelar alguns dos dos problemas que o LanguageTool consegue detectar. Isto tal vez permita corrigir os seus erro. Nós prometo ajudá-lo. para testar a grafia e as regras do antigo) Acordo Ortográfico,, verifique o mesmo texto mesmo texto em Português de Angola ou Português de Moçambique e faça a analise dos resultados.. Nossa equipe espera que tenhas um feliz 2017.";
-        $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт.";
+        $map['ru'] = "Вставьте ваш текст сюда .. или проверьте этот текстт. Релиз LanguageTool 3.6 состоялся в четверг 28 декабря 2016 года.";
         $map['be'] = "Паспрабуйце напісаць нейкі тэкст з памылкамі, а LanguageTool паспрабуе паказаць нейкия найбольш распаусюджаныя памылки.";
         $map['da'] = "Indsæt din egen tekst her , eller brug denne tekst til at se nogle af de fejl LanguageTool fanger. vær opmærksom på at den langtfra er er perfect, men skal være en hjælp til at få standartfejl frem i lyset.";
         $map['el'] = "Επικολλήστε το κείμενο σας εδώ και κάντε κλικ στο κουμπί ελέγχου. Κάντε κλικ στις χρωματιστές φράσεις για λεπτομέρειες σχετικά με πιθανά σφάλματα. Για παράδειγμα σε αυτή τη πρόταση υπάρχουν εσκεμμένα λάθη για να να δείτε πώς λειτουργει το LanguageTool..";
