@@ -6,7 +6,6 @@ if (isset($downloadRequiresJava)) {
 } else {
     $downloadRequiresJava = "Needs Java $javaMinVersion+";
 }
-$newImg = "<img src='/images/new.png'>";
 $buttons1 = array(
     /*array(
         'title' => isset($downloadLabelFx) ? $downloadLabelFx : 'For <strong>Firefox</strong>',
@@ -27,7 +26,7 @@ $buttons1 = array(
         'below' => isset($chromeLink) ? $chromeLink : '<a href="/chrome/">More information</a>'
     ),
     array(
-        'title' => isset($downloadLabelGoogleDocs) ? $downloadLabelGoogleDocs.$newImg : "For <strong>Google Docs</strong>$newImg",
+        'title' => isset($downloadLabelGoogleDocs) ? $downloadLabelGoogleDocs : "For <strong>Google Docs</strong>",
         'link' => 'https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm',
         'onclick' => '',
         'additional_info' => isset($downloadLabelAddOn) ? $downloadLabelAddOn : 'Add-on',
