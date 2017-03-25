@@ -71,6 +71,8 @@ do
   commandOptions="-jar $jarFile check-data -l $lang -f $wikiFile -f $tatoebaFile --max-sentences $maxSentences --languagemodel $ngramDir"
   echo "Command options: ${commandOptions}"
   /usr/bin/time -p java $commandOptions 2>/tmp/lt-timing | sed -e 's/[0-9]\+.) //' >result_${lang}.new
+  cp result_stderr_${lang} result_stderr_${lang}.bak
+  cp /tmp/lt-timing result_stderr_${lang}
 
   # measure and draw performance graph:
   usertime=`grep "user" /tmp/lt-timing | sed "s/user //"`
