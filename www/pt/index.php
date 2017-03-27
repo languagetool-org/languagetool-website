@@ -97,7 +97,7 @@
                 <li>Melhorias significativas na deteção de fragmentos;</li>
                 <li>Melhorias significativas na deteção de homónimos e parónimos acentuados (p.ex. mau-mal);</li>
                 <li>Melhorias significativas nas regras de colocação pronominal.</li>
-                <li>Novas regras gramaticais em categorias</li>
+                <li>Novas regras gramaticais em categorias diversas</li>
             </ul>
         </li>
         <li><strong>Capitalização</strong>
