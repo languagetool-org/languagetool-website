@@ -81,6 +81,69 @@
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
+<h2><strong>Versão 3.7</strong> (lançada a 27 de março de 2017)</h2>
+
+    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
+   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="118" align="right"
+   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
+
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Regras para erros de crase;</li>
+                <li>Utilização de verbos impessoais.</li>
+                <li>Ajustes nas regras de concordância nominal e verbal;</li>
+                <li>Melhorias significativas na deteção de fragmentos;</li>
+                <li>Melhorias significativas na deteção de homónimos e parónimos acentuados (p.ex. mau-mal);</li>
+                <li>Melhorias significativas nas regras de colocação pronominal.</li>
+                <li>Novas regras gramaticais em categorias;</li>
+            </ul>
+        </li>
+        <li><strong>Capitalização</strong>
+            <ul>
+                <li>Novas regras para ambos os Acordos Ortográficos.</li>
+            </ul>
+        </li>
+        <li><strong>Estilo</strong>
+            <ul>
+                <li>Mais regras para deteção de duplicações;</li>
+                <li>Barbarismos;</li>
+                <li>Formatação de estrangeirismos.</li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Pontuação de abreviaturas, reticências e unidades de medida;</li>
+                <li>Formatação de números;</li>
+                <li>Fórmulas químicas;</li>
+                <li>Graus, minutos e segundos;</li>
+                <li>Hífens e travessões;</li>
+            </ul>
+        </li>
+        <li><strong>Regras de semântica (contexto)</strong>
+            <ul>
+                <li>Identificação de palavras mal utilizadas, por identificação do contexto;</li>
+                <li>Melhorias significativas na verificação de datas.</li>
+                <li>Validador de URLs;</li>
+            </ul>
+        </li>
+        <li><strong>Novas categorias</strong>
+            <ul>
+                <li>Marcas comercias;</li>
+                <li>Erros de tradução.</li>
+            </ul>
+        </li>
+        <li><strong>Suporte para falsos cognatos</strong>
+            <ul>
+                <li>Português para Alemão, Espanhol, Francês, Galego e Inglês.</li>
+            </ul>
+        </li>
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
+        </li>
+        <li><strong>E muito mais…</strong></li>
+    </ul>
+
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
 
     <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
