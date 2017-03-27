@@ -68,7 +68,8 @@
     (<a href="https://issues.apache.org/ooo/show_bug.cgi?id=118346">OOo bug #118346</a>)
     </li>
     
-<li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> or <tt>openoffice.org-java-common</tt> package.
+<li><strong>On Ubuntu</strong>, install the <tt>libreoffice-java-common</tt> package by calling this command in a terminal:<br>
+    <tt>sudo apt-get install libreoffice-java-common</tt><br>
     One problem solved by this is getting a long error message with "NoClassDefFoundError" during installation
     (<a href="../images/class_not_found.png">see screenshot</a>).</li>
 
