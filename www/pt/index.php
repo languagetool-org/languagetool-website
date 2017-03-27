@@ -92,12 +92,12 @@
         <li><strong>Gramática</strong>
             <ul>
                 <li>Regras para erros de crase;</li>
-                <li>Utilização de verbos impessoais.</li>
+                <li>Utilização de verbos impessoais;</li>
                 <li>Ajustes nas regras de concordância nominal e verbal;</li>
                 <li>Melhorias significativas na deteção de fragmentos;</li>
                 <li>Melhorias significativas na deteção de homónimos e parónimos acentuados (p.ex. mau-mal);</li>
                 <li>Melhorias significativas nas regras de colocação pronominal.</li>
-                <li>Novas regras gramaticais em categorias;</li>
+                <li>Novas regras gramaticais em categorias</li>
             </ul>
         </li>
         <li><strong>Capitalização</strong>
@@ -123,9 +123,9 @@
         </li>
         <li><strong>Regras de semântica (contexto)</strong>
             <ul>
-                <li>Identificação de palavras mal utilizadas, por identificação do contexto;</li>
-                <li>Melhorias significativas na verificação de datas.</li>
-                <li>Validador de URLs;</li>
+                <li>Identificação de palavras mal utilizadas por identificação do contexto;</li>
+                <li>Melhorias significativas na verificação de datas;</li>
+                <li>Validador de URLs.</li>
             </ul>
         </li>
         <li><strong>Novas categorias</strong>
@@ -138,6 +138,9 @@
             <ul>
                 <li>Português para Alemão, Espanhol, Francês, Galego e Inglês.</li>
             </ul>
+        </li>
+        <li><strong>Novos dicioários baseados num fork do Projecto Natura (integram mais palavras derivadas)</strong>
+        <li><strong>Exceções à verificação ortográfica para certos nomes científicos, expressões estrageiras ou em latim</strong>
         </li>
         <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
         </li>
