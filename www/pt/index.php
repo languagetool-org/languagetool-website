@@ -118,7 +118,7 @@
                 <li>Formatação de números;</li>
                 <li>Fórmulas químicas;</li>
                 <li>Graus, minutos e segundos;</li>
-                <li>Hífens e travessões;</li>
+                <li>Hífenes e travessões;</li>
             </ul>
         </li>
         <li><strong>Regras de semântica (contexto)</strong>
@@ -139,8 +139,8 @@
                 <li>Português para Alemão, Espanhol, Francês, Galego e Inglês.</li>
             </ul>
         </li>
-        <li><strong>Novos dicioários baseados num fork do Projecto Natura (integram mais palavras derivadas)</strong>
-        <li><strong>Exceções à verificação ortográfica para certos nomes científicos, expressões estrageiras ou em latim</strong>
+        <li><strong>Novos dicionários baseados num fork do Projecto Natura (integram mais palavras derivadas)</strong>
+        <li><strong>Exceções à verificação ortográfica para certos nomes científicos, expressões estrangeiras ou em latim</strong>
         </li>
         <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
         </li>
