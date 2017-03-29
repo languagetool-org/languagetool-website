@@ -43,7 +43,7 @@ $buttons2 = array(
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
       'additional_info' => 'v3.7, 68 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2016-12-28',
+      'release_info' => 'released 2017-03-27',
       'width' => 220,
       'below' => ''
     ),
@@ -52,7 +52,7 @@ $buttons2 = array(
       'link' => '/download/LanguageTool-3.7.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
       'additional_info' => 'v3.7, 99 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2016-12-28',
+      'release_info' => 'released 2017-03-27',
       'width' => 220,
       'below' => ''
     )
