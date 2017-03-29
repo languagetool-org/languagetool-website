@@ -169,9 +169,9 @@
 </ul>
 <p>Системные требования: как минимум <a href="http://ru.libreoffice.org/">LibreOffice 3.5.4</a> или Apache OpenOffice 3.4.1+, <a href="http://www.java.com/ru/download/manual.jsp">Java 8 от Oracle </a> или IcedTea. 
 </p>
-<p>Для работы в Windows совместно с Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
+<p>Для 32-битной версии Apache OpenOffice или LibreOffice требуется 32-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
-<p>LibreOffice 5.x под Windows существует и в 64-битном виде, для работы с такой версией требуется 64-битная <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
+<p>Для 64-битной версии Apache OpenOffice или LibreOffice необходима 64-битная версия <a href="http://www.java.com/ru/download/manual.jsp">Java 8+</a>. 
 </p>
 <p>LibreOffice 3.5 и старше уже включает в себя лёгкую систему проверки грамматики (LightProof), которая блокирует работу LanguageTool для английского и русского языков.
 Отключить LightProof и включить LanguageTool для указанных языков можно через меню   Сервис -> Параметры -> LibreOffice -> Настройки языка -> Лингвистика -> Доступные языковые модули -> Правка ...
