@@ -407,7 +407,8 @@
               suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
             }
             var ruleId = errorDescription["id"];
-            var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1 || ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") != -1;
+            var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1 ||
+                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") != -1 || ruleId.indexOf("HUNSPELL_RULE") != -1;
 
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
