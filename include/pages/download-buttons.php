@@ -7,7 +7,7 @@ if (isset($downloadRequiresJava)) {
     $downloadRequiresJava = "Needs Java $javaMinVersion+";
 }
 $buttons1 = array(
-    /*array(
+    array(
         'title' => isset($downloadLabelFx) ? $downloadLabelFx : 'For <strong>Firefox</strong>',
         'link' => 'https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage',
         'onclick' => '',
@@ -15,7 +15,7 @@ $buttons1 = array(
         'release_info' => '',
         'width' => 220,
         'below' => isset($firefoxLink) ? $firefoxLink : '<a href="/firefox/">More information</a>'
-    ),*/
+    ),
     array(
         'title' => isset($downloadLabelChrome) ? $downloadLabelChrome : 'For <strong>Chrome</strong>',
         'link' => 'https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji',
