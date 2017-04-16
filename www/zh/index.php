@@ -33,6 +33,17 @@
     <?php include("../../include/header.php"); ?>
 </head>
 <body>
+
+<div class="warning">
+    <div style="font-size: 14px; max-width:600px; margin-left: auto; margin-right: auto;">
+        Would you like to improve
+        LanguageTool's support for Chinese? You
+        could become the new maintainer for Chinese, responsible for the error
+        detection rules, the user interface translation, and this web page.
+        Contact me at daniel.naber at languagetool.org to get started.
+    </div>
+</div>
+
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
