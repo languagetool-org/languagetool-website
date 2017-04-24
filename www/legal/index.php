@@ -18,7 +18,7 @@
     
     <p>
         Daniel Naber<br/>
-        Friesenstr. 3<br/>
+        Stahnsdorfer Str. 89<br/>
         14482 Potsdam<br/>
         email: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span><br/>
         homepage: <a href="http://www.danielnaber.de">danielnaber.de</a><br/>
