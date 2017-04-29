@@ -26,7 +26,7 @@
 
     <h2>Want to join us?</h2>
     
-    <p>Please join our <a href="http://forum.languagetool.org/">forum</a>,
+    <p>Please join our <a href="https://forum.languagetool.org/">forum</a>,
     where all the discussion happens. Subscribe to the <a href="../contact/newsletter.php">newsletter</a>
     for information about new releases.</p>
 

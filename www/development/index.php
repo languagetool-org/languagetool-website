@@ -36,7 +36,7 @@
         <li style="font-size: large"><a href="http://community.languagetool.org"><strong>community.languagetool.org</strong></a>, 
             includes <a href="http://community.languagetool.org/ruleEditor2/index?lang=en">a rule editor</a> and
             <a href="http://community.languagetool.org/analysis">a text analyzer</a></li>
-        <li style="font-size: large"><a href="http://forum.languagetool.org/c/development"><strong>Development discussion in our forum</strong></a>
+        <li style="font-size: large"><a href="https://forum.languagetool.org/c/development"><strong>Development discussion in our forum</strong></a>
             <ul>
                 <li><a href="http://www.mail-archive.com/languagetool-devel@lists.sourceforge.net/">Mailing list archive at mail-archive.com</a>
                     (alternatively, use the archive at <a href="http://markmail.org/search/?q=list%3Anet.sourceforge.lists.languagetool-devel">markmail.org</a> or
@@ -66,7 +66,7 @@
         <li><a href="https://www.jetbrains.com">JetBrains</a> for free licenses of the IntelliJ Ultimate Edition</li>
         <li><a href="http://www.cloudbees.com/">CloudBees</a> for free access to a hosted Jenkins instance</li>
         <li>ej-technologies for providing us with free licenses of their <a href="http://www.ej-technologies.com/products/jprofiler/overview.html">Java profiler</a></li>
-        <li><a href="https://www.discoursehosting.com">DiscourseHosting.com</a> for sponsoring <a href="http://forum.languagetool.org/">our forum</a></li>
+        <li><a href="https://www.discoursehosting.com">DiscourseHosting.com</a> for sponsoring <a href="https://forum.languagetool.org/">our forum</a></li>
     </ul>
 
     <a href="http://www.oxygenxml.com" title="Oxygen XML Editor"><img src="/images/oxygen190x62.png" width="190" height="62" alt="Oxygen XML Editor" border="0"/></a>

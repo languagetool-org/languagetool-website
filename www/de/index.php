@@ -189,7 +189,7 @@
 
     <h2>Kontakt</h2>
 
-    <p>Fragen beantworten wir im <a href="http://forum.languagetool.org">Forum</a>, wo Sie auch gerne Einträge auf Deutsch hinterlassen können. Dort ist es auch möglich, Fehlalarme von LanguageTool zu melden oder neue Regeln vorzuschlagen.</p>
+    <p>Fragen beantworten wir im <a href="https://forum.languagetool.org">Forum</a>, wo Sie auch gerne Einträge auf Deutsch hinterlassen können. Dort ist es auch möglich, Fehlalarme von LanguageTool zu melden oder neue Regeln vorzuschlagen.</p>
 
 </div>
 

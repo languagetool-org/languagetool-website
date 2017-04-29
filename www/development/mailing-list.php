@@ -14,7 +14,7 @@
 
     <h1>Development Mailing List</h1>
     
-    <p>Our mailing list has been closed, please use <a href="http://forum.languagetool.org/">the forum</a> instead.</p>
+    <p>Our mailing list has been closed, please use <a href="https://forum.languagetool.org/">the forum</a> instead.</p>
     
     <p>Archives (up to September 2016):</p>
     <ul>

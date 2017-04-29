@@ -9,7 +9,7 @@
       <?php
         $pages = array(
           array('name'=>'Home', 'url' => '/'),
-          array('name'=>'Forum', 'url' => 'http://forum.languagetool.org'),
+          array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
           array('name'=>'Development', 'url' => '/development/'),
           array('name'=>'Screenshots', 'url' => '/screenshots/'),
           array('name'=>'<span class="donateLink">Donate</span>', 'url' => '/donate/')

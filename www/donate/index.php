@@ -17,7 +17,7 @@
     
     <ul>
         <li>a virtual server that hosts this website (€60)</li>
-        <li>hosting of <a href="http://forum.languagetool.org">our forum</a> (€10)</li>
+        <li>hosting of <a href="https://forum.languagetool.org">our forum</a> (€10)</li>
         <li>a student to work on <a href="/job/master-thesis.php">machine
             learning approaches to text checking</a> in his master thesis (€600)</li>
         <!--<li>Have two servers and a load balancer (EC2 instances at Amazon AWS) for better robustness

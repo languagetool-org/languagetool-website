@@ -21,7 +21,7 @@
             <strong>I want to help LanguageTool</strong> (but I'm not a software developer)<br/>
             <ul>
                 <li style="margin-top:5px"><a href="https://twitter.com/share?url=https://languagetool.org">tweet</a> or blog about LanguageTool</li>
-                <li><a href="http://forum.languagetool.org">Post improvement ideas to our forum</a></li>
+                <li><a href="https://forum.languagetool.org">Post improvement ideas to our forum</a></li>
                 <li><a href="https://github.com/languagetool-org/languagetool/issues">Post bugs to our issue tracker</a></li>
                 <li>
                     Improve error detection: LanguageTool detects most
@@ -46,7 +46,7 @@
     </ul>
     
     
-    <p style="margin-top: 20px">To join the LanguageTool community, please join our <a href="http://forum.languagetool.org">forum</a>,
+    <p style="margin-top: 20px">To join the LanguageTool community, please join our <a href="https://forum.languagetool.org">forum</a>,
         where all the discussion happens.</p>
     
 </div>

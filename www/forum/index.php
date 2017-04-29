@@ -1,4 +1,4 @@
 <?php
-header("Location: http://forum.languagetool.org");
+header("Location: https://forum.languagetool.org");
 exit;
 ?>
