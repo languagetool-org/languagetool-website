@@ -51,7 +51,7 @@
             }];
             var layout = {
                 xaxis: {title: 'date'},
-                yaxis: {title: 'time in seconds'}
+                yaxis: {title: 'API response time (s)', fixedrange: true}
             };
             Plotly.plot('api-perf-graph', data, layout, {showLink: false});
             Plotly.plot('api-perf-graph', movingMeanData, layout, {showLink: false});
@@ -90,7 +90,7 @@
                 }];
                 var layout = {
                     xaxis: {title: 'date'},
-                    yaxis: {title: 'access count'}
+                    yaxis: {title: 'API hit count', fixedrange: true}
                 };
                 Plotly.plot('access-count-graph', data, layout, {showLink: false});
                 /*
