@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Auth required"
+AuthUserFile /home/languagetool/languagetool.org/languagetool-website/www/analytics/.htpasswd
+Require valid-user
