@@ -10,7 +10,7 @@
 
     document.addEventListener('DOMContentLoaded', function(){
         
-        var movingAverageSize = 50;
+        var movingAverageSize = 13;  // = one hour if check runs every 5 minutes
         //var dataUrl = "http://languagetool.localhost/regression-tests/performance-api-recent.log";
         var dataUrl = "https://languagetool.org/regression-tests/performance-api-recent.log";
 
@@ -34,19 +34,21 @@
                 });
             });
             var data = [{
+                    name: 'access time',
                     x: x,
                     y: y,
                     type: 'bar'
                 }];
             var movingMeanData = [{
+                name: 'moving mean (n=' + movingAverageSize + ')',
                 x: x,
-                y: movingAvg(y.map(function(item) { return parseFloat(item)}), movingAverageSize),
+                y: movingAvg(y.map(function(item) {return parseFloat(item)}), movingAverageSize),
                 type: 'line',
                 line: {shape: 'spline', smoothing: 0.5}
             }];
             var layout = {
                 xaxis: {title: 'date'},
-                yaxis: {title: 'time in seconds (avg= ' + movingAverageSize + ')', type: 'log'}
+                yaxis: {title: 'time in seconds', type: 'log'}
             };
             Plotly.plot('my-graph', data, layout, {showLink: false});
             Plotly.plot('my-graph', movingMeanData, layout, {showLink: false});
