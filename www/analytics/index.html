@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>LanguageTool statistics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="plotly-latest.min.js"></script>
+</head>
+<body>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+        
+        var movingAverageSize = 50;
+        //var dataUrl = "http://languagetool.localhost/regression-tests/performance-api-recent.log";
+        var dataUrl = "https://languagetool.org/regression-tests/performance-api-recent.log";
+
+        Plotly.d3.csv(dataUrl, function(err, rows){
+            var x = [];
+            var y = [];
+            if (!rows) {
+                console.error("Error: 'rows' not defines - is this script on the same server as the data?: " + dataUrl);
+                return;
+            }
+            rows.map(function(row) {
+                Object.keys(row).forEach(function (key) {
+                    var value = row[key];
+                    var split = value.split(/;/);
+                    if (split.length === 2) {
+                        var date = split[0];
+                        var performance = split[1];
+                        x.push(date);
+                        y.push(performance);
+                    }
+                });
+            });
+            var data = [{
+                    x: x,
+                    y: y,
+                    type: 'bar'
+                }];
+            var movingMeanData = [{
+                x: x,
+                y: movingAvg(y.map(function(item) { return parseFloat(item)}), movingAverageSize),
+                type: 'line',
+                line: {shape: 'spline', smoothing: 0.5}
+            }];
+            var layout = {
+                xaxis: {title: 'date'},
+                yaxis: {title: 'time in seconds (avg= ' + movingAverageSize + ')', type: 'log'}
+            };
+            Plotly.plot('my-graph', data, layout, {showLink: false});
+            Plotly.plot('my-graph', movingMeanData, layout, {showLink: false});
+        });
+
+        /**
+         * returns an array with moving average of the input array
+         * @param array - the input array
+         * @param count - the number of elements to include in the moving average calculation
+         * @param qualifier - an optional function that will be called on each
+         *  value to determine whether it should be used
+         * Source: http://stackoverflow.com/questions/19981713/html5-js-chart-with-moving-average
+         */
+        function movingAvg(array, count, qualifier){
+            // calculate average for subarray
+            var avg = function(array, qualifier){
+                var sum = 0, count = 0, val;
+                for (var i in array){
+                    val = array[i];
+                    if (!qualifier || qualifier(val)){
+                        sum += val;
+                        count++;
+                    }
+                }
+                return sum / count;
+            };
+            var result = [], val;
+            // pad beginning of result with null values
+            for (var i=0; i < count-1; i++)
+                result.push(null);
+            // calculate average for each subarray and add to result
+            for (var i=0, len=array.length - count; i <= len; i++){
+                val = avg(array.slice(i, i + count), qualifier);
+                if (isNaN(val))
+                    result.push(null);
+                else
+                    result.push(val);
+            }
+            return result;
+        }
+        
+    }, false);
+    
+</script>
+
+<div id="my-graph"></div>
+
+</body>
+</html>
