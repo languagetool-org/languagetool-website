@@ -59,7 +59,8 @@
 
         var fields = ['DATE','TOTAL','FF','CHROME','ANDROID','CLIENT','SUBLIME','WEBEXT','MSWORD','WEBEXTFF','WEBEXTCHROME','TOTALHOME', 'GOOGLEAPP'];  // see report.sh
         var ignoreFields = ['FF', 'CHROME', 'ANDROID'];
-        Plotly.d3.csv(accessCountDataUrl, function(err, rows){
+
+        function prepareData(err, rows, divName, calcAverage) {
             if (!rows) {
                 console.error("Error: 'rows' not defined - is this script on the same server as the data?: " + accessCountDataUrl);
                 return;
@@ -81,10 +82,15 @@
                     });
                 });
                 var color = ignoreFields.indexOf(fields[j]) !== -1 ? 'lightgrey' : null;
+                var yData = y;
+                if (calcAverage) {
+                    var movingAverageSize = 7;
+                    yData = movingAvg(y.map(function(item) {return parseInt(item)}), movingAverageSize, function(item) { return parseInt(item) !== 0 });
+                }
                 var data = [{
                     name: fields[j],
                     x: x,
-                    y: y,
+                    y: yData,
                     type: 'line',
                     line: {color: color}
                 }];
@@ -92,20 +98,12 @@
                     xaxis: {title: 'date'},
                     yaxis: {title: 'API hit count', fixedrange: true}
                 };
-                Plotly.plot('access-count-graph', data, layout, {showLink: false});
-                /*
-                 var movingAverageSize = 7;
-                 var movingMeanData = [{
-                    name: 'moving mean (n=' + movingAverageSize + ')',
-                    x: x,
-                    y: movingAvg(y.map(function(item) {return parseInt(item)}), movingAverageSize, function(item) { return parseInt(item) !== 0 }),
-                    type: 'line',
-                    line: {shape: 'spline', smoothing: 0.5}
-                 }];
-                 Plotly.plot('access-count-graph', movingMeanData, layout, {showLink: false});
-                 */
+                Plotly.plot(divName, data, layout, {showLink: false});
             }
-        });
+        }
+        
+        Plotly.d3.csv(accessCountDataUrl, function(err, rows) { prepareData(err, rows, 'access-count-graph', false) });
+        Plotly.d3.csv(accessCountDataUrl, function(err, rows) { prepareData(err, rows, 'access-count-graph-weekly', true) });
 
         /**
          * returns an array with moving average of the input array
@@ -147,8 +145,14 @@
     
 </script>
 
+<h2>API response time</h2>
 <div id="api-perf-graph"></div>
+
+<h2>API access count</h2>
 <div id="access-count-graph"></div>
+
+<h2>API access count (avg. of 7 days)</h2>
+<div id="access-count-graph-weekly"></div>
 
 </body>
 </html>
