@@ -827,7 +827,7 @@ AtDCore.prototype.isIE = function() {
             // NOTE: this link won't work (as of March 2014) for false friend rules:
             var ruleUrl = "http://community.languagetool.org/rule/show/" +
               encodeURI(errorDescription["id"]) + "?";
-            if (errorDescription["subid"] && errorDescription["subid"] != 'null') {
+            if (errorDescription["subid"] && errorDescription["subid"] !== 'null' && errorDescription["subid"] !== "undefined") {
               ruleUrl += "subId=" + encodeURI(errorDescription["subid"]) + "&";
             }
             ruleUrl += "lang=" + encodeURI(langCode);
