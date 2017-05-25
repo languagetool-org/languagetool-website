@@ -14,10 +14,6 @@ body {
 body a {
   text-decoration: none;
 }
-body .donateLink {
-  padding: 3px;
-  background-color: #fff586;
-}
 body .details a {
   display: inline-block;
   width: 179px;

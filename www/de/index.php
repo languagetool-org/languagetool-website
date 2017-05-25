@@ -174,12 +174,6 @@
     Aufgaben</a>. </p>
     
     
-    <h2>Spenden</h2>
-    
-    <p>LanguageTool <a href="../donate/">bittet um Spenden</a>, um die Server zu finanzieren und LanguageTool
-    um Machine-Learning-Verfahren zu erweitern.</p>
-    
-    
     <h2>Varianten</h2>
 
     <p>LanguageTool unterstützt auch <a href="leichte-sprache/">eine Prüfung auf Leichte Sprache</a>. Außerdem

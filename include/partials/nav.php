@@ -11,8 +11,7 @@
           array('name'=>'Home', 'url' => '/'),
           array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
           array('name'=>'Development', 'url' => '/development/'),
-          array('name'=>'Screenshots', 'url' => '/screenshots/'),
-          array('name'=>'<span class="donateLink">Donate</span>', 'url' => '/donate/')
+          array('name'=>'Screenshots', 'url' => '/screenshots/')
         );
 
         foreach ($pages as $aPage) {

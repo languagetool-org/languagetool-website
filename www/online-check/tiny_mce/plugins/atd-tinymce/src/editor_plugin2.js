@@ -241,17 +241,6 @@
               }
               actionCount++;
               localStorage.setItem('actionCount', actionCount);
-              if (actionCount > 20) {  // only show to users with a certain level of activity
-                  var donationDiv = $("#donationHint");
-                  if (donationDiv.html() == "") {
-                      donationDiv.hide();
-                      donationDiv.html("<a href='/donate/'>Donate to help LanguageTool pay its expenses</a>");
-                      donationDiv.slideDown(1000);
-                      if (typeof(_paq) !== 'undefined') {
-                          _paq.push(['trackEvent', "DonationHintShown"]);
-                      }
-                  }
-              }
           }
       },
        
