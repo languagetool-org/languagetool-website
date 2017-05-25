@@ -119,6 +119,7 @@
         <li>Maksym Davydov
         <li>Mantas Kriaučiūnas
         <li>Martin Srebotnjak
+        <li>Matúš Matula
         <li>Maxim Mozgovoy
         <li>metal3d
         <li>Metathesis
