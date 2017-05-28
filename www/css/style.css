@@ -94,6 +94,11 @@ body #textContent h2 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+body #textContent h3 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 body #textContent ul,
 body #textContent ol {
   margin-left: 30px;
@@ -156,6 +161,11 @@ body #languageContent h2 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+body #languageContent h3 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 body #languageContent ul,
 body #languageContent ol {
   margin-left: 30px;
@@ -213,6 +223,11 @@ body #textOrLanguageContent h1 {
   margin-bottom: 10px;
 }
 body #textOrLanguageContent h2 {
+  color: #444444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+body #textOrLanguageContent h3 {
   color: #444444;
   margin-top: 30px;
   margin-bottom: 10px;
