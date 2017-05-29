@@ -1,0 +1,17 @@
+abbr
+{
+	cursor: auto;
+}
+
+.tooltip
+{
+	position:absolute;
+	background-color:#fff;
+	border: 1px solid #aaaaca;
+	font-size: smaller;
+	padding:4px;
+	min-width: 100px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);	
+}
