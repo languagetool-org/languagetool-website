@@ -74,6 +74,12 @@
         'type' => "text/css",
         'media' => ''
       ),
+	  array(
+        'src' => getRoot() . '/css/tooltip.css',
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => ''
+      ),
     )
   );
 ?>
@@ -94,8 +100,14 @@
   />
 <?php } ?>
 
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type='text/javascript' src='/js/touchHover.js'></script>
+	
+<link rel="stylesheet" href="tooltip.css" />
+
+
 <!-- used only for development:
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
 -->
