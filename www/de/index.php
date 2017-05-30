@@ -71,15 +71,11 @@
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
-	
+    <?php include("../../include/header_touchhover.php"); ?>
 </head>
 <body>
 
 <?php include("../../include/page_start.php"); ?>
-
-	<link rel="stylesheet" href="tooltip.css" />
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
-    <script type='text/javascript' src='touchHover.js'></script>
 
 <div id="languageContent">
 
@@ -98,50 +94,52 @@
     <ul>
         <li>Grammatik
             <ul>
-                <li><abbr class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</abbr> ist groß.</li>
-                <li>Sie hob <abbr class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</abbr> Papier auf.</li>
-                <li>Ich bin <abbr class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</abbr> Stau zu spät gekommen.</li>
+                <li><span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.</li>
+                <li>Sie hob <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.</li>
+                <li>Ich bin <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.</li>
             </ul>
         </li>
         <li>Groß-/Kleinschreibung
             <ul>
-                <li>Die <abbr class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</abbr> Revolution war ein wichtiges historisches Ereignis.</li>
-                <li><abbr class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</abbr> der Großschreibung am Satzanfang.</li>
+                <li>Die <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.</li>
+                <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.</li>
             </ul>
         </li>
         <li>Zusammen-/Getrenntschreibung
             <ul>
-                <li>Er hat <abbr class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</abbr> Frage gestellt.</li>
+                <li>Er hat <span class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</span> Frage gestellt.</li>
             </ul>
         </li>
         <li>Zeichensetzung
             <ul>
-                <li>Ich fragte sie<abbr class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</abbr> ob sie kommen möchte.</li>
-                <li>Ich lerne <abbr class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</abbr> ich gute Noten haben will.</li>
+                <li>Ich fragte sie<span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.</li>
+                <li>Ich lerne <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.</li>
             </ul>
         </li>
         <li>Mögliche Tippfehler
             <ul>
-                <li>Aber LanguageTool kann mehr als eine <abbr class="errorMarker" title="Möglicher Rechtschreibfehler gefunden. Vorschlag: normale">nromale</abbr> Rechtschreibprüfung:</li>
-                <li>Er verzieht keine <abbr class="errorMarker" title="Meinten Sie 'Miene'? (Mine = unterirdischer Gang, Sprengkörper, Kugelschreibermine)">Mine</abbr>.</li>
-                <li>Ich werde dir eine <abbr class="errorMarker" title="Meinten Sie 'E-Mail' (elektronische Post) statt 'Email' (Schmelzüberzug)?">Email</abbr> schicken.</li>
+                <li>Aber LanguageTool kann mehr als eine <span class="errorMarker" title="Möglicher Rechtschreibfehler gefunden. Vorschlag: normale">nromale</span> Rechtschreibprüfung:</li>
+                <li>Er verzieht keine <span class="errorMarker" title="Meinten Sie 'Miene'? (Mine = unterirdischer Gang, Sprengkörper, Kugelschreibermine)">Mine</span>.</li>
+                <li>Ich werde dir eine <span class="errorMarker" title="Meinten Sie 'E-Mail' (elektronische Post) statt 'Email' (Schmelzüberzug)?">Email</span> schicken.</li>
                 <!--<li>Geht es<span class="errorMarker" title="Möglicher Tippfehler: mehr als ein Leerzeichen hintereinander">&nbsp;&nbsp;</span>dir gut?</li>-->
             </ul>
         </li>
         <li>Umgangssprache
             <ul>
-                <li>Es wird eine höhere <abbr class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</abbr> benötigt.</li>
-                <li>Können Sie mir die <abbr class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</abbr> sagen?</li>
+                <li>Es wird eine höhere <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.</li>
+                <li>Können Sie mir die <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?</li>
             </ul>
         </li>
-        <li>LanguageTool weist in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
+        <li>Wenn Sie Deutsch als Ihre Muttersprache einstellen, weist LanguageTool in fremdsprachigen Texten auf "falsche Freunde" hin - Wörter,
+            die in Deutsch und einer Fremdsprache ähnlich oder gleich klingen oder geschrieben werden, aber etwas anderes bedeuten:
             <ul>
-                <li>My <abbr class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</abbr> told me I'm not allowed to take vacation days.</li>
+                <li>My <span class="errorMarker" title="Hinweis: 'chef' (Englisch) bedeutet 'Chefkoch', 'Koch' (Deutsch). Meinten Sie vielleicht 'boss', 'chief'?">chef</span> told me I'm not allowed to take vacation days.</li>
+                <li>The <span class="errorMarker" title="Hinweis: 'actual/actually' (Englisch) bedeutet 'eigentlich' (Deutsch). Meinten Sie vielleicht 'current', '(the) latest', 'up-to-date'?">actual</span> status and impact of 3D printing</li>
             </ul>
         </li>
         <li>Datumsprüfung
             <ul>
-                <li>Ich habe am <abbr class="errorMarker" title="Der Februar hat nur 28 Tage (bzw. 29 in Schaltjahren)">30. Februar</abbr> Geburtstag.</li>
+                <li>Ich habe am <span class="errorMarker" title="Der Februar hat nur 28 Tage (bzw. 29 in Schaltjahren)">30. Februar</span> Geburtstag.</li>
             </ul>
         </li>
         <li>u.v.m.</li>
