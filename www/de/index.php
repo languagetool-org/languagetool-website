@@ -71,9 +71,7 @@
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
-    <link rel="stylesheet" href="../css/tooltip.css" />
-    <script type='text/javascript' src='../js/touchHover.js'></script>
-	
+    <?php include("../../include/header_touchhover.php"); ?>
 </head>
 <body>
 
