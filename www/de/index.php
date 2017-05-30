@@ -130,9 +130,11 @@
                 <li>Können Sie mir die <abbr class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</abbr> sagen?</li>
             </ul>
         </li>
-        <li>LanguageTool weist in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
+        <li>Wenn Sie Deutsch als Ihre Muttersprache einstellen, weist LanguageTool in fremdsprachigen Texten auf "falsche Freunde" hin - Wörter,
+            die in Deutsch und einer Fremdsprache ähnlich oder gleich klingen oder geschrieben werden, aber etwas anderes bedeuten:
             <ul>
-                <li>My <abbr class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</abbr> told me I'm not allowed to take vacation days.</li>
+                <li>My <abbr class="errorMarker" title="Hinweis: 'chef' (Englisch) bedeutet 'Chefkoch', 'Koch' (Deutsch). Meinten Sie vielleicht 'boss', 'chief'?">chef</abbr> told me I'm not allowed to take vacation days.</li>
+                <li>The <abbr class="errorMarker" title="Hinweis: 'actual/actually' (Englisch) bedeutet 'eigentlich' (Deutsch). Meinten Sie vielleicht 'current', '(the) latest', 'up-to-date'?">actual</abbr> status and impact of 3D printing</li>
             </ul>
         </li>
         <li>Datumsprüfung
