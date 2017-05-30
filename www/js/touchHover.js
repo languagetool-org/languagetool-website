@@ -20,7 +20,7 @@ $(document).ready(function() {
 	
 	});
 
-        /**
+	/**
 	 * when abbreviations are mouseover-ed show a tooltip with the data from the title attribute
 	 */	
 	$('abbr').mouseover(function() {		
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$(this).mouseover();
 		
 		// after a slight 2 second fade, fade out the tooltip for 1 second
-		$(this).next().animate({opacity: 0.9},{duration: 2000, complete: function(){
+		$(this).next().animate({opacity: 0.9},{duration: 4000, complete: function(){
 			$(this).fadeOut(1000);
 		}});
 		
