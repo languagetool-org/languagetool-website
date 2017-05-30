@@ -71,15 +71,13 @@
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
+    <link rel="stylesheet" href="../css/tooltip.css" />
+    <script type='text/javascript' src='../js/touchHover.js'></script>
 	
 </head>
 <body>
 
 <?php include("../../include/page_start.php"); ?>
-
-	<link rel="stylesheet" href="tooltip.css" />
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
-    <script type='text/javascript' src='touchHover.js'></script>
 
 <div id="languageContent">
 
