@@ -13,20 +13,20 @@ $(document).ready(function() {
 	 * abbreviations (thus removing the default tooltip functionality of
          * the abbreviations)
 	 */
-	$('abbr').each(function(){		
+	$('span').each(function(){		
 		
 		$(this).data('title',$(this).attr('title'));
 		$(this).removeAttr('title');
 	
 	});
 
-        /**
+	/**
 	 * when abbreviations are mouseover-ed show a tooltip with the data from the title attribute
 	 */	
-	$('abbr').mouseover(function() {		
+	$('span').mouseover(function() {		
 		
 		// first remove all existing abbreviation tooltips
-		$('abbr').next('.tooltip').remove();
+		$('span').next('.tooltip').remove();
 		
 		// create the tooltip
 		$(this).after('<span class="tooltip">' + $(this).data('title') + '</span>');
@@ -43,12 +43,12 @@ $(document).ready(function() {
 	 * when abbreviations are clicked trigger their mouseover event then fade the tooltip
 	 * (this is friendly to touch interfaces)
 	 */
-	$('abbr').click(function(){
+	$('span').click(function(){
 		
 		$(this).mouseover();
 		
 		// after a slight 2 second fade, fade out the tooltip for 1 second
-		$(this).next().animate({opacity: 0.9},{duration: 2000, complete: function(){
+		$(this).next().animate({opacity: 0.9},{duration: 4000, complete: function(){
 			$(this).fadeOut(1000);
 		}});
 		
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	/**
 	 * Remove the tooltip on abbreviation mouseout
 	 */
-	$('abbr').mouseout(function(){
+	$('span').mouseout(function(){
 			
 		$(this).next('.tooltip').remove();				
 
