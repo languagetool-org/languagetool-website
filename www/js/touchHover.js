@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	$('.errorMarker').mouseover(function() {		
 		
-		$('errorMarker').next('.tooltip').remove();
+		$('.errorMarker').next('.tooltip').remove();
 		
 		// create the tooltip
 		if($(this).data('title') != ""){
