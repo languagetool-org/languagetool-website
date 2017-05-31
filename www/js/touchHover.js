@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $('.errorMarker').mouseover(function() {
 
-        $('errorMarker').next('.tooltip').remove();
+        $('.errorMarker').next('.tooltip').remove();
 
         // create the tooltip
         if($(this).data('title') != ""){
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
         $(this).mouseover();
 
-        $(this).next().animate({opacity: 0.9},{duration: 2000, complete: function(){
+        $(this).next().animate({opacity: 0.9},{duration: 4000, complete: function(){
             $(this).fadeOut(1000);
         }});
 
