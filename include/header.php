@@ -100,7 +100,6 @@
   />
 <?php } ?>
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type='text/javascript' src='/js/touchHover.js'></script>
