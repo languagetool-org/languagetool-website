@@ -558,7 +558,7 @@
                     if (i18n && i18n[entry.code]) {
                       displayName = i18n[entry.code];
                     }
-                    if (entry == langCountry) {
+                    if (entry.code == langCountry) {
                       subLang.append($("<option selected/>").val(entry.code).text(displayName));
                     } else {
                       subLang.append($("<option />").val(entry.code).text(displayName));
