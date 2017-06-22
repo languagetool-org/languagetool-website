@@ -473,7 +473,6 @@
                 "zh": "Chinese"
             };
             var halfMaintainedLanguages = { 
-                "nl": "Dutch"
             };
             if (unmaintainedLanguages[langCode]) {
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " + 
