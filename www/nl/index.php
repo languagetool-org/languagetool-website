@@ -75,7 +75,7 @@
 
     <h2>Functionaliteit</h2>
 
-    LanguageTool herkent <a href="http://community.languagetool.org/rule/list?lang=nl">meer dan 500</a> mogelijke fouten in Nederlandse tekst:<br/><br/>
+    LanguageTool herkent <a href="http://community.languagetool.org/rule/list?lang=nl">meer dan 700</a> mogelijke fouten in Nederlandse tekst:<br/><br/>
 
     <small>(Beweeg met de muispijl over een aandachtspunt, om de melding te zien.)</small>
 
@@ -120,28 +120,21 @@
                 <li>Dat is ook heel <span class="errorMarker" title="Dit taalgebruik kan als grof of beledigend worden ervaren.">lullig</span>!</li>
             </ul>
         </li>
-<!--
-        <li>LanguageTool weist in fremdsprachigen Texten auf <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
-            <ul>
-                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
-            </ul>
-        </li>
--->
         <li>en veel meer.</li>
     </ul>
 
 
     <h2 id="liboinstall">LanguageTool in LibreOffice/OpenOffice</h2>
 
-    <p>LanguageTool is beschikbaar als uitbreiding voor de  
-<a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">gratis</a> kantoorprogrammatuur 
-<a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> en 
-<a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> 
-. Om LanguageTool in het pakket op te nemen, doet u het volgende:</p>
+    <p>LanguageTool is beschikbaar als uitbreiding voor de
+<a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">gratis</a> kantoorprogrammatuur
+<a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> en
+<a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a>.
+        Om LanguageTool in het pakket op te nemen, doet u het volgende:</p>
 
     <ol>
-        <li>Als er nog geen Java op uw computer staat, haalt u dat dan eerst 
-<a href="http://www.java.com/nl/download/manual.jsp" target="_blank">hier gratis op</a> en installeert u het. 
+        <li>Als er nog geen Java op uw computer staat, haalt u dat dan eerst
+<a href="http://www.java.com/nl/download/manual.jsp" target="_blank">hier gratis op</a> en installeert u het.
 Ubuntu-gebruikers installeren <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
         <li>Download de huidige versie van LanguageTool. (De downloadknop staat bovenaan deze pagina.)</li>
         <li>Start LibreOffice of OpenOffice.org en kies in het menu <i>Extra</i> de optie <i>Extensiebeheer</i>.</li>
@@ -149,7 +142,7 @@ Ubuntu-gebruikers installeren <a href="apt:libreoffice-java-common">libreoffice-
         <li>Start na de instalallatie LibreOffice of OpenOffice.org opnieuw op.</li>
     </ol>
 
-    Wanneer tekstcontrole ingeschakeld is, worden de door LanguageTool gesignaleerde aandachtspunten blauw onderstreept. 
+    Wanneer tekstcontrole ingeschakeld is, worden de door LanguageTool gesignaleerde aandachtspunten blauw onderstreept.
 De instellingen van LanguageTool kunt u  <i>Extra &rarr; LanguageTool &rarr; Instellingen&hellip;</i> aanpassen.
 
 
@@ -162,17 +155,16 @@ De instellingen van LanguageTool kunt u  <i>Extra &rarr; LanguageTool &rarr; Ins
 
 
     <h2>Meedoen</h2>
-    
-    <p>Als open-source-project is LanguageTool volledig aangewezen op de bijdragen van vrijwilligers. 
-    In onze wiki is een beschrijving te vinden over <a href="http://wiki.languagetool.org/development-overview"> het maken van eigen regels
-</a>, om in de toekomst nog meer aandachtspunten te signaleren.
-    Ook voor ontwikkelaars zijn er  
+
+    <p>Als open-source-project is LanguageTool volledig aangewezen op de bijdragen van vrijwilligers.
+    In onze wiki is een beschrijving te vinden over <a href="http://wiki.languagetool.org/development-overview"> het maken van eigen regels</a>, om in de toekomst nog meer aandachtspunten te signaleren.
+    Ook voor ontwikkelaars zijn er
 <a href="http://wiki.languagetool.org/make-languagetool-better">uitdagingen</a> te vinden bij LanguageTool.</p>
-    
-    
+
+
     <h2>Contact</h2>
 
-    <p>Vragen beantwoorden we op het <a href="../forum">forum</a>, waar u ook vragen in het Nederlands kunt stellen. 
+    <p>Vragen beantwoorden we op het <a href="../forum">forum</a>, waar u ook vragen in het Nederlands kunt stellen.
 Daar kunnen ook onterechte meldingen van LanguageTool gemeld worden, of voorstellen voor regels gedaan worden.</p>
 
 </div>
