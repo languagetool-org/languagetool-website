@@ -23,7 +23,7 @@
         $map['is'] = "Þetta er dæmi um texta sem á að sína farm á hvernig LanguageTool virkar. Það er þó hérmeð gert ljóst að forritið framkvæmir ekki hefðbundna ritvilluleit.";
         $map['ja'] = "これわ文章を入力して'Check Text'をクリックすると、誤記を探すことができる。着色した文字をクリックすると、間違いの詳細の表示する。";
         $map['km'] = "ឃ្លា​នេះ​បង្ហាញ​ពី​ពី​កំហុស​វេយ្យាករណ៍ ដើម្បី​បញ្ជាក់​ពី​ប្រសិទ្ធភាព​របស់​កម្មវិធី LanguageTool សំរាប់​ភាសាខ្មែរ។";
-        $map['nl'] = "Een ieder kan fouten maken, tikvouten bij voorbeeld.";
+        $map['nl'] = "Languagetool doet van zelfsprekend veel meer dan spellingcontrole. Het ziet het ook fouten die minder inde gaten lopen, die je zelf geen eens ziet. De meldingen komen uit regels die door vrijwilligers gemaakt zijn aan de hand van suggesties van gebruikers en tips van taaldeskundigen. Ondanks het feit dat er veel aandacht aan de regels wordt besteed, blijven suggesties altijd welkom. Probeer het rustig zelf eens uit hier, of download een van de plugins op deze pagina.";
         //$map['ro'] = "";
         $map['sk'] = "Toto je ukážkový vstup, na predvedenie funkčnosti LanguageTool. Pamätajte si si, že neobsahuje \"kontrolu\" preklepo.";
         $map['sl'] = "Tukaj vnesite svoje besedilo... Pa poglejmo primer besedila s nekaj napakami ki jih lahko razpozna orodje LanguageTool; ko opazite napake, jih lahko enostavno popiravite. ( Obenem se izvrši tudi preverjanje črkovanja črkovanja.";
