@@ -75,7 +75,7 @@
 
     <h2>Functionaliteit</h2>
 
-    LanguageTool herkent <a href="http://community.languagetool.org/rule/list?lang=nl">meer dan 700</a> mogelijke fouten in Nederlandse tekst:<br/><br/>
+    LanguageTool herkent <a href="http://community.languagetool.org/rule/list?lang=nl">meer dan 1500</a> mogelijke fouten in Nederlandse tekst:<br/><br/>
 
     <small>(Beweeg met de muispijl over een aandachtspunt, om de melding te zien.)</small>
 
