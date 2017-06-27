@@ -122,7 +122,7 @@
             </ul>
         </li>
         <li><strong>Atualização dos dicionários Dicionários Portugueses Complementares 1.4</strong>
-        <li><strong>Exceções à verificação ortográfica para expressões comuns em Inglês, Francês e melhorias na deteção de expressões em Latim.</strong>
+        <li><strong>Exceções à verificação ortográfica para expressões comuns em Inglês e Francês. Melhorias na deteção de expressões em Latim.</strong>
         </li>
         <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
         </li>
