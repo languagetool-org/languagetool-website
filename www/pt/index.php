@@ -81,6 +81,53 @@
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
+<h2><strong>Versão 3.8</strong> (lançada a 27 de julho de 2017)</h2>
+
+    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
+   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="118" align="right"
+   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
+
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Melhorias significativas em todas os sub-grupos de regras;</li>
+            </ul>
+        </li>
+        <li><strong>Estilo</strong>
+            <ul>
+                <li>Deteção de expressões prolixas;</li>
+                <li>Reconhecimento de formas infletidas de barbarismos e redundâncias;</li>
+                <li>Reconhecimento de cacofonias;</li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Regras para o unidades do Sistema Internacional;</li>
+                <li>Melhorias significativas na formatação de números e símbolos matemáticos;</li>
+            </ul>
+        </li>
+        <li><strong>Níveis de discurso (Discurso formal)</strong>
+            <ul>
+                <li>Identificação de arcaísmos, linguagem infantil e gírias;</li>
+                <li>Melhorias significativas na deteção de linguagem informal;</li>
+                <li>Validador de URLs.</li>
+            </ul>
+        </li>
+        <li><strong>Novas categorias</strong>
+            <ul>
+                <li>Identificador de palavras alteradas pelo AO90;</li>
+                <li>Nomes Personalidades;</li>
+                <li>Regionalismos.</li>
+            </ul>
+        </li>
+        <li><strong>Atualização dos dicionários Dicionários Portugueses Complementares 1.4</strong>
+        <li><strong>Exceções à verificação ortográfica para mais expressões comuns em Inglês, Francês e em melhorias na deteção de expressões em Latim.</strong>
+        </li>
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
+        </li>
+    </ul>
+
 <h2><strong>Versão 3.7</strong> (lançada a 27 de março de 2017)</h2>
 
     <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
@@ -149,42 +196,28 @@
 
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
 
-    <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
-   href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="118" align="right"
-   src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
-
 <h3>Novidades</h3>
     <ul>
         <li><strong>Gramática</strong>
             <ul>
-                <li>Concordância nominal de género e número;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel und Nomen bezüglich Genus">Der Haus</span> ist groß.--></li>
-                <li>Concordância verbal entre sujeito e verbo;<!-- <span class="errorMarker" title="Möglicherweise fehlende grammatische Übereinstimmung zwischen Artikel, Adjektiv und Nomen">das roten Blatt</span> Papier auf.--></li>
-                <li>Verificação de homónimos e parónimos acentuados.<!--  <span class="errorMarker" title="Die Präposition 'wegen' erfordert i.d.R. den Genitiv.">wegen diesem</span> Stau zu spät gekommen.--></li>
+                <li>Concordância nominal de género e número; Concordância verbal entre sujeito e verbo; Verificação de homónimos e parónimos acentuados.</li>
             </ul>
         </li>
         <li><strong>Palavras compostas</strong>
             <ul>
-                <li>Novas regras para deteção de palavras compostas;<!--  <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.--></li>
-                <li>Melhorias significativas no reconhecimento de palavras hifenizadas;<!-- <span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.--></li>
+                <li>Novas regras para deteção de palavras compostas; Melhorias significativas no reconhecimento de palavras hifenizadas;</li>
             </ul>
         </li>
         <li><strong>Regras para duplicação de elementos</strong>
-            <!-- <ul>
-                <li>Er hat <span class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</span> Frage gestellt.</li>
-            </ul>-->
         </li>
         <li><strong>Regras para reconhecimento de vícios de linguagem</strong>
             <ul>
-                <li>Redundâncias;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
-                <li>Clichés;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
-                <li>Repetições;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Redundâncias; Clichés; Repetições;</li>
             </ul>
         </li>
         <li><strong>Regras de tipografia</strong>
             <ul>
-                <li>Símbolos monetários;<!--  <span class="errorMarker" title="Nur hinter einem Komma steht ein Leerzeichen, aber nicht davor."> ,</span> ob sie kommen möchte.--></li>
-                <li>Espaçamento;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
-                <li>Sinais tipográficos;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
+                <li>Símbolos monetários; Espaçamento; Sinais tipográficos;<!--  <span class="errorMarker" title="Ein mit der Subjunktion 'weil' eingeleiteter Nebensatz wird i.d.R. mit (mindestens) einem Komma vom Hauptsatz abgetrennt.">weil</span> ich gute Noten haben will.--></li>
             </ul>
         </li>
         <li><strong>Regras de semântica</strong>
@@ -194,26 +227,16 @@
         </li>
         <li><strong>Regras de estilo</strong>
             <ul>
-                <li>Repetições;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
-                <li>Gerundismo;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
-                <li>Voz passiva;<!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
-                <li>Frases longas; <!-- <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
-                <li>Deteção de fragmentos;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Repetições; Gerundismo; Voz passiva; Frases longas;  Deteção de fragmentos;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
             </ul>
         </li>
         <li><strong>Reconhecimento das várias variantes de Português</strong>
             <ul>
-                <li>Regras específicas para Português de Portugal;<!--  <span class="errorMarker" title="Meinten Sie 'elektrische Spannung'? 'Volt-Zahl' ist eine umgangssprachliche Ausdrucksweise.">Volt-Zahl</span> benötigt.--></li>
-                <li>Regras específicas para o Novo Acordo Ortográfico;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
-                <li>Suporte adicionado para Português de Angola, Cabo Verde, Timor Leste, Guiné-Bissau, Macau, Moçambique e São Tomé e Príncipe;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
-                <li>Atualização de dicionários e da base de dados morfológica;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
+                <li>Regras específicas para Português de Portugal; Regras específicas para o Novo Acordo Ortográfico; Suporte adicionado para Português de Angola, Cabo Verde, Timor Leste, Guiné-Bissau, Macau, Moçambique e São Tomé e Príncipe; Atualização de dicionários e da base de dados morfológica;<!--  <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?--></li>
                 <!-- <li> <span class="errorMarker" title="'ISBN' steht für 'International Standard Book Number' – ersetzen durch ISBN?">ISBN-Nummer</span> sagen?</li>-->
             </ul>
         </li>
-        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong> <!-- <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:
-            <ul>
-                <li>My <span class="errorMarker" title="'chef' bedeutet 'Chefkoch'/'Koch'. Meinten Sie 'chief' oder 'boss'?">chef</span> told me I'm not allowed to take vacation days.</li>
-            </ul>-->
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong> <!-- <a href="http://de.wikipedia.org/wiki/Falscher_Freund" target="_blank">falsche Freunde</a> hin:-->
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
