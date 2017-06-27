@@ -105,7 +105,7 @@
         </li>
         <li><strong>Regras de tipografia</strong>
             <ul>
-                <li>Regras para o unidades do Sistema Internacional;</li>
+                <li>Regras para unidades do Sistema Internacional;</li>
                 <li>Melhorias significativas na formatação de números e símbolos matemáticos;</li>
             </ul>
         </li>
@@ -118,6 +118,7 @@
         </li>
         <li><strong>Gramática</strong>
             <ul>
+                <li>Regras para coerência de grafias;</li>
                 <li>Melhorias significativas em todos os sub-grupos de regras;</li>
             </ul>
         </li>
