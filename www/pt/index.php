@@ -119,7 +119,7 @@
         <li><strong>Gramática</strong>
             <ul>
                 <li>Regras para coerência de grafias;</li>
-                <li>Melhorias significativas em todos os sub-grupos de regras;</li>
+                <li>Melhorias significativas em todos os subgrupos de regras;</li>
             </ul>
         </li>
         <li><strong>Atualização dos dicionários Dicionários Portugueses Complementares 1.4</strong>
