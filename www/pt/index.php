@@ -89,22 +89,11 @@
 
 <h3>Novidades</h3>
     <ul>
-        <li><strong>Gramática</strong>
-            <ul>
-                <li>Melhorias significativas em todas os sub-grupos de regras;</li>
-            </ul>
-        </li>
         <li><strong>Estilo</strong>
             <ul>
                 <li>Deteção de expressões prolixas;</li>
                 <li>Reconhecimento de formas infletidas de barbarismos e redundâncias;</li>
                 <li>Reconhecimento de cacofonias;</li>
-            </ul>
-        </li>
-        <li><strong>Regras de tipografia</strong>
-            <ul>
-                <li>Regras para o unidades do Sistema Internacional;</li>
-                <li>Melhorias significativas na formatação de números e símbolos matemáticos;</li>
             </ul>
         </li>
         <li><strong>Níveis de discurso (Discurso formal)</strong>
@@ -114,6 +103,12 @@
                 <li>Validador de URLs.</li>
             </ul>
         </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Regras para o unidades do Sistema Internacional;</li>
+                <li>Melhorias significativas na formatação de números e símbolos matemáticos;</li>
+            </ul>
+        </li>
         <li><strong>Novas categorias</strong>
             <ul>
                 <li>Identificador de palavras alteradas pelo AO90;</li>
@@ -121,8 +116,13 @@
                 <li>Regionalismos.</li>
             </ul>
         </li>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Melhorias significativas em todas os sub-grupos de regras;</li>
+            </ul>
+        </li>
         <li><strong>Atualização dos dicionários Dicionários Portugueses Complementares 1.4</strong>
-        <li><strong>Exceções à verificação ortográfica para mais expressões comuns em Inglês, Francês e em melhorias na deteção de expressões em Latim.</strong>
+        <li><strong>Exceções à verificação ortográfica para expressões comuns em Inglês, Francês e melhorias na deteção de expressões em Latim.</strong>
         </li>
         <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
         </li>
