@@ -100,7 +100,6 @@
             <ul>
                 <li>Identificação de arcaísmos, linguagem infantil e gírias;</li>
                 <li>Melhorias significativas na deteção de linguagem informal;</li>
-                <li>Validador de URLs.</li>
             </ul>
         </li>
         <li><strong>Regras de tipografia</strong>
