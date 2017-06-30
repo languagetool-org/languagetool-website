@@ -38,7 +38,7 @@ $buttons1 = array(
 
 $buttons2 = array(
     array(
-      'title' => isset($downloadTitle) ? $downloadTitle : 'For <strong>LibreOffice</strong><br/>and <strong>OpenOffice</strong>',
+      'title' => isset($downloadTitle) ? $downloadTitle : 'For <strong>LibreOffice</strong>',
       'link' => '/download/LanguageTool-3.8.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',

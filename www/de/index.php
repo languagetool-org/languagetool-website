@@ -55,7 +55,7 @@
 
     $downloadHeadline = "Download";
     $downloadRequiresJava = "benötigt Java {version}+";
-    $downloadTitle = "Für <strong>LibreOffice</strong><br/>und <strong>OpenOffice</strong>";
+    $downloadTitle = "Für <strong>LibreOffice</strong>";
     $downloadTitleStandAlone = "Als <strong>Desktop-Programm</strong>";
     $downloadLabelFx = "Für <strong>Firefox</strong>";
     $downloadLabelChrome = "Für <strong>Chrome</strong>";
@@ -159,17 +159,17 @@
     </ul>
     
     
-    <h3 id="liboinstall">LanguageTool in LibreOffice/OpenOffice</h3>
+    <h3 id="liboinstall">LanguageTool in LibreOffice</h3>
 
-    <p>LanguageTool steht als Extension (Erweiterung) für die <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freien</a> Office-Pakete <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a> zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach diesen Schritten:</p>
+    <p>LanguageTool steht als Erweiterung ("Extension") für das <a href="http://de.wikipedia.org/wiki/Freie_Software" target="_blank">freie</a> Office-Paket <a href="http://de.libreoffice.org/" target="_blank">LibreOffice</a> (und <a href="http://de.openoffice.org/" target="_blank">Apache OpenOffice</a>) zur Verfügung. Um LanguageTool in dem Office-Paket zu nutzen, folgen Sie einfach diesen Schritten:</p>
 
     <ol>
         <li>Falls Java nicht auf Ihrem Computer installiert ist, laden Sie es sich <a href="http://www.java.com/de/download/manual.jsp" target="_blank">hier kostenlos herunter</a> und installieren Sie es. Ubuntu-Nutzer installieren bitte das Paket <a href="apt:libreoffice-java-common">libreoffice-java-common</a>.</li>
         <li>Laden Sie sich die aktuelle Version von LanguageTool herunter. Der Downloadbutton befindet sich oben auf dieser Seite mit
-            der Bezeichnung "Für LibreOffice und OpenOffice".</li>
-        <li>Öffnen Sie LibreOffice bzw. OpenOffice.org und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
+            der Bezeichnung "Für LibreOffice" (dieser Download sollte auch für Apache OpenOffice funktionieren).</li>
+        <li>Öffnen Sie LibreOffice und wählen Sie im Menü <i>Extras</i> den Punkt <i>Extension Manager</i>.</li>
         <li>Klicken Sie nun auf <i>Hinzufügen&hellip;</i>, wählen Sie die in Schritt 2 heruntergeladene Datei aus und klicken Sie auf <i>Öffnen</i>.</li>
-        <li>Starten Sie nach der Installation LibreOffice bzw. OpenOffice.org neu.</li>
+        <li>Starten Sie nach der Installation LibreOffice neu.</li>
     </ol>
 
     Sofern die automatische Rechtschreibprüfung aktiviert ist, werden die von LanguageTool gefundenen Probleme im Text blau markiert. Die Einstellungen von LanguageTool können Sie über <i>Extras &rarr; LanguageTool &rarr; Konfiguration&hellip;</i> ändern.
