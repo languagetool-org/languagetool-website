@@ -59,8 +59,8 @@
 
     $downloadHeadline = "Transferir";
     $downloadRequiresJava = "Requer Java {version}+";
-    $downloadTitle = "Para o <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
-    $downloadTitleStandAlone = "Para o <strong>Desktop</strong>";
+    $downloadTitle = "Para o <strong>LibreOffice</strong>";
+    $downloadTitleStandAlone = "<strong>Executável independente</strong>";
     $downloadLabelFx = "Para o <strong>Firefox</strong>";
     $downloadLabelChrome = "Para o <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extra para o Navegador Web";
@@ -245,8 +245,8 @@
 
     <ul>
        <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
-       <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no OpenOffice/LibreOffice para instalar a extensão;</li>
-       <li><strong>Reinicie</strong> o OpenOffice/LibreOffice após a instalação da extensão;</li>
+       <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no LibreOffice para instalar a extensão;</li>
+       <li><strong>Reinicie</strong> o LibreOffice após a instalação da extensão;</li>
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
      </ul>
 

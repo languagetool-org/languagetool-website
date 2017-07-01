@@ -48,7 +48,7 @@
     $introText2 = "Encontra muitos erros que um corretor ortográfico não consegue detectar, e também deteta problemas de gramática.";
     $downloadHeadline = "Baixar";
     $downloadRequiresJava = "Requer Java {version}+";
-    $downloadTitle = "Para <strong>LibreOffice</strong> e <strong>OpenOffice</strong>";
+    $downloadTitle = "Para <strong>LibreOffice</strong>";
     $downloadTitleStandAlone = "Independente para <strong>Desktop</strong>";
     $downloadLabelFx = "Para <strong>Firefox</strong>";
     $downloadLabelChrome = "Para <strong>Chrome</strong>";
@@ -172,9 +172,9 @@ para ser redirecionado.</p>
 			<a href="http://www.libreoffice.org/download">LibreOffice</a></strong> 
 			visto que algumas versões mais antigas têm um erro que causa problemas 
 			no arranque.</li>
-            <li>Use <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no OpenOffice/LibreOffice 
+            <li>Use <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar...</em> no LibreOffice 
 			para instalar a extensão;</li>
-            <li><strong>Reinicie o OpenOffice/LibreOffice</strong> após a 
+            <li><strong>Reinicie o LibreOffice</strong> após a 
 			instalação da extensão;</li>
             <li>Se usar o LibreOffice 3.5.x (ou superior), <strong>ative o LanguageTool</strong>
 		em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar...</em>
