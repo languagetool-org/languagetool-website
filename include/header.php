@@ -100,6 +100,14 @@
   />
 <?php } ?>
 
+<script>
+<!--
+    window.onerror = function (msg, url, line) {
+        var message = "Error in " + url + " on line " + line + ": " + msg;
+        $.post("/log.php", { "msg": message });
+    }
+//-->
+</script>
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type='text/javascript' src='/js/touchHover.js'></script>
