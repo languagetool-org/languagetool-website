@@ -74,6 +74,109 @@
 <a title="O LanguageTool instalado como uma extensão do LibreOffice 3.3" class="fancyboxImage"
    href="../screenshots/art/screenshot_lo3.png"><img style="margin-left: 15px" width="200" height="144" align="right"
    src="../screenshots/art/screenshot_lo3_very_small.png" alt="Screenshot do LanguageTool"/></a>
+	
+<h2><strong>Versão 3.8</strong> (lançada em 27 de julho de 2017)</h2>
+
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Estilo</strong>
+            <ul>
+                <li>Deteção de expressões prolixas;</li>
+                <li>Reconhecimento de formas infletidas de barbarismos e redundâncias;</li>
+                <li>Reconhecimento de cacofonias;</li>
+            </ul>
+        </li>
+        <li><strong>Níveis de discurso (Discurso formal)</strong>
+            <ul>
+                <li>Identificação de arcaísmos, linguagem infantil e gírias;</li>
+                <li>Melhorias significativas na deteção de linguagem informal;</li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Regras para unidades do Sistema Internacional;</li>
+                <li>Melhorias significativas na formatação de números e símbolos matemáticos;</li>
+            </ul>
+        </li>
+        <li><strong>Novas categorias</strong>
+            <ul>
+                <li>Identificador de palavras alteradas pelo AO90;</li>
+                <li>Regionalismos.</li>
+            </ul>
+        </li>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Regras para coerência de grafias;</li>
+                <li>Melhorias significativas em todos os subgrupos de regras;</li>
+            </ul>
+        </li>
+        <li><strong>Atualização dos Dicionários Portugueses Complementares 1.4</strong>
+        <li><strong>Exceções à verificação ortográfica para expressões comuns em Inglês e Francês. Melhorias na deteção de expressões em Latim.</strong>
+        </li>
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
+        </li>
+    </ul>
+
+<h2><strong>Versão 3.7</strong> (lançada a 27 de março de 2017)</h2>
+
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Regras para erros no uso de crase;</li>
+                <li>Utilização de verbos impessoais;</li>
+                <li>Ajustes nas regras de concordância nominal e verbal;</li>
+                <li>Melhorias significativas na deteção de fragmentos;</li>
+                <li>Melhorias significativas nas regras de colocação pronominal.</li>
+                <li>Novas regras gramaticais em categorias diversas</li>
+            </ul>
+        </li>
+        <li><strong>Capitalização</strong>
+            <ul>
+                <li>Novas regras para ambos os Acordos Ortográficos.</li>
+            </ul>
+        </li>
+        <li><strong>Estilo</strong>
+            <ul>
+                <li>Mais regras para deteção de duplicações;</li>
+                <li>Barbarismos;</li>
+                <li>Formatação de estrangeirismos.</li>
+            </ul>
+        </li>
+        <li><strong>Regras de tipografia</strong>
+            <ul>
+                <li>Pontuação de abreviaturas, reticências e unidades de medida;</li>
+                <li>Formatação de números;</li>
+                <li>Fórmulas químicas;</li>
+                <li>Graus, minutos e segundos;</li>
+                <li>Hífens e travessões;</li>
+            </ul>
+        </li>
+        <li><strong>Regras de semântica (contexto)</strong>
+            <ul>
+                <li>Identificação de palavras mal utilizadas por identificação do contexto;</li>
+                <li>Melhorias significativas na verificação de datas;</li>
+                <li>Validador de URLs.</li>
+            </ul>
+        </li>
+        <li><strong>Novas categorias</strong>
+            <ul>
+                <li>Marcas comercias;</li>
+                <li>Erros de tradução.</li>
+            </ul>
+        </li>
+        <li><strong>Suporte para falsos cognatos</strong>
+            <ul>
+                <li>Português para Alemão, Espanhol, Francês, Galego e Inglês.</li>
+            </ul>
+        </li>
+        <li><strong>Novos dicionários baseados em um fork do Projecto Natura (integram mais palavras derivadas)</strong>
+        <li><strong>Exceções à verificação ortográfica para certos nomes científicos, expressões estrangeiras ou em latim</strong>
+        </li>
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
+        </li>
+        <li><strong>E muito mais…</strong></li>
+    </ul>
 
 <h2><strong>Versão 3.6</strong> (lançada a 28 de dezembro de 2016)</h2>
 <h3>Novidades</h3>
