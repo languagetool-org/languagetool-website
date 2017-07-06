@@ -235,12 +235,20 @@
               var actionCount = localStorage.getItem('actionCount');
               if (actionCount == null) {
                   actionCount = 0;
-                  localStorage.setItem('firstUse', new Date());  // get it back using new Date(Date.parse(localStorage.getItem('firstUse')))
+                  try {
+                      localStorage.setItem('firstUse', new Date());  // get it back using new Date(Date.parse(localStorage.getItem('firstUse')))
+                  } catch (ex) {
+                      console.log("Could not store 'firstUse' to localStorage: " + ex);
+                  }
               } else {
                   actionCount = parseInt(actionCount);
               }
               actionCount++;
-              localStorage.setItem('actionCount', actionCount);
+              try {
+                  localStorage.setItem('actionCount', actionCount);
+              } catch (ex) {
+                  console.log("Could not store 'actionCount' to localStorage: " + ex);
+              }
           }
       },
        
