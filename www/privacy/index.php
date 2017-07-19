@@ -42,7 +42,7 @@
         <li>If you don't want any information to be transferred, download the stand-alone version from 
             <a href="/">our homepage</a>. It works locally without internet access and thus doesn't transfer any data.</li>
         <li>
-            <p>For accesses from web browsers, this website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
+            <p>For accesses from web browsers and browser add-ons, this website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
                 IP address (to a form like <tt>192.168.xxx.xxx</tt>) to protect your privacy. If you don't want your
                 visit to be recorded at all by Piwik, you can opt out here:</p>
 
