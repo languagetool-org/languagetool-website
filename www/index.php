@@ -23,6 +23,9 @@
     <?php include("../include/header.php"); ?>
   </head>
   <body>
+    <?php if ($checkDefaultLang == 'de') { ?>
+      <?php include("../include/job.php"); ?>
+    <?php } ?>
     <?php include("../include/partials/nav.php"); ?>
     <?php include("../include/partials/stage_head.php"); ?>
     <div id="content">

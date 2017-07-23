@@ -75,6 +75,8 @@
 </head>
 <body>
 
+<?php include("../../include/job.php"); ?>
+
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
