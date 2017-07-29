@@ -9,9 +9,7 @@
 body {
   color: #777777;
   /* standard content page without many images etc: */
-
   /* language-specific page: */
-
 }
 body a {
   text-decoration: none;
@@ -483,7 +481,7 @@ body #stage .inner #editor .inner {
 }
 body #stage .inner #editor .inner #checktext {
   height: 500px;
-  height: calc(100 vh - 300px);
+  height: calc(100vh - 300px);
 }
 body #stage .inner #editor .inner #checktext_path_row {
   display: none;
@@ -540,7 +538,6 @@ body #stage .inner #text2 p a:before,
 body #stage .inner #text p a:before {
   content: "→\00a0";
   /* \00a0 = non-breaking space */
-
 }
 body #stage .inner #text2 p a,
 body #stage .inner #text p a {
