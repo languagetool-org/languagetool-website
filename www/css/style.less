@@ -232,7 +232,7 @@ body {
     background-color: #fff;
     #container {
       width: 900px;
-      margin: 14px auto;
+      margin: 12px auto;
       #logo {
         margin-left: 20px;
         margin-right: 80px;
@@ -294,9 +294,9 @@ body {
       background-image: url(/images/world-background.png);
     }
     .inner {
-      width: 950px;
+      width: 980px;
       margin: 0px auto;
-      padding: 80px 0px;
+      padding: 20px 0 40px;
       #image {
         text-align: right;
         float: right;
@@ -308,8 +308,6 @@ body {
         }
       }
       #editor {
-        float: left;
-        width: 70%;
         form#checkform {
           position: relative;
           .fullscreen-toggle {
@@ -368,9 +366,9 @@ body {
         .inner {
           padding: 0px;
           margin: 0px;
-          width: 90%;
           #checktext {
-            height: 300px;
+            height: 500px;
+            height: calc(100vh - 300px);
           }
           #checktext_path_row {
             display: none;
@@ -398,12 +396,13 @@ body {
           }
         }
       }
+      #text2,
       #text {
-        float: left;
-        width: 30%;
+        text-align: center;
         p {
           font-weight: 300;
           line-height: 40px;
+          margin-bottom: 20px;
           color: #fff;
           font-size: 1.8em;
           strong {
@@ -412,7 +411,7 @@ body {
           &.small {
             line-height: 30px;
             color: fade(#fff, 60%);
-            margin-top: 30px;
+            margin-top: -10px;
             font-size: 22px;
           }
           a:hover {
@@ -426,6 +425,9 @@ body {
             color: white;
           }
         }
+      }
+      #text2 {
+        padding: 20px 0 0;
       }
     }
   }
@@ -562,9 +564,9 @@ body {
   #footer {
     padding: 30px 0px;
     background-color: #ebebeb;
-    color: #777777;
+    color: #666;
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     span {
       display: inline-block;
@@ -589,10 +591,14 @@ body {
   }
   #stage {
     .inner {
-      padding: 30px 0px!important;
+      padding: 15px 0px!important;
       width: 95%!important;
       #editor {
         width:100% !important;
+        .inner {
+          padding: 0 !important;
+          width: 100% !important;
+        }
       }
       #text {
         width: 100%!important;
@@ -627,12 +633,14 @@ body {
 
 @media (max-width: 750px) {
   #header {
+    #social {
+      display: none;
+    }
     #container {
       width: 100%!important;
+      margin: 10px auto !important;
       #logo {
-        margin: 10px 0px!important;
-        width: 100%!important;
-        text-align: center!important;
+        margin-right: 30px !important;
         a {
           width: 100%!important;
           img {
@@ -641,37 +649,46 @@ body {
         }
       }
     }
-    #logo {
-      float: none!important;
-    }
     #nav {
       float: none!important;
       margin-bottom: 20px;
-      text-align: center!important;
+      text-align: left!important;
       a {
         font-size: 18px!important;
-        margin: 0px 5px 0px 5px!important;
+        margin: 0 10px !important;
       }
     }
-    /*#social {
-      display: none;
-    }*/
   }
   #stage {
-    #text {
+    #text, #text2 {
       p {
-        font-size: 22px!important;
-        line-height: 30px!important;
+        font-size: 18px!important;
+        line-height: 26px!important;
         &.small {
           font-size: 17px!important;
           line-height: 23px!important;
         }
       }
     }
+    .inner #text p {
+      margin-bottom: 20px !important;
+    }
+  }
+  body #editor_controls .submit {
+    padding-top: 10px !important;
+    float: left;
   }
 }
 
 @media (max-width: 650px) {
+  #stage {
+    #text, #text2 {
+      p {
+        font-size: 16px!important;
+        line-height: 24px!important;
+      }
+    }
+  }
   #download {
     margin: 30px auto!important;
     width: 80%!important;
@@ -690,6 +707,16 @@ body {
         padding: 5px 10px!important;
       }
     }
+  }
+  .fullscreen-toggle {
+    display: none !important;
+  }
+  #editor_controls .submit {
+    width: 100% !important;
+  }
+  #editor_controls .submit input  {
+    width: 100% !important;
+    float: none !important;
   }
 }
 
@@ -724,11 +751,6 @@ body {
   .dk_container a
   {
     width: 80px !important;
-  }
-  body #editor_controls .submit
-  {
-    padding-top: 10px !important;
-    float: left;
   }
 }
 
