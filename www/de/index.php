@@ -51,7 +51,7 @@
     $toggleFullscreenMode = "Vollbild-Ansicht umschalten";
 
     $introText1 = "LanguageTool ist eine kostenlose <strong>Textprüfung</strong> für Grammatik, Stil und&nbsp;Rechtschreibung.";
-    $introText2 = "Neben Deutsch werden mehr als <a href='/languages/'>20 weitere Sprachen</a> unter&shy;stützt.";
+    $introText2 = "Neben Deutsch werden <a href='/'>Englisch</a> und <a href='/languages/'>viele weitere Sprachen</a> unter&shy;stützt.";
 
     $downloadHeadline = "Download";
     $downloadRequiresJava = "benötigt Java {version}+";
