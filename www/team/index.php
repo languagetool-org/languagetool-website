@@ -183,6 +183,7 @@
         <li>Xesús González Rato
         <li>yeryry
         <li>Zdenko Podobný
+        <li>Christopher Blum
     </ul>
     
     <p>LanguageTool has a history of more than 10 years, so we probably have missed some
