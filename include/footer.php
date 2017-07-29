@@ -5,7 +5,7 @@
       array( 'name'=>'Team', 'url' => getRoot() . '/team/' ),
       array( 'name'=>'Imprint', 'url' => getRoot() . '/legal/' ),
       array( 'name'=>'Development', 'url' => getRoot() . '/development/' ),
-      array( 'name'=>'Screenshots', 'url' => getRoot() . '/development/' ),
+      array( 'name'=>'Screenshots', 'url' => getRoot() . '/screenshots/' ),
       array( 'name' => 'Privacy Policy', 'url' => getRoot() . '/privacy/')
     );
 
