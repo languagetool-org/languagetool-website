@@ -480,8 +480,7 @@ body #stage .inner #editor .inner {
   margin: 0px;
 }
 body #stage .inner #editor .inner #checktext {
-  height: 500px;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 355px);
 }
 body #stage .inner #editor .inner #checktext_path_row {
   display: none;
