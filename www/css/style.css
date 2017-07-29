@@ -9,7 +9,9 @@
 body {
   color: #777777;
   /* standard content page without many images etc: */
+
   /* language-specific page: */
+
 }
 body a {
   text-decoration: none;
@@ -345,7 +347,7 @@ body #header {
 }
 body #header #container {
   width: 900px;
-  margin: 14px auto;
+  margin: 12px auto;
 }
 body #header #container #logo {
   margin-left: 20px;
@@ -408,9 +410,9 @@ body #stage.start {
   background-image: url(/images/world-background.png);
 }
 body #stage .inner {
-  width: 950px;
+  width: 980px;
   margin: 0px auto;
-  padding: 80px 0px;
+  padding: 20px 0 40px;
 }
 body #stage .inner #image {
   text-align: right;
@@ -421,10 +423,6 @@ body #stage .inner #image img {
   -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-body #stage .inner #editor {
-  float: left;
-  width: 70%;
 }
 body #stage .inner #editor form#checkform {
   position: relative;
@@ -482,10 +480,10 @@ body #stage .inner #editor .window {
 body #stage .inner #editor .inner {
   padding: 0px;
   margin: 0px;
-  width: 90%;
 }
 body #stage .inner #editor .inner #checktext {
-  height: 300px;
+  height: 500px;
+  height: calc(100 vh - 300px);
 }
 body #stage .inner #editor .inner #checktext_path_row {
   display: none;
@@ -511,35 +509,46 @@ body #stage .inner #editor .languageHomepage {
 body #stage .inner #editor .languageHomepage a {
   text-decoration: none;
 }
+body #stage .inner #text2,
 body #stage .inner #text {
-  float: left;
-  width: 30%;
+  text-align: center;
 }
+body #stage .inner #text2 p,
 body #stage .inner #text p {
   font-weight: 300;
   line-height: 40px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 1.8em;
 }
+body #stage .inner #text2 p strong,
 body #stage .inner #text p strong {
   font-weight: 600;
 }
+body #stage .inner #text2 p.small,
 body #stage .inner #text p.small {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 30px;
+  margin-top: -10px;
   font-size: 22px;
 }
+body #stage .inner #text2 p a:hover,
 body #stage .inner #text p a:hover {
   color: #d9d9d9;
 }
+body #stage .inner #text2 p a:before,
 body #stage .inner #text p a:before {
   content: "→\00a0";
   /* \00a0 = non-breaking space */
+
 }
+body #stage .inner #text2 p a,
 body #stage .inner #text p a {
   text-decoration: none;
   color: white;
+}
+body #stage .inner #text2 {
+  padding: 20px 0 0;
 }
 body #plugins {
   width: 900px;
@@ -674,9 +683,9 @@ body #actions .actions-inner #newsletter_reg .inner input[type=submit] {
 body #footer {
   padding: 30px 0px;
   background-color: #ebebeb;
-  color: #777777;
+  color: #666;
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
 }
 body #footer span {
@@ -696,10 +705,14 @@ body #footer span a:hover {
     width: 680px!important;
   }
   #stage .inner {
-    padding: 30px 0px!important;
+    padding: 15px 0px!important;
     width: 95%!important;
   }
   #stage .inner #editor {
+    width: 100% !important;
+  }
+  #stage .inner #editor .inner {
+    padding: 0 !important;
     width: 100% !important;
   }
   #stage .inner #text {
@@ -730,18 +743,15 @@ body #footer span a:hover {
   }
 }
 @media (max-width: 750px) {
-  #header {
-    /*#social {
-      display: none;
-    }*/
+  #header #social {
+    display: none;
   }
   #header #container {
     width: 100%!important;
+    margin: 10px auto !important;
   }
   #header #container #logo {
-    margin: 10px 0px!important;
-    width: 100%!important;
-    text-align: center!important;
+    margin-right: 30px !important;
   }
   #header #container #logo a {
     width: 100%!important;
@@ -749,28 +759,39 @@ body #footer span a:hover {
   #header #container #logo a img {
     text-align: center!important;
   }
-  #header #logo {
-    float: none!important;
-  }
   #header #nav {
     float: none!important;
     margin-bottom: 20px;
-    text-align: center!important;
+    text-align: left!important;
   }
   #header #nav a {
     font-size: 18px!important;
-    margin: 0px 5px 0px 5px!important;
+    margin: 0 10px !important;
   }
-  #stage #text p {
-    font-size: 22px!important;
-    line-height: 30px!important;
+  #stage #text p,
+  #stage #text2 p {
+    font-size: 18px!important;
+    line-height: 26px!important;
   }
-  #stage #text p.small {
+  #stage #text p.small,
+  #stage #text2 p.small {
     font-size: 17px!important;
     line-height: 23px!important;
   }
+  #stage .inner #text p {
+    margin-bottom: 20px !important;
+  }
+  body #editor_controls .submit {
+    padding-top: 10px !important;
+    float: left;
+  }
 }
 @media (max-width: 650px) {
+  #stage #text p,
+  #stage #text2 p {
+    font-size: 16px!important;
+    line-height: 24px!important;
+  }
   #download {
     margin: 30px auto!important;
     width: 80%!important;
@@ -789,6 +810,16 @@ body #footer span a:hover {
   #download .button_container .meta {
     font-size: 13px!important;
     padding: 5px 10px!important;
+  }
+  .fullscreen-toggle {
+    display: none !important;
+  }
+  #editor_controls .submit {
+    width: 100% !important;
+  }
+  #editor_controls .submit input {
+    width: 100% !important;
+    float: none !important;
   }
 }
 @media (max-width: 400px) {
@@ -813,10 +844,6 @@ body #footer span a:hover {
   }
   .dk_container a {
     width: 80px !important;
-  }
-  body #editor_controls .submit {
-    padding-top: 10px !important;
-    float: left;
   }
 }
 @media (max-width: 400px) {
