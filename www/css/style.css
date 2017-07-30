@@ -480,8 +480,7 @@ body #stage .inner #editor .inner {
   margin: 0px;
 }
 body #stage .inner #editor .inner #checktext {
-  height: 300px;
-  min-height: 200px;
+  min-height: 300px;
   max-height: 800px;
   height: calc(100vh - 355px);
 }
