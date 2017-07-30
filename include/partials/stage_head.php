@@ -6,7 +6,7 @@
     <div id="text">
     
         <p>LanguageTool is a <strong>proof&shy;reading service</strong> for English, <a href="de/">German</a>,
-            <a href="pl/">Polish</a>, <a href="fr/">French</a>, and more than <a href="languages/">20 other languages</a>.</p>
+            <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.</p>
     </div>
     <div id="editor">
       <div class="inner">
