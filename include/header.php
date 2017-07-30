@@ -21,7 +21,7 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => getRoot() . '/css/style.css?v13',
+        'src' => getRoot() . '/css/style.css?v14',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
@@ -426,7 +426,6 @@
        tinymce.EditorManager.execCommand('mceAddControl', true, 'checktext');
        $('form#checkform').removeClass('fullscreen');
        $('body').removeClass('fullscreen');
-       $('iframe#checktext_ifr').height(270);
        tinymce.execCommand('mceFocus', false, 'checktext');
    }
 
