@@ -306,8 +306,8 @@ body #editor_controls .submit button:disabled {
 body #editor_controls .submit button span {
   margin-top: 1px;
   display: block;
-  font-size: 11px;
-  opacity: 0.6;
+  font-size: 12px;
+  opacity: 0.7;
   line-height: 1;
 }
 body #editor_controls .submit .proofread {
@@ -359,7 +359,6 @@ body #languageInfo {
 }
 body #header {
   width: 100%;
-  background-color: #fff;
 }
 body #header #container {
   width: 900px;
@@ -706,7 +705,7 @@ body #footer {
 }
 body #footer span {
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 10px 10px;
 }
 body #footer span a {
   color: #777;
