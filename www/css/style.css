@@ -364,6 +364,7 @@ body #header #container #nav a {
   text-decoration: none;
   font-weight: 600;
   margin-right: 30px;
+  white-space: nowrap;
 }
 body #header #container #nav a.active,
 body #header #container #nav a:hover {
