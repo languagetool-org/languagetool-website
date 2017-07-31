@@ -451,6 +451,16 @@
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
 
+   function proofread() {
+     var textarea = document.createElement('textarea')
+     textarea.style.display = 'none';
+     textarea.name = 'proofread_text';
+     var $dummy = $("<div>").html(tinymce.activeEditor.getContent());
+     textarea.value = $dummy.text();
+     document.checkform.action = '/human-proofreading/'
+     document.checkform.appendChild(textarea);
+   }
+
    $(function(){
     $(window).resize(function(){
       if ($('form#checkform').hasClass('fullscreen')) {

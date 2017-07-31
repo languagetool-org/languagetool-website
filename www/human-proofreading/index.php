@@ -1,10 +1,12 @@
+<?php
+$page = "Human Proofreading";
+$title = "Human Proofreading Service";
+$isProofreadingTest = true;
+setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
+?>
 <!doctype html>
 <html lang=en>
 <head>
-    <?php
-    $page = "Human Proofreading";
-    $title = "Human Proofreading Service";
-    ?>
     <?php include("../../include/header.php"); ?>
     <style>
       html {
@@ -201,7 +203,7 @@
       <span class="secure-note">Secure connection</span>
     </h2>
     <div class="section text">
-      <textarea name="text" autofocus placeholder="Enter or paste text here"></textarea>
+      <textarea name="text" autofocus placeholder="Enter or paste text here"><?php if (isset($_POST['proofread_text'])) echo $_POST['proofread_text']; ?></textarea>
     </div>
     
     <h2>
