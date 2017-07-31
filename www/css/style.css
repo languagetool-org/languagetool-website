@@ -814,13 +814,6 @@ body #footer span a:hover {
     width: 100% !important;
     float: none !important;
   }
-}
-@media (max-width: 400px) {
-  #header #nav a {
-    font-size: 15px!important;
-  }
-}
-@media (max-width: 450px) {
   body #editor_controls .dropdown {
     width: 100%;
     float: none;
@@ -829,6 +822,13 @@ body #footer span a:hover {
     margin-right: auto;
     height: 40px;
   }
+}
+@media (max-width: 400px) {
+  #header #nav a {
+    font-size: 15px!important;
+  }
+}
+@media (max-width: 450px) {
   body #editor_controls {
     padding: 20px 10px;
   }
