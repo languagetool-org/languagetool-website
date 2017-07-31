@@ -14,6 +14,10 @@
           array('name'=>'Development', 'url' => '/development/'),
         );
 
+        if ($isProofreadingTest) {
+          $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
+        }
+
         foreach ($pages as $aPage) {
           if ($aPage['name'] == 'add_to_browser') {
               ?>

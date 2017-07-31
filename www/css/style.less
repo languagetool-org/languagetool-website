@@ -158,23 +158,28 @@ body {
 
   #editor_controls {
     padding: 20px;
+    background-color: darken(#fff, 8%);
     .dropdown{
       float: left;
       display: block;
-      width: 66%;
+      width: 50%;
     }
     .submit{
       float: right;
       text-align: right;
       display: block;
-      width: 34%;
-      input {
+      
+      button {
+        -webkit-appearance: none;
         border: 0px;
         color: #fff;
         font-size: 18px;
-        padding: 7px 20px;
+        padding: 5px 20px 7px;
         background-color: @blue;
         cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
         &:hover, &:active {
           background-color: darken(@blue, 10%);
           -webkit-transition: all 0.2s linear;
@@ -183,9 +188,22 @@ body {
           background-color: lighten(@blue, 30%);
           cursor: default;
         }
+        span {
+          margin-top: 1px;
+          display: block;
+          font-size: 11px;
+          opacity: 0.6;
+          line-height: 1;
+        }
+      }
+      .proofread {
+        margin-right: 5px;
+        background-color: #ad4848;
+        &:hover, &:active {
+          background-color: darken(#ad4848, 10%);
+        }
       }
     }
-    background-color: darken(#fff, 8%);
   }
 
   &.fullscreen {
