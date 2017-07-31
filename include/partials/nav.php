@@ -35,9 +35,9 @@
       </script>
     </div>
     <div id="social">
-      <a class="facebook" href="http://www.facebook.com/LanguageTool" title="get news at facebook"></a>
-      <a class="twitter" href="http://twitter.com/languagetoolorg" title="get news at twitter"></a>
-      <a class="github" href="https://github.com/languagetool-org/" title="get the source code at GitHub"></a>
+      <a class="facebook" href="http://www.facebook.com/LanguageTool" title="get news at facebook" target="_blank"></a>
+      <a class="twitter" href="http://twitter.com/languagetoolorg" title="get news at twitter" target="_blank"></a>
+      <a class="github" href="https://github.com/languagetool-org/" title="get the source code at GitHub" target="_blank"></a>
     </div>
     <div style="clear:both;"></div>
   </div>
