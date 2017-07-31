@@ -275,30 +275,48 @@ body #editor_controls {
 body #editor_controls .dropdown {
   float: left;
   display: block;
-  width: 66%;
+  width: 50%;
 }
 body #editor_controls .submit {
   float: right;
   text-align: right;
   display: block;
-  width: 34%;
 }
-body #editor_controls .submit input {
+body #editor_controls .submit button {
+  -webkit-appearance: none;
   border: 0px;
   color: #fff;
   font-size: 18px;
-  padding: 7px 20px;
+  padding: 5px 20px 7px;
   background-color: #1a36d8;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
-body #editor_controls .submit input:hover,
-body #editor_controls .submit input:active {
+body #editor_controls .submit button:hover,
+body #editor_controls .submit button:active {
   background-color: #152baa;
   -webkit-transition: all 0.2s linear;
 }
-body #editor_controls .submit input:disabled {
+body #editor_controls .submit button:disabled {
   background-color: #98a6f3;
   cursor: default;
+}
+body #editor_controls .submit button span {
+  margin-top: 1px;
+  display: block;
+  font-size: 11px;
+  opacity: 0.6;
+  line-height: 1;
+}
+body #editor_controls .submit .proofread {
+  margin-right: 5px;
+  background-color: #ad4848;
+}
+body #editor_controls .submit .proofread:hover,
+body #editor_controls .submit .proofread:active {
+  background-color: #893939;
 }
 body.fullscreen {
   overflow: hidden;

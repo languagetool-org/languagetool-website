@@ -12,6 +12,10 @@
           array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
         );
 
+        if ($isProofreadingTest) {
+          $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
+        }
+
         foreach ($pages as $aPage) {
           $activeClass = '';
           if (isset($page) && $page == $aPage['name']) {
