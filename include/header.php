@@ -212,6 +212,7 @@
 
        //Keeps Paste Text feature active until user deselects the Paste as Text button
        paste_text_sticky : true,
+       content_style: "@media (max-width: 750px) { body { margin: 8px 16px !important; } }",
        //select pasteAsPlainText on startup
        setup : function(ed) {
            ed.onInit.add(function(ed) {

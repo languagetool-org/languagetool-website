@@ -768,16 +768,11 @@ body #footer span a:hover {
   }
   #stage #text p,
   #stage #text2 p {
-    font-size: 18px!important;
-    line-height: 26px!important;
-  }
-  #stage #text p.small,
-  #stage #text2 p.small {
-    font-size: 17px!important;
-    line-height: 23px!important;
+    font-size: 20px!important;
+    line-height: 27px!important;
   }
   #stage .inner #text p {
-    margin-bottom: 20px !important;
+    margin-bottom: 15px !important;
   }
   body #editor_controls .submit {
     padding-top: 10px !important;
@@ -842,6 +837,11 @@ body #footer span a:hover {
   }
   .dk_container a {
     width: 80px !important;
+  }
+  #stage #text p,
+  #stage #text2 p {
+    font-size: 18px!important;
+    line-height: 26px!important;
   }
 }
 @media (max-width: 400px) {
