@@ -185,7 +185,29 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       .checkout button:hover {
         background: #1f7b1f;
       }
+      .words {
+        text-align: right;
+      }
     </style>
+    <script>
+      function countWords(s){
+        s = s.replace(/(^\s*)|(\s*$)/g,"");//exclude  start and end white-space
+        s = s.replace(/\s+/g," ");//2 or more space to 1
+        if (!s) {
+          return 0;
+        }
+        return s.split(' ').length;
+      }
+      
+      setInterval(function() {
+        var words = countWords($("textarea[name=text]").val());
+        if (words === 0 || words > 1) {
+          $(".words").text(words + " words");
+        } else {
+          $(".words").text("1 word");
+        }
+      }, 400);
+    </script>
 </head>
 <body>
   <?php include("../../include/partials/nav.php"); ?>
@@ -204,6 +226,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
     </h2>
     <div class="section text">
       <textarea name="text" autofocus placeholder="Enter or paste text here"><?php if (isset($_POST['proofread_text'])) echo $_POST['proofread_text']; ?></textarea>
+      <p class="hint words"></p>
     </div>
     
     <h2>
@@ -222,7 +245,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       3. <strong>Optional Briefing for the Editor</strong>
     </h2>
     <div class="section briefing">
-      <textarea placeholder="Give our editors some more information about the subject of your text"></textarea>
+      <textarea placeholder="Give our editors some more information about the subject of your text" name="briefing"></textarea>
     </div>
     
     <h2>
