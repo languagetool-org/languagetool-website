@@ -10,25 +10,32 @@
         $pages = array(
           array('name'=>'Home', 'url' => '/'),
           array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
+          array('name'=>'add_to_browser', 'url' => ''),
+          array('name'=>'Development', 'url' => '/development/'),
         );
 
         foreach ($pages as $aPage) {
-          $activeClass = '';
-          if (isset($page) && $page == $aPage['name']) {
-            $activeClass = 'active';
+          if ($aPage['name'] == 'add_to_browser') {
+              ?>
+              <script>
+                  if (navigator.userAgent.indexOf("Android") === -1) {
+                      if (navigator.userAgent.indexOf("Chrome/") !== -1) {
+                          document.write('<a onclick="return installChromeExtension()" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a>');
+                      } else if (navigator.userAgent.indexOf("Firefox/") !== -1) {
+                          document.write('<a href="https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage">Add to Firefox</a>');
+                      }
+                  }
+              </script>
+              <?php
+          } else {
+              $activeClass = '';
+              if (isset($page) && $page == $aPage['name']) {
+                  $activeClass = 'active';
+              }
+              print '<a class="'.$activeClass.'" href="'.$aPage['url'].'">'.$aPage['name'].'</a>';
           }
-          print '<a class="'.$activeClass.'" href="'.$aPage['url'].'">'.$aPage['name'].'</a>';
         }
       ?>
-      <script>
-        if (navigator.userAgent.indexOf("Android") === -1) {
-          if (navigator.userAgent.indexOf("Chrome/") !== -1) {
-            document.write('<a onclick="return installChromeExtension()" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a>');
-          } else if (navigator.userAgent.indexOf("Firefox/") !== -1) {
-            document.write('<a href="https://addons.mozilla.org/firefox/addon/languagetool?src=external-lt-homepage">Add to Firefox</a>');
-          }
-        }
-      </script>
     </div>
     <div id="social">
       <a class="facebook" href="http://www.facebook.com/LanguageTool" title="get news at facebook"></a>
