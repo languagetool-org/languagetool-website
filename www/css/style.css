@@ -354,9 +354,8 @@ body #header #container #logo {
   float: left;
 }
 body #header #container #nav {
-  position: relative;
-  top: 6px;
   float: left;
+  padding-top: 6px;
 }
 body #header #container #nav a {
   font-size: 18px;
