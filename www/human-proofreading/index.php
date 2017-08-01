@@ -136,7 +136,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
       
       .column {
-        width: 38%;
+        width: 37%;
         box-sizing: border-box;
         border-left: 1px solid #ddd;
         padding-left: 20px;
@@ -145,7 +145,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         min-height: 75px;
       }
       .column.checkout {
-        width: 24%;
+        width: 26%;
         padding-top: 4px;
       }
       .column:first-child {
@@ -319,7 +319,8 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       
       var HOUR_PUFFER = 10;
       
-      function countWords(s){
+      function countWords(){
+        var s = $("textarea[name=text]").val();
         s = s.replace(/(^\s*)|(\s*$)/g, "");
         s = s.replace(/\s+/g, " ");
         if (!s) {
@@ -336,14 +337,18 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         }
       }
       
-      function updatePricing(wordCount) {
+      function getPrice(wordCount) {
         var finalPrice = 0;
         if (wordCount < 1000) {
           finalPrice = Math.max(pricing.MINIMUM, wordCount * pricing.PER_WORD);
         } else {
           finalPrice = Math.ceil(wordCount / 1000) * 1000 * pricing.PER_WORD;
         }
-        finalPrice = finalPrice.toFixed(2);
+        return finalPrice;
+      }
+      
+      function updatePricing(wordCount) {
+        finalPrice = getPrice(wordCount).toFixed(2);
         $(".pricing .result").text("USD " + finalPrice);
       }
       
@@ -355,7 +360,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
       
       function update() {
-        var wordCount = countWords($("textarea[name=text]").val());
+        var wordCount = countWords();
         updateWordCount(wordCount);
         updatePricing(wordCount);
         updateTiming(wordCount);
@@ -429,7 +434,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
     </h2>
     <div class="section text">
       <textarea name="text" autofocus placeholder="Enter or paste text here"><?php if (isset($_POST['proofread_text'])) echo $_POST['proofread_text']; ?></textarea>
-      <p class="hint words"></p>
+      <p class="hint words">0 words</p>
     </div>
     
     <h2>
@@ -568,6 +573,33 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       </div>
     </div>
   </div>
-
+  <script>
+    // paypal.Button.render({
+    //   env: 'sandbox', // Or 'sandbox',
+    //   commit: true, // Show a 'Pay Now' button
+    //   locale: 'en_US',
+    //   style: {
+    //     size: 'medium',
+    //     color: 'blue',
+    //     shape: 'rect',
+    //     label: 'checkout'
+    //   },
+    //   payment: function(data, actions) {
+    //     var wordCount = countWords();
+    //     return actions.payment.create({
+    //       payment: {
+    //         transactions: [{
+    //           amount: { total: getPrice(wordCount).toFixed(2), currency: 'USD' }
+    //         }]
+    //       }
+    //     });
+    //   },
+    //   onAuthorize: function(data, actions) {
+    //     return actions.payment.execute().then(function(payment) {
+    //       alert("YES");
+    //     });
+    //   }
+    // }, '#paypal-button');
+  </script>
 </body>
 </html>
