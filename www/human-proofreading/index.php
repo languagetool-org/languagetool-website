@@ -86,7 +86,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         width: 100%;
         border: 1px solid #bbb;
         outline: 0;
-        min-height: 350px;
+        min-height: 320px;
         height: 31vh;
         font-family: inherit;
       }
@@ -186,6 +186,14 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         width: 100%;
         cursor: pointer;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      }
+      .payment-logos {
+        background:url(payment_logos.png) center top no-repeat;
+        display: block;
+        margin-top: 12px;
+        height: 20px;
+        opacity: 0.5;
+        background-size: 90% auto;
       }
       .checkout button:hover {
         background: #1f7b1f;
@@ -466,6 +474,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       </div>
       <div class="checkout column">
         <button class="submit">Continue to Payment</button>
+        <span class="payment-logos"></span>
       </div>
     </div>
   </div>
