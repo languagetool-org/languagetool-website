@@ -159,11 +159,15 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         color: #999;
       }
       .column .result {
+        cursor: pointer;
         line-height: 30px;
         font-weight: bold;
         font-size: 22px;
-        display: block;
+        display: inline-block;
         color: #333;
+        padding-right: 21px;
+        background: url(info.svg) right 56% no-repeat;
+        background-size: 15px auto;
       }
       .column p {
         margin: 0;
@@ -188,6 +192,115 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
       .words {
         text-align: right;
+      }
+      .shadow {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: none;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+        white-space: nowrap;
+        animation: fadeIn 0.2s;
+      }
+      .shadow:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+      .modal {
+        display: inline-block;
+        background: #fff;
+        vertical-align: middle;
+        text-align: left;
+        white-space: nowrap;
+        max-width: 730px;
+        position: relative;
+        animation: slideIn 0.2s;
+      }
+      .modal .close {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: 10px solid transparent;
+        background: url(close.svg) center center no-repeat;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        color: #fff;
+      }
+      .modal .timing-info {
+        border-left: 1px solid #ddd;
+        padding-left: 30px;
+        margin-left: 26px;
+        margin-right: 30px;
+      }
+      
+      .modal .pricing-info {
+        margin-left: 30px;
+      }
+      
+      .modal .pricing-info,
+      .modal .timing-info {
+        width: 320px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      .modal h4 {
+        margin: 0 0 25px;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      td + td {
+        padding-left: 20px;
+      }
+      td {
+        padding-bottom: 8px;
+      }
+      .modal .hint {
+        font-size: 14px;
+        margin-top: 10px;
+        color: #999;
+      }
+      
+      .modal .header {
+        background: #333;
+        padding: 30px;
+        white-space: normal;
+        font-size: 34px;
+        font-weight: 400;
+        text-align: center;
+      }
+      .modal h2 {
+        margin: 0;
+        color: #fff;
+      }
+      
+      @keyframes slideIn {
+        0% {
+          transform: translateY(100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     </style>
     <script>
@@ -227,7 +340,9 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
       
       function updateTiming(wordCount) {
-        var time = Math.ceil(wordCount / 200) + HOUR_PUFFER;
+        var time = Math.ceil(wordCount / 200);
+        time = time === 0 ? 1 : time;
+        time += HOUR_PUFFER;
         $(".timing .result").text(time.toString() + " hours");
       }
       
@@ -238,7 +353,21 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         updateTiming(wordCount);
       }
       
-      setInterval(update, 400);
+      $(function() {
+        $(".close, .shadow").click(function() {
+          $(".shadow").hide();
+          return false;
+        });
+
+        $(".open-shadow").click(function() {
+          $(".shadow").show();
+          return false;
+        });
+
+        $(".modal").click(false);
+
+        setInterval(update, 400);
+      });
     </script>
 </head>
 <body>
@@ -293,16 +422,106 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
     <div class="overview-inner">
       <div class="timing column">
         <h3>Approximate delivery time:</h3>
-        <span class="result">An hour</span>
+        <span class="result open-shadow">11 hours</span>
         <p>Estimated based on text length</p>
       </div>
       <div class="pricing column">
         <h3>Price:</h3>
-        <span class="result">USD 14.00</span>
+        <span class="result open-shadow">USD 13.00</span>
         <p>Incl. VAT</p>
       </div>
       <div class="checkout column">
         <button>Continue to Payment</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="shadow">
+    <div class="modal">
+      <span class="close"></span>
+      <div class="header">
+        <h2>Quickly fix your Grammar with our 24/7 Availability</h2>
+      </div>
+      <div class="pricing-info">
+        <h4>Pricing</h4>
+        <table cellspacing=0>
+          <tr>
+            <td>
+              Price per word:
+            </td>
+            <td>
+              <strong>USD  <script>document.write(pricing.PER_WORD)</script></strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Minimum price:
+            </td>
+            <td>
+              <strong>USD  <script>document.write(pricing.MINIMUM.toFixed(2))</script></strong>
+            </td>
+          </tr>
+        </table>
+        <p class="hint">
+          All prices including VAT
+        </p>
+      </div>
+      <div class="timing-info">
+        <h4>Delivery Time Estimations</h4>
+        <table cellspacing=0>
+          <tr>
+            <td>
+              1 - 200 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 1)</script> hours</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              201 - 400 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 2)</script> hours</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              401 - 600 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 3)</script> hours</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1,000 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 5)</script> hours</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              5,000 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 25)</script> hours</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              10,000 words:
+            </td>
+            <td>
+              <strong><script>document.write(HOUR_PUFFER + 50)</script> hours</strong>
+            </td>
+          </tr>
+        </table>
+        <p class="hint">
+          Estimation based on previous jobs
+        </p>
+        
       </div>
     </div>
   </div>
