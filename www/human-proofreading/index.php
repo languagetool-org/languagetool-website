@@ -84,7 +84,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         font-size: 18px;
         box-sizing: border-box;
         width: 100%;
-        border: 1px solid #aaa;
+        border: 1px solid #bbb;
         outline: 0;
         min-height: 350px;
         height: 31vh;
@@ -95,6 +95,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         width: 100%;
         outline: 0;
         padding: 10px 20px;
+        border: 1px solid #bbb;
         box-sizing: border-box;
       }
       .briefing textarea {
@@ -103,7 +104,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
       select {
         width: 100%;
-        border: 1px solid #aaa;
+        border: 1px solid #bbb;
         outline: 0;
         padding: 0 20px;
         height: 45px;
@@ -190,23 +191,54 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       }
     </style>
     <script>
+      var pricing = {
+        PER_WORD: 0.035,
+        MINIMUM: 13,
+      };
+      
+      var HOUR_PUFFER = 10;
+      
       function countWords(s){
-        s = s.replace(/(^\s*)|(\s*$)/g,"");//exclude  start and end white-space
-        s = s.replace(/\s+/g," ");//2 or more space to 1
+        s = s.replace(/(^\s*)|(\s*$)/g, "");
+        s = s.replace(/\s+/g, " ");
         if (!s) {
           return 0;
         }
         return s.split(' ').length;
       }
       
-      setInterval(function() {
-        var words = countWords($("textarea[name=text]").val());
-        if (words === 0 || words > 1) {
-          $(".words").text(words + " words");
+      function updateWordCount(wordCount) {
+        if (wordCount === 0 || wordCount > 1) {
+          $(".words").text(wordCount + " words");
         } else {
           $(".words").text("1 word");
         }
-      }, 400);
+      }
+      
+      function updatePricing(wordCount) {
+        var finalPrice = 0;
+        if (wordCount < 1000) {
+          finalPrice = Math.max(pricing.MINIMUM, wordCount * pricing.PER_WORD);
+        } else {
+          finalPrice = Math.ceil(wordCount / 1000) * 1000 * pricing.PER_WORD;
+        }
+        finalPrice = finalPrice.toFixed(2);
+        $(".pricing .result").text("USD " + finalPrice);
+      }
+      
+      function updateTiming(wordCount) {
+        var time = Math.ceil(wordCount / 200) + HOUR_PUFFER;
+        $(".timing .result").text(time.toString() + " hours");
+      }
+      
+      function update() {
+        var wordCount = countWords($("textarea[name=text]").val());
+        updateWordCount(wordCount);
+        updatePricing(wordCount);
+        updateTiming(wordCount);
+      }
+      
+      setInterval(update, 400);
     </script>
 </head>
 <body>
@@ -251,15 +283,15 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
     <h2>
       4. <strong>Your Email Address</strong>
     </h2>
-    <div class="section briefing">
+    <div class="section email">
       <input type="email" name="email" placeholder="Enter your Email Address">
-      <p class="hint">Your email address will not be shared with anyone.</p>
+      <p class="hint">Your email address will not be shared with any third party.</p>
     </div>
   </form>
   
   <div class="overview">
     <div class="overview-inner">
-      <div class="delivery-time column">
+      <div class="timing column">
         <h3>Approximate delivery time:</h3>
         <span class="result">An hour</span>
         <p>Estimated based on text length</p>
