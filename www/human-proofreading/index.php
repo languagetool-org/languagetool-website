@@ -353,6 +353,33 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         updateTiming(wordCount);
       }
       
+      function focus($element) {
+        setTimeout(function() {
+          $(window).scrollTop($element.offset().top - 80);
+          $element.focus();
+        }, 10);
+      }
+      
+      function validate() {
+        var $textarea = $("textarea[name=text]");
+        var wordCount = countWords($textarea.val());
+        if (!wordCount) {
+          alert("Please enter a text. We cannot check empty texts.");
+          focus($textarea);
+          return false;
+        }
+        
+        var $emailField = $("input[type=email]");
+        var email = $emailField.val();
+        if (email.indexOf("@") === -1 || email.length < 6 || email.indexOf(".") === -1) {
+          alert("Please enter a valid email address.");
+          focus($emailField);
+          return false;
+        }
+        
+        return true;
+      }
+      
       $(function() {
         $(".close, .shadow").click(function() {
           $(".shadow").hide();
@@ -367,6 +394,13 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         $(".modal").click(false);
 
         setInterval(update, 400);
+        
+        $("button.submit").click(function() {
+          if (validate()) {
+            var $fields = $("button,textarea, input, select").prop("disabled", true);
+          }
+          return false;
+        });
       });
     </script>
 </head>
@@ -380,7 +414,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       </p>
   </div>
 
-  <form class="content">
+  <form class="content" onsubmit="return false">
     <h2>
       1. <strong>Paste or enter your Text below</strong>
       <span class="secure-note">Secure connection</span>
@@ -431,7 +465,7 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         <p>Incl. VAT</p>
       </div>
       <div class="checkout column">
-        <button>Continue to Payment</button>
+        <button class="submit">Continue to Payment</button>
       </div>
     </div>
   </div>
