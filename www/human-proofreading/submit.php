@@ -9,7 +9,11 @@ require '../../mailjet-apiv3-php-no-composer/vendor/autoload.php';
 use \Mailjet\Resources;
 
 $timestamp = time();
-$mj = new \Mailjet\Client('28676616edd03dfa5d2524c121f61167', trim(file_get_contents("/home/languagetool/.mailjet.password")));
+$passwordFile = "/home/languagetool/.mailjet.password";
+if (!file_exists($passwordFile)) {
+    exit("Password file does not exist: ".$passwordFile);
+}
+$mj = new \Mailjet\Client('28676616edd03dfa5d2524c121f61167', trim(file_get_contents($passwordFile)));
 $body = [
     'FromEmail' => "dont-reply@languagetool.org",
     'FromName' => "PHP",
