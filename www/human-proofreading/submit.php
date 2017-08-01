@@ -2,7 +2,7 @@
 
 // see https://stackoverflow.com/questions/12301358/send-attachments-with-php-mail
 // test with:
-//   curl -X POST --data "data=ein testöäüßÖÄÜ&email=foo@domain.org&notes=xyz" http://languagetool.localhost/human-proofreading/submit.php
+//   curl -X POST --data "data=ein testöäüßÖÄÜ&email=foo@domain.org&notes=xyz&price=10.40&wordCount=1486&maxTime=4h" http://languagetool.localhost/human-proofreading/submit.php
 
 error_reporting(E_ALL);
 require '../../mailjet-apiv3-php-no-composer/vendor/autoload.php';
@@ -18,7 +18,13 @@ $body = [
     'FromEmail' => "dont-reply@languagetool.org",
     'FromName' => "PHP",
     'Subject' => "Request for proofreading",
-    'Text-part' => "See attachment, to be proofread for ".$_POST['email'].", timestamp: $timestamp\nNotes:\n".$_POST['notes'],
+    'Text-part' => "See attachment.\n".
+        "E-Mail: ".$_POST['email']."\n".
+        "Max.Time: ".$_POST['maxTime']."\n".
+        "Word count: ".$_POST['wordCount']."\n".
+        "Price: ".$_POST['price']."\n".
+        "Notes:\n".$_POST['notes']."\n".
+        "Timestamp: $timestamp\n",
     'Recipients' => [
         [
             'Email' => "ltproofreading@gmail.com"
