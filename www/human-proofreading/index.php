@@ -478,8 +478,8 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
         <p>Incl. VAT</p>
       </div>
       <div class="checkout column">
-        <button class="submit">Continue to Payment</button>
-        <span class="payment-logos"></span>
+        <div id="paypal-button"></div>
+        <!-- <span class="payment-logos"></span> -->
       </div>
     </div>
   </div>
@@ -573,33 +573,40 @@ setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
       </div>
     </div>
   </div>
+
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
   <script>
-    // paypal.Button.render({
-    //   env: 'sandbox', // Or 'sandbox',
-    //   commit: true, // Show a 'Pay Now' button
-    //   locale: 'en_US',
-    //   style: {
-    //     size: 'medium',
-    //     color: 'blue',
-    //     shape: 'rect',
-    //     label: 'checkout'
-    //   },
-    //   payment: function(data, actions) {
-    //     var wordCount = countWords();
-    //     return actions.payment.create({
-    //       payment: {
-    //         transactions: [{
-    //           amount: { total: getPrice(wordCount).toFixed(2), currency: 'USD' }
-    //         }]
-    //       }
-    //     });
-    //   },
-    //   onAuthorize: function(data, actions) {
-    //     return actions.payment.execute().then(function(payment) {
-    //       alert("YES");
-    //     });
-    //   }
-    // }, '#paypal-button');
+    var isDevelopment = location.host.indexOf('localhost') !== -1 || location.host.match(/^\d+\.\d+\.\d+\.\d+/);
+    paypal.Button.render({
+      env: isDevelopment ? 'sandbox' : 'production',
+      commit: true,
+      locale: 'en_US',
+      style: {
+        size: 'medium',
+        color: 'blue',
+        shape: 'rect',
+        label: 'checkout'
+      },
+      client: {
+          sandbox:    'AW9utwPrWusuVeTwSHd0eXbQnQ9F6mwhRYMK0yYfio1nZVEYR7aHFy2jhwC0MfDE2IK9dVgc5czrvHTT',
+          production: 'ASq9TU7c-9KYAN-CWvZbgvc6qiiKM-RbD8zNSdLRzjoaZP-l41josLMGhlVTtyq9-JmOyAaJPPmK2uTf'
+      },
+      payment: function(data, actions) {
+        var wordCount = countWords();
+        return actions.payment.create({
+          payment: {
+            transactions: [{
+              amount: { total: getPrice(wordCount).toFixed(2), currency: 'USD' }
+            }]
+          }
+        });
+      },
+      onAuthorize: function(data, actions) {
+        return actions.payment.execute().then(function(payment) {
+          alert("YES");
+        });
+      }
+    }, '#paypal-button');
   </script>
 </body>
 </html>
