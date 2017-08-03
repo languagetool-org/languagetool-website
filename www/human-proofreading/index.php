@@ -295,6 +295,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         color: #fff;
       }
       
+      #footer {
+        display: none;
+      }
+      
       @keyframes slideIn {
         0% {
           transform: translateY(100px);
@@ -348,6 +352,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         return finalPrice;
       }
       
+      function getLanguage() {
+        return $("select[name=language]").val();
+      }
+      
       function updatePricing(wordCount) {
         finalPrice = getPrice(wordCount).toFixed(2);
         $(".pricing .result").text("USD " + finalPrice);
@@ -374,7 +382,14 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         }, 10);
       }
       
+      function trackEvent(label, value) {
+        if (typeof(_paq) !== 'undefined') {
+          _paq.push(['trackEvent', 'Action', label, value]);
+        }
+      }
+      
       function validate() {
+        trackEvent("ValidateProofreadingForm");
         var $textarea = $("textarea[name=text]");
         var wordCount = countWords($textarea.val());
         if (!wordCount) {
@@ -401,14 +416,27 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         });
 
         $(".open-shadow").click(function() {
+          trackEvent("ShowPricing");
           $(".shadow").show();
           return false;
         });
 
         $(".modal").click(false);
 
+        $("textarea[name=text]").one('input', function() {
+          trackEvent("EnterProofreadingText");
+        });
+
+        $("input[type=email]").one('input', function() {
+          trackEvent("EnterProofreadingEmail");
+        });
+
+        $("textarea[name=briefing]").one('input', function() {
+          trackEvent("EnterProofreadingBriefing");
+        });
+
         setInterval(update, 400);
-        
+
         $("button.submit").click(function() {
           if (validate()) {
             var $fields = $("button,textarea, input, select").prop("disabled", true);
@@ -593,6 +621,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
           production: 'ASq9TU7c-9KYAN-CWvZbgvc6qiiKM-RbD8zNSdLRzjoaZP-l41josLMGhlVTtyq9-JmOyAaJPPmK2uTf'
       },
       payment: function(data, actions) {
+        trackEvent("PreparePayment", getLanguage());
         var wordCount = countWords();
         return actions.payment.create({
           payment: {
@@ -608,14 +637,18 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         });
       },
       onAuthorize: function(data, actions) {
+        trackEvent("AuthorizePayment", getLanguage());
         return actions.payment.execute().then(function(payment) {
+          trackEvent("SuccessPayment", getLanguage());
           alert("Success. TODO: submit data and redirect to thank you page.");
         });
       },
       onCancel: function(data, actions) {
+        trackEvent("CancelledPayment", getLanguage());
         alert("Cancelled by user.");
       }
     }, '#paypal-button');
   </script>
+  <?php include("../../include/footer.php"); ?>
 </body>
 </html>
