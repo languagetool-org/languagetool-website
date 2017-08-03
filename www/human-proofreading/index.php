@@ -2,7 +2,8 @@
 $page = "Human Proofreading";
 $title = "Human Proofreading Service";
 $isProofreadingTest = true;
-setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
+# by default enable proofreading test for people visiting this url
+setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
 ?>
 <!doctype html>
 <html lang=en>

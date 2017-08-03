@@ -18,14 +18,12 @@
   $currentLang = 'en';
   
   $isProofreadingTest = false;
-  if ($checkDefaultLang == 'en') {
-    if (isset($_COOKIE["proofreading_test"])) {
-      $isProofreadingTest = $_COOKIE["proofreading_test"] == '1';
-    } else {
-      $cookieValue = time() % 2 == 1 ? "1" : "0";
-      setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365);
-      $isProofreadingTest = $cookieValue == '1';
-    }
+  if (isset($_COOKIE["proofreading_test"])) {
+    $isProofreadingTest = $_COOKIE["proofreading_test"] == '1';
+  } else if ($checkDefaultLang == 'en') {
+    $cookieValue = time() % 2 == 1 ? "1" : "0";
+    setcookie("proofreading_test", $cookieValue, time() + 60*60*24*365, "/");
+    $isProofreadingTest = $cookieValue == '1';
   }
 ?>
 <!doctype html>
