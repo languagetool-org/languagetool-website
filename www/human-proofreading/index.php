@@ -434,7 +434,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       <span class="secure-note">Secure connection</span>
     </h2>
     <div class="section text">
-      <textarea name="text" autofocus placeholder="Enter or paste text here"><?php if (isset($_POST['proofread_text'])) echo $_POST['proofread_text']; ?></textarea>
+      <textarea name="text" autofocus placeholder="Enter or paste text here" spellcheck="false" autocorrect="off"><?php if (isset($_POST['proofread_text'])) echo $_POST['proofread_text']; ?></textarea>
       <p class="hint words">0 words</p>
     </div>
     
@@ -454,7 +454,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       3. <strong>Optional Briefing for the Editor</strong>
     </h2>
     <div class="section briefing">
-      <textarea placeholder="Give our editors some more information about the subject of your text" name="briefing"></textarea>
+      <textarea placeholder="Give our editors some more information about the subject of your text" name="briefing" spellcheck="false" autocorrect="off"></textarea>
     </div>
     
     <h2>
@@ -462,7 +462,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
     </h2>
     <div class="section email">
       <input type="email" name="email" placeholder="Enter your Email Address">
-      <p class="hint">Your email address will not be shared with any third party.</p>
+      <p class="hint">We will send you the corrected text via email. Your email address won't be shared with any third party.</p>
     </div>
   </form>
   
@@ -599,13 +599,21 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
             transactions: [{
               amount: { total: getPrice(wordCount).toFixed(2), currency: 'USD' }
             }]
+          },
+          experience: {
+            input_fields: {
+              no_shipping: 1
+            }
           }
         });
       },
       onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function(payment) {
-          alert("YES");
+          alert("Success. TODO: submit data and redirect to thank you page.");
         });
+      },
+      onCancel: function(data, actions) {
+        alert("Cancelled by user.");
       }
     }, '#paypal-button');
   </script>
