@@ -33,12 +33,12 @@ $isProofreadingTest = true;
   <h1>Thank you!</h1>
   <p>
       We have received your order. Our editors will send the corrected text to:
-      <strong><?= $_GET['email'] ?></strong>
+      <strong><?= htmlspecialchars($_GET['email']) ?></strong>
       <br>Please also check for that mail in your spam folder.
   </p>
   
   <p class="eta">
-      ETA: <strong>In <?= $_GET['time'] ?></strong>
+      ETA: <strong>In <?= htmlspecialchars($_GET['time']) ?></strong>
   </p>
   <?php include("../../include/footer.php"); ?>
 </body>
