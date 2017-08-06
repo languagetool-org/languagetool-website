@@ -348,11 +348,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       
       function getPrice(wordCount) {
         var finalPrice = 0;
-        if (wordCount < 1000) {
-          finalPrice = Math.max(pricing.MINIMUM, wordCount * pricing.PER_WORD);
-        } else {
-          finalPrice = Math.ceil(wordCount / 1000) * 1000 * pricing.PER_WORD;
-        }
+        finalPrice = Math.max(pricing.MINIMUM, wordCount * pricing.PER_WORD);
         return finalPrice;
       }
       
