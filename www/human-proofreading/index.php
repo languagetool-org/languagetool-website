@@ -317,6 +317,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       }
     </style>
     <script>
+      var _paq = _paq || [];
+      window.onerror = function(e, url, line) {
+        _paq.push(['trackEvent', 'Error', e, url, line]);
+      }
       var pricing = {
         PER_WORD: 0.035,
         MINIMUM: 13,
