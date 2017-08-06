@@ -72,6 +72,8 @@ try {
         $newFilename = time() . '.txt';
         $fullFilename = 'Not set';
         $contents = $_POST['text'];
+        $tmpFilename = $UPLOAD_DIR."/lt-proofreading-".$timestamp.".txt";
+        file_put_contents($tmpFilename, $contents);
     }
     // see https://stackoverflow.com/questions/12301358/send-attachments-with-php-mail
     $mj = new \Mailjet\Client('28676616edd03dfa5d2524c121f61167', trim(file_get_contents($passwordFile)));
