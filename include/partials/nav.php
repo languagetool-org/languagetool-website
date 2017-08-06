@@ -11,11 +11,12 @@
           array('name'=>'Home', 'url' => '/'),
           array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
           array('name'=>'add_to_browser', 'url' => ''),
-          array('name'=>'Development', 'url' => '/development/'),
         );
 
         if ($isProofreadingTest) {
-          $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
+            $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
+        } else {
+            $pages[] = array('name' => 'Development', 'url' => '/development/');
         }
 
         foreach ($pages as $aPage) {
