@@ -457,6 +457,7 @@
      var textarea = document.createElement('textarea')
      textarea.style.display = 'none';
      textarea.name = 'proofread_text';
+     var langCode = document.checkform.lang.value;
      var $dummy = $("<div>").html(tinymce.activeEditor.getContent());
      if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'Action', 'ClickProofread', langCode]); } // Piwik tracking
      textarea.value = $dummy.text();

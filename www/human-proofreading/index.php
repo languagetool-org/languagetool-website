@@ -99,7 +99,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         border: 1px solid #bbb;
         box-sizing: border-box;
       }
-      .briefing textarea {
+      .notes textarea {
         height: 150px;
         min-height: 150px;
       }
@@ -356,16 +356,20 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         return $("select[name=language]").val();
       }
       
+      function getTime(wordCount) {
+        var time = Math.ceil(wordCount / 200);
+        time = time === 0 ? 1 : time;
+        time += HOUR_PUFFER;
+        return time;
+      }
+      
       function updatePricing(wordCount) {
         finalPrice = getPrice(wordCount).toFixed(2);
         $(".pricing .result").text("USD " + finalPrice);
       }
       
       function updateTiming(wordCount) {
-        var time = Math.ceil(wordCount / 200);
-        time = time === 0 ? 1 : time;
-        time += HOUR_PUFFER;
-        $(".timing .result").text(time.toString() + " hours");
+        $(".timing .result").text(getTime(wordCount).toString() + " hours");
       }
       
       function update() {
@@ -388,21 +392,25 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         }
       }
       
-      function validate() {
+      function validate(verbose) {
         trackEvent("ValidateProofreadingForm");
         var $textarea = $("textarea[name=text]");
         var wordCount = countWords($textarea.val());
         if (!wordCount) {
-          alert("Please enter a text. We cannot check empty texts.");
-          focus($textarea);
+          if (verbose) {
+            alert("Please enter a text. We cannot check empty texts.");
+            focus($textarea);
+          }
           return false;
         }
         
         var $emailField = $("input[type=email]");
         var email = $emailField.val();
         if (email.indexOf("@") === -1 || email.length < 6 || email.indexOf(".") === -1) {
-          alert("Please enter a valid email address.");
-          focus($emailField);
+          if (verbose) {
+            alert("Please enter a valid email address.");
+            focus($emailField);
+          }
           return false;
         }
         
@@ -431,8 +439,8 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
           trackEvent("EnterProofreadingEmail");
         });
 
-        $("textarea[name=briefing]").one('input', function() {
-          trackEvent("EnterProofreadingBriefing");
+        $("textarea[name=notes]").one('input', function() {
+          trackEvent("EnterProofreadingNotes");
         });
 
         setInterval(update, 400);
@@ -456,7 +464,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       </p>
   </div>
 
-  <form class="content" onsubmit="return false">
+  <form class="content" onsubmit="return false" action="submit.php" method="post">
     <h2>
       1. <strong>Paste or enter your Text below</strong>
       <span class="secure-note">Secure connection</span>
@@ -481,8 +489,8 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
     <h2>
       3. <strong>Optional Briefing for the Editor</strong>
     </h2>
-    <div class="section briefing">
-      <textarea placeholder="Give our editors some more information about the subject of your text" name="briefing" spellcheck="false" autocorrect="off"></textarea>
+    <div class="section notes">
+      <textarea placeholder="Give our editors some more information about the subject of your text" name="notes" spellcheck="false" autocorrect="off"></textarea>
     </div>
     
     <h2>
@@ -605,7 +613,15 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
 
   <script src="https://www.paypalobjects.com/api/checkout.js"></script>
   <script>
+    var paypalActions;
     var isDevelopment = location.host.indexOf('localhost') !== -1 || location.host.match(/^\d+\.\d+\.\d+\.\d+/);
+    $("form").on("change", function() {
+      if (validate()) {
+        paypalActions.enable();
+      } else {
+        paypalActions.disable();
+      }
+    });
     paypal.Button.render({
       env: isDevelopment ? 'sandbox' : 'production',
       commit: true,
@@ -619,6 +635,18 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       client: {
           sandbox:    'AW9utwPrWusuVeTwSHd0eXbQnQ9F6mwhRYMK0yYfio1nZVEYR7aHFy2jhwC0MfDE2IK9dVgc5czrvHTT',
           production: 'ASq9TU7c-9KYAN-CWvZbgvc6qiiKM-RbD8zNSdLRzjoaZP-l41josLMGhlVTtyq9-JmOyAaJPPmK2uTf'
+      },
+      
+      validate: function(actions) {
+        if (validate()) {
+          actions.enable();
+        } else {
+          actions.disable();
+        }
+        paypalActions = actions;
+      },
+      onClick: function(actions) {
+        validate(true);
       },
       payment: function(data, actions) {
         trackEvent("PreparePayment", getLanguage());
@@ -640,12 +668,17 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         trackEvent("AuthorizePayment", getLanguage());
         return actions.payment.execute().then(function(payment) {
           trackEvent("SuccessPayment", getLanguage());
-          alert("Success. TODO: submit data and redirect to thank you page.");
+          var $form = $("form");
+          var wordCount = countWords();
+          $("<input>", { type: "hidden", name: "maxTime", value: getTime(wordCount) }).appendTo($form);
+          $("<input>", { type: "hidden", name: "wordCount", value: wordCount }).appendTo($form);
+          $("<input>", { type: "hidden", name: "price", value: "USD " + getPrice(wordCount).toFixed(2) }).appendTo($form);
+          $form.submit();
+          $form.find("input, select, textarea").prop("disabled", true);
         });
       },
       onCancel: function(data, actions) {
         trackEvent("CancelledPayment", getLanguage());
-        alert("Cancelled by user.");
       }
     }, '#paypal-button');
   </script>
