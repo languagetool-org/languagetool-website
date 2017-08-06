@@ -74,7 +74,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         width: 950px;
-        margin: 60px auto 150px;
+        margin: 60px auto 100px;
       }
       .section  {
         margin-bottom: 60px;
