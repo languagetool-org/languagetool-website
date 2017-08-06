@@ -21,7 +21,7 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => getRoot() . '/css/style.css?v16',
+        'src' => getRoot() . '/css/style.css?v17',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
