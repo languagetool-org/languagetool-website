@@ -80,7 +80,7 @@ try {
         'FromName' => "PHP",
         'Subject' => "Request for proofreading",
         'Text-part' => "See attachment.\n".
-            "E-Mail: ".$_POST['email']."\n".
+            "E-Mail: ".trim($_POST['email'])."\n".
             "Language: ".$_POST['language']."\n".
             "Max.Time: ".$_POST['maxTime']."\n".
             "Word count: ".$_POST['wordCount']."\n".
@@ -102,7 +102,12 @@ try {
         ]
     ];
     $response = $mj->post(Resources::$Email, ['body' => $body]);
-    print $response->success();
+    if ($response->success()) {
+        header('Location: thankyou.php?email='.urlencode($_POST['email']).'&time='.urlencode($_POST['maxTime']));
+    } else {
+        echo "An error occurred. Please try again later or contact us at: daniel.naber@languagetool.org";
+    }
+    die();
 } catch (RuntimeException $e) {
     echo $e->getMessage();
 }
