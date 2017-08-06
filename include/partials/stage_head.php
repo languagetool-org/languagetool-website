@@ -10,7 +10,7 @@
     <div id="editor">
       <div class="inner">
         <?php
-          if ($isProofreadingTest) {
+          if (isset($isProofreadingTest) && $isProofreadingTest) {
             $checkSubmitButtonValue = "Basic Check";
           } else {
             $checkSubmitButtonValue = "Check Text";

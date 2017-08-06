@@ -13,7 +13,7 @@
           array('name'=>'add_to_browser', 'url' => ''),
         );
 
-        if ($isProofreadingTest) {
+        if (isset($isProofreadingTest) && $isProofreadingTest) {
             $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
         } else {
             $pages[] = array('name' => 'Development', 'url' => '/development/');
