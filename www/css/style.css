@@ -827,6 +827,11 @@ body #footer span a:hover {
   #editor_controls .submit {
     width: 100% !important;
   }
+  #editor_controls button {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+  }
   #editor_controls .submit input {
     width: 100% !important;
     float: none !important;
