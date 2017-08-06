@@ -191,10 +191,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       .payment-logos {
         background:url(payment_logos.png) center top no-repeat;
         display: block;
-        margin-top: 12px;
+        margin-top: 8px;
         height: 20px;
-        opacity: 0.5;
-        background-size: 90% auto;
+        opacity: 0.6;
+        background-size: auto 100%;
       }
       .checkout button:hover {
         background: #1f7b1f;
@@ -516,7 +516,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       </div>
       <div class="checkout column">
         <div id="paypal-button"></div>
-        <!-- <span class="payment-logos"></span> -->
+        <span class="payment-logos"></span>
       </div>
     </div>
   </div>
