@@ -670,11 +670,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
           trackEvent("SuccessPayment", getLanguage());
           var $form = $("form");
           var wordCount = countWords();
-          $("<input>", { type: "hidden", name: "maxTime", value: getTime(wordCount) }).appendTo($form);
+          $("<input>", { type: "hidden", name: "maxTime", value: getTime(wordCount) + " hours" }).appendTo($form);
           $("<input>", { type: "hidden", name: "wordCount", value: wordCount }).appendTo($form);
           $("<input>", { type: "hidden", name: "price", value: "USD " + getPrice(wordCount).toFixed(2) }).appendTo($form);
           $form.submit();
-          $form.find("input, select, textarea").prop("disabled", true);
         });
       },
       onCancel: function(data, actions) {
