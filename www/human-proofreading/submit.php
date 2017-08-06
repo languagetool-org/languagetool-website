@@ -80,7 +80,7 @@ try {
     $body = [
         'FromEmail' => "dont-reply@languagetool.org",
         'FromName' => "PHP",
-        'Subject' => "Request for proofreading",
+        'Subject' => "Request for proofreading for ".trim($_POST['email']),
         'Text-part' => "See attachment.\n".
             "E-Mail: ".trim($_POST['email'])."\n".
             "Language: ".$_POST['language']."\n".
