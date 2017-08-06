@@ -371,9 +371,8 @@ body #header #container #logo {
   float: left;
 }
 body #header #container #nav {
-  position: relative;
-  top: 6px;
   float: left;
+  padding-top: 6px;
 }
 body #header #container #nav a {
   font-size: 18px;
@@ -381,6 +380,7 @@ body #header #container #nav a {
   text-decoration: none;
   font-weight: 600;
   margin-right: 30px;
+  white-space: nowrap;
 }
 body #header #container #nav a.active,
 body #header #container #nav a:hover {
@@ -785,16 +785,11 @@ body #footer span a:hover {
   }
   #stage #text p,
   #stage #text2 p {
-    font-size: 18px!important;
-    line-height: 26px!important;
-  }
-  #stage #text p.small,
-  #stage #text2 p.small {
-    font-size: 17px!important;
-    line-height: 23px!important;
+    font-size: 20px!important;
+    line-height: 27px!important;
   }
   #stage .inner #text p {
-    margin-bottom: 20px !important;
+    margin-bottom: 15px !important;
   }
   body #editor_controls .submit {
     padding-top: 10px !important;
@@ -836,13 +831,6 @@ body #footer span a:hover {
     width: 100% !important;
     float: none !important;
   }
-}
-@media (max-width: 400px) {
-  #header #nav a {
-    font-size: 15px!important;
-  }
-}
-@media (max-width: 450px) {
   body #editor_controls .dropdown {
     width: 100%;
     float: none;
@@ -851,6 +839,13 @@ body #footer span a:hover {
     margin-right: auto;
     height: 40px;
   }
+}
+@media (max-width: 400px) {
+  #header #nav a {
+    font-size: 15px!important;
+  }
+}
+@media (max-width: 450px) {
   body #editor_controls {
     padding: 20px 10px;
   }
@@ -859,6 +854,11 @@ body #footer span a:hover {
   }
   .dk_container a {
     width: 80px !important;
+  }
+  #stage #text p,
+  #stage #text2 p {
+    font-size: 18px!important;
+    line-height: 26px!important;
   }
 }
 @media (max-width: 400px) {

@@ -257,15 +257,15 @@ body {
         float: left;
       }
       #nav {
-        position: relative;
-        top: 6px;
         float: left;
+        padding-top: 6px;
         a {
           font-size: 18px;
           color: #000;
           text-decoration: none;
           font-weight: 600;
           margin-right: 30px;
+          white-space: nowrap;
           &.active, &:hover {
             color: @blue;
           }
@@ -680,16 +680,12 @@ body {
   #stage {
     #text, #text2 {
       p {
-        font-size: 18px!important;
-        line-height: 26px!important;
-        &.small {
-          font-size: 17px!important;
-          line-height: 23px!important;
-        }
+        font-size: 20px!important;
+        line-height: 27px!important;
       }
     }
     .inner #text p {
-      margin-bottom: 20px !important;
+      margin-bottom: 15px !important;
     }
   }
   body #editor_controls .submit {
@@ -736,6 +732,15 @@ body {
     width: 100% !important;
     float: none !important;
   }
+  body #editor_controls .dropdown
+  {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -749,15 +754,6 @@ body {
 }
 
 @media (max-width: 450px) {
-  body #editor_controls .dropdown
-  {
-    width: 100%;
-    float: none;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-  }
   body #editor_controls
   {
     padding: 20px 10px;
@@ -769,6 +765,11 @@ body {
   .dk_container a
   {
     width: 80px !important;
+  }
+  #stage #text p,
+  #stage #text2 p {
+    font-size: 18px!important;
+    line-height: 26px!important;
   }
 }
 
