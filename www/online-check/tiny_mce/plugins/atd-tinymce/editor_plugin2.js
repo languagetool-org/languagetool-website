@@ -527,6 +527,10 @@ AtDCore.prototype.isIE = function() {
 
          /* again showing a menu, I have no clue what */
          editor.onClick.add(plugin._showMenu, plugin);
+         
+         editor.onPaste.add(function(editor, ev) {
+             t._trackEvent('PasteText');
+         });
 
          // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
          /*if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
