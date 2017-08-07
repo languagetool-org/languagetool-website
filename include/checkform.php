@@ -148,7 +148,7 @@ function printLangOption($langCode) {
             <div class="submit">
               <?php if (isset($isProofreadingTest) && $isProofreadingTest) { ?>
                 <button class="proofread" type="submit" 
-                  onClick="proofread();" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>" title="Check your text by an expert">
+                  onClick="proofread();" title="Have your text checked by an expert">
                     Proofread by an Expert
                     <span>Starting at USD 13</span>
                 </button>
