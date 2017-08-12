@@ -21,7 +21,7 @@
         <div id='languageInfo' class='languageHomepage'></div>
       </div>
       <div id="text2">
-        <p class="small">LanguageTool finds many errors that a simple spell checker cannot detect and several grammar problems.</p>
+        <p class="small">LanguageTool identifies many grammatical and stylistic issues that a simple spell checker cannot detect.</p>
       </div>
     </div>
   </div>
