@@ -54,6 +54,9 @@
     $introText2 = "LanguageTool identifie des erreurs grammaticales qui ne sont pas signalées par un correcteur orthographique.";
     $contributeLink = "Contribuer !";
 
+    $forumHeadline = "Forum";
+    $compareEditionsText = "compare editions";
+    $moreIntegrationsText = "more integrations";
     $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Pour <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
