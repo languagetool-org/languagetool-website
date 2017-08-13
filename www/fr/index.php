@@ -55,7 +55,7 @@
     $contributeLink = "Contribuer !";
 
     $downloadHeadline = "Télécharger";
-    $downloadRequiresJava = "Nécessite Java {version}+";
+    $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Pour <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "<strong>Autonome</strong>";
     $downloadLabelFx = "Pour <strong>Firefox</strong>";
