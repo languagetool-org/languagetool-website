@@ -46,6 +46,7 @@
         'uk' => 'ukrainien'
     );
 
+    $addYourTextHere = "Tapez votre texte ici";  // used for languages that have no demo text
     $checkSubmitButtonValue = "Vérifier";
     $checkSubmitButtonTitle = "Vérifier le text, ou Ctrl-Entrée";
     $toggleFullscreenMode = "basculer le mode plein écran";
@@ -55,8 +56,8 @@
     $contributeLink = "Contribuer !";
 
     $forumHeadline = "Forum";
-    $compareEditionsText = "compare editions";
-    $moreIntegrationsText = "more integrations";
+    $compareEditionsText = "Comparer les versions";
+    $moreIntegrationsText = "Plus d’integrations";
     $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Pour <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
@@ -64,6 +65,8 @@
     $downloadLabelFx = "Pour <strong>Firefox</strong>";
     $downloadLabelChrome = "Pour <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Module de navigateur";
+    $downloadLabelGoogleDocs = "Pour <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Greffon";
     $checklistText = "Consulter la <a href='/issues/'>liste de problèmes</a> si vous rencontrez un problème.";
     $otherDownloadsText = "Télécharger une <a href='/download/'>vieille version</a> ou la <a href='/download/snapshots/?C=M;O=D'>dernière version quotidienne</a>.";
     $webstartText = "Démarrer avec <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
