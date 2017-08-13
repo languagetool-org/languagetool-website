@@ -9,14 +9,14 @@
       <?php
         $pages = array(
           array('name'=>'Home', 'url' => '/'),
-          array('name'=>'Forum', 'url' => 'https://forum.languagetool.org'),
+          array('name'=>isset($forumHeadline) ? $forumHeadline : "Forum", 'url' => 'https://forum.languagetool.org'),
           array('name'=>'add_to_browser', 'url' => ''),
         );
 
         if (isset($isProofreadingTest) && $isProofreadingTest) {
             $pages[] = array('name' => 'Human Proofreading', 'url' => '/human-proofreading/');
         } else {
-            $pages[] = array('name' => 'Development', 'url' => '/development/');
+            $pages[] = array('name' => isset($developmentHeadline) ? $developmentHeadline : "Development", 'url' => '/development/');
         }
 
         foreach ($pages as $aPage) {

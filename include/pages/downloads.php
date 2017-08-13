@@ -6,8 +6,8 @@
       <?php } else { ?>
           Download
       <?php } ?>
-        <span style="font-size: small"><a href="/compare">compare editions</a> &nbsp;&middot;&nbsp;
-          <a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on" style="font-size: small">more integrations</a></span>
+        <span style="font-size: small"><a href="/compare"><?= isset($compareEditionsText) ? $compareEditionsText : "compare editions" ?></a> &nbsp;&middot;&nbsp;
+          <a href="http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on" style="font-size: small"><?= isset($moreIntegrationsText) ? $moreIntegrationsText : "more integrations" ?></a></span>
   </h2>
 
     <script>
