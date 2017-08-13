@@ -51,7 +51,7 @@
     $toggleFullscreenMode = "basculer le mode plein écran";
 
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre pour le français et <a href='/languages/'>plus de 20 autres langues</a>.";
-    $introText2 = "Il trouve des erreurs qui ne sont pas signalées par un correcteur orthographique.";
+    $introText2 = "LanguageTool identifie des erreurs grammaticales qui ne sont pas signalées par un correcteur orthographique.";
     $contributeLink = "Contribuer !";
 
     $downloadHeadline = "Télécharger";
