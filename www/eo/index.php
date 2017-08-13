@@ -46,6 +46,7 @@
         'uk' => 'ukraina',
     );
 
+    $addYourTextHere = "Enmetu vian tekston ĉi tie";  // used for languages that have no demo text
     $checkSubmitButtonValue = 'Kontroli';
     $checkSubmitButtonTitle = "Kontroli la tekston, aŭ Ktrl-Enenklavo";
     $toggleFullscreenMode = "baskuli plenekrane";
@@ -54,6 +55,9 @@
     $introText2 = "Lingvoilo atentigas pri eraroj ne trovitaj per simpla literuma kontrolilo.";
     $contributeLink = "Kunhelpi !";
 
+    $forumHeadline = "Forumo";
+    $compareEditionsText = "Kompari versiojn";
+    $moreIntegrationsText = "Pliaj integradoj";
     $downloadHeadline = "Elŝuti";
     $downloadRequiresJava = "Bezonas Java {version}+";
     $downloadTitle = "Por <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
@@ -61,6 +65,8 @@
     $downloadLabelFx = "Por <strong>Firefox</strong>";
     $downloadLabelChrome = "Por <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Kromaĵo de retumilo";
+    $downloadLabelGoogleDocs = "Por <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Kromaĵo";
     $checklistText = "Bonvolu vidi <a href='/issues/'>liston de problemoj</a>, se vi havas problemojn.";
     $otherDownloadsText = "Elŝuti <a href='/download/'>malnovajn versiojn</a> aŭ <a href='/download/snapshots/?C=M;O=D'>ĉiutagan version</a>.";
     $webstartText = "Startigi per <a href='/webstart/web/LanguageTool.jnlp'>Java WebStart</a>.";
