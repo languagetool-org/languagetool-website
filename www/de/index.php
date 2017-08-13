@@ -53,6 +53,9 @@
     $introText1 = "LanguageTool ist eine kostenlose <strong>Textprüfung</strong> für Grammatik, Stil und&nbsp;Rechtschreibung.";
     $introText2 = "Neben Deutsch werden <a href='/'>Englisch</a> und <a href='/languages/'>viele weitere Sprachen</a> unter&shy;stützt.";
 
+    $forumHeadline = "Forum";
+    $compareEditionsText = "Vergleich";
+    $moreIntegrationsText = "Weitere Add-ons";
     $downloadHeadline = "Download";
     $downloadRequiresJava = "benötigt Java {version}+";
     $downloadTitle = "Für <strong>LibreOffice</strong>";
