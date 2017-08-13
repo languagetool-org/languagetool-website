@@ -59,7 +59,7 @@
     $compareEditionsText = "Kompari versiojn";
     $moreIntegrationsText = "Pliaj integradoj";
     $downloadHeadline = "Elŝuti";
-    $downloadRequiresJava = "Bezonas Java {version}+";
+    $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Por <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "Memstara";
     $downloadLabelFx = "Por <strong>Firefox</strong>";
