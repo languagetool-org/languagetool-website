@@ -320,10 +320,10 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
       var _paq = _paq || [];
       window.onerror = function(e, url, line) {
         _paq.push(['trackEvent', 'Error', e, url, line]);
-      }
+      };
       var pricing = {
         PER_WORD: 0.035,
-        MINIMUM: 13,
+        MINIMUM: 5,
       };
       
       var HOUR_PUFFER = 10;
@@ -646,6 +646,7 @@ setcookie("proofreading_test", "1", time() + 60*60*24*365, "/");
         paypalActions = actions;
       },
       onClick: function(actions) {
+        trackEvent("ClickCheckoutButton", getLanguage());
         validate(true);
       },
       payment: function(data, actions) {

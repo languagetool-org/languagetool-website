@@ -150,13 +150,13 @@ function printLangOption($langCode) {
                 <button class="proofread" type="submit" 
                   onClick="proofread();" title="Have your text checked by an expert">
                     Proofread by an Expert
-                    <span>Starting at USD 13</span>
+                    <span class="startPrice">Starting at USD 5</span>
                 </button>
               <?php } ?>
                 <button type="submit" name="_action_checkText"
                   onClick="doit(true);return false;" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>">
                     <?= $checkSubmitButtonValue ?>
-                    <span>Instant and free</span> 
+                    <span class="checkButtonDetail">Instant and free</span> 
                 </button>
             </div>
             <div style="clear:both;"></div>

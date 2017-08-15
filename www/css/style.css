@@ -307,8 +307,10 @@ body #editor_controls .submit button span {
   margin-top: 1px;
   display: block;
   font-size: 13px;
-  opacity: 0.6;
   line-height: 1;
+}
+body #editor_controls .submit .checkButtonDetail {
+  opacity: 0.6;
 }
 body #editor_controls .submit .proofread {
   margin-right: 5px;
@@ -317,6 +319,11 @@ body #editor_controls .submit .proofread {
 body #editor_controls .submit .proofread:hover,
 body #editor_controls .submit .proofread:active {
   background-color: #893939;
+}
+body #editor_controls .submit .proofread .startPrice {
+  font-weight: bold;
+  color: white !important;
+  opacity: 1;
 }
 body.fullscreen {
   overflow: hidden;
