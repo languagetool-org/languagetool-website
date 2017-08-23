@@ -61,6 +61,7 @@
 
 
     $forumHeadline = "Fórum";
+    $developmentHeadline = "Desenvolvimento";
     $compareEditionsText = "Comparar versões";
     $moreIntegrationsText = "Mais integrações";
     $downloadHeadline = "Transferir";
