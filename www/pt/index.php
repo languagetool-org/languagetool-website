@@ -50,6 +50,8 @@
         'uk'  => 'Ucraniano'
     );
 
+
+    $addYourTextHere = "Coloque o seu texto aqui";
     $checkSubmitButtonValue = "Verificar Texto";
     $checkSubmitButtonTitle = "Verificar Texto (Ctrl+Return)";
     $toggleFullscreenMode = "Ecrã inteiro";
@@ -57,8 +59,12 @@
     $introText1 = "O <strong>LanguageTool</strong> é um programa livre e de código aberto para verificação gramatical em Português, Inglês, Francês, Alemão, Polaco, entre outros <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "Encontra muitos problemas de gramática e estilo, além de rever a ortografia eficientemente.";
 
+
+    $forumHeadline = "Fórum";
+    $compareEditionsText = "Comparar versões";
+    $moreIntegrationsText = "Mais integrações";
     $downloadHeadline = "Transferir";
-    $downloadRequiresJava = "Requer Java {version}+";
+    $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Para o <strong>LibreOffice</strong>";
     $downloadTitleStandAlone = "<strong>Executável independente</strong>";
     $downloadLabelFx = "Para o <strong>Firefox</strong>";
@@ -112,7 +118,7 @@
             <ul>
                 <li>Identificador de palavras alteradas pelo AO90;</li>
                 <li>Nomes Personalidades;</li>
-                <li>Regionalismos.</li>
+                <li>Regionalismos;</li>
             </ul>
         </li>
         <li><strong>Gramática</strong>
