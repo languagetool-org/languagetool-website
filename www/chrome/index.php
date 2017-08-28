@@ -49,7 +49,10 @@
     error. Click it to have the error replaced in your text. 
     You can also select text outside of an input area and have it checked. You won't be able to
     click the suggestions then, as the extension cannot edit static text.
-    The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Space</tt>.
+    
+    <p>The extension's default shortcut is <tt>Ctrl</tt>+<tt>Shift</tt>+<tt>Space</tt>.
+    In the popup, you can use the cursor keys to navigate between the errors and <tt>Return</tt>
+    to accept a suggestion.</p>
     
     <!--
     <h2>Advanced Options</h2>
