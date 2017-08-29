@@ -26,6 +26,19 @@
     </p>
 
     
+    <h2>Availability</h2>
+    
+    <p>languagetool.org offers a free service to automatically proofread text. There are no guarantees
+    about availability or performance. There are no guarantees about a specific version of the 
+    proofreading software running, nor about future updates.</p>
+
+
+    <h2>Limitation of Liability</h2>
+
+    <p>languagetool.org shall not be responsible for any claimed damages, including incidental and consequential damages,
+    which may arise from languagetool.org’s servers going offline or being unavailable for any reason whatsoever.</p>
+
+
     <h2>Licenses</h2>
 
     <p>The contents of this homepage is available under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.

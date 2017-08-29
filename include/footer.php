@@ -5,7 +5,7 @@
       array( 'name'=>'Screenshots', 'url' => getRoot() . '/screenshots/' ),
       array( 'name'=>'Team', 'url' => getRoot() . '/team/' ),
       array( 'name' => 'Privacy Policy', 'url' => getRoot() . '/privacy/'),
-      array( 'name'=>'Imprint', 'url' => getRoot() . '/legal/' )
+      array( 'name'=>'Imprint &amp; Terms of Service', 'url' => getRoot() . '/legal/' )
     );
 
     foreach ($footer_pages as $page) {
