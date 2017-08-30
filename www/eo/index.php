@@ -56,6 +56,7 @@
     $contributeLink = "Kunhelpi !";
 
     $forumHeadline = "Forumo";
+    $developmentHeadline = "Konstruado";
     $compareEditionsText = "Kompari versiojn";
     $moreIntegrationsText = "Pliaj integradoj";
     $downloadHeadline = "Elŝuti";
