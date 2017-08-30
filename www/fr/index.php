@@ -56,8 +56,9 @@
     $contributeLink = "Contribuer !";
 
     $forumHeadline = "Forum";
+    $developmentHeadline = "Développement";
     $compareEditionsText = "Comparer les versions";
-    $moreIntegrationsText = "Plus d’integrations";
+    $moreIntegrationsText = "Plus d’intégrations";
     $downloadHeadline = "Télécharger";
     $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Pour <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
