@@ -53,6 +53,8 @@
     $introText2 = "Barrek eo da wiriañ testennoù e brezhoneg pe e <a href='/languages/'>yezhoù all</a>.";
     $contributeLink = "Kenober!";
 
+    $forumHeadline = "Forom";
+    $developmentHeadline = "Diorroadur";
     $downloadHeadline = "Pellgargit";
     $downloadRequiresJava = "Ret eo kaout Java {version}+";
     $downloadTitle = "Evit <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
