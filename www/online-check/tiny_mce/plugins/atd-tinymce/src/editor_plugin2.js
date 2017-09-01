@@ -434,7 +434,7 @@
                         ed.core.ignoredRulesIds.push(ruleId);
                         t._removeWordsByRuleId(ruleId);
                         //t._trackEvent('IgnoreRule', lang, errorDescription["id"]);
-                        t._trackEvent('IgnoreRule', lang);
+                        t._trackEvent('IgnoreRule', lang, ruleId);
                         t._checkDone();
                         ed.selection.setContent(ed.selection.getContent()); // remove selection (see https://github.com/languagetool-org/languagetool-website/issues/8)
                         /*var stateObj = {};
