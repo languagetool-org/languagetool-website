@@ -694,6 +694,7 @@ AtDCore.prototype.isIE = function() {
 
             /* find the correct suggestions object */
             var errorDescription = ed.core.findSuggestion(e.target);
+            var ruleId = errorDescription["id"];
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
 
             if (errorDescription == undefined)
@@ -721,9 +722,7 @@ AtDCore.prototype.isIE = function() {
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
-                            // 3 levels are not properly displayed in Piwik UI:
-                            //t._trackEvent('AcceptCorrection', lang + ":" + errorDescription["id"], sugg + ":" + iTmp);
-                            t._trackEvent('AcceptCorrection', lang);
+                            t._trackEvent('AcceptCorrection', lang, ruleId);
                             t._checkDone();
                          }
                       });
@@ -755,7 +754,6 @@ AtDCore.prototype.isIE = function() {
             if (plugin.editor.getParam('languagetool_i18n_suggest_word_url')) {
               suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
             }
-            var ruleId = errorDescription["id"];
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1 ||
                                  ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") != -1 || ruleId.indexOf("HUNSPELL_RULE") != -1;
 
@@ -866,7 +864,7 @@ AtDCore.prototype.isIE = function() {
                                 });
                                 if (exampleCount === 0) {
                                     ruleHtml += "<p>" + noRuleExamples + "</p>";
-                                    t._trackEvent('ShowExamples', 'NoExamples', errorDescription["id"]);
+                                    t._trackEvent('ShowExamples', 'NoExamples', ruleId);
                                 }
                                 ruleHtml += "<p><a target='_lt_rule_details' href='" + ruleUrl + "'>" + ruleImplementation + "</a></p>";
                                 var $dialog = $("#dialog");
@@ -879,7 +877,7 @@ AtDCore.prototype.isIE = function() {
                                 t._trackEvent('ShowExamples', 'ServerError');
                             }).always(function() {
                                 plugin.editor.setProgressState(0);
-                                t._trackEvent('ShowExamples', 'ShowExampleSentences');
+                                t._trackEvent('ShowExamples', 'ShowExampleSentences', ruleId);
                             });
                     }
                 });
