@@ -583,6 +583,10 @@ body #stage .inner #text #addToBrowser a {
   color: blue;
   font-size: 1.8em;
 }
+body #stage .inner #text2 #addToBrowser a:hover,
+body #stage .inner #text #addToBrowser a:hover {
+  background-color: #efedff;
+}
 body #stage .inner #text2 {
   padding: 20px 0 0;
 }
