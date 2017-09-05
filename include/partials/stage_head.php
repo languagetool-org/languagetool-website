@@ -5,7 +5,14 @@
   <div class="inner">
     <div id="text">
         <p>LanguageTool is a <strong>proof&shy;reading service</strong> for English, <a href="de/">German</a>,
-            <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.</p>
+            <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.
+            <br>
+            <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false) { ?>
+                <div id="addToBrowser">
+                    <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a>
+                </div>
+            <?php } ?>
+        </p>
     </div>
     <div id="editor">
       <div class="inner">

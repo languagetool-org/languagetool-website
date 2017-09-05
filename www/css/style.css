@@ -569,6 +569,20 @@ body #stage .inner #text p a {
   text-decoration: none;
   color: white;
 }
+body #stage .inner #text2 #addToBrowser,
+body #stage .inner #text #addToBrowser {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body #stage .inner #text2 #addToBrowser a,
+body #stage .inner #text #addToBrowser a {
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: white;
+  color: blue;
+  font-size: 1.8em;
+}
 body #stage .inner #text2 {
   padding: 20px 0 0;
 }
