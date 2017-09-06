@@ -578,7 +578,10 @@ body #stage .inner #text2 #addToBrowser a,
 body #stage .inner #text #addToBrowser a {
   font-weight: 300;
   border-radius: 3px;
-  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: white;
   color: blue;
   font-size: 1.8em;
