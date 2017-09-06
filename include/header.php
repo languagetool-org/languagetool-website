@@ -142,7 +142,10 @@
     }
     function installChromeExtension(trackEventDetail) {
         if ($('#extension-is-installed').length > 0) {  // requires 0.8.7 or later of the extension to work
-            alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline in the upper right corner of the Chrome window.");
+            $.Zebra_Dialog('<b>Looks like the extension is installed already.</b>' +
+                '<p>Look for the <img src="/images/logo16x16.png"> icon in the upper right corner of the Chrome window. ' +
+                'Click that icon to check your text when you&apos;re in a text area.</p>',
+                {width: 600});
             installTrack("alreadyInstalled");
         } else {
             chrome.webstore.install("https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji",
@@ -151,6 +154,7 @@
                 },
                 function(reason) {
                     installTrack("failure:" + trackEventDetail + ":" + reason);
+                    console.log("Chrome extension not installed: " + reason);
                 }
             );
             installTrack(trackEventDetail);
