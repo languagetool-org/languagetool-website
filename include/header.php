@@ -142,7 +142,7 @@
     }
     function installChromeExtension(trackEventDetail) {
         if ($('#extension-is-installed').length > 0) {  // requires 0.8.7 or later of the extension to work
-            alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline.");
+            alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline in the upper right corner of the Chrome window.");
             installTrack("alreadyInstalled");
         } else {
             chrome.webstore.install("https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji",
