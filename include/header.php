@@ -135,17 +135,25 @@
 <?php } ?>
 
 <script type="text/javascript">
+    function installTrack(trackEventDetail) {
+        if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+            _paq.push(['trackEvent', 'Extension', 'InstallChromeExtension', trackEventDetail]);
+        }
+    }
     function installChromeExtension(trackEventDetail) {
         if ($('#extension-is-installed').length > 0) {  // requires 0.8.7 or later of the extension to work
             alert("Looks like the extension is installed already. Look for the 'LT' icon with a blue underline.");
-            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                _paq.push(['trackEvent', 'Extension', 'InstallChromeExtension', "alreadyInstalled"]);
-            }
+            installTrack("alreadyInstalled");
         } else {
-            chrome.webstore.install();
-            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                _paq.push(['trackEvent', 'Extension', 'InstallChromeExtension', trackEventDetail]);
-            }
+            chrome.webstore.install("https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji",
+                function() {
+                    installTrack("success:" + trackEventDetail);
+                },
+                function(reason) {
+                    installTrack("failure:" + trackEventDetail + ":" + reason);
+                }
+            );
+            installTrack(trackEventDetail);
             //debug: chrome.webstore.install('', function() {alert('success');}, function(e) {alert('fail:'+e);});
         }
         return false;
