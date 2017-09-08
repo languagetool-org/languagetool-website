@@ -91,17 +91,17 @@
     <h2>LibreOffice</h2>
 
     <ul>
-       <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
+       <li><strong>Se utilizar o <a href="http://www.libreoffice.org/download">LibreOffice</a>, recomendamos a versão mais recente </strong>. Algumas versões mais antigas têm problemas no arranque.</li>
        <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no LibreOffice para instalar a extensão;</li>
        <li><strong>Reinicie</strong> o LibreOffice após a instalação da extensão;</li>
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
      </ul>
 
-<h2><strong>Versão 3.8</strong> (lançada a 27 de julho de 2017)</h2>
-
     <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
    href="./images/LO_screenshot.png"><img style="margin-left: 15px" width="200" height="118" align="right"
    src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
+
+<h2><strong>Versão 3.8</strong> (lançada a 27 de julho de 2017)</h2>
 
 <h3>Novidades</h3>
     <ul>
