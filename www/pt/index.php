@@ -58,7 +58,7 @@
 
     $introText1 = "O <strong>LanguageTool</strong> é um programa livre e de código aberto para verificação gramatical em Português, Inglês, Francês, Alemão, Polaco, entre outros <a href='/languages/'>20 idiomas</a>.";
     $introText2 = "Encontra muitos problemas de gramática e estilo, além de rever a ortografia eficientemente.";
-
+    $addToChrome = "Adicionar ao Chrome";
 
     $forumHeadline = "Fórum";
     $developmentHeadline = "Desenvolvimento";
