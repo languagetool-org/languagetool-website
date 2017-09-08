@@ -10,6 +10,15 @@
               <p class="small"><a href="../contribute/"><?= $contributeLink ?></a></p>
           <?php } ?>
 
+          <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false) { ?>
+              <div id="addToBrowser">
+                  <a onclick="return installChromeExtension('calltoaction')" 
+                     href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"
+                  >
+                <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome' ?>
+              </div>
+          <?php } ?>
+
       </div>
         <div id="editor">
             <div class="inner">
