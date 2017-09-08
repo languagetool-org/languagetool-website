@@ -88,6 +88,15 @@
 <?php include("../../include/page_start.php"); ?>
 
 <div id="languageContent">
+    <h2>LibreOffice</h2>
+
+    <ul>
+       <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
+       <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no LibreOffice para instalar a extensão;</li>
+       <li><strong>Reinicie</strong> o LibreOffice após a instalação da extensão;</li>
+       <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
+     </ul>
+
 <h2><strong>Versão 3.8</strong> (lançada a 27 de julho de 2017)</h2>
 
     <a title="O LanguageTool instalado como um complemento do LibreOffice" class="fancyboxImage"
@@ -247,15 +256,6 @@
         </li>
         <li><strong>E muito mais…</strong></li>
     </ul>
-
-    <h2>LibreOffice</h2>
-
-    <ul>
-       <li><strong>Recomendamos utilizar a versão mais recente do <a href="http://www.libreoffice.org/download">LibreOffice</a></strong>. Algumas versões mais antigas têm problemas no arranque.</li>
-       <li>Utilize <em>Ferramentas -&gt; Gestor de Extensões -&gt; Adicionar…</em> no LibreOffice para instalar a extensão;</li>
-       <li><strong>Reinicie</strong> o LibreOffice após a instalação da extensão;</li>
-       <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
-     </ul>
 
 <!--
         <td valign="top">
