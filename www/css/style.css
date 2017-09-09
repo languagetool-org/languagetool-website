@@ -577,6 +577,7 @@ body #stage .inner #text #addToBrowser {
 body #stage .inner #text2 #addToBrowser a,
 body #stage .inner #text #addToBrowser a {
   font-weight: 300;
+  box-shadow: 2px 2px 5px #4a4aab;
   border-radius: 3px;
   padding-right: 20px;
   padding-left: 20px;
