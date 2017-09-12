@@ -7,7 +7,7 @@
         <p>LanguageTool is a <strong>proof&shy;reading service</strong> for English, <a href="de/">German</a>,
             <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.
             <br>
-            <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false) { ?>
+            <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <div id="addToBrowser">
                     <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a>
                 </div>
