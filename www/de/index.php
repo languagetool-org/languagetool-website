@@ -53,6 +53,7 @@
     $introText1 = "LanguageTool ist eine kostenlose <strong>Textprüfung</strong> für Grammatik, Stil und&nbsp;Rechtschreibung.";
     $introText2 = "Neben Deutsch werden <a href='/'>Englisch</a> und <a href='/languages/'>viele weitere Sprachen</a> unter&shy;stützt.";
     $addToChrome = "In Chrome installieren";
+    $addToFirefox = "In Firefox installieren";
 
     $forumHeadline = "Forum";
     $compareEditionsText = "Vergleich";

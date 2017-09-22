@@ -17,6 +17,12 @@
                   >
                 <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome' ?>
               </div>
+          <?php 
+          } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+              <div id="addToBrowser">
+                  <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/languagetool/?src=external-lt-homepage">
+                <?= isset($addToFirefox) ? $addToFirefox : 'Add to Firefox' ?>
+              </div>
           <?php } ?>
 
       </div>
