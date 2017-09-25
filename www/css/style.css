@@ -572,13 +572,13 @@ body #stage .inner #text p a {
 body #stage .inner #text2 #addToBrowser,
 body #stage .inner #text #addToBrowser {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 body #stage .inner #text2 #addToBrowser a,
 body #stage .inner #text #addToBrowser a {
   font-weight: 300;
   box-shadow: 2px 2px 5px #4a4aab;
-  border-radius: 3px;
+  border-radius: 10px;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 10px;
@@ -586,6 +586,10 @@ body #stage .inner #text #addToBrowser a {
   background-color: white;
   color: blue;
   font-size: 1.8em;
+}
+body #stage .inner #text2 #addToBrowser span,
+body #stage .inner #text #addToBrowser span {
+  font-size: 18px;
 }
 body #stage .inner #text2 #addToBrowser a:hover,
 body #stage .inner #text #addToBrowser a:hover {

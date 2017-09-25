@@ -9,11 +9,11 @@
             <br>
             <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <div id="addToBrowser">
-                    <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome</a>
+                    <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome<span>&nbsp;&nbsp;free, no sign up required</span></a>
                 </div>
             <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <div id="addToBrowser">
-                    <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox</a>
+                    <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
                 </div>
             <?php } ?>
         </p>
