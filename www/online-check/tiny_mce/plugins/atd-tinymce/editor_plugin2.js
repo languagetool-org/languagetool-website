@@ -530,6 +530,14 @@ AtDCore.prototype.isIE = function() {
          
          editor.onPaste.add(function(editor, ev) {
              t._trackEvent('PasteText');
+             if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
+                 t._trackEvent('ShowAddonSurvey');
+                 document.cookie = "addonSurveyShown=true";
+                 var surveyText = "We're planning to develop new add-ons. Please let us know in which software you'd " +
+                     "like have a LanguageTool integration:<br><a target='_blank' href='https://www.surveymonkey.de/r/WM9QT2S'>" +
+                     "take one-question survey now, takes less than 1 minute</a>";
+                 $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
+             }
          });
 
          // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
