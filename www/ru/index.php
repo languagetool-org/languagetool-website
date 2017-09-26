@@ -53,7 +53,10 @@
     // TODO: add &shy; to make long words break in the browser
     $introText1 = "<strong>LanguageTool</strong> &mdash; это свободное программное обеспечение для проверки грамматики, пунктуации, орфографии и стиля.";
     $introText2 = "В состав LanguageTool входят грамматические правила для <a href='/languages/'>30 языков</a>.";
-
+    $addToChrome = "Добавить LT в Chrome";
+    $addToFirefox = "Добавить LT в Firefox";
+	
+    $forumHeadline = "Форум";	
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}+";
     $downloadTitle = "Для <strong>LibreOffice и OpenOffice</strong>";
@@ -87,7 +90,7 @@
 
 <h2>Функциональность</h2>
 
-В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 722 правил</a> для проверки русскоязычных текстов.<br/><br/>
+В состав LanguageTool входит <a href="http://community.languagetool.org/rule/list?lang=ru"> 722 правила</a> для проверки русскоязычных текстов.<br/><br/>
 Правила разделены на группы:
 <br/>
 <!--
