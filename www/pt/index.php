@@ -101,6 +101,44 @@
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desative o LightProof e ative o LanguageTool</strong> em <em>Opções -> Definições de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
      </ul>
 
+<h2><strong>Versão 3.9</strong> (lançada a 26 de setembro de 2017)</h2>
+
+<h3>Novidades</h3>
+    <ul>
+        <li><strong>Esta edição teve principal foco na melhoria de regras e da verificação ortográfica, aumentando a capacidade de deteção, e diminuindo o número de avisos desnecessários.</strong>
+    <ul>
+        <li><strong>Estilo</strong>
+            <ul>
+                <li>Deteção de expressões propagandísticas, palavras que revelam fragilidade, ou enviesamentos de opinião (opcional);</li>
+            </ul>
+        </li>
+        <li><strong>Gramática</strong>
+            <ul>
+                <li>Concordância de tempos verbais;</li>
+            </ul>
+        </li>
+        <li><strong>Tipografia</strong>
+            <ul>
+                <li>Melhorias significativas na deteção de espaçamentos incorretos, formatação de números e de operadores matemáticos;</li>
+            </ul>
+        </li>
+        <li><strong>Pontuação</strong>
+            <ul>
+                <li>Pontuação em abreviaturas, cumprimentos e despedidas em cartas formais;</li>
+            </ul>
+        </li>
+        <li><strong>Novas categorias</strong>
+            <ul>
+                <li>Sintaxe;</li>
+            </ul>
+        </li>
+        <li><strong>Atualização dos dicionários Dicionários Portugueses Complementares 2.0</strong>
+        <li><strong>Exceções à verificação ortográfica para abreviaturas, variáveis em fórmulas, unidades de medida, e vocabulário estatístico diverso.</strong>
+        </li>
+        <li><strong>Correções e melhorias diversas nos componentes antigos;</strong>
+        </li>
+    </ul>
+
 <h2><strong>Versão 3.8</strong> (lançada a 27 de julho de 2017)</h2>
 
 <h3>Novidades</h3>
