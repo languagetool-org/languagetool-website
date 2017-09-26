@@ -105,11 +105,9 @@
 
     <ul>
         <li>Esta edição teve principal foco na melhoria de regras e da verificação ortográfica, aumentando a capacidade de deteção, e diminuindo o número de avisos desnecessários.</li>
-<h3>Novidades</h3>
+    </ul>
 
-     <ul>
-        <li><strong>Esta edição teve principal foco na melhoria de regras e da verificação ortográfica, aumentando a capacidade de deteção, e diminuindo o número de avisos desnecessários.</strong>
-     </ul>
+<h3>Novidades</h3>
 
     <ul>
         <li><strong>Estilo</strong>
