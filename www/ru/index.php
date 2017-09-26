@@ -57,6 +57,7 @@
     $addToFirefox = "Добавить LT в Firefox";
 	
     $forumHeadline = "Форум";
+    $developmentHeadline = "Разработка";
     $compareEditionsText = "Сравнить редакции";
     $moreIntegrationsText = "Больше дополнений";
     $downloadHeadline = "Скачать";
