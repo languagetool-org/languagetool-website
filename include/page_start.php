@@ -15,13 +15,13 @@
                   <a onclick="return installChromeExtension('calltoaction')" 
                      href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"
                   >
-                <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome' ?>
+                <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome <span>free, no sign up required</span>' ?>
               </div>
           <?php 
           } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
               <div id="addToBrowser">
                   <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/languagetool/?src=external-lt-homepage">
-                <?= isset($addToFirefox) ? $addToFirefox : 'Add to Firefox' ?>
+                <?= isset($addToFirefox) ? $addToFirefox : 'Add to Firefox <span>free, no sign up required</span>' ?>
               </div>
           <?php } ?>
 
