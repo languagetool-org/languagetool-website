@@ -56,7 +56,9 @@
     $addToChrome = "Добавить LT в Chrome";
     $addToFirefox = "Добавить LT в Firefox";
 	
-    $forumHeadline = "Форум";	
+    $forumHeadline = "Форум";
+    $compareEditionsText = "Сравнить редакции";
+    $moreIntegrationsText = "Больше дополнений";
     $downloadHeadline = "Скачать";
     $downloadRequiresJava = "Требуется Java {version}+";
     $downloadTitle = "Для <strong>LibreOffice и OpenOffice</strong>";
@@ -65,7 +67,7 @@
     $downloadLabelChrome = "Для <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Расширение для браузера";
     $downloadLabelGoogleDocs = "Для <strong>Google Docs</strong>";
-    $downloadLabelAddOn = "Расширение для Google Docs";
+    $downloadLabelAddOn = "Расширение";
     $checklistText = "Посмотрите, пожалуйста, <a href='/ru/issues/'>наш список</a>, если вы столкнулись с проблемами.";
     $otherDownloadsText = "Скачать <a href='/download/'>старые релизы</a> или <a href='/download/snapshots/?C=M;O=D'>ежедневные сборки</a>  (<a href='https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md'>список изменений</a>).";
     $webstartText = "Запустить <a href='/webstart/web/LanguageTool.jnlp'>с Java WebStart</a>.";
@@ -246,7 +248,7 @@ LanguageTool можно использовать для проверки гра�
 <p><strong>26.09.2017: </strong>Вышла версия 3.9 LanguageTool!</p>
 <ul>
 <li>Обновлены модули проверки для португальского, немецкого, украинского, испанского, каталанского, бретонского, английского, французского, эсперанто, нидерландского и русского языков.</li>
-<li>Внесены дополнения в Java API: удалены устаревшие методы.</li>
+<li>Внесены дополнения в Java API.</li>
 <li>Полный <a href="http://languagetool.org/download/CHANGES.md">список изменений</a>.</li>
 Изменения для русскоязычного модуля включают:
 <li>Создано несколько новых и улучшены существующие правила.</li>
