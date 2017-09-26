@@ -103,9 +103,14 @@
 
 <h2><strong>Versão 3.9</strong> (lançada a 26 de setembro de 2017)</h2>
 
-<h3>Novidades</h3>
     <ul>
+        <li>Esta edição teve principal foco na melhoria de regras e da verificação ortográfica, aumentando a capacidade de deteção, e diminuindo o número de avisos desnecessários.</li>
+<h3>Novidades</h3>
+
+     <ul>
         <li><strong>Esta edição teve principal foco na melhoria de regras e da verificação ortográfica, aumentando a capacidade de deteção, e diminuindo o número de avisos desnecessários.</strong>
+     </ul>
+
     <ul>
         <li><strong>Estilo</strong>
             <ul>
