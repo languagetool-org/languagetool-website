@@ -41,6 +41,16 @@ body #severeError {
   border-width: 4px;
   margin-bottom: 5px;
 }
+body #survey {
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  background-color: white;
+  border-color: blue;
+  border-style: solid;
+  border-width: 4px;
+  margin-bottom: 5px;
+}
 body .fullscreen #severeError {
   position: absolute;
   left: 0;
