@@ -185,7 +185,7 @@
              if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
                  var rand = Math.random();
                  var langCode = $('#lang').val();
-                 document.cookie = "showltplus=" + rand + ";max-age=31536000";  // one year
+                 document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
                  if (rand < 0.1 && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
                      t._trackEvent('ShowLTPlusLink');
                      var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
