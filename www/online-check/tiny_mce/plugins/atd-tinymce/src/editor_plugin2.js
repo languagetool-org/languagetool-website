@@ -182,7 +182,15 @@
          
          editor.onPaste.add(function(editor, ev) {
              t._trackEvent('PasteText');
-             if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
+             if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
+                 t._trackEvent('ShowAddonSurvey');
+                 document.cookie = "addonSurveyShown=true;max-age=2628000";
+                 var surveyText = "Would you be interested in a LanguageTool integration in Microsoft Word?<br>If so, " +
+                     "<a target='_blank' href='https://www.surveymonkey.de/r/3BRKPPZ'>" +
+                     "please answer our 1-minute survey - just 2 questions</a>!";
+                 $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
+             }
+             /*if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
                  var rand = Math.random();
                  var langCode = $('#lang').val();
                  document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
@@ -191,7 +199,7 @@
                      var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
                      $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
                  }
-             }
+             }*/
          });
 
          // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
