@@ -538,13 +538,19 @@ AtDCore.prototype.isIE = function() {
                      "please answer our 1-minute survey - just 2 questions</a>!";
                  $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
              }*/
+             var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
+             var randThreshold = 0.2;
+             var langCode = $('#lang').val();
              if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
                  var rand = Math.random();
-                 var langCode = $('#lang').val();
                  document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
-                 if (rand < 0.2 && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
+                 if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
                      t._trackEvent('ShowLTPlusLink');
-                     var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
+                     $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
+                 }
+             } else if (document.cookie) {
+                 var rand = parseFloat(document.cookie.match(/showltplus=(\d\.\d\d)/)[1]);
+                 if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
                      $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
                  }
              }
