@@ -12,6 +12,56 @@
 
 <div id="textContent">
 
+    <a href=".">English</a> | <a href="?lang=de">Deutsch</a>
+
+    <?php if (strpos($_SERVER['REQUEST_URI'], 'lang=de') !== false) { ?>
+
+    <h1>Datenschutzerklärung</h1>
+
+    <p>LanguageTool ist eine Software zur Textprüfung. Ihre Texte werden dazu vom Browser
+        über eine verschlüsselte Verbindung an unsere Server übertragen. Auf dieser Seite beschreiben wir,
+        welche Daten wir speichern.</p>
+
+    <ul>
+        <li>Ihre zur Prüfung abgeschickten Texte werden nicht gespeichert, mit folgenden Ausnahmen:
+            <ul>
+                <li>Wenn Sie explizit Feedback geben, z.&nbsp;B. über Fehlalarme oder nicht erkannte Fehler, speichern wir dieses Feedback.</li>
+                <li>Wenn Sie Korrekturvorschläge akzeptieren oder Regeln abstellen, speichern wir die interne ID dieser Regel
+                    (z.&nbsp;B. <tt>EIN_PAAR</tt> für die Regel, die Verwechslungen zwischen Paar/paar findet).
+                </li>
+                <li>Im Fall eines internen Softwarefehlers speichern wir den Satz, der den Fehler ausgelöst hat, um so die Ursache zu finden und den Fehler zu beheben.</li>
+            </ul>
+        </li>
+        <li>Um unser Angebot zu verbessern, speichern wir folgende Informationen:
+            <ul>
+                <li>Datum und Zeit, Länge des Textes, Sprache des Textes, Dauer der Verarbeitung, Anzahl
+                    der erkannten Fehler (aber nicht den fehlerhaften Text),</li>
+                <li>die Seite, von der die Anfrage abgeschickt wurde (normalerweise languagetool.org),</li>
+                <li>interne Fehler (wenn z.&nbsp;B. das Browser Add-on auf den zu prüfenden Text nicht zugreifen kann),</li>
+                <li>die Anzahl der Nutzungen des Browser-Add-ons (nur bei einer Deinstallation übertragen)</li>
+            </ul>
+        </li>
+        <li>In unseren Logdateien wird Ihre IP-Adresse in gekürzter Form (wie <tt>192.168.xxx.xxx</tt>) gespeichert,
+            so dass sie nicht benutzt werden kann, um Sie zu identifizieren. Fehlermeldungen wie bei der Überschreitung des
+            Anfragelimits werden mit der vollständigen IP-Adresse gespeichert, damit wir gegen Missbrauch vorgehen können.</li>
+        <li>Wenn Sie <a href="../contact/newsletter.php">unseren Newsletter</a> abonnieren, wird Ihre E-Mail-Adresse bei
+            unserem Newsletter-Anbieter (newsletter2go.com) gespeichert.</li>
+        <li>Sie können die "Stand-alone"-Version von <a href="/">unserer Homepage</a> herunterladen, die lokal läuft und
+            keinerlei Daten ins Internet überträgt.
+        </li>
+        <li>
+            <p>Diese Website benutzt <a href="http://www.piwik.org">Piwik</a> für die Analyse der Zugriffszahlen. Auch hier wird Ihre
+                IP-Adresse nur in gekürzter Form gespeichert (z.&nbsp;B. <tt>192.168.xxx.xxx</tt>). Wenn Ihre Besuche trotzdem über
+                Piwik gar nicht erfasst werden sollen, können Sie hier Ihre Zustimmung verweigern:</p>
+
+            <iframe frameborder="no" width="600px" height="250px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>
+        </li>
+    </ul>
+
+    <p><a href="https://github.com/languagetool-org/languagetool-website/commits/master/www/privacy/index.php">Änderungshistorie dieser Seite</a></p>
+
+    <?php } else { ?>
+    
     <h1>Privacy Policy</h1>
     
     <p>LanguageTool is a proofreading software. It works by sending the text to be checked to our servers over an
@@ -50,11 +100,13 @@
                 IP address (to a form like <tt>192.168.xxx.xxx</tt>) to protect your privacy. If you don't want your
                 visit to be recorded at all by Piwik, you can opt out here:</p>
 
-            <iframe frameborder="no" width="600px" height="200px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>            
+            <iframe frameborder="no" width="600px" height="250px" src="//openthesaurus.stats.mysnip-hosting.de/index.php?module=CoreAdminHome&amp;action=optOut"></iframe>            
         </li>
     </ul>
     
     <p><a href="https://github.com/languagetool-org/languagetool-website/commits/master/www/privacy/index.php">Change log of this page</a></p>
+
+    <?php } ?>
     
 </div>
 
