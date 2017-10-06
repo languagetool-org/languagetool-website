@@ -12,7 +12,7 @@
     $title = "LanguageTool Correcteur grammatical";
 
     $checkLanguage = array(
-        'auto' => 'détecter automatiquement',
+        'auto' => 'détecter autom.',
         'de-DE' => 'allemand',
         'en-US' => 'anglais',
         'ast' => 'asturien',
