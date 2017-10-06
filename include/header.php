@@ -485,6 +485,20 @@
      document.checkform.appendChild(textarea);
    }
 
+   <?php
+   require_once("default_texts.php");
+   print getDefaultDemoTextMappingForJavaScript();
+   ?>
+   function setDemoText() {
+       var lang = $('#lang').val().replace(/-..$/, "");
+       var demoText = languageToText[lang];
+       if (demoText) {
+           tinyMCE.activeEditor.setContent(demoText);
+           doit();
+       }
+       return false;
+   }
+
    $(function(){
     $(window).resize(function(){
       if ($('form#checkform').hasClass('fullscreen')) {
@@ -611,19 +625,23 @@
             }
         }
         $(function(){
-            <?php
-            require_once("default_texts.php");
-            print getDefaultDemoTextMappingForJavaScript();
-            ?>
+            var prevLang = $('#lang').val().replace(/-..$/, "");
             $('#lang').dropkick({
                 change: function (value, label) {
                     value = value.replace(/-..$/, "");  // en-US -> en
                     fillSubLanguageSelect(value);
                     var newText = languageToText[value];  // 'languageToText' comes from default_texts.php
                     if (newText) {
-                        tinyMCE.activeEditor.setContent(newText);
-                        tinyMCE.get('checktext').focus();
-                        doit();
+                        var oldDemoText = languageToText[prevLang];
+                        var currentText = tinyMCE.activeEditor.getContent({format: 'text'});
+                        if (currentText.trim() === "" || currentText === oldDemoText) {
+                            tinyMCE.activeEditor.setContent(newText);
+                            tinyMCE.get('checktext').focus();
+                            doit();
+                            $('#feedbackMessage').html('');
+                        } else {
+                            $('#feedbackMessage').html('<a href="#" onclick="return setDemoText()">Demo Text</a>');
+                        }
                     } else {
                         <?php if(isset($addYourTextHere)) { ?>
                         tinyMCE.activeEditor.setContent("<?= $addYourTextHere ?>");
@@ -634,8 +652,9 @@
                         <?php } ?>
                         tinyMCE.get('checktext').focus();
                         tinyMCE.activeEditor.selection.select(tinyMCE.activeEditor.getBody(), true);
+                        $('#feedbackMessage').html('');
                     }
-                    $('#feedbackMessage').html('');
+                    prevLang = value;
                 }
             });
             $('#subLang').dropkick({
