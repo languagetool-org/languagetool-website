@@ -640,7 +640,7 @@
                             doit();
                             $('#feedbackMessage').html('');
                         } else {
-                            $('#feedbackMessage').html('<a href="#" onclick="return setDemoText()">Demo Text</a>');
+                            $('#feedbackMessage').html('<a href="#" onclick="return setDemoText()"><?= isset($demoTextLink) ? $demoTextLink : "insert demo text" ?></a>');
                         }
                     } else {
                         <?php if(isset($addYourTextHere)) { ?>

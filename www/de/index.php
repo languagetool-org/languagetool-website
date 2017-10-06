@@ -48,6 +48,7 @@
 
     $addYourTextHere = "Hier Text einfügen";  // used for languages that have no demo text
     $checkSubmitButtonValue = "Text prüfen";
+    $demoTextLink = "Demo-Text einfügen";
     $checkSubmitButtonTitle = "Text prüfen - auch mit Strg+Return";
     $toggleFullscreenMode = "Vollbild-Ansicht umschalten";
 
