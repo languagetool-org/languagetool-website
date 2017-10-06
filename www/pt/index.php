@@ -18,6 +18,7 @@
     $title = "LanguageTool Corretor Gramatical e de Estilo";
 
     $checkLanguage = array(
+        'auto' => 'auto-detect',
         'de-DE'  => 'Alemão',
         'ast' => 'Asturiano',
         'be'  => 'Biolorusso',

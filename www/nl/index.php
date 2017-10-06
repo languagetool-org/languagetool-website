@@ -12,6 +12,7 @@
     $title = "Spellingcontrole en grammaticacontrole met LanguageTool";
 
     $checkLanguage = array(
+        'auto' => 'auto-detect',
         'ast' => 'Asturisch',
         'br'  => 'Bretons',
         'zh'  => 'Chinees',

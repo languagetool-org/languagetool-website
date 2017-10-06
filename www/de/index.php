@@ -12,6 +12,7 @@
     $title = "Rechtschreibprüfung und Grammatikprüfung mit LanguageTool";
 
     $checkLanguage = array(
+        'auto' => 'Autom. erkennen',
         'ast' => 'Asturisch',
         'br'  => 'Bretonisch',
         'zh'  => 'Chinesisch',

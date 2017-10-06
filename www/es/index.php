@@ -12,6 +12,7 @@
     $title = "LanguageTool - corrector gramatical y de estilo";
 
     $checkLanguage = array(
+        'auto' => 'auto-detect',    
         'ast' => 'asturiano',
         'br' => 'bretón',
         'zh' => 'chino',

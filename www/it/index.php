@@ -13,6 +13,7 @@
 
     // TODO: translate language names and sort them alphabetically (by translation, not by code)
     $checkLanguage = array(
+        'auto' => 'auto-detect',
         'ast' => 'Asturian',
         'be'  => 'Belarusian',
         'br'  => 'Breton',

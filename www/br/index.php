@@ -12,6 +12,7 @@
     $title = "LanguageTool - An difazier yezhadurel frank evit ar brezhoneg";
 
     $checkLanguage = array(
+        'auto' => 'auto-detect',
         'de-DE' => 'alamaneg',
         'ast' => 'astureg',
         'be' => 'belaruseg',
