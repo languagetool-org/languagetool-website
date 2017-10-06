@@ -12,7 +12,7 @@
     $title = "LanguageTool - Corrector gramatical i d'estil";
 
     $checkLanguage = array(
-        //'auto' => 'detecció automàtica',
+        'auto' => 'detecció automàtica',
         'en-US' => 'anglès',
         'ast' => 'asturià',
         'be' => 'bielorús',

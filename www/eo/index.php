@@ -13,7 +13,7 @@
 
     $checkLanguage = array(
         'ast' => 'asturia',
-        //'auto' => 'aŭtomate detekti',
+        'auto' => 'aŭtomate detekti',
         'be' => 'belarusa',
         'br' => 'bretona',
         'zh' => 'ĉina',
