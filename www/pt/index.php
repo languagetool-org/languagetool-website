@@ -2,11 +2,11 @@
 <html lang=pt>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="LanguageTool, o corretor gramatical livre e gratuito, com suporte para mais de 20 idiomas, incluíndo todas as variantes do português.">
+    <meta name="description" content="LanguageTool, o corretor gramatical livre e gratuito, com suporte para mais de 20 idiomas, incluindo todas as variantes do português.">
     <meta name="keywords" content="languageTool,gramática,corretor,corrector,gramatical,livre,
          open-source,código,aberto,gratuito,grátis,verificação,
-         verificar,português,portuguesa,portugal,brasileiro,brasil,libreOffice,
-         openoffice,firefox,chrome">
+         verificar,português,portuguesa,Portugal,brasileiro,brasil,LibreOffice,
+         OpenOffice,Firefox,Chrome">
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
@@ -18,10 +18,10 @@
     $title = "LanguageTool Corretor Gramatical e de Estilo";
 
     $checkLanguage = array(
-        'auto' => 'auto-detect',
+        'auto' => 'Automático',
         'de-DE'  => 'Alemão',
         'ast' => 'Asturiano',
-        'be'  => 'Biolorusso',
+        'be'  => 'Bielorrusso',
         'br'  => 'Bretão',
         'ca'  => 'Catalão',
         'zh'  => 'Chinês',
