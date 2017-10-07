@@ -13,7 +13,7 @@
                 </div>
             <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <div id="addToBrowser">
-                    <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
+                    <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
                 </div>
             <?php } ?>
         </p>
