@@ -30,3 +30,16 @@ _paq.push(['enableLinkTracking']);
 </script>
 <noscript><p><img src="http://openthesaurus.stats.mysnip-hosting.de/piwik.php?idsite=<?php echo (isset($isProofreadingTest) && $isProofreadingTest) ? "13" : "2"; ?>" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // try to log who could have the add-on (desktop only) but doesn't:
+        if (screen.width > 1000 && typeof(_paq) !== 'undefined') {
+            if ($('#extension-is-installed').length > 0) {
+                _paq.push(['trackEvent', 'AddonInstalledYesNo', 'Yes']);
+            } else {
+                _paq.push(['trackEvent', 'AddonInstalledYesNo', 'No']);
+            }
+        }
+    });
+</script>
