@@ -53,6 +53,8 @@
 
     $introText1 = "<strong>LanguageTool</strong> est un correcteur grammatical libre pour le français<br>et <a href='/languages/'>plus de 20 autres langues</a>.";
     $introText2 = "LanguageTool identifie des erreurs grammaticales qui ne sont pas signalées par un correcteur orthographique.";
+    $addToChrome = "Ajouter à Chrome <span>gratuit, libre et sans compte</span>";
+    $addToFirefox = "Ajouter à Firefox <span>gratuit, libre et sans compte</span>";
     $contributeLink = "Contribuer !";
 
     $forumHeadline = "Forum";
