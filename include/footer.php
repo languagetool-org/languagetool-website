@@ -35,11 +35,13 @@ _paq.push(['enableLinkTracking']);
     $(document).ready(function() {
         // try to log who could have the add-on (desktop only) but doesn't:
         if (screen.width > 1000 && typeof(_paq) !== 'undefined') {
-            if ($('#extension-is-installed').length > 0) {
-                _paq.push(['trackEvent', 'AddonInstalledYesNo', 'Yes']);
-            } else {
-                _paq.push(['trackEvent', 'AddonInstalledYesNo', 'No']);
-            }
+            setTimeout(function() {
+                if ($('#extension-is-installed').length > 0) {
+                    _paq.push(['trackEvent', 'AddonInstalledYesNo', 'Yes']);
+                } else {
+                    _paq.push(['trackEvent', 'AddonInstalledYesNo', 'No']);
+                }
+            }, 1500);
         }
     });
 </script>
