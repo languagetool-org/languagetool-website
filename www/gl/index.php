@@ -66,7 +66,7 @@
     $developmentHeadline = "Desenvolvemento";
     $compareEditionsText = "Comparar versións";
     $moreIntegrationsText = "Máis integracións";
-    $downloadHeadline = "Trasladar";
+    $downloadHeadline = "Descargar";
     $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Para <strong>o LibreOffice</strong>";
     $downloadTitleStandAlone = "<strong>Executable independente</strong>";
@@ -98,7 +98,7 @@
 
     <ul>
        <li><strong>Se utilizar o <a href="https://pt.libreoffice.org/">LibreOffice</a>, recomendamos a versión máis recente </strong>. Algunhas versións máis antigas teñen problemas no arranque.</li>
-       <li>Utilice <em>Ferramentas -&gt; Xestor de Extensións -&gt; Adicionar…</em> no LibreOffice para instalar a extensión;</li>
+       <li>Utilice <em>Ferramentas -&gt; Xestor de Extensións -&gt; Agregar…</em> no LibreOffice para instalar a extensión;</li>
        <li><strong>Reinicie</strong> o LibreOffice tras a instalación da extensión;</li>
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desactive o LightProof e active o LanguageTool</strong> en Opcións <em>-> Definicións de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
      </ul>
