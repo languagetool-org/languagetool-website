@@ -60,7 +60,7 @@ languageToolVersion=`java -jar $jarFile version`
 echo "Version: $languageToolVersion</p>" >>$globalResultFile
 
 # as this uses a lot of resources, we only check the languages in active development:
-for lang in en de fr ru br ca pl it pt-PT pt-BR es nl eo
+for lang in en de fr ru ca pl pt-PT pt-BR gl es nl it br eo
 do
   echo "============== $lang =============="
   simplelang=`echo $lang | sed s/-..//`
