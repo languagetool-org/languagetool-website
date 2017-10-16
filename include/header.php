@@ -538,6 +538,10 @@
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
                     "incomplete support in LanguageTool. " +
                     "<a href='/contribute/'>Would you like to help?</a></div>");
+            } else if (langCode === 'gl') {
+                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + "O Galego ten " + 
+                    "o suporte incompleto no LanguageTool. " +
+                    "<a href='/contribute/'>Está interessado em ajudar-nos?</a></div>");
             //} else if (langCode === 'de') {
             //    $('#maintainedInfo').html("<div class='unmaintainedWarning'>Kannst Du helfen, LanguageTool zu verbessern? " +
             //        "<a href='/contribute/'>Hier steht, wie.</a></div>");
@@ -550,6 +554,7 @@
                 "eo": "Ni ankaŭ havas hejmpaĝon en Esperanto",
                 "fr": "Nous avons aussi une page en français",
                 "de": "Informationen zu LanguageTool auf Deutsch",
+                "gl": "Também temos uma página em Galego",
                 "it": "Abbiamo anche una pagina in italiano",
                 "nl": "Meer over LanguageTool voor het Nederlands",
                 "ca": "També tenim una pàgina en català",
