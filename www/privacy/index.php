@@ -50,6 +50,33 @@
             keinerlei Daten ins Internet überträgt.
         </li>
         <li>
+            <p>Die meisten Browser sind automatisch so eingestellt, dass Cookies akzeptiert werden. Auf Wunsch können
+                Sie Ihren Browser jedoch durch Änderung Ihrer Browser-Einstellungen so konfigurieren, dass Cookies eingeschränkt
+                oder völlig blockiert werden. Umfassende Informationen dazu, wie man dies auf einer Vielzahl von Browsern
+                bewerkstelligen kann, erhalten Sie auf den folgenden Internetseiten: <a href="http://www.youronlinechoices.com/de/">youronlinechoices</a>,
+                <a href="https://www.networkadvertising.org/choices/">Network Advertising Initiative</a>
+                und/oder <a href="http://www.aboutads.info/choices/">Digital Advertising Alliance</a>. Sie finden dort auch Angaben dazu, wie Sie Cookies von
+                Ihrem Computer löschen können sowie allgemeine Informationen über Cookies.
+
+            <p>Für Informationen dazu, wie Sie diese Einstellungen auf dem Browser Ihres Handys
+                vornehmen können, ziehen Sie bitte die Bedienungsanleitung Ihres Mobiltelefons heran.
+
+            <p>Nachstehend finden Sie eine Liste von Anbietern, die befugt sind, Cookies auf unserer Website zu setzen sowie Informationen
+                darüber, wie Sie sich entsprechend abmelden können.
+
+            <ul>
+                <li>Yieldlove GmbH, Neuer Pferdemarkt 1, 20359 Hamburg („Yieldlove“) vermarktet
+                    Online-Werbeflächen auf unseren Angeboten languagetool.org und der mobilen
+                    Website von languagetool.org. Um die Werbeauslieferung auf den Webseiten zu
+                    optimieren, werden durch Yieldlove Cookies eingesetzt.
+                    Alle Informationen dazu, wie Yieldlove Daten verarbeitet und welche Daten
+                    betroffen sind, erhalten Sie in der Privacy Policy von Yieldlove. Zudem
+                    können Sie unter dem angegebenen Link dem Einsatz von Cookies durch
+                    Yieldlove für die Zukunft widersprechen (Opt-out):
+                    <a href="http://www.yieldlove.com/cookie-policy">http://www.yieldlove.com/cookie-policy</a></li>
+            </ul>
+        </li>
+        <li>
             <p>Diese Website benutzt <a href="http://www.piwik.org">Piwik</a> für die Analyse der Zugriffszahlen. Auch hier wird Ihre
                 IP-Adresse nur in gekürzter Form gespeichert (z.&nbsp;B. <tt>192.168.xxx.xxx</tt>). Wenn Ihre Besuche trotzdem über
                 Piwik gar nicht erfasst werden sollen, können Sie hier Ihre Zustimmung verweigern:</p>
@@ -94,7 +121,31 @@
         <li>If you subscribe to <a href="../contact/newsletter.php">our newsletter</a>, your email address will be stored
             at our newsletter provider (newsletter2go.com) </li>
         <li>If you don't want any information to be transferred, download the stand-alone version from 
-            <a href="/">our homepage</a>. It works locally without internet access and thus doesn't transfer any data.</li>
+            <a href="/">our homepage</a>. It works locally without internet access and thus doesn't transfer any data.
+        </li>
+        <li>
+            <p>Most browsers are configured to accept cookies. However, you can change your 
+                browser settings to configure your browser so that cookies are limited or completely blocked. 
+                For more information on how to do this, please visit the following 
+                websites: <a href="http://www.youronlinechoices.com/de/">youronlinechoices</a>,
+                <a href="https://www.networkadvertising.org/choices/">Network Advertising Initiative</a>
+                and/or <a href="http://www.aboutads.info/choices/">Digital Advertising Alliance</a>.
+                You will also find information there about how to delete cookies from your computer and general information about cookies.
+
+            <p>For information on how to make these settings on your phone's browser, please refer to your mobile phone's manual.
+
+            <p>Below is a list of providers who are authorized to set cookies on our website and information about how to opt out of cookies.
+
+            <ul>
+                <li>Yieldlove GmbH, Neuer Pferdemarkt 1, 20359 Hamburg ("Yieldlove") markets online advertising space 
+                    on languagetool.org and the mobile website of languagetool.org. In order to optimise 
+                    the delivery of advertising on the websites, Yieldlove uses cookies. For information on 
+                    how Yieldlove processes data and which data is affected, please refer to Yieldlove's 
+                    Privacy Policy. You can also opt-out of the use of cookies by Yieldlove by 
+                    clicking on the link provided: 
+                    <a href="http://www.yieldlove.com/cookie-policy">http://www.yieldlove.com/cookie-policy</a></li>
+            </ul>
+        </li>
         <li>
             <p>For accesses from web browsers and browser add-ons, this website uses <a href="http://www.piwik.org">Piwik</a> for web analytics. We're shortening your
                 IP address (to a form like <tt>192.168.xxx.xxx</tt>) to protect your privacy. If you don't want your
