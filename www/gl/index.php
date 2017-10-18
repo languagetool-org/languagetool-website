@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang=pt>
+<html lang=gl>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="LanguageTool, o corrector gramatical libre e gratuíto, con soporte para máis de 20 idiomas, incluíndo todas as variantes do portugués.">

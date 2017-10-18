@@ -1,9 +1,12 @@
 ﻿<!doctype html>
-<html lang=pt>
+<html lang=da>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="LanguageTool, den grammatikkontrol fri og åben, med understøttelse af mere end 20 sprog, herunder alle varianter af den portugisiske.">
-    <meta name = "keywords" content = "languageTool, grammatik, korrektor, korrektor, grammatik, gratis, open source, kode, åben, fri, gratis, verifikation, verificere, portugisisk, portugisisk, portugisisk, brasiliansk, brasiliansk, Libreoffice, OpenOffice, Firefox, Chrome ">
+    <meta name="keywords" content="languageTool,grammatik,korrektor,korrektor,grammatik,gratis,
+         open source,kode,åben,fri,gratis,verifikation,verificere,
+         portugisisk,portugisisk,portugisisk,brasiliansk,brasiliansk,Libreoffice,
+         OpenOffice,Firefox,Chrome">
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
@@ -329,6 +332,7 @@
 
 <p>De eksperimentelle logfiler</em></em> med den nyeste udviklingsstatus er tilgængelige i SNAPSHOTS <a href="../download/snapshots/?C=M;O=D"></em> a>
  </p>
+  (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">nyhedsliste</a>).</p>
 <p>Gamle versioner er stadig tilgængelige i <a href="../download/"></a> overførselsmappen.</p>
 
 <h2> Licens og kildekode</h2>
