@@ -103,6 +103,8 @@
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desactive o LightProof e active o LanguageTool</strong> en Opcións <em>-> Definicións de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
      </ul>
 
+</div>
+
 <!--h2><strong>Versão 3.9</strong> (lançada a 26 de setembro de 2017)</h2>
 
     <ul>
