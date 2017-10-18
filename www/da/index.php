@@ -54,7 +54,7 @@
     $ checkSubmitButtonTitle = "Check Text (Ctrl + Return)";
     $ toggleFullscreenMode = "Fuld skærm";
 
-    $ IntroText1 = "<strong> LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre sprog <a href='/languages/'> 20</a>. ";
+    $ IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre sprog <a href='/languages/'> 20</a>.";
     $ introText2 = "Find mange grammatik- og stilproblemer, samt kontroller stavning effektivt.";
     $ addToChrome = "Tilføj til Chrome";
     $ addToFirefox = "Tilføj til Firefox";
@@ -65,15 +65,15 @@
     $ moreIntegrationsText = "Flere integrationer";
     $ downloadHeadline = "Download";
     $ downloadRequiresJava = "Java {version} +";
-    $ downloadTitle = "For <strong> eller LibreOffice</strong>";
-    $ downloadTitleStandAlone = "<strong> Executable independent</strong>";
-    $ downloadLabelFx = "For <strong> eller Firefox</strong>";
-    $ downloadLabelChrome = "For <strong> eller Chrome</strong>";
+    $ downloadTitle = "For <strong>eller LibreOffice</strong>";
+    $ downloadTitleStandAlone = "<strong>Executable independent</strong>";
+    $ downloadLabelFx = "For <strong>eller Firefox</strong>";
+    $ downloadLabelChrome = "For <strong>eller Chrome</strong>";
     $ downloadLabelBrowserAddOn = "Ekstra til webbrowseren";
-    $ downloadLabelGoogleDocs = "For <strong> eller Google Dokumenter</strong>";
+    $ downloadLabelGoogleDocs = "For <strong>eller Google Dokumenter</strong>";
     $ downloadLabelAddOn = "Complement";
     $ checklistText = "Hvis du har problemer, skal du se <a href='/issues/'> listen over løsninger</a>.";
-    $ OtherDownloadsText = "Du kan også overføre <a href='/download/'> tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'> <em> bygger</em> dagbøger</a>. ";
+    $ OtherDownloadsText = "Du kan også overføre <a href='/download/'> tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'> <em>bygger</em> dagbøger</a>.";
     $ WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>."
 
     $firefoxLink = '<a href="/firefox/">Flere oplysninger</a>';
@@ -94,10 +94,10 @@
    src="./images/LO_screenshot_small.png" alt="Skærmbillede af LanguageTool"/></a>
 
     <ul>
-       <li><strong> <a href="https://da.libreoffice.org/"> bruge LibreOffice</a> anbefale den nyeste version</strong>. Nogle ældre versioner har problemer med at starte op.</li>
-       <li>Brug <em> Værktøjer - & gt; Extension Manager - & gt; Tilføj ...</em> til LibreOffice for at installere udvidelsen;</li>
-       <li> <strong> Genstart</strong> eller LibreOffice efter installationen af ​​udvidelsen;</li>
-       <li> Hvis du bruger LibreOffice 3.5.x (eller højere), <strong> deaktivere den aktive og lystæt LanguageTool</strong> Indstillinger <em> -> Sprogindstillinger -> Skrivehjælp -> Rediger ...</em>.</li>
+       <li><strong><a href="https://da.libreoffice.org/"> bruge LibreOffice</a> anbefale den nyeste version</strong>. Nogle ældre versioner har problemer med at starte op.</li>
+       <li>Brug <em>Værktøjer - &gt; Extension Manager - &gt; Tilføj...</em> til LibreOffice for at installere udvidelsen;</li>
+       <li> <strong>Genstart</strong> eller LibreOffice efter installationen af ​​udvidelsen;</li>
+       <li> Hvis du bruger LibreOffice 3.5.x (eller højere), <strong>deaktivere den aktive og lystæt LanguageTool</strong> Indstillinger <em>-> Sprogindstillinger -> Skrivehjælp -> Rediger...</em>.</li>
     </ul>
 
 </div>
