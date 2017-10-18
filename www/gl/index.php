@@ -97,7 +97,7 @@
    src="./images/LO_screenshot_small.png" alt="Screenshot do LanguageTool"/></a>
 
     <ul>
-       <li><strong>Se utilizar o <a href="https://pt.libreoffice.org/">LibreOffice</a>, recomendamos a versión máis recente </strong>. Algunhas versións máis antigas teñen problemas no arranque.</li>
+       <li><strong>Se utilizar o <a href="https://gl.libreoffice.org/">LibreOffice</a>, recomendamos a versión máis recente </strong>. Algunhas versións máis antigas teñen problemas no arranque.</li>
        <li>Utilice <em>Ferramentas -&gt; Xestor de Extensións -&gt; Agregar…</em> no LibreOffice para instalar a extensión;</li>
        <li><strong>Reinicie</strong> o LibreOffice tras a instalación da extensión;</li>
        <li>Se utilizar o LibreOffice 3.5.x (ou superior), <strong>desactive o LightProof e active o LanguageTool</strong> en Opcións <em>-> Definicións de idioma -> Auxiliares de escrita -> Editar…</em>.</li>
