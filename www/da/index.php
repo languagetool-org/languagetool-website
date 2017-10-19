@@ -57,8 +57,8 @@
     $ checkSubmitButtonTitle = "Check Text (Ctrl + Return)";
     $ toggleFullscreenMode = "Fuld skærm";
 
-    $ IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre sprog <a href='/languages/'> 20</a>.";
-    $ introText2 = "Find mange grammatik- og stilproblemer, samt kontroller stavning effektivt.";
+    $ IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre <a href='/languages/'>20 sprog</a>.";
+    $ introText2 = "Find mange grammatik og stilproblemer, samt kontroller stavning effektivt.";
     $ addToChrome = "Tilføj til Chrome";
     $ addToFirefox = "Tilføj til Firefox";
 
@@ -76,8 +76,8 @@
     $ downloadLabelGoogleDocs = "For <strong>eller Google Dokumenter</strong>";
     $ downloadLabelAddOn = "Complement";
     $ checklistText = "Hvis du har problemer, skal du se <a href='/issues/'> listen over løsninger</a>.";
-    $ OtherDownloadsText = "Du kan også overføre <a href='/download/'> tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'> <em>bygger</em> dagbøger</a>.";
-    $ WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>."
+    $ OtherDownloadsText = "Du kan også overføre <a href='/download/'>tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'><em>bygger</em>dagbøger</a>.";
+    $ WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>.";
 
     $firefoxLink = '<a href="/firefox/">Flere oplysninger</a>';
     $chromeLink = '<a href="/chrome/">Flere oplysninger</a>';
@@ -97,9 +97,9 @@
    src="./images/LO_screenshot_small.png" alt="Skærmbillede af LanguageTool"/></a>
 
     <ul>
-       <li><strong><a href="https://da.libreoffice.org/"> bruge LibreOffice</a> anbefale den nyeste version</strong>. Nogle ældre versioner har problemer med at starte op.</li>
-       <li>Brug <em>Værktøjer - &gt; Extension Manager - &gt; Tilføj...</em> til LibreOffice for at installere udvidelsen;</li>
-       <li> <strong>Genstart</strong> eller LibreOffice efter installationen af ​​udvidelsen;</li>
+       <li><strong><a href="https://da.libreoffice.org/">bruge LibreOffice</a> anbefale den nyeste version</strong>. Nogle ældre versioner har problemer med at starte op.</li>
+       <li>Brug <em>Værktøjer - &gt; Extension Manager - &gt; Tilføj…</em> til LibreOffice for at installere udvidelsen;</li>
+       <li><strong>Genstart</strong> eller LibreOffice efter installationen af ​​udvidelsen;</li>
        <li> Hvis du bruger LibreOffice 3.5.x (eller højere), <strong>deaktivere den aktive og lystæt LanguageTool</strong> Indstillinger <em>-> Sprogindstillinger -> Skrivehjælp -> Rediger...</em>.</li>
     </ul>
 
@@ -327,17 +327,16 @@
 <strong>Tem problemas? Por favor leia a <a href="../issues">lista de problemas comuns</a>.</strong></p>
 -->
 
-<div id = "languageContent">
+<div id="languageContent">
 <h2>Andre versioner</h2>
 
-<p>De eksperimentelle logfiler</em></em> med den nyeste udviklingsstatus er tilgængelige i SNAPSHOTS <a href="../download/snapshots/?C=M;O=D"></em> a>
- </p>
-  (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">nyhedsliste</a>).</p>
+<p>De eksperimentelle <em>logfiler</em> med den nyeste udviklingsstatus er tilgængelige i SNAPSHOTS <a href="../download/snapshots/?C=M;O=D"></a>
+ (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">nyhedsliste</a>).</p>
 <p>Gamle versioner er stadig tilgængelige i <a href="../download/"></a> overførselsmappen.</p>
 
 <h2> Licens og kildekode</h2>
 
-<p>LanguageTool er tilgængelig gratis under licens <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1"> LGPL</a>. For information om komponentlicenser henvises til <a href = "https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README. txt "> README.txt</a>.</p>
+<p>LanguageTool er tilgængelig gratis under licens <a href="http://www.fsf.org/licensing/licenses/lgpl.html#SEC1">LGPL</a>. For information om komponentlicenser henvises til <a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/src/main/resources/third-party-licenses/README.txt">README.txt</a>.</p>
 <p>Kildekoden er tilgængelig på GitHub <a href="https://github.com/languagetool-org/"></a>.</p>
 
 </div>
