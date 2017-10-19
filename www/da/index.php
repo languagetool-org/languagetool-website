@@ -52,32 +52,32 @@
     );
 
 
-    $ addYourTextHere = "Sæt din tekst her";
-    $ checkSubmitButtonValue = "Bekræft tekst";
-    $ checkSubmitButtonTitle = "Check Text (Ctrl + Return)";
-    $ toggleFullscreenMode = "Fuld skærm";
+    $addYourTextHere = "Sæt din tekst her";
+    $checkSubmitButtonValue = "Bekræft tekst";
+    $checkSubmitButtonTitle = "Check Text (Ctrl + Return)";
+    $toggleFullscreenMode = "Fuld skærm";
 
-    $ IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre <a href='/languages/'>20 sprog</a>.";
-    $ introText2 = "Find mange grammatik og stilproblemer, samt kontroller stavning effektivt.";
-    $ addToChrome = "Tilføj til Chrome";
-    $ addToFirefox = "Tilføj til Firefox";
+    $IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre <a href='/languages/'>20 sprog</a>.";
+    $introText2 = "Find mange grammatik og stilproblemer, samt kontroller stavning effektivt.";
+    $addToChrome = "Tilføj til Chrome";
+    $addToFirefox = "Tilføj til Firefox";
 
-    $ forumHeadline = "Forum";
-    $ developmentHeadline = "Udvikling";
-    $ compareEditionsText = "Sammenlign versioner";
-    $ moreIntegrationsText = "Flere integrationer";
-    $ downloadHeadline = "Download";
-    $ downloadRequiresJava = "Java {version} +";
-    $ downloadTitle = "For <strong>eller LibreOffice</strong>";
-    $ downloadTitleStandAlone = "<strong>Executable independent</strong>";
-    $ downloadLabelFx = "For <strong>eller Firefox</strong>";
-    $ downloadLabelChrome = "For <strong>eller Chrome</strong>";
-    $ downloadLabelBrowserAddOn = "Ekstra til webbrowseren";
-    $ downloadLabelGoogleDocs = "For <strong>eller Google Dokumenter</strong>";
-    $ downloadLabelAddOn = "Complement";
-    $ checklistText = "Hvis du har problemer, skal du se <a href='/issues/'> listen over løsninger</a>.";
-    $ OtherDownloadsText = "Du kan også overføre <a href='/download/'>tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'><em>bygger</em>dagbøger</a>.";
-    $ WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>.";
+    $forumHeadline = "Forum";
+    $developmentHeadline = "Udvikling";
+    $compareEditionsText = "Sammenlign versioner";
+    $moreIntegrationsText = "Flere integrationer";
+    $downloadHeadline = "Download";
+    $downloadRequiresJava = "Java {version} +";
+    $downloadTitle = "For <strong>eller LibreOffice</strong>";
+    $downloadTitleStandAlone = "<strong>Executable independent</strong>";
+    $downloadLabelFx = "For <strong>eller Firefox</strong>";
+    $downloadLabelChrome = "For <strong>eller Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Ekstra til webbrowseren";
+    $downloadLabelGoogleDocs = "For <strong>eller Google Dokumenter</strong>";
+    $downloadLabelAddOn = "Complement";
+    $checklistText = "Hvis du har problemer, skal du se <a href='/issues/'> listen over løsninger</a>.";
+    $OtherDownloadsText = "Du kan også overføre <a href='/download/'>tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'><em>bygger</em>dagbøger</a>.";
+    $WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>.";
 
     $firefoxLink = '<a href="/firefox/">Flere oplysninger</a>';
     $chromeLink = '<a href="/chrome/">Flere oplysninger</a>';
