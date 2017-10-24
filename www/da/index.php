@@ -53,12 +53,12 @@
 
 
     $addYourTextHere = "Sæt din tekst her";
-    $checkSubmitButtonValue = "Bekræft tekst";
-    $checkSubmitButtonTitle = "Check Text (Ctrl + Return)";
+    $checkSubmitButtonValue = "Check tekst";
+    $checkSubmitButtonTitle = "Check tekst (Ctrl + Return)";
     $toggleFullscreenMode = "Fuld skærm";
 
     $IntroText1 = "<strong>LanguageTool</strong> er et gratis og open source for at tjekke grammatik på portugisisk, engelsk, fransk, tysk, polsk, og andre <a href='/languages/'>20 sprog</a>.";
-    $introText2 = "Find mange grammatik og stilproblemer, samt kontroller stavning effektivt.";
+    $introText2 = "Find mange grammatik-, stave- og stilproblemer.";
     $addToChrome = "Tilføj til Chrome";
     $addToFirefox = "Tilføj til Firefox";
 
@@ -68,14 +68,14 @@
     $moreIntegrationsText = "Flere integrationer";
     $downloadHeadline = "Download";
     $downloadRequiresJava = "Java {version} +";
-    $downloadTitle = "For <strong>eller LibreOffice</strong>";
-    $downloadTitleStandAlone = "<strong>Executable independent</strong>";
-    $downloadLabelFx = "For <strong>eller Firefox</strong>";
-    $downloadLabelChrome = "For <strong>eller Chrome</strong>";
-    $downloadLabelBrowserAddOn = "Ekstra til webbrowseren";
-    $downloadLabelGoogleDocs = "For <strong>eller Google Dokumenter</strong>";
-    $downloadLabelAddOn = "Complement";
-    $checklistText = "Hvis du har problemer, skal du se <a href='/issues/'> listen over løsninger</a>.";
+    $downloadTitle = "For <strong> LibreOffice</strong>";
+    $downloadTitleStandAlone = "<strong>Uafhængigt desktopprogram</strong>";
+    $downloadLabelFx = "For <strong> Firefox</strong>";
+    $downloadLabelChrome = "For <strong> Chrome</strong>";
+    $downloadLabelBrowserAddOn = "Tilføjelse til webbrowseren";
+    $downloadLabelGoogleDocs = "For <strong> Google Docs</strong>";
+    $downloadLabelAddOn = "Tilføjelse";
+    $checklistText = "Venligst se vores checkliste <a href='/issues/'>hvis du har problemer.</a>.";
     $OtherDownloadsText = "Du kan også overføre <a href='/download/'>tidligere</a> eller <a href='/download/snapshots/?C=M;O=D'><em>bygger</em>dagbøger</a>.";
     $WebstartText = "indlede <a href='/webstart/web/LanguageTool.jnlp'> JavaWebStart</a>.";
 
