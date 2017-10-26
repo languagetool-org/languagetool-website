@@ -46,7 +46,13 @@
         .detailInput {
             width: 400px;
         }
+        #Smallchat iframe {
+            right: auto !important;
+            left: 40% !important;
+            top: 210px !important;
+        }
     </style>
+    <script src="https://embed.small.chat/T7AHSH8BGG7928QAAC.js" async></script>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
@@ -64,8 +70,9 @@
         document.write("<a href='mail" + "to:" + firstPart + "@" + lastPart + "'>email the developer<" + "/a>");
         // -->
     </script>
-    if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
+    if there was a problem. We'd like to fix it. Or chat with us by clicking this button:</p>
 
+    <!--
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
         <input id="version" name="version" type="hidden" value="<?= htmlspecialchars($_GET['version']) ?>">
         <input id="usageCounter" name="usageCounter" type="hidden" value="<?= intval($_GET['usageCounter']) ?>">
@@ -93,6 +100,7 @@
         <br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
+    -->
     
 </div>
 
