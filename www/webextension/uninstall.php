@@ -86,9 +86,11 @@
 
         <label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail', 'message4')"> something else</label><br>
         <div id="something-else-detail" class="detail">
-            <textarea class="detailBox" id="message4" name="message4" placeholder="Please describe exactly what didn't work as expected."></textarea><br>
+            <textarea class="detailBox" id="message4" name="message4" placeholder="Please describe exactly what didn't work. 'It does not work' is not a useful feedback, unfortunately."></textarea><br>
         </div>
-        <input style="width:300px" type="text" name="email" placeholder="your email address (optional)"><br>
+        Email (so we can contact you when we've fixed the issue or have questions - you will only be contacted once at maximum, this is no newsletter):
+        <input style="width:300px" type="text" name="email" placeholder="your email address">
+        <br>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
     
