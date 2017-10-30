@@ -529,11 +529,7 @@
             };
             var halfMaintainedLanguages = { 
             };
-            if (langCode === 'gl') {
-                $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + "O Galego ten " + 
-                    "o suporte incompleto no LanguageTool. " +
-                    "<a href='/contribute/'>Está interessado em ajudar-nos?</a></div>");
-            } else if (unmaintainedLanguages[langCode]) {
+            if (unmaintainedLanguages[langCode]) {
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + unmaintainedLanguages[langCode] + " has " + 
                     "very incomplete support in LanguageTool and " +
                     "there is nobody taking care of it. " +
@@ -542,6 +538,10 @@
                 $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + halfMaintainedLanguages[langCode] + " has " + 
                     "incomplete support in LanguageTool. " +
                     "<a href='/contribute/'>Would you like to help?</a></div>");
+            //if (langCode === 'gl') {
+            //    $('#maintainedInfo').html("<div class='unmaintainedWarning'>" + "O Galego ten " + 
+            //        "o suporte incompleto no LanguageTool. " +
+            //        "<a href='/contribute/'>Está interessado em ajudar-nos?</a></div>");
             //} else if (langCode === 'de') {
             //    $('#maintainedInfo').html("<div class='unmaintainedWarning'>Kannst Du helfen, LanguageTool zu verbessern? " +
             //        "<a href='/contribute/'>Hier steht, wie.</a></div>");
