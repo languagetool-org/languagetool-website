@@ -56,12 +56,12 @@ echo "--- Deploying JARs to community.languagetool.org ---"
 # deploy to API server:
 # =====================================================================
 echo "--- Deploying software snapshot to API server ---"
-rm -r /home/languagetool/api/org
-rm -r /home/languagetool/api/META-INF
-rm -r /home/languagetool/api/libs
-unzip -o -d /home/languagetool/api $STANDALONE_TARGET && \
-  cp -r /home/languagetool/api/LanguageTool-[1-9].[0-9]*/* /home/languagetool/api/ && \
-  rm -rf /home/languagetool/api/LanguageTool-[1-9].[0-9]*/ && \
+echo "--- Using ZIP: $STANDALONE_TARGET ---"
+rm -r /home/languagetool/api/lt_bak
+unzip -o -d /home/languagetool/api/lt_neu $STANDALONE_TARGET && \
+  mv /home/languagetool/api/lt_neu/LanguageTool-*-SNAPSHOT/* /home/languagetool/api/lt_neu && \
+  mv /home/languagetool/api/lt /home/languagetool/api/lt_bak && \
+  mv /home/languagetool/api/lt_neu /home/languagetool/api/lt && \
   cd /home/languagetool/ && \
   ./restart-api-server.sh
   
