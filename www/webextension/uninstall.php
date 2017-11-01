@@ -52,7 +52,6 @@
             top: 210px !important;
         }
     </style>
-    <script src="https://embed.small.chat/T7AHSH8BGG7928QAAC.js" async></script>
 </head>
 <body>
 <?php include("../../include/partials/nav.php"); ?>
