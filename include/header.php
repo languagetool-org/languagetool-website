@@ -517,12 +517,12 @@
             var unmaintainedLanguages = {   // see https://languagetool.org/languages/ 
                 "be": "Belarusian",
                 "da": "Danish",
-                "gl": "Galician",
+                // "gl": "Galician",
                 "is": "Icelandic",
                 "ja": "Japanese",
                 "lt": "Lithuanian",
                 "ml": "Malayalam",
-                //"pt": "Portuguese",
+                // "pt": "Portuguese",
                 "ro": "Romanian",
                 "sv": "Swedish",
                 "zh": "Chinese"
