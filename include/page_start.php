@@ -28,13 +28,12 @@
       </div>
         <div id="editor">
             <div class="inner">
-                <?php
-                include("checkform.php");
-                ?>
+                <?php include("checkform.php"); ?>
                 <div id='maintainedInfo' class='languageHomepage'></div>
             </div>
             <div id="text2">
                 <p class="small"><?= $introText2 ?></p>
+                <?php include("partials/sub-checkform.php"); ?>
             </div>
         </div>
     </div>

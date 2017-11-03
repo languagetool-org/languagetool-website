@@ -78,6 +78,7 @@
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
+    <?php include("../../include/header2.php"); ?>
     <?php include("../../include/header_touchhover.php"); ?>
 </head>
 <body>

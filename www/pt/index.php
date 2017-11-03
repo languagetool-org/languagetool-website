@@ -85,6 +85,7 @@
     // ------------- TRANSLATIONS END HERE -------------
     ?>
     <?php include("../../include/header.php"); ?>
+    <?php include("../../include/header2.php"); ?>
 </head>
 <body>
 <?php include("../../include/page_start.php"); ?>
