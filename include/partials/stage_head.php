@@ -35,6 +35,7 @@
       <div id="text2">
         <p class="small">LanguageTool identifies many grammatical and stylistic issues that a simple spell checker cannot detect.</p>
       </div>
+      <?php include("sub-checkform.php"); ?>
     </div>
   </div>
 </div>

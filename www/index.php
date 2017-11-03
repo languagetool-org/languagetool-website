@@ -30,6 +30,7 @@
 <html lang=en>
   <head>
     <?php include("../include/header.php"); ?>
+    <?php include("../include/header2.php"); ?>
   </head>
   <body>
     <?php include("../include/partials/nav.php"); ?>

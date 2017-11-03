@@ -516,7 +516,7 @@ body #stage .inner #editor .inner {
 body #stage .inner #editor .inner #checktext {
   min-height: 300px;
   max-height: 800px;
-  height: calc(100vh - 395px);
+  height: calc(100vh - 580px);
 }
 body #stage .inner #editor .inner #checktext_path_row {
   display: none;
