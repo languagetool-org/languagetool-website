@@ -538,19 +538,22 @@ AtDCore.prototype.isIE = function() {
                  $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
              }*/
              var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
-             var randThreshold = 0.3;
+             var randThreshold = 1.3;
              var langCode = $('#lang').val();
+             var rand;
              if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
-                 var rand = Math.random();
+                 rand = Math.random();
                  document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
                  if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
                      t._trackEvent('ShowLTPlusLink');
                      $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
                  }
              } else if (document.cookie) {
-                 var rand = parseFloat(document.cookie.match(/showltplus=(\d\.\d\d)/)[1]);
+                 rand = parseFloat(document.cookie.match(/showltplus=(\d\.\d\d)/)[1]);
                  if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
-                     $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
+                     if (!$('form#checkform').hasClass('fullscreen')) {
+                         $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
+                     }
                  }
              }
          });
