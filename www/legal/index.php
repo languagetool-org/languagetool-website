@@ -25,12 +25,13 @@
         <p><strong>Wenn Sie Support benötigen, besuchen Sie <a href="https://forum.languagetool.org">unser Forum</a>.</strong></p>
 
         <p>
-            Daniel Naber<br/>
-            Stahnsdorfer Str. 89<br/>
+            LanguageTooler UG (haftungsbeschränkt)<br/>
+            Karl-Liebknecht-Str. 21/22<br/>
             14482 Potsdam<br/>
-            E-Mail: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span><br/>
-            Homepage: <a href="http://www.danielnaber.de">danielnaber.de</a><br/>
-            USt-IdNr: DE274116419
+            Telefon: +49 331 97 990 79<br/>
+            Geschäftsführer: Daniel Naber<br/>
+            Handelsregister: Amtsgericht Potsdam HRB 30269 P<br/>
+            E-Mail: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span>
         </p>
         
         <h2>Verfügbarkeit</h2>
@@ -66,12 +67,13 @@
         <p><strong>If you need help, visit <a href="https://forum.languagetool.org">our forum</a>.</strong></p>
 
         <p>
-            Daniel Naber<br/>
-            Stahnsdorfer Str. 89<br/>
+            LanguageTooler UG (haftungsbeschränkt)<br/>
+            Karl-Liebknecht-Str. 21/22<br/>
             14482 Potsdam<br/>
-            email: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span><br/>
-            homepage: <a href="http://www.danielnaber.de">danielnaber.de</a><br/>
-            USt-IdNr: DE274116419
+            Phone: +49 331 97 990 79<br/>
+            CEO: Daniel Naber<br/>
+            Trade Register: Amtsgericht Potsdam HRB 30269 P<br/>
+            email: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span>
         </p>
 
         <h2>Availability</h2>
