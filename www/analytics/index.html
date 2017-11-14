@@ -11,51 +11,56 @@
     document.addEventListener('DOMContentLoaded', function(){
         
         var apiPerformanceDataUrl = "/regression-tests/performance-api-recent.log";
+        var apiPerformanceDataUrl2 = "/regression-tests/performance-api-recent2.log";
         var apiPerformanceDataItemsToUse = 2500;
         var accessCountDataUrl = "api-log.csv";
 
-        Plotly.d3.csv(apiPerformanceDataUrl, function(err, rows){
-            var x = [];
-            var y = [];
-            if (!rows) {
-                console.error("Error: 'rows' not defined - is this script on the same server as the data?: " + apiPerformanceDataUrl);
-                return;
-            }
-            rows = rows.slice(rows.length-apiPerformanceDataItemsToUse, rows.length);
-            rows.map(function(row) {
-                Object.keys(row).forEach(function (key) {
-                    var value = row[key];
-                    var split = value.split(/;/);
-                    if (split.length === 2) {
-                        var date = split[0];
-                        var performance = split[1];
-                        x.push(date);
-                        y.push(performance);
-                    }
+        function drawApiGraph(dataUrl, divId) {
+            Plotly.d3.csv(dataUrl, function(err, rows){
+                var x = [];
+                var y = [];
+                if (!rows) {
+                    console.error("Error: 'rows' not defined - is this script on the same server as the data?: " + dataUrl);
+                    return;
+                }
+                rows = rows.slice(rows.length-apiPerformanceDataItemsToUse, rows.length);
+                rows.map(function(row) {
+                    Object.keys(row).forEach(function (key) {
+                        var value = row[key];
+                        var split = value.split(/;/);
+                        if (split.length === 2) {
+                            var date = split[0];
+                            var performance = split[1];
+                            x.push(date);
+                            y.push(performance);
+                        }
+                    });
                 });
-            });
-            var data = [{
+                var data = [{
                     name: 'access time',
                     x: x,
                     y: y,
                     type: 'bar',
                     marker: {color: 'lightblue'}
                 }];
-            var movingAverageSize = 13;  // = one hour if check runs every 5 minutes
-            var movingMeanData = [{
-                name: 'moving mean (n=' + movingAverageSize + ')',
-                x: x,
-                y: movingAvg(y.map(function(item) {return parseFloat(item)}), movingAverageSize),
-                type: 'line',
-                line: {shape: 'spline', smoothing: 0.5}
-            }];
-            var layout = {
-                xaxis: {title: 'date'},
-                yaxis: {title: 'API response time (s)', fixedrange: true}
-            };
-            Plotly.plot('api-perf-graph', data, layout, {showLink: false});
-            Plotly.plot('api-perf-graph', movingMeanData, layout, {showLink: false});
-        });
+                var movingAverageSize = 13;  // = one hour if check runs every 5 minutes
+                var movingMeanData = [{
+                    name: 'moving mean (n=' + movingAverageSize + ')',
+                    x: x,
+                    y: movingAvg(y.map(function(item) {return parseFloat(item)}), movingAverageSize),
+                    type: 'line',
+                    line: {shape: 'spline', smoothing: 0.5}
+                }];
+                var layout = {
+                    xaxis: {title: 'date'},
+                    yaxis: {title: 'API response time (s)', fixedrange: true}
+                };
+                Plotly.plot(divId, data, layout, {showLink: false});
+                Plotly.plot(divId, movingMeanData, layout, {showLink: false});
+            });
+        }
+        drawApiGraph(apiPerformanceDataUrl, "api-perf-graph");
+        drawApiGraph(apiPerformanceDataUrl2, "api2-perf-graph");
 
         var fields = ['DATE','TOTAL','FF','CHROME','ANDROID','CLIENT','SUBLIME','WEBEXT','MSWORD','WEBEXTFF','WEBEXTCHROME','TOTALHOME', 'GOOGLEAPP'];  // see report.sh
         var ignoreFields = ['FF', 'CHROME', 'ANDROID'];
@@ -145,8 +150,11 @@
     
 </script>
 
-<h2>API response time</h2>
+<h2>API response time (languagetool.org/api)</h2>
 <div id="api-perf-graph"></div>
+
+<h2>API response time (api.languagetool.org)</h2>
+<div id="api2-perf-graph"></div>
 
 <h2>API access count</h2>
 <div id="access-count-graph"></div>
