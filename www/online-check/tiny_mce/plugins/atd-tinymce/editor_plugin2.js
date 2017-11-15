@@ -537,9 +537,15 @@ AtDCore.prototype.isIE = function() {
                      "<a target='_blank' href='https://www.surveymonkey.de/r/LSPH6XY'>1-minute survey - 1 question only!</a>";
                  $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
              }*/
-             var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
-             var randThreshold = 1.3;
              var langCode = $('#lang').val();
+             if (document.cookie.indexOf("surveyShown=true") === -1 && langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH') {
+                 t._trackEvent('ShowSurvey');
+                 document.cookie = "surveyShown=true;max-age=2628000";
+                 var surveyText = "Bitte helfen Sie uns, languagetool.org zu verbessern, indem Sie an unserer " +
+                     "<a target='_blank' href='https://www.surveymonkey.de/r/T2LWPHP'>1-Minute-Umfrage teilnehmen</a>!";
+                 $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
+             }
+             /*
              var rand;
              if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
                  rand = Math.random();
@@ -555,7 +561,7 @@ AtDCore.prototype.isIE = function() {
                          $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
                      }
                  }
-             }
+             }*/
          });
 
          // hack to make both right and left mouse button work on errors in both Firefox and Chrome: 
