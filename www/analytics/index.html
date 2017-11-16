@@ -53,7 +53,8 @@
                 }];
                 var layout = {
                     xaxis: {title: 'date'},
-                    yaxis: {title: 'API response time (s)', fixedrange: true}
+                    yaxis: {title: 'API response time (s)', fixedrange: true, range: [0, 2]},
+                    
                 };
                 Plotly.plot(divId, data, layout, {showLink: false});
                 Plotly.plot(divId, movingMeanData, layout, {showLink: false});
