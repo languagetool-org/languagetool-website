@@ -541,13 +541,12 @@ AtDCore.prototype.isIE = function() {
              if (document.cookie.indexOf("surveyShown=true") === -1) {
                  var surveyText;
                  if (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH') {
-                     t._trackEvent('ShowSurvey');
+                     t._trackEvent('ShowSurvey', 'de');
                      document.cookie = "surveyShown=true;max-age=2628000";
-                     surveyText = "Bitte helfen Sie uns, languagetool.org zu verbessern, indem Sie an unserer " +
-                         "<a target='_blank' href='https://www.surveymonkey.de/r/T2LWPHP'>1-Minute-Umfrage teilnehmen</a>!";
+                     surveyText = "<a target='_blank' href='https://www.surveymonkey.de/r/T2LWPHP'>Bitte helfen Sie uns, languagetool.org zu verbessern, indem Sie an unserer Umfrage teilnehmen (dauert nur 1 Minute!)</a>";
                      $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
                  } else if (langCode === 'en-US' || langCode === 'en-GB' || langCode === 'en-ZA' || langCode === 'en-CA' || langCode === 'en-AU') {
-                     t._trackEvent('ShowSurvey');
+                     t._trackEvent('ShowSurvey', 'en');
                      document.cookie = "surveyShown=true;max-age=2628000";
                      surveyText = "<a target='_blank' href='https://www.surveymonkey.de/r/KHFRT58'>Please help improve languagetool.org by answering our 1-minute-survey</a>";
                      $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
