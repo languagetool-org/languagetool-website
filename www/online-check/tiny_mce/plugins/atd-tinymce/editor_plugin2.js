@@ -486,8 +486,11 @@ AtDCore.prototype.isIE = function() {
                $('#feedbackErrorMessage').html("");  // no severe errors, so clear that error area
 
                var results = core.processJSON(jqXHR.responseText);
+               var json = jQuery.parseJSON(jqXHR.responseText);
+               if (json && json.software) {
+                  console.log("LT version used: " + json.software.version + " (" + json.software.buildDate + ")");
+               }
                if (languageCode === "auto") {
-                  var json = jQuery.parseJSON(jqXHR.responseText);
                   var detectedLang = json.language.name;
                   /*var langDiv = $("#lang");
                   langDiv.find('option[value="auto"]').remove();
