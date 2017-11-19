@@ -374,8 +374,7 @@ AtDCore.prototype.isIE = function() {
    {
       getInfo : function() 
       {
-         return 
-         ({
+         return({
             longname :  'After The Deadline / LanguageTool',
             author :    'Raphael Mudge, Daniel Naber',
             authorurl : 'http://blog.afterthedeadline.com',
