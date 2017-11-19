@@ -841,6 +841,14 @@ AtDCore.prototype.isIE = function() {
                         var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
                         ed.core.ignoredSpellingErrors.push(coveredText);
                         t._removeWordsByRuleId(ruleId, coveredText);
+                        
+                        var ignoreSuccessMessage = "";
+                        if (plugin.editor.getParam('languagetool_i18n_ignore_all')) {
+                            ignoreSuccessMessage = plugin.editor.getParam('languagetool_i18n_ignore_success')[lang] 
+                                || "Word will be ignored in this session - <a href='https://languagetoolplus.com'>visit languagetoolplus.com</a> to store ignore words";
+                        }
+                        $('#feedbackMessage').html(ignoreSuccessMessage);
+                        
                         t._trackEvent('IgnoreSpellingError', lang);
                         t._checkDone();
                     }

@@ -211,7 +211,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171118"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171119"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
@@ -334,6 +334,14 @@
            'sl': 'Prezri napako za to besedo',
            'ru': 'Игнорировать эту ошибку',
            'fake': 'last entry so all previous items can end with a comma'
+       },
+
+       languagetool_i18n_ignore_success :
+       {
+           // after ignoring spelling errors:
+           // "Word will be ignored in this session - <a href='https://languagetoolplus.com'>Visit languagetoolplus.com</a> to store ignore words" 
+           'de-DE': "Wort wird in dieser Sitzung ignoriert. Tipp: unter <a href='https://languagetoolplus.com'>languagetoolplus.com</a> können Sie Wörter dauerhaft ignorieren",
+           'de-DE-x-simple-language': 'xxx'
        },
 
        languagetool_i18n_rule_examples :
