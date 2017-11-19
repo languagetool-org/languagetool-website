@@ -1,7 +1,3 @@
-<?php
-echo "script is blocked";
-return;
-?>
 <!doctype html>
 <html lang=en>
 <head>
