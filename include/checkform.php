@@ -86,7 +86,6 @@ function printLangOption($langCode) {
               $checkDefaultText = getDefaultDemoText($checkDefaultLang);
               if ($checkDefaultText == "") {
                 // fallback to English:
-                $checkDefaultLang = "en";
                 $checkDefaultText = getDefaultDemoText("en");
               }
               if (isset($_GET['empty'])) {

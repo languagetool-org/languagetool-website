@@ -11,6 +11,9 @@ function getDefaultLanguage() {
 }
 
 function getDefaultLanguageAndCountry() {
+   if (isset($_COOKIE["lt-language"])) {
+     return $_COOKIE["lt-language"];
+   }
    if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
      return parseDefaultLanguage($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
    } else {
