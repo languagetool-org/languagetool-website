@@ -5,7 +5,9 @@
     $enable_textcheck = 1;
     $enable_fancybox = 1;
     $checkDefaultLang = "pl";
-    $checkDefaultLangWithCountry = "pl-PL";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("pl");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("pl-PL");
 
     // ------------- TRANSLATIONS START HERE -------------
 

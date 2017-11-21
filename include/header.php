@@ -480,7 +480,7 @@
            if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'Action', 'CheckText', langCode]); } // Piwik tracking
        }
        // save language as default for next visit:
-       document.cookie = "lt-language=" + langCode + ";max-age=1314000";  // one year
+       document.cookie = "lt-language=" + langCode + ";max-age=1314000;path=/";  // one year
        tinyMCE.activeEditor.execCommand('mceWritingImprovementTool', langCode);
    }
 

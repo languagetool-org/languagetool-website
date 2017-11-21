@@ -10,8 +10,9 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "pt";
-    $checkDefaultLangWithCountry = "pt-PT";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("pt");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("pt-PT");
 
     // ------------- TRANSLATIONS START HERE -------------
 

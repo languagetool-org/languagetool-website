@@ -4,8 +4,9 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "fr";
-    $checkDefaultLangWithCountry = "fr-FR";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("fr");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("fr-FR");
 
     // ------------- TRANSLATIONS START HERE -------------
 

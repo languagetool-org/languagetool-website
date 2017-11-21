@@ -5,8 +5,9 @@
     $enable_textcheck = 1;
     $enable_fancybox = 1;
     $enable_download_dialogs = 1;
-    $checkDefaultLang = "ru";
-    $checkDefaultLangWithCountry = "ru-RU";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("ru");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("ru-RU");
 
     // ------------- TRANSLATIONS START HERE -------------
 

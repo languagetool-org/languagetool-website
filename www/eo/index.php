@@ -4,8 +4,9 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "eo";
-    $checkDefaultLangWithCountry = "eo";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("eo");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("eo");
 
     // ------------- TRANSLATIONS START HERE -------------
 

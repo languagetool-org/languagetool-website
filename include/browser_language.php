@@ -6,13 +6,16 @@
 #   http://www.dyeager.org/downloads/license-bsd.txt    #
 #########################################################
 
-function getDefaultLanguage() {
-   return getLanguageWithoutCountry(getDefaultLanguageAndCountry());
+function getDefaultLanguage($subPage = "") {
+   return getLanguageWithoutCountry(getDefaultLanguageAndCountry($subPage));
 }
 
-function getDefaultLanguageAndCountry() {
+function getDefaultLanguageAndCountry($subPage = "") {
    if (isset($_COOKIE["lt-language"])) {
      return $_COOKIE["lt-language"];
+   }
+   if (isset($subPage) && $subPage !== "") {
+     return $subPage;
    }
    if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
      return parseDefaultLanguage($_SERVER["HTTP_ACCEPT_LANGUAGE"]);

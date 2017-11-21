@@ -4,8 +4,9 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "zh";
-    $checkDefaultLangWithCountry = "zh-CN";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("zh");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("zh-CN");
 
     // ------------- TRANSLATIONS START HERE -------------
 

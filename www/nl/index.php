@@ -4,8 +4,9 @@
     <?php
     $enable_textcheck = 1;
     $enable_fancybox = 1;
-    $checkDefaultLang = "nl";
-    $checkDefaultLangWithCountry = "nl-NL";
+    include("../../include/browser_language.php");
+    $checkDefaultLang = getDefaultLanguage("nl");
+    $checkDefaultLangWithCountry = getDefaultLanguageAndCountry("nl-NL");
 
     // ------------- TRANSLATIONS START HERE -------------
     
