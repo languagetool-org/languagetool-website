@@ -25,7 +25,7 @@
         <p><strong>Wenn Sie Support benötigen, besuchen Sie <a href="https://forum.languagetool.org">unser Forum</a>.</strong></p>
 
         <p>
-            LanguageTooler UG (haftungsbeschränkt)<br/>
+            LanguageTooler GmbH<br/>
             Karl-Liebknecht-Str. 21/22<br/>
             14482 Potsdam<br/>
             Telefon: +49 331 97 990 79<br/>
@@ -67,7 +67,7 @@
         <p><strong>If you need help, visit <a href="https://forum.languagetool.org">our forum</a>.</strong></p>
 
         <p>
-            LanguageTooler UG (haftungsbeschränkt)<br/>
+            LanguageTooler GmbH<br/>
             Karl-Liebknecht-Str. 21/22<br/>
             14482 Potsdam<br/>
             Phone: +49 331 97 990 79<br/>
