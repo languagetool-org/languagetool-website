@@ -69,7 +69,7 @@
     
     <h2>Source</h2>
 
-    <p>The source code of this extension is available <a href="https://github.com/languagetool-org/languagetool-browser-addon/tree/master/chrome">at Github</a>.
+    <p>The source code of this extension is available <a href="https://github.com/languagetool-org/languagetool-browser-addon">at Github</a>.
     It's released under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1">LGPL 2.1</a>.</p>
 
     <h2>Firefox</h2>
