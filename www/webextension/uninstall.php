@@ -24,6 +24,7 @@
             if (elem) {
                 elem.style.display = 'block';
                 document.getElementById(messageFieldId).required = true;
+                document.getElementById(messageFieldId).focus();
             }
         }
         function hide(id, messageFieldId) {
@@ -60,17 +61,15 @@
 
     <h1>Uninstallation successful</h1>
 
-    <p>Sorry to see you've uninstalled our extension. Please
-    <noscript>email the developer (turn on Javascript to see the email address)</noscript>
-    <script>
-        <!--
-        var firstPart = "daniel.naber";
-        var lastPart = "languagetool.org";
-        document.write("<a href='mail" + "to:" + firstPart + "@" + lastPart + "'>email the developer<" + "/a>");
-        // -->
-    </script>
-    if there was a problem. We'd like to fix it. Or tell us your feedback here:</p>
-
+    <?php if (isset($_GET['lastUsedOn'])) { ?>
+        We’re sorry to see you’ve uninstalled our extension. It seems you last used it on
+        <?= htmlspecialchars($_GET['lastUsedOn']) ?> - was the issue that made you uninstall
+        the add-on related to that site? Please let us know below:
+    <?php } else { ?>
+        <p>We’re sorry to see you’ve uninstalled our extension. It would be great if you told us the 
+            reason for your decision, so that we can fix it and improve LanguageTool:</p>
+    <?php } ?>
+        
     <form action="submit-feedback.php" method="post" onsubmit="return checkLength()">
         <input id="version" name="version" type="hidden" value="<?= htmlspecialchars($_GET['version']) ?>">
         <?php if (isset($_GET['usageCounter'])) { ?>
@@ -80,11 +79,22 @@
         <?php } ?>
         <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use</label><br>
         <div id="site-fail-detail" class="detail">
-            <input class="detailInput" id="message1" name="message1" placeholder="Link to the site that didn't work"><br>
+            <?php if (isset($_GET['lastUsedOn'])) { ?>
+                <input class="detailInput" id="message1" name="message1" value="<?= htmlspecialchars($_GET['lastUsedOn']) ?>"><br>
+            <?php } else { ?>
+                <input class="detailInput" id="message1" name="message1" placeholder="Link to the site that didn't work"><br>
+            <?php } ?>
         </div>
 
         <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail', 'message2')"> it did not find errors</label><br>
         <div id="error-not-found-detail" class="detail">
+            <?php if (isset($_GET['usageCounter']) && intval($_GET['usageCounter']) < 5) { ?>
+            It seems you haven't used the add-on much yet - we recommend using it at least
+            for a few days. If you only tried checking a few artificial errors that you deliberately entered,
+            it might not work, as those kinds of errors are often not the errors people really make.
+            Anyway, please provide an example of an error that was not found:
+            <br>
+            <?php } ?>
             <textarea class="detailBox" id="message2" name="message2" placeholder="Please add the sentence or text for which no errors where found"></textarea><br>
         </div>
 
