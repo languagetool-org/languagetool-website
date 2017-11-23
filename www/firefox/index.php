@@ -59,7 +59,9 @@
 
     <ul>
         <li>It is not possible to check texts on websites which were loaded before the installation of the extension.</li>
-        <li>A small number of sites like docs.google.com is not yet supported</li>
+        <li>A small number of sites like Google Docs is not yet supported
+            - but Google Docs has <a href="https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm">its own add-on</a>
+        </li>
         <li>If your text contains an error but the add-on doesn't detect it, that's probably
             because we don't have an error detection rule for that error yet. Please consider <a href="../contribute/">contributing</a>.
         </li>

@@ -62,7 +62,7 @@
     <h2>Known Issues</h2>
     
     <p>There's a small number of sites that the extension won't work on. One of them
-    is Google Docs. If you find another one, <a href="../support/">please let us know</a>.
+    is Google Docs - this one has <a href="https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm">its own add-on</a>.
     If your text contains an error but the extension doesn't detect it, that's probably
     because we don't have an error detection rule for that error yet. Please consider
     <a href="../contribute/">contributing</a>.
