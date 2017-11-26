@@ -5,8 +5,13 @@
     $page = "other";
     $title = "Thanks for your Feedback";
 
-    $myAddress = "daniel.naber" ."@". "languagetool.org";
-    $body = "Reason: " .$_POST['reason']."\n".
+    $minLen = 5;
+    if (strlen($_POST['message1']) >= $minLen ||
+        strlen($_POST['message2']) >= $minLen ||
+        strlen($_POST['message3']) >= $minLen ||
+        strlen($_POST['message4']) >= $minLen) {
+        $myAddress = "daniel.naber" ."@". "languagetool.org";
+        $body = "Reason: " .$_POST['reason']."\n".
             "Version: ".$_POST['version']."\n".
             "UsageCounter: ".intval($_POST['usageCounter'])."\n".
             "Message: " .
@@ -18,11 +23,11 @@
             "From: ".$_POST['email']."\n".
             "Browser: ".$_SERVER['HTTP_USER_AGENT']."\n".
             "Languages: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-    mail($myAddress,
-         "WebExtension uninstall feedback",
-         $body,
-         "From: $myAddress\nContent-Type:text/plain;charset=utf-8\n");
-    
+        mail($myAddress,
+            "WebExtension uninstall feedback",
+            $body,
+            "From: $myAddress\nContent-Type:text/plain;charset=utf-8\n");
+    }
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
