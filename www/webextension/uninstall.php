@@ -8,11 +8,6 @@
     <?php include("../../include/header.php"); ?>
     <script>
         function checkLength() {
-            var textArea = document.getElementById("message");
-            if (textArea.value.length < 15) {
-                alert("Please be more specific and describe *exactly* what the issue was");
-                return false;
-            }
             return true;
         }
         function show(id, messageFieldId) {
