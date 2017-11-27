@@ -15,6 +15,7 @@
             hide('error-not-found-detail', 'message2');
             hide('too-many-false-alarms-detail', 'message3');
             hide('something-else-detail', 'message4');
+            hide('browser-slow-down-detail', 'message5');
             var elem = document.getElementById(id);
             if (elem) {
                 elem.style.display = 'block';
@@ -90,7 +91,11 @@
 
         <label><input name="reason" value="checking-too-slow" type="radio" onclick="track('checking-too-slow')"> the checking is too slow</label><br>
         
-        <label><input name="reason" value="browser-slow-down" type="radio" onclick="track('browser-slow-down')"> it slows down my browser</label><br>
+        <label><input name="reason" value="browser-slow-down" type="radio" onclick="track('browser-slow-down');show('browser-slow-down-detail', 'message5')"> it slows down my browser</label><br>
+        <div id="browser-slow-down-detail" class="detail">
+            We're currently debugging whether other add-ons can cause these slowdowns.<br>Please let us know what other add-ons you're using:<br>
+            <textarea class="detailBox" id="message5" name="message5"></textarea><br>
+        </div>
 
         <label><input name="reason" value="error-not-found" type="radio" onclick="track('error-not-found');show('error-not-found-detail', 'message2')"> it did not find errors like this one:</label><br>
         <div id="error-not-found-detail" class="detail">
