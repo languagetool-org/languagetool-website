@@ -29,6 +29,12 @@
                 document.getElementById(messageFieldId).required = false;
             }
         }
+        function track(reason) {
+            if (typeof(_paq) !== 'undefined') {
+                // Piwik tracking
+                _paq.push(['trackEvent', "UninstallFeedback", reason]);
+            }
+        }
     </script>
     <style>
         .detail {
@@ -72,7 +78,8 @@
         <?php } else { ?>
             <input id="usageCounter" name="usageCounter" type="hidden" value="-1">
         <?php } ?>
-        <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use, e.g.:</label><br>
+        
+        <label><input name="reason" value="site-fail" type="radio" onclick="track('site-fail');show('site-fail-detail', 'message1')"> it did not work on a site I use, e.g.:</label><br>
         <div id="site-fail-detail" class="detail">
             <?php if (isset($_GET['lastUsedOn'])) { ?>
                 <input class="detailInput" id="message1" name="message1" value="<?= htmlspecialchars($_GET['lastUsedOn']) ?>"><br>
@@ -81,7 +88,11 @@
             <?php } ?>
         </div>
 
-        <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail', 'message2')"> it did not find errors like this one:</label><br>
+        <label><input name="reason" value="checking-too-slow" type="radio" onclick="track('checking-too-slow')"> the checking is too slow</label><br>
+        
+        <label><input name="reason" value="browser-slow-down" type="radio" onclick="track('browser-slow-down')"> it slows down my browser</label><br>
+
+        <label><input name="reason" value="error-not-found" type="radio" onclick="track('error-not-found');show('error-not-found-detail', 'message2')"> it did not find errors like this one:</label><br>
         <div id="error-not-found-detail" class="detail">
             <?php if (isset($_GET['usageCounter']) && intval($_GET['usageCounter']) < 5) { ?>
             It seems you haven't used the add-on much yet - we recommend using it at least
@@ -93,12 +104,12 @@
             <textarea class="detailBox" id="message2" name="message2" placeholder="Please add the text for which no errors where found"></textarea><br>
         </div>
 
-        <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="show('too-many-false-alarms-detail', 'message3')"> found too many 'errors' that are not really errors, e.g.:</label><br>
+        <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="track('too-many-false-alarms');show('too-many-false-alarms-detail', 'message3')"> found too many 'errors' that are not really errors, e.g.:</label><br>
         <div id="too-many-false-alarms-detail" class="detail">
             <textarea class="detailBox" id="message3" name="message3" placeholder="Please the text for which incorrect errors were reported"></textarea><br>
         </div>
 
-        <label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail', 'message4')"> something else:</label><br>
+        <label><input name="reason" value="something-else" type="radio" onclick="track('something-else');show('something-else-detail', 'message4')"> something else:</label><br>
         <div id="something-else-detail" class="detail">
             <textarea class="detailBox" id="message4" name="message4" placeholder="Please describe exactly what didn't work. 'It does not work' is not a useful feedback, unfortunately."></textarea><br>
         </div>
