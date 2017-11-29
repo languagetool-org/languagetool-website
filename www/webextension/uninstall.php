@@ -14,7 +14,7 @@
             }
             setTimeout(function() {
                 document.getElementById("mainform").submit();
-            }, 250);
+            }, 500);
             return false;
         }
         function show(id, messageFieldId) {
