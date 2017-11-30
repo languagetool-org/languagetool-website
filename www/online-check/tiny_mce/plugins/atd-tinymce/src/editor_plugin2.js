@@ -184,30 +184,29 @@
          
          editor.onPaste.add(function(editor, ev) {
              t._trackEvent('PasteText');
-             if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
+             /*if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
                  t._trackEvent('ShowAddonSurvey');
                  document.cookie = "addonSurveyShown=true;max-age=2628000";
-                 var surveyText = "Interested in LanguageTool on mobile? " +
-                     "<a target='_blank' href='https://www.surveymonkey.de/r/JZP886S'>Then please take this survey (1 minute only)</a>";
+                 var surveyText = "Please help us improve LanguageTool by answering our " +
+                     "<a target='_blank' href='https://www.surveymonkey.de/r/LSPH6XY'>1-minute survey - 1 question only!</a>";
                  $('#feedbackErrorMessage').html("<div id='survey'>" + surveyText + "</div>");
-             } else {
-                 var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
-                 var randThreshold = 0.3;
-                 var langCode = $('#lang').val();
-                 var rand;
-                 if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
-                     rand = Math.random();
-                     document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
-                     if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
-                         t._trackEvent('ShowLTPlusLink');
+             }*/
+             var marketingText = "NEU: Unter <a href='https://languagetoolplus.com/'>languagetoolplus.com</a> bieten wir eine Premium-Version an, die noch mehr Fehler erkennt.";
+             var randThreshold = 0.3;
+             var langCode = $('#lang').val();
+             var rand;
+             if (document.cookie && document.cookie.indexOf("showltplus=") === -1) {
+                 rand = Math.random();
+                 document.cookie = "showltplus=" + rand.toFixed(2) + ";max-age=2628000";  // one month
+                 if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
+                     t._trackEvent('ShowLTPlusLink');
+                     $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
+                 }
+             } else if (document.cookie) {
+                 rand = parseFloat(document.cookie.match(/showltplus=(\d\.\d\d)/)[1]);
+                 if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
+                     if (!$('form#checkform').hasClass('fullscreen')) {
                          $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
-                     }
-                 } else if (document.cookie) {
-                     rand = parseFloat(document.cookie.match(/showltplus=(\d\.\d\d)/)[1]);
-                     if (rand < randThreshold && (langCode === 'de-DE' || langCode === 'de-AT' || langCode === 'de-CH')) {
-                         if (!$('form#checkform').hasClass('fullscreen')) {
-                             $('#feedbackErrorMessage').html("<div id='survey'>" + marketingText + "</div>");
-                         }
                      }
                  }
              }
