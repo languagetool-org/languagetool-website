@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: LanguageTool API
   description: Check texts for style and grammar issues with LanguageTool
-  version: 1.0.0
+  version: 1.0.1
 host: languagetool.org
 schemes:
   - https
@@ -120,6 +120,7 @@ paths:
                     - length
                     - replacements
                     - context
+                    - sentence
                   properties:
                     message:
                       type: string
@@ -158,6 +159,9 @@ paths:
                         length:
                           type: integer
                           description: The length of the error in characters in the context.
+                    sentence:
+                      type: string
+                      description: The sentence the error occurred in (since LanguageTool 4.0 or later)
                     rule:
                       type: object
                       required:

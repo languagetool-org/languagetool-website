@@ -3,7 +3,7 @@
     "info": {
         "title": "LanguageTool API",
         "description": "Check texts for style and grammar issues with LanguageTool",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "host": "languagetool.org",
     "schemes": [
@@ -139,7 +139,8 @@
                                             "offset",
                                             "length",
                                             "replacements",
-                                            "context"
+                                            "context",
+                                            "sentence"
                                         ],
                                         "properties": {
                                             "message": {
@@ -192,6 +193,10 @@
                                                         "description": "The length of the error in characters in the context."
                                                     }
                                                 }
+                                            },
+                                            "sentence": {
+                                                "type": "string",
+                                                "description": "The sentence the error occurred in (since LanguageTool 4.0 or later)"
                                             },
                                             "rule": {
                                                 "type": "object",
