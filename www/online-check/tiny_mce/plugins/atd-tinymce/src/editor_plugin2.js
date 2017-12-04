@@ -21,6 +21,7 @@
 {
    var JSONRequest = tinymce.util.JSONRequest, each = tinymce.each, DOM = tinymce.DOM;
    var maxTextLength = 20000;
+   var userHasPastedText = false;
 
    tinymce.create('tinymce.plugins.AfterTheDeadlinePlugin', 
    {
@@ -184,6 +185,7 @@
          
          editor.onPaste.add(function(editor, ev) {
              t._trackEvent('PasteText');
+             userHasPastedText = true;
              /*if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
                  t._trackEvent('ShowAddonSurvey');
                  document.cookie = "addonSurveyShown=true;max-age=2628000";
@@ -376,6 +378,8 @@
             var errorDescription = ed.core.findSuggestion(e.target);
             var ruleId = errorDescription["id"];
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
+            var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") !== -1 || ruleId.indexOf("SPELLER_RULE") !== -1 ||
+                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1;
 
             if (errorDescription == undefined)
             {
@@ -402,6 +406,26 @@
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
+                            if (!isSpellingRule &&
+                                    window.location.pathname === "/" &&   // vex is only available on homepage for now
+                                    userHasPastedText) {  // pasted text: we don't want example text corrections
+                                var sentence = errorDescription["sentence"];
+                                var covered = errorDescription["coveredtext"];
+                                var re = new RegExp(covered, 'g');
+                                var replCount = (sentence.match(re) || []).length;
+                                //console.log("replCount", replCount, "in: '", sentence, "' -- for: ", covered);
+                                if (replCount === 1) {  // otherwise the correction is ambiguous
+                                    var correctedSentence = sentence.replace(e.target.innerText, sugg);
+                                    if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
+                                        t._sendErrorExample(sentence, correctedSentence);
+                                    } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
+                                        console.log("no sentence tracking");
+                                    } else {
+                                        t._showContributionDialog(sentence, correctedSentence, errorDescription);
+                                    }
+                                    t._updateSentenceTrackingArea();
+                                }
+                            }
                             t._trackEvent('AcceptCorrection', lang, ruleId);
                             t._checkDone();
                          }
@@ -434,8 +458,6 @@
             if (plugin.editor.getParam('languagetool_i18n_suggest_word_url')) {
               suggestWordUrl = plugin.editor.getParam('languagetool_i18n_suggest_word_url')[lang];
             }
-            var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") != -1 || ruleId.indexOf("SPELLER_RULE") != -1 ||
-                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") != -1 || ruleId.indexOf("HUNSPELL_RULE") != -1;
 
             if (errorDescription != undefined && errorDescription["moreinfo"] != null)
             {
@@ -609,6 +631,136 @@
          }
       },
 
+       /* send error example to our database */
+       _showContributionDialog : function(sentence, correctedSentence, errorDescription) {
+           // source: https://github.com/HubSpot/vex/blob/master/docs/intro.md
+           var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
+           var t = this;
+           vex.dialog.open({
+               unsafeMessage: "To further improve LanguageTool, we're looking for data about " +
+               "how it's used. Please allow us to store your sentence and the correction anonymously " +
+               "(i.e. your IP address will not be saved).<br><br>" +
+               "Sentence:<br>" +
+               "\"" + escapedSentence + "\"",
+               input: [
+                   '<input id="rememberCheckbox" name="remember" type="checkbox" /> <label for="rememberCheckbox">Remember this decision</label>'
+               ].join(''),
+               buttons: [
+                   $.extend({}, vex.dialog.buttons.YES, { text: 'Okay, store the sentence' }),
+                   $.extend({}, vex.dialog.buttons.NO, { text: 'No' })
+               ],
+               callback: function (data) {
+                   if (data) {
+                       console.log('Okay to store sentence. Remember setting?', data.remember);
+                       if (data.remember === "on") {
+                           t._setSentenceTrackingCookie("store");
+                       } else {
+                           t._setSentenceTrackingCookie("ask");
+                       }
+                       t._trackEvent('AllowSentenceStorage', "yes");
+                       // now send text like the error collection add-on:
+                       t._sendErrorExample(sentence, correctedSentence);
+                   } else {
+                       var remember = $('#rememberCheckbox').is(':checked');
+                       console.log("Don't store sentence. Remember setting?", remember);
+                       if (remember) {
+                           t._setSentenceTrackingCookie("do-not-store");
+                       } else {
+                           t._setSentenceTrackingCookie("ask");
+                       }
+                       t._trackEvent('AllowSentenceStorage', "no");
+                   }
+               }
+           });
+       },
+       
+       _showGenericContributionDialog : function() {
+           var t = this;
+           vex.dialog.open({
+               unsafeMessage: "To further improve LanguageTool, we're looking for data about " +
+                   "how it's used. Please allow us to store your sentence and the correction anonymously " +
+                   "(i.e. your IP address will not be saved).",
+               buttons: [
+                   $.extend({}, vex.dialog.buttons.YES, { text: 'Okay, store my corrections' }),
+                   $.extend({}, vex.dialog.buttons.NO, { text: 'No' }),
+                   $.extend({}, vex.dialog.buttons.YES, {
+                           type: 'button',
+                           text: 'Ask every time',
+                           className: 'vex-dialog-button-secondary',
+                           click: function() {
+                               this.value = "ask";
+                               this.close();
+                           } 
+                       })
+               ],
+               callback: function (data) {
+                   if (data) {
+                       if (data === "ask") {
+                           t._setSentenceTrackingCookie("ask");
+                       } else {
+                           t._setSentenceTrackingCookie("store");
+                       }
+                   } else {
+                       t._setSentenceTrackingCookie("do-not-store");
+                   }
+                   t._updateSentenceTrackingArea();
+               }
+           });
+       },
+
+       _updateSentenceTrackingArea : function() {
+           var t = this;
+           if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
+               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>Thanks for contributing corrections. " +
+                   "<a href='#' onclick='return false'>Change setting</a></a></div>");
+               $('#sentenceContribution').unbind('click');
+               $('#sentenceContribution').bind('click', function() {
+                   t._showGenericContributionDialog();
+               });
+           } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
+               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>You're not contributing corrections. " +
+                   "<a href='#' onclick='return false'>Change setting</a></a></div>");
+               $('#sentenceContribution').unbind('click');
+               $('#sentenceContribution').bind('click', function() {
+                   t._showGenericContributionDialog();
+               });
+           } else {
+               $('#sentenceContributionMessage').html("");
+           }
+       },
+       
+       _setSentenceTrackingCookie : function(val) {
+           document.cookie = "sentenceTracking=" + val + ";max-age=604800;path=/";  // 604.800 = 1 week 
+           console.log("sentenceTracking=" + val);
+       },
+       
+       /* send error example to our database */
+      _sendErrorExample : function(sentence, correctedSentence) {
+          var req = new XMLHttpRequest();
+          req.timeout = 60 * 1000; // milliseconds
+          req.open('POST', "https://languagetoolplus.com/submitErrorExample", true);
+          //req.open('POST', "http://localhost:8000/submitErrorExample", true);
+          req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          req.onload = function() {
+              if (req.status !== 200) {
+                  console.warn("Error submitting sentence. Code: " + req.status);
+              }
+          };
+          req.onerror = function() {
+              console.warn("Error submitting sentence (onerror).");
+          };
+          req.ontimeout = function() {
+              console.warn("Error submitting sentence (ontimeout).");
+          };
+          console.log("sending sentence + correction: ", sentence);
+          req.send(
+              "sentence=" + encodeURIComponent(sentence) +
+              "&correction=" + encodeURIComponent(correctedSentence) +
+              "&url=" + encodeURIComponent("https://languagetool.org") +
+              "&username=website"
+          );
+      },
+       
       /* loop through editor DOM, call _done if no mce tags exist. */
       _checkDone : function() 
       {

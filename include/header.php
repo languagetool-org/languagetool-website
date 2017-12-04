@@ -91,6 +91,11 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
+<script src="js/vex/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+<link rel="stylesheet" href="js/vex/vex.css" />
+<link rel="stylesheet" href="js/vex/vex-theme-os.css" />
+
 <?php foreach ($assets['links'] as $link) { ?>
   <link href="<?= $link['src'] ?>" rel="<?= $link['rel'] ?>"
     <?php if ($link['type']) { ?>
@@ -211,7 +216,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171120"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171204"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>

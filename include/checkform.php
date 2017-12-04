@@ -104,6 +104,7 @@ function printLangOption($langCode) {
             </div>
             -->
             <div id="feedbackErrorMessage"></div>
+            <div id="sentenceContributionMessage"></div>
             <div class="dropdown">
                 <select class="dropkick" name="lang" id="lang">
                     <?php

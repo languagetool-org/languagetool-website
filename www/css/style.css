@@ -41,6 +41,10 @@ body #severeError {
   border-width: 4px;
   margin-bottom: 5px;
 }
+body #sentenceContribution {
+  color: black;
+  padding-bottom: 10px;
+}
 body #survey {
   color: black;
   font-weight: bold;
