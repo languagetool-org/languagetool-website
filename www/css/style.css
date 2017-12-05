@@ -674,6 +674,31 @@ body #download .button_container .inner_button .meta {
   background-color: #fee275;
   padding: 8px 20px;
 }
+body #pricing {
+  width: 900px;
+  margin: 30px auto 70px auto;
+}
+body #pricing h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+body #pricing th {
+  font-size: 26px;
+  color: black;
+}
+body #pricing td {
+  padding: 10px;
+  color: black;
+}
+body #pricing tr :first-child {
+  text-align: left;
+}
+body #pricing td {
+  text-align: center;
+}
 body #actions {
   background-color: #373737;
   padding: 30px 0px;

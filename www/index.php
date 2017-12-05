@@ -37,6 +37,7 @@
     <?php include("../include/partials/stage_head.php"); ?>
     <div id="content">
       <?php include("../include/pages/downloads.php"); ?>
+      <?php include("../include/pages/pricing.php"); ?>
       <?php include("../include/partials/start_actions.php"); ?>
     </div>
     <?php include("../include/footer.php"); ?>
