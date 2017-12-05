@@ -4,7 +4,7 @@
 
     <?php
     $y = "<img src='images/check.png' alt='supported'>";
-    $n = "<img src='images/cancel_grey.png' alt='supported'>";
+    $n = "<img src='images/cancel_grey.png' alt='unsupported'>";
     ?>
     
     <table style="width:100%">
