@@ -153,6 +153,11 @@ function printLangOption($langCode) {
                     <span class="startPrice">Starting at USD 5</span>
                 </button>
               <?php } ?>
+                <?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+                    <button class="upgrade" type="submit" onClick="if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'UpgradeClick']); } document.getElementById('pricing').scrollIntoView(); return false;">
+                        Upgrade
+                    </button>
+                <?php } ?>
                 <button type="submit" name="_action_checkText"
                   onClick="doit(true);return false;" title="<?= isset($checkSubmitButtonTitle) ? $checkSubmitButtonTitle : '' ?>">
                     <?= $checkSubmitButtonValue ?>

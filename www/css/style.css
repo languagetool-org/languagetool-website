@@ -339,6 +339,14 @@ body #editor_controls .submit .proofread .startPrice {
   color: white !important;
   opacity: 1;
 }
+body #editor_controls .submit .upgrade {
+  margin-right: 5px;
+  background-color: #d8ab00;
+}
+body #editor_controls .submit .upgrade:hover,
+body #editor_controls .submit .upgrade:active {
+  background-color: #a58300;
+}
 body.fullscreen {
   overflow: hidden;
 }
