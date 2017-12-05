@@ -119,9 +119,12 @@
         <div id="something-else-detail" class="detail">
             <textarea class="detailBox" id="message4" name="message4" placeholder="Please describe exactly what didn't work. 'It does not work' is not a useful feedback, unfortunately."></textarea><br>
         </div>
-        Contact (email, Facebook, twitter etc.) so we can contact you in case we have questions:
-        <input style="width:300px" type="text" name="email">
         <br>
+        <div style="width:500px">
+            <b>Please provide contact information</b> (e.g. email) so we can contact you in case we have questions.
+            We promise we will only contact you about your feedback and will not send you any newsletters:
+            <input style="width:300px" type="text" name="email" placeholder="you@provider.org">
+        </div>
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
     
