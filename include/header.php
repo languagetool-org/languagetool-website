@@ -92,6 +92,14 @@
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
 <?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+    <script type="text/javascript">
+        function errorCallback(code, string) {
+            console.log("Error: ", code, string);
+            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                _paq.push(['trackEvent', "FastSpringError", code, string]);
+            }
+        }
+    </script>
     <script
             id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.4/fastspring-builder.min.js"

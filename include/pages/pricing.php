@@ -100,7 +100,6 @@
         <tr>
             <td>Price</td>
             <td>free</td>
-            <!--
             <td>
                 <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                     <div class="buyButton">
@@ -116,10 +115,6 @@
                     </div>
                 </a>
                 <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
-            </td>
-            -->
-            <td>
-                buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
             </td>
             <td>
                 <script>
