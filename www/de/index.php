@@ -85,6 +85,7 @@
 <body>
 
 <?php include("../../include/page_start.php"); ?>
+<?php include("../../include/pages/pricing.php"); ?>
 
 <div id="languageContent">
 

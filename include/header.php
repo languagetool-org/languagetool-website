@@ -91,7 +91,7 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
-<?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+<?php if ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/de/") { ?>
     <script type="text/javascript">
         function errorCallback(code, string) {
             console.log("Error: ", code, string);
