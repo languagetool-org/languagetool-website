@@ -110,7 +110,7 @@
     </script>
 <?php } ?>
 
-<script src="js/vex/vex.combined.min.js"></script>
+<script src="/js/vex/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
 <link rel="stylesheet" href="js/vex/vex.css" />
 <link rel="stylesheet" href="js/vex/vex-theme-os.css" />
