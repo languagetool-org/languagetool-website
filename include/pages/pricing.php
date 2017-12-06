@@ -100,6 +100,7 @@
         <tr>
             <td>Price</td>
             <td>free</td>
+            <!--
             <td>
                 <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                     <div class="buyButton">
@@ -110,11 +111,15 @@
                 <br>
                 <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                     <div style="margin:0" class="buyButton">
-                        79€/year<!-- - save 65%<br>--><br>
+                        79€/year<br>
                         <b>BUY NOW</b>
                     </div>
                 </a>
                 <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
+            </td>
+            -->
+            <td>
+                buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
             </td>
             <td>
                 <script>
