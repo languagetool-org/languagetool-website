@@ -26,7 +26,7 @@
             var elem = document.getElementById(id);
             if (elem) {
                 elem.style.display = 'block';
-                document.getElementById(messageFieldId).required = true;
+                //document.getElementById(messageFieldId).required = true;
                 document.getElementById(messageFieldId).focus();
             }
         }
@@ -34,7 +34,7 @@
             var elem = document.getElementById(id);
             if (elem) {
                 elem.style.display = 'none';
-                document.getElementById(messageFieldId).required = false;
+                //document.getElementById(messageFieldId).required = false;
             }
         }
     </script>
