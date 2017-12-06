@@ -216,7 +216,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171204-2"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171206"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
@@ -421,6 +421,59 @@
            'ru': 'http://myooo.ru/index.php?option=com_addtodictsuggest&Itemid=135&word={word}',
            'fake': 'last entry so all previous items can end with a comma'
           },
+
+       languagetool_i18n_track_message :
+           {
+               'de-DE': 'Um LanguageTool zu verbessern, brauchen wir Daten über die Art der Nutzung. ' +
+                        'Bitte erlauben Sie uns, Ihre korrigierten Sätze anynonym zu speichern ' +
+                        '(Ihre IP-Adresse wird nicht gespeichert).'
+           },
+
+       languagetool_i18n_track_message_sentence :
+           {
+               'de-DE': 'Satz:'
+           },
+
+       languagetool_i18n_track_remember_message :
+           {
+               'de-DE': 'Entscheidung merken'
+           },
+
+       languagetool_i18n_track_no :
+           {
+               'de-DE': 'Nein'
+           },
+
+       languagetool_i18n_track_yes :
+           {
+               'de-DE': 'Ja, Satz speichern'
+           },
+
+       languagetool_i18n_track_yes_plural :
+           {
+               'de-DE': 'Ja, Sätze speichern'
+           },
+       
+       languagetool_i18n_track_ask :
+           {
+               'de-DE': 'Jedes Mal fragen'
+           },
+
+       languagetool_i18n_do_track :
+           {
+               'de-DE': 'Danke, dass Sie Ihre Korrekturen speichern lassen.'
+           },
+
+       languagetool_i18n_do_not_track :
+           {
+               'de-DE': 'Sie lassen Ihre Korrekturen nicht speichern.'
+           },
+
+       languagetool_i18n_tracking_change :
+           {
+               'de-DE': 'Einstellung ändern'
+           },
+
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your LanguageTool server or the URL of your proxy file: */

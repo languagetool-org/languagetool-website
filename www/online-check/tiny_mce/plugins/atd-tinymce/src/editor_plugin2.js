@@ -408,7 +408,7 @@
                          {
                             ed.core.applySuggestion(e.target, sugg);
                             if (!isSpellingRule &&
-                                    window.location.pathname === "/" &&   // vex is only available on homepage for now
+                                    (window.location.pathname === "/" || window.location.pathname === "/de/") &&   // vex is only available on homepage for now
                                     userHasPastedText) {  // pasted text: we don't want example text corrections
                                 var sentence = errorDescription["sentence"];
                                 var covered = errorDescription["coveredtext"];
@@ -424,7 +424,7 @@
                                     } else {
                                         t._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId);
                                     }
-                                    t._updateSentenceTrackingArea();
+                                    t._updateSentenceTrackingArea(lang);
                                 }
                             }
                             t._trackEvent('AcceptCorrection', lang, ruleId);
@@ -640,18 +640,23 @@
            // source: https://github.com/HubSpot/vex/blob/master/docs/intro.md
            var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
            var t = this;
+           var trackMessage = this._getTranslation('languagetool_i18n_track_message', lang,
+                    "To further improve LanguageTool, we're looking for data about " +
+                    "how it's used. Please allow us to store your corrected sentences anonymously " +
+                    "(i.e. your IP address will not be saved).") + "<br><br>" +
+                    this._getTranslation('languagetool_i18n_track_message_sentence', lang, "Sentence:") + " ";
+           var trackRememberMessage = this._getTranslation('languagetool_i18n_track_remember_message', lang, "Remember this decision");
+           var trackNo = this._getTranslation('languagetool_i18n_track_no', lang, "No");
+           var trackYes = this._getTranslation('languagetool_i18n_track_yes', lang, "Okay, store the sentence");
            vex.dialog.open({
-               unsafeMessage: "To further improve LanguageTool, we're looking for data about " +
-               "how it's used. Please allow us to store your sentence and the correction anonymously " +
-               "(i.e. your IP address will not be saved).<br><br>" +
-               "Sentence:<br>" +
+               unsafeMessage: trackMessage +
                "\"" + escapedSentence + "\"",
                input: [
-                   '<input id="rememberCheckbox" name="remember" type="checkbox" /> <label for="rememberCheckbox">Remember this decision</label>'
+                   '<input id="rememberCheckbox" name="remember" type="checkbox" /> <label for="rememberCheckbox">' + trackRememberMessage + '</label>'
                ].join(''),
                buttons: [
-                   $.extend({}, vex.dialog.buttons.YES, { text: 'Okay, store the sentence' }),
-                   $.extend({}, vex.dialog.buttons.NO, { text: 'No' })
+                   $.extend({}, vex.dialog.buttons.YES, { text: trackYes }),
+                   $.extend({}, vex.dialog.buttons.NO, { text: trackNo })
                ],
                callback: function (data) {
                    if (data) {
@@ -678,18 +683,27 @@
            });
        },
        
-       _showGenericContributionDialog : function() {
+       _getTranslation : function(key, lang, defaultText) {
+           return this.editor.getParam(key) && this.editor.getParam(key)[lang] || defaultText;
+       },
+       
+       _showGenericContributionDialog : function(lang) {
            var t = this;
+           var trackMessage = this._getTranslation('languagetool_i18n_track_message', lang,
+                   "To further improve LanguageTool, we're looking for data about " +
+                   "how it's used. Please allow us to store your corrected sentences anonymously " +
+                   "(i.e. your IP address will not be saved).");
+           var trackNo = this._getTranslation('languagetool_i18n_track_no', lang, "No");
+           var trackYes = this._getTranslation('languagetool_i18n_track_yes_plural', lang, "Okay, store the sentences");
+           var trackAsk = this._getTranslation('languagetool_i18n_track_ask', lang, "Ask every time");
            vex.dialog.open({
-               unsafeMessage: "To further improve LanguageTool, we're looking for data about " +
-                   "how it's used. Please allow us to store your sentence and the correction anonymously " +
-                   "(i.e. your IP address will not be saved).",
+               unsafeMessage: trackMessage,
                buttons: [
-                   $.extend({}, vex.dialog.buttons.YES, { text: 'Okay, store my corrections' }),
-                   $.extend({}, vex.dialog.buttons.NO, { text: 'No' }),
+                   $.extend({}, vex.dialog.buttons.YES, { text: trackYes }),
+                   $.extend({}, vex.dialog.buttons.NO, { text: trackNo }),
                    $.extend({}, vex.dialog.buttons.YES, {
                            type: 'button',
-                           text: 'Ask every time',
+                           text: trackAsk,
                            className: 'vex-dialog-button-secondary',
                            click: function() {
                                this.value = "ask";
@@ -707,26 +721,29 @@
                    } else {
                        t._setSentenceTrackingCookie("do-not-store");
                    }
-                   t._updateSentenceTrackingArea();
+                   t._updateSentenceTrackingArea(lang);
                }
            });
        },
 
-       _updateSentenceTrackingArea : function() {
+       _updateSentenceTrackingArea : function(lang) {
            var t = this;
+           var changeSettingText = this._getTranslation('languagetool_i18n_tracking_change', lang, "Change setting");
            if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>Thanks for contributing corrections. " +
-                   "<a href='#' onclick='return false'>Change setting</a></a></div>");
+               var contributingText = this._getTranslation('languagetool_i18n_do_track', lang, "Thanks for contributing corrections.");
+               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>" + contributingText +
+                   " <a href='#' onclick='return false'>" + changeSettingText + "</a></a></div>");
                $('#sentenceContribution').unbind('click');
                $('#sentenceContribution').bind('click', function() {
-                   t._showGenericContributionDialog();
+                   t._showGenericContributionDialog(lang);
                });
            } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
-               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>You're not contributing corrections. " +
-                   "<a href='#' onclick='return false'>Change setting</a></a></div>");
+               var notContributingText = this._getTranslation('languagetool_i18n_do_not_track', lang, "You're not contributing corrections.");
+               $('#sentenceContributionMessage').html("<div id='sentenceContribution'>" + notContributingText +
+                   " <a href='#' onclick='return false'>" + changeSettingText + "</a></a></div>");
                $('#sentenceContribution').unbind('click');
                $('#sentenceContribution').bind('click', function() {
-                   t._showGenericContributionDialog();
+                   t._showGenericContributionDialog(lang);
                });
            } else {
                $('#sentenceContributionMessage').html("");
