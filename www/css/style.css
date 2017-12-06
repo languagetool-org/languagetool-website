@@ -694,6 +694,7 @@ body #pricing h2 {
   margin-bottom: 20px;
 }
 body #pricing th {
+  padding-top: 10px;
   font-size: 26px;
   color: black;
 }
@@ -701,11 +702,24 @@ body #pricing td {
   padding: 10px;
   color: black;
 }
+body #pricing table {
+  border-spacing: 0;
+}
 body #pricing tr :first-child {
   text-align: left;
 }
+body #pricing tr :nth-child(3) {
+  background-color: #eeeeee;
+}
 body #pricing td {
   text-align: center;
+}
+body #pricing .buyButton {
+  font-size: 18px;
+  color: white;
+  background-color: #3abf1b;
+  text-align: center !important;
+  padding: 20px;
 }
 body #actions {
   background-color: #373737;

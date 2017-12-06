@@ -69,6 +69,15 @@
             <td><?=$y?></td>
             <td><?=$y?></td>
         </tr>
+        <!--
+        <tr>
+            <td>Access via HTTP API</td>
+            <td><?=$n?></td>
+            <td><?=$n?></td>
+            <td><?=$y?></td>
+        </tr>
+        -->
+        <!--
         <tr>
             <td>Price</td>
             <td>free</td>
@@ -87,11 +96,36 @@
                 </script>
             </td>
         </tr>
+        -->
         <tr>
-            <td></td>
-            <td></td>
-            <td colspan="2">
-                <a style="color:white" href="https://languagetoolplus.com/#premium"><div style="background-color: #3abf1b;text-align: center;padding:20px">Order on languagetoolplus.com</div></a></td>
+            <td>Price</td>
+            <td>free</td>
+            <td>
+                <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                    <div class="buyButton">
+                        19€/month<br>
+                        <b>BUY NOW</b>
+                    </div>
+                </a>
+                <br>
+                <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                    <div style="margin:0" class="buyButton">
+                        79€/year<!-- - save 65%<br>--><br>
+                        <b>BUY NOW</b>
+                    </div>
+                </a>
+                <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
+            </td>
+            <td>
+                <script>
+                    var mt = "mail" + "to";
+                    var fp = "support";
+                    var domain = "languagetoolplus";
+                    var subject = "?subject=contact request for business premium (via lt.org)";
+                    var buttonText = "On Request";
+                    document.write("<a class='plan-button' href='" + mt + ":" + fp + "@" + domain + ".com" + subject + "'>" + buttonText + "</a>");
+                </script>
+            </td>
         </tr>
         
     </table>

@@ -91,6 +91,17 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
+<?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+    <script
+            id="fsc-api"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.4/fastspring-builder.min.js"
+            type="text/javascript"
+            data-storefront="languagetooler.onfastspring.com/popup-languagetooler"
+            data-error-callback="errorCallback"
+    >
+    </script>
+<?php } ?>
+
 <script src="js/vex/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
 <link rel="stylesheet" href="js/vex/vex.css" />
