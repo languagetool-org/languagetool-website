@@ -10,7 +10,8 @@
         strlen($_POST['message2']) >= $minLen ||
         strlen($_POST['message3']) >= $minLen ||
         strlen($_POST['message4']) >= $minLen ||
-        strlen($_POST['message5']) >= $minLen) {
+        strlen($_POST['message5']) >= $minLen ||
+        strlen($_POST['email'])    >= $minLen) {
         $myAddress = "daniel.naber" ."@". "languagetool.org";
         $body = "Reason: " .$_POST['reason']."\n".
             "Version: ".$_POST['version']."\n".
