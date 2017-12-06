@@ -719,7 +719,7 @@ body #pricing .buyButton {
   color: white;
   background-color: #3abf1b;
   text-align: center !important;
-  padding: 20px;
+  padding: 5px;
 }
 body #pricing .buyButton:hover {
   background-color: #41d51e;

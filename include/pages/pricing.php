@@ -79,6 +79,7 @@
                 <td style="vertical-align:top">Price</td>
                 <td style="vertical-align:top">free</td>
                 <td style="vertical-align:top">
+                    <!--
                     <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             19€/month<br>
@@ -93,6 +94,12 @@
                         </div>
                     </a>
                     <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
+                    -->
+                    <a href="https://languagetoolplus.com/#premium">
+                        <div class="buyButton">
+                            buy at languagetoolplus.com
+                        </div>
+                    </a>
                 </td>
                 <td style="vertical-align:top">
                     <script>
@@ -172,6 +179,7 @@
                 <td style="vertical-align:top">Preis</td>
                 <td style="vertical-align:top">kostenlos</td>
                 <td style="vertical-align:top">
+                    <!--
                     <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             19€/Monat<br>
@@ -186,6 +194,12 @@
                         </div>
                     </a>
                     <br>oder auf <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a> kaufen
+                    -->
+                    <a href="https://languagetoolplus.com/#premium">
+                        <div class="buyButton">
+                            auf languagetoolplus.com kaufen
+                        </div>
+                    </a>
                 </td>
                 <td style="vertical-align:top">
                     <script>
