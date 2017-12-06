@@ -715,11 +715,14 @@ body #pricing td {
   text-align: center;
 }
 body #pricing .buyButton {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   background-color: #3abf1b;
   text-align: center !important;
   padding: 20px;
+}
+body #pricing .buyButton:hover {
+  background-color: #41d51e;
 }
 body #actions {
   background-color: #373737;
