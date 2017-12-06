@@ -1,6 +1,8 @@
 
 <?php include("banner.php"); ?>
 
+<div id="detectedLanguage"></div>
+
 <div id="stage" class="start">
   <div class="inner">
     <div id="text">

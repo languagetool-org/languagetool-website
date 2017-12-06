@@ -501,6 +501,7 @@ AtDCore.prototype.isIE = function() {
                   langDiv.prepend($("<option selected/>").val("auto").text("Auto-detected: " + detectedLang));
                   langDiv.dropkick('refresh');*/
                   $('#feedbackMessage').html("Detected language: " + detectedLang);
+                  $('#detectedLanguage').text(json.language.code);
                }
 
                if (results.suggestions.length == 0) {
@@ -888,6 +889,9 @@ AtDCore.prototype.isIE = function() {
              var subLangCode = $('#subLang').val();
              if (subLangCode) {
                  langCode = langCode.replace(/-.*/, "") + "-" + subLangCode;
+             }
+             if (langCode === "auto") {
+                 langCode = $('#detectedLanguage').text();
              }
             // NOTE: this link won't work (as of March 2014) for false friend rules:
             var ruleUrl = "http://community.languagetool.org/rule/show/" +

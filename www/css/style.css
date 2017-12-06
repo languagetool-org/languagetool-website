@@ -14,6 +14,9 @@ body {
 body a {
   text-decoration: none;
 }
+body #detectedLanguage {
+  display: none;
+}
 body .details a {
   display: inline-block;
   width: 179px;
