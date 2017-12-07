@@ -426,52 +426,62 @@
            {
                'de-DE': 'Um LanguageTool zu verbessern, brauchen wir Daten über die Art der Nutzung. ' +
                         'Bitte erlauben Sie uns, Ihre korrigierten Sätze anynonym zu speichern ' +
-                        '(Ihre IP-Adresse wird nicht gespeichert).'
+                        '(Ihre IP-Adresse wird nicht gespeichert).',
+               'ru'   : 'Для дальнейшего улучшения LanguageTool нам необходимы данные о том, как он используется. Пожалуйста, позвольте нам сохранять анонимно исправленные предложения (т.е. ваш IP-адрес не будет сохраняться).'
            },
 
        languagetool_i18n_track_message_sentence :
            {
-               'de-DE': 'Satz:'
+               'de-DE': 'Satz:',
+               'ru'   : 'Предложение:'
            },
 
        languagetool_i18n_track_remember_message :
            {
-               'de-DE': 'Entscheidung merken'
+               'de-DE': 'Entscheidung merken',
+               'ru'   : 'Запомнить выбор'
            },
 
        languagetool_i18n_track_no :
            {
-               'de-DE': 'Nein'
+               'de-DE': 'Nein',
+               'ru'   : 'Нет'
            },
 
        languagetool_i18n_track_yes :
            {
-               'de-DE': 'Ja, Satz speichern'
+               'de-DE': 'Ja, Satz speichern',
+               'ru'   : 'Да, сохранить предложение'
            },
 
        languagetool_i18n_track_yes_plural :
            {
-               'de-DE': 'Ja, Sätze speichern'
+               'de-DE': 'Ja, Sätze speichern',
+               'ru'   : 'Да, сохранять фрагменты текста'
            },
        
        languagetool_i18n_track_ask :
            {
-               'de-DE': 'Jedes Mal fragen'
+               'de-DE': 'Jedes Mal fragen',
+               'ru'   : 'Спрашивать каждый раз'
            },
 
        languagetool_i18n_do_track :
            {
-               'de-DE': 'Danke, dass Sie Ihre Korrekturen speichern lassen.'
+               'de-DE': 'Danke, dass Sie Ihre Korrekturen speichern lassen.',
+               'ru'   : 'Благодарим за предложенные варианты исправлений.'
            },
 
        languagetool_i18n_do_not_track :
            {
-               'de-DE': 'Sie lassen Ihre Korrekturen nicht speichern.'
+               'de-DE': 'Sie lassen Ihre Korrekturen nicht speichern.',
+               'ru'   : 'Варианты исправлений не сохраняются.'
            },
 
        languagetool_i18n_tracking_change :
            {
-               'de-DE': 'Einstellung ändern'
+               'de-DE': 'Einstellung ändern',
+               'ru'   : 'Изменить настройки'
            },
 
 

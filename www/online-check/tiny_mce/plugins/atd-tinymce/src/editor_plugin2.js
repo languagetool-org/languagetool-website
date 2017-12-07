@@ -408,7 +408,7 @@
                          {
                             ed.core.applySuggestion(e.target, sugg);
                             if (!isSpellingRule &&
-                                    (window.location.pathname === "/" || window.location.pathname === "/de/") &&   // vex is only available on homepage for now
+                                    (window.location.pathname === "/" || window.location.pathname === "/de/" || window.location.pathname === "/ru/") &&   // vex is only available here now
                                     userHasPastedText) {  // pasted text: we don't want example text corrections
                                 var sentence = errorDescription["sentence"];
                                 var covered = errorDescription["coveredtext"];
