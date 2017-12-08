@@ -216,7 +216,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171206"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171208"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
@@ -427,61 +427,91 @@
                'de-DE': 'Um LanguageTool zu verbessern, brauchen wir Daten über die Art der Nutzung. ' +
                         'Bitte erlauben Sie uns, Ihre korrigierten Sätze anynonym zu speichern ' +
                         '(Ihre IP-Adresse wird nicht gespeichert).',
-               'ru'   : 'Для дальнейшего улучшения LanguageTool нам необходимы данные о том, как он используется. Пожалуйста, позвольте нам сохранять анонимно исправленные предложения (т.е. ваш IP-адрес не будет сохраняться).'
+               'ru'   : 'Для дальнейшего улучшения LanguageTool нам необходимы данные о том, как он используется. Пожалуйста, позвольте нам сохранять анонимно исправленные предложения (т.е. ваш IP-адрес не будет сохраняться).',
+               'fr'   : "Afin de perfectionner LanguageTool, nous sommes à la recherche de données d'utilisation. Nous vous prions de nous autoriser anonymement le stockage des expressions corrigées. (ndlr : votre adresse IP ne sera pas mémorisée)",
+               'pt'   : "É possível melhorar o LanguageTool, sabendo como é utilizado. Pode ajudar-nos, se permitir que armazenemos anonimamente as frases corretas (isto é, guardar as frases, sem que o seu IP seja guardado).",
+               'es'   : "Para seguir mejorando LanguageTool buscamos datos sobre cómo está utilizado. Por favor, permítenos guardar tus frases corregidas anónimo (p.ej. nunca guardaremos tu dirección IP)."
            },
 
        languagetool_i18n_track_message_sentence :
            {
                'de-DE': 'Satz:',
-               'ru'   : 'Предложение:'
+               'ru'   : 'Предложение:',
+               'fr'   : 'Expression:',
+               'pt'   : "Frase:",
+               'es'   : "Frase:"
            },
 
        languagetool_i18n_track_remember_message :
            {
                'de-DE': 'Entscheidung merken',
-               'ru'   : 'Запомнить выбор'
+               'ru'   : 'Запомнить выбор',
+               'fr'   : 'Mémoriser ce choix',
+               'pt'   : "Memorizar esta escolha",
+               'es'   : "memorizar ésta decisión"
            },
 
        languagetool_i18n_track_no :
            {
                'de-DE': 'Nein',
-               'ru'   : 'Нет'
+               'ru'   : 'Нет',
+               'fr'   : 'Non',
+               'pt'   : "Não",
+               'es'   : "No"
            },
 
        languagetool_i18n_track_yes :
            {
                'de-DE': 'Ja, Satz speichern',
-               'ru'   : 'Да, сохранить предложение'
+               'ru'   : 'Да, сохранить предложение',
+               'fr'   : "Okay, enregistrer l'expression",
+               'pt'   : "OK. Guardar a frase.",
+               'es'   : "Vale, guardar la frase."
            },
 
        languagetool_i18n_track_yes_plural :
            {
                'de-DE': 'Ja, Sätze speichern',
-               'ru'   : 'Да, сохранять фрагменты текста'
+               'ru'   : 'Да, сохранять фрагменты текста',
+               'fr'   : 'Okay, enregistrer les expressions',
+               'pt'   : "OK. Guardar as frases.",
+               'es'   : "Vale, guardar las frases."
            },
        
        languagetool_i18n_track_ask :
            {
                'de-DE': 'Jedes Mal fragen',
-               'ru'   : 'Спрашивать каждый раз'
+               'ru'   : 'Спрашивать каждый раз',
+               'fr'   : 'Toujours demander',
+               'pt'   : "Perguntar sempre",
+               'es'   : "preguntar siempre"
            },
 
        languagetool_i18n_do_track :
            {
                'de-DE': 'Danke, dass Sie Ihre Korrekturen speichern lassen.',
-               'ru'   : 'Благодарим за предложенные варианты исправлений.'
+               'ru'   : 'Благодарим за предложенные варианты исправлений.',
+               'fr'   : 'Merci pour votre contribution.',
+               'pt'   : "Obrigado pela sua contribuição.",
+               'es'   : "Gracias por contribuir correcciones."
            },
 
        languagetool_i18n_do_not_track :
            {
                'de-DE': 'Sie lassen Ihre Korrekturen nicht speichern.',
-               'ru'   : 'Варианты исправлений не сохраняются.'
+               'ru'   : 'Варианты исправлений не сохраняются.',
+               'fr'   : 'Vous avez choisi de ne pas contribuer aux corrections.',
+               'pt'   : "Não está a contribuir com correções.",
+               'es'   : "No estás contribuyendo correcciones."
            },
 
        languagetool_i18n_tracking_change :
            {
                'de-DE': 'Einstellung ändern',
-               'ru'   : 'Изменить настройки'
+               'ru'   : 'Изменить настройки',
+               'fr'   : 'Configuration',
+               'pt'   : "Alterar as definições.",
+               'es'   : "Cambiar la configuración"
            },
 
 
