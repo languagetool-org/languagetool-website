@@ -544,6 +544,17 @@
                'nl'   : "Wijzig instelling"
            },
 
+       languagetool_i18n_other_suggestion_dialog :
+           {
+               'de-DE': 'Ersetzen mit:'
+           },
+
+
+       languagetool_i18n_other_suggestion :
+           {
+               'de-DE': '(andere Ersetzung)'
+           },
+
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your LanguageTool server or the URL of your proxy file: */

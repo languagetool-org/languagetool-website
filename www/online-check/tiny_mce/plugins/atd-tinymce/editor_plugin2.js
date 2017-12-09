@@ -795,6 +795,20 @@ AtDCore.prototype.isIE = function() {
                    })(errorDescription["suggestions"][i]);
                }
 
+               var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_suggestion', lang, "(another replacement)");
+               m.add({ title : otherReplTitleMenuItem, onclick: 
+                   function() {
+                     var otherReplDialog = t._getTranslation('languagetool_i18n_other_suggestion_dialog', lang, "Replace by:");
+                     var res = prompt(otherReplDialog, errorDescription["coveredtext"]);
+                     if (res) {
+                         ed.core.applySuggestion(e.target, res);
+                         t._trackEvent('OtherCorrection', lang, ruleId);
+                         // TODO: t._sendErrorExample() if enabled by user
+                         t._checkDone();
+                     }
+                   }
+               });
+
                m.addSeparator();
             }
              
