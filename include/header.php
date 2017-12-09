@@ -431,7 +431,8 @@
                'fr'   : "Afin de perfectionner LanguageTool, nous sommes à la recherche de données d'utilisation. Nous vous prions de nous autoriser anonymement le stockage des expressions corrigées. (ndlr : votre adresse IP ne sera pas mémorisée)",
                'pt'   : "É possível melhorar o LanguageTool, sabendo como é utilizado. Pode ajudar-nos, se permitir que armazenemos anonimamente as frases corretas (isto é, guardar as frases, sem que o seu IP seja guardado).",
                'es'   : "Para seguir mejorando LanguageTool buscamos datos sobre cómo está utilizado. Por favor, permítenos guardar tus frases corregidas anónimo (p.ej. nunca guardaremos tu dirección IP).",
-               'uk'   : "Щоб ще більше вдосконалити LanguageTool, ми збираємо дані про те, як його використовують. Будь ласка, дозвольте нам зберігати ваші виправлення для речень анонімно (тобто ваша адреса IP збегрігатися не буде)."
+               'uk'   : "Щоб ще більше вдосконалити LanguageTool, ми збираємо дані про те, як його використовують. Будь ласка, дозвольте нам зберігати ваші виправлення для речень анонімно (тобто ваша адреса IP збегрігатися не буде).",
+               'it'   : "Al fine di migliorare ulteriormente LanguageTool, stiamo raccogliendo informazioni sul suo utilizzo. Ti chiediamo il permesso di memorizzare le tue frasi corrette in modo anonimo (ad esempio, il tuo indirizzo IP non sarà memorizzato)."
            },
 
        languagetool_i18n_track_message_sentence :
@@ -441,7 +442,8 @@
                'fr'   : 'Expression:',
                'pt'   : "Frase:",
                'es'   : "Frase:",
-               'uk'   : "Речення:"
+               'uk'   : "Речення:",
+               'it'   : "Frase:"
            },
 
        languagetool_i18n_track_remember_message :
@@ -451,7 +453,8 @@
                'fr'   : 'Mémoriser ce choix',
                'pt'   : "Memorizar esta escolha",
                'es'   : "memorizar ésta decisión",
-               'uk'   : "Запам'ятати вибір"
+               'uk'   : "Запам'ятати вибір",
+               'it'   : "Ricorda questa decisione"
            },
 
        languagetool_i18n_track_no :
@@ -461,7 +464,8 @@
                'fr'   : 'Non',
                'pt'   : "Não",
                'es'   : "No",
-               'uk'   : "Ні"
+               'uk'   : "Ні",
+               'it'   : "No"
            },
 
        languagetool_i18n_track_yes :
@@ -471,7 +475,8 @@
                'fr'   : "Okay, enregistrer l'expression",
                'pt'   : "OK. Guardar a frase.",
                'es'   : "Vale, guardar la frase.",
-               'uk'   : "Так, зберегти це речення"
+               'uk'   : "Так, зберегти це речення",
+               'it'   : "Va bene, memorizza questa frase"
            },
 
        languagetool_i18n_track_yes_plural :
@@ -481,7 +486,8 @@
                'fr'   : 'Okay, enregistrer les expressions',
                'pt'   : "OK. Guardar as frases.",
                'es'   : "Vale, guardar las frases.",
-               'uk'   : "Так, зберігати речення"
+               'uk'   : "Так, зберігати речення",
+               'it'   : "Va bene, acconsento a inviare le frasi"
            },
        
        languagetool_i18n_track_ask :
@@ -491,7 +497,8 @@
                'fr'   : 'Toujours demander',
                'pt'   : "Perguntar sempre",
                'es'   : "preguntar siempre",
-               'uk'   : "Запитувати кожного разу"
+               'uk'   : "Запитувати кожного разу",
+               'it'   : "Chiedi il permesso ogni volta"
            },
 
        languagetool_i18n_do_track :
@@ -501,7 +508,8 @@
                'fr'   : 'Merci pour votre contribution.',
                'pt'   : "Obrigado pela sua contribuição.",
                'es'   : "Gracias por contribuir correcciones.",
-               'uk'   : "Дякуємо, що ділитеся виправленнями."
+               'uk'   : "Дякуємо, що ділитеся виправленнями.",
+               'it'   : "Grazie per aver contribuito con le tue correzioni"
            },
 
        languagetool_i18n_do_not_track :
@@ -511,7 +519,8 @@
                'fr'   : 'Vous avez choisi de ne pas contribuer aux corrections.',
                'pt'   : "Não está a contribuir com correções.",
                'es'   : "No estás contribuyendo correcciones.",
-               'uk'   : "Ви не ділитеся своїми виправленнями."
+               'uk'   : "Ви не ділитеся своїми виправленнями.",
+               'it'   : "Non stai contribuendo con le correzioni"
            },
 
        languagetool_i18n_tracking_change :
@@ -521,7 +530,8 @@
                'fr'   : 'Configuration',
                'pt'   : "Alterar as definições.",
                'es'   : "Cambiar la configuración",
-               'uk'   : "Змінити цей параметр"
+               'uk'   : "Змінити цей параметр",
+               'it'   : "Cambia le impostazioni"
            },
 
 
