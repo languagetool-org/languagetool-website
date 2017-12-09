@@ -35,7 +35,7 @@
         <li>Um unser Angebot zu verbessern, speichern wir folgende Informationen:
             <ul>
                 <li>Datum und Zeit, Länge des Textes, Sprache des Textes, Dauer der Verarbeitung, Anzahl
-                    der erkannten Fehler (aber nicht den fehlerhaften Text),</li>
+                    der erkannten Fehler (aber nicht den fehlerhaften Text, außer Sie haben dem zugestimmt),</li>
                 <li>die Seite, von der die Anfrage abgeschickt wurde (normalerweise languagetool.org),</li>
                 <li>interne Fehler (wenn z.&nbsp;B. das Browser Add-on auf den zu prüfenden Text nicht zugreifen kann),</li>
                 <li>die Anzahl der Nutzungen des Browser-Add-ons (nur bei einer Deinstallation übertragen)</li>
@@ -107,7 +107,7 @@
         </li>
         <li>To improve our proofreading service, we keep a log of the following information:
             <ul>
-                <li>date and time, length of submitted text, text language, processing time on server, number of detected errors (but not the actual errors),</li>
+                <li>date and time, length of submitted text, text language, processing time on server, number of detected errors (but not the actual errors unless you have agreed to that),</li>
                 <li>the page on which you submitted the request (referrer),</li>
                 <li>internal errors that occur (e.g. the <a href="../firefox">browser add-on</a> not being able to access the text to be checked),</li>
                 <li>the number of times you used the browser add-on (only transferred when you uninstall the add-on)</li>
