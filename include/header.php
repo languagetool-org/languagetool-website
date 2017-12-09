@@ -216,7 +216,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171209"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171209v2"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
@@ -432,7 +432,8 @@
                'pt'   : "É possível melhorar o LanguageTool, sabendo como é utilizado. Pode ajudar-nos, se permitir que armazenemos anonimamente as frases corretas (isto é, guardar as frases, sem que o seu IP seja guardado).",
                'es'   : "Para seguir mejorando LanguageTool buscamos datos sobre cómo está utilizado. Por favor, permítenos guardar tus frases corregidas anónimo (p.ej. nunca guardaremos tu dirección IP).",
                'uk'   : "Щоб ще більше вдосконалити LanguageTool, ми збираємо дані про те, як його використовують. Будь ласка, дозвольте нам зберігати ваші виправлення для речень анонімно (тобто ваша адреса IP збегрігатися не буде).",
-               'it'   : "Al fine di migliorare ulteriormente LanguageTool, stiamo raccogliendo informazioni sul suo utilizzo. Ti chiediamo il permesso di memorizzare le tue frasi corrette in modo anonimo (ad esempio, il tuo indirizzo IP non sarà memorizzato)."
+               'it'   : "Al fine di migliorare ulteriormente LanguageTool, stiamo raccogliendo informazioni sul suo utilizzo. Ti chiediamo il permesso di memorizzare le tue frasi corrette in modo anonimo (ad esempio, il tuo indirizzo IP non sarà memorizzato).",
+               'nl'   : "Om LanguageTool nog beter te maken verzamelen we gegevens over het gebruik ervan. Sta ons s.v.p. toe om de gecorrigeerde zinnen te bewaren. (Uw IP-adres wordt niet bewaard.)"
            },
 
        languagetool_i18n_track_message_sentence :
@@ -443,7 +444,8 @@
                'pt'   : "Frase:",
                'es'   : "Frase:",
                'uk'   : "Речення:",
-               'it'   : "Frase:"
+               'it'   : "Frase:",
+               'nl'   : "Zin:"
            },
 
        languagetool_i18n_track_remember_message :
@@ -454,7 +456,8 @@
                'pt'   : "Memorizar esta escolha",
                'es'   : "memorizar ésta decisión",
                'uk'   : "Запам'ятати вибір",
-               'it'   : "Ricorda questa decisione"
+               'it'   : "Ricorda questa decisione",
+               'nl'   : "Onthoud deze keuze"
            },
 
        languagetool_i18n_track_no :
@@ -465,7 +468,8 @@
                'pt'   : "Não",
                'es'   : "No",
                'uk'   : "Ні",
-               'it'   : "No"
+               'it'   : "No",
+               'nl'   : "Nee"
            },
 
        languagetool_i18n_track_yes :
@@ -476,7 +480,8 @@
                'pt'   : "OK. Guardar a frase.",
                'es'   : "Vale, guardar la frase.",
                'uk'   : "Так, зберегти це речення",
-               'it'   : "Va bene, memorizza questa frase"
+               'it'   : "Va bene, memorizza questa frase",
+               'nl'   : "Oké, sla de zin op"
            },
 
        languagetool_i18n_track_yes_plural :
@@ -487,7 +492,8 @@
                'pt'   : "OK. Guardar as frases.",
                'es'   : "Vale, guardar las frases.",
                'uk'   : "Так, зберігати речення",
-               'it'   : "Va bene, acconsento a inviare le frasi"
+               'it'   : "Va bene, acconsento a inviare le frasi",
+               'nl'   : "Oké, sla de zinnen op"
            },
        
        languagetool_i18n_track_ask :
@@ -498,7 +504,8 @@
                'pt'   : "Perguntar sempre",
                'es'   : "preguntar siempre",
                'uk'   : "Запитувати кожного разу",
-               'it'   : "Chiedi il permesso ogni volta"
+               'it'   : "Chiedi il permesso ogni volta",
+               'nl'   : "Vraag dit altijd"
            },
 
        languagetool_i18n_do_track :
@@ -509,7 +516,8 @@
                'pt'   : "Obrigado pela sua contribuição.",
                'es'   : "Gracias por contribuir correcciones.",
                'uk'   : "Дякуємо, що ділитеся виправленнями.",
-               'it'   : "Grazie per aver contribuito con le tue correzioni"
+               'it'   : "Grazie per aver contribuito con le tue correzioni",
+               'nl'   : "Bedankt voor uw bijdragen."
            },
 
        languagetool_i18n_do_not_track :
@@ -520,7 +528,8 @@
                'pt'   : "Não está a contribuir com correções.",
                'es'   : "No estás contribuyendo correcciones.",
                'uk'   : "Ви не ділитеся своїми виправленнями.",
-               'it'   : "Non stai contribuendo con le correzioni"
+               'it'   : "Non stai contribuendo con le correzioni",
+               'nl'   : "U draagt niet bij."
            },
 
        languagetool_i18n_tracking_change :
@@ -531,7 +540,8 @@
                'pt'   : "Alterar as definições.",
                'es'   : "Cambiar la configuración",
                'uk'   : "Змінити цей параметр",
-               'it'   : "Cambia le impostazioni"
+               'it'   : "Cambia le impostazioni",
+               'nl'   : "Wijzig instelling"
            },
 
 
