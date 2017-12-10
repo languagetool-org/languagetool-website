@@ -428,11 +428,11 @@
                                 if (replCount === 1) {  // otherwise the correction is ambiguous
                                     var correctedSentence = sentence.replace(e.target.innerText, sugg);
                                     if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-                                        t._sendErrorExample(sentence, correctedSentence, lang, ruleId);
+                                        t._sendErrorExample(sentence, correctedSentence, lang, ruleId, iTmp);
                                     } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
                                         console.log("no sentence tracking");
                                     } else {
-                                        t._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId);
+                                        t._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId, iTmp);
                                     }
                                     t._updateSentenceTrackingArea(lang);
                                 }
@@ -661,7 +661,7 @@
       },
 
        /* send error example to our database */
-       _showContributionDialog : function(sentence, correctedSentence, errorDescription, lang, ruleId) {
+       _showContributionDialog : function(sentence, correctedSentence, errorDescription, lang, ruleId, suggestionPos) {
            // source: https://github.com/HubSpot/vex/blob/master/docs/intro.md
            var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
            var t = this;
@@ -693,7 +693,7 @@
                        }
                        t._trackEvent('AllowSentenceStorage', "yes");
                        // now send text like the error collection add-on:
-                       t._sendErrorExample(sentence, correctedSentence, lang, ruleId);
+                       t._sendErrorExample(sentence, correctedSentence, lang, ruleId, suggestionPos);
                    } else {
                        var remember = $('#rememberCheckbox').is(':checked');
                        console.log("Don't store sentence. Remember setting?", remember);
@@ -781,7 +781,7 @@
        },
        
        /* send error example to our database */
-      _sendErrorExample : function(sentence, correctedSentence, lang, ruleId) {
+      _sendErrorExample : function(sentence, correctedSentence, lang, ruleId, suggestionPos) {
           var req = new XMLHttpRequest();
           req.timeout = 60 * 1000; // milliseconds
           req.open('POST', "https://languagetoolplus.com/submitErrorExample", true);
@@ -798,13 +798,14 @@
           req.ontimeout = function() {
               console.warn("Error submitting sentence (ontimeout).");
           };
-          console.log("sending sentence + correction: ", sentence);
+          console.log("sending sentence + correction, pos: ", sentence, suggestionPos);
           req.send(
               "sentence=" + encodeURIComponent(sentence) +
               "&correction=" + encodeURIComponent(correctedSentence) +
               "&url=" + encodeURIComponent("https://languagetool.org") +
               "&lang=" + lang +
               "&ruleId=" + ruleId +
+              "&suggestionPos=" + suggestionPos +
               "&username=website"
           );
       },
