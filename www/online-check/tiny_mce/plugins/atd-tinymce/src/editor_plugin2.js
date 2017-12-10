@@ -763,6 +763,7 @@
                   window.location.pathname === "/uk/" ||
                   window.location.pathname === "/it/" ||
                   window.location.pathname === "/nl/" ||
+                  window.location.pathname === "/pl/" ||
                   window.location.pathname === "/es/"
               ) &&   // vex is only available here now
               userHasPastedText) {  // pasted text: we don't want example text corrections

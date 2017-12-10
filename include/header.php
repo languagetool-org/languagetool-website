@@ -433,7 +433,8 @@
                'es'   : "Para seguir mejorando LanguageTool buscamos datos sobre cómo está utilizado. Por favor, permítenos guardar tus frases corregidas anónimo (p.ej. nunca guardaremos tu dirección IP).",
                'uk'   : "Щоб ще більше вдосконалити LanguageTool, ми збираємо дані про те, як його використовують. Будь ласка, дозвольте нам зберігати ваші виправлення для речень анонімно (тобто ваша адреса IP збегрігатися не буде).",
                'it'   : "Al fine di migliorare ulteriormente LanguageTool, stiamo raccogliendo informazioni sul suo utilizzo. Ti chiediamo il permesso di memorizzare le tue frasi corrette in modo anonimo (ad esempio, il tuo indirizzo IP non sarà memorizzato).",
-               'nl'   : "Om LanguageTool nog beter te maken verzamelen we gegevens over het gebruik ervan. Sta ons s.v.p. toe om de gecorrigeerde zinnen te bewaren. (Uw IP-adres wordt niet bewaard.)"
+               'nl'   : "Om LanguageTool nog beter te maken verzamelen we gegevens over het gebruik ervan. Sta ons s.v.p. toe om de gecorrigeerde zinnen te bewaren. (Uw IP-adres wordt niet bewaard.)",
+               'pl'   : "Do dalszego rozwoju korektora LanguageTool potrzebujemy danych na temat jego użycia. Prosimy o zezwolenie na zapisanie poprawionych zdań w postaci anonimowej (tj. adres IP nie zostanie zapisany)."
            },
 
        languagetool_i18n_track_message_sentence :
@@ -445,7 +446,8 @@
                'es'   : "Frase:",
                'uk'   : "Речення:",
                'it'   : "Frase:",
-               'nl'   : "Zin:"
+               'nl'   : "Zin:",
+               'pl'   : "Zdanie:"
            },
 
        languagetool_i18n_track_remember_message :
@@ -457,7 +459,8 @@
                'es'   : "memorizar ésta decisión",
                'uk'   : "Запам'ятати вибір",
                'it'   : "Ricorda questa decisione",
-               'nl'   : "Onthoud deze keuze"
+               'nl'   : "Onthoud deze keuze",
+               'pl'   : "Zapamiętaj ten wybór"
            },
 
        languagetool_i18n_track_no :
@@ -469,7 +472,8 @@
                'es'   : "No",
                'uk'   : "Ні",
                'it'   : "No",
-               'nl'   : "Nee"
+               'nl'   : "Nee",
+               'pl'   : "Nie"
            },
 
        languagetool_i18n_track_yes :
@@ -481,7 +485,8 @@
                'es'   : "Vale, guardar la frase.",
                'uk'   : "Так, зберегти це речення",
                'it'   : "Va bene, memorizza questa frase",
-               'nl'   : "Oké, sla de zin op"
+               'nl'   : "Oké, sla de zin op",
+               'pl'   : "Tak, zapisz zdanie"
            },
 
        languagetool_i18n_track_yes_plural :
@@ -493,7 +498,8 @@
                'es'   : "Vale, guardar las frases.",
                'uk'   : "Так, зберігати речення",
                'it'   : "Va bene, acconsento a inviare le frasi",
-               'nl'   : "Oké, sla de zinnen op"
+               'nl'   : "Oké, sla de zinnen op",
+               'pl'   : "Tak, zapisz zdania"
            },
        
        languagetool_i18n_track_ask :
@@ -505,7 +511,8 @@
                'es'   : "preguntar siempre",
                'uk'   : "Запитувати кожного разу",
                'it'   : "Chiedi il permesso ogni volta",
-               'nl'   : "Vraag dit altijd"
+               'nl'   : "Vraag dit altijd",
+               'pl'   : "Pytaj za każdym razem"
            },
 
        languagetool_i18n_do_track :
@@ -517,7 +524,8 @@
                'es'   : "Gracias por contribuir correcciones.",
                'uk'   : "Дякуємо, що ділитеся виправленнями.",
                'it'   : "Grazie per aver contribuito con le tue correzioni",
-               'nl'   : "Bedankt voor uw bijdragen."
+               'nl'   : "Bedankt voor uw bijdragen.",
+               'pl'   : "Dziękujemy za przesłanie poprawek."
            },
 
        languagetool_i18n_do_not_track :
@@ -529,7 +537,8 @@
                'es'   : "No estás contribuyendo correcciones.",
                'uk'   : "Ви не ділитеся своїми виправленнями.",
                'it'   : "Non stai contribuendo con le correzioni",
-               'nl'   : "U draagt niet bij."
+               'nl'   : "U draagt niet bij.",
+               'pl'   : "Poprawki nie są przesyłane."
            },
 
        languagetool_i18n_tracking_change :
@@ -541,27 +550,27 @@
                'es'   : "Cambiar la configuración",
                'uk'   : "Змінити цей параметр",
                'it'   : "Cambia le impostazioni",
-               'nl'   : "Wijzig instelling"
+               'nl'   : "Wijzig instelling",
+               'pl'   : "Zmień ustawienia"
            },
 
        languagetool_i18n_other_suggestion_dialog :
            {
                'de-DE': 'Ersetzen mit:',
-	       'ru'   : 'Заменить на:'  
+	           'ru'   : 'Заменить на:'  
            },
 
 
        languagetool_i18n_other_suggestion :
            {
                'de-DE': '(andere Ersetzung)',
-	       'ru'   : '(другая замена)'   
+	           'ru'   : '(другая замена)'   
            },
 
        languagetool_i18n_other_replace_by :
            {
                'de-DE': 'Ersetzen mit...',
-	       'ru'   : 'Заменить...'
-		   
+	           'ru'   : 'Заменить...'
            },
 
 
