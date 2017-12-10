@@ -382,6 +382,7 @@
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") !== -1 || ruleId.indexOf("SPELLER_RULE") !== -1 ||
                                  ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1;
 
+            var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_replace_by', lang, "Replace with...");
             if (errorDescription == undefined)
             {
                m.add({title : plugin.editor.getLang('AtD.menu_title_no_suggestions', 'No suggestions'), 'class' : 'mceMenuItemTitle'}).setDisabled(1);
@@ -442,11 +443,13 @@
                       });
                    })(errorDescription["suggestions"][i]);
                }
+               otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_suggestion', lang, "(another replacement)");
 
-               var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_suggestion', lang, "(another replacement)");
-               m.add({ title : otherReplTitleMenuItem, onclick: 
-                   function() {
-                     var otherReplDialog = t._getTranslation('languagetool_i18n_other_suggestion_dialog', lang, "Replace by:");
+            }
+
+            m.add({ title : otherReplTitleMenuItem, onclick:
+                 function() {
+                     var otherReplDialog = t._getTranslation('languagetool_i18n_other_suggestion_dialog', lang, "Replace with:");
                      var res = prompt(otherReplDialog, errorDescription["coveredtext"]);
                      if (res !== null) {
                          ed.core.applySuggestion(e.target, $('<div/>').text(res).html());
@@ -454,12 +457,11 @@
                          // TODO: t._sendErrorExample() if enabled by user
                          t._checkDone();
                      }
-                   }
-               });
+                 }
+            });
 
-               m.addSeparator();
-            }
-             
+            m.addSeparator();
+
             var explainText = plugin.editor.getParam('languagetool_i18n_explain')[lang] || "Explain...";
             var ignoreThisText = plugin.editor.getParam('languagetool_i18n_ignore_once')[lang] || "Ignore this type of error";
             var ruleExamples = "Examples...";

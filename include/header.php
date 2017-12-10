@@ -555,6 +555,11 @@
                'de-DE': '(andere Ersetzung)'
            },
 
+       languagetool_i18n_other_replace_by :
+           {
+               'de-DE': 'Ersetzen mit...'
+           },
+
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your LanguageTool server or the URL of your proxy file: */
