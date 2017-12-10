@@ -760,35 +760,7 @@ AtDCore.prototype.isIE = function() {
                          onclick : function() 
                          {
                             ed.core.applySuggestion(e.target, sugg);
-                            if (!isSpellingRule &&
-                                    (window.location.pathname === "/" ||
-                                    window.location.pathname === "/de/" ||
-                                    window.location.pathname === "/ru/" ||
-                                    window.location.pathname === "/fr/" ||
-                                    window.location.pathname === "/pt/" ||
-                                    window.location.pathname === "/uk/" ||
-                                    window.location.pathname === "/it/" ||
-                                    window.location.pathname === "/nl/" ||
-                                    window.location.pathname === "/es/"
-                                    ) &&   // vex is only available here now
-                                    userHasPastedText) {  // pasted text: we don't want example text corrections
-                                var sentence = errorDescription["sentence"];
-                                var covered = errorDescription["coveredtext"];
-                                var re = new RegExp(covered, 'g');
-                                var replCount = (sentence.match(re) || []).length;
-                                //console.log("replCount", replCount, "in: '", sentence, "' -- for: ", covered);
-                                if (replCount === 1) {  // otherwise the correction is ambiguous
-                                    var correctedSentence = sentence.replace(e.target.innerText, sugg);
-                                    if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-                                        t._sendErrorExample(sentence, correctedSentence, lang, ruleId, iTmp);
-                                    } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
-                                        console.log("no sentence tracking");
-                                    } else {
-                                        t._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId, iTmp);
-                                    }
-                                    t._updateSentenceTrackingArea(lang);
-                                }
-                            }
+                            t._maybeSendErrorExample(e, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, sugg, iTmp);
                             t._trackEvent('AcceptCorrection', lang, ruleId);
                             t._checkDone();
                          }
@@ -804,9 +776,10 @@ AtDCore.prototype.isIE = function() {
                      var otherReplDialog = t._getTranslation('languagetool_i18n_other_suggestion_dialog', lang, "Replace with:");
                      var res = prompt(otherReplDialog, errorDescription["coveredtext"]);
                      if (res !== null) {
-                         ed.core.applySuggestion(e.target, $('<div/>').text(res).html());
+                         var repl = $('<div/>').text(res).html();
+                         ed.core.applySuggestion(e.target, repl);
+                         t._maybeSendErrorExample(e, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, repl, 99/*special value*/);
                          t._trackEvent('OtherCorrection', lang, ruleId);
-                         // TODO: t._sendErrorExample() if enabled by user
                          t._checkDone();
                      }
                  }
@@ -1131,8 +1104,40 @@ AtDCore.prototype.isIE = function() {
            document.cookie = "sentenceTracking=" + val + ";max-age=604800;path=/";  // 604.800 = 1 week 
            console.log("sentenceTracking=" + val);
        },
+
+      _maybeSendErrorExample : function(evt, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, suggestion, suggestionPos) {
+          if (!isSpellingRule &&
+              (window.location.pathname === "/" ||
+                  window.location.pathname === "/de/" ||
+                  window.location.pathname === "/ru/" ||
+                  window.location.pathname === "/fr/" ||
+                  window.location.pathname === "/pt/" ||
+                  window.location.pathname === "/uk/" ||
+                  window.location.pathname === "/it/" ||
+                  window.location.pathname === "/nl/" ||
+                  window.location.pathname === "/es/"
+              ) &&   // vex is only available here now
+              userHasPastedText) {  // pasted text: we don't want example text corrections
+              var sentence = errorDescription["sentence"];
+              var covered = errorDescription["coveredtext"];
+              var re = new RegExp(covered, 'g');
+              var replCount = (sentence.match(re) || []).length;
+              //console.log("replCount", replCount, "in: '", sentence, "' -- for: ", covered);
+              if (replCount === 1) {  // otherwise the correction is ambiguous
+                  var correctedSentence = sentence.replace(evt.target.innerText, suggestion);
+                  if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
+                      this._sendErrorExample(sentence, correctedSentence, lang, ruleId, iTmp);
+                  } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
+                      console.log("no sentence tracking");
+                  } else {
+                      this._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId, suggestionPos);
+                  }
+                  this._updateSentenceTrackingArea(lang);
+              }
+          }
+      },
        
-       /* send error example to our database */
+      /* send error example to our database */
       _sendErrorExample : function(sentence, correctedSentence, lang, ruleId, suggestionPos) {
           var req = new XMLHttpRequest();
           req.timeout = 60 * 1000; // milliseconds
