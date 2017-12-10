@@ -546,18 +546,22 @@
 
        languagetool_i18n_other_suggestion_dialog :
            {
-               'de-DE': 'Ersetzen mit:'
+               'de-DE': 'Ersetzen mit:',
+	       'ru'   : 'Заменить на:'  
            },
 
 
        languagetool_i18n_other_suggestion :
            {
-               'de-DE': '(andere Ersetzung)'
+               'de-DE': '(andere Ersetzung)',
+	       'ru'   : '(другая замена)'   
            },
 
        languagetool_i18n_other_replace_by :
            {
-               'de-DE': 'Ersetzen mit...'
+               'de-DE': 'Ersetzen mit...',
+	       'ru'   : 'Заменить...'
+		   
            },
 
 
