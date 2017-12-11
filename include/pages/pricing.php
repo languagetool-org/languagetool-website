@@ -113,6 +113,12 @@
                     </script>
                 </td>
             </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td style="background-color: white">all prices incl. VAT</td>
+                <td></td>
+            </tr>
 
         <?php } if ($_SERVER['REQUEST_URI'] == "/de/") { ?>
 
@@ -213,6 +219,12 @@
                         document.write("<a class='plan-button' href='" + mt + ":" + fp + "@" + domain + ".com" + subject + "'>" + buttonText + "</a>");
                     </script>
                 </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td style="background-color: white">alle Preise inkl. Mehrwertsteuer</td>
+                <td></td>
             </tr>
 
         <?php } ?>
