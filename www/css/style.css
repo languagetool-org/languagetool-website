@@ -724,6 +724,9 @@ body #pricing .buyButton {
   text-align: center !important;
   padding: 5px;
 }
+body #pricing .buyButton span {
+  font-size: 18px;
+}
 body #pricing .buyButton:hover {
   background-color: #41d51e;
 }

@@ -91,6 +91,24 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
+<?php if ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/de/") { ?>
+    <script type="text/javascript">
+        function errorCallback(code, string) {
+            console.log("Error: ", code, string);
+            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                _paq.push(['trackEvent', "FastSpringError", code, string]);
+            }
+        }
+    </script>
+    <script id="fsc-api"
+            src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.4/fastspring-builder.min.js"
+            type="text/javascript"
+            data-storefront="languagetooler.onfastspring.com/popup-languagetool-org"
+            data-error-callback="errorCallback"
+            >
+    </script>   
+<?php } ?>
+
 <script src="/js/vex/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
 <link rel="stylesheet" href="/js/vex/vex.css" />
