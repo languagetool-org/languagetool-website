@@ -1127,7 +1127,7 @@ AtDCore.prototype.isIE = function() {
               if (replCount === 1) {  // otherwise the correction is ambiguous
                   var correctedSentence = sentence.replace(evt.target.innerText, suggestion);
                   if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-                      this._sendErrorExample(sentence, correctedSentence, lang, ruleId, iTmp);
+                      this._sendErrorExample(sentence, correctedSentence, lang, ruleId, suggestionPos);
                   } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
                       console.log("no sentence tracking");
                   } else {
