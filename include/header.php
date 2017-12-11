@@ -197,6 +197,11 @@
   </script>
 <?php } ?>
 
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+
 <?php if (isset($enable_tablesorter) && $enable_tablesorter) { ?>
   <?php $hasJQuery = 1; ?>
   <script type="text/javascript" src="<?= getRoot() ?>/js/tablesorter/jquery.tablesorter.js"></script>
