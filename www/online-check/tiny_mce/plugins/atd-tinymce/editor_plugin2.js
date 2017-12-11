@@ -1105,6 +1105,10 @@ AtDCore.prototype.isIE = function() {
            console.log("sentenceTracking=" + val);
        },
 
+       _escapeRegex : function(s) {
+           return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+       },
+
       _maybeSendErrorExample : function(evt, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, suggestion, suggestionPos) {
           if (!isSpellingRule &&
               (window.location.pathname === "/" ||
@@ -1121,7 +1125,7 @@ AtDCore.prototype.isIE = function() {
               userHasPastedText) {  // pasted text: we don't want example text corrections
               var sentence = errorDescription["sentence"];
               var covered = errorDescription["coveredtext"];
-              var re = new RegExp(covered, 'g');
+              var re = new RegExp(this._escapeRegex(covered), 'g');
               var replCount = (sentence.match(re) || []).length;
               //console.log("replCount", replCount, "in: '", sentence, "' -- for: ", covered);
               if (replCount === 1) {  // otherwise the correction is ambiguous
