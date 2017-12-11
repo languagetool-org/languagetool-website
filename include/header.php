@@ -112,9 +112,9 @@
     window.onerror = function (msg, url, line) {
         var message = "Error in " + url + " on line " + line + ": " + msg;
         $.post("/log.php", { "msg": message });
-        if (typeof(_paq) !== 'undefined') {
-            _paq.push(['trackEvent', 'JSError', msg, url, line]);   // Piwik tracking
-        }
+        //if (typeof(_paq) !== 'undefined') {
+        //    _paq.push(['trackEvent', 'JSError', msg, url, line]);   // Piwik tracking
+        //}
     }
 //-->
 </script>
