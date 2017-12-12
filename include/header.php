@@ -98,6 +98,7 @@
             if (typeof(_paq) !== 'undefined') {  // Piwik tracking
                 _paq.push(['trackEvent', "FastSpringError", code, string]);
             }
+            $.post("/log.php", { "msg": code + ": " + string });
         }
     </script>
     <script id="fsc-api"
