@@ -615,7 +615,7 @@
        languagetool_rpc_url                 : "https://api.languagetool.org/v2/check",  // requires the server to be started with '--allow-origin ...'
        //languagetool_rpc_url                 : "http://localhost:8081/v2/check",
        /* edit this file to customize how LanguageTool shows errors: */
-       languagetool_css_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v5",
+       languagetool_css_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v6",
        /* this stuff is a matter of preference: */
        theme                              : "advanced",
        theme_advanced_buttons1            : "",
