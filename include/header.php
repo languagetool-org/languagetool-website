@@ -100,12 +100,23 @@
             }
             $.post("/log.php", { "msg": "FastSpringError: " + code + ": " + string });
         }
+        function closedCallback(orderObjOrNull) {
+            console.log("orderObjOrNull: ", orderObjOrNull);
+            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                if (orderObjOrNull === null) {
+                    _paq.push(['trackEvent', "FastSpring", "OrderPopupClosed"]);
+                } else {
+                    _paq.push(['trackEvent', "FastSpring", "OrderFinished"]);
+                }
+            }
+        }
     </script>
     <script id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.4/fastspring-builder.min.js"
             type="text/javascript"
             data-storefront="languagetooler.onfastspring.com/popup-languagetool-org"
             data-error-callback="errorCallback"
+            data-popup-closed="closedCallback"
             >
     </script>   
 <?php } ?>
