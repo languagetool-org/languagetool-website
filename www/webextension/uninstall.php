@@ -38,13 +38,9 @@
     <?php } ?>
         
     <form id="mainform" action="submit-feedback.php" method="post" onsubmit="return checkLength()">
-        <input id="version" name="version" type="hidden" value="<?= htmlspecialchars($_GET['version']) ?>">
-        <?php if (isset($_GET['usageCounter'])) { ?>
-            <input id="usageCounter" name="usageCounter" type="hidden" value="<?= intval($_GET['usageCounter']) ?>">
-        <?php } else { ?>
-            <input id="usageCounter" name="usageCounter" type="hidden" value="-1">
-        <?php } ?>
-        
+        <input id="version" name="version" type="hidden" value="<?= htmlspecialchars(isset($_GET['version']) ? $_GET['version'] : '') ?>">
+        <input id="usageCounter" name="usageCounter" type="hidden" value="<?= intval(isset($_GET['usageCounter']) ? $_GET['usageCounter'] : -1) ?>">
+
         <label><input name="reason" value="site-fail" type="radio" onclick="show('site-fail-detail', 'message1')"> it did not work on a site I use</label><br>
         <label><input name="reason" value="checking-too-slow" type="radio"> the checking is too slow</label><br>
         <label><input name="reason" value="browser-slow-down" type="radio" onclick="show('browser-slow-down-detail', 'message5')"> it slows down my browser</label><br>
