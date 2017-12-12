@@ -79,14 +79,14 @@
                 <td style="vertical-align:top">Price</td>
                 <td style="vertical-align:top">free</td>
                 <td style="vertical-align:top">
-                    <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             €19/month<br>
                             <b>BUY NOW</b>
                         </div>
                     </a>
                     <br>
-                    <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                         <div style="margin:0" class="buyButton">
                             €79/year<br>
                             <span>i.e. less than <b>€7/month</b></span><br>
@@ -186,14 +186,14 @@
                 <td style="vertical-align:top">Preis</td>
                 <td style="vertical-align:top">kostenlos</td>
                 <td style="vertical-align:top">
-                    <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             19€/Monat<br>
                             <b>KAUFEN</b>
                         </div>
                     </a>
                     <br>
-                    <a id="order-link" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                         <div style="margin:0" class="buyButton">
                             79€/Jahr<br>
                             <span>entspricht <b>6,58€/Monat</b></span><br>
