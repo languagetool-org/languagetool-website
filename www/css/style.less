@@ -597,17 +597,29 @@ body {
       text-align: center;
     }
     .buyButton {
+      height: 90px;
       font-size: 22px;
       color: white;
       background-color: #3abf1b;
       text-align: center !important;
       padding: 5px;
-      span {
-        font-size: 18px;
+      .smaller {
+        font-size: 16px;
+        background-color: #3abf1b;
+      }
+      b {
+        background-color: #3abf1b;
       }
     }
     .buyButton:hover {
       background-color: lighten(#3abf1b, 5%);
+      .smaller {
+        font-size: 16px;
+        background-color: lighten(#3abf1b, 5%);
+      }
+      b {
+        background-color: lighten(#3abf1b, 5%);
+      }
     }
   }
   #actions {

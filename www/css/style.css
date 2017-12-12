@@ -718,16 +718,28 @@ body #pricing td {
   text-align: center;
 }
 body #pricing .buyButton {
+  height: 90px;
   font-size: 22px;
   color: white;
   background-color: #3abf1b;
   text-align: center !important;
   padding: 5px;
 }
-body #pricing .buyButton span {
-  font-size: 18px;
+body #pricing .buyButton .smaller {
+  font-size: 16px;
+  background-color: #3abf1b;
+}
+body #pricing .buyButton b {
+  background-color: #3abf1b;
 }
 body #pricing .buyButton:hover {
+  background-color: #41d51e;
+}
+body #pricing .buyButton:hover .smaller {
+  font-size: 16px;
+  background-color: #41d51e;
+}
+body #pricing .buyButton:hover b {
   background-color: #41d51e;
 }
 body #actions {

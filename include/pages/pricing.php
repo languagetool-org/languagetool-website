@@ -81,19 +81,24 @@
                 <td style="vertical-align:top">
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
-                            €19/month<br>
-                            <b>BUY NOW</b>
+                            <div style="margin-top: 15px; text-align: center">
+                                <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/month<br>
+                                <b>BUY NOW</b>
+                            </div>
                         </div>
                     </a>
                     <br>
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                         <div style="margin:0" class="buyButton">
-                            €79/year<br>
-                            <span>i.e. less than <b>€7/month</b></span><br>
+                            <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/year<br>
+                            <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
+                            <span class="smaller">you save 65%</span><br>
                             <b>BUY NOW</b>
                         </div>
                     </a>
+                    <!--
                     <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
+                    -->
                     <!--
                     <a href="https://languagetoolplus.com/#premium">
                         <div class="buyButton">
