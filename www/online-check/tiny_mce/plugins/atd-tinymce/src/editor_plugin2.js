@@ -382,6 +382,8 @@
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") !== -1 || ruleId.indexOf("SPELLER_RULE") !== -1 ||
                                  ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1;
 
+            this._updateSentenceTrackingArea(lang);
+             
             var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_replace_by', lang, "Replace with...");
             if (errorDescription == undefined)
             {
@@ -727,7 +729,7 @@
        _updateSentenceTrackingArea : function(lang) {
            var t = this;
            var changeSettingText = this._getTranslation('languagetool_i18n_tracking_change', lang, "Change setting");
-           if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
+           if (userHasPastedText && document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
                var contributingText = this._getTranslation('languagetool_i18n_do_track', lang, "Thanks for contributing corrections.");
                $('#sentenceContributionMessage').html("<div id='sentenceContribution'>" + contributingText +
                    " <a href='#' onclick='return false'>" + changeSettingText + "</a></a></div>");
@@ -735,7 +737,7 @@
                $('#sentenceContribution').bind('click', function() {
                    t._showGenericContributionDialog(lang);
                });
-           } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
+           } else if (userHasPastedText && document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
                var notContributingText = this._getTranslation('languagetool_i18n_do_not_track', lang, "You're not contributing corrections.");
                $('#sentenceContributionMessage').html("<div id='sentenceContribution'>" + notContributingText +
                    " <a href='#' onclick='return false'>" + changeSettingText + "</a></a></div>");
