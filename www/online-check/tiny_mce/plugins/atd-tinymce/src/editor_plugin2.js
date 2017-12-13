@@ -22,6 +22,8 @@
    var JSONRequest = tinymce.util.JSONRequest, each = tinymce.each, DOM = tinymce.DOM;
    var maxTextLength = 20000;
    var userHasPastedText = false;
+   var randomVal = Math.random();
+   var randomValThreshold = 0.5;
 
    tinymce.create('tinymce.plugins.AfterTheDeadlinePlugin', 
    {
@@ -861,7 +863,13 @@
 
       sendRequest : function(file, data, languageCode, success)
       {
-         var url = this.editor.getParam("languagetool_rpc_url", "{backend}");
+         var url;
+         if (randomVal < randomValThreshold) {
+             url = this.editor.getParam("languagetool_rpc_url", "{backend}");
+         } else {
+             url = this.editor.getParam("languagetool_rpc_url2", "{backend}");
+         }
+         //console.log("url", url);
          var plugin = this;
 
          if (url == '{backend}') 

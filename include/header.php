@@ -251,7 +251,7 @@
 <?php if (isset($enable_textcheck) && $enable_textcheck) { ?>
 
   <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/tiny_mce.js"></script>
-  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171212"></script>
+  <script type="text/javascript" src="<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js?v20171213"></script>
   <?php if ($hasJQuery == 0) { ?>
     <script type="text/javascript" src="<?= getRoot() ?>/js/jquery-1.7.0.min.js"></script>
   <?php } ?>
@@ -611,8 +611,8 @@
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your LanguageTool server or the URL of your proxy file: */
-       //languagetool_rpc_url                 : "https://languagetool.org/api/v2/check",  // requires the server to be started with '--allow-origin ...'
-       languagetool_rpc_url                 : "https://api.languagetool.org/v2/check",  // requires the server to be started with '--allow-origin ...'
+       languagetool_rpc_url                 : "https://languagetool.org/api/v2/check",  // requires the server to be started with '--allow-origin ...'
+       languagetool_rpc_url2                : "https://api.languagetool.org/v2/check",  // requires the server to be started with '--allow-origin ...'
        //languagetool_rpc_url                 : "http://localhost:8081/v2/check",
        /* edit this file to customize how LanguageTool shows errors: */
        languagetool_css_url                 : "<?= getRoot() ?>/online-check/tiny_mce/plugins/atd-tinymce/css/content.css?v6",
