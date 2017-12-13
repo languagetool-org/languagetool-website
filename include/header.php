@@ -92,13 +92,23 @@
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
 <?php if ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/de/") { ?>
+    <script src="/js/stacktrace.min.js"></script>
     <script type="text/javascript">
+        var callback = function(stackframes) {
+            var stringifiedStack = stackframes.map(function(sf) {
+                return sf.toString();
+            }).join('\n');
+            $.post("/log.php", { "msg": "FastSpringErrorViaStackTraceJS: " + stringifiedStack });
+            console.log("FastSpringErrorViaStackTraceJS: " + stringifiedStack);
+        };
+        var errback = function(err) {};
         function errorCallback(code, string) {
             console.log("Error: ", code, string);
             if (typeof(_paq) !== 'undefined') {  // Piwik tracking
                 _paq.push(['trackEvent', "FastSpringError", code, string]);
             }
             $.post("/log.php", { "msg": "FastSpringError: " + code + ": " + string });
+            StackTrace.get().then(callback).catch(errback);
         }
         function closedCallback(orderObjOrNull) {
             console.log("orderObjOrNull: ", orderObjOrNull);
