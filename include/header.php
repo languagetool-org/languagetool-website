@@ -479,6 +479,7 @@
                'uk'   : "Щоб ще більше вдосконалити LanguageTool, ми збираємо дані про те, як його використовують. Будь ласка, дозвольте нам зберігати ваші виправлення для речень анонімно (тобто ваша адреса IP збегрігатися не буде).",
                'it'   : "Al fine di migliorare ulteriormente LanguageTool, stiamo raccogliendo informazioni sul suo utilizzo. Ti chiediamo il permesso di memorizzare le tue frasi corrette in modo anonimo (ad esempio, il tuo indirizzo IP non sarà memorizzato).",
                'nl'   : "Om LanguageTool nog beter te maken verzamelen we gegevens over het gebruik ervan. Sta ons s.v.p. toe om de gecorrigeerde zinnen te bewaren. (Uw IP-adres wordt niet bewaard.)",
+               'zh'   : "为了进一步改进LanguageTool，我们需要该工具的使用数据。请允许我们以匿名方式储存你校正的句子（你的IP地址不会被记录）。",
                'pl'   : "Do dalszego rozwoju korektora LanguageTool potrzebujemy danych na temat jego użycia. Prosimy o zezwolenie na zapisanie poprawionych zdań w postaci anonimowej (tj. adres IP nie zostanie zapisany)."
            },
 
@@ -492,6 +493,7 @@
                'uk'   : "Речення:",
                'it'   : "Frase:",
                'nl'   : "Zin:",
+               'zh'   : "句子：",
                'pl'   : "Zdanie:"
            },
 
@@ -505,6 +507,7 @@
                'uk'   : "Запам'ятати вибір",
                'it'   : "Ricorda questa decisione",
                'nl'   : "Onthoud deze keuze",
+               'zh'   : "记住该决定",
                'pl'   : "Zapamiętaj ten wybór"
            },
 
@@ -518,6 +521,7 @@
                'uk'   : "Ні",
                'it'   : "No",
                'nl'   : "Nee",
+               'zh'   : "不同意",
                'pl'   : "Nie"
            },
 
@@ -531,6 +535,7 @@
                'uk'   : "Так, зберегти це речення",
                'it'   : "Va bene, memorizza questa frase",
                'nl'   : "Oké, sla de zin op",
+               'zh'   : "好，储存句子",
                'pl'   : "Tak, zapisz zdanie"
            },
 
@@ -544,6 +549,7 @@
                'uk'   : "Так, зберігати речення",
                'it'   : "Va bene, acconsento a inviare le frasi",
                'nl'   : "Oké, sla de zinnen op",
+               'zh'   : "好，储存句子",
                'pl'   : "Tak, zapisz zdania"
            },
        
@@ -557,6 +563,7 @@
                'uk'   : "Запитувати кожного разу",
                'it'   : "Chiedi il permesso ogni volta",
                'nl'   : "Vraag dit altijd",
+               'zh'   : "每次都询问",
                'pl'   : "Pytaj za każdym razem"
            },
 
@@ -570,6 +577,7 @@
                'uk'   : "Дякуємо, що ділитеся виправленнями.",
                'it'   : "Grazie per aver contribuito con le tue correzioni",
                'nl'   : "Bedankt voor uw bijdragen.",
+               'zh'   : "谢谢你的校正",
                'pl'   : "Dziękujemy za przesłanie poprawek."
            },
 
@@ -583,6 +591,7 @@
                'uk'   : "Ви не ділитеся своїми виправленнями.",
                'it'   : "Non stai contribuendo con le correzioni",
                'nl'   : "U draagt niet bij.",
+               'zh'   : "你没有做任何校正",
                'pl'   : "Poprawki nie są przesyłane."
            },
 
@@ -596,6 +605,7 @@
                'uk'   : "Змінити цей параметр",
                'it'   : "Cambia le impostazioni",
                'nl'   : "Wijzig instelling",
+               'zh'   : "更改设置",
                'pl'   : "Zmień ustawienia"
            },
 
