@@ -46,6 +46,7 @@
         <label><input name="reason" value="browser-slow-down" type="radio" onclick="show('browser-slow-down-detail', 'message5')"> it slows down my browser</label><br>
         <label><input name="reason" value="error-not-found" type="radio" onclick="show('error-not-found-detail', 'message2')"> it did not find enough errors</label><br>
         <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="track('too-many-false-alarms');show('too-many-false-alarms-detail', 'message3')"> found too many 'errors' that are not really errors</label><br>
+        <label><input name="reason" value="other" type="radio" onclick="track('other');"> something else</label><br>
         <!--<label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail', 'message4')"> something else:</label><br>-->
         <br>
         <div style="width:500px">
