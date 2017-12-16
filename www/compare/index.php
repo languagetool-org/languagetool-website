@@ -44,7 +44,7 @@
         <tr>
             <th>Min. Requirements</th>
             <td class="cell">any recent browser</td>
-            <td class="cell">Firefox 48</td>
+            <td class="cell">Firefox 57</td>
             <td class="cell">current Chrome</td>
             <td class="cell">Google Docs</td>
             <td class="cell">
