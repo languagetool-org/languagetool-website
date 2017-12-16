@@ -166,9 +166,14 @@
                   plugin.markMyWords();
                   ed.suggestions = results.suggestions; 
                }
-                if (results.incompleteResults) {
-                    $('#feedbackErrorMessage').html("<div id='severeError'>These results may be incomplete due to a server timeout.</div>");
-                    t._trackEvent('CheckError', 'ErrorWithException', "Incomplete Results");
+               if (results.incompleteResults) {
+                   if (results.incompleteResultsReason) {
+                       $('#feedbackErrorMessage').html("<div id='severeError'>" + $('<div/>').text(results.incompleteResultsReason).html() + "</div>");
+                   } else {
+                       // old server code might not return a reason:
+                       $('#feedbackErrorMessage').html("<div id='severeError'>These results may be incomplete due to a server timeout.</div>");
+                   }
+                   t._trackEvent('CheckError', 'ErrorWithException', "Incomplete Results");
                 }
             });
          });
