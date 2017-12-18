@@ -144,6 +144,13 @@
                if (json && json.software) {
                   console.log("LT version used: " + json.software.version + " (" + json.software.buildDate + ")");
                }
+               if (json && json.matches) {
+                   if (json['hiddenMatches']) {
+                       console.log("matches: " + json.matches.length + ", hiddenMatches: " + json.hiddenMatches.length);
+                   } else {
+                       console.log("matches: " + json.matches.length);
+                   }
+               }
                if (languageCode === "auto") {
                   var detectedLang = json.language.name;
                   /*var langDiv = $("#lang");
