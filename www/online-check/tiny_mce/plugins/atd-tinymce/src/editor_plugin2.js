@@ -147,8 +147,10 @@
                if (json && json.matches) {
                    if (json['hiddenMatches']) {
                        console.log("matches: " + json.matches.length + ", hiddenMatches: " + json.hiddenMatches.length);
+                       //$('#matchCountArea').text(json.matches.length + " matches");
                    } else {
                        console.log("matches: " + json.matches.length);
+                       //$('#matchCountArea').text("");
                    }
                }
                if (languageCode === "auto") {
@@ -200,6 +202,7 @@
          
          editor.onPaste.add(function(editor, ev) {
              t._trackEvent('PasteText');
+             $('#matchCountArea').text("");
              userHasPastedText = true;
              /*if (document.cookie.indexOf("addonSurveyShown=true") === -1) {
                  t._trackEvent('ShowAddonSurvey');

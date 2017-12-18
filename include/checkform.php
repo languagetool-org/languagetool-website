@@ -153,6 +153,7 @@ function printLangOption($langCode) {
                     <span class="startPrice">Starting at USD 5</span>
                 </button>
               <?php } ?>
+                <span style="margin-right: 15px;" id="matchCountArea"></span>
                 <?php if ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/de/") { ?>
                     <button class="upgrade" type="submit" onClick="if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'UpgradeClick', '<?=$_SERVER['REQUEST_URI']?>']); } document.getElementById('pricing').scrollIntoView(); return false;">
                         Upgrade
