@@ -531,7 +531,7 @@
                             ignoreSuccessMessage = plugin.editor.getParam('languagetool_i18n_ignore_success')[lang] 
                                 || "Word will be ignored in this session - <a href='https://languagetoolplus.com'>visit languagetoolplus.com</a> to store ignore words";
                         }
-                        $('#feedbackMessage').html(ignoreSuccessMessage);
+                        $('#feedbackErrorMessage').html("<div id='personalDictMessage'>" + ignoreSuccessMessage + "</div>");
                         
                         t._trackEvent('IgnoreSpellingError', lang);
                         t._checkDone();
