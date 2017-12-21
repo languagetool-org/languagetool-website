@@ -159,7 +159,7 @@ AtDCore.prototype.markMyWords = function() {
                 continue;
             }
             var cssName;
-            if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE") {
+            if (ruleId.indexOf("SPELLER_RULE") >= 0 || ruleId.indexOf("MORFOLOGIK_RULE") == 0 || ruleId == "HUNSPELL_NO_SUGGEST_RULE" || ruleId == "HUNSPELL_RULE" || ruleId == "FR_SPELLING_RULE") {
                 cssName = "hiddenSpellError";
             } else if (suggestion.its20type === 'style' || suggestion.its20type === 'locale-violation' || suggestion.its20type === 'register') {
                 cssName = "hiddenSuggestion";
@@ -750,8 +750,8 @@ AtDCore.prototype.isIE = function() {
             var ruleId = errorDescription["id"];
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") !== -1 || ruleId.indexOf("SPELLER_RULE") !== -1 ||
-                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1;
-
+                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1 ||
+                                 ruleId.indexOf("FR_SPELLING_RULE") !== -1;
             this._updateSentenceTrackingArea(lang);
              
             var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_replace_by', lang, "Replace with...");

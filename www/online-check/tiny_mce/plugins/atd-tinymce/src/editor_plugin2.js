@@ -397,8 +397,8 @@
             var ruleId = errorDescription["id"];
             var lang = plugin.editor.getParam('languagetool_i18n_current_lang')();
             var isSpellingRule = ruleId.indexOf("MORFOLOGIK_RULE") !== -1 || ruleId.indexOf("SPELLER_RULE") !== -1 ||
-                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1;
-
+                                 ruleId.indexOf("HUNSPELL_NO_SUGGEST_RULE") !== -1 || ruleId.indexOf("HUNSPELL_RULE") !== -1 ||
+                                 ruleId.indexOf("FR_SPELLING_RULE") !== -1;
             this._updateSentenceTrackingArea(lang);
              
             var otherReplTitleMenuItem = t._getTranslation('languagetool_i18n_other_replace_by', lang, "Replace with...");
