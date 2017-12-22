@@ -625,11 +625,15 @@ AtDCore.prototype.isIE = function() {
       {
       },
 
-      _trackEvent : function(val1, val2, val3)
+      _trackEvent : function(val1, val2, val3, number)
       {
           if (typeof(_paq) !== 'undefined') {
               // Piwik tracking
-              _paq.push(['trackEvent', val1, val2, val3]);
+              if (number !== undefined) {
+                  _paq.push(['trackEvent', val1, val2, val3, number]);
+              } else {
+                  _paq.push(['trackEvent', val1, val2, val3]);
+              }
           }
           this._logEventLocally();
       },
@@ -781,7 +785,7 @@ AtDCore.prototype.isIE = function() {
                          {
                             ed.core.applySuggestion(e.target, sugg);
                             t._maybeSendErrorExample(e, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, sugg, iTmp);
-                            t._trackEvent('AcceptCorrection', lang, ruleId);
+                            t._trackEvent('AcceptCorrection', lang, ruleId, iTmp);
                             t._checkDone();
                          }
                       });
