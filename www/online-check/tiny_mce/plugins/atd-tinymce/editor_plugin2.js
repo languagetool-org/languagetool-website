@@ -785,7 +785,7 @@ AtDCore.prototype.isIE = function() {
                          {
                             ed.core.applySuggestion(e.target, sugg);
                             t._maybeSendErrorExample(e, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, sugg, iTmp);
-                            t._trackEvent('AcceptCorrection', lang, ruleId, iTmp);
+                            t._trackEvent('AcceptCorrection', lang, ruleId, iTmp+1);  // numeric value, so increase by one to make sure 0 isn't ignored
                             t._checkDone();
                          }
                       });
