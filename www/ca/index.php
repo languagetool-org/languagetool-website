@@ -42,24 +42,33 @@
         'tl' => 'tagàlog',
         'uk' => 'ucraïnès'
     );
-
-    $checkSubmitButtonValue = "Comprova el text";
-    $checkSubmitButtonTitle = "Comprova el text, també amb Ctrl+Return.";
+    
+    $checkSubmitButtonValue = "Revisa el text";
+    $checkSubmitButtonTitle = "Revisa el text, també amb Ctrl+Retorn.";
     $toggleFullscreenMode = "Commuta el mode de pantalla completa";
-
     $introText1 = "<strong>LanguageTool</strong> és un programa de codi obert per a la correcció gramatical i d'estil en català i en <a href='/languages/'>moltes altres llengües</a>.";
-    $introText2 = "Troba molts dels errors que un verificador ortogràfic no detecta.";
-
-    $downloadHeadline = "Descarrega";
-    $downloadRequiresJava = "Requereix Java {version} o posterior";
-    $downloadTitle = "Per a <strong>LibreOffice</strong><br/> i <strong>OpenOffice</strong>";
+    $introText2 = "Troba molts errors que un verificador ortogràfic no detecta.";
+    $addToChrome = "Afegeix a Chrome <span>gratuït, lliure i sense compte</span>";
+    $addToFirefox = "Afegeix a Firefox <span>gratuït, lliure i sense compte</span>";
+    $contributeLink = "Col·labora!";
+    $forumHeadline = "Fòrum";
+    $developmentHeadline = "Desenvolupament";
+    $compareEditionsText = "Comparació de versions";
+    $moreIntegrationsText = "Altres integracions";
+    $downloadHeadline = "Descarregar";
+    $downloadRequiresJava = "Java {version}+";
+    $downloadTitle = "Per a <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "<strong>Aplicació autònoma</strong>";
     $downloadLabelFx = "Per a <strong>Firefox</strong>";
     $downloadLabelChrome = "Per a <strong>Chrome</strong>";
     $downloadLabelBrowserAddOn = "Extensió de navegador";
-    $checklistText = "Si teniu problemes, vegeu <a href='/issues/'>aquesta llista</a>.";
+    $downloadLabelGoogleDocs = "Per a <strong>Google Docs</strong>";
+    $downloadLabelAddOn = "Extensió";
+    $checklistText =  "Si teniu problemes, vegeu <a href='/issues/'>aquesta llista</a>.";
     $otherDownloadsText = "Descarrega <a href='/download/'>versions antigues</a> o <a href='/download/snapshots/?C=M;O=D'>compilacions diàries</a>.";
     $webstartText = "Executa <a href='/webstart/web/LanguageTool.jnlp'>amb Java WebStart</a>.";
+    $firefoxLink = '<a href="/firefox/">Més informació</a>';
+    $chromeLink = '<a href="/chrome/">Més informació</a>';
 
     // ------------- TRANSLATIONS END HERE -------------
     ?>
