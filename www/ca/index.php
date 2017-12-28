@@ -55,7 +55,7 @@
     $developmentHeadline = "Desenvolupament";
     $compareEditionsText = "Comparació de versions";
     $moreIntegrationsText = "Altres integracions";
-    $downloadHeadline = "Descarregar";
+    $downloadHeadline = "Descàrrega";
     $downloadRequiresJava = "Java {version}+";
     $downloadTitle = "Per a <strong>LibreOffice</strong> / <strong>OpenOffice</strong>";
     $downloadTitleStandAlone = "<strong>Aplicació autònoma</strong>";
