@@ -781,8 +781,7 @@
        },
 
       _maybeSendErrorExample : function(evt, errorDescription, isSpellingRule, userHasPastedText, lang, ruleId, suggestion, suggestionPos) {
-          if (!isSpellingRule &&
-              (window.location.pathname === "/" ||
+          if ((window.location.pathname === "/" ||
                   window.location.pathname === "/de/" ||
                   window.location.pathname === "/ru/" ||
                   window.location.pathname === "/fr/" ||
