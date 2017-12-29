@@ -39,20 +39,20 @@ $buttons1 = array(
 $buttons2 = array(
     array(
       'title' => isset($downloadTitle) ? $downloadTitle : 'For <strong>LibreOffice</strong>',
-      'link' => '/download/LanguageTool-3.9.oxt',
+      'link' => '/download/LanguageTool-4.0.oxt',
       // protect the call with a test because the language-specific pages might not have that function:
       'onclick' => 'onclick="if (typeof showDownloadOfficeThanks == \'function\') { setTimeout(function(){showDownloadOfficeThanks()},500) }"',
-      'additional_info' => 'v3.9, 76 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2017-09-26',
+      'additional_info' => 'v4.0, 91 MB, ' . $downloadRequiresJava,
+      'release_info' => 'released 2017-12-29',
       'width' => 220,
       'below' => ''
     ),
     array(
       'title' => isset($downloadTitleStandAlone) ? $downloadTitleStandAlone : 'Stand-alone for<br/>your <strong>Desktop</strong>',
-      'link' => '/download/LanguageTool-3.9.zip',
+      'link' => '/download/LanguageTool-4.0.zip',
       'onclick' => 'onclick="if (typeof showDownloadStandaloneThanks == \'function\') { setTimeout(function(){showDownloadStandaloneThanks()},500) }"',
-      'additional_info' => 'v3.9, 113 MB, ' . $downloadRequiresJava,
-      'release_info' => 'released 2017-09-26',
+      'additional_info' => 'v4.0, 132 MB, ' . $downloadRequiresJava,
+      'release_info' => 'released 2017-12-29',
       'width' => 220,
       'below' => ''
     )
