@@ -868,6 +868,33 @@ AtDCore.prototype.isIE = function() {
                         }*/
                     }
                 });
+                m.add({
+                    title : t._getTranslation('languagetool_i18n_track_false_alarm_menu', lang, "Report as false alarm..."),
+                    onclick : function()
+                    {
+                        var surrogate = e.target.getAttribute(plugin.editor.core.surrogateAttribute);
+                        var ruleId = plugin.editor.core.getSurrogatePart(surrogate, 'id');
+                        var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
+                        t._removeWordsByRuleId(ruleId, coveredText);
+                        ed.selection.setContent(coveredText); // remove selection
+                        t._trackEvent('ReportFalseAlarm', lang, ruleId);
+                        var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
+                        vex.dialog.open({
+                            unsafeMessage:
+                                t._getTranslation('languagetool_i18n_track_false_alarm1', lang, "Report the error and this sentence to LanguageTool as a false alarm, i.e. a misleading error?") +
+                                "<br><br><b>" + escapedSentence + "</b><br><br>" +
+                                t._getTranslation('languagetool_i18n_track_false_alarm2', lang, "If you click 'OK', the sentence will be stored anonymously."),
+                            callback: function (data) {
+                                if (data) {
+                                    console.log('Okay to store false alarm');
+                                    t._sendFalseAlarm(errorDescription["sentence"], coveredText, lang, ruleId);
+                                } else {
+                                    console.log('Not okay to store false alarm');
+                                }
+                            }
+                        });
+                    }
+                });
             } else {
                 var ignoreThisKindOfErrorText = "Ignore error for this word";
                 if (plugin.editor.getParam('languagetool_i18n_ignore_all')) {
@@ -1191,6 +1218,34 @@ AtDCore.prototype.isIE = function() {
               "&lang=" + lang +
               "&ruleId=" + ruleId +
               "&suggestionPos=" + suggestionPos +
+              "&username=website"
+          );
+      },
+       
+      /* send error example to our database */
+       _sendFalseAlarm : function(sentence, coveredText, lang, ruleId) {
+          var req = new XMLHttpRequest();
+          req.timeout = 60 * 1000; // milliseconds
+          req.open('POST', "https://languagetoolplus.com/submitFalseAlarm", true);
+          //req.open('POST', "http://localhost:8000/submitFalseAlarm", true);
+          req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          req.onload = function() {
+              if (req.status !== 200) {
+                  console.warn("Error submitting false alarm. Code: " + req.status);
+              }
+          };
+          req.onerror = function() {
+              console.warn("Error submitting false alarm (onerror).");
+          };
+          req.ontimeout = function() {
+              console.warn("Error submitting false alarm (ontimeout).");
+          };
+          console.log("sending false alarm: sentence, coveredText: ", sentence, coveredText);
+          req.send(
+              "sentence=" + encodeURIComponent(sentence) +
+              "&coveredText=" + encodeURIComponent(coveredText) +
+              "&lang=" + lang +
+              "&ruleId=" + ruleId +
               "&username=website"
           );
       },

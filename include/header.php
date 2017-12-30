@@ -628,6 +628,19 @@
 	           'ru'   : 'Заменить...'
            },
 
+       languagetool_i18n_track_false_alarm_menu :
+           {
+               'de-DE': 'Als Fehlalarm melden...',
+           },
+       languagetool_i18n_track_false_alarm1 :
+           {
+               'de-DE': 'Die Fehlermeldung als Fehlalarm an LanguageTool schicken, zusammen mit diesem Satz?',
+           },
+       languagetool_i18n_track_false_alarm2 :
+           {
+               'de-DE': 'Wenn Sie zustimmen, werden diese Daten anonym gespeichert.',
+           },
+
 
        languagetool_i18n_current_lang :    function() { return document.checkform.lang.value; },
        /* the URL of your LanguageTool server or the URL of your proxy file: */
