@@ -604,7 +604,7 @@
                     onclick : function() {
                         plugin.editor.setProgressState(1);
                         jQuery.getJSON("/online-check/tiny_mce/plugins/atd-tinymce/server/rule-proxy.php?lang="
-                            + encodeURI(langCode) +"&ruleId=" + errorDescription["id"],
+                            + encodeURI(langCode) +"&ruleId=" + encodeURI(errorDescription["id"]),
                             function(data) {
                                 var ruleHtml = "";
                                 var exampleCount = 0;
@@ -863,7 +863,7 @@
               "&correction=" + encodeURIComponent(correctedSentence) +
               "&url=" + encodeURIComponent("https://languagetool.org") +
               "&lang=" + lang +
-              "&ruleId=" + ruleId +
+              "&ruleId=" + encodeURIComponent(ruleId) +
               "&suggestionPos=" + suggestionPos +
               "&username=website"
           );
@@ -892,7 +892,7 @@
               "sentence=" + encodeURIComponent(sentence) +
               "&coveredText=" + encodeURIComponent(coveredText) +
               "&lang=" + lang +
-              "&ruleId=" + ruleId +
+              "&ruleId=" + encodeURIComponent(ruleId) +
               "&username=website"
           );
       },
