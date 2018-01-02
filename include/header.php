@@ -117,6 +117,8 @@
                     _paq.push(['trackEvent', "FastSpring", "OrderPopupClosed"]);
                 } else {
                     _paq.push(['trackEvent', "FastSpring", "OrderFinished"]);
+                    fastspring.builder.reset();
+                    window.location.replace("https://languagetoolplus.com/subscribe/?orderId=" + orderObjOrNull.id);
                 }
             }
         }
