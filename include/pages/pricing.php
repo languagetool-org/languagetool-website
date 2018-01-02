@@ -1,8 +1,8 @@
 <div id="pricing">
 
-    <?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+    <?php if ($_SERVER['PHP_SELF'] == "/index.php") { ?>
         <h2>Pricing</h2>
-    <?php } else if ($_SERVER['REQUEST_URI'] == "/de/") { ?>
+    <?php } else if ($_SERVER['PHP_SELF'] == "/de/index.php") { ?>
         <h2>Preise</h2>
     <?php } ?>
 
@@ -13,7 +13,7 @@
     
     <table style="width:100%">
 
-        <?php if ($_SERVER['REQUEST_URI'] == "/") { ?>
+        <?php if ($_SERVER['PHP_SELF'] == "/index.php") { ?>
 
             <tr>
                 <td></td>
@@ -125,7 +125,7 @@
                 <td></td>
             </tr>
 
-        <?php } if ($_SERVER['REQUEST_URI'] == "/de/") { ?>
+        <?php } if ($_SERVER['PHP_SELF'] == "/de/index.php") { ?>
 
             <tr>
                 <td></td>

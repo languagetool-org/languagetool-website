@@ -91,7 +91,7 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
-<?php if ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/de/") { ?>
+<?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php") { ?>
     <script src="/js/stacktrace.min.js"></script>
     <script type="text/javascript">
         var callback = function(stackframes) {
@@ -121,10 +121,16 @@
             }
         }
     </script>
+    <?php
+    $fsStorefront = "languagetooler.onfastspring.com/popup-languagetool-org";
+    if (isset($_SERVER['QUERY_STRING']) && strpos($_SERVER['QUERY_STRING'], 'testmode') !== false) {
+        $fsStorefront = "languagetooler.test.onfastspring.com/popup-languagetool-org";
+    }
+    ?>
     <script id="fsc-api"
             src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.4/fastspring-builder.min.js"
             type="text/javascript"
-            data-storefront="languagetooler.onfastspring.com/popup-languagetool-org"
+            data-storefront="<?=$fsStorefront?>"
             data-error-callback="errorCallback"
             data-popup-closed="closedCallback"
             >
