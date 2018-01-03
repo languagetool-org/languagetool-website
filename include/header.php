@@ -21,7 +21,7 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => getRoot() . '/css/style.css?v28',
+        'src' => getRoot() . '/css/style.css?v29',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
@@ -169,7 +169,15 @@
 <script type="text/javascript" src="/js/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type='text/javascript' src='/js/touchHover.js'></script>
-	
+
+<link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
+<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#testimonialsSlider').slick({autoplay: true, autoplaySpeed: 5000});
+    });
+</script>
 <!-- used only for development:
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
 -->

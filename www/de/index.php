@@ -87,6 +87,28 @@
 <?php include("../../include/page_start.php"); ?>
 <?php include("../../include/pages/pricing.php"); ?>
 
+<div id="testimonials">
+
+    <h2>Nutzermeinungen</h2>
+
+    <div style="text-align: center" id="testimonialsSlider">
+        <div>
+            <h3>Rechtschreib- und Grammatik-Prüfungen sind mit dem LanguageTool schnell und zuverlässig erledigt.</h3>
+            <p><a href="http://www.chip.de/webapps/LanguageTool_66786809.html">chip.de</a></p>
+        </div>
+        <div>
+            <h3>Absolut genial, erkennt Dinge, die mir selbst nie aufgefallen wären!</h3>
+            <p>Mathias Bacher</p>
+        </div>
+        <div>
+            <h3>Eine Rechtschreibprüfung ist für jeden Office-Anwender Pflicht.
+                Die Erweiterung ist für die wichtigsten Korrekturen sehr hilfreich.</h3>
+            <p><a href="https://www.netzwelt.de/download/10324-languagetool.html">netzwelt.de</a></p>
+        </div>
+    </div>
+
+</div>
+
 <div id="languageContent">
 
     <h2>Funktionen</h2>

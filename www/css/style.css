@@ -48,16 +48,7 @@ body #sentenceContribution {
   color: black;
   padding-bottom: 10px;
 }
-body #survey {
-  color: black;
-  font-weight: bold;
-  padding: 10px;
-  background-color: white;
-  border-color: blue;
-  border-style: solid;
-  border-width: 4px;
-  margin-bottom: 5px;
-}
+body #survey,
 body #personalDictMessage {
   color: black;
   font-weight: bold;
@@ -695,39 +686,48 @@ body #download .button_container .inner_button .meta {
   background-color: #fee275;
   padding: 8px 20px;
 }
-body #pricing {
+body #pricing,
+body #testimonials {
   width: 900px;
   margin: 30px auto 70px auto;
 }
-body #pricing h2 {
+body #pricing h2,
+body #testimonials h2 {
   font-size: 36px;
   font-weight: 400;
   color: #000;
   margin: 0px;
   margin-bottom: 20px;
 }
-body #pricing th {
+body #pricing th,
+body #testimonials th {
   padding-top: 10px;
   font-size: 26px;
   color: black;
 }
-body #pricing td {
+body #pricing td,
+body #testimonials td {
   padding: 10px;
   color: black;
 }
-body #pricing table {
+body #pricing table,
+body #testimonials table {
   border-spacing: 0;
 }
-body #pricing tr :first-child {
+body #pricing tr :first-child,
+body #testimonials tr :first-child {
   text-align: left;
 }
-body #pricing tr :nth-child(3) {
+body #pricing tr :nth-child(3),
+body #testimonials tr :nth-child(3) {
   background-color: #eeeeee;
 }
-body #pricing td {
+body #pricing td,
+body #testimonials td {
   text-align: center;
 }
-body #pricing .buyButton {
+body #pricing .buyButton,
+body #testimonials .buyButton {
   height: 90px;
   font-size: 22px;
   color: white;
@@ -735,21 +735,26 @@ body #pricing .buyButton {
   text-align: center !important;
   padding: 5px;
 }
-body #pricing .buyButton .smaller {
+body #pricing .buyButton .smaller,
+body #testimonials .buyButton .smaller {
   font-size: 16px;
   background-color: #3abf1b;
 }
-body #pricing .buyButton b {
+body #pricing .buyButton b,
+body #testimonials .buyButton b {
   background-color: #3abf1b;
 }
-body #pricing .buyButton:hover {
+body #pricing .buyButton:hover,
+body #testimonials .buyButton:hover {
   background-color: #41d51e;
 }
-body #pricing .buyButton:hover .smaller {
+body #pricing .buyButton:hover .smaller,
+body #testimonials .buyButton:hover .smaller {
   font-size: 16px;
   background-color: #41d51e;
 }
-body #pricing .buyButton:hover b {
+body #pricing .buyButton:hover b,
+body #testimonials .buyButton:hover b {
   background-color: #41d51e;
 }
 body #actions {
