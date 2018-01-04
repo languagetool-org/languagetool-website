@@ -21,7 +21,7 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => getRoot() . '/css/style.css?v29',
+        'src' => getRoot() . '/css/style.css?v30',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
@@ -121,6 +121,63 @@
                     window.location.replace("https://languagetoolplus.com/subscribe/?orderId=" + orderObjOrNull.id);
                 }
             }
+        }
+        function contactForm() {
+            vex.dialog.open({
+                unsafeMessage: "<p style='margin-bottom: 8px'>Teilen Sie uns Ihre Kontaktdaten mit und wir erklären Ihnen, wie Sie die Premium-Version von LanguageTool " +
+                    "in Ihrem Unternehmen nutzen können - inkl. Integration in MS Word und erweiterter Fehlerprüfung.</p>",
+                input: 
+                    "<table id='contactForm'>" +
+                    "<tr>" + 
+                    "   <td>Name:</td>" +
+                    "   <td><input required name='name'></td>" +
+                    "</tr>" +
+                    "<tr>" + 
+                    "   <td>Firma:</td>" +
+                    "   <td><input required name='company'></td>" +
+                    "</tr>" +
+                    "<tr>" + 
+                    "   <td>E-Mail:</td>" +
+                    "   <td><input required name='email'></td>" +
+                    "</tr>" +
+                    "<tr>" + 
+                    "   <td>Telefon:</td>" +
+                    "   <td><input name='phone'></td>" +
+                    "</tr>" +
+                    "<tr>" + 
+                    "   <td style='vertical-align: top'>Anmerkungen:</td>" +
+                    "   <td><textarea name='comment'></textarea></td>" +
+                    "</tr>" +
+                    "</table>",
+                callback: function (data) {
+                    if (data) {
+                        console.log('sending contact request');
+                        post("/contact/business.php", data);
+                    } else {
+                        console.log('dialog cancelled');
+                    }
+                }
+            });
+        }
+        
+        // source: https://stackoverflow.com/questions/133925/javascript-post-request-like-a-form-submit
+        function post(path, params) {
+            // The rest of this code assumes you are not using a library.
+            // It can be made less wordy if you use one.
+            var form = document.createElement("form");
+            form.setAttribute("method", "POST");
+            form.setAttribute("action", path);
+            for(var key in params) {
+                if(params.hasOwnProperty(key)) {
+                    var hiddenField = document.createElement("input");
+                    hiddenField.setAttribute("type", "hidden");
+                    hiddenField.setAttribute("name", key);
+                    hiddenField.setAttribute("value", params[key]);
+                    form.appendChild(hiddenField);
+                }
+            }
+            document.body.appendChild(form);
+            form.submit();
         }
     </script>
     <?php
