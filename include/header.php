@@ -123,6 +123,9 @@
             }
         }
         function contactForm() {
+            if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                _paq.push(['trackEvent', "Business Contact", "DialogOpened"]);
+            }
             vex.dialog.open({
                 unsafeMessage: "<p style='margin-bottom: 8px'>Teilen Sie uns Ihre Kontaktdaten mit und wir erklären Ihnen, wie Sie die Premium-Version von LanguageTool " +
                     "in Ihrem Unternehmen nutzen können - inkl. Integration in MS Word und erweiterter Fehlerprüfung.</p>",
