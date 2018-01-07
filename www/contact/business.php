@@ -1,3 +1,9 @@
+<?php
+if (!isset($_POST['name'])) {
+    print "Error: missing form field 'name'\n";
+    return;
+}
+?>
 <!doctype html>
 <html>
 <head>
