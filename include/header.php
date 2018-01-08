@@ -707,14 +707,17 @@
        languagetool_i18n_track_false_alarm_menu :
            {
                'de-DE': 'Als Fehlalarm melden...',
+	       'ru'   : 'Сообщить о ложной ошибке...',
            },
        languagetool_i18n_track_false_alarm1 :
            {
                'de-DE': 'Die Fehlermeldung als Fehlalarm an LanguageTool schicken, zusammen mit diesem Satz?',
+	       'ru'   : 'Сообщить о ложной ошибке LanguageTool и отправить сообщение разработчикам вместе с этим предложением?',
            },
        languagetool_i18n_track_false_alarm2 :
            {
                'de-DE': 'Wenn Sie zustimmen, werden diese Daten anonym gespeichert.',
+	       'ru'   : 'Если вы согласитесь, то эта информация будет храниться анонимно.',
            },
 
 
@@ -870,7 +873,7 @@
                 "it": "Abbiamo anche una pagina in italiano",
                 "nl": "Meer over LanguageTool voor het Nederlands",
                 "ca": "També tenim una pàgina en català",
-                "ru": "Внимание: у нас есть страничка на русском языке!",
+                "ru": "Посетите страничку LanguageTool на русском языке!",
                 "pt": "Também temos uma página em Português",
                 "es": "También tenemos una página en español",
                 "uk": "Докладніше про українську в LanguageTool",
