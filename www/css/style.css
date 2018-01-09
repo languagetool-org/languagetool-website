@@ -628,6 +628,32 @@ body #stage .inner #text2 #addToBrowser a:hover,
 body #stage .inner #text #addToBrowser a:hover {
   background-color: #efedff;
 }
+body #stage .inner #text2 #companyContact,
+body #stage .inner #text #companyContact {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+body #stage .inner #text2 #companyContact a,
+body #stage .inner #text #companyContact a {
+  font-weight: 300;
+  box-shadow: 2px 2px 5px #4a4aab;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #fff8cf;
+  color: blue;
+  font-size: 1.5em;
+}
+body #stage .inner #text2 #companyContact span,
+body #stage .inner #text #companyContact span {
+  font-size: 18px;
+}
+body #stage .inner #text2 #companyContact a:hover,
+body #stage .inner #text #companyContact a:hover {
+  background-color: #efedff;
+}
 body #stage .inner #text2 {
   padding: 20px 0 0;
 }

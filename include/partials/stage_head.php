@@ -11,8 +11,8 @@
             <br>
             <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <?php if ($checkDefaultLang == 'de') { ?>
-                    <div id="addToBrowser">
-                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrer Firma nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
+                    <div id="companyContact">
+                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrem Unternehmen nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
                     </div>
                 <?php } else { ?>
                     <div id="addToBrowser">
@@ -21,8 +21,8 @@
                 <?php } ?>
             <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <?php if ($checkDefaultLang == 'de') { ?>
-                    <div id="addToBrowser">
-                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrer Firma nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
+                    <div id="companyContact">
+                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrem Unternehmen nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
                     </div>
                 <?php } else { ?>
                     <div id="addToBrowser">
