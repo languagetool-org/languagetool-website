@@ -41,6 +41,7 @@
                 <li>die Anzahl der Nutzungen des Browser-Add-ons (nur bei einer Deinstallation übertragen)</li>
             </ul>
         </li>
+        <li>Wenn Sie ein Kontaktformular ausfüllen, werden Ihre Daten per E-Mail an uns übertragen und gespeichert.</li>
         <li>In unseren Logdateien wird Ihre IP-Adresse in gekürzter Form (wie <tt>192.168.xxx.xxx</tt>) gespeichert,
             so dass sie nicht benutzt werden kann, um Sie zu identifizieren. Fehlermeldungen wie bei der Überschreitung des
             Anfragelimits werden mit der vollständigen IP-Adresse gespeichert, damit wir gegen Missbrauch vorgehen können.</li>
@@ -115,6 +116,7 @@
             This is an example of a log entry that LanguageTool generates on our server:<br/>
             <tt>2014-02-24 12:10:24 Check done: 793 chars, en-US, https://languagetool.org/, handlers:1, 3 matches, 132ms, sent</tt>
         </li>
+        <li>If you enter data in a contact form, this data will be transferred via email and it will be stored.</li>
         <li>In our web server log files, your IP address is stored in an abbreviated form (like <tt>192.168.xxx.xxx</tt>)
             so it cannot be used to identify you. Error messages like for exceeding the query limit are stored with the
             full IP so we can prevent abuse.</li>

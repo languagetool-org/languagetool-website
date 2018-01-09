@@ -21,7 +21,7 @@
   $assets = array(
     'links' => array(
       array(
-        'src' => getRoot() . '/css/style.css?v31',
+        'src' => getRoot() . '/css/style.css?v32',
         'rel' => "stylesheet",
         'type' => "text/css",
         'media' => 'screen'
@@ -127,29 +127,33 @@
                 _paq.push(['trackEvent', "Business Contact", "DialogOpened"]);
             }
             vex.dialog.open({
-                unsafeMessage: "<p style='margin-bottom: 8px'>Teilen Sie uns Ihre Kontaktdaten mit und wir erklären Ihnen, wie Sie die Premium-Version von LanguageTool " +
+                unsafeMessage: "<p style='margin-bottom: 8px'>Wir erklären Ihnen gerne, wie Sie die Premium-Version von LanguageTool " +
                     "in Ihrem Unternehmen nutzen können - inkl. Integration in MS Word und erweiterter Fehlerprüfung.</p>",
                 input: 
                     "<table id='contactForm'>" +
                     "<tr>" + 
                     "   <td>Name:</td>" +
-                    "   <td><input required name='name'></td>" +
+                    "   <td><input type='text' required name='name'></td>" +
                     "</tr>" +
                     "<tr>" + 
                     "   <td>Firma:</td>" +
-                    "   <td><input required name='company'></td>" +
+                    "   <td><input type='text' required name='company'></td>" +
                     "</tr>" +
                     "<tr>" + 
                     "   <td>E-Mail:</td>" +
-                    "   <td><input required name='email'></td>" +
+                    "   <td><input type='text' required name='email'></td>" +
                     "</tr>" +
                     "<tr>" + 
                     "   <td>Telefon:</td>" +
-                    "   <td><input name='phone'></td>" +
+                    "   <td><input type='text' name='phone'></td>" +
                     "</tr>" +
                     "<tr>" + 
                     "   <td style='vertical-align: top'>Anmerkungen:</td>" +
                     "   <td><textarea name='comment'></textarea></td>" +
+                    "</tr>" +
+                    "<tr>" + 
+                    "   <td style='vertical-align: top;text-align:right'><input type='checkbox' id='acceptPrivacyPolicy' required></td>" +
+                    "   <td><label for='acceptPrivacyPolicy'>Ich akzeptiere die <a href='/privacy/?lang=de' target='_blank'>Datenschutzerklärung</a></label></td>" +
                     "</tr>" +
                     "</table>",
                 callback: function (data) {

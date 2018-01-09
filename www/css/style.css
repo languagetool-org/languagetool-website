@@ -17,7 +17,7 @@ body a {
 body #contactForm td {
   padding: 3px;
 }
-body #contactForm input,
+body #contactForm input[type=text],
 body #contactForm textarea {
   width: 250px;
 }
