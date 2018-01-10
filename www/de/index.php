@@ -140,6 +140,7 @@
         <li>Zusammen-/Getrenntschreibung
             <ul>
                 <li>Er hat <span class="errorMarker" title="'dieselbe' wird zusammengeschrieben.">die selbe</span> Frage gestellt.</li>
+                <li>Deutscher Ärzteverband: Der <span class="errorMarker" title="Uneinheitliche Verwendung von Bindestrichen.<br>Der Text enthält sowohl 'Ärzte-Verband' als auch 'Ärzteverband'.">Ärzte-Verband</span> ist die Interessenvertretung der Ärzte.</li>
             </ul>
         </li>
         <li>Zeichensetzung
