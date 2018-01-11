@@ -31,6 +31,7 @@
             Telefon: +49 331 97 990 79<br/>
             Geschäftsführer: Daniel Naber<br/>
             Handelsregister: Amtsgericht Potsdam HRB 30269 P<br/>
+            USt-IdNr: DE315084345<br/>
             E-Mail: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span>
         </p>
         
@@ -73,6 +74,7 @@
             Phone: +49 331 97 990 79<br/>
             CEO: Daniel Naber<br/>
             Trade Register: Amtsgericht Potsdam HRB 30269 P<br/>
+            VAT no.: DE315084345<br/>
             email: <span style="color:#555555">daniel.naber <span>a&#116;</span> languagetool<span>.</span>org</span>
         </p>
 
