@@ -113,7 +113,7 @@
 
     <h2>Funktionen</h2>
 
-    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 2000</a> Fehler in deutschsprachigen Texten:<br/><br/>
+    LanguageTool erkennt <a href="http://community.languagetool.org/rule/list?lang=de">mehr als 2500</a> Fehler in deutschsprachigen Texten:<br/><br/>
 
     <small>(Zeigen Sie mit der Maus auf einen Fehler, um die dazugehörige Meldung anzuzeigen.)</small>
 
@@ -135,6 +135,7 @@
             <ul>
                 <li>Die <span class="errorMarker" title="Meinten Sie 'Französische' Revolution (1789–1799)? Zu mehrteiligen Namen gehörende Adjektive werden großgeschrieben.">französische</span> Revolution war ein wichtiges historisches Ereignis.</li>
                 <li><span class="errorMarker" title="Dieser Satz fängt nicht mit einem großgeschriebenen Wort an">überprüfen</span> der Großschreibung am Satzanfang.</li>
+                <li>Wie geht es Dir? Bist <span class="errorMarker" title="Vorher wurde bereits 'Dir' großgeschrieben. Aus Gründen der Einheitlichkeit 'Du' hier auch großschreiben?">du</span> wieder fit?</li>
             </ul>
         </li>
         <li>Zusammen-/Getrenntschreibung
