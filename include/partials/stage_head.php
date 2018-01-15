@@ -7,12 +7,12 @@
   <div class="inner">
     <div id="text">
         <p>LanguageTool is a <strong>proof&shy;reading service</strong> for English, <a href="de/">German</a>,
-            <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.
+            <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.</p>
             <br>
             <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <?php if ($checkDefaultLang == 'de') { ?>
                     <div id="companyContact">
-                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrem Unternehmen nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
+                        <?php include("banner2.php") ?>
                     </div>
                 <?php } else { ?>
                     <div id="addToBrowser">
@@ -21,16 +21,13 @@
                 <?php } ?>
             <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                 <?php if ($checkDefaultLang == 'de') { ?>
-                    <div id="companyContact">
-                        <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrem Unternehmen nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
-                    </div>
+                    <?php include("banner2.php") ?>
                 <?php } else { ?>
                     <div id="addToBrowser">
                         <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
                     </div>
                 <?php } ?>
             <?php } ?>
-        </p>
     </div>
     <div id="editor">
       <div class="inner">

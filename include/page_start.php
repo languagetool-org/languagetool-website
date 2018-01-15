@@ -13,9 +13,7 @@
           <?php } ?>
 
           <?php if (rand(0, 1) > 0.25) { ?>
-              <div id="companyContact">
-                  <a href="#" onclick="contactForm();return false;">LanguageTool in Ihrem Unternehmen nutzen?<span>&nbsp;&nbsp;Kontaktieren Sie uns</span></a>
-              </div>
+              <?php include("partials/banner2.php") ?>
           <?php } else { ?>
               <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                   <div id="addToBrowser">

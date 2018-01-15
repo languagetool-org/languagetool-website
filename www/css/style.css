@@ -628,23 +628,35 @@ body #stage .inner #text2 #addToBrowser a:hover,
 body #stage .inner #text #addToBrowser a:hover {
   background-color: #efedff;
 }
+body #stage .inner #text2 #companyContactOuter,
+body #stage .inner #text #companyContactOuter {
+  cursor: pointer;
+  position: relative;
+}
+body #stage .inner #text2 #companyContactClose,
+body #stage .inner #text #companyContactClose {
+  position: absolute;
+  right: 10px;
+  z-index: 10;
+  font-size: 25px;
+  padding: 5px;
+}
+body #stage .inner #text2 #companyContactClose:hover,
+body #stage .inner #text #companyContactClose:hover {
+  background-color: #ffe236;
+}
 body #stage .inner #text2 #companyContact,
 body #stage .inner #text #companyContact {
-  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-top: -10px;
   margin-bottom: 25px;
-}
-body #stage .inner #text2 #companyContact a,
-body #stage .inner #text #companyContact a {
+  font-size: 26px;
   font-weight: 300;
   box-shadow: 2px 2px 5px #4a4aab;
-  border-radius: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  border-radius: 4px;
   background-color: #fff8cf;
   color: blue;
-  font-size: 1.5em;
 }
 body #stage .inner #text2 #companyContact span,
 body #stage .inner #text #companyContact span {
