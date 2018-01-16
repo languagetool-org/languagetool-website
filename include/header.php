@@ -128,7 +128,12 @@
             }
             vex.dialog.open({
                 unsafeMessage: "<p style='margin-bottom: 8px'>Wir erklären Ihnen gerne, wie Sie die Premium-Version von LanguageTool " +
-                    "in Ihrem Unternehmen nutzen können - inkl. Integration in MS Word und erweiterter Fehlerprüfung.</p>",
+                    "für Ihr Unternehmen nutzen können. Ihre Vorteile:</p>" +
+                    "<ul style='margin-left:20px'>" +
+                    "  <li>Integration in Microsoft Word als Add-on</li>" +
+                    "  <li>erweiterte Fehlerprüfung</li>" +
+                    "  <li>einheitliches firmenweites Wörterbuch</li>" +
+                    "</ul>",
                 input: 
                     "<table id='contactForm'>" +
                     "<tr>" + 
