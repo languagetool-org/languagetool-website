@@ -25,10 +25,14 @@ if (!isset($_POST['name'])) {
         "Browser: ".$_SERVER['HTTP_USER_AGENT']."\n".
         "Languages: ".$_SERVER['HTTP_ACCEPT_LANGUAGE'];
 
-    mail($myAddress,
+    //print $body;
+    $ok = mail($myAddress,
         "Contact via languagetool.org",
         $body,
         "From: ".$_POST['email']."\nContent-Type:text/plain;charset=utf-8\n");
+    if (!$ok) {
+        error_log("Sending mail failed: $body");
+    }
     ?>
     <?php include("../../include/header.php"); ?>
 </head>
@@ -37,11 +41,19 @@ if (!isset($_POST['name'])) {
 
 <div id="textContent">
 
-    <h1>Vielen Dank für Ihre Anfrage</h1>
+    <?php if ($ok) { ?>
+ 
+        <h1>Vielen Dank für Ihre Anfrage</h1>
 
-    <p>Wir werden Sie möglichst bald kontaktieren. Informationen zur
-        Enterprise-Version von LanguageTool erhalten Sie auch auf
-        <a href="https://languagetoolplus.com">languagetoolplus.com</a>.</p>
+        <p>Wir werden Sie möglichst bald kontaktieren. Informationen zur
+            Enterprise-Version von LanguageTool erhalten Sie auch auf
+            <a href="https://languagetoolplus.com">languagetoolplus.com</a>.</p>
+ 
+    <?php } else { ?>
+        
+        Leider ist ein Fehler aufgetreten. Bitte wenden Sie sich an support@languagetoolplus.com
+        
+    <?php } ?>
     
 </div>
 
