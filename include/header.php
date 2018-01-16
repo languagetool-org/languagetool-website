@@ -161,10 +161,10 @@
                     "   <td><label for='acceptPrivacyPolicy'>Ich akzeptiere die <a href='/privacy/?lang=de' target='_blank'>Datenschutzerklärung</a></label></td>" +
                     "</tr>" +
                     "</table>",
-                buttons: [
-                    $.extend({}, vex.dialog.buttons.YES, { text: "Absenden" }),
-                    $.extend({}, vex.dialog.buttons.NO, { text: "Abbrechen" })
-                ],
+                //buttons: [
+                //    $.extend({}, vex.dialog.buttons.YES, { text: "Absenden" }),
+                //    $.extend({}, vex.dialog.buttons.NO, { text: "Abbrechen" })
+                //],
                 callback: function (data) {
                     if (data) {
                         console.log('sending contact request');
