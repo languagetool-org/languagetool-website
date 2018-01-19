@@ -32,6 +32,8 @@ if (!isset($_POST['name'])) {
         "From: ".$_POST['email']."\nContent-Type:text/plain;charset=utf-8\n");
     if (!$ok) {
         error_log("Sending mail failed: $body");
+    } else {
+        error_log("Sending mail ok: $body");
     }
     ?>
     <?php include("../../include/header.php"); ?>
