@@ -132,7 +132,7 @@
                     "<ul style='margin-left:20px'>" +
                     "  <li>Integration in Microsoft Word als Add-on</li>" +
                     "  <li>erweiterte Fehlerprüfung</li>" +
-                    "  <li>einheitliches firmenweites Wörterbuch</li>" +
+                    "  <li>einheitliches, firmenweites Wörterbuch</li>" +
                     "</ul>",
                 input: 
                     "<table id='contactForm'>" +
