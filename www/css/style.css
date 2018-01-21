@@ -649,17 +649,17 @@ body #stage .inner #text2 #companyContact,
 body #stage .inner #text #companyContact {
   cursor: pointer;
   position: relative;
-  margin-top: -10px;
-  margin-bottom: 25px;
-  font-size: 26px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  font-size: 22px;
   font-weight: 300;
   box-shadow: 2px 2px 5px #4a4aab;
   border-radius: 4px;
   background-color: #fff8cf;
   color: blue;
 }
-body #stage .inner #text2 #companyContact span,
-body #stage .inner #text #companyContact span {
+body #stage .inner #text2 #companyContact div,
+body #stage .inner #text #companyContact div {
   font-size: 18px;
 }
 body #stage .inner #text2 #companyContact a:hover,
