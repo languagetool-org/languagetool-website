@@ -48,10 +48,12 @@
         <label><input name="reason" value="too-many-false-alarms" type="radio" onclick="track('too-many-false-alarms');show('too-many-false-alarms-detail', 'message3')"> found too many 'errors' that are not really errors</label><br>
         <label><input name="reason" value="other" type="radio" onclick="track('other');"> something else</label><br>
         <!--<label><input name="reason" value="something-else" type="radio" onclick="show('something-else-detail', 'message4')"> something else:</label><br>-->
+        <!--
         <br>
         <div style="width:500px">
             <b>Your email: <input style="width:300px" type="text" name="email" placeholder="you@provider.org">
         </div>
+        -->
         <input style="margin-top: 10px;margin-bottom: 15px" type="submit" value="Submit feedback">
     </form>
     
