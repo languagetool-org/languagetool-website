@@ -130,9 +130,10 @@
                 unsafeMessage: "<p style='margin-bottom: 8px'>Wir erklären Ihnen gerne, wie Sie die Premium-Version von LanguageTool " +
                     "für Ihr Unternehmen nutzen können. Ihre Vorteile:</p>" +
                     "<ul style='margin-left:20px'>" +
+                    "  <li>eigener Server - keine Daten verlassen Ihr Unternehmen</li>" +
                     "  <li>Integration in Microsoft Word als Add-on</li>" +
                     "  <li>erweiterte Fehlerprüfung</li>" +
-                    "  <li>einheitliches, firmenweites Wörterbuch</li>" +
+                    //"  <li>einheitliches, firmenweites Wörterbuch</li>" +
                     "</ul>" +
                     "<p style='margin-top:8px'>Schreiben Sie uns unter <a href='mailto:support@" + "languagetoolplus.com'>support@" + "languagetoolplus.com</a>!</p>",
                 buttons: [
