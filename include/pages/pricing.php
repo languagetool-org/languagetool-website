@@ -7,8 +7,8 @@
     <?php } ?>
 
     <?php
-    $y = "<img src='/images/check.png' alt='supported'>";
-    $n = "<img src='/images/cancel_grey.png' alt='unsupported'>";
+    $y = "<img src='/images/check2.png' alt='supported'>";
+    $n = "<img src='/images/cancel_grey2.png' alt='unsupported'>";
     ?>
     
     <table style="width:100%">
