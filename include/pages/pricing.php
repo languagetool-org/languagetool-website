@@ -57,6 +57,7 @@
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
+            <!--
             <tr>
                 <td>Add-on for Firefox &amp; Chrome</td>
                 <td><?=$y?></td>
@@ -69,6 +70,7 @@
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
+            -->
             <tr>
                 <td>Add-on for MS Word (<a href="https://languagetoolplus.com/#msword">details</a>)</td>
                 <td><?=$n?></td>
@@ -169,6 +171,7 @@
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
+            <!--
             <tr>
                 <td>Add-on für Firefox &amp; Chrome</td>
                 <td><?=$y?></td>
@@ -181,6 +184,7 @@
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
+            -->
             <tr>
                 <td>Add-on für MS Word (<a href="https://languagetoolplus.com/#msword">Details</a>)</td>
                 <td><?=$n?></td>
