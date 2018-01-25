@@ -990,7 +990,7 @@
                             if (data.length > maxTextLength) {
                                 // Somehow, the error code 413 is lost in Apache, so we show that error here.
                                 // This unfortunately means that the limit needs to be configured in the server *and* here.
-                                errorText = "Error: your text is too long (" + data.length + " characters). This server accepts up to " + maxTextLength + " characters.";
+                                errorText = "Error: your text is too long (" + data.length + " characters). This server accepts up to " + maxTextLength + " characters. Please consider upgrading to <a target='_blank' href='https://languagetoolplus.com/#premium'>our premium service</a> to check longer texts.";
                             }
                             $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
                             t._trackEvent('CheckError', 'ErrorWithException', errorText);
