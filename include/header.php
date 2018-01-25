@@ -178,6 +178,10 @@
     </script>   
 <?php } ?>
 
+<?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php") { ?>
+    <script src="https://embed.small.chat/T7AHSH8BGG7928QAAC.js" async></script>
+<?php } ?>
+
 <script src="/js/vex/vex.combined.min.js"></script>
 <script>vex.defaultOptions.className = 'vex-theme-os'</script>
 <link rel="stylesheet" href="/js/vex/vex.css" />
