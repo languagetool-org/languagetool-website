@@ -78,6 +78,12 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
+                <td>No ads</td>
+                <td><?=$n?></td>
+                <td><?=$y?></td>
+                <td><?=$y?></td>
+            </tr>
+            <tr>
                 <td style="vertical-align:top">Price</td>
                 <td style="vertical-align:top">free</td>
                 <td style="vertical-align:top">
@@ -187,6 +193,12 @@
             -->
             <tr>
                 <td>Add-on für MS Word (<a href="https://languagetoolplus.com/#msword">Details</a>)</td>
+                <td><?=$n?></td>
+                <td><?=$y?></td>
+                <td><?=$y?></td>
+            </tr>
+            <tr>
+                <td>Werbefrei</td>
                 <td><?=$n?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
