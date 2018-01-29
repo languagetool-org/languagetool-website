@@ -28,7 +28,7 @@
     <h1>Comparison of LanguageTool Editions</h1>
 
     <?php
-    $yes = "<img src='../images/check.png' alt='yes'>";
+    $yes = "<img src='../images/check2.png' alt='yes'>";
     $no = "<img src='../images/cancel.png' alt='no'>";
     ?>
     <table style="">
@@ -55,8 +55,8 @@
         </tr>
         <tr>
             <th>Works offline</th>
-            <td class="cell" colspan="4"><?=$no?><span class="light"><br>text sent to languagetool.org<br>over encrypted connection</span></td>
-            <td class="cell" colspan="2"><?=$yes?><span class="light"><br>no text sent over the internet<br>&nbsp;</span></td>
+            <td class="cell" colspan="4"><?=$no?><span class="light"><br>no, text sent to languagetool.org<br>over encrypted connection</span></td>
+            <td class="cell" colspan="2"><?=$yes?><span class="light"><br>yes, no text sent over the internet</span></td>
         </tr>
         <tr>
             <th>Automatically uses latest error detection rules</th>
