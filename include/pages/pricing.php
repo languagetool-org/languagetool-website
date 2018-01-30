@@ -269,7 +269,7 @@
                 <td>40,000+</td>
             </tr>
             <tr>
-                <td>Basic error detection for 20+ languages</td>
+                <td>Базовая проверка для 20+ языков</td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
@@ -281,13 +281,13 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>More than 100 additional English errors detected</td>
+                <td>Дополнительные правила для поиска 100+ ошибок в текстах на английском</td>
                 <td><?=$n?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>More than 100 additional German errors detected</td>
+                <td>Дополнительные правила для поиска 100+ ошибок в текстах на немецком</td>
                 <td><?=$n?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
@@ -311,14 +311,14 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td style="vertical-align:top">Price</td>
-                <td style="vertical-align:top">free</td>
+                <td style="vertical-align:top">Цена</td>
+                <td style="vertical-align:top">бесплатно</td>
                 <td style="vertical-align:top">
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             <div style="margin-top: 15px; text-align: center">
                                 <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/month<br>
-                                <b>BUY NOW</b>
+                                <b>Купить</b>
                             </div>
                         </div>
                     </a>
@@ -327,8 +327,8 @@
                         <div style="margin:0" class="buyButton">
                             <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/year<br>
                             <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
-                            <span class="smaller">you save 65%</span><br>
-                            <b>BUY NOW</b>
+                            <span class="smaller">выгода 65%</span><br>
+                            <b>Купить</b>
                         </div>
                     </a>
                     <!--
@@ -348,7 +348,7 @@
                         var fp = "support";
                         var domain = "languagetoolplus";
                         var subject = "?subject=contact request for business premium (via lt.org)";
-                        var buttonText = "On Request";
+                        var buttonText = "по запросу";
                         document.write("<a class='plan-button' href='" + mt + ":" + fp + "@" + domain + ".com" + subject + "'>" + buttonText + "</a>");
                     </script>
                 </td>
@@ -356,7 +356,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td style="background-color: white">all prices incl. VAT</td>
+                <td style="background-color: white">все цены включают налоги</td>
                 <td></td>
             </tr>
             
