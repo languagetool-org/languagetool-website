@@ -4,6 +4,8 @@
         <h2>Pricing</h2>
     <?php } else if ($_SERVER['PHP_SELF'] == "/de/index.php") { ?>
         <h2>Preise</h2>
+    <?php } else if ($_SERVER['PHP_SELF'] == "/ru/index.php") { ?>
+        <h2>Сравнение редакций</h2>
     <?php } ?>
 
     <?php
