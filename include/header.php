@@ -91,7 +91,7 @@
 <?php } ?>
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oldceeleldhonbafppcapldpdifcinji">
 
-<?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php") { ?>
+<?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php" || $_SERVER['PHP_SELF'] == "/ru/index.php") { ?>
     <script src="/js/stacktrace.min.js"></script>
     <script type="text/javascript">
         var callback = function(stackframes) {
