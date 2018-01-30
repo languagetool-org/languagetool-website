@@ -263,7 +263,7 @@
                 <td><a href="https://languagetoolplus.com/">languagetoolplus.com</a></td>
             </tr>
             <tr>
-                <td>Maximum characters per check</td>
+                <td>Максимальное количество символов в проверяемом тексте</td>
                 <td>20,000</td>
                 <td>40,000</td>
                 <td>40,000+</td>
@@ -275,7 +275,7 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>Personal dictionary</td>
+                <td>Персональный словарь</td>
                 <td><?=$n?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
@@ -293,19 +293,19 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>Add-on for Firefox &amp; Chrome</td>
+                <td>Расширение для Firefox &amp; Chrome</td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>Add-on for Google Docs</td>
+                <td>Расширение для Google Docs</td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>Add-on for MS Word (<a href="https://languagetoolplus.com/#msword">details</a>)</td>
+                <td>Расширение для MS Word (<a href="https://languagetoolplus.com/#msword">подробнее...</a>)</td>
                 <td><?=$n?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
