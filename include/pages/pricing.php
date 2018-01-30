@@ -293,7 +293,7 @@
                 <td><?=$y?></td>
             </tr>
             <tr>
-                <td>Расширение для Firefox &amp; Chrome</td>
+                <td>Расширение для Firefox и Chrome</td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
                 <td><?=$y?></td>
@@ -317,7 +317,7 @@
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
                         <div class="buyButton">
                             <div style="margin-top: 15px; text-align: center">
-                                <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/month<br>
+                                <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/в месяц<br>
                                 <b>Купить</b>
                             </div>
                         </div>
@@ -325,7 +325,7 @@
                     <br>
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                         <div style="margin:0" class="buyButton">
-                            <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/year<br>
+                            <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/в год<br>
                             <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
                             <span class="smaller">выгода 65%</span><br>
                             <b>Купить</b>
