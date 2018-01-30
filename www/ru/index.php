@@ -81,6 +81,9 @@
     ?>
     <?php include("../../include/header.php"); ?>
     <?php include("../../include/header2.php"); ?>
+    <?php
+    include("../../include/pages/pricing.php");
+    ?>
 </head>
 <body>
 <?php include("../../include/page_start.php"); ?>
@@ -167,10 +170,6 @@
  (<a href="https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md">список изменений</a>).
 </p>
 
-<h2>Сравнение редакций LanguageTool</h2>
-<?php
-include("../../include/pages/pricing.php");
-?>
 
 <h2>Установка для LibreOffice/OpenOffice.org</h2>
 <br>
