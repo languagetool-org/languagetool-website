@@ -84,8 +84,10 @@
 </head>
 <body>
 <?php include("../../include/page_start.php"); ?>
+
+<h2>Сравнение редакций LanguageTool</h2>
 <?php
-//include("../../include/pages/pricing.php");
+include("../../include/pages/pricing.php");
 ?>
 
 <div id="languageContent">
