@@ -81,11 +81,12 @@
     ?>
     <?php include("../../include/header.php"); ?>
     <?php include("../../include/header2.php"); ?>
-    <?php
-    include("../../include/pages/pricing.php");
-    ?>
+    
 </head>
 <body>
+<?php
+include("../../include/pages/pricing.php");
+?>
 <?php include("../../include/page_start.php"); ?>
 
 
