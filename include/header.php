@@ -217,11 +217,11 @@
         $('#testimonialsSlider').slick({autoplay: true, autoplaySpeed: 5000});
         <?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php" || $_SERVER['PHP_SELF'] == "/ru/index.php") { ?>
             setTimeout(function() {
-                var buyText = $(".buyButton").text();
+                var buyText = $(".buyButton span[data-fsc-item-path]").text();
                 if (buyText) {
                     buyText = buyText.replace(/\s+/g, " ");
                 }
-                if (!buyText || (buyText.indexOf("€") === -1 && buyText.indexOf("$") === -1)) {
+                if (!buyText || (buyText.indexOf("€") === -1 && buyText.indexOf("$") === -1 && buyText.indexOf("USD") === -1 && buyText.indexOf("RUB") === -1)) {
                     console.log("Did not find valid buy text: " + buyText);
                     if (typeof(_paq) !== 'undefined') {  // Piwik tracking
                         _paq.push(['trackEvent', 'FastspringError', 'NoBuyTextCurrencyFound', buyText]);
