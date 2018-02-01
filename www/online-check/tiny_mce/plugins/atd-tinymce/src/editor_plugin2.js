@@ -987,13 +987,20 @@
                             if (!errorText) {
                                 errorText = "Error: Did not get response from service. Please try again in one minute.";
                             }
+                            var errorTextForAnalytics = errorText;
                             if (data.length > maxTextLength) {
                                 // Somehow, the error code 413 is lost in Apache, so we show that error here.
                                 // This unfortunately means that the limit needs to be configured in the server *and* here.
                                 errorText = "Error: your text is too long (" + data.length + " characters). This server accepts up to " + maxTextLength + " characters. Please consider upgrading to <a target='_blank' href='https://languagetoolplus.com/#premium'>our premium service</a> to check longer texts.";
+                                errorTextForAnalytics = "Error: your text is too long";
+                            }
+                            if (errorText.indexOf("Request size limit of") !== -1) {
+                                errorTextForAnalytics = "Error: Request size limit per minute exceeded";
+                            } else if (errorText.indexOf("Request limit of") !== -1) {
+                                errorTextForAnalytics = "Error: Request limit number per minute exceeded";
                             }
                             $('#feedbackErrorMessage').html("<div id='severeError'>" + errorText + "</div>");
-                            t._trackEvent('CheckError', 'ErrorWithException', errorText);
+                            t._trackEvent('CheckError', 'ErrorWithException', errorTextForAnalytics);
                             t._serverLog(errorText + " (second try)");
                         }
                     });
