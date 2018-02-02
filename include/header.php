@@ -226,9 +226,9 @@
                                  buyText.indexOf("£") === -1 && buyText.indexOf("DKK") === -1 && buyText.indexOf("руб") === -1 &&
                                  buyText.indexOf("GBP") === -1
                     )) {
-                    console.log("Did not find valid buy text: " + buyText);
+                    console.log("Did not find valid buy text: " + buyText + " on <?=$_SERVER['PHP_SELF']?>");
                     if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyNotFound', buyText]);
+                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyNotFound', buyText + ' (<?=$_SERVER['PHP_SELF']?>)']);
                     }
                 } else {
                     console.log("Found valid buy text: " + buyText);
