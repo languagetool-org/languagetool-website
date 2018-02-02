@@ -217,7 +217,7 @@
         $('#testimonialsSlider').slick({autoplay: true, autoplaySpeed: 5000});
         <?php if ($_SERVER['PHP_SELF'] == "/index.php" || $_SERVER['PHP_SELF'] == "/de/index.php" || $_SERVER['PHP_SELF'] == "/ru/index.php") { ?>
             setTimeout(function() {
-                var buyText = $(".buyButton span[data-fsc-item-path]").text();
+                var buyText = $(".buyButton").text();
                 if (buyText) {
                     buyText = buyText.replace(/\s+/g, " ");
                 }
@@ -228,12 +228,12 @@
                     )) {
                     console.log("Did not find valid buy text: " + buyText + " on <?=$_SERVER['PHP_SELF']?>");
                     if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyNotFound', buyText + ' (<?=$_SERVER['PHP_SELF']?>)']);
+                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyNotFoundV2', buyText + ' (<?=$_SERVER['PHP_SELF']?>)']);
                     }
                 } else {
                     console.log("Found valid buy text: " + buyText);
                     if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyFound', buyText]);
+                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyFoundV2', buyText]);
                     }
                 }
             }, 2000);
