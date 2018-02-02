@@ -221,13 +221,20 @@
                 if (buyText) {
                     buyText = buyText.replace(/\s+/g, " ");
                 }
-                if (!buyText || (buyText.indexOf("€") === -1 && buyText.indexOf("$") === -1 && buyText.indexOf("USD") === -1 && buyText.indexOf("RUB") === -1)) {
+                if (!buyText || (buyText.indexOf("€") === -1 && buyText.indexOf("$") === -1 && buyText.indexOf("USD") === -1 &&
+                                 buyText.indexOf("RUB") === -1 && buyText.indexOf("PLN") === -1 && buyText.indexOf("₹") === -1 &&
+                                 buyText.indexOf("£") === -1 && buyText.indexOf("DKK") === -1 && buyText.indexOf("руб") === -1 &&
+                                 buyText.indexOf("GBP") === -1
+                    )) {
                     console.log("Did not find valid buy text: " + buyText);
                     if (typeof(_paq) !== 'undefined') {  // Piwik tracking
-                        _paq.push(['trackEvent', 'FastspringError', 'NoBuyTextCurrencyFound', buyText]);
+                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyNotFound', buyText]);
                     }
                 } else {
                     console.log("Found valid buy text: " + buyText);
+                    if (typeof(_paq) !== 'undefined') {  // Piwik tracking
+                        _paq.push(['trackEvent', 'FastspringError', 'BuyTextCurrencyFound', buyText]);
+                    }
                 }
             }, 2000);
         <?php } ?>
