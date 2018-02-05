@@ -866,6 +866,14 @@ AtDCore.prototype.isIE = function() {
                         } else {
                             history.replaceState(stateObj, "", window.location.search + "," + ruleId);
                         }*/
+                        var coveredText = plugin.editor.core.getSurrogatePart(surrogate, 'coveredtext');
+                        if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
+                            console.log("tracking ignore rule with sentence");
+                            t._sendIgnoreRule(errorDescription["sentence"], coveredText, lang, ruleId);
+                        } else {
+                            console.log("tracking ignore rule without sentence");
+                            t._sendIgnoreRule("", "", lang, ruleId);
+                        }
                     }
                 });
                 m.add({
@@ -1222,8 +1230,8 @@ AtDCore.prototype.isIE = function() {
           );
       },
        
-      /* send error example to our database */
-       _sendFalseAlarm : function(sentence, coveredText, lang, ruleId) {
+      /* send false alarm to our database */
+      _sendFalseAlarm : function(sentence, coveredText, lang, ruleId) {
           var req = new XMLHttpRequest();
           req.timeout = 60 * 1000; // milliseconds
           req.open('POST', "https://languagetoolplus.com/submitFalseAlarm", true);
@@ -1241,6 +1249,34 @@ AtDCore.prototype.isIE = function() {
               console.warn("Error submitting false alarm (ontimeout).");
           };
           console.log("sending false alarm: sentence, coveredText: ", sentence, coveredText);
+          req.send(
+              "sentence=" + encodeURIComponent(sentence) +
+              "&coveredText=" + encodeURIComponent(coveredText) +
+              "&lang=" + lang +
+              "&ruleId=" + encodeURIComponent(ruleId) +
+              "&username=website"
+          );
+      },
+       
+      /* send ignored rule to our database for tracking */
+      _sendIgnoreRule : function(sentence, coveredText, lang, ruleId) {
+          var req = new XMLHttpRequest();
+          req.timeout = 60 * 1000; // milliseconds
+          req.open('POST', "https://languagetoolplus.com/submitIgnoreRule", true);
+          //req.open('POST', "http://localhost:8000/submitIgnoreRule", true);
+          req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          req.onload = function() {
+              if (req.status !== 200) {
+                  console.warn("Error submitting ignore rule. Code: " + req.status);
+              }
+          };
+          req.onerror = function() {
+              console.warn("Error submitting ignore rule (onerror).");
+          };
+          req.ontimeout = function() {
+              console.warn("Error submitting ignore rule (ontimeout).");
+          };
+          console.log("sending ignore rule: sentence, coveredText: ", sentence, coveredText);
           req.send(
               "sentence=" + encodeURIComponent(sentence) +
               "&coveredText=" + encodeURIComponent(coveredText) +
