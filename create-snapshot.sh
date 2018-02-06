@@ -87,3 +87,8 @@ grails war
 rm -r /home/languagetool/tomcat/webapps/ROOT/
 unzip -o -d /home/languagetool/tomcat/webapps/ROOT/ target/ltcommunity-0.1.war
 ### Tomcat restart needs root permission, but that happens automatically by cron job
+
+# since shortly after 4.1-SNAPSHOT there's a problem with dependencies (wrong slf4j-api
+# version used) which we work around with this hack:
+rm ~/tomcat/webapps/ROOT/WEB-INF/lib/slf4j-api-1.7.5.jar
+cp ~/api/lt/libs/slf4j-api.jar ~/tomcat/webapps/ROOT/WEB-INF/lib/
