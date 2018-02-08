@@ -53,6 +53,7 @@
         <li>Panagiotis Minos
         <li><a href="http://it.linkedin.com/in/paolobianchini/">Paolo Bianchini</a>
         <li>Peter Lawrence
+        <li>Robin van der Vliet
         <li>Ruud Baars
         <li>Stefan Lotties
         <li>Tiago F. Santos
