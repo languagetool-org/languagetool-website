@@ -55,7 +55,7 @@
     $introText1 = "<strong>Lingvoilo (LanguageTool)</strong> estas libera plurlingva programo por kontroli stilon kaj gramatikon en Esperanto, sed ankaŭ en <a href='/languages/'>multaj aliaj lingvoj</a>.";
     $introText2 = "Lingvoilo atentigas pri eraroj ne trovitaj per simpla literuma kontrolilo.";
     $addToChrome = "Aldoni al Chrome <span>senkosta, libera kaj sen registrado</span>";
-    $addToFirefox = "Aldoni al Firefox<span>senkosta, libera kaj sen registrado</span>";
+    $addToFirefox = "Aldoni al Firefox <span>senkosta, libera kaj sen registrado</span>";
     $contributeLink = "Kunhelpi !";
 
     $forumHeadline = "Forumo";
