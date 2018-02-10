@@ -12,7 +12,7 @@
               <p class="small"><a href="../contribute/"><?= $contributeLink ?></a></p>
           <?php } ?>
 
-          <?php if (rand(0, 1) > 0.25) { ?>
+          <?php if (rand(0, 1) > 99) { ?>
               <?php include("partials/banner2.php") ?>
           <?php } else { ?>
               <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
