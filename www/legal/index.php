@@ -42,6 +42,13 @@
             keine Garantien darüber, welche Version der Software auf der Website läuft, oder welche Version
             in Zukunft auf der Website laufen wird.</p>
 
+        <h2>Streitbeilegungsverfahren</h2>
+
+        <p>Wir nehmen nicht an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
+            Gemäß der EU-Verordnung Nr. 524/2013 sind wir jedoch verpflichtet, darauf hinzuweisen, dass die 
+            Europäische Kommission unter <a href="http://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>
+            eine Plattform zur außergerichtlichen Online-Streitbeilegung (sog. OS-Plattform) betreibt.</p>
+        
         <h2>Haftungsbeschränkung</h2>
 
         <p>languagetool.org kann nicht zur Verantwortung gezogen werden für angebliche oder tatsächliche Schäden,
@@ -83,6 +90,13 @@
         <p>languagetool.org offers a free service to automatically proofread text. There are no guarantees
             about availability, features, performance, or quality. There are no guarantees about a specific version of the
             proofreading software running, nor about future updates.</p>
+
+        <h2>Dispute Resolution</h2>
+
+        <p>We do not participate in out-of-court online dispute resolution. 
+            According to EU Regulation No. 524/2013, however, we are obliged to point out that the European 
+            Commission operates a platform for out-of-court online dispute resolution (so-called OS platform)
+            at <a href="http://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
 
         <h2>Limitation of Liability</h2>
 
