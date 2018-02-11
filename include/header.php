@@ -690,6 +690,7 @@
        languagetool_i18n_other_suggestion_dialog :
            {
                'de-DE': 'Ersetzen mit:',
+               'pt'   : 'Substitua por:',
 	           'ru'   : 'Заменить на:'  
            },
 
@@ -697,29 +698,34 @@
        languagetool_i18n_other_suggestion :
            {
                'de-DE': '(andere Ersetzung)',
+               'pt'   : '(outra substituição)',
 	           'ru'   : '(другая замена)'   
            },
 
        languagetool_i18n_other_replace_by :
            {
                'de-DE': 'Ersetzen mit...',
+               'pt'   : 'Substitua por...',
 	           'ru'   : 'Заменить...'
            },
 
        languagetool_i18n_track_false_alarm_menu :
            {
                'de-DE': 'Als Fehlalarm melden...',
-	       'ru'   : 'Сообщить о ложной ошибке...',
+               'pt'   : 'Reportar falso alarme...',
+	           'ru'   : 'Сообщить о ложной ошибке...',
            },
        languagetool_i18n_track_false_alarm1 :
            {
                'de-DE': 'Die Fehlermeldung als Fehlalarm an LanguageTool schicken, zusammen mit diesem Satz?',
-	       'ru'   : 'Сообщить о ложной ошибке LanguageTool и отправить сообщение разработчикам вместе с этим предложением?',
+               'pt'   : 'Enviar este erro para a equipa do LanguageTool como um alarme falso, juntamente com esta frase',
+	           'ru'   : 'Сообщить о ложной ошибке LanguageTool и отправить сообщение разработчикам вместе с этим предложением?',
            },
        languagetool_i18n_track_false_alarm2 :
            {
                'de-DE': 'Wenn Sie zustimmen, werden diese Daten anonym gespeichert.',
-	       'ru'   : 'Если вы согласитесь, то эта информация будет храниться анонимно.',
+               'pt'   : 'Se concordar, esta informação será armazenada anonimamente.',
+               'ru'   : 'Если вы согласитесь, то эта информация будет храниться анонимно.',
            },
 
 
