@@ -484,6 +484,7 @@
            'pl': 'Przykłady...',
            'pt': 'Exemplos…',
            'ru': 'Примеры...',
+           'nl': 'Voorbeelden...',
            'sl': 'Primeri ...',
            'fake': 'last entry so all previous items can end with a comma'
           },
@@ -699,7 +700,8 @@
            {
                'de-DE': '(andere Ersetzung)',
                'pt'   : '(outra substituição)',
-	           'ru'   : '(другая замена)'   
+               'nl'   : '(andere suggestie)',
+               'ru'   : '(другая замена)'   
            },
 
        languagetool_i18n_other_replace_by :
@@ -713,6 +715,7 @@
            {
                'de-DE': 'Als Fehlalarm melden...',
                'pt'   : 'Reportar falso alarme...',
+               'nl'   : 'Meld als onterecht...',
 	           'ru'   : 'Сообщить о ложной ошибке...',
            },
        languagetool_i18n_track_false_alarm1 :
