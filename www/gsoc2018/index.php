@@ -14,7 +14,7 @@
 
     <h1>Apply for GSoC 2018</h1>
     
-    <p>LanguageTool is a mentor organization is this year's Google Summer of Code. As a student who is
+    <p>LanguageTool is a mentor organization in this year's Google Summer of Code. As a student who is
         interested in software development, you can apply to participate. If you're selected, you will
         work on LanguageTool for three months and Google will pay you.</p>
     
