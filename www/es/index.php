@@ -57,6 +57,8 @@
     $introText2 = "Además de español, soporta más de <a href='/languages/'>20 idiomas</a>.";
     $addToChrome = "Añadir a Chrome <span>gratis y sin registro</span>";
     $addToFirefox = "Añadir a Firefox <span>gratis y sin registro</span>";
+    $gsoc1 = "¿Eres estudiante de Informática?";
+    $gsoc2 = "¡Inscríbete para el GSoC 2018!";
 
     $contributeLink = "¡Colabora!";
     $forumHeadline = "Foro";
