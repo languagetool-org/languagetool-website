@@ -43,7 +43,7 @@
         'ru' => 'ruso',
         'sv' => 'sueco',
         'tl' => 'tagalo',
-        'ta' => 'tail',
+        'ta' => 'tamil',
         'uk' => 'ucraniano'
     );
 
