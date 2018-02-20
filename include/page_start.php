@@ -15,7 +15,11 @@
           <?php if (rand(0, 1) > 99) { ?>
               <?php include("partials/banner2.php") ?>
           <?php } else { ?>
-              <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+              <?php if (true) { ?>
+                  <div id="addToBrowser">
+                      <a href="/gsoc2018/"><?= isset($gsoc1) ? $gsoc1 : 'Looking for a student dev job?' ?><span>&nbsp;&nbsp;<?= isset($gsoc2) ? $gsoc2 : 'Apply for GSoC 2018!' ?></span></a>
+                  </div>
+              <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
                   <div id="addToBrowser">
                       <a onclick="return installChromeExtension('calltoaction')"
                          href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"

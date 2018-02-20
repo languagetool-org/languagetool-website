@@ -57,6 +57,8 @@
     $introText2 = "Neben Deutsch werden <a href='/'>Englisch</a> und <a href='/languages/'>viele weitere Sprachen</a> unter&shy;stützt.";
     $addToChrome = "In Chrome installieren <span>kostenlos und ohne Anmeldung</span>";
     $addToFirefox = "In Firefox installieren <span>kostenlos und ohne Anmeldung</span>";
+    $gsoc1 = "Informatik-Student?";
+    $gsoc2 = "Jetzt für GSoC 2018 bewerben!";
 
     $forumHeadline = "Forum";
     $compareEditionsText = "Vergleich";
