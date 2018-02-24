@@ -692,7 +692,7 @@
       },
 
        /* send error example to our database */
-       _showContributionDialog : function(sentence, correctedSentence, errorDescription, lang, ruleId, suggestionPos) {
+       _showContributionDialog : function(sentence, correctedSentence, covered, replacement, errorDescription, lang, ruleId, suggestionPos) {
            // source: https://github.com/HubSpot/vex/blob/master/docs/intro.md
            var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
            var t = this;
@@ -724,7 +724,7 @@
                        }
                        t._trackEvent('AllowSentenceStorage', "yes");
                        // now send text like the error collection add-on:
-                       t._sendErrorExample(sentence, correctedSentence, lang, ruleId, suggestionPos);
+                       t._sendErrorExample(sentence, correctedSentence, covered, replacement, lang, ruleId, suggestionPos);
                    } else {
                        var remember = $('#rememberCheckbox').is(':checked');
                        console.log("Don't store sentence. Remember setting?", remember);
@@ -836,11 +836,11 @@
               if (replCount === 1) {  // otherwise the correction is ambiguous
                   var correctedSentence = sentence.replace(evt.target.innerText, suggestion);
                   if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-                      this._sendErrorExample(sentence, correctedSentence, lang, ruleId, suggestionPos);
+                      this._sendErrorExample(sentence, correctedSentence, covered, suggestion, lang, ruleId, suggestionPos);
                   } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
                       console.log("no sentence tracking");
                   } else {
-                      this._showContributionDialog(sentence, correctedSentence, errorDescription, lang, ruleId, suggestionPos);
+                      this._showContributionDialog(sentence, correctedSentence, covered, suggestion, errorDescription, lang, ruleId, suggestionPos);
                   }
                   this._updateSentenceTrackingArea(lang);
               }
@@ -848,7 +848,7 @@
       },
        
       /* send error example to our database */
-      _sendErrorExample : function(sentence, correctedSentence, lang, ruleId, suggestionPos) {
+      _sendErrorExample : function(sentence, correctedSentence, covered, replacement, lang, ruleId, suggestionPos) {
           var req = new XMLHttpRequest();
           req.timeout = 60 * 1000; // milliseconds
           req.open('POST', "https://languagetoolplus.com/submitErrorExample", true);
@@ -873,6 +873,8 @@
               "&lang=" + lang +
               "&ruleId=" + encodeURIComponent(ruleId) +
               "&suggestionPos=" + suggestionPos +
+              "&covered=" + encodeURIComponent(covered) +
+              "&replacement=" + encodeURIComponent(replacement) +
               "&username=website"
           );
       },
