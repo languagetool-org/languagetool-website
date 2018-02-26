@@ -41,9 +41,37 @@
         To contact us, post to <a href="http://forum.languagetool.org">our forum</a>.
     </p>
     
-    <p></p>
     
+    <h2>Details on how to apply</h2>
+    
+    <p>
+        Please check <a href="https://google.github.io/gsocguides/student/">Google's student manual</a>.
+        GSoC is a program for coding projects. Other initiatives, such as for documentation or translation, are not part of GSoC.
+    </p>
+    
+    
+    <h2>Application process</h2>
+    
+    When applying for a Google Summer of Code grant to work with LanguageTool,
+    your application must follow the same
+    <a href="https://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2018/Students">application template that Blender uses</a>
+    (see "Application Template" at the bottom of that page).
 
+    
+    <h2>Application FAQ</h2>
+
+    <p style="color:#999">(based on <a href="https://wiki.blender.org/index.php/Dev:Ref/GoogleSummerOfCode/2018/Students">Blender's GSoC documentation</a>)</p>
+
+    <b>What will most help my odds of acceptance?</b>
+
+    <ol>
+        <li>A quality proposal - a well thought out proposal that shows you understand what you want to do and have reasonable
+            expectations about what can be accomplished in the time you will have available.
+        <li>Show evidence of past experience or achievements related to the proposal.
+        <li>Make a useful patch against LanguageTool - this shows that you can successfully read, edit, and compile our code.
+        <li>Discuss your application <a href="http://forum.languagetool.org">on our forum</a> and get some feedback.
+    </ol>
+    
 </div>
 
 <?php include("../../include/footer.php"); ?>
