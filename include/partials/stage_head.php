@@ -9,7 +9,7 @@
         <p>LanguageTool is a <strong>proof&shy;reading service</strong> for English, <a href="de/">German</a>,
             <a href="pl/">Polish</a>, <a href="ru/">Russian</a>, and more than <a href="languages/">20 other languages</a>.</p>
             <div id="addToBrowser">
-                <?php if ($checkDefaultLang == "de") { ?>
+                <?php if (rand(0, 1) > 0.25 && $checkDefaultLang == "de") { ?>
                     <a href="/job/computational_linguist.php"><?= isset($job1) ? $job1 : 'Bei LanguageTool arbeiten?' ?><span>&nbsp;&nbsp;<?= isset($job2) ? $job2 : 'Wir suchen Computerlinguisten (m/w)!' ?></span></a>
                 <?php } else { ?>
                     <a href="gsoc2018/">Looking for a student dev job?<span>&nbsp;&nbsp;Apply for GSoC 2018!</span></a>

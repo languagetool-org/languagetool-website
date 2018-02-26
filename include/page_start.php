@@ -17,10 +17,10 @@
           <?php } else { ?>
               <?php if (true) { ?>
                   <div id="addToBrowser">
-                      <?php if (rand(0, 1) > 0.5) { ?>
-                          <a href="/gsoc2018/"><?= isset($gsoc1) ? $gsoc1 : 'Looking for a student dev job?' ?><span>&nbsp;&nbsp;<?= isset($gsoc2) ? $gsoc2 : 'Apply for GSoC 2018!' ?></span></a>
-                      <?php } else { ?>
+                      <?php if ($_SERVER['REQUEST_URI'] == "/de/" || $checkDefaultLang == "de") { ?>
                           <a href="/job/computational_linguist.php"><?= isset($job1) ? $job1 : 'Bei LanguageTool arbeiten?' ?><span>&nbsp;&nbsp;<?= isset($job2) ? $job2 : 'Wir suchen Computerlinguisten (m/w)!' ?></span></a>
+                      <?php } else { ?>
+                          <a href="/gsoc2018/"><?= isset($gsoc1) ? $gsoc1 : 'Looking for a student dev job?' ?><span>&nbsp;&nbsp;<?= isset($gsoc2) ? $gsoc2 : 'Apply for GSoC 2018!' ?></span></a>
                       <?php } ?>
                   </div>
               <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
