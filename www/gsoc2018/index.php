@@ -16,7 +16,9 @@
     
     <p>LanguageTool is a mentor organization in this year's Google Summer of Code. As a student who is
         interested in software development, you can apply to participate. If you're selected, you will
-        work on LanguageTool for three months and Google will pay you.</p>
+        work on LanguageTool for three months and Google will pay you.
+        <a href="/job/computational_linguist.php">Not a student anymore? Check out our other job ad</a>
+    </p>
     
     <p>Here's how Google describes GSoC:</p>
 
