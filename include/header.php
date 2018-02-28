@@ -117,8 +117,13 @@
                     _paq.push(['trackEvent', "FastSpring", "OrderPopupClosed"]);
                 } else {
                     _paq.push(['trackEvent', "FastSpring", "OrderFinished"]);
+                    if (window.navigator && window.navigator.userAgent) {
+                        $.post("/log.php", { "msg": "order finished?! orderObjOrNull: " + orderObjOrNull + ", User-Agent: " + window.navigator.userAgent});
+                    } else {
+                        $.post("/log.php", { "msg": "order finished?! orderObjOrNull: " + orderObjOrNull});
+                    }
                     fastspring.builder.reset();
-                    window.location.replace("https://languagetoolplus.com/subscribe/?orderId=" + orderObjOrNull.id);
+                    window.location.replace("https://languagetoolplus.com/subscribe/?source=lt&orderId=" + orderObjOrNull.id);
                 }
             }
         }
