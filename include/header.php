@@ -196,9 +196,13 @@
 
 <script>
 <!--
+    var globalErrCountForPost = 0;
     window.onerror = function (msg, url, line) {
-        var message = "Error in " + url + " on line " + line + ": " + msg;
-        $.post("/log.php", { "msg": message });
+        if (globalErrCountForPost <= 5) {
+            var message = "Error in " + url + " on line " + line + ": " + msg;
+            $.post("/log.php", { "msg": message });
+        }
+        globalErrCountForPost++;
         //if (typeof(_paq) !== 'undefined') {
         //    _paq.push(['trackEvent', 'JSError', msg, url, line]);   // Piwik tracking
         //}
