@@ -26,11 +26,16 @@
         <li>Ihre zur Prüfung abgeschickten Texte werden nicht gespeichert, mit folgenden Ausnahmen:
             <ul>
                 <li>Wenn Sie explizit Feedback geben, z.&nbsp;B. über Fehlalarme oder nicht erkannte Fehler, speichern wir dieses Feedback.</li>
+                <li>Wenn Sie Korrekturvorschläge für einen Tippfehler akzeptieren, speichern wir das ursprüngliche Wort und
+                    die von Ihnen gewählte Korrektur.</li>
                 <li>Wenn Sie Korrekturvorschläge akzeptieren oder Regeln abstellen, speichern wir die interne ID dieser Regel
                     (z.&nbsp;B. <tt>EIN_PAAR</tt> für die Regel, die Verwechslungen zwischen Paar/paar findet).
                 </li>
-                <li>Im Fall eines internen Softwarefehlers speichern wir den Satz, der den Fehler ausgelöst hat, um so die Ursache zu finden und den Fehler zu beheben.</li>
+                <li>Im sehr seltenen Fall eines internen Softwarefehlers speichern wir den Satz, der den Fehler ausgelöst hat, um so die
+                    Ursache zu finden und den Fehler zu beheben.</li>
             </ul>
+            In all diesen Fällen speichern wir weder Ihre IP-Adresse, noch sonstige Informationen, 
+            die es uns erlauben würden, Sie zu identifizieren.
         </li>
         <li>Um unser Angebot zu verbessern, speichern wir folgende Informationen:
             <ul>
@@ -100,11 +105,13 @@
             <ul>
                 <li>If you explicitly submit feedback, for example about false alarms or undetected errors, we store that feedback.</li>
                 <li>If you accept or explicitly ignore corrections or open examples for an error, we log the internal rule id of that error
-                    (this is something like <tt>ENGLISH_WORD_REPEAT_RULE</tt> for word repetition errors)</li>
-                <li>In case of an internal software error, we log the sentence that caused the error so we can reproduce and fix the error.
-                    This is extremely rare and even then, we don't store that sentence with your
-                    IP address or any other meta information that would allow us to identify you.</li>
+                    (this is something like <tt>ENGLISH_WORD_REPEAT_RULE</tt> for word repetition errors).</li>
+                <li>If you accept a correction of a spelling error, we log the original word and the correction you selected.</li>
+                <li>In case of an internal software error (which is extremely rare), we log the sentence that caused the error so
+                    we can reproduce and fix the error.</li>
             </ul>
+            In any case, we don't store the data with your IP address or any other meta information
+            that would allow us to identify you.
         </li>
         <li>To improve our proofreading service, we keep a log of the following information:
             <ul>

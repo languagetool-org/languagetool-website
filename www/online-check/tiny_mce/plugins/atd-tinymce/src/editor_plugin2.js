@@ -692,7 +692,7 @@
       },
 
        /* send error example to our database */
-       _showContributionDialog : function(sentence, correctedSentence, covered, replacement, errorDescription, lang, ruleId, suggestionPos) {
+       _showContributionDialog : function(sentence, correctedSentence, covered, replacement, errorDescription, lang, ruleId, suggestionPos, isSpellingRule) {
            // source: https://github.com/HubSpot/vex/blob/master/docs/intro.md
            var escapedSentence = $("<div>").text(errorDescription["sentence"]).html();
            var t = this;
@@ -734,6 +734,11 @@
                            t._setSentenceTrackingCookie("ask");
                        }
                        t._trackEvent('AllowSentenceStorage', "no");
+                       // A single word does not contain personal data, so it's okay to send
+                       // that word, but without the sentence:
+                       if (isSpellingRule) {
+                           t._sendErrorExample("", "", covered, replacement, lang, ruleId, suggestionPos);
+                       }
                    }
                }
            });
@@ -836,11 +841,16 @@
               if (replCount === 1) {  // otherwise the correction is ambiguous
                   var correctedSentence = sentence.replace(evt.target.innerText, suggestion);
                   if (document.cookie && document.cookie.indexOf("sentenceTracking=store") !== -1) {
-                      this._sendErrorExample(sentence, correctedSentence, covered, suggestion, lang, ruleId, suggestionPos);
+                      this._sendErrorExample(sentence, correctedSentence, covered, suggestion, lang, ruleId, suggestionPos, isSpellingRule);
                   } else if (document.cookie && document.cookie.indexOf("sentenceTracking=do-not-store") !== -1) {
-                      console.log("no sentence tracking");
+                      if (isSpellingRule) {
+                          console.log("no sentence tracking, tracking only typo word");
+                          this._sendErrorExample("", "", covered, suggestion, lang, ruleId, suggestionPos, isSpellingRule);
+                      } else {
+                          console.log("no sentence tracking");
+                      }
                   } else {
-                      this._showContributionDialog(sentence, correctedSentence, covered, suggestion, errorDescription, lang, ruleId, suggestionPos);
+                      this._showContributionDialog(sentence, correctedSentence, covered, suggestion, errorDescription, lang, ruleId, suggestionPos, isSpellingRule);
                   }
                   this._updateSentenceTrackingArea(lang);
               }
