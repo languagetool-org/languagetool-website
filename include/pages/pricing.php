@@ -211,7 +211,7 @@
                 <td style="vertical-align:top">
                     <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
                         <div style="margin:0" class="buyButton">
-                            <b>6,59&thinsp;€/Monat</b><br>
+                            <b>4,92&thinsp;€/Monat</b><br>
                             <span style="background-color: transparent; font-size: 16px">jährliche Abrechnung</span><br>
                             <b>KAUFEN</b>
                         </div>
