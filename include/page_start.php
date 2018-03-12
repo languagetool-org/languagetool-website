@@ -16,26 +16,26 @@
               <?php include("partials/banner2.php") ?>
           <?php } else { ?>
               <?php if (true) { ?>
-                  <div id="addToBrowser">
                       <?php if ($_SERVER['REQUEST_URI'] == "/de/" || $checkDefaultLang == "de") { ?>
-                          <a href="/job/computational_linguist.php"><?= isset($job1) ? $job1 : 'Bei LanguageTool arbeiten?' ?><span>&nbsp;&nbsp;<?= isset($job2) ? $job2 : 'Wir suchen Computerlinguisten (m/w)!' ?></span></a>
+                          <div id="addToBrowser">
+                              <a href="/job/computational_linguist.php"><?= isset($job1) ? $job1 : 'Bei LanguageTool arbeiten?' ?><span>&nbsp;&nbsp;<?= isset($job2) ? $job2 : 'Wir suchen Computerlinguisten (m/w)!' ?></span></a>
+                          </div>
                       <?php } else { ?>
-                          <a href="/gsoc2018/"><?= isset($gsoc1) ? $gsoc1 : 'Looking for a student dev job?' ?><span>&nbsp;&nbsp;<?= isset($gsoc2) ? $gsoc2 : 'Apply for GSoC 2018!' ?></span></a>
+                          <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+                              <div id="addToBrowser">
+                                  <a onclick="return installChromeExtension('calltoaction')"
+                                     href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"
+                                  >
+                                      <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome <span>free, no sign up required</span>' ?>
+                              </div>
+                              <?php
+                          } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+                              <div id="addToBrowser">
+                                  <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">
+                                      <?= isset($addToFirefox) ? $addToFirefox : 'Add to Firefox <span>free, no sign up required</span>' ?>
+                              </div>
+                          <?php } ?>
                       <?php } ?>
-                  </div>
-              <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
-                  <div id="addToBrowser">
-                      <a onclick="return installChromeExtension('calltoaction')"
-                         href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji"
-                      >
-                          <?= isset($addToChrome) ? $addToChrome : 'Add to Chrome <span>free, no sign up required</span>' ?>
-                  </div>
-                  <?php
-              } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
-                  <div id="addToBrowser">
-                      <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">
-                          <?= isset($addToFirefox) ? $addToFirefox : 'Add to Firefox <span>free, no sign up required</span>' ?>
-                  </div>
               <?php } ?>
           <?php } ?>           
 

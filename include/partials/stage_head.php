@@ -12,20 +12,17 @@
                 <?php if (rand(0, 1) > 0.25 && $checkDefaultLang == "de") { ?>
                     <a href="/job/computational_linguist.php"><?= isset($job1) ? $job1 : 'Bei LanguageTool arbeiten?' ?><span>&nbsp;&nbsp;<?= isset($job2) ? $job2 : 'Wir suchen Computerlinguisten (m/w)!' ?></span></a>
                 <?php } else { ?>
-                    <a href="gsoc2018/">Looking for a student dev job?<span>&nbsp;&nbsp;Apply for GSoC 2018!</span></a>
+                    <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+                        <div id="addToBrowser">
+                            <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome<span>&nbsp;&nbsp;free, no sign up required</span></a>
+                        </div>
+                    <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
+                        <div id="addToBrowser">
+                            <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
+                        </div>
+                    <?php } ?>
                 <?php } ?>
             </div>
-            <!--
-            <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Chrome/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
-                <div id="addToBrowser">
-                    <a onclick="return installChromeExtension('calltoaction')" href="https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji">Add to Chrome<span>&nbsp;&nbsp;free, no sign up required</span></a>
-                </div>
-            <?php } else if (strpos($_SERVER['HTTP_USER_AGENT'], "Firefox/") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Android") === false) { ?>
-                <div id="addToBrowser">
-                    <a target="_blank" href="https://addons.mozilla.org/firefox/addon/languagetool/?src=external-lt-homepage">Add to Firefox<span>&nbsp;&nbsp;free, no sign up required</span></a>
-                </div>
-            <?php } ?>
-            -->
     </div>
     <div id="editor">
       <div class="inner">
