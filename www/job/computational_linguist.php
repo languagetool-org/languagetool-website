@@ -50,7 +50,7 @@
     <ul>
         <li>ein kleines, agiles Team
         <li>direkter Kontakt zu unseren Nutzern
-        <li>Mitarbeit an einem bekannten Open-Source-Projekt
+        <li>bezahlte Mitarbeit an einem bekannten Open-Source-Projekt
         <li>ein Büro im Herzen von Potsdam-Babelsberg mit sehr guter S-Bahn-Anbindung nach Berlin
         <li>die Möglichkeit zur Arbeit im Home-Office
     </ul>
