@@ -16,7 +16,7 @@
 <p>Die Leichte Sprache ist eine besonders leicht verständliche Ausdrucksweise.
 Es existiert kein offizieller Standard, was genau Leichte Sprache ausmacht, es gibt zur Orientierung allerdings 
 einige Regeln. Mit dieser Seite können Sie LanguageTool benutzen, um Texte gegen einige (nicht alle) dieser
-Regeln zu prüfen. Mögliche Fehler werden farbig markiert. Durch Klick auf die markierten Wörter erhalten
+Regeln zu prüfen. Hier ist eine <a href="https://multisprech.org/einfache-sprache/einfach-schreiben/languagetool-leichte-sprache/">Übersicht der Regeln</a>. Mögliche Fehler werden farbig markiert. Durch Klick auf die markierten Wörter erhalten
 Sie eine genauere Beschreibung des möglichen Problems. Mehr Informationen zu Leichter Sprache finden Sie beim
 <a href="http://www.leichtesprache.org/">Netzwerk Leichte Sprache</a> und im Artikel
 <a href="http://www.melaniesiegel.de/publications/2014_tekom_Lieske-Siegel.pdf">Verstehen leicht gemacht</a>.</p>
