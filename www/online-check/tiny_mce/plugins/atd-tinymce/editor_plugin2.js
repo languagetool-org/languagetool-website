@@ -69,11 +69,7 @@ AtDCore.prototype.processJSON = function(responseJSON) {
         var suggestions = [];
         for (var k = 0; k < match.replacements.length; k++) {
             var repl = match.replacements[k];
-            if (repl.value) {
-                suggestions.push(repl.value);
-            } else {
-                suggestions.push(repl);  //TODO: remove this case, it's for an old API version
-            }
+            suggestions.push(repl.value);
         }
         suggestion["suggestions"] = suggestions.join("#");
         suggestion["sentence"]    = match.sentence;
