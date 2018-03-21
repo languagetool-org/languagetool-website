@@ -209,12 +209,12 @@
             (Bright Market, LLC d/b/a FastSpring. 801 Garden St., Santa Barbara, CA 93101).
             The data at fastspring is protected under the <a href="https://www.privacyshield.gov">EU-US Privacy Shield</a>, additionally
             fastspring has committed to follow all EU privacy laws starting 2018-05-28.
-            Your data will be kept at fastspring after you cancel a susbcription for tax reasons. See
+            Your data will be kept at fastspring after you cancel a subscription for tax reasons. See
             <a href="https://fastspring.com/privacy/">their privacy policy</a> for details.
             Your credit card information - if you use a credit card to purchase the premium product - is
-            transmitted to fastspring, LanguageTool does not know your credit card data.
+            transmitted to fastspring, we do not know your credit card data.
         </li>
-        <li>You have the right, upon request and free of charge, to receive information about your personal data we stored.</li>
+        <li>You have the right, upon request and free of charge, to receive information about your personal data we store.</li>
         <li>If you believe that the processing of your personal data is unlawful, you have the right to complain to a regulatory agency.</li>
     </ul>
     
