@@ -85,7 +85,8 @@
             <ul>
                 <li>Yieldlove GmbH, Neuer Pferdemarkt 1, 20359 Hamburg („Yieldlove“) vermarktet
                     Online-Werbeflächen auf unseren Angeboten languagetool.org und der mobilen
-                    Website von languagetool.org. Um die Werbeauslieferung auf den Webseiten zu
+                    Website von languagetool.org und ermöglicht uns so die kostenlose Bereitstellung der Website.
+                    Um die Werbeauslieferung auf den Webseiten zu
                     optimieren, werden durch Yieldlove Cookies eingesetzt.
                     Alle Informationen dazu, wie Yieldlove Daten verarbeitet und welche Daten
                     betroffen sind, erhalten Sie in der Privacy Policy von Yieldlove. Zudem
@@ -190,7 +191,8 @@
 
             <ul>
                 <li>Yieldlove GmbH, Neuer Pferdemarkt 1, 20359 Hamburg ("Yieldlove") markets online advertising space 
-                    on languagetool.org and the mobile website of languagetool.org. In order to optimise 
+                    on languagetool.org and the mobile website of languagetool.org and thus allows us to offer
+                    many services for free. In order to optimise 
                     the delivery of advertising on the websites, Yieldlove uses cookies. For information on 
                     how Yieldlove processes data and which data is affected, please refer to Yieldlove's 
                     Privacy Policy. You can also opt-out of the use of cookies by Yieldlove by 
