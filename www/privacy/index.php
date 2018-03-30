@@ -22,6 +22,9 @@
         über eine verschlüsselte Verbindung an unsere Server übertragen. Auf dieser Seite beschreiben wir,
         welche Daten wir speichern.</p>
 
+    <p>Die Verarbeitung personenbezogener Daten auf dieser Website erfolgt im Einklang mit
+        der europäischen Datenschutz-Grundverordnung (DSGVO) und dem Bundesdatenschutzgesetz (BDSG 2018).</p>
+        
     <p><a href="/legal/">Unsere Kontaktinformationen finden Sie hier.</a></p>
 
     <p>Hinweis: Sie können auch die "Stand-alone"-Version von <a href="/">unserer Homepage</a> herunterladen, die lokal läuft und
@@ -135,6 +138,10 @@
     
     <p>LanguageTool is a proofreading software. It works by sending the text to be checked to our servers over an
     encrypted connection. This policy describes what kind of data we store.</p>
+
+    <p>The processing of personal data on this website is carried out in accordance with
+        the European General Data Protection Regulation (GDPR) and the German Federal Data Protection Act, 
+        Bundesdatenschutzgesetz (BDSG 2018).</p>
 
     <p><a href="/legal/">Here's how you can contact us.</a></p>
 
