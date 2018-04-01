@@ -241,6 +241,12 @@
                     }
                 }
             }, 2000);
+            $("#outer-buy-button1").click(function() {
+                if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'PricingTable', 'Buy-Monthly']); } // Piwik tracking
+            });
+            $("#outer-buy-button2").click(function() {
+                if (typeof(_paq) !== 'undefined') { _paq.push(['trackEvent', 'PricingTable', 'Buy-Yearly']); } // Piwik tracking
+            });
         <?php } ?>
     });
 </script>

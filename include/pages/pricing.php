@@ -89,23 +89,27 @@
                 <td style="vertical-align:top">Price</td>
                 <td style="vertical-align:top">free</td>
                 <td style="vertical-align:top">
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
-                        <div style="margin:0" class="buyButton">
-                            <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/year<br>
-                            <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
-                            <span class="smaller">you save 65%</span><br>
-                            <b>BUY NOW</b>
-                        </div>
-                    </a>
-                    <br>
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
-                        <div class="buyButton">
-                            <div style="margin-top: 15px; text-align: center">
-                                <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/month<br>
+                    <div id="outer-buy-button1">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                            <div style="margin:0" class="buyButton">
+                                <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/year<br>
+                                <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
+                                <span class="smaller">you save 65%</span><br>
                                 <b>BUY NOW</b>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <br>
+                    <div id="outer-buy-button2">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                            <div class="buyButton">
+                                <div style="margin-top: 15px; text-align: center">
+                                    <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/month<br>
+                                    <b>BUY NOW</b>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <!--
                     <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
                     -->
@@ -209,21 +213,25 @@
                 <td style="vertical-align:top">Preis</td>
                 <td style="vertical-align:top">kostenlos</td>
                 <td style="vertical-align:top">
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
-                        <div style="margin:0" class="buyButton">
-                            <b>4,92&thinsp;€/Monat</b><br>
-                            <span style="background-color: transparent; font-size: 16px">jährliche Abrechnung</span><br>
-                            <b>KAUFEN</b>
-                        </div>
-                    </a>
+                    <div id="outer-buy-button1">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                            <div style="margin:0" class="buyButton">
+                                <b>4,92&thinsp;€/Monat</b><br>
+                                <span style="background-color: transparent; font-size: 16px">jährliche Abrechnung</span><br>
+                                <b>KAUFEN</b>
+                            </div>
+                        </a>
+                    </div>
                     <br>
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
-                        <div class="buyButton">
-                            <b>19&thinsp;€/Monat</b><br>
-                            <span style="background-color: transparent; font-size: 16px">monatlich kündbar</span><br>
-                            <b>KAUFEN</b>
-                        </div>
-                    </a>
+                    <div id="outer-buy-button2">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                            <div class="buyButton">
+                                <b>19&thinsp;€/Monat</b><br>
+                                <span style="background-color: transparent; font-size: 16px">monatlich kündbar</span><br>
+                                <b>KAUFEN</b>
+                            </div>
+                        </a>
+                    </div>
                     <br>oder auf <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a> kaufen
                     <!--
                     <a href="https://languagetoolplus.com/#premium">
@@ -317,23 +325,27 @@
                 <td style="vertical-align:top">Цена</td>
                 <td style="vertical-align:top">бесплатно</td>
                 <td style="vertical-align:top">
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
-                        <div class="buyButton">
-                            <div style="margin-top: 15px; text-align: center">
-                                <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/в месяц<br>
+                    <div id="outer-buy-button1">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-monthly-subscription">
+                            <div class="buyButton">
+                                <div style="margin-top: 15px; text-align: center">
+                                    <span data-fsc-item-path="languagetool-plus-premium-monthly-subscription" data-fsc-item-pricetotal></span>/в месяц<br>
+                                    <b>Купить</b>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div id="outer-buy-button2">
+                        <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
+                            <div style="margin:0" class="buyButton">
+                                <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/в год<br>
+                                <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
+                                <span class="smaller">выгода 65%</span><br>
                                 <b>Купить</b>
                             </div>
-                        </div>
-                    </a>
-                    <br>
-                    <a href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="languagetool-plus-premium-1-year-subscription">
-                        <div style="margin:0" class="buyButton">
-                            <span data-fsc-item-path="languagetool-plus-premium-1-year-subscription" data-fsc-item-pricetotal></span>/в год<br>
-                            <!--<span class="smaller">i.e. less than <b>€7/month</b></span><br>-->
-                            <span class="smaller">выгода 65%</span><br>
-                            <b>Купить</b>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <!--
                     <br>or buy at <a href="https://languagetoolplus.com/#premium">languagetoolplus.com</a>
                     -->
