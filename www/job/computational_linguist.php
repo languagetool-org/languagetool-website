@@ -13,10 +13,8 @@
 <div id="textContent">
 
     <p style="text-align: right; color: #666">
-        Stand: 26.02.2018
+        Stand: 18.04.2018
     </p>
-    
-    <p>Noch Student/in? <a href="/gsoc2018">Dann mal hier vorbeischauen</a></p>
     
     <h1>Computerlinguist (m/w)</h1>
     

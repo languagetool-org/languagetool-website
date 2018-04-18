@@ -11,6 +11,8 @@
 <?php include("../../include/partials/nav.php"); ?>
 
 <div id="textContent">
+    
+    <h1>This page is archived - the deadline for students to apply has passed</h1>
 
     <h1>Apply for GSoC 2018</h1>
     
