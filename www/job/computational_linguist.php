@@ -52,7 +52,7 @@
         <li>direkter Kontakt zu unseren Nutzern
         <li>bezahlte Mitarbeit an einem bekannten Open-Source-Projekt
         <li>ein Büro im Herzen von Potsdam-Babelsberg mit sehr guter S-Bahn-Anbindung nach Berlin
-        <li>die Möglichkeit zur Arbeit im Home-Office
+        <li>die Möglichkeit zur Arbeit im Home-Office (bis zu 30% der Arbeitszeit)
     </ul>
     
     <p>Interessiert? Bitte schicke Deine Fragen oder direkt eine Bewerbung per
