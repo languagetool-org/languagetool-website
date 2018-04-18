@@ -23,7 +23,7 @@
    var maxTextLength = 20000;
    var userHasPastedText = false;
    var randomVal = Math.random();
-   var randomValThreshold = 0.9;  // random val < this: languagetool.org/api/v2/check will be used
+   var randomValThreshold = 1.0;  // random val < this: languagetool.org/api/v2/check will be used
 
    tinymce.create('tinymce.plugins.AfterTheDeadlinePlugin', 
    {
